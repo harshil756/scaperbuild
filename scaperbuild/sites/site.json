@@ -1,0 +1,13 @@
+{
+  "name": "7 States Pest Control",
+  "base_url": "https://7statespestcontrol.com.au",
+  "homepage": "https://7statespestcontrol.com.au/",
+  "pages": [
+    {
+      "slug": "home",
+      "url": "https://7statespestcontrol.com.au/",
+      "status": "active",
+      "note": "Homepage only — scrape first"
+    }
+  ]
+}
