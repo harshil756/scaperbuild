@@ -98,6 +98,14 @@ def url_to_asset_path(url: str, base_url: str, assets_dir: Path) -> Path:
     return local
 
 
+def local_page_href(html_path: Path, site_dir: Path, html_rel: str) -> str:
+    """Clean local URL like ../office-pest-control/ (matches live site paths)."""
+    slug = Path(html_rel).parts[0]
+    target = site_dir / slug
+    href = relative_path(html_path, target)
+    return href if href.endswith("/") else f"{href}/"
+
+
 def relative_path(from_file: Path, to_file: Path) -> str:
     """POSIX-style relative path from one file to another (always works)."""
     import os

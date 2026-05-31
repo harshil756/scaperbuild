@@ -98,33 +98,48 @@ class PlaywrightMirror:
                 locale="en-AU",
                 ignore_https_errors=True,
             )
-            page = context.new_page()
-            page.on("response", self._queue_response)
-            self._load_page(page)
-            self._wait_widgets(page)
-            html = page.content()
-            snap = page.evaluate(SNAPSHOT_JS)
-            self.widget_snapshots = snap.get("snapshots", [])
-            for u in snap.get("extraUrls", []):
-                n = normalize_url(u, self.url)
-                if n:
-                    all_urls.add(n)
-                    if "trustindex" in n and ".css" in n:
-                        self.trustindex_css_url = n
-            self._flush_responses()
-            dom_urls = page.evaluate(DOM_HARVEST_JS)
-            self._flush_responses()
-            all_urls.update(self.url_map.keys())
-            for raw in dom_urls:
-                n = normalize_url(raw, self.url)
-                if n:
-                    all_urls.add(n)
-            self._fetch_missing(context, all_urls)
-            self._css_deep_fetch(context, all_urls)
+            html, all_urls = self._capture_in_context(context)
             browser.close()
 
         if self.widget_snapshots:
             print(f"[+] Captured {len(self.widget_snapshots)} live widget(s).")
+        return html, all_urls
+
+    def capture_in_context(self, context: BrowserContext) -> tuple[str, set[str]]:
+        """Capture using an existing browser context (reuse across pages)."""
+        self.url_map = {}
+        self.failed = []
+        self._pending_responses = []
+        self.widget_snapshots = []
+        self.trustindex_css_url = None
+        return self._capture_in_context(context)
+
+    def _capture_in_context(self, context: BrowserContext) -> tuple[str, set[str]]:
+        all_urls: set[str] = set()
+        page = context.new_page()
+        page.on("response", self._queue_response)
+        self._load_page(page)
+        self._wait_widgets(page)
+        html = page.content()
+        snap = page.evaluate(SNAPSHOT_JS)
+        self.widget_snapshots = snap.get("snapshots", [])
+        for u in snap.get("extraUrls", []):
+            n = normalize_url(u, self.url)
+            if n:
+                all_urls.add(n)
+                if "trustindex" in n and ".css" in n:
+                    self.trustindex_css_url = n
+        self._flush_responses()
+        dom_urls = page.evaluate(DOM_HARVEST_JS)
+        self._flush_responses()
+        all_urls.update(self.url_map.keys())
+        for raw in dom_urls:
+            n = normalize_url(raw, self.url)
+            if n:
+                all_urls.add(n)
+        self._fetch_missing(context, all_urls)
+        self._css_deep_fetch(context, all_urls)
+        page.close()
         return html, all_urls
 
     def _queue_response(self, response: Response) -> None:

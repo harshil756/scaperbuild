@@ -5,6 +5,7 @@ from __future__ import annotations
 
 import argparse
 import http.server
+import json
 import mimetypes
 import socket
 import socketserver
@@ -67,8 +68,39 @@ def write_root_redirect(site_dir: Path) -> None:
     )
 
 
-def make_handler(site_dir: Path, entry: Path):
+def build_slug_map(site_dir: Path) -> dict[str, str]:
+    """Map page slug → html file path relative to site root."""
+    mapping: dict[str, str] = {}
+    manifest_path = site_dir / "site.json"
+    if manifest_path.exists():
+        pages = json.loads(manifest_path.read_text(encoding="utf-8")).get("pages", {})
+        for info in pages.values():
+            html = info.get("html", "")
+            if html:
+                mapping[Path(html).parts[0]] = html
+    if "home" not in mapping and (site_dir / "home" / "home.html").exists():
+        mapping["home"] = "home/home.html"
+    return mapping
+
+
+def resolve_clean_path(site_dir: Path, slug_map: dict[str, str], url_path: str) -> str | None:
+    """Resolve /office-pest-control/ → /office-pest-control/office-pest-control.html"""
+    slug = url_path.strip("/")
+    if not slug:
+        return None
+    html_rel = slug_map.get(slug)
+    if html_rel:
+        return f"/{html_rel}"
+    folder = site_dir / slug
+    candidate = folder / f"{slug}.html"
+    if candidate.exists():
+        return f"/{slug}/{slug}.html"
+    return None
+
+
+def make_handler(site_dir: Path, entry: Path, slug_map: dict[str, str]):
     entry_rel = entry.relative_to(site_dir).as_posix()
+    home_slug = Path(entry_rel).parts[0] if entry_rel else "home"
 
     class Handler(http.server.SimpleHTTPRequestHandler):
         def __init__(self, *a, **kw):
@@ -82,9 +114,21 @@ def make_handler(site_dir: Path, entry: Path):
             clean = unquote(self.path.split("?", 1)[0].split("#", 1)[0])
             if clean in ("/", ""):
                 self.send_response(302)
-                self.send_header("Location", f"/{entry_rel}")
+                self.send_header("Location", f"/{home_slug}/")
                 self.end_headers()
                 return
+            slug = clean.strip("/")
+            if slug and "." not in Path(slug).name:
+                mapped = resolve_clean_path(site_dir, slug_map, clean)
+                if mapped:
+                    if not clean.endswith("/"):
+                        self.send_response(301)
+                        self.send_header("Location", f"/{slug}/")
+                        self.end_headers()
+                        return
+                    self.path = mapped
+                    super().do_GET()
+                    return
             super().do_GET()
 
         def log_message(self, fmt: str, *args) -> None:
@@ -103,8 +147,10 @@ def start_server(
         raise FileNotFoundError(f"No HTML pages in {site_dir}")
 
     write_root_redirect(site_dir)
+    slug_map = build_slug_map(site_dir)
     entry_rel = entry.relative_to(site_dir).as_posix()
-    Handler = make_handler(site_dir, entry)
+    home_slug = Path(entry_rel).parts[0]
+    Handler = make_handler(site_dir, entry, slug_map)
 
     socketserver.TCPServer.allow_reuse_address = True
     httpd = None
@@ -123,7 +169,7 @@ def start_server(
     if httpd is None:
         raise OSError("Could not bind any port")
 
-    url = f"http://127.0.0.1:{actual_port}/{entry_rel}"
+    url = f"http://127.0.0.1:{actual_port}/{home_slug}/"
 
     if background:
         thread = threading.Thread(target=httpd.serve_forever, daemon=True)

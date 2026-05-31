@@ -48,6 +48,7 @@ class PageScraper:
         wait_ms: int = 15000,
         timeout_ms: int = 180000,
         headed: bool | None = None,
+        mirror_class: type | None = None,
     ):
         self.url = url.strip()
         if not self.url.startswith(("http://", "https://")):
@@ -65,6 +66,7 @@ class PageScraper:
         self.wait_ms = wait_ms
         self.timeout_ms = timeout_ms
         self.headed = headed
+        self.mirror_class = mirror_class or PlaywrightMirror
         self.page_slug = url_to_page_slug(self.url)
         self.page_folder = page_dir(self.site_dir, self.page_slug)
         self.html_name = url_to_html_filename(self.url)
@@ -80,7 +82,7 @@ class PageScraper:
         ensure_site_dirs(self.site_dir)
         ensure_page_dirs(self.page_folder)
 
-        mirror = PlaywrightMirror(
+        mirror = self.mirror_class(
             url=self.url,
             page_dir=self.page_folder,
             wait_ms=self.wait_ms,
@@ -88,6 +90,13 @@ class PageScraper:
             headed=self.headed,
         )
         html, _ = mirror.capture()
+        return self._finalize(mirror, html)
+
+    def finalize_from_mirror(self, mirror: PlaywrightMirror, html: str) -> Path:
+        """Save page output from an already-captured mirror session."""
+        return self._finalize(mirror, html)
+
+    def _finalize(self, mirror: PlaywrightMirror, html: str) -> Path:
         html = clean_scraped_html(html)
 
         print(f"[*] Rewriting asset paths ({len(mirror.url_map)} files)...")

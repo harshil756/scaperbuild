@@ -4,12 +4,12 @@ from __future__ import annotations
 
 import re
 from pathlib import Path
-from urllib.parse import urlparse
+from urllib.parse import unquote, urlparse
 
 from bs4 import BeautifulSoup
 
 from .storage import assets_root
-from .utils import extract_css_urls, normalize_url, relative_path
+from .utils import extract_css_urls, normalize_url, local_page_href, relative_path
 
 LAZYLOAD_FIX_CSS = """
 /* Offline fix: show backgrounds blocked by lazy-load placeholders */
@@ -100,13 +100,62 @@ def fix_srcset_to_local(
     return str(soup)
 
 
+def _canonical_path(url: str) -> str:
+    path = unquote(urlparse(url).path).rstrip("/").lower()
+    return path or "/"
+
+
+def _build_page_path_lookup(pages: dict) -> dict[str, str]:
+    """Map site URL paths to manifest html paths (handles short /foo aliases)."""
+    lookup: dict[str, str] = {}
+    for src_url, info in pages.items():
+        html = info.get("html", "")
+        if not html:
+            continue
+        path = _canonical_path(src_url)
+        lookup[path] = html
+        prefix = "/our-services/"
+        if path.startswith(prefix):
+            lookup.setdefault("/" + path[len(prefix) :], html)
+    for alias, target in (
+        ("/wasp-nest-removal-melbourne", "/wasp-removal-melbourne"),
+        ("/our-services/rodent-control-melbourne", "/rodent-control-in-melbourne"),
+        ("/rodent-control-melbourne", "/rodent-control-in-melbourne"),
+    ):
+        if target in lookup:
+            lookup.setdefault(alias, lookup[target])
+    return lookup
+
+
+def _rewrite_local_html_links(html: str, html_path: Path, site_dir: Path) -> str:
+    """Convert ../slug/slug.html → ../slug/ for already-rewritten local links."""
+    import re
+
+    def repl(match: re.Match[str]) -> str:
+        slug = match.group(2)
+        folder = site_dir / slug
+        if not (folder / f"{slug}.html").exists():
+            return match.group(0)
+        href = local_page_href(html_path, site_dir, f"{slug}/{slug}.html")
+        return f'href="{href}"'
+
+    return re.sub(
+        r'(href="(?:\.\./)+)([a-z0-9-]+)/\2\.html"',
+        repl,
+        html,
+        flags=re.IGNORECASE,
+    )
+
+
 def rewrite_internal_page_links(
     html: str, page_url: str, manifest: dict, html_path: Path
 ) -> str:
-    """Point <a href> to local html/*.html when that page was scraped manually."""
+    """Point <a href> to local page folders (clean URLs, no .html)."""
     pages = manifest.get("pages", {})
     if not pages:
         return html
+    lookup = _build_page_path_lookup(pages)
+    site_host = urlparse(page_url).netloc
     soup = BeautifulSoup(html, "lxml")
     site_dir = html_path.parent.parent
     for a in soup.find_all("a", href=True):
@@ -116,11 +165,11 @@ def rewrite_internal_page_links(
         abs_u = normalize_url(href, page_url)
         if not abs_u:
             continue
-        for src_url, info in pages.items():
-            if normalize_url(src_url, src_url) == abs_u:
-                rel = info.get("html", "")
-                if rel:
-                    target = site_dir / rel
-                    a["href"] = relative_path(html_path, target)
-                break
-    return str(soup)
+        parsed = urlparse(abs_u)
+        if parsed.netloc and parsed.netloc != site_host:
+            continue
+        html_rel = lookup.get(_canonical_path(abs_u))
+        if html_rel:
+            a["href"] = local_page_href(html_path, site_dir, html_rel)
+    html = str(soup)
+    return _rewrite_local_html_links(html, html_path, site_dir)
