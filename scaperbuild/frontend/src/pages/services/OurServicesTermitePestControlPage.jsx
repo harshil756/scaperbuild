@@ -1,3 +1,4 @@
+import PhoneNumberInput from '../../components/PhoneNumberInput.jsx'
 import usePageMeta from '../../hooks/usePageMeta.js'
 import { Link } from 'react-router-dom'
 
@@ -78,7 +79,7 @@ export default function OurServicesTermitePestControlPage() {
                       <div className="elementor-field-type-tel elementor-field-group elementor-column elementor-field-group-mobile_number elementor-col-100 elementor-field-required">
                         <label className="elementor-field-label elementor-screen-only" htmlFor="form-field-mobile_number">
                           Mobile Number							</label>
-                        <div className="iti iti--allow-dropdown iti--show-flags cfefp-intl-container iti--inline-dropdown"><div className="iti__country-container"><div aria-controls="iti-0__dropdown-content" aria-expanded="false" aria-haspopup="true" aria-label="Selected country" className="iti__selected-country" role="combobox" tabIndex={0} title="Australia: +61" type="div"><div className="iti__selected-country-primary"><div className="iti__flag iti__au" style={{backgroundImage: 'url("assets/images/au_f5de9214.svg")'}}><span className="iti__a11y-text">Australia +61</span></div><div aria-hidden="true" className="iti__arrow" /></div></div></div><input autoComplete="off" className="elementor-field elementor-size-md elementor-field-textual iti__tel-input" data-intl-tel-input-id={0} id="form-field-mobile_number" name="form_fields[mobile_number]" placeholder="Mobile Number" required title="Only numbers and phone characters (#, -, *, etc) are accepted." type="tel" /></div>
+                        <PhoneNumberInput id="form-field-mobile_number" name="form_fields[mobile_number]" size="md" />
                       </div>
                       <div className="elementor-field-type-textarea elementor-field-group elementor-column elementor-field-group-message elementor-col-100 elementor-field-required">
                         <label className="elementor-field-label elementor-screen-only" htmlFor="form-field-message">
@@ -339,7 +340,7 @@ export default function OurServicesTermitePestControlPage() {
                         </div> </div>
                     </div>
                   </div>
-                  <div className="elementor-element elementor-element-4299786 e-con-full e-flex e-con e-child" data-element_type="container" data-id={4299786}>
+                  <div className="elementor-element elementor-element-4299786 e-con-full e-flex e-con e-child" data-element_type="container" data-id="4299786">
                     <div className="elementor-element elementor-element-5628a19 ekit-equal-height-enable elementor-widget elementor-widget-elementskit-icon-box" data-element_type="widget" data-id="5628a19" data-widget_type="elementskit-icon-box.default">
                       <div className="elementor-widget-container">
                         <div className="ekit-wid-con">
@@ -756,7 +757,7 @@ export default function OurServicesTermitePestControlPage() {
                   </div>
                 </div>
                 <div className="elementor-element elementor-element-3b60541 e-con-full e-flex e-con e-child" data-element_type="container" data-id="3b60541">
-                  <div className="elementor-element elementor-element-7696069 elementor-widget elementor-widget-text-editor" data-element_type="widget" data-id={7696069} data-widget_type="text-editor.default">
+                  <div className="elementor-element elementor-element-7696069 elementor-widget elementor-widget-text-editor" data-element_type="widget" data-id="7696069" data-widget_type="text-editor.default">
                     <div className="elementor-widget-container">
                       <p className="font-claude-response-body break-words whitespace-normal leading-[1.7]">Termites are silent destroyers that often remain hidden until significant damage has already occurred. Preventing termite infestations requires proactive steps to reduce moisture, eliminate wood-to-soil contact, and install a proper <strong>termite barrier</strong>. Here are some effective ways to protect your property with professional <strong>termite control Melbourne</strong> solutions — because early <strong>termite management Melbourne</strong> is always better than costly repairs.</p> </div>
                   </div>
@@ -794,7 +795,7 @@ export default function OurServicesTermitePestControlPage() {
               </div>
             </div>
             <div className="elementor-element elementor-element-ba905cd e-con-full e-flex e-con e-child" data-element_type="container" data-id="ba905cd">
-              <div className="elementor-element elementor-element-0370463 elementor-position-top elementor-widget elementor-widget-image-box" data-element_type="widget" data-id={0370463} data-widget_type="image-box.default">
+              <div className="elementor-element elementor-element-0370463 elementor-position-top elementor-widget elementor-widget-image-box" data-element_type="widget" data-id="0370463" data-widget_type="image-box.default">
                 <div className="elementor-widget-container">
                   <div className="elementor-image-box-wrapper"><figure className="elementor-image-box-img"><img alt className="elementor-animation-shrink attachment-full size-full wp-image-1199" decoding="async" height={154} loading="lazy" sizes="(max-width: 154px) 100vw, 154px" src="/assets/images/controll-2_9d975649.png" srcSet="/assets/images/controll-2_9d975649.png 154w, /assets/images/controll-2-150x150_09eb3e9c.png 150w" width={154} /></figure><div className="elementor-image-box-content"><h3 className="elementor-image-box-title">Satisfaction Guaranteed</h3></div></div> </div>
               </div>
@@ -1054,7 +1055,7 @@ export default function OurServicesTermitePestControlPage() {
             </div>
           </div>
         </div>
-        <div className="elementor-element elementor-element-5752800 e-flex e-con-boxed e-con e-parent e-lazyloaded" data-element_type="container" data-id={5752800}>
+        <div className="elementor-element elementor-element-5752800 e-flex e-con-boxed e-con e-parent e-lazyloaded" data-element_type="container" data-id="5752800">
           <div className="e-con-inner">
             <div className="elementor-element elementor-element-87a3755 elementor-widget elementor-widget-elementskit-blog-posts" data-element_type="widget" data-id="87a3755" data-widget_type="elementskit-blog-posts.default">
               <div className="elementor-widget-container">
@@ -1141,7 +1142,7 @@ export default function OurServicesTermitePestControlPage() {
                           <div className="elementor-widget-container">
                             <h2 className="elementor-heading-title elementor-size-default">Talk to Us Today to Learn More</h2> </div>
                         </div>
-                        <div className="elementor-element elementor-element-4852935 elementor-widget elementor-widget-text-editor" data-element_type="widget" data-id={4852935} data-widget_type="text-editor.default">
+                        <div className="elementor-element elementor-element-4852935 elementor-widget elementor-widget-text-editor" data-element_type="widget" data-id="4852935" data-widget_type="text-editor.default">
                           <div className="elementor-widget-container">
                             <p>Do you have any specific questions about us, our services, or anything related to pest infestation issues? Call us today on&nbsp;<a href="tel:+61434660060">( +61 434 660 060 )</a>&nbsp;or use our contact form to connect with our&nbsp;<b>7 States Pest Control</b>.</p><p className="font-claude-response-body break-words whitespace-normal leading-[1.7]">You can get answers to your questions, get upfront quotes for all your pest control issues, and receive high-quality tailored services. Need help beyond termites? We also provide expert <Link className="underline underline underline-offset-2 decoration-1 decoration-current/40 hover:decoration-current focus:decoration-current" to="/rodent-control-in-melbourne">rodent pest control Melbourne</Link> to keep your property fully protected.</p> </div>
                         </div>

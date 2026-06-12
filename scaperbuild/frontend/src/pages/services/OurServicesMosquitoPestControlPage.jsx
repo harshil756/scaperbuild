@@ -1,3 +1,4 @@
+import PhoneNumberInput from '../../components/PhoneNumberInput.jsx'
 import usePageMeta from '../../hooks/usePageMeta.js'
 import { Link } from 'react-router-dom'
 
@@ -7,7 +8,7 @@ export default function OurServicesMosquitoPestControlPage() {
   return (
     <>
       <div className="elementor elementor-1463" data-elementor-id={1463} data-elementor-post-type="page" data-elementor-type="wp-page">
-        <div className="elementor-element elementor-element-1357195 e-flex e-con-boxed e-con e-parent e-lazyloaded" data-element_type="container" data-id={1357195} data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+        <div className="elementor-element elementor-element-1357195 e-flex e-con-boxed e-con e-parent e-lazyloaded" data-element_type="container" data-id="1357195" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
           <div className="e-con-inner">
             <div className="elementor-element elementor-element-ffa67ba e-con-full e-flex e-con e-child" data-element_type="container" data-id="ffa67ba">
               <div className="elementor-element elementor-element-4ce661b elementor-icon-list--layout-inline elementor-align-left elementor-widget__width-auto elementor-list-item-link-full_width elementor-widget elementor-widget-icon-list" data-element_type="widget" data-id="4ce661b" data-settings="{&quot;_animation&quot;:&quot;none&quot;,&quot;_animation_delay&quot;:720}" data-widget_type="icon-list.default">
@@ -77,7 +78,7 @@ export default function OurServicesMosquitoPestControlPage() {
                       <div className="elementor-field-type-tel elementor-field-group elementor-column elementor-field-group-mobile_number elementor-col-100 elementor-field-required">
                         <label className="elementor-field-label elementor-screen-only" htmlFor="form-field-mobile_number">
                           Mobile Number							</label>
-                        <div className="iti iti--allow-dropdown iti--show-flags cfefp-intl-container iti--inline-dropdown"><div className="iti__country-container"><div aria-controls="iti-0__dropdown-content" aria-expanded="false" aria-haspopup="true" aria-label="Selected country" className="iti__selected-country" role="combobox" tabIndex={0} title="Australia: +61" type="div"><div className="iti__selected-country-primary"><div className="iti__flag iti__au" style={{backgroundImage: 'url("assets/images/au_f5de9214.svg")'}}><span className="iti__a11y-text">Australia +61</span></div><div aria-hidden="true" className="iti__arrow" /></div></div></div><input autoComplete="off" className="elementor-field elementor-size-md elementor-field-textual iti__tel-input" data-intl-tel-input-id={0} id="form-field-mobile_number" name="form_fields[mobile_number]" placeholder="Mobile Number" required title="Only numbers and phone characters (#, -, *, etc) are accepted." type="tel" /></div>
+                        <PhoneNumberInput id="form-field-mobile_number" name="form_fields[mobile_number]" size="md" />
                       </div>
                       <div className="elementor-field-type-textarea elementor-field-group elementor-column elementor-field-group-message elementor-col-100 elementor-field-required">
                         <label className="elementor-field-label elementor-screen-only" htmlFor="form-field-message">
@@ -122,7 +123,7 @@ export default function OurServicesMosquitoPestControlPage() {
                     </div>
                     <div className="elementor-column elementor-col-50 elementor-inner-column elementor-element elementor-element-c1ca80d" data-element_type="column" data-id="c1ca80d" data-settings="{&quot;animation&quot;:&quot;none&quot;,&quot;background_background&quot;:&quot;classic&quot;}">
                       <div className="elementor-widget-wrap elementor-element-populated">
-                        <div className="elementor-element elementor-element-3798510 elementor-widget elementor-widget-spacer" data-element_type="widget" data-id={3798510} data-widget_type="spacer.default">
+                        <div className="elementor-element elementor-element-3798510 elementor-widget elementor-widget-spacer" data-element_type="widget" data-id="3798510" data-widget_type="spacer.default">
                           <div className="elementor-widget-container">
                             <div className="elementor-spacer">
                               <div className="elementor-spacer-inner" />
@@ -156,7 +157,7 @@ export default function OurServicesMosquitoPestControlPage() {
                 </div>
                 <div className="elementor-element elementor-element-88628bc e-flex e-con-boxed e-con e-parent e-lazyloaded" data-element_type="container" data-id="88628bc">
                   <div className="e-con-inner">
-                    <div className="elementor-element elementor-element-0559075 e-con-full e-flex e-con e-child" data-element_type="container" data-id={0559075}>
+                    <div className="elementor-element elementor-element-0559075 e-con-full e-flex e-con e-child" data-element_type="container" data-id="0559075">
                       <div className="elementor-element elementor-element-b484fe7 elementor-align-left elementor-icon-list--layout-traditional elementor-list-item-link-full_width elementor-widget elementor-widget-icon-list" data-element_type="widget" data-id="b484fe7" data-widget_type="icon-list.default">
                         <div className="elementor-widget-container">
                           <ul className="elementor-icon-list-items">
@@ -299,7 +300,7 @@ export default function OurServicesMosquitoPestControlPage() {
                   <div className="elementor-container elementor-column-gap-default">
                     <div className="elementor-column elementor-col-50 elementor-inner-column elementor-element elementor-element-6a641d8" data-element_type="column" data-id="6a641d8" data-settings="{&quot;animation&quot;:&quot;none&quot;}">
                       <div className="elementor-widget-wrap elementor-element-populated">
-                        <div className="elementor-element elementor-element-2772224 elementor-widget elementor-widget-heading" data-element_type="widget" data-id={2772224} data-settings="{&quot;_animation&quot;:&quot;none&quot;}" data-widget_type="heading.default">
+                        <div className="elementor-element elementor-element-2772224 elementor-widget elementor-widget-heading" data-element_type="widget" data-id="2772224" data-settings="{&quot;_animation&quot;:&quot;none&quot;}" data-widget_type="heading.default">
                           <div className="elementor-widget-container">
                             <h2 className="elementor-heading-title elementor-size-default">Stages of Treatment</h2> </div>
                         </div>
@@ -365,7 +366,7 @@ export default function OurServicesMosquitoPestControlPage() {
           <div className="e-con-inner">
             <div className="elementor-element elementor-element-5240a58 e-con-full e-flex e-con e-child" data-element_type="container" data-id="5240a58" data-settings="{&quot;background_background&quot;:&quot;classic&quot;,&quot;animation&quot;:&quot;none&quot;}">
               <div className="elementor-element elementor-element-fb814b8 e-con-full e-flex e-con e-child" data-element_type="container" data-id="fb814b8" data-settings="{&quot;background_background&quot;:&quot;classic&quot;,&quot;animation&quot;:&quot;none&quot;}">
-                <div className="elementor-element elementor-element-9984806 elementor-widget elementor-widget-heading" data-element_type="widget" data-id={9984806} data-widget_type="heading.default">
+                <div className="elementor-element elementor-element-9984806 elementor-widget elementor-widget-heading" data-element_type="widget" data-id="9984806" data-widget_type="heading.default">
                   <div className="elementor-widget-container">
                     <h2 className="elementor-heading-title elementor-size-default">Protect</h2> </div>
                 </div>
@@ -395,7 +396,7 @@ export default function OurServicesMosquitoPestControlPage() {
                   <div className="elementor-widget-container">
                     <p>We will monitor standing water source to:</p> </div>
                 </div>
-                <div className="elementor-element elementor-element-1403332 elementor-align-left elementor-icon-list--layout-traditional elementor-list-item-link-full_width elementor-widget elementor-widget-icon-list" data-element_type="widget" data-id={1403332} data-widget_type="icon-list.default">
+                <div className="elementor-element elementor-element-1403332 elementor-align-left elementor-icon-list--layout-traditional elementor-list-item-link-full_width elementor-widget elementor-widget-icon-list" data-element_type="widget" data-id="1403332" data-widget_type="icon-list.default">
                   <div className="elementor-widget-container">
                     <ul className="elementor-icon-list-items">
                       <li className="elementor-icon-list-item">
@@ -596,7 +597,7 @@ export default function OurServicesMosquitoPestControlPage() {
                           <div className="elementor-widget-container">
                             <h6 className="elementor-heading-title elementor-size-default">EXCELLENT</h6> </div>
                         </div>
-                        <div className="elementor-element elementor-element-5888580 elementor-widget elementor-widget-rating" data-element_type="widget" data-id={5888580} data-widget_type="rating.default">
+                        <div className="elementor-element elementor-element-5888580 elementor-widget elementor-widget-rating" data-element_type="widget" data-id="5888580" data-widget_type="rating.default">
                           <div className="elementor-widget-container">
                             <div className="e-rating" itemProp="reviewRating" itemScope itemType="https://schema.org/Rating">
                               <meta content={0} itemProp="worstRating" />

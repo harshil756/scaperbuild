@@ -4,6 +4,10 @@ import { BLOG_POST_PAGE_META } from '../config/blogPostPageMeta.js'
 import { CONTACT_PAGE_META } from '../config/contactPageMeta.js'
 import { COMMERCIAL_OFFICE_PAGE_META } from '../config/commercialOfficePageMeta.js'
 import { SERVICE_PAGE_META } from '../config/servicePageMeta.js'
+import { THANK_YOU_PAGE_META } from '../config/thankYouPageMeta.js'
+import { PAGE_SEO_EXTRA } from '../config/pageSeoExtra.js'
+import { applyPageSeo, restorePageSeo } from '../utils/applyPageSeo.js'
+import { pageKeyToSlug } from '../utils/pageKeyToSlug.js'
 
 const PAGE_META = {
   home: {
@@ -25,6 +29,7 @@ const PAGE_META = {
   ...BLOG_PAGE_META,
   ...BLOG_POST_PAGE_META,
   ...CONTACT_PAGE_META,
+  ...THANK_YOU_PAGE_META,
 }
 
 export default function usePageMeta(pageKey) {
@@ -32,23 +37,10 @@ export default function usePageMeta(pageKey) {
     const meta = PAGE_META[pageKey]
     if (!meta) return undefined
 
-    const previousTitle = document.title
-    const previousBodyClass = document.body.className
-    const descriptionTag = document.querySelector('meta[name="description"]')
-    const previousDescription = descriptionTag?.getAttribute('content') ?? ''
+    const slug = pageKeyToSlug(pageKey)
+    const seoExtra = PAGE_SEO_EXTRA[slug] ?? {}
+    const state = applyPageSeo(meta, seoExtra)
 
-    document.title = meta.title
-    document.body.className = meta.bodyClass
-    if (descriptionTag) {
-      descriptionTag.setAttribute('content', meta.description)
-    }
-
-    return () => {
-      document.title = previousTitle
-      document.body.className = previousBodyClass
-      if (descriptionTag) {
-        descriptionTag.setAttribute('content', previousDescription)
-      }
-    }
+    return () => restorePageSeo(state)
   }, [pageKey])
 }

@@ -1,3 +1,4 @@
+import PhoneNumberInput from '../../components/PhoneNumberInput.jsx'
 import usePageMeta from '../../hooks/usePageMeta.js'
 import { Link } from 'react-router-dom'
 
@@ -77,7 +78,7 @@ export default function OurServicesMothControlPage() {
                       <div className="elementor-field-type-tel elementor-field-group elementor-column elementor-field-group-mobile_number elementor-col-100 elementor-field-required">
                         <label className="elementor-field-label elementor-screen-only" htmlFor="form-field-mobile_number">
                           Mobile Number							</label>
-                        <div className="iti iti--allow-dropdown iti--show-flags cfefp-intl-container iti--inline-dropdown"><div className="iti__country-container"><div aria-controls="iti-0__dropdown-content" aria-expanded="false" aria-haspopup="true" aria-label="Selected country" className="iti__selected-country" role="combobox" tabIndex={0} title="Australia: +61" type="div"><div className="iti__selected-country-primary"><div className="iti__flag iti__au" style={{backgroundImage: 'url("assets/images/au_f5de9214.svg")'}}><span className="iti__a11y-text">Australia +61</span></div><div aria-hidden="true" className="iti__arrow" /></div></div></div><input autoComplete="off" className="elementor-field elementor-size-md elementor-field-textual iti__tel-input" data-intl-tel-input-id={0} id="form-field-mobile_number" name="form_fields[mobile_number]" placeholder="Mobile Number" required title="Only numbers and phone characters (#, -, *, etc) are accepted." type="tel" /></div>
+                        <PhoneNumberInput id="form-field-mobile_number" name="form_fields[mobile_number]" size="md" />
                       </div>
                       <div className="elementor-field-type-textarea elementor-field-group elementor-column elementor-field-group-message elementor-col-100 elementor-field-required">
                         <label className="elementor-field-label elementor-screen-only" htmlFor="form-field-message">
@@ -122,7 +123,7 @@ export default function OurServicesMothControlPage() {
                     </div>
                     <div className="elementor-column elementor-col-50 elementor-inner-column elementor-element elementor-element-c1ca80d" data-element_type="column" data-id="c1ca80d" data-settings="{&quot;animation&quot;:&quot;none&quot;,&quot;background_background&quot;:&quot;classic&quot;}">
                       <div className="elementor-widget-wrap elementor-element-populated">
-                        <div className="elementor-element elementor-element-3798510 elementor-widget elementor-widget-spacer" data-element_type="widget" data-id={3798510} data-widget_type="spacer.default">
+                        <div className="elementor-element elementor-element-3798510 elementor-widget elementor-widget-spacer" data-element_type="widget" data-id="3798510" data-widget_type="spacer.default">
                           <div className="elementor-widget-container">
                             <div className="elementor-spacer">
                               <div className="elementor-spacer-inner" />
@@ -409,7 +410,7 @@ export default function OurServicesMothControlPage() {
                   <div className="elementor-widget-container">
                     <h2 className="elementor-heading-title elementor-size-default">Frequently Asked Questions</h2> </div>
                 </div>
-                <div className="elementor-element elementor-element-5146096 elementor-widget elementor-widget-elementskit-accordion" data-element_type="widget" data-id={5146096} data-widget_type="elementskit-accordion.default">
+                <div className="elementor-element elementor-element-5146096 elementor-widget elementor-widget-elementskit-accordion" data-element_type="widget" data-id="5146096" data-widget_type="elementskit-accordion.default">
                   <div className="elementor-widget-container">
                     <div className="ekit-wid-con">
                       <div className="elementskit-accordion accoedion-primary" id="accordion-6a15903b169f6">
@@ -543,7 +544,7 @@ export default function OurServicesMothControlPage() {
           <div className="elementor-container elementor-column-gap-default">
             <div className="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-d9f5a98" data-element_type="column" data-id="d9f5a98">
               <div className="elementor-widget-wrap elementor-element-populated">
-                <section className="elementor-section elementor-inner-section elementor-element elementor-element-4172835 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-element_type="section" data-id={4172835}>
+                <section className="elementor-section elementor-inner-section elementor-element elementor-element-4172835 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-element_type="section" data-id="4172835">
                   <div className="elementor-container elementor-column-gap-default">
                     <div className="elementor-column elementor-col-50 elementor-inner-column elementor-element elementor-element-d13ece9" data-element_type="column" data-id="d13ece9">
                       <div className="elementor-widget-wrap elementor-element-populated">
@@ -679,7 +680,7 @@ export default function OurServicesMothControlPage() {
                         <div className="elementor-field-type-tel elementor-field-group elementor-column elementor-field-group-mobile_number elementor-col-100 elementor-field-required">
                           <label className="elementor-field-label elementor-screen-only" htmlFor="form-field-mobile_number">
                             Mobile Number							</label>
-                          <div className="iti iti--allow-dropdown iti--show-flags cfefp-intl-container iti--inline-dropdown"><div className="iti__country-container"><div aria-controls="iti-1__dropdown-content" aria-expanded="false" aria-haspopup="true" aria-label="Selected country" className="iti__selected-country" role="combobox" tabIndex={0} title="India: +91" type="div"><div className="iti__selected-country-primary"><div className="iti__flag iti__in" style={{backgroundImage: 'url("assets/images/in_e9946ba4.svg")'}}><span className="iti__a11y-text">India +91</span></div><div aria-hidden="true" className="iti__arrow" /></div></div></div><input autoComplete="off" className="elementor-field elementor-size-lg elementor-field-textual iti__tel-input" data-intl-tel-input-id={1} id="form-field-mobile_number" name="form_fields[mobile_number]" placeholder="Mobile Number" required title="Only numbers and phone characters (#, -, *, etc) are accepted." type="tel" /></div>
+                          <PhoneNumberInput id="form-field-mobile_number" name="form_fields[mobile_number]" size="lg" />
                         </div>
                         <div className="elementor-field-type-textarea elementor-field-group elementor-column elementor-field-group-message elementor-col-100 elementor-field-required">
                           <label className="elementor-field-label elementor-screen-only" htmlFor="form-field-message">

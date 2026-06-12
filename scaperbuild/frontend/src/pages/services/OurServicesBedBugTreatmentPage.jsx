@@ -1,3 +1,4 @@
+import PhoneNumberInput from '../../components/PhoneNumberInput.jsx'
 import usePageMeta from '../../hooks/usePageMeta.js'
 import { Link } from 'react-router-dom'
 
@@ -77,7 +78,7 @@ export default function OurServicesBedBugTreatmentPage() {
                       <div className="elementor-field-type-tel elementor-field-group elementor-column elementor-field-group-mobile_number elementor-col-100 elementor-field-required">
                         <label className="elementor-field-label elementor-screen-only" htmlFor="form-field-mobile_number">
                           Mobile Number							</label>
-                        <div className="iti iti--allow-dropdown iti--show-flags cfefp-intl-container iti--inline-dropdown"><div className="iti__country-container"><div aria-controls="iti-0__dropdown-content" aria-expanded="false" aria-haspopup="true" aria-label="Selected country" className="iti__selected-country" role="combobox" tabIndex={0} title="Australia: +61" type="div"><div className="iti__selected-country-primary"><div className="iti__flag iti__au" style={{backgroundImage: 'url("assets/images/au_f5de9214.svg")'}}><span className="iti__a11y-text">Australia +61</span></div><div aria-hidden="true" className="iti__arrow" /></div></div></div><input autoComplete="off" className="elementor-field elementor-size-md elementor-field-textual iti__tel-input" data-intl-tel-input-id={0} id="form-field-mobile_number" name="form_fields[mobile_number]" placeholder="Mobile Number" required title="Only numbers and phone characters (#, -, *, etc) are accepted." type="tel" /></div>
+                        <PhoneNumberInput id="form-field-mobile_number" name="form_fields[mobile_number]" size="md" />
                       </div>
                       <div className="elementor-field-type-textarea elementor-field-group elementor-column elementor-field-group-message elementor-col-100 elementor-field-required">
                         <label className="elementor-field-label elementor-screen-only" htmlFor="form-field-message">
@@ -792,7 +793,7 @@ export default function OurServicesBedBugTreatmentPage() {
                             </div>
                           </div>
                         </div>
-                        <div className="elementor-element elementor-element-2295328 elementor-widget elementor-widget-text-editor" data-element_type="widget" data-id={2295328} data-widget_type="text-editor.default">
+                        <div className="elementor-element elementor-element-2295328 elementor-widget elementor-widget-text-editor" data-element_type="widget" data-id="2295328" data-widget_type="text-editor.default">
                           <div className="elementor-widget-container">
                             <p>Based on&nbsp;45 reviews</p> </div>
                         </div>
@@ -823,7 +824,7 @@ export default function OurServicesBedBugTreatmentPage() {
         </section>
         <section className="elementor-section elementor-top-section elementor-element elementor-element-f10d1df elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-element_type="section" data-id="f10d1df">
           <div className="elementor-container elementor-column-gap-default">
-            <div className="elementor-column elementor-col-66 elementor-top-column elementor-element elementor-element-3903393" data-element_type="column" data-id={3903393}>
+            <div className="elementor-column elementor-col-66 elementor-top-column elementor-element elementor-element-3903393" data-element_type="column" data-id="3903393">
               <div className="elementor-widget-wrap elementor-element-populated">
                 <div className="elementor-element elementor-element-251b4bd elementor-widget elementor-widget-heading" data-element_type="widget" data-id="251b4bd" data-settings="{&quot;_animation&quot;:&quot;none&quot;}" data-widget_type="heading.default">
                   <div className="elementor-widget-container">
@@ -923,7 +924,7 @@ export default function OurServicesBedBugTreatmentPage() {
                 </div>
               </div>
             </div>
-            <div className="elementor-column elementor-col-33 elementor-top-column elementor-element elementor-element-6939443" data-element_type="column" data-id={6939443}>
+            <div className="elementor-column elementor-col-33 elementor-top-column elementor-element elementor-element-6939443" data-element_type="column" data-id="6939443">
               <div className="elementor-widget-wrap elementor-element-populated">
                 <section className="elementor-section elementor-inner-section elementor-element elementor-element-f149059 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-element_type="section" data-id="f149059">
                   <div className="elementor-container elementor-column-gap-no">

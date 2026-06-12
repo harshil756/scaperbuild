@@ -44,3 +44,38 @@
     display: inline-flex !important;
   }
 }
+
+/* Match old site: show flag + country name + dial code in phone dropdown */
+.cfefp-intl-container.iti--flexible-dropdown-width .iti__dropdown-content {
+  min-width: 280px;
+}
+
+.cfefp-intl-container .iti__country-name {
+  display: inline-block;
+  margin-right: 6px;
+}
+
+.cfefp-intl-container .iti__country-list .iti__country {
+  white-space: nowrap;
+}
+
+/*
+ * country-code-style.min.css sets background-position:center and background-size:cover
+ * on ALL flags inside .iti__country-container (including the dropdown list).
+ * Override position/size only — keep background-image from intlTelInput.min.css
+ * (re-declaring url() vars here breaks paths because they resolve from /assets/).
+ */
+.cfefp-intl-container .iti__country-list .iti__flag:not(.iti__globe),
+.cfefp-intl-container .iti__selected-country-primary .iti__flag:not(.iti__globe) {
+  background-repeat: no-repeat !important;
+  background-size: var(--iti-flag-sprite-width) var(--iti-flag-sprite-height) !important;
+  background-position: var(--iti-flag-offset) 0 !important;
+  height: var(--iti-flag-height) !important;
+  width: var(--iti-flag-width) !important;
+}
+
+.elementor-widget-posts .elementor-button-wrapper button.elementor-button {
+  border: none;
+  cursor: pointer;
+  font: inherit;
+}

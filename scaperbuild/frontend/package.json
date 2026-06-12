@@ -18,7 +18,10 @@
     "convert:blog-posts": "node scripts/convert-blog-posts.mjs",
     "fix:links": "node scripts/fix-internal-links.mjs",
     "fix:blog-links": "node scripts/fix-blog-links.mjs",
-    "refresh:blogs": "npm run convert:blog-posts && npm run fix:blog-links"
+    "refresh:blogs": "npm run convert:blog-posts && npm run fix:blog-links",
+    "generate:seo": "node scripts/generate-page-seo-extra.mjs",
+    "sync:sitemaps": "node scripts/sync-sitemaps.mjs",
+    "verify:sitemaps": "node scripts/verify-sitemap-routes.mjs"
   },
   "dependencies": {
     "react": "^19.2.6",

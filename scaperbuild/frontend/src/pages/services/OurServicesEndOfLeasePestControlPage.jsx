@@ -1,3 +1,4 @@
+import PhoneNumberInput from '../../components/PhoneNumberInput.jsx'
 import usePageMeta from '../../hooks/usePageMeta.js'
 import { Link } from 'react-router-dom'
 
@@ -56,7 +57,7 @@ export default function OurServicesEndOfLeasePestControlPage() {
                 <div className="elementor-widget-container">
                   <h6 className="elementor-heading-title elementor-size-default">Have an enquiry? Leave us your details and we’ll call you back during business hours.</h6> </div>
               </div>
-              <div className="elementor-element elementor-element-5684880 elementor-button-align-center elementor-widget elementor-widget-form" data-element_type="widget" data-id={5684880} data-settings="{&quot;step_next_label&quot;:&quot;Next&quot;,&quot;step_previous_label&quot;:&quot;Previous&quot;,&quot;button_width&quot;:&quot;100&quot;,&quot;step_type&quot;:&quot;number_text&quot;,&quot;step_icon_shape&quot;:&quot;circle&quot;}" data-widget_type="form.default">
+              <div className="elementor-element elementor-element-5684880 elementor-button-align-center elementor-widget elementor-widget-form" data-element_type="widget" data-id="5684880" data-settings="{&quot;step_next_label&quot;:&quot;Next&quot;,&quot;step_previous_label&quot;:&quot;Previous&quot;,&quot;button_width&quot;:&quot;100&quot;,&quot;step_type&quot;:&quot;number_text&quot;,&quot;step_icon_shape&quot;:&quot;circle&quot;}" data-widget_type="form.default">
                 <div className="elementor-widget-container">
                   <form aria-label="New Form" className="elementor-form" id="home_contact_form" method="post" name="New Form">
                     <input name="post_id" type="hidden" defaultValue={1666} />
@@ -77,7 +78,7 @@ export default function OurServicesEndOfLeasePestControlPage() {
                       <div className="elementor-field-type-tel elementor-field-group elementor-column elementor-field-group-mobile_number elementor-col-100 elementor-field-required">
                         <label className="elementor-field-label elementor-screen-only" htmlFor="form-field-mobile_number">
                           Mobile Number							</label>
-                        <div className="iti iti--allow-dropdown iti--show-flags cfefp-intl-container iti--inline-dropdown"><div className="iti__country-container"><div aria-controls="iti-0__dropdown-content" aria-expanded="false" aria-haspopup="true" aria-label="Selected country" className="iti__selected-country" role="combobox" tabIndex={0} title="Australia: +61" type="div"><div className="iti__selected-country-primary"><div className="iti__flag iti__au" style={{backgroundImage: 'url("assets/images/au_f5de9214.svg")'}}><span className="iti__a11y-text">Australia +61</span></div><div aria-hidden="true" className="iti__arrow" /></div></div></div><input autoComplete="off" className="elementor-field elementor-size-md elementor-field-textual iti__tel-input" data-intl-tel-input-id={0} id="form-field-mobile_number" name="form_fields[mobile_number]" placeholder="Mobile Number" required title="Only numbers and phone characters (#, -, *, etc) are accepted." type="tel" /></div>
+                        <PhoneNumberInput id="form-field-mobile_number" name="form_fields[mobile_number]" size="md" />
                       </div>
                       <div className="elementor-field-type-textarea elementor-field-group elementor-column elementor-field-group-message elementor-col-100 elementor-field-required">
                         <label className="elementor-field-label elementor-screen-only" htmlFor="form-field-message">
@@ -266,7 +267,7 @@ export default function OurServicesEndOfLeasePestControlPage() {
                           <div className="elementor-widget-container">
                             <h2 className="elementor-heading-title elementor-size-default">Clients Reviews</h2> </div>
                         </div>
-                        <div className="elementor-element elementor-element-4725065 elementor-widget elementor-widget-heading" data-element_type="widget" data-id={4725065} data-settings="{&quot;_animation&quot;:&quot;none&quot;}" data-widget_type="heading.default">
+                        <div className="elementor-element elementor-element-4725065 elementor-widget elementor-widget-heading" data-element_type="widget" data-id="4725065" data-settings="{&quot;_animation&quot;:&quot;none&quot;}" data-widget_type="heading.default">
                           <div className="elementor-widget-container">
                             <h2 className="elementor-heading-title elementor-size-default">7 States Pest Control for Reliable Pest Management Solutions</h2> </div>
                         </div>

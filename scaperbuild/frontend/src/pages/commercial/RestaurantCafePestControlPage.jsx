@@ -1,3 +1,4 @@
+import PhoneNumberInput from '../../components/PhoneNumberInput.jsx'
 import usePageMeta from '../../hooks/usePageMeta.js'
 import { Link } from 'react-router-dom'
 
@@ -70,7 +71,7 @@ export default function RestaurantCafePestControlPage() {
                       <div className="elementor-field-type-tel elementor-field-group elementor-column elementor-field-group-mobile_number elementor-col-100 elementor-field-required">
                         <label className="elementor-field-label elementor-screen-only" htmlFor="form-field-mobile_number">
                           Mobile Number							</label>
-                        <div className="iti iti--allow-dropdown iti--show-flags cfefp-intl-container iti--inline-dropdown"><div className="iti__country-container"><div aria-controls="iti-0__dropdown-content" aria-expanded="false" aria-haspopup="true" aria-label="Selected country" className="iti__selected-country" role="combobox" tabIndex={0} title="Australia: +61" type="div"><div className="iti__selected-country-primary"><div className="iti__flag iti__au" style={{backgroundImage: 'url("assets/images/au_f5de9214.svg")'}}><span className="iti__a11y-text">Australia +61</span></div><div aria-hidden="true" className="iti__arrow" /></div></div></div><input autoComplete="off" className="elementor-field elementor-size-md elementor-field-textual iti__tel-input" data-intl-tel-input-id={0} id="form-field-mobile_number" name="form_fields[mobile_number]" placeholder="Mobile Number" required title="Only numbers and phone characters (#, -, *, etc) are accepted." type="tel" /></div>
+                        <PhoneNumberInput id="form-field-mobile_number" name="form_fields[mobile_number]" size="md" />
                       </div>
                       <div className="elementor-field-type-textarea elementor-field-group elementor-column elementor-field-group-message elementor-col-100 elementor-field-required">
                         <label className="elementor-field-label elementor-screen-only" htmlFor="form-field-message">
@@ -331,7 +332,7 @@ export default function RestaurantCafePestControlPage() {
                   </div> </div>
               </div>
             </div>
-            <div className="elementor-element elementor-element-5491763 e-con-full e-flex e-con e-child" data-element_type="container" data-id={5491763}>
+            <div className="elementor-element elementor-element-5491763 e-con-full e-flex e-con e-child" data-element_type="container" data-id="5491763">
               <div className="elementor-element elementor-element-54d339c ekit-equal-height-enable elementor-widget elementor-widget-elementskit-image-box" data-element_type="widget" data-id="54d339c" data-widget_type="elementskit-image-box.default">
                 <div className="elementor-widget-container">
                   <div className="ekit-wid-con">
@@ -425,7 +426,7 @@ export default function RestaurantCafePestControlPage() {
                         </div>
                       </div>
                     </div>
-                    <div className="elementor-column elementor-col-50 elementor-inner-column elementor-element elementor-element-2090665" data-element_type="column" data-id={2090665} data-settings="{&quot;animation&quot;:&quot;none&quot;}">
+                    <div className="elementor-column elementor-col-50 elementor-inner-column elementor-element elementor-element-2090665" data-element_type="column" data-id="2090665" data-settings="{&quot;animation&quot;:&quot;none&quot;}">
                       <div className="elementor-widget-wrap elementor-element-populated">
                         <div className="elementor-element elementor-element-f1792d0 elementor-widget elementor-widget-text-editor" data-element_type="widget" data-id="f1792d0" data-widget_type="text-editor.default">
                           <div className="elementor-widget-container">
@@ -519,7 +520,7 @@ export default function RestaurantCafePestControlPage() {
                 <div className="elementor-element elementor-element-6d83d02 e-flex e-con-boxed e-con e-parent e-lazyloaded" data-element_type="container" data-id="6d83d02">
                   <div className="e-con-inner">
                     <div className="elementor-element elementor-element-394b55e e-con-full e-flex e-con e-child" data-element_type="container" data-id="394b55e">
-                      <div className="elementor-element elementor-element-9786458 ekit-equal-height-disable elementor-widget elementor-widget-elementskit-icon-box" data-element_type="widget" data-id={9786458} data-widget_type="elementskit-icon-box.default">
+                      <div className="elementor-element elementor-element-9786458 ekit-equal-height-disable elementor-widget elementor-widget-elementskit-icon-box" data-element_type="widget" data-id="9786458" data-widget_type="elementskit-icon-box.default">
                         <div className="elementor-widget-container">
                           <div className="ekit-wid-con">
                             <div className="elementskit-infobox text-left text-left icon-top-align elementor-animation-">
@@ -592,7 +593,7 @@ export default function RestaurantCafePestControlPage() {
                 <div className="elementor-element elementor-element-cadaa86 e-flex e-con-boxed e-con e-parent e-lazyloaded" data-element_type="container" data-id="cadaa86">
                   <div className="e-con-inner">
                     <div className="elementor-element elementor-element-04004a3 e-con-full e-flex e-con e-child" data-element_type="container" data-id="04004a3">
-                      <div className="elementor-element elementor-element-7891756 ekit-equal-height-disable elementor-widget elementor-widget-elementskit-icon-box" data-element_type="widget" data-id={7891756} data-widget_type="elementskit-icon-box.default">
+                      <div className="elementor-element elementor-element-7891756 ekit-equal-height-disable elementor-widget elementor-widget-elementskit-icon-box" data-element_type="widget" data-id="7891756" data-widget_type="elementskit-icon-box.default">
                         <div className="elementor-widget-container">
                           <div className="ekit-wid-con">
                             <div className="elementskit-infobox text-left text-left icon-top-align elementor-animation-">

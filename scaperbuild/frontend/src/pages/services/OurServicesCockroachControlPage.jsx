@@ -1,3 +1,4 @@
+import PhoneNumberInput from '../../components/PhoneNumberInput.jsx'
 import usePageMeta from '../../hooks/usePageMeta.js'
 import { Link } from 'react-router-dom'
 
@@ -34,7 +35,7 @@ export default function OurServicesCockroachControlPage() {
                   </ul>
                 </div>
               </div>
-              <div className="elementor-element elementor-element-6066522 elementor-widget elementor-widget-heading" data-element_type="widget" data-id={6066522} data-settings="{&quot;_animation&quot;:&quot;none&quot;}" data-widget_type="heading.default">
+              <div className="elementor-element elementor-element-6066522 elementor-widget elementor-widget-heading" data-element_type="widget" data-id="6066522" data-settings="{&quot;_animation&quot;:&quot;none&quot;}" data-widget_type="heading.default">
                 <div className="elementor-widget-container">
                   <h2 className="elementor-heading-title elementor-size-default">Cockroaches Pest Control</h2> </div>
               </div>
@@ -47,7 +48,7 @@ export default function OurServicesCockroachControlPage() {
                   <div className="elementor-element elementor-element-de434cf elementor-widget elementor-widget-text-editor" data-element_type="widget" data-id="de434cf" data-settings="{&quot;ekit_we_effect_on&quot;:&quot;none&quot;}" data-widget_type="text-editor.default"><div className="elementor-widget-container"><p>We don’t usually attribute much importance to cockroaches in our property. But cockroaches are a high-risk pest to have at your home or office. They carry a wide range of serious illnesses, including dysentery, food poisoning, typhoid, etc. Moreover, cockroaches are the carriers of some major allergens.</p></div></div><div className="elementor-element elementor-element-08bd23f elementor-widget elementor-widget-text-editor" data-element_type="widget" data-id="08bd23f" data-settings="{&quot;ekit_we_effect_on&quot;:&quot;none&quot;}" data-widget_type="text-editor.default"><div className="elementor-widget-container"><p>They are often the cause of asthma, eczema and other serious forms of skin allergies. The health risk associated with cockroaches is particularly high in homes with children, the elderly or those recuperating from illnesses.&nbsp;<Link to="/"><strong>7 States Pest Control</strong></Link>&nbsp;offers you with effective&nbsp;<strong>cockroach control</strong>&nbsp;and elimination services. Contact us to know more about our cockroach pest control services.&nbsp;&nbsp;</p></div></div> </div>
               </div>
             </div>
-            <div className="elementor-element elementor-element-2159630 e-con-full e-flex e-con e-child" data-element_type="container" data-id={2159630} data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+            <div className="elementor-element elementor-element-2159630 e-con-full e-flex e-con e-child" data-element_type="container" data-id="2159630" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
               <div className="elementor-element elementor-element-2824f6c elementor-widget elementor-widget-heading" data-element_type="widget" data-id="2824f6c" data-widget_type="heading.default">
                 <div className="elementor-widget-container">
                   <h2 className="elementor-heading-title elementor-size-default">Get A Free Quote Now!</h2> </div>
@@ -77,7 +78,7 @@ export default function OurServicesCockroachControlPage() {
                       <div className="elementor-field-type-tel elementor-field-group elementor-column elementor-field-group-mobile_number elementor-col-100 elementor-field-required">
                         <label className="elementor-field-label elementor-screen-only" htmlFor="form-field-mobile_number">
                           Mobile Number							</label>
-                        <div className="iti iti--allow-dropdown iti--show-flags cfefp-intl-container iti--inline-dropdown"><div className="iti__country-container"><div aria-controls="iti-0__dropdown-content" aria-expanded="false" aria-haspopup="true" aria-label="Selected country" className="iti__selected-country" role="combobox" tabIndex={0} title="Australia: +61" type="div"><div className="iti__selected-country-primary"><div className="iti__flag iti__au" style={{backgroundImage: 'url("assets/images/au_f5de9214.svg")'}}><span className="iti__a11y-text">Australia +61</span></div><div aria-hidden="true" className="iti__arrow" /></div></div></div><input autoComplete="off" className="elementor-field elementor-size-md elementor-field-textual iti__tel-input" data-intl-tel-input-id={0} id="form-field-mobile_number" name="form_fields[mobile_number]" placeholder="Mobile Number" required title="Only numbers and phone characters (#, -, *, etc) are accepted." type="tel" /></div>
+                        <PhoneNumberInput id="form-field-mobile_number" name="form_fields[mobile_number]" size="md" />
                       </div>
                       <div className="elementor-field-type-textarea elementor-field-group elementor-column elementor-field-group-message elementor-col-100 elementor-field-required">
                         <label className="elementor-field-label elementor-screen-only" htmlFor="form-field-message">
@@ -122,7 +123,7 @@ export default function OurServicesCockroachControlPage() {
                     </div>
                     <div className="elementor-column elementor-col-50 elementor-inner-column elementor-element elementor-element-c1ca80d" data-element_type="column" data-id="c1ca80d" data-settings="{&quot;animation&quot;:&quot;none&quot;,&quot;background_background&quot;:&quot;classic&quot;}">
                       <div className="elementor-widget-wrap elementor-element-populated">
-                        <div className="elementor-element elementor-element-3798510 elementor-widget elementor-widget-spacer" data-element_type="widget" data-id={3798510} data-widget_type="spacer.default">
+                        <div className="elementor-element elementor-element-3798510 elementor-widget elementor-widget-spacer" data-element_type="widget" data-id="3798510" data-widget_type="spacer.default">
                           <div className="elementor-widget-container">
                             <div className="elementor-spacer">
                               <div className="elementor-spacer-inner" />
@@ -156,7 +157,7 @@ export default function OurServicesCockroachControlPage() {
                 </div>
                 <div className="elementor-element elementor-element-88628bc e-flex e-con-boxed e-con e-parent e-lazyloaded" data-element_type="container" data-id="88628bc" data-settings="{&quot;animation&quot;:&quot;none&quot;}">
                   <div className="e-con-inner">
-                    <div className="elementor-element elementor-element-0559075 e-con-full e-flex e-con e-child" data-element_type="container" data-id={0559075}>
+                    <div className="elementor-element elementor-element-0559075 e-con-full e-flex e-con e-child" data-element_type="container" data-id="0559075">
                       <div className="elementor-element elementor-element-b484fe7 elementor-align-left elementor-icon-list--layout-traditional elementor-list-item-link-full_width elementor-widget elementor-widget-icon-list" data-element_type="widget" data-id="b484fe7" data-settings="{&quot;_animation&quot;:&quot;none&quot;}" data-widget_type="icon-list.default">
                         <div className="elementor-widget-container">
                           <ul className="elementor-icon-list-items">
@@ -336,7 +337,7 @@ export default function OurServicesCockroachControlPage() {
           <div className="e-con-inner">
             <div className="elementor-element elementor-element-5240a58 e-con-full e-flex e-con e-child" data-element_type="container" data-id="5240a58" data-settings="{&quot;background_background&quot;:&quot;classic&quot;,&quot;animation&quot;:&quot;none&quot;}">
               <div className="elementor-element elementor-element-fb814b8 e-con-full e-flex e-con e-child" data-element_type="container" data-id="fb814b8" data-settings="{&quot;background_background&quot;:&quot;classic&quot;,&quot;animation&quot;:&quot;none&quot;}">
-                <div className="elementor-element elementor-element-9984806 elementor-widget elementor-widget-heading" data-element_type="widget" data-id={9984806} data-widget_type="heading.default">
+                <div className="elementor-element elementor-element-9984806 elementor-widget elementor-widget-heading" data-element_type="widget" data-id="9984806" data-widget_type="heading.default">
                   <div className="elementor-widget-container">
                     <h2 className="elementor-heading-title elementor-size-default">Follow-up after Treatment</h2> </div>
                 </div>

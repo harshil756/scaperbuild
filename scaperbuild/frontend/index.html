@@ -57,6 +57,7 @@
     <link rel="stylesheet" href="/assets/css/post-7841_be94cef5.css" />
     <link rel="stylesheet" href="/assets/css/post-86_714ba0c5.css" />
     <link rel="stylesheet" href="/assets/css/post-87_6241fb5e.css" />
+    <link rel="stylesheet" href="/assets/css/post-8994_7f3a9c12.css" />
     <link rel="stylesheet" href="/assets/css/post-9458_0e133470.css" />
     <link rel="stylesheet" href="/assets/css/post-9877_ecc2cbb7.css" />
     <link rel="stylesheet" href="/assets/css/post-9_ac7d356d.css" />
@@ -151,6 +152,23 @@
 
       .react-quote-popup .dialog-widget-content {
         margin: auto;
+      }
+    </style>
+    <style id="iti-flag-fix">
+      :root {
+        --iti-path-flags-1x: url("/assets/images/flags_e03e89df.png");
+        --iti-path-flags-2x: url("/assets/images/flags_2x_0e776d22.png");
+        --iti-path-globe-1x: url("/assets/images/globe_e136b8c1.png");
+        --iti-path-globe-2x: url("/assets/images/globe_2x_a93e605c.png");
+      }
+
+      .cfefp-intl-container .iti__country-list .iti__flag:not(.iti__globe),
+      .cfefp-intl-container .iti__selected-country-primary .iti__flag:not(.iti__globe) {
+        background-repeat: no-repeat !important;
+        background-size: var(--iti-flag-sprite-width) var(--iti-flag-sprite-height) !important;
+        background-position: var(--iti-flag-offset) 0 !important;
+        height: var(--iti-flag-height) !important;
+        width: var(--iti-flag-width) !important;
       }
     </style>
   </head>

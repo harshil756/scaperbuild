@@ -7,6 +7,7 @@ import AboutPage from './pages/AboutPage.jsx'
 import BlogPage from './pages/BlogPage.jsx'
 import ContactPage from './pages/ContactPage.jsx'
 import HomePage from './pages/HomePage.jsx'
+import ThankYouPage from './pages/ThankYouPage.jsx'
 import { serviceRoutes } from './serviceRoutes.jsx'
 
 export default function App() {
@@ -19,6 +20,7 @@ export default function App() {
           <Route path="about-us" element={<AboutPage />} />
           <Route path="blog" element={<BlogPage />} />
           <Route path="contact-us" element={<ContactPage />} />
+          <Route path="thank-you" element={<ThankYouPage />} />
           {serviceRoutes.map(({ path, element }) => (
             <Route key={path} path={path} element={element} />
           ))}

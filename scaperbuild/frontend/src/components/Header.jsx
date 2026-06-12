@@ -1,12 +1,14 @@
 import { useEffect, useState } from 'react'
 import { Link } from 'react-router-dom'
 import { mainNav } from '../config/navigation.js'
+import useMenu from '../hooks/useMenu.js'
 import NavMenu from './NavMenu.jsx'
 
 const LOGO = '/assets/images/7-states-logo-1.png-1_b6fda841.webp'
 const LOGO_SRCSET = `${LOGO} 344w, /assets/images/7-states-logo-1.png-1-300x92_6c062508.webp 300w`
 
 export default function Header() {
+  const navItems = useMenu('header', mainNav)
   const [mobileOpen, setMobileOpen] = useState(false)
   const [sticky, setSticky] = useState(false)
 
@@ -89,7 +91,7 @@ export default function Header() {
                 <div className="elementor-element elementor-element-ae3e5cf elementor-widget elementor-widget-ekit-nav-menu">
                   <div className="elementor-widget-container">
                     <NavMenu
-                      items={mainNav}
+                      items={navItems}
                       mobileOpen={mobileOpen}
                       onClose={setMobileOpen}
                     />

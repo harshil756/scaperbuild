@@ -1,3 +1,4 @@
+import PhoneNumberInput from '../../components/PhoneNumberInput.jsx'
 import usePageMeta from '../../hooks/usePageMeta.js'
 import { Link } from 'react-router-dom'
 
@@ -40,7 +41,7 @@ export default function SolarPanelBirdProofingPage() {
                   <p>Expert bird pest control services in Melbourne using humane methods to protect your property from damage and prevent future infestations. Contact us for reliable bird removal today!</p> </div>
               </div>
             </div>
-            <div className="elementor-element elementor-element-6269433 e-con-full e-flex e-con e-child" data-element_type="container" data-id={6269433} data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+            <div className="elementor-element elementor-element-6269433 e-con-full e-flex e-con e-child" data-element_type="container" data-id="6269433" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
               <div className="elementor-element elementor-element-a1efe77 elementor-widget elementor-widget-heading" data-element_type="widget" data-id="a1efe77" data-widget_type="heading.default">
                 <div className="elementor-widget-container">
                   <h2 className="elementor-heading-title elementor-size-default">Get A Free Quote Now!</h2> </div>
@@ -70,7 +71,7 @@ export default function SolarPanelBirdProofingPage() {
                       <div className="elementor-field-type-tel elementor-field-group elementor-column elementor-field-group-mobile_number elementor-col-100 elementor-field-required">
                         <label className="elementor-field-label elementor-screen-only" htmlFor="form-field-mobile_number">
                           Mobile Number							</label>
-                        <div className="iti iti--allow-dropdown iti--show-flags cfefp-intl-container iti--inline-dropdown"><div className="iti__country-container"><div aria-controls="iti-0__dropdown-content" aria-expanded="false" aria-haspopup="true" aria-label="Selected country" className="iti__selected-country" role="combobox" tabIndex={0} title="Australia: +61" type="div"><div className="iti__selected-country-primary"><div className="iti__flag iti__au" style={{backgroundImage: 'url("assets/images/au_f5de9214.svg")'}}><span className="iti__a11y-text">Australia +61</span></div><div aria-hidden="true" className="iti__arrow" /></div></div></div><input autoComplete="off" className="elementor-field elementor-size-md elementor-field-textual iti__tel-input" data-intl-tel-input-id={0} id="form-field-mobile_number" name="form_fields[mobile_number]" placeholder="Mobile Number" required title="Only numbers and phone characters (#, -, *, etc) are accepted." type="tel" /></div>
+                        <PhoneNumberInput id="form-field-mobile_number" name="form_fields[mobile_number]" size="md" />
                       </div>
                       <div className="elementor-field-type-textarea elementor-field-group elementor-column elementor-field-group-message elementor-col-100 elementor-field-required">
                         <label className="elementor-field-label elementor-screen-only" htmlFor="form-field-message">
@@ -129,7 +130,7 @@ export default function SolarPanelBirdProofingPage() {
             </div>
           </div>
         </section>
-        <div className="elementor-element elementor-element-9630408 e-flex e-con-boxed e-con e-parent e-lazyloaded" data-element_type="container" data-id={9630408} data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+        <div className="elementor-element elementor-element-9630408 e-flex e-con-boxed e-con e-parent e-lazyloaded" data-element_type="container" data-id="9630408" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
           <div className="e-con-inner">
             <div className="elementor-element elementor-element-0772a08 e-con-full e-flex e-con e-child" data-element_type="container" data-id="0772a08">
               <div className="elementor-element elementor-element-75692a3 elementor-widget elementor-widget-heading" data-element_type="widget" data-id="75692a3" data-settings="{&quot;_animation&quot;:&quot;none&quot;}" data-widget_type="heading.default">
@@ -225,7 +226,7 @@ export default function SolarPanelBirdProofingPage() {
                 </div>
               </div>
               <div className="elementor-element elementor-element-2e7b512 e-con-full e-flex e-con e-child" data-element_type="container" data-id="2e7b512" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
-                <div className="elementor-element elementor-element-2771349 elementor-widget elementor-widget-image" data-element_type="widget" data-id={2771349} data-widget_type="image.default">
+                <div className="elementor-element elementor-element-2771349 elementor-widget elementor-widget-image" data-element_type="widget" data-id="2771349" data-widget_type="image.default">
                   <div className="elementor-widget-container">
                     <img alt="Bird-and-Nest" className="attachment-large size-large wp-image-7891" decoding="async" height={800} loading="lazy" sizes="(max-width: 800px) 100vw, 800px" src="/assets/images/Bird-and-Nest-Removal-icon-09-2048x2048-1-1024x1024_4d59d95f.png" srcSet="/assets/images/Bird-and-Nest-Removal-icon-09-2048x2048-1-1024x1024_4d59d95f.png 1024w, /assets/images/Bird-and-Nest-Removal-icon-09-2048x2048-1-300x300_213b70d9.png 300w, /assets/images/Bird-and-Nest-Removal-icon-09-2048x2048-1-150x150_bc9009f9.png 150w, /assets/images/Bird-and-Nest-Removal-icon-09-2048x2048-1-768x768_3860c77f.png 768w, /assets/images/Bird-and-Nest-Removal-icon-09-2048x2048-1-1536x1536_60a527e8.png 1536w, /assets/images/Bird-and-Nest-Removal-icon-09-2048x2048-1_6eb3e7c0.png 2048w" width={800} /> </div>
                 </div>
@@ -651,7 +652,7 @@ export default function SolarPanelBirdProofingPage() {
         </div>
         <div className="elementor-element elementor-element-d3bcb94 e-flex e-con-boxed e-con e-parent e-lazyloaded" data-element_type="container" data-id="d3bcb94" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
           <div className="e-con-inner">
-            <div className="elementor-element elementor-element-1718067 e-con-full e-flex e-con e-child" data-element_type="container" data-id={1718067} data-settings="{&quot;animation&quot;:&quot;none&quot;}">
+            <div className="elementor-element elementor-element-1718067 e-con-full e-flex e-con e-child" data-element_type="container" data-id="1718067" data-settings="{&quot;animation&quot;:&quot;none&quot;}">
               <div className="elementor-element elementor-element-78b0737 elementor-widget elementor-widget-heading" data-element_type="widget" data-id="78b0737" data-settings="{&quot;_animation&quot;:&quot;none&quot;}" data-widget_type="heading.default">
                 <div className="elementor-widget-container">
                   <h2 className="elementor-heading-title elementor-size-default">The Advantages of Bird Proofing for Solar Panels in Melbourne</h2> </div>
@@ -703,7 +704,7 @@ export default function SolarPanelBirdProofingPage() {
                 </div>
               </div>
               <div className="elementor-element elementor-element-8936d07 e-con-full e-flex e-con e-child" data-element_type="container" data-id="8936d07" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
-                <div className="elementor-element elementor-element-4181880 elementor-widget elementor-widget-image" data-element_type="widget" data-id={4181880} data-widget_type="image.default">
+                <div className="elementor-element elementor-element-4181880 elementor-widget elementor-widget-image" data-element_type="widget" data-id="4181880" data-widget_type="image.default">
                   <div className="elementor-widget-container">
                     <img alt className="attachment-large size-large wp-image-7918" decoding="async" height={800} loading="lazy" sizes="(max-width: 800px) 100vw, 800px" src="/assets/images/Extended-Solar-Panel-Lifespan-01-2048x2048-1-1024x1024_1cdb23c6.png" srcSet="/assets/images/Extended-Solar-Panel-Lifespan-01-2048x2048-1-1024x1024_1cdb23c6.png 1024w, /assets/images/Extended-Solar-Panel-Lifespan-01-2048x2048-1-300x300_8fc70da5.png 300w, /assets/images/Extended-Solar-Panel-Lifespan-01-2048x2048-1-150x150_65c55376.png 150w, /assets/images/Extended-Solar-Panel-Lifespan-01-2048x2048-1-768x768_9582550b.png 768w, /assets/images/Extended-Solar-Panel-Lifespan-01-2048x2048-1-1536x1536_71650f1d.png 1536w, /assets/images/Extended-Solar-Panel-Lifespan-01-2048x2048-1_638378b2.png 2048w" width={800} /> </div>
                 </div>

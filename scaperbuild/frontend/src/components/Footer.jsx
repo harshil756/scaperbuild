@@ -5,6 +5,7 @@ import {
   footerServicesCol3,
   socialLinks,
 } from '../config/navigation.js'
+import useMenu from '../hooks/useMenu.js'
 
 const LOGO = '/assets/images/7-states-logo-1.png-1_b6fda841.webp'
 const LOGO_SRCSET = `${LOGO} 344w, /assets/images/7-states-logo-1.png-1-300x92_6c062508.webp 300w`
@@ -56,6 +57,11 @@ function SocialIcon({ link }) {
 }
 
 export default function Footer() {
+  const col1 = useMenu('footer_col_1', footerServicesCol1)
+  const col2 = useMenu('footer_col_2', footerServicesCol2)
+  const col3 = useMenu('footer_col_3', footerServicesCol3)
+  const social = useMenu('footer_social', socialLinks)
+
   return (
     <div className="ekit-template-content-markup ekit-template-content-footer ekit-template-content-theme-support">
       <div
@@ -87,7 +93,7 @@ export default function Footer() {
                 <div className="elementor-element elementor-element-0fb955a elementor-shape-square e-grid-align-left elementor-grid-0 elementor-widget elementor-widget-social-icons">
                   <div className="elementor-widget-container">
                     <div className="elementor-social-icons-wrapper elementor-grid" role="list">
-                      {socialLinks.map((link) => (
+                      {social.map((link) => (
                         <span key={link.href} className="elementor-grid-item" role="listitem">
                           <a
                             className={`elementor-icon elementor-social-icon elementor-social-icon-${link.icon || 'facebook'} elementor-repeater-item-06c7598`}
@@ -157,7 +163,7 @@ export default function Footer() {
                 </div>
                 <div className="elementor-element elementor-element-696d8dd elementor-icon-list--layout-traditional elementor-list-item-link-full_width elementor-widget elementor-widget-icon-list">
                   <div className="elementor-widget-container">
-                    <FooterLinkList items={footerServicesCol1} />
+                    <FooterLinkList items={col1} />
                   </div>
                 </div>
               </div>
@@ -167,7 +173,7 @@ export default function Footer() {
               <div className="elementor-widget-wrap elementor-element-populated">
                 <div className="elementor-element elementor-element-acdbe19 elementor-icon-list--layout-traditional elementor-list-item-link-full_width elementor-widget elementor-widget-icon-list">
                   <div className="elementor-widget-container">
-                    <FooterLinkList items={footerServicesCol2} />
+                    <FooterLinkList items={col2} />
                   </div>
                 </div>
               </div>
@@ -177,7 +183,7 @@ export default function Footer() {
               <div className="elementor-widget-wrap elementor-element-populated">
                 <div className="elementor-element elementor-element-cf377de elementor-icon-list--layout-traditional elementor-list-item-link-full_width elementor-widget elementor-widget-icon-list">
                   <div className="elementor-widget-container">
-                    <FooterLinkList items={footerServicesCol3} />
+                    <FooterLinkList items={col3} />
                   </div>
                 </div>
               </div>

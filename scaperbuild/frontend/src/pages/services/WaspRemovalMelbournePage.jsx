@@ -1,3 +1,4 @@
+import PhoneNumberInput from '../../components/PhoneNumberInput.jsx'
 import usePageMeta from '../../hooks/usePageMeta.js'
 import { Link } from 'react-router-dom'
 
@@ -78,7 +79,7 @@ export default function WaspRemovalMelbournePage() {
                       <div className="elementor-field-type-tel elementor-field-group elementor-column elementor-field-group-mobile_number elementor-col-100 elementor-field-required">
                         <label className="elementor-field-label elementor-screen-only" htmlFor="form-field-mobile_number">
                           Mobile Number							</label>
-                        <div className="iti iti--allow-dropdown iti--show-flags cfefp-intl-container iti--inline-dropdown"><div className="iti__country-container"><div aria-controls="iti-0__dropdown-content" aria-expanded="false" aria-haspopup="true" aria-label="Selected country" className="iti__selected-country" role="combobox" tabIndex={0} title="Australia: +61" type="div"><div className="iti__selected-country-primary"><div className="iti__flag iti__au" style={{backgroundImage: 'url("assets/images/au_f5de9214.svg")'}}><span className="iti__a11y-text">Australia +61</span></div><div aria-hidden="true" className="iti__arrow" /></div></div></div><input autoComplete="off" className="elementor-field elementor-size-md elementor-field-textual iti__tel-input" data-intl-tel-input-id={0} id="form-field-mobile_number" name="form_fields[mobile_number]" placeholder="Mobile Number" required title="Only numbers and phone characters (#, -, *, etc) are accepted." type="tel" /></div>
+                        <PhoneNumberInput id="form-field-mobile_number" name="form_fields[mobile_number]" size="md" />
                       </div>
                       <div className="elementor-field-type-textarea elementor-field-group elementor-column elementor-field-group-message elementor-col-100 elementor-field-required">
                         <label className="elementor-field-label elementor-screen-only" htmlFor="form-field-message">
@@ -195,7 +196,7 @@ export default function WaspRemovalMelbournePage() {
             </div>
           </div>
         </section>
-        <div className="elementor-element elementor-element-3079936 e-flex e-con-boxed e-con e-parent e-lazyloaded" data-element_type="container" data-id={3079936}>
+        <div className="elementor-element elementor-element-3079936 e-flex e-con-boxed e-con e-parent e-lazyloaded" data-element_type="container" data-id="3079936">
           <div className="e-con-inner">
             <div className="elementor-element elementor-element-83fc421 elementor-widget elementor-widget-heading" data-element_type="widget" data-id="83fc421" data-widget_type="heading.default">
               <div className="elementor-widget-container">
@@ -226,7 +227,7 @@ export default function WaspRemovalMelbournePage() {
               </div>
             </div>
             <div className="elementor-element elementor-element-6fa44b5 e-con-full e-flex e-con e-child" data-element_type="container" data-id="6fa44b5" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
-              <div className="elementor-element elementor-element-8593961 elementor-view-default elementor-widget elementor-widget-icon" data-element_type="widget" data-id={8593961} data-widget_type="icon.default">
+              <div className="elementor-element elementor-element-8593961 elementor-view-default elementor-widget elementor-widget-icon" data-element_type="widget" data-id="8593961" data-widget_type="icon.default">
                 <div className="elementor-widget-container">
                   <div className="elementor-icon-wrapper">
                     <div className="elementor-icon">
@@ -239,7 +240,7 @@ export default function WaspRemovalMelbournePage() {
                   <h3 className="elementor-heading-title elementor-size-default">Same-Day Wasp Removal in Melbourne
                   </h3> </div>
               </div>
-              <div className="elementor-element elementor-element-4897726 elementor-widget elementor-widget-text-editor" data-element_type="widget" data-id={4897726} data-widget_type="text-editor.default">
+              <div className="elementor-element elementor-element-4897726 elementor-widget elementor-widget-text-editor" data-element_type="widget" data-id="4897726" data-widget_type="text-editor.default">
                 <div className="elementor-widget-container">
                   <p><span style={{fontWeight: 400}}>Wasp problems can’t wait. That’s why our </span><b>Melbourne wasp removal</b><span style={{fontWeight: 400}}> team offers fast response with effective solutions for any </span><b>wasp infestation Melbourne</b><span style={{fontWeight: 400}}> homes face—done quickly and cleanly.</span></p> </div>
               </div>
@@ -274,7 +275,7 @@ export default function WaspRemovalMelbournePage() {
                   <div className="elementor-widget-container">
                     <h2 className="elementor-heading-title elementor-size-default">Key Facts </h2> </div>
                 </div>
-                <div className="elementor-element elementor-element-4209442 elementor-widget elementor-widget-elementskit-heading" data-element_type="widget" data-id={4209442} data-widget_type="elementskit-heading.default">
+                <div className="elementor-element elementor-element-4209442 elementor-widget elementor-widget-elementskit-heading" data-element_type="widget" data-id="4209442" data-widget_type="elementskit-heading.default">
                   <div className="elementor-widget-container">
                     <div className="ekit-wid-con"><div className="ekit-heading elementskit-section-title-wraper text_left ekit_heading_tablet- ekit_heading_mobile-"><h2 className="ekit-heading--title elementskit-section-title"> Key Facts About Wasps in Melbourne</h2></div></div> </div>
                 </div>
@@ -298,7 +299,7 @@ export default function WaspRemovalMelbournePage() {
                   <div className="elementor-container elementor-column-gap-default">
                     <div className="elementor-column elementor-col-50 elementor-inner-column elementor-element elementor-element-6a641d8" data-element_type="column" data-id="6a641d8">
                       <div className="elementor-widget-wrap elementor-element-populated">
-                        <div className="elementor-element elementor-element-2772224 elementor-widget elementor-widget-heading" data-element_type="widget" data-id={2772224} data-settings="{&quot;_animation&quot;:&quot;none&quot;}" data-widget_type="heading.default">
+                        <div className="elementor-element elementor-element-2772224 elementor-widget elementor-widget-heading" data-element_type="widget" data-id="2772224" data-settings="{&quot;_animation&quot;:&quot;none&quot;}" data-widget_type="heading.default">
                           <div className="elementor-widget-container">
                             <h2 className="elementor-heading-title elementor-size-default">Safely remove and control</h2> </div>
                         </div>
@@ -366,7 +367,7 @@ export default function WaspRemovalMelbournePage() {
         <div className="elementor-element elementor-element-f4a91e8 e-flex e-con-boxed e-con e-parent e-lazyloaded" data-element_type="container" data-id="f4a91e8">
           <div className="e-con-inner">
             <div className="elementor-element elementor-element-14e922c e-con-full e-flex e-con e-child" data-element_type="container" data-id="14e922c" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
-              <div className="elementor-element elementor-element-5243596 e-con-full e-flex e-con e-child" data-element_type="container" data-id={5243596} data-settings="{&quot;background_background&quot;:&quot;classic&quot;,&quot;animation&quot;:&quot;none&quot;}">
+              <div className="elementor-element elementor-element-5243596 e-con-full e-flex e-con e-child" data-element_type="container" data-id="5243596" data-settings="{&quot;background_background&quot;:&quot;classic&quot;,&quot;animation&quot;:&quot;none&quot;}">
                 <div className="elementor-element elementor-element-ce41091 elementor-widget elementor-widget-heading" data-element_type="widget" data-id="ce41091" data-widget_type="heading.default">
                   <div className="elementor-widget-container">
                     <h2 className="elementor-heading-title elementor-size-default">2. Treatment Planning:</h2> </div>
@@ -466,7 +467,7 @@ export default function WaspRemovalMelbournePage() {
         <div className="elementor-element elementor-element-12a6296 e-flex e-con-boxed e-con e-parent e-lazyloaded" data-element_type="container" data-id="12a6296">
           <div className="e-con-inner">
             <div className="elementor-element elementor-element-29bec56 e-con-full e-flex e-con e-child" data-element_type="container" data-id="29bec56" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
-              <div className="elementor-element elementor-element-8944016 elementor-widget elementor-widget-spacer" data-element_type="widget" data-id={8944016} data-widget_type="spacer.default">
+              <div className="elementor-element elementor-element-8944016 elementor-widget elementor-widget-spacer" data-element_type="widget" data-id="8944016" data-widget_type="spacer.default">
                 <div className="elementor-widget-container">
                   <div className="elementor-spacer">
                     <div className="elementor-spacer-inner" />
@@ -771,7 +772,7 @@ export default function WaspRemovalMelbournePage() {
             </div>
           </div>
         </section>
-        <div className="elementor-element elementor-element-9151591 e-flex e-con-boxed e-con e-parent e-lazyloaded" data-element_type="container" data-id={9151591}>
+        <div className="elementor-element elementor-element-9151591 e-flex e-con-boxed e-con e-parent e-lazyloaded" data-element_type="container" data-id="9151591">
           <div className="e-con-inner">
             <div className="elementor-element elementor-element-58c7d50 elementor-widget elementor-widget-heading" data-element_type="widget" data-id="58c7d50" data-widget_type="heading.default">
               <div className="elementor-widget-container">
@@ -808,7 +809,7 @@ export default function WaspRemovalMelbournePage() {
                   <div className="elementor-widget-container">
                     <h2 className="elementor-heading-title elementor-size-default">Frequently Asked Questions</h2> </div>
                 </div>
-                <div className="elementor-element elementor-element-5146096 elementor-widget elementor-widget-elementskit-accordion" data-element_type="widget" data-id={5146096} data-widget_type="elementskit-accordion.default">
+                <div className="elementor-element elementor-element-5146096 elementor-widget elementor-widget-elementskit-accordion" data-element_type="widget" data-id="5146096" data-widget_type="elementskit-accordion.default">
                   <div className="elementor-widget-container">
                     <div className="ekit-wid-con">
                       <div className="elementskit-accordion accoedion-primary" id="accordion-6a16e22d870b8">

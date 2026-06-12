@@ -1,3 +1,5 @@
+import PhoneNumberInput from './PhoneNumberInput.jsx'
+
 export default function QuotePopupForm({ postId, formId, idPrefix }) {
   return (
     <form aria-label="New Form" className="elementor-form" id={`${idPrefix}_contact_form`} method="post" name="New Form">
@@ -38,16 +40,10 @@ export default function QuotePopupForm({ postId, formId, idPrefix }) {
           <label className="elementor-field-label elementor-screen-only" htmlFor={`${idPrefix}-mobile`}>
             Mobile Number
           </label>
-          <input
-            className="elementor-field elementor-size-lg elementor-field-textual"
+          <PhoneNumberInput
             id={`${idPrefix}-mobile`}
             name="form_fields[mobile_number]"
-            pattern="[0-9()#&+*-=.]+"
-            placeholder="Mobile Number"
-            required
-            size={1}
-            title="Only numbers and phone characters (#, -, *, etc) are accepted."
-            type="tel"
+            size="lg"
           />
         </div>
         <div className="elementor-field-type-textarea elementor-field-group elementor-column elementor-field-group-message elementor-col-100 elementor-field-required">

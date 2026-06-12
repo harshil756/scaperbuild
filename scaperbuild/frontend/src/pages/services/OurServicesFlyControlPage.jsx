@@ -1,3 +1,4 @@
+import PhoneNumberInput from '../../components/PhoneNumberInput.jsx'
 import usePageMeta from '../../hooks/usePageMeta.js'
 import { Link } from 'react-router-dom'
 
@@ -77,7 +78,7 @@ export default function OurServicesFlyControlPage() {
                       <div className="elementor-field-type-tel elementor-field-group elementor-column elementor-field-group-mobile_number elementor-col-100 elementor-field-required">
                         <label className="elementor-field-label elementor-screen-only" htmlFor="form-field-mobile_number">
                           Mobile Number							</label>
-                        <div className="iti iti--allow-dropdown iti--show-flags cfefp-intl-container iti--inline-dropdown"><div className="iti__country-container"><div aria-controls="iti-0__dropdown-content" aria-expanded="false" aria-haspopup="true" aria-label="Selected country" className="iti__selected-country" role="combobox" tabIndex={0} title="Australia: +61" type="div"><div className="iti__selected-country-primary"><div className="iti__flag iti__au" style={{backgroundImage: 'url("assets/images/au_f5de9214.svg")'}}><span className="iti__a11y-text">Australia +61</span></div><div aria-hidden="true" className="iti__arrow" /></div></div></div><input autoComplete="off" className="elementor-field elementor-size-md elementor-field-textual iti__tel-input" data-intl-tel-input-id={0} id="form-field-mobile_number" name="form_fields[mobile_number]" placeholder="Mobile Number" required title="Only numbers and phone characters (#, -, *, etc) are accepted." type="tel" /></div>
+                        <PhoneNumberInput id="form-field-mobile_number" name="form_fields[mobile_number]" size="md" />
                       </div>
                       <div className="elementor-field-type-textarea elementor-field-group elementor-column elementor-field-group-message elementor-col-100 elementor-field-required">
                         <label className="elementor-field-label elementor-screen-only" htmlFor="form-field-message">
@@ -122,7 +123,7 @@ export default function OurServicesFlyControlPage() {
                     </div>
                     <div className="elementor-column elementor-col-50 elementor-inner-column elementor-element elementor-element-c1ca80d" data-element_type="column" data-id="c1ca80d" data-settings="{&quot;animation&quot;:&quot;none&quot;,&quot;background_background&quot;:&quot;classic&quot;}">
                       <div className="elementor-widget-wrap elementor-element-populated">
-                        <div className="elementor-element elementor-element-3798510 elementor-widget elementor-widget-spacer" data-element_type="widget" data-id={3798510} data-widget_type="spacer.default">
+                        <div className="elementor-element elementor-element-3798510 elementor-widget elementor-widget-spacer" data-element_type="widget" data-id="3798510" data-widget_type="spacer.default">
                           <div className="elementor-widget-container">
                             <div className="elementor-spacer">
                               <div className="elementor-spacer-inner" />
@@ -156,7 +157,7 @@ export default function OurServicesFlyControlPage() {
                 </div>
                 <div className="elementor-element elementor-element-88628bc e-flex e-con-boxed e-con e-parent e-lazyloaded" data-element_type="container" data-id="88628bc">
                   <div className="e-con-inner">
-                    <div className="elementor-element elementor-element-0559075 e-con-full e-flex e-con e-child" data-element_type="container" data-id={0559075}>
+                    <div className="elementor-element elementor-element-0559075 e-con-full e-flex e-con e-child" data-element_type="container" data-id="0559075">
                       <div className="elementor-element elementor-element-b484fe7 elementor-align-left elementor-icon-list--layout-traditional elementor-list-item-link-full_width elementor-widget elementor-widget-icon-list" data-element_type="widget" data-id="b484fe7" data-widget_type="icon-list.default">
                         <div className="elementor-widget-container">
                           <ul className="elementor-icon-list-items">
@@ -264,7 +265,7 @@ export default function OurServicesFlyControlPage() {
                   <div className="elementor-container elementor-column-gap-default">
                     <div className="elementor-column elementor-col-50 elementor-inner-column elementor-element elementor-element-6a641d8" data-element_type="column" data-id="6a641d8">
                       <div className="elementor-widget-wrap elementor-element-populated">
-                        <div className="elementor-element elementor-element-2772224 elementor-widget elementor-widget-heading" data-element_type="widget" data-id={2772224} data-settings="{&quot;_animation&quot;:&quot;none&quot;}" data-widget_type="heading.default">
+                        <div className="elementor-element elementor-element-2772224 elementor-widget elementor-widget-heading" data-element_type="widget" data-id="2772224" data-settings="{&quot;_animation&quot;:&quot;none&quot;}" data-widget_type="heading.default">
                           <div className="elementor-widget-container">
                             <h2 className="elementor-heading-title elementor-size-default">Stages of Treatment</h2> </div>
                         </div>
@@ -331,7 +332,7 @@ export default function OurServicesFlyControlPage() {
         <div className="elementor-element elementor-element-f4a91e8 e-flex e-con-boxed e-con e-parent e-lazyloaded" data-element_type="container" data-id="f4a91e8">
           <div className="e-con-inner">
             <div className="elementor-element elementor-element-14e922c e-con-full e-flex e-con e-child" data-element_type="container" data-id="14e922c" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
-              <div className="elementor-element elementor-element-5243596 e-con-full e-flex e-con e-child" data-element_type="container" data-id={5243596} data-settings="{&quot;background_background&quot;:&quot;classic&quot;,&quot;animation&quot;:&quot;none&quot;}">
+              <div className="elementor-element elementor-element-5243596 e-con-full e-flex e-con e-child" data-element_type="container" data-id="5243596" data-settings="{&quot;background_background&quot;:&quot;classic&quot;,&quot;animation&quot;:&quot;none&quot;}">
                 <div className="elementor-element elementor-element-ce41091 elementor-widget elementor-widget-heading" data-element_type="widget" data-id="ce41091" data-widget_type="heading.default">
                   <div className="elementor-widget-container">
                     <h2 className="elementor-heading-title elementor-size-default">Treatment</h2> </div>
@@ -455,7 +456,7 @@ export default function OurServicesFlyControlPage() {
                   <div className="elementor-widget-container">
                     <h2 className="elementor-heading-title elementor-size-default">Frequently Asked Questions</h2> </div>
                 </div>
-                <div className="elementor-element elementor-element-5146096 elementor-widget elementor-widget-elementskit-accordion" data-element_type="widget" data-id={5146096} data-widget_type="elementskit-accordion.default">
+                <div className="elementor-element elementor-element-5146096 elementor-widget elementor-widget-elementskit-accordion" data-element_type="widget" data-id="5146096" data-widget_type="elementskit-accordion.default">
                   <div className="elementor-widget-container">
                     <div className="ekit-wid-con">
                       <div className="elementskit-accordion accoedion-primary" id="accordion-6a1593bf3f6c6">
@@ -589,7 +590,7 @@ export default function OurServicesFlyControlPage() {
           <div className="elementor-container elementor-column-gap-default">
             <div className="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-dce3525" data-element_type="column" data-id="dce3525">
               <div className="elementor-widget-wrap elementor-element-populated">
-                <section className="elementor-section elementor-inner-section elementor-element elementor-element-3035647 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-element_type="section" data-id={3035647}>
+                <section className="elementor-section elementor-inner-section elementor-element elementor-element-3035647 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-element_type="section" data-id="3035647">
                   <div className="elementor-container elementor-column-gap-default">
                     <div className="elementor-column elementor-col-50 elementor-inner-column elementor-element elementor-element-1c72c1e" data-element_type="column" data-id="1c72c1e" data-settings="{&quot;animation&quot;:&quot;none&quot;}">
                       <div className="elementor-widget-wrap elementor-element-populated">
@@ -671,7 +672,7 @@ export default function OurServicesFlyControlPage() {
                 </section>
                 <div className="elementor-element elementor-element-bec3feb e-flex e-con-boxed e-con e-parent e-lazyloaded" data-element_type="container" data-id="bec3feb">
                   <div className="e-con-inner">
-                    <div className="elementor-element elementor-element-7990792 elementor-widget elementor-widget-shortcode" data-element_type="widget" data-id={7990792} data-widget_type="shortcode.default">
+                    <div className="elementor-element elementor-element-7990792 elementor-widget elementor-widget-shortcode" data-element_type="widget" data-id="7990792" data-widget_type="shortcode.default">
                       <div className="elementor-widget-container">
                         <div className="elementor-shortcode"><div data-css-url="https://7statespestcontrol.com.au/wp-content/uploads/trustindex-google-widget.css?1751194100" data-src="https://cdn.trustindex.io/loader.js?wp-widget" data-ti-widget-inited="true" /></div>
                       </div>

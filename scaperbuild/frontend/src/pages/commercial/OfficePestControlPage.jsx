@@ -1,3 +1,4 @@
+import PhoneNumberInput from '../../components/PhoneNumberInput.jsx'
 import usePageMeta from '../../hooks/usePageMeta.js'
 import { Link } from 'react-router-dom'
 
@@ -45,7 +46,7 @@ export default function OfficePestControlPage() {
                 <div className="elementor-widget-container">
                   <h2 className="elementor-heading-title elementor-size-default">Get A Free Quote Now!</h2> </div>
               </div>
-              <div className="elementor-element elementor-element-2154067 elementor-widget elementor-widget-heading" data-element_type="widget" data-id={2154067} data-widget_type="heading.default">
+              <div className="elementor-element elementor-element-2154067 elementor-widget elementor-widget-heading" data-element_type="widget" data-id="2154067" data-widget_type="heading.default">
                 <div className="elementor-widget-container">
                   <h6 className="elementor-heading-title elementor-size-default">Have an enquiry? Leave us your details and we’ll call you back during business hours.</h6> </div>
               </div>
@@ -70,7 +71,7 @@ export default function OfficePestControlPage() {
                       <div className="elementor-field-type-tel elementor-field-group elementor-column elementor-field-group-mobile_number elementor-col-100 elementor-field-required">
                         <label className="elementor-field-label elementor-screen-only" htmlFor="form-field-mobile_number">
                           Mobile Number							</label>
-                        <div className="iti iti--allow-dropdown iti--show-flags cfefp-intl-container iti--inline-dropdown"><div className="iti__country-container"><div aria-controls="iti-0__dropdown-content" aria-expanded="false" aria-haspopup="true" aria-label="Selected country" className="iti__selected-country" role="combobox" tabIndex={0} title="Australia: +61" type="div"><div className="iti__selected-country-primary"><div className="iti__flag iti__au" style={{backgroundImage: 'url("assets/images/au_f5de9214.svg")'}}><span className="iti__a11y-text">Australia +61</span></div><div aria-hidden="true" className="iti__arrow" /></div></div></div><input autoComplete="off" className="elementor-field elementor-size-md elementor-field-textual iti__tel-input" data-intl-tel-input-id={0} id="form-field-mobile_number" name="form_fields[mobile_number]" placeholder="Mobile Number" required title="Only numbers and phone characters (#, -, *, etc) are accepted." type="tel" /></div>
+                        <PhoneNumberInput id="form-field-mobile_number" name="form_fields[mobile_number]" size="md" />
                       </div>
                       <div className="elementor-field-type-textarea elementor-field-group elementor-column elementor-field-group-message elementor-col-100 elementor-field-required">
                         <label className="elementor-field-label elementor-screen-only" htmlFor="form-field-message">
@@ -231,7 +232,7 @@ export default function OfficePestControlPage() {
               </div>
             </div>
             <div className="elementor-element elementor-element-d0b03e0 e-con-full e-flex e-con e-child" data-element_type="container" data-id="d0b03e0">
-              <div className="elementor-element elementor-element-2764490 ekit-equal-height-enable elementor-widget elementor-widget-elementskit-image-box" data-element_type="widget" data-id={2764490} data-widget_type="elementskit-image-box.default">
+              <div className="elementor-element elementor-element-2764490 ekit-equal-height-enable elementor-widget elementor-widget-elementskit-image-box" data-element_type="widget" data-id="2764490" data-widget_type="elementskit-image-box.default">
                 <div className="elementor-widget-container">
                   <div className="ekit-wid-con">
                     <div className="elementskit-info-image-box ekit-image-box text-center hover_from_right hover-border-bottom">
@@ -411,7 +412,7 @@ export default function OfficePestControlPage() {
                 <div className="elementor-element elementor-element-5e65059 e-flex e-con-boxed e-con e-parent e-lazyloaded" data-element_type="container" data-id="5e65059">
                   <div className="e-con-inner">
                     <div className="elementor-element elementor-element-c3999ee e-con-full e-flex e-con e-child" data-element_type="container" data-id="c3999ee">
-                      <div className="elementor-element elementor-element-5024943 ekit-equal-height-disable elementor-widget elementor-widget-elementskit-icon-box" data-element_type="widget" data-id={5024943} data-widget_type="elementskit-icon-box.default">
+                      <div className="elementor-element elementor-element-5024943 ekit-equal-height-disable elementor-widget elementor-widget-elementskit-icon-box" data-element_type="widget" data-id="5024943" data-widget_type="elementskit-icon-box.default">
                         <div className="elementor-widget-container">
                           <div className="ekit-wid-con">
                             <div className="elementskit-infobox text-left text-left icon-top-align elementor-animation-">
@@ -434,7 +435,7 @@ export default function OfficePestControlPage() {
                       </div>
                     </div>
                     <div className="elementor-element elementor-element-0ca089f e-con-full e-flex e-con e-child" data-element_type="container" data-id="0ca089f">
-                      <div className="elementor-element elementor-element-9509850 ekit-equal-height-disable elementor-widget elementor-widget-elementskit-icon-box" data-element_type="widget" data-id={9509850} data-widget_type="elementskit-icon-box.default">
+                      <div className="elementor-element elementor-element-9509850 ekit-equal-height-disable elementor-widget elementor-widget-elementskit-icon-box" data-element_type="widget" data-id="9509850" data-widget_type="elementskit-icon-box.default">
                         <div className="elementor-widget-container">
                           <div className="ekit-wid-con">
                             <div className="elementskit-infobox text-left text-left icon-top-align elementor-animation-">
@@ -704,7 +705,7 @@ export default function OfficePestControlPage() {
             </div>
           </div>
         </section>
-        <div className="elementor-element elementor-element-2262054 e-flex e-con-boxed e-con e-parent e-lazyloaded" data-element_type="container" data-id={2262054} data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+        <div className="elementor-element elementor-element-2262054 e-flex e-con-boxed e-con e-parent e-lazyloaded" data-element_type="container" data-id="2262054" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
           <div className="e-con-inner">
             <div className="elementor-element elementor-element-b6c6012 elementor-widget elementor-widget-heading" data-element_type="widget" data-id="b6c6012" data-settings="{&quot;_animation&quot;:&quot;none&quot;}" data-widget_type="heading.default">
               <div className="elementor-widget-container">
@@ -732,7 +733,7 @@ export default function OfficePestControlPage() {
                 </div>
               </div>
             </div>
-            <div className="elementor-element elementor-element-5224348 e-con-full e-flex e-con e-child" data-element_type="container" data-id={5224348} data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+            <div className="elementor-element elementor-element-5224348 e-con-full e-flex e-con e-child" data-element_type="container" data-id="5224348" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
               <div className="elementor-element elementor-element-31de4eb elementor-view-default elementor-position-top elementor-mobile-position-top elementor-widget elementor-widget-icon-box" data-element_type="widget" data-id="31de4eb" data-widget_type="icon-box.default">
                 <div className="elementor-widget-container">
                   <div className="elementor-icon-box-wrapper">
