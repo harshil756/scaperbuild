@@ -1,0 +1,40 @@
+{
+  "name": "frontend",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "lint": "eslint .",
+    "preview": "vite preview",
+    "convert:home": "node scripts/html-to-jsx.mjs home",
+    "convert:about": "node scripts/html-to-jsx.mjs about",
+    "convert:pages": "node scripts/html-to-jsx.mjs all",
+    "convert:services": "node scripts/convert-services.mjs",
+    "convert:commercial": "node scripts/convert-commercial.mjs",
+    "convert:blog": "node scripts/convert-blog.mjs",
+    "convert:contact": "node scripts/convert-contact.mjs",
+    "convert:blog-posts": "node scripts/convert-blog-posts.mjs",
+    "fix:links": "node scripts/fix-internal-links.mjs",
+    "fix:blog-links": "node scripts/fix-blog-links.mjs",
+    "refresh:blogs": "npm run convert:blog-posts && npm run fix:blog-links"
+  },
+  "dependencies": {
+    "react": "^19.2.6",
+    "react-dom": "^19.2.6",
+    "react-router-dom": "^7.17.0"
+  },
+  "devDependencies": {
+    "@eslint/js": "^10.0.1",
+    "@types/react": "^19.2.14",
+    "@types/react-dom": "^19.2.3",
+    "@vitejs/plugin-react": "^6.0.1",
+    "eslint": "^10.3.0",
+    "eslint-plugin-react-hooks": "^7.1.1",
+    "eslint-plugin-react-refresh": "^0.5.2",
+    "globals": "^17.6.0",
+    "htmltojsx": "^0.3.0",
+    "vite": "^8.0.12"
+  }
+}

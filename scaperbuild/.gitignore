@@ -1,4 +1,5 @@
 venv/
+.venv/
 output/
 export/
 __pycache__/

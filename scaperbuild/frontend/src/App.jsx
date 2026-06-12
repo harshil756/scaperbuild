@@ -1,0 +1,35 @@
+import { BrowserRouter, Route, Routes } from 'react-router-dom'
+import { blogPostRoutes } from './blogPostRoutes.jsx'
+import { commercialOfficeRoutes } from './commercialOfficeRoutes.jsx'
+import Layout from './components/Layout.jsx'
+import ScrollToTop from './components/ScrollToTop.jsx'
+import AboutPage from './pages/AboutPage.jsx'
+import BlogPage from './pages/BlogPage.jsx'
+import ContactPage from './pages/ContactPage.jsx'
+import HomePage from './pages/HomePage.jsx'
+import { serviceRoutes } from './serviceRoutes.jsx'
+
+export default function App() {
+  return (
+    <BrowserRouter>
+      <ScrollToTop />
+      <Routes>
+        <Route element={<Layout />}>
+          <Route index element={<HomePage />} />
+          <Route path="about-us" element={<AboutPage />} />
+          <Route path="blog" element={<BlogPage />} />
+          <Route path="contact-us" element={<ContactPage />} />
+          {serviceRoutes.map(({ path, element }) => (
+            <Route key={path} path={path} element={element} />
+          ))}
+          {commercialOfficeRoutes.map(({ path, element }) => (
+            <Route key={path} path={path} element={element} />
+          ))}
+          {blogPostRoutes.map(({ path, element }) => (
+            <Route key={path} path={path} element={element} />
+          ))}
+        </Route>
+      </Routes>
+    </BrowserRouter>
+  )
+}

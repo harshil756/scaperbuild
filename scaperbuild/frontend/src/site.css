@@ -1,0 +1,46 @@
+#root {
+  display: contents;
+}
+
+.site-main-nav {
+  position: relative;
+  z-index: 100;
+}
+
+.ekit-template-content-header .elementor-sticky--active {
+  position: sticky !important;
+  top: 0;
+  width: 100% !important;
+  z-index: 1000;
+}
+
+.elementskit-menu-container.active {
+  transform: translateX(0) !important;
+  visibility: visible !important;
+}
+
+.elementskit-menu-overlay.active {
+  opacity: 1 !important;
+  visibility: visible !important;
+}
+
+.ekit-template-content-header .elementor-sticky__spacer {
+  display: none !important;
+}
+
+.ekit-template-content-header a,
+.ekit-template-content-footer a {
+  text-decoration: none;
+}
+
+.elementskit-dropdown-open > .elementskit-dropdown {
+  visibility: visible;
+  opacity: 1;
+  pointer-events: auto;
+}
+
+@media (max-width: 1024px) {
+  .elementskit-menu-hamburger {
+    display: inline-flex !important;
+  }
+}
