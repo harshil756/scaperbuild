@@ -1,0 +1,661 @@
+{
+  "slug": "our-services-termite-pest-control",
+  "title": "Termite Pest Control",
+  "seo_title": "Termite Control Melbourne | Termite Treatment & Pest Control",
+  "seo_description": "Professional termite control Melbourne. Termite treatment, termite barrier & termite removal Melbourne by certified experts. Reliable termite pest control.",
+  "body_class": "wp-singular page-template page-template-elementor_header_footer page wp-custom-logo wp-embed-responsive wp-theme-hello-elementor elementor-default elementor-template-full-width elementor-kit-9 elementor-page elementor-page-10357",
+  "elementor_id": 10357,
+  "is_published": true,
+  "blocks": [
+    {
+      "sort_order": 0,
+      "block_key": "background.hero",
+      "section": "hero",
+      "label": "Hero background",
+      "type": "background",
+      "background_image_path": "cms/our-services-termite-pest-control/pngtree-two-white-and-orange-termites-fighting-for-food_5d6a0a65.jpg",
+      "metadata": {
+        "elementor_id": "a342089",
+        "filename": "pngtree-two-white-and-orange-termites-fighting-for-food_5d6a0a65.jpg"
+      }
+    },
+    {
+      "sort_order": 1,
+      "block_key": "background.why_inside",
+      "section": "why_inside",
+      "label": "Background (f5e4d41)",
+      "type": "background",
+      "background_image_path": "cms/our-services-termite-pest-control/BG3_a19772e2.png",
+      "metadata": {
+        "elementor_id": "f5e4d41",
+        "filename": "BG3_a19772e2.png"
+      }
+    },
+    {
+      "sort_order": 2,
+      "block_key": "background.problems",
+      "section": "problems",
+      "label": "Background (235b366)",
+      "type": "background",
+      "background_image_path": "cms/our-services-termite-pest-control/istockphoto-1414982124-612x612ui_0ade9a1c.jpg",
+      "metadata": {
+        "elementor_id": "235b366",
+        "filename": "istockphoto-1414982124-612x612ui_0ade9a1c.jpg"
+      }
+    },
+    {
+      "sort_order": 3,
+      "block_key": "background.cta",
+      "section": "cta",
+      "label": "CTA background",
+      "type": "background",
+      "background_image_path": "cms/our-services-termite-pest-control/URUU-01-2048x1365-2_7c216e6d.jpg",
+      "metadata": {
+        "elementor_id": "f732271",
+        "filename": "URUU-01-2048x1365-2_7c216e6d.jpg"
+      }
+    },
+    {
+      "sort_order": 4,
+      "block_key": "hero.breadcrumb_parent",
+      "section": "hero",
+      "label": "Breadcrumb parent",
+      "type": "text",
+      "value": "Services"
+    },
+    {
+      "sort_order": 5,
+      "block_key": "hero.title",
+      "section": "hero",
+      "label": "Section title",
+      "type": "text",
+      "value": "termite pest control"
+    },
+    {
+      "sort_order": 6,
+      "block_key": "hero.heading",
+      "section": "hero",
+      "label": "Main heading",
+      "type": "text",
+      "value": "Get Professional Termite Control in Melbourne"
+    },
+    {
+      "sort_order": 7,
+      "block_key": "hero.intro",
+      "section": "hero",
+      "label": "Intro paragraph",
+      "type": "html",
+      "value": "<p class=\"font-claude-response-body break-words whitespace-normal leading-[1.7]\">Termites are silent destroyers that can cause serious structural damage before you even realise they are present. Unlike other pests, termites work behind walls, under floors, and inside wooden structures — making early detection difficult. Without professional <strong>termite pest control</strong>, the damage can become expensive and dangerous.</p><p class=\"font-claude-response-body break-words whitespace-normal leading-[1.7]\">If you are noticing signs of termite activity and searching for reliable <strong>termite control Melbourne</strong> or expert <strong>termite treatment Melbourne</strong>, you are in the right place.</p><p class=\"font-claude-response-body break-words whitespace-normal leading-[1.7]\">At <a class=\"underline underline underline-offset-2 decoration-1 decoration-current/40 hover:decoration-current focus:decoration-current\" href=\"/\">7 States Pest Control</a>, we specialise in advanced <strong>termite pest control</strong>, effective <strong>termite removal Melbourne</strong>, and long-term <strong>termite barrier</strong> solutions tailored to residential and commercial properties. Our licensed technicians deliver safe, compliant, and highly effective <strong>termite control</strong> across Melbourne — protecting your home before costly damage sets in.</p>"
+    },
+    {
+      "sort_order": 8,
+      "block_key": "quote_form.title",
+      "section": "quote_form",
+      "label": "Form heading",
+      "type": "text",
+      "value": "Get A Free Quote Now!"
+    },
+    {
+      "sort_order": 9,
+      "block_key": "quote_form.subtitle",
+      "section": "quote_form",
+      "label": "Form subtitle",
+      "type": "text",
+      "value": "Have an enquiry? Leave us your details and we’ll call you back during business hours."
+    },
+    {
+      "sort_order": 10,
+      "block_key": "quote_form.submit_text",
+      "section": "quote_form",
+      "label": "Submit button text",
+      "type": "text",
+      "value": "Submit Quote"
+    },
+    {
+      "sort_order": 11,
+      "block_key": "species.eyebrow",
+      "section": "species",
+      "label": "Eyebrow",
+      "type": "text",
+      "value": "Termite special"
+    },
+    {
+      "sort_order": 12,
+      "block_key": "species.title",
+      "section": "species",
+      "label": "Section title",
+      "type": "text",
+      "value": "Types of Termite Problems We Control"
+    },
+    {
+      "sort_order": 13,
+      "block_key": "species.intro",
+      "section": "species",
+      "label": "Intro HTML",
+      "type": "html",
+      "value": "<p><span >Termites can cause severe damage if not treated early. Our </span><b>termite control Melbourne</b><span > services are designed to handle all types of termite infestations, including:</span></p>"
+    },
+    {
+      "sort_order": 14,
+      "block_key": "species.1_subterranean_termites",
+      "section": "species",
+      "label": "Species: 1. Subterranean Termites",
+      "type": "json",
+      "image_path": "cms/our-services-termite-pest-control/coptotermes-subterranean-termites-scaled_145f2b04.webp",
+      "metadata": {
+        "slug": "1_subterranean_termites",
+        "image": "/assets/images/coptotermes-subterranean-termites-scaled_145f2b04.webp",
+        "title": "1. Subterranean Termites",
+        "description": "Subterranean termites are the most destructive species in Australia. They build mud tunnels and attack wooden structures from below ground. Our professional termite treatment Melbourne solutions target the colony at its source, making us the most trusted name in termite pest control Melbourne across the city.",
+        "image_src": "/assets/images/coptotermes-subterranean-termites-scaled_145f2b04.webp"
+      }
+    },
+    {
+      "sort_order": 15,
+      "block_key": "species.2_timber_and_structural_damage",
+      "section": "species",
+      "label": "Species: 2. Timber &amp; Structural Damage",
+      "type": "json",
+      "image_path": "cms/our-services-termite-pest-control/termite-structural-damage-scaled-1_937b4dbe.jpg",
+      "metadata": {
+        "slug": "2_timber_and_structural_damage",
+        "image": "/assets/images/termite-structural-damage-scaled-1_937b4dbe.jpg",
+        "title": "2. Timber &amp; Structural Damage",
+        "description": "Termites feed on timber inside walls, flooring, roofing, and support beams. Our advanced termite pest control services protect your property from further structural weakening — delivering reliable termite control Melbourne homeowners trust, with transparent termite protection cost Melbourne for every service.",
+        "image_src": "/assets/images/termite-structural-damage-scaled-1_937b4dbe.jpg"
+      }
+    },
+    {
+      "sort_order": 16,
+      "block_key": "species.3_active_termite_infestations",
+      "section": "species",
+      "label": "Species: 3. Active Termite Infestations",
+      "type": "json",
+      "image_path": "cms/our-services-termite-pest-control/5CommonCausesOfATermiteInfestation_280ed3f8.webp",
+      "metadata": {
+        "slug": "3_active_termite_infestations",
+        "image": "/assets/images/5CommonCausesOfATermiteInfestation_280ed3f8.webp",
+        "title": "3. Active Termite Infestations",
+        "description": "If you see hollow wood, mud tubes, or termite swarmers, immediate termite removal Melbourne is required. Quick termite control can prevent thousands of dollars in repairs — contact our termite specialist Melbourne before the damage spreads.",
+        "image_src": "/assets/images/5CommonCausesOfATermiteInfestation_280ed3f8.webp"
+      }
+    },
+    {
+      "sort_order": 17,
+      "block_key": "species.4_recurrent_termite_attacks",
+      "section": "species",
+      "label": "Species: 4. Recurrent Termite Attacks",
+      "type": "json",
+      "image_path": "cms/our-services-termite-pest-control/termites_2_b4d09264.jpg",
+      "metadata": {
+        "slug": "4_recurrent_termite_attacks",
+        "image": "/assets/images/termites_2_b4d09264.jpg",
+        "title": "4. Recurrent Termite Attacks",
+        "description": "Properties without a proper termite barrier are highly vulnerable to repeat infestations. We install long-lasting termite barrier systems to prevent termites from returning — our termite management Melbourne solutions ensure your property stays protected all year round.",
+        "image_src": "/assets/images/termites_2_b4d09264.jpg"
+      }
+    },
+    {
+      "sort_order": 18,
+      "block_key": "why_inside.eyebrow",
+      "section": "why_inside",
+      "label": "Eyebrow",
+      "type": "text",
+      "value": "why Termite coming"
+    },
+    {
+      "sort_order": 19,
+      "block_key": "why_inside.title",
+      "section": "why_inside",
+      "label": "Section title",
+      "type": "text",
+      "value": "Why Are Termites Coming Into Your Property?"
+    },
+    {
+      "sort_order": 20,
+      "block_key": "why_inside.list_html",
+      "section": "why_inside",
+      "label": "List HTML",
+      "type": "html",
+      "value": "<ol><li aria-level={1} ><b>Moisture Around Foundations</b><span > – Damp areas attract termites and accelerate </span><b>termite pest control</b><span > needs</span></li><li aria-level={1} ><b>Wood-to-Soil Contact</b><span > – Direct timber contact allows easy colony access</span></li><li aria-level={1} ><b>Cracks in Walls &amp; Slabs</b><span > – Common entry points that require </span><b>termite inspection Melbourne</b></li><li aria-level={1} ><b>Poor Ventilation</b><span > – Creates ideal breeding conditions for hidden infestations</span></li><li aria-level={1} ><b>No Termite Barrier Installed</b><span > – Properties without a </span><b>termite barrier</b><span > face significantly higher infestation risk</span></li></ol>"
+    },
+    {
+      "sort_order": 21,
+      "block_key": "why_inside.footer",
+      "section": "why_inside",
+      "label": "Footer text",
+      "type": "html",
+      "value": "<p class=\"font-claude-response-body break-words whitespace-normal leading-[1.7]\">If termite activity continues, professional <strong>termite treatment Melbourne</strong> is the safest and most effective solution for long-term <strong>termite control Melbourne</strong> protection — get a free quote today and know your exact <strong>termite treatment cost Melbourne</strong> upfront.</p>"
+    },
+    {
+      "sort_order": 22,
+      "block_key": "problems.eyebrow",
+      "section": "problems",
+      "label": "Eyebrow",
+      "type": "text",
+      "value": "problems"
+    },
+    {
+      "sort_order": 23,
+      "block_key": "problems.title",
+      "section": "problems",
+      "label": "Section title",
+      "type": "text",
+      "value": "What Problems Can Termites Cause?"
+    },
+    {
+      "sort_order": 24,
+      "block_key": "problems.intro",
+      "section": "problems",
+      "label": "Intro HTML",
+      "type": "html",
+      "value": "<p>Termites may remain hidden, but the damage they cause can be devastating. Here are the major risks:</p>"
+    },
+    {
+      "sort_order": 25,
+      "block_key": "problems.threat_to_property_structure",
+      "section": "problems",
+      "label": "Problem: Threat to Property Structure",
+      "type": "json",
+      "image_path": "cms/our-services-termite-pest-control/broken-rjdsn0kngludq7mzovohksard3pp3aitdz91uuk3z4_7524415e.png",
+      "metadata": {
+        "slug": "threat_to_property_structure",
+        "image": "/assets/images/broken-rjdsn0kngludq7mzovohksard3pp3aitdz91uuk3z4_7524415e.png",
+        "title": "Threat to Property Structure",
+        "description": "Termites silently damage timber structures, walls, flooring, and foundations. Without professional termite control Melbourne, structural safety can be seriously compromised.",
+        "image_src": "/assets/images/broken-rjdsn0kngludq7mzovohksard3pp3aitdz91uuk3z4_7524415e.png"
+      }
+    },
+    {
+      "sort_order": 26,
+      "block_key": "problems.property_and_structural_damage",
+      "section": "problems",
+      "label": "Problem: Property &amp; Structural Damage",
+      "type": "json",
+      "image_path": "cms/our-services-termite-pest-control/property-rg6x1x3dzaugypqkq7g4ieu97josumw04yupg21lwg_e318c0e5.png",
+      "metadata": {
+        "slug": "property_and_structural_damage",
+        "image": "/assets/images/property-rg6x1x3dzaugypqkq7g4ieu97josumw04yupg21lwg_e318c0e5.png",
+        "title": "Property &amp; Structural Damage",
+        "description": "Termites feed on wooden beams, roof frames, doors, and flooring. Our expert termite treatment Melbourne protects homes and commercial buildings from long-term structural damage.",
+        "image_src": "/assets/images/property-rg6x1x3dzaugypqkq7g4ieu97josumw04yupg21lwg_e318c0e5.png"
+      }
+    },
+    {
+      "sort_order": 27,
+      "block_key": "problems.hidden_and_expensive_damage",
+      "section": "problems",
+      "label": "Problem: Hidden &amp; Expensive Damage",
+      "type": "json",
+      "image_path": "cms/our-services-termite-pest-control/property-1-rjdsqvork34tgi0x4jt9tt6za4o0qhv393swvstue8_63ed7d11.png",
+      "metadata": {
+        "slug": "hidden_and_expensive_damage",
+        "image": "/assets/images/property-1-rjdsqvork34tgi0x4jt9tt6za4o0qhv393swvstue8_63ed7d11.png",
+        "title": "Hidden &amp; Expensive Damage",
+        "description": "Unlike visible pests, termites destroy timber from the inside. Professional termite pest control is essential to detect hidden infestations before repair costs increase.",
+        "image_src": "/assets/images/property-1-rjdsqvork34tgi0x4jt9tt6za4o0qhv393swvstue8_63ed7d11.png"
+      }
+    },
+    {
+      "sort_order": 28,
+      "block_key": "problems.environmental_and_moisture_risks",
+      "section": "problems",
+      "label": "Problem: Environmental &amp; Moisture Risks",
+      "type": "json",
+      "image_path": "cms/our-services-termite-pest-control/flood-rjdsw9binyhvw67npvif3gbxni5ms57snq6xqsuqsg_b7d38bf4.png",
+      "metadata": {
+        "slug": "environmental_and_moisture_risks",
+        "image": "/assets/images/flood-rjdsw9binyhvw67npvif3gbxni5ms57snq6xqsuqsg_b7d38bf4.png",
+        "title": "Environmental &amp; Moisture Risks",
+        "description": "Moisture around foundations and poor drainage attract termites. Installing a proper termite barrier helps prevent future termite infestations in Melbourne properties.",
+        "image_src": "/assets/images/flood-rjdsw9binyhvw67npvif3gbxni5ms57snq6xqsuqsg_b7d38bf4.png"
+      }
+    },
+    {
+      "sort_order": 29,
+      "block_key": "problems.rapid_colony_growth",
+      "section": "problems",
+      "label": "Problem: Rapid Colony Growth",
+      "type": "json",
+      "image_path": "cms/our-services-termite-pest-control/diagram-rjdsz4prjqffda1gy47dpq8mzw00aum9pxycj8lfs0_10e82d62.png",
+      "metadata": {
+        "slug": "rapid_colony_growth",
+        "image": "/assets/images/diagram-rjdsz4prjqffda1gy47dpq8mzw00aum9pxycj8lfs0_10e82d62.png",
+        "title": "Rapid Colony Growth",
+        "description": "Termite colonies grow quickly and spread silently. Early termite removal Melbourne prevents population growth and widespread property damage.",
+        "image_src": "/assets/images/diagram-rjdsz4prjqffda1gy47dpq8mzw00aum9pxycj8lfs0_10e82d62.png"
+      }
+    },
+    {
+      "sort_order": 30,
+      "block_key": "problems.business_and_investment_risks",
+      "section": "problems",
+      "label": "Problem: Business &amp; Investment Risks",
+      "type": "json",
+      "image_path": "cms/our-services-termite-pest-control/house-with-money-symbol-rjdt1ffk95knqypbj3yjt5d79sob47q_0b42aaeb.png",
+      "metadata": {
+        "slug": "business_and_investment_risks",
+        "image": "/assets/images/house-with-money-symbol-rjdt1ffk95knqypbj3yjt5d79sob47q_0b42aaeb.png",
+        "title": "Business &amp; Investment Risks",
+        "description": "For businesses and property investors, termite damage can reduce property value and cause financial loss. Professional termite control ensures long-term protection and peace of mind.",
+        "image_src": "/assets/images/house-with-money-symbol-rjdt1ffk95knqypbj3yjt5d79sob47q_0b42aaeb.png"
+      }
+    },
+    {
+      "sort_order": 31,
+      "block_key": "prevention.eyebrow",
+      "section": "prevention",
+      "label": "Eyebrow",
+      "type": "text",
+      "value": "protects"
+    },
+    {
+      "sort_order": 32,
+      "block_key": "prevention.title",
+      "section": "prevention",
+      "label": "Section title",
+      "type": "text",
+      "value": "How to Prevent Termite Infestations?"
+    },
+    {
+      "sort_order": 33,
+      "block_key": "prevention.intro",
+      "section": "prevention",
+      "label": "Intro HTML",
+      "type": "html",
+      "value": "<p class=\"font-claude-response-body break-words whitespace-normal leading-[1.7]\">Termites are silent destroyers that often remain hidden until significant damage has already occurred. Preventing termite infestations requires proactive steps to reduce moisture, eliminate wood-to-soil contact, and install a proper <strong>termite barrier</strong>. Here are some effective ways to protect your property with professional <strong>termite control Melbourne</strong> solutions — because early <strong>termite management Melbourne</strong> is always better than costly repairs.</p>"
+    },
+    {
+      "sort_order": 34,
+      "block_key": "prevention.tips",
+      "section": "prevention",
+      "label": "Prevention tips",
+      "type": "json",
+      "metadata": {
+        "tips": [
+          {
+            "slug": "1_reduce_moisture_around_property",
+            "title": "1. Reduce Moisture Around Property",
+            "intro": null,
+            "list": [
+              "Fix leaking pipes and taps immediately",
+              "Improve drainage around foundations",
+              "Ensure proper ventilation in crawl spaces",
+              "Avoid water accumulation near walls — a key trigger for termite pest control needs"
+            ]
+          },
+          {
+            "slug": "2_install_a_termite_barrier",
+            "title": "2. Install a Termite Barrier",
+            "intro": null,
+            "list": [
+              "Apply chemical termite barrier systems for long-term termite control",
+              "Use physical termite barrier protection",
+              "Ensure full perimeter coverage with professional termite pest control Melbourne",
+              "Maintain barrier effectiveness annually"
+            ]
+          },
+          {
+            "slug": "3_eliminate_wood_to_soil_contact",
+            "title": "3. Eliminate Wood-to-Soil Contact",
+            "intro": null,
+            "list": [
+              "Keep timber structures elevated",
+              "Store firewood away from foundations",
+              "Avoid direct soil contact with decks — a common trigger for termite removal Melbourne",
+              "Replace damaged wooden posts"
+            ]
+          },
+          {
+            "slug": "4_seal_entry_points",
+            "title": "4. Seal Entry Points",
+            "intro": null,
+            "list": [
+              "Repair cracks in slabs and walls",
+              "Close gaps around plumbing lines",
+              "Seal foundation openings to strengthen your termite barrier",
+              "Fix damaged expansion joints"
+            ]
+          },
+          {
+            "slug": "5_schedule_regular_termite_inspections",
+            "title": "5. Schedule Regular Termite Inspections",
+            "intro": null,
+            "list": [
+              "Annual termite inspection Melbourne for early detection",
+              "Early detection of hidden activity",
+              "Identify structural vulnerabilities",
+              "Prevent costly termite treatment Melbourne repairs"
+            ]
+          },
+          {
+            "slug": "6_remove_termite_food_sources",
+            "title": "6. Remove Termite Food Sources",
+            "intro": null,
+            "list": [
+              "Clear wooden debris from yard",
+              "Remove old tree stumps",
+              "Avoid mulch buildup near walls — reduces need for termite pest control",
+              "Dispose of untreated timber scraps identified during termite inspection Melbourne"
+            ]
+          },
+          {
+            "slug": "7_monitor_signs_of_termite_activity",
+            "title": "7. Monitor Signs of Termite Activity",
+            "list": [
+              "Watch for mud tubes along walls — call our termite specialist Melbourne immediately",
+              "Check for hollow-sounding wood with professional termite inspection Melbourne",
+              "Look for discarded wings near windows and doors",
+              "Act quickly with termite removal Melbourne before damage spreads"
+            ]
+          },
+          {
+            "slug": "8_hire_professional_termite_control_melbourne",
+            "title": "8. Hire Professional Termite Control Melbourne",
+            "intro": "If termites persist, professional   termite control Melbourne   is the safest solution. Experts provide effective   termite treatment Melbourne  , complete   termite removal Melbourne  , and long-lasting   termite barrier   protection to prevent re-infestation — backed by experienced   termite pest control Melbourne   specialists you can trust. We also offer    wasp nest control Melbourne    and other pest management services for complete property protection.",
+            "list": []
+          }
+        ]
+      }
+    },
+    {
+      "sort_order": 35,
+      "block_key": "faq.title",
+      "section": "faq",
+      "label": "FAQ title",
+      "type": "text",
+      "value": "Frequently Asked Questions"
+    },
+    {
+      "sort_order": 36,
+      "block_key": "faq.sidebar_image",
+      "section": "faq",
+      "label": "FAQ sidebar image",
+      "type": "image",
+      "image_path": "cms/our-services-termite-pest-control/WhatsApp-Image-2024-08-28-at-15.35.06_bc7d2870-1_ecbbd918.jpg",
+      "metadata": {
+        "image_src": "/assets/images/WhatsApp-Image-2024-08-28-at-15.35.06_bc7d2870-1_ecbbd918.jpg"
+      }
+    },
+    {
+      "sort_order": 37,
+      "block_key": "faq.sidebar_cta_title",
+      "section": "faq",
+      "label": "Sidebar CTA title",
+      "type": "text",
+      "value": "Any questions you want to ask?"
+    },
+    {
+      "sort_order": 38,
+      "block_key": "faq.sidebar_cta_body",
+      "section": "faq",
+      "label": "Sidebar CTA body",
+      "type": "text",
+      "value": "Find answers to common questions about our pest control services, treatments, safety, and scheduling."
+    },
+    {
+      "sort_order": 39,
+      "block_key": "faq.sidebar_cta_button",
+      "section": "faq",
+      "label": "Sidebar CTA button",
+      "type": "link",
+      "value": "Contact Us",
+      "link_url": "/contact-us"
+    },
+    {
+      "sort_order": 40,
+      "block_key": "faq.items",
+      "section": "faq",
+      "label": "FAQ items",
+      "type": "json",
+      "metadata": {
+        "items": [
+          {
+            "question": "1. What is the cost of termite control in Melbourne?",
+            "answer_html": "<p><span >Termite control in Melbourne typically costs between $300 to $2500 depending on infestation level and treatment type. </span><b>7 States Pest Control</b><span > offers affordable and long-term termite solutions.</span></p>"
+          },
+          {
+            "question": "2. How do I choose the best termite control service in Melbourne?",
+            "answer_html": "<p><span >Look for licensed experts with proven experience and advanced treatment methods. </span><b>7 States Pest Control</b><span > is a trusted provider for effective termite control in Melbourne.</span></p>"
+          },
+          {
+            "question": "3. What is the most effective termite treatment?",
+            "answer_html": "<p><span >The most effective treatments include chemical barriers, baiting systems, and advanced inspection methods. </span><b>7 States Pest Control</b><span > uses modern techniques for complete termite protection.</span></p>"
+          },
+          {
+            "question": "4. How quickly can termite treatment be done?",
+            "answer_html": "<p><span >Termite treatment can be completed within a few hours, but long-term protection may require ongoing monitoring. </span><b>7 States Pest Control</b><span > ensures fast and reliable service.</span></p>"
+          },
+          {
+            "question": "5. How can I prevent termites in my home?",
+            "answer_html": "<p><span >To prevent termites, keep wood away from the house, fix moisture issues, and schedule regular inspections. </span><b>7 States Pest Control</b><span > also provides prevention plans for long-term safety.</span></p>"
+          }
+        ]
+      }
+    },
+    {
+      "sort_order": 41,
+      "block_key": "reviews.eyebrow",
+      "section": "reviews",
+      "label": "Reviews eyebrow",
+      "type": "text",
+      "value": "Clients Reviews"
+    },
+    {
+      "sort_order": 42,
+      "block_key": "reviews.title",
+      "section": "reviews",
+      "label": "Reviews title",
+      "type": "text",
+      "value": "7 States Pest Control for Reliable Pest Management Solutions"
+    },
+    {
+      "sort_order": 43,
+      "block_key": "reviews.subtitle",
+      "section": "reviews",
+      "label": "Reviews subtitle",
+      "type": "text",
+      "value": "Reviews of Our Pest Control Services"
+    },
+    {
+      "sort_order": 44,
+      "block_key": "reviews.rating_label",
+      "section": "reviews",
+      "label": "Rating label",
+      "type": "text",
+      "value": "EXCELLENT"
+    },
+    {
+      "sort_order": 45,
+      "block_key": "reviews.count_text",
+      "section": "reviews",
+      "label": "Review count text",
+      "type": "html",
+      "value": "<p class=\"elementor-heading-title elementor-size-default\">Based on&nbsp;<strong>45 reviews</strong></p>"
+    },
+    {
+      "sort_order": 46,
+      "block_key": "blog.eyebrow",
+      "section": "blog",
+      "label": "Section eyebrow",
+      "type": "text",
+      "value": "Our Latest Article"
+    },
+    {
+      "sort_order": 47,
+      "block_key": "blog.title",
+      "section": "blog",
+      "label": "Section title",
+      "type": "text",
+      "value": "Pest Problems? Here's Why Read Might Be Your Secret Weapon."
+    },
+    {
+      "sort_order": 48,
+      "block_key": "blog.posts",
+      "section": "blog",
+      "label": "Blog preview posts",
+      "type": "json",
+      "metadata": {
+        "posts": [
+          {
+            "title": "Why Melbourne Homes Need Professional Termite Pest Control",
+            "excerpt": "Termites are quiet workers. You will not hear them. You will not see them moving around your home in broad daylight. Yet they can quietly chew…",
+            "link": "/why-melbourne-homes-need-professional-termite-pest-control/",
+            "alt": "Why Melbourne Homes Need Professional Termite Pest Control",
+            "image_src": "/assets/images/WhatsApp-Image-2026-05-25-at-11.50.58-AM_83fa8176.jpeg",
+            "image_path": "cms/our-services-termite-pest-control/WhatsApp-Image-2026-05-25-at-11.50.58-AM_83fa8176.jpeg"
+          },
+          {
+            "title": "5 Myths About Wasp Removal Melbourne You Should Stop Believing",
+            "excerpt": "There is a lot of bad advice out there when it comes to dealing with wasps. People share tips at backyard barbecues, on Facebook groups, and…",
+            "link": "/5-myths-about-wasp-removal-melbourne-you-should-stop-believing/",
+            "alt": "5 Myths About Wasp Removal Melbourne You Should Stop Believing",
+            "image_src": "/assets/images/WhatsApp-Image-2026-05-25-at-11.52.11-AM_ddd44793.jpeg",
+            "image_path": "cms/our-services-termite-pest-control/WhatsApp-Image-2026-05-25-at-11.52.11-AM_ddd44793.jpeg"
+          },
+          {
+            "title": "The Smart Homeowner’s Guide to Termite Barrier Protection in Melbourne",
+            "excerpt": "If you own a home in Melbourne, you have probably heard about termite damage at least once. Maybe a neighbour found a hollow door frame. Maybe…",
+            "link": "/the-smart-homeowners-guide-to-termite-barrier-protection-in-melbourne/",
+            "alt": "The Smart Homeowner’s Guide to Termite Barrier Protection in Melbourne",
+            "image_src": "/assets/images/WhatsApp-Image-2026-05-25-at-11.53.29-AM_6379c2f3.jpeg",
+            "image_path": "cms/our-services-termite-pest-control/WhatsApp-Image-2026-05-25-at-11.53.29-AM_6379c2f3.jpeg"
+          }
+        ]
+      }
+    },
+    {
+      "sort_order": 49,
+      "block_key": "cta.eyebrow",
+      "section": "cta",
+      "label": "Eyebrow",
+      "type": "text",
+      "value": "Ideas to reality"
+    },
+    {
+      "sort_order": 50,
+      "block_key": "cta.title",
+      "section": "cta",
+      "label": "Section title",
+      "type": "text",
+      "value": "Talk to Us Today to Learn More"
+    },
+    {
+      "sort_order": 51,
+      "block_key": "cta.body",
+      "section": "cta",
+      "label": "Body HTML",
+      "type": "html",
+      "value": "<p>Do you have any specific questions about us, our services, or anything related to pest infestation issues? Call us today on&nbsp;<a href=\"tel:+61434660060\">( +61 434 660 060 )</a>&nbsp;or use our contact form to connect with our&nbsp;<b>7 States Pest Control</b>.</p><p class=\"font-claude-response-body break-words whitespace-normal leading-[1.7]\">You can get answers to your questions, get upfront quotes for all your pest control issues, and receive high-quality tailored services. Need help beyond termites? We also provide expert <a class=\"underline underline underline-offset-2 decoration-1 decoration-current/40 hover:decoration-current focus:decoration-current\" href=\"/rodent-control-in-melbourne\">rodent pest control Melbourne</a> to keep your property fully protected.</p>"
+    },
+    {
+      "sort_order": 52,
+      "block_key": "cta.button",
+      "section": "cta",
+      "label": "CTA button",
+      "type": "link",
+      "value": "Contact Us",
+      "link_url": "/contact-us"
+    }
+  ]
+}

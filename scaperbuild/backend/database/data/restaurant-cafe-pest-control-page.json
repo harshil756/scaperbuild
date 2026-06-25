@@ -1,0 +1,660 @@
+{
+  "slug": "restaurant-cafe-pest-control",
+  "title": "Restaurant & Cafe Pest Control",
+  "seo_title": "Restaurant Pest Control Services in Melbourne | 7 States Pest Control",
+  "seo_description": "Looking for reliable restaurant pest control in Melbourne? 7 States Pest Control offers eco-friendly, effective solutions for restaurants and cafes, ensuring compliance with health codes and keeping your establishment pest-free. Contact us today for a free quote!",
+  "body_class": "wp-singular page-template page-template-elementor_header_footer page wp-custom-logo wp-embed-responsive wp-theme-hello-elementor elementor-default elementor-template-full-width elementor-kit-9 elementor-page elementor-page-700",
+  "elementor_id": 700,
+  "is_published": true,
+  "blocks": [
+    {
+      "sort_order": 0,
+      "block_key": "background.hero",
+      "section": "hero",
+      "label": "Hero background",
+      "type": "background",
+      "background_image_path": "cms/restaurant-cafe-pest-control/403668_lrg_4575d8f9.jpg",
+      "metadata": {
+        "elementor_id": "f112203",
+        "filename": "403668_lrg_4575d8f9.jpg"
+      }
+    },
+    {
+      "sort_order": 1,
+      "block_key": "background.cta",
+      "section": "cta",
+      "label": "CTA background",
+      "type": "background",
+      "background_image_path": "cms/restaurant-cafe-pest-control/silverfish_2243216d.svg",
+      "metadata": {
+        "elementor_id": "628b8d2",
+        "filename": "silverfish_2243216d.svg"
+      }
+    },
+    {
+      "sort_order": 2,
+      "block_key": "hero.breadcrumb_current",
+      "section": "hero",
+      "label": "Breadcrumb current",
+      "type": "text",
+      "value": "Restaurant &amp; Cafe Pest Control"
+    },
+    {
+      "sort_order": 3,
+      "block_key": "hero.title",
+      "section": "hero",
+      "label": "Section title",
+      "type": "text",
+      "value": "Pest Control for Restaurant"
+    },
+    {
+      "sort_order": 4,
+      "block_key": "hero.heading",
+      "section": "hero",
+      "label": "Main heading",
+      "type": "text",
+      "value": "Restaurant & Cafe Pest Control In Melbourne"
+    },
+    {
+      "sort_order": 5,
+      "block_key": "hero.intro",
+      "section": "hero",
+      "label": "Intro paragraph",
+      "type": "html",
+      "value": "<div class=\"elementor-element elementor-element-de434cf elementor-widget elementor-widget-text-editor\" data-element_type=\"widget\" data-id=\"de434cf\" data-settings=\"{&quot;ekit_we_effect_on&quot;:&quot;none&quot;}\" data-widget_type=\"text-editor.default\"><div class=\"elementor-widget-container\"><p><span >Restaurant and cafe owners frequently encounter pest and rodent problems due to the abundant food and water sources in their establishments. Insects, rats, and mice are naturally attracted to these resources, making pest control for restaurants and cafes a critical task for operators.</span></p><p><span >While the key to preventing infestations typically involves limiting access to food and water, this challenge becomes more complicated in the food service industry. In restaurants and cafes, food is consistently exposed, whether in the kitchen, storage areas, or being consumed by customers. Without effective restaurant pest control, these environments become hotspots for pests.</span></p></div></div>"
+    },
+    {
+      "sort_order": 6,
+      "block_key": "quote_form.title",
+      "section": "quote_form",
+      "label": "Form heading",
+      "type": "text",
+      "value": "Restaurant &amp; Cafe Pest Control In Melbourne"
+    },
+    {
+      "sort_order": 7,
+      "block_key": "quote_form.subtitle",
+      "section": "quote_form",
+      "label": "Form subtitle",
+      "type": "text",
+      "value": "Have an enquiry? Leave us your details and we’ll call you back during business hours."
+    },
+    {
+      "sort_order": 8,
+      "block_key": "quote_form.submit_text",
+      "section": "quote_form",
+      "label": "Submit button text",
+      "type": "text",
+      "value": "Submit Quote"
+    },
+    {
+      "sort_order": 9,
+      "block_key": "about.counter_title",
+      "section": "about",
+      "label": "Counter label",
+      "type": "text",
+      "value": "Projects Done"
+    },
+    {
+      "sort_order": 10,
+      "block_key": "about.counter_value",
+      "section": "about",
+      "label": "Counter value",
+      "type": "text",
+      "value": "10"
+    },
+    {
+      "sort_order": 11,
+      "block_key": "about.counter_suffix",
+      "section": "about",
+      "label": "Counter suffix",
+      "type": "text",
+      "value": "+"
+    },
+    {
+      "sort_order": 12,
+      "block_key": "about.image",
+      "section": "about",
+      "label": "About section image",
+      "type": "image",
+      "image_path": "cms/restaurant-cafe-pest-control/169184_0c59729f9322438ea7a6d1845c63f578mv2_85623382.webp",
+      "metadata": {
+        "elementor_id": "1385c0d",
+        "image_src": "/assets/images/169184_0c59729f9322438ea7a6d1845c63f578mv2_85623382.webp"
+      }
+    },
+    {
+      "sort_order": 13,
+      "block_key": "about.title",
+      "section": "about",
+      "label": "Section title",
+      "type": "text",
+      "value": "Pest Control for Offices"
+    },
+    {
+      "sort_order": 14,
+      "block_key": "about.subtitle",
+      "section": "about",
+      "label": "Section subtitle",
+      "type": "text",
+      "value": "Why Choose 7 States Pest Control for Restaurant Extermination Services?"
+    },
+    {
+      "sort_order": 15,
+      "block_key": "why_choose.eyebrow",
+      "section": "why_choose",
+      "label": "Eyebrow",
+      "type": "text",
+      "value": "Why Choose"
+    },
+    {
+      "sort_order": 16,
+      "block_key": "why_choose.intro",
+      "section": "why_choose",
+      "label": "Intro HTML",
+      "type": "html",
+      "value": "<p>We believe in offering the best solutions to our valued customers. Allow us to attend to your pest control requirements &amp; keep your family and little ones safe.</p>"
+    },
+    {
+      "sort_order": 17,
+      "block_key": "why_choose.local_expertise",
+      "section": "why_choose",
+      "label": "Why choose: Local Expertise​",
+      "type": "json",
+      "image_path": "cms/restaurant-cafe-pest-control/professional-success-r8bomvbu3c93uax0u85h20goco60kp9o7y_4cc9959a.png",
+      "metadata": {
+        "slug": "local_expertise",
+        "id": "368cd3e",
+        "image": "/assets/images/professional-success-r8bomvbu3c93uax0u85h20goco60kp9o7y_4cc9959a.png",
+        "title": "Local Expertise​",
+        "description": "Pest Control for Restaurants Near Me Our team at 7 States Pest Control is experienced in handling the specific pest challenges that restaurants face in Melbourne. Whether you need restaurant pest control near me or tailored solutions for your food establishment, we have the expertise to keep your restaurant pest-free and compliant with health standards.",
+        "image_src": "/assets/images/professional-success-r8bomvbu3c93uax0u85h20goco60kp9o7y_4cc9959a.png"
+      }
+    },
+    {
+      "sort_order": 18,
+      "block_key": "why_choose.comprehensive_services",
+      "section": "why_choose",
+      "label": "Why choose: Comprehensive Services",
+      "type": "json",
+      "image_path": "cms/restaurant-cafe-pest-control/execution-r8boo1mkmvv0cr7kz8foo7sf30dj72xldrxrow7ew0_abca882a.png",
+      "metadata": {
+        "slug": "comprehensive_services",
+        "id": "7131d16",
+        "image": "/assets/images/execution-r8boo1mkmvv0cr7kz8foo7sf30dj72xldrxrow7ew0_abca882a.png",
+        "title": "Comprehensive Services",
+        "description": "Restaurant Pest Control Services We provide effective restaurant pest control services designed to eliminate pests like rodents, insects, and more. Our comprehensive approach ensures that we not only address existing issues but also implement preventive measures to keep your restaurant safe and pest-free.",
+        "image_src": "/assets/images/execution-r8boo1mkmvv0cr7kz8foo7sf30dj72xldrxrow7ew0_abca882a.png"
+      }
+    },
+    {
+      "sort_order": 19,
+      "block_key": "why_choose.environmentally_friendly_solutions",
+      "section": "why_choose",
+      "label": "Why choose: Environmentally Friendly Solutions",
+      "type": "json",
+      "image_path": "cms/restaurant-cafe-pest-control/eco-r8bop2aaa70h95d2wygdaob2gi769mm9p6aqmysi5k_6ad5c5e4.png",
+      "metadata": {
+        "slug": "environmentally_friendly_solutions",
+        "id": "6e417a4",
+        "image": "/assets/images/eco-r8bop2aaa70h95d2wygdaob2gi769mm9p6aqmysi5k_6ad5c5e4.png",
+        "title": "Environmentally Friendly Solutions",
+        "description": "Best Pest Control for Restaurants At 7 States Pest Control, we prioritize eco-friendly solutions to protect your restaurant and the environment. Our best pest control for restaurants ensures that pests are eliminated without compromising safety, using sustainable, effective methods that align with industry standards.",
+        "image_src": "/assets/images/eco-r8bop2aaa70h95d2wygdaob2gi769mm9p6aqmysi5k_6ad5c5e4.png"
+      }
+    },
+    {
+      "sort_order": 20,
+      "block_key": "why_choose.licensed_and_insured",
+      "section": "why_choose",
+      "label": "Why choose: Licensed and Insured",
+      "type": "json",
+      "image_path": "cms/restaurant-cafe-pest-control/clipboard-r8botv8kyxty9sr3z91hm8w7jxodvl1qilf1plkmcg_c7b8178b.png",
+      "metadata": {
+        "slug": "licensed_and_insured",
+        "id": "bb0ab2d",
+        "image": "/assets/images/clipboard-r8botv8kyxty9sr3z91hm8w7jxodvl1qilf1plkmcg_c7b8178b.png",
+        "title": "Licensed and Insured",
+        "description": "Pest Control Services for Restaurants Near Me As a licensed and insured pest control provider, 7 States Pest Control offers reliable restaurant pest control services near me. Our certified technicians follow the latest industry practices, ensuring that your restaurant stays pest-free and meets all health and safety regulations.",
+        "image_src": "/assets/images/clipboard-r8botv8kyxty9sr3z91hm8w7jxodvl1qilf1plkmcg_c7b8178b.png"
+      }
+    },
+    {
+      "sort_order": 21,
+      "block_key": "why_choose.residential_pest_control",
+      "section": "why_choose",
+      "label": "Why choose: Residential Pest Control",
+      "type": "json",
+      "image_path": "cms/restaurant-cafe-pest-control/insecticide-r8bov92115q5d4qqwckpsebn1cuu7jjidfzs59ir6o_c4acec4d.png",
+      "metadata": {
+        "slug": "residential_pest_control",
+        "id": "e63af5e",
+        "image": "/assets/images/insecticide-r8bov92115q5d4qqwckpsebn1cuu7jjidfzs59ir6o_c4acec4d.png",
+        "title": "Residential Pest Control",
+        "description": "Restaurant Pest Control Services Ensure peace of mind with our residential pest control services tailored to restaurant owners. We protect both your home and your business from pests, providing comprehensive restaurant pest control solutions that keep your living and working spaces secure.",
+        "image_src": "/assets/images/insecticide-r8bov92115q5d4qqwckpsebn1cuu7jjidfzs59ir6o_c4acec4d.png"
+      }
+    },
+    {
+      "sort_order": 22,
+      "block_key": "why_choose.commercial_pest_management",
+      "section": "why_choose",
+      "label": "Why choose: Commercial Pest Management",
+      "type": "json",
+      "image_path": "cms/restaurant-cafe-pest-control/sanitizer-r8bow196q6sr1flsboriv77guwzumgnghbkcjkcy00_3f2a2dd6.png",
+      "metadata": {
+        "slug": "commercial_pest_management",
+        "id": "54d339c",
+        "image": "/assets/images/sanitizer-r8bow196q6sr1flsboriv77guwzumgnghbkcjkcy00_3f2a2dd6.png",
+        "title": "Commercial Pest Management",
+        "description": "Pest Control for Restaurants We offer customized commercial pest management solutions to safeguard your restaurant. From kitchen to storage areas, our restaurant pest control services ensure that your establishment remains pest-free, compliant with health codes, and protected from future infestations.",
+        "image_src": "/assets/images/sanitizer-r8bow196q6sr1flsboriv77guwzumgnghbkcjkcy00_3f2a2dd6.png"
+      }
+    },
+    {
+      "sort_order": 23,
+      "block_key": "contact.eyebrow",
+      "section": "contact",
+      "label": "Eyebrow",
+      "type": "text",
+      "value": "Get in Touch"
+    },
+    {
+      "sort_order": 24,
+      "block_key": "contact.title",
+      "section": "contact",
+      "label": "Section title",
+      "type": "text",
+      "value": "Contact 7 States Pest Control for Melbourne Pest Control"
+    },
+    {
+      "sort_order": 25,
+      "block_key": "contact.body",
+      "section": "contact",
+      "label": "Body HTML",
+      "type": "html",
+      "value": "<p>Don’t let pests take over your home or business. Contact&nbsp;<a href=\"/\"><strong>7 States Pest Control</strong></a>&nbsp;today for reliable and effective pest control services in Melbourne. Our team is ready to assess your situation and provide tailored solutions to ensure a pest-free environment.</p>"
+    },
+    {
+      "sort_order": 26,
+      "block_key": "contact.button",
+      "section": "contact",
+      "label": "Contact button",
+      "type": "link",
+      "value": "Our Locations",
+      "link_url": "/melbourne"
+    },
+    {
+      "sort_order": 27,
+      "block_key": "services.eyebrow",
+      "section": "services",
+      "label": "Eyebrow",
+      "type": "text",
+      "value": "Our Services"
+    },
+    {
+      "sort_order": 28,
+      "block_key": "services.title",
+      "section": "services",
+      "label": "Section title",
+      "type": "text",
+      "value": "Explore Our Diverse Pest Control Services at 7 States Pest Control"
+    },
+    {
+      "sort_order": 29,
+      "block_key": "services.intro",
+      "section": "services",
+      "label": "Intro HTML",
+      "type": "html",
+      "value": "<p>7 States Pest Control is your one-stop destination<br />to avail of pest control services, including:</p>"
+    },
+    {
+      "sort_order": 30,
+      "block_key": "services.cockroach_control",
+      "section": "services",
+      "label": "Service: Cockroach Control",
+      "type": "json",
+      "image_path": "cms/restaurant-cafe-pest-control/Cockroaches.png-1_56844a04.webp",
+      "metadata": {
+        "slug": "cockroach_control",
+        "id": "31cafd2",
+        "image": "/assets/images/Cockroaches.png-1_56844a04.webp",
+        "title": "Cockroach Control",
+        "link": "/our-services-cockroach-control",
+        "alt": "cockroach pest control",
+        "button_text": "Learn More",
+        "image_src": "/assets/images/Cockroaches.png-1_56844a04.webp"
+      }
+    },
+    {
+      "sort_order": 31,
+      "block_key": "services.bed_bug_treatment",
+      "section": "services",
+      "label": "Service: Bed Bug Treatment",
+      "type": "json",
+      "image_path": "cms/restaurant-cafe-pest-control/Bed-Bug.png_1da7e9d8.webp",
+      "metadata": {
+        "slug": "bed_bug_treatment",
+        "id": "f25e967",
+        "image": "/assets/images/Bed-Bug.png_1da7e9d8.webp",
+        "title": "Bed Bug Treatment",
+        "link": "/our-services-bed-bug-treatment",
+        "alt": "Bed Bug Pest Control",
+        "button_text": "Learn More",
+        "image_src": "/assets/images/Bed-Bug.png_1da7e9d8.webp"
+      }
+    },
+    {
+      "sort_order": 32,
+      "block_key": "services.ant_pest_control",
+      "section": "services",
+      "label": "Service: Ant Pest Control",
+      "type": "json",
+      "image_path": "cms/restaurant-cafe-pest-control/ant-colony-insect-animals-pest-png_73d1a8ca.png",
+      "metadata": {
+        "slug": "ant_pest_control",
+        "id": "a6f1111",
+        "image": "/assets/images/ant-colony-insect-animals-pest-png_73d1a8ca.png",
+        "title": "Ant Pest Control",
+        "link": "/our-services-ant-pest-control",
+        "alt": "Ant Pest Control",
+        "button_text": "Learn More",
+        "image_src": "/assets/images/ant-colony-insect-animals-pest-png_73d1a8ca.png"
+      }
+    },
+    {
+      "sort_order": 33,
+      "block_key": "services.mites_control",
+      "section": "services",
+      "label": "Service: Mites Control",
+      "type": "json",
+      "image_path": "cms/restaurant-cafe-pest-control/Mite-Control.png_4c3b4b78.webp",
+      "metadata": {
+        "slug": "mites_control",
+        "id": "9786458",
+        "image": "/assets/images/Mite-Control.png_4c3b4b78.webp",
+        "title": "Mites Control",
+        "link": "/our-services-mites-control",
+        "alt": "mites control",
+        "button_text": "Learn More",
+        "image_src": "/assets/images/Mite-Control.png_4c3b4b78.webp"
+      }
+    },
+    {
+      "sort_order": 34,
+      "block_key": "services.fly_control",
+      "section": "services",
+      "label": "Service: Fly Control",
+      "type": "json",
+      "image_path": "cms/restaurant-cafe-pest-control/Fly-Control.png_4cfa4c12.webp",
+      "metadata": {
+        "slug": "fly_control",
+        "id": "7d0c882",
+        "image": "/assets/images/Fly-Control.png_4cfa4c12.webp",
+        "title": "Fly Control",
+        "link": "/our-services-fly-control",
+        "alt": "Fly-Control",
+        "button_text": "Learn More",
+        "image_src": "/assets/images/Fly-Control.png_4cfa4c12.webp"
+      }
+    },
+    {
+      "sort_order": 35,
+      "block_key": "services.flea_treatment",
+      "section": "services",
+      "label": "Service: Flea Treatment",
+      "type": "json",
+      "image_path": "cms/restaurant-cafe-pest-control/Flea-Control.png_a5558f62.webp",
+      "metadata": {
+        "slug": "flea_treatment",
+        "id": "d05f0b0",
+        "image": "/assets/images/Flea-Control.png_a5558f62.webp",
+        "title": "Flea Treatment",
+        "link": "/flea-treatment",
+        "alt": "Flea Control",
+        "button_text": "Learn More",
+        "image_src": "/assets/images/Flea-Control.png_a5558f62.webp"
+      }
+    },
+    {
+      "sort_order": 36,
+      "block_key": "services.mosquito_pest_control",
+      "section": "services",
+      "label": "Service: Mosquito Pest Control",
+      "type": "json",
+      "image_path": "cms/restaurant-cafe-pest-control/Mosquito-Control.png_90777f1c.webp",
+      "metadata": {
+        "slug": "mosquito_pest_control",
+        "id": "7891756",
+        "image": "/assets/images/Mosquito-Control.png_90777f1c.webp",
+        "title": "Mosquito Pest Control",
+        "link": "/our-services-mosquito-pest-control",
+        "alt": "Mosquito pest Control",
+        "button_text": "Learn More",
+        "image_src": "/assets/images/Mosquito-Control.png_90777f1c.webp"
+      }
+    },
+    {
+      "sort_order": 37,
+      "block_key": "services.rodent_control",
+      "section": "services",
+      "label": "Service: Rodent Control",
+      "type": "json",
+      "image_path": "cms/restaurant-cafe-pest-control/Rodent-Control.png-1_0842a15c.webp",
+      "metadata": {
+        "slug": "rodent_control",
+        "id": "ae91314",
+        "image": "/assets/images/Rodent-Control.png-1_0842a15c.webp",
+        "title": "Rodent Control",
+        "link": "/rodent-control-in-melbourne",
+        "alt": "Rodent Pest Control",
+        "button_text": "Learn More",
+        "image_src": "/assets/images/Rodent-Control.png-1_0842a15c.webp"
+      }
+    },
+    {
+      "sort_order": 38,
+      "block_key": "services.moth_control",
+      "section": "services",
+      "label": "Service: Moth Control",
+      "type": "json",
+      "image_path": "cms/restaurant-cafe-pest-control/Moth-Control.png-1_737c5080.webp",
+      "metadata": {
+        "slug": "moth_control",
+        "id": "6415ee9",
+        "image": "/assets/images/Moth-Control.png-1_737c5080.webp",
+        "title": "Moth Control",
+        "link": "/our-services-moth-control",
+        "alt": "Moth Control",
+        "button_text": "Learn More",
+        "image_src": "/assets/images/Moth-Control.png-1_737c5080.webp"
+      }
+    },
+    {
+      "sort_order": 39,
+      "block_key": "services.wasp_control_services",
+      "section": "services",
+      "label": "Service: Wasp Control Services",
+      "type": "json",
+      "image_path": "cms/restaurant-cafe-pest-control/Wasp-Removal.png-1_2802cb47.webp",
+      "metadata": {
+        "slug": "wasp_control_services",
+        "id": "e561517",
+        "image": "/assets/images/Wasp-Removal.png-1_2802cb47.webp",
+        "title": "Wasp Control Services",
+        "link": "/wasp-removal-melbourne",
+        "alt": "Wasp Removal melbourne",
+        "button_text": "Learn More",
+        "image_src": "/assets/images/Wasp-Removal.png-1_2802cb47.webp"
+      }
+    },
+    {
+      "sort_order": 40,
+      "block_key": "services.spider_control_treatment",
+      "section": "services",
+      "label": "Service: Spider Control Treatment",
+      "type": "json",
+      "image_path": "cms/restaurant-cafe-pest-control/Spider-Control.png-2_18a07ad3.webp",
+      "metadata": {
+        "slug": "spider_control_treatment",
+        "id": "34f9767",
+        "image": "/assets/images/Spider-Control.png-2_18a07ad3.webp",
+        "title": "Spider Control Treatment",
+        "link": "/our-services-spider-control-treatment",
+        "alt": "spider control",
+        "button_text": "Learn More",
+        "image_src": "/assets/images/Spider-Control.png-2_18a07ad3.webp"
+      }
+    },
+    {
+      "sort_order": 41,
+      "block_key": "services.silverfish_treatment",
+      "section": "services",
+      "label": "Service: Silverfish Treatment",
+      "type": "json",
+      "image_path": "cms/restaurant-cafe-pest-control/Silver-Fish.png_cbd8da70.webp",
+      "metadata": {
+        "slug": "silverfish_treatment",
+        "id": "628b8d2",
+        "image": "/assets/images/Silver-Fish.png_cbd8da70.webp",
+        "title": "Silverfish Treatment",
+        "link": "/our-services-silverfish-treatment",
+        "alt": "silver fish control",
+        "button_text": "Learn More",
+        "image_src": "/assets/images/Silver-Fish.png_cbd8da70.webp"
+      }
+    },
+    {
+      "sort_order": 42,
+      "block_key": "expertise.title",
+      "section": "expertise",
+      "label": "Section title",
+      "type": "text",
+      "value": "Our Expertise"
+    },
+    {
+      "sort_order": 43,
+      "block_key": "expertise.termites",
+      "section": "expertise",
+      "label": "Expertise: Termites",
+      "type": "json",
+      "metadata": {
+        "slug": "termites",
+        "title": "Termites"
+      }
+    },
+    {
+      "sort_order": 44,
+      "block_key": "expertise.all_pest_control",
+      "section": "expertise",
+      "label": "Expertise: All Pest Control",
+      "type": "json",
+      "metadata": {
+        "slug": "all_pest_control",
+        "title": "All Pest Control"
+      }
+    },
+    {
+      "sort_order": 45,
+      "block_key": "expertise.all_sub_location",
+      "section": "expertise",
+      "label": "Expertise: All Sub Location",
+      "type": "json",
+      "metadata": {
+        "slug": "all_sub_location",
+        "title": "All Sub Location"
+      }
+    },
+    {
+      "sort_order": 46,
+      "block_key": "expertise.same_day_services",
+      "section": "expertise",
+      "label": "Expertise: Same Day Services",
+      "type": "json",
+      "metadata": {
+        "slug": "same_day_services",
+        "title": "Same Day Services"
+      }
+    },
+    {
+      "sort_order": 47,
+      "block_key": "faq.items",
+      "section": "faq",
+      "label": "FAQ items",
+      "type": "json",
+      "metadata": {
+        "items": [
+          {
+            "question": "1. Why is pest control important for restaurants?",
+            "answer_html": "<p><span >Pest control for restaurants is crucial to ensure the safety of your customers and staff. It helps prevent infestations of rodents, insects, and other pests that can contaminate food, damage property, and harm your restaurant’s reputation. </span><b>Restaurant pest control</b><span > also ensures compliance with health codes and helps you avoid costly fines or closures.</span></p>"
+          },
+          {
+            "question": "2. How often should I schedule pest control for my restaurant?",
+            "answer_html": "<p><span >For most restaurants, regular </span><b>restaurant pest control</b><span > services should be scheduled every 3 to 6 months. However, the frequency may vary depending on the size of your restaurant, location, and the types of pests you're dealing with. Our team at </span><b>7 States Pest Control</b><span > can provide a customized pest control plan based on your specific needs.</span></p>"
+          },
+          {
+            "question": "3. What pests are most common in restaurants?",
+            "answer_html": "<p><span >Common pests in restaurants include ants, cockroaches, rodents, flies, and stored product pests. </span><b>Restaurant pest control</b><span > services are designed to address these specific pests and prevent them from infesting your establishment. Our </span><b>restaurant exterminator</b><span > services ensure your business stays pest-free.</span></p>"
+          },
+          {
+            "question": "4. How much does restaurant pest control cost?",
+            "answer_html": "<p><span >The cost of </span><b>restaurant pest control services</b><span > varies based on the size of your restaurant, the type of pests, and the level of infestation. </span><b>7 States Pest Control</b><span > offers affordable pricing for effective pest control and prevention. Contact us today for a free quote on </span><b>restaurant pest control cost</b><span >.</span></p>"
+          },
+          {
+            "question": "5. Are your pest control treatments safe for food establishments?",
+            "answer_html": "<p><span >Yes, our treatments for </span><b>restaurant pest control</b><span > are both safe and effective. We prioritize environmentally friendly solutions that are safe for your staff, customers, and the environment. Our </span><b>eco-friendly pest control solutions</b><span > ensure that your restaurant remains compliant with health regulations while maintaining a pest-free environment.</span></p>"
+          },
+          {
+            "question": "6. How can I prevent pests from entering my restaurant?",
+            "answer_html": "<p><span >To prevent pests, ensure that food is stored properly, trash is disposed of regularly, and all entry points are sealed. Regular </span><b>restaurant pest control</b><span > inspections are also important to spot potential problems early. </span><b>7 States Pest Control</b><span > offers comprehensive </span><b>restaurant pest management</b><span > to safeguard your establishment from infestations.</span></p>"
+          }
+        ]
+      }
+    },
+    {
+      "sort_order": 48,
+      "block_key": "faq.title",
+      "section": "faq",
+      "label": "FAQ title",
+      "type": "text",
+      "value": "Frequently Asked Questions"
+    },
+    {
+      "sort_order": 49,
+      "block_key": "faq.sidebar_image",
+      "section": "faq",
+      "label": "FAQ sidebar image",
+      "type": "image",
+      "image_path": "cms/restaurant-cafe-pest-control/WhatsApp-Image-2024-08-28-at-15.35.06_bc7d2870-1_ecbbd918.jpg",
+      "metadata": {
+        "elementor_id": "1112be0",
+        "image_src": "/assets/images/WhatsApp-Image-2024-08-28-at-15.35.06_bc7d2870-1_ecbbd918.jpg"
+      }
+    },
+    {
+      "sort_order": 50,
+      "block_key": "faq.sidebar_cta_title",
+      "section": "faq",
+      "label": "Sidebar CTA title",
+      "type": "text",
+      "value": "Any questions you want to ask?"
+    },
+    {
+      "sort_order": 51,
+      "block_key": "faq.sidebar_cta_body",
+      "section": "faq",
+      "label": "Sidebar CTA body",
+      "type": "text",
+      "value": "Find answers to common questions about our pest control services, treatments, safety, and scheduling."
+    },
+    {
+      "sort_order": 52,
+      "block_key": "faq.sidebar_cta_button",
+      "section": "faq",
+      "label": "Sidebar CTA button",
+      "type": "link",
+      "value": "Contact Us",
+      "link_url": "/contact-us"
+    }
+  ]
+}

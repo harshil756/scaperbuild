@@ -2,6 +2,7 @@
 
 namespace App\Filament\Resources\Pages\Schemas;
 
+use App\Models\Page;
 use Filament\Forms\Components\Textarea;
 use Filament\Forms\Components\TextInput;
 use Filament\Forms\Components\Toggle;
@@ -23,7 +24,9 @@ class PageForm
                         TextInput::make('slug')
                             ->required()
                             ->maxLength(255)
-                            ->unique(ignoreRecord: true),
+                            ->unique(ignoreRecord: true)
+                            ->disabled(fn (?Page $record): bool => filled($record?->slug))
+                            ->dehydrated(),
                         TextInput::make('seo_title')
                             ->label('SEO title')
                             ->maxLength(255)
@@ -41,6 +44,11 @@ class PageForm
                             ->default(true),
                     ]),
                 ...HomePageSectionsForm::sections(),
+                ...AboutPageSectionsForm::sections(),
+                ...SolarPanelBirdProofingPageSectionsForm::sections(),
+                ...AntPestControlPageSectionsForm::sections(),
+                ...MelbournePageSectionsForm::sections(),
+                ...ServicePageSectionsForm::sections(),
             ]);
     }
 }

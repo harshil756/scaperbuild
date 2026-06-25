@@ -1,0 +1,620 @@
+{
+  "slug": "our-services-fly-control",
+  "title": "Fly Control",
+  "seo_title": "Fly Control in Melbourne – Starting Price $170.",
+  "seo_description": "If you think it’s the right time to start doing something to eliminate moths from your house, hire 7 States Pest Control. At our company, our professionals assist you with effective Moth Control and elimination solutions.",
+  "body_class": "wp-singular page-template page-template-elementor_header_footer page wp-custom-logo wp-embed-responsive wp-theme-hello-elementor elementor-default elementor-template-full-width elementor-kit-9 elementor-page elementor-page-1544",
+  "elementor_id": 1544,
+  "is_published": true,
+  "blocks": [
+    {
+      "sort_order": 0,
+      "block_key": "background.hero",
+      "section": "hero",
+      "label": "Hero background",
+      "type": "background",
+      "background_image_path": "cms/our-services-fly-control/best-practice-fly-control-2048x1360.jpeg_7c2a2d02.webp",
+      "metadata": {
+        "elementor_id": "46a82e4",
+        "filename": "best-practice-fly-control-2048x1360.jpeg_7c2a2d02.webp"
+      }
+    },
+    {
+      "sort_order": 1,
+      "block_key": "background.cta",
+      "section": "cta",
+      "label": "CTA background",
+      "type": "background",
+      "background_image_path": "cms/our-services-fly-control/URUU-01-2048x1365-2_7c216e6d.jpg",
+      "metadata": {
+        "elementor_id": "057b4d3",
+        "filename": "URUU-01-2048x1365-2_7c216e6d.jpg"
+      }
+    },
+    {
+      "sort_order": 2,
+      "block_key": "hero.breadcrumb_parent",
+      "section": "hero",
+      "label": "Breadcrumb parent",
+      "type": "text",
+      "value": "Services"
+    },
+    {
+      "sort_order": 3,
+      "block_key": "hero.breadcrumb_current",
+      "section": "hero",
+      "label": "Breadcrumb current",
+      "type": "text",
+      "value": "fly control"
+    },
+    {
+      "sort_order": 4,
+      "block_key": "hero.title",
+      "section": "hero",
+      "label": "Section title",
+      "type": "text",
+      "value": "Pest Control Services"
+    },
+    {
+      "sort_order": 5,
+      "block_key": "hero.heading",
+      "section": "hero",
+      "label": "Main heading",
+      "type": "text",
+      "value": "Get Rid of Moths with Our Pest Control Services"
+    },
+    {
+      "sort_order": 6,
+      "block_key": "hero.intro",
+      "section": "hero",
+      "label": "Intro paragraph",
+      "type": "html",
+      "value": "<div class=\"elementor-element elementor-element-de434cf elementor-widget elementor-widget-text-editor\" data-element_type=\"widget\" data-id=\"de434cf\" data-settings=\"{&quot;ekit_we_effect_on&quot;:&quot;none&quot;}\" data-widget_type=\"text-editor.default\"><div class=\"elementor-widget-container\"><p>Flies are a common problem in homes and businesses, and they can be more than just a nuisance. They can also carry diseases, so it’s important to get rid of them quickly and effectively.</p><p>That’s where&nbsp;<a href=\"/\"><strong>7 States Pest Control</strong></a>&nbsp;comes in. We offer professional pest control services to get rid of flies and other pests from your property. Our experienced technicians will identify the source of the infestation and develop a customized treatment plan to eliminate the flies and prevent them from coming back.</p></div></div>"
+    },
+    {
+      "sort_order": 7,
+      "block_key": "quote_form.title",
+      "section": "quote_form",
+      "label": "Form heading",
+      "type": "text",
+      "value": "Get Rid of Moths with Our Pest Control Services"
+    },
+    {
+      "sort_order": 8,
+      "block_key": "quote_form.subtitle",
+      "section": "quote_form",
+      "label": "Form subtitle",
+      "type": "text",
+      "value": "Have an enquiry? Leave us your details and we’ll call you back during business hours."
+    },
+    {
+      "sort_order": 9,
+      "block_key": "quote_form.submit_text",
+      "section": "quote_form",
+      "label": "Submit button text",
+      "type": "text",
+      "value": "Submit Quote"
+    },
+    {
+      "sort_order": 10,
+      "block_key": "faq.items",
+      "section": "faq",
+      "label": "FAQ items",
+      "type": "json",
+      "metadata": {
+        "items": [
+          {
+            "question": "1. What makes 7 States Pest Control the best pest control service in Melbourne?",
+            "answer_html": "<p>&nbsp;<b>7 States Pest Control</b>&nbsp;provides top-rated&nbsp;<b>pest control service in Melbourne</b>, using advanced techniques and eco-friendly products to eliminate pests quickly and safely. Our experienced team handles all types of infestations, ensuring long-term protection.</p>"
+          },
+          {
+            "question": "2. Where can I find reliable pest control in Melbourne CBD?",
+            "answer_html": "<p>For fast and effective&nbsp;<b>pest control Melbourne CBD</b>, trust&nbsp;<b>7 States Pest Control</b>. We serve both residential and commercial properties in the central business district with tailored pest management solutions.</p>"
+          },
+          {
+            "question": "3. How do I choose a professional pest exterminator in Melbourne?",
+            "answer_html": "<p>Look for licensed, experienced providers like&nbsp;<b>7 States Pest Control</b>. As a leading&nbsp;<b>pest exterminator Melbourne</b>, we offer prompt inspections, thorough extermination, and guaranteed results at competitive rates.</p>"
+          },
+          {
+            "question": "4. Is there a trusted pest removal company in Melbourne?",
+            "answer_html": "<p>&nbsp;Yes,&nbsp;<b>7 States Pest Control</b>&nbsp;is your go-to expert for&nbsp;<b>pest removal Melbourne</b>. We identify the root cause of infestations and apply targeted treatments to remove pests from your home or business permanently.</p>"
+          },
+          {
+            "question": "5. Why should I invest in pest control in Melbourne for my home or office?",
+            "answer_html": "<p>Regular&nbsp;<b>pest control in Melbourne</b>&nbsp;helps protect your property from damage and health risks.&nbsp;<b>7 States Pest Control</b>&nbsp;offers comprehensive services that keep your environment pest-free and comfortable year-round.</p>"
+          }
+        ]
+      }
+    },
+    {
+      "sort_order": 11,
+      "block_key": "faq.title",
+      "section": "faq",
+      "label": "FAQ title",
+      "type": "text",
+      "value": "Frequently Asked Questions"
+    },
+    {
+      "sort_order": 12,
+      "block_key": "faq.sidebar_image",
+      "section": "faq",
+      "label": "FAQ sidebar image",
+      "type": "image",
+      "image_path": "cms/our-services-fly-control/Why-Pest-Control.jpg_ef5bccf6.webp",
+      "metadata": {
+        "elementor_id": "0bb7e99",
+        "image_src": "/assets/images/Why-Pest-Control.jpg_ef5bccf6.webp"
+      }
+    },
+    {
+      "sort_order": 13,
+      "block_key": "faq.sidebar_cta_title",
+      "section": "faq",
+      "label": "Sidebar CTA title",
+      "type": "text",
+      "value": "Any questions you want to ask?"
+    },
+    {
+      "sort_order": 14,
+      "block_key": "faq.sidebar_cta_body",
+      "section": "faq",
+      "label": "Sidebar CTA body",
+      "type": "text",
+      "value": "Find answers to common questions about our pest control services, treatments, safety, and scheduling."
+    },
+    {
+      "sort_order": 15,
+      "block_key": "reviews.eyebrow",
+      "section": "reviews",
+      "label": "Reviews eyebrow",
+      "type": "text",
+      "value": "7 States Pest Control for Reliable Pest Management Solutions"
+    },
+    {
+      "sort_order": 16,
+      "block_key": "reviews.title",
+      "section": "reviews",
+      "label": "Reviews title",
+      "type": "text",
+      "value": "EXCELLENT"
+    },
+    {
+      "sort_order": 17,
+      "block_key": "cta.eyebrow",
+      "section": "cta",
+      "label": "Eyebrow",
+      "type": "text",
+      "value": "Ideas to reality"
+    },
+    {
+      "sort_order": 18,
+      "block_key": "cta.title",
+      "section": "cta",
+      "label": "Section title",
+      "type": "text",
+      "value": "Talk to Us Today to Learn More"
+    },
+    {
+      "sort_order": 19,
+      "block_key": "cta.body",
+      "section": "cta",
+      "label": "Body HTML",
+      "type": "html",
+      "value": "<p>Based on&nbsp;45 reviews</p>"
+    },
+    {
+      "sort_order": 20,
+      "block_key": "cta.button",
+      "section": "cta",
+      "label": "CTA button",
+      "type": "link",
+      "value": "Contact Us",
+      "link_url": "/contact-us"
+    },
+    {
+      "sort_order": 21,
+      "block_key": "content.text_de434cf",
+      "section": "content",
+      "label": "Content block 1",
+      "type": "html",
+      "value": "<p>Flies are a common problem in homes and businesses, and they can be more than just a nuisance. They can also carry diseases, so it’s important to get rid of them quickly and effectively.</p><p>That’s where&nbsp;<a href=\"/\"><strong>7 States Pest Control</strong></a>&nbsp;comes in. We offer professional pest control services to get rid of flies and other pests from your property. Our experienced technicians will identify the source of the infestation and develop a customized treatment plan to eliminate the flies and prevent them from coming back.</p>"
+    },
+    {
+      "sort_order": 22,
+      "block_key": "content.heading_943bca5",
+      "section": "content",
+      "label": "Heading: Get A Free Quote Now!",
+      "type": "text",
+      "value": "Get A Free Quote Now!"
+    },
+    {
+      "sort_order": 23,
+      "block_key": "content.heading_54cfe0e",
+      "section": "content",
+      "label": "Heading: Have an enquiry? Leave us your details and we’ll call you ba",
+      "type": "text",
+      "value": "Have an enquiry? Leave us your details and we’ll call you back during business hours."
+    },
+    {
+      "sort_order": 24,
+      "block_key": "content.heading_8916f32",
+      "section": "content",
+      "label": "Heading: Pest Control Services",
+      "type": "text",
+      "value": "Pest Control Services"
+    },
+    {
+      "sort_order": 25,
+      "block_key": "content.heading_dd5b3de",
+      "section": "content",
+      "label": "Heading: Get Rid of Moths with Our Pest Control Services",
+      "type": "text",
+      "value": "Get Rid of Moths with Our Pest Control Services"
+    },
+    {
+      "sort_order": 26,
+      "block_key": "content.text_76690a4",
+      "section": "content",
+      "label": "Content block 2",
+      "type": "html",
+      "value": "<div class=\"elementor-element elementor-element-de434cf elementor-widget elementor-widget-text-editor\" data-element_type=\"widget\" data-id=\"de434cf\" data-settings=\"{&quot;ekit_we_effect_on&quot;:&quot;none&quot;}\" data-widget_type=\"text-editor.default\"><div class=\"elementor-widget-container\"><p>Flies are a common problem in homes and businesses, and they can be more than just a nuisance. They can also carry diseases, so it’s important to get rid of them quickly and effectively.</p><p>That’s where&nbsp;<a href=\"/\"><strong>7 States Pest Control</strong></a>&nbsp;comes in. We offer professional pest control services to get rid of flies and other pests from your property. Our experienced technicians will identify the source of the infestation and develop a customized treatment plan to eliminate the flies and prevent them from coming back.</p></div></div>"
+    },
+    {
+      "sort_order": 27,
+      "block_key": "content.text_de434cf_2",
+      "section": "content",
+      "label": "Content block 3",
+      "type": "html",
+      "value": "<p>Flies are a common problem in homes and businesses, and they can be more than just a nuisance. They can also carry diseases, so it’s important to get rid of them quickly and effectively.</p><p>That’s where&nbsp;<a href=\"/\"><strong>7 States Pest Control</strong></a>&nbsp;comes in. We offer professional pest control services to get rid of flies and other pests from your property. Our experienced technicians will identify the source of the infestation and develop a customized treatment plan to eliminate the flies and prevent them from coming back.</p>"
+    },
+    {
+      "sort_order": 28,
+      "block_key": "content.heading_3c55949",
+      "section": "content",
+      "label": "Heading: sign indication",
+      "type": "text",
+      "value": "sign indication"
+    },
+    {
+      "sort_order": 29,
+      "block_key": "content.heading_4ebd325",
+      "section": "content",
+      "label": "Heading: Signs Indicating You Need Us for Fly Elimination Solutions",
+      "type": "text",
+      "value": "Signs Indicating You Need Us for Fly Elimination Solutions"
+    },
+    {
+      "sort_order": 30,
+      "block_key": "content.text_24a7d2a",
+      "section": "content",
+      "label": "Content block 4",
+      "type": "html",
+      "value": "<p>If you see more than a few flies at a time, it could be a sign of an infestation. Flies can produce an unpleasant odor, so if you smell something strange, it could be a sign of a fly infestation.&nbsp;Flies are attracted to animal waste, so if you have pets, you are more likely to have a fly infestation.</p>"
+    },
+    {
+      "sort_order": 31,
+      "block_key": "content.list_b484fe7",
+      "section": "content",
+      "label": "Icon list (b484fe7)",
+      "type": "json",
+      "metadata": {
+        "items": [
+          "You see maggots in your garbage or other areas where food is present",
+          "You notice a foul smell in your home or business"
+        ]
+      }
+    },
+    {
+      "sort_order": 32,
+      "block_key": "content.list_c10a8b4",
+      "section": "content",
+      "label": "Icon list (c10a8b4)",
+      "type": "json",
+      "metadata": {
+        "items": [
+          "You see a lot of flies in your home or business",
+          "Flies are landing on your food and drinks"
+        ]
+      }
+    },
+    {
+      "sort_order": 33,
+      "block_key": "content.heading_3b861a5",
+      "section": "content",
+      "label": "Heading: Cockroach Elimination",
+      "type": "text",
+      "value": "Cockroach Elimination"
+    },
+    {
+      "sort_order": 34,
+      "block_key": "content.heading_1b1d385",
+      "section": "content",
+      "label": "Heading: Reasons to Opt for Fly Elimination Services from Us",
+      "type": "text",
+      "value": "Reasons to Opt for Fly Elimination Services from Us"
+    },
+    {
+      "sort_order": 35,
+      "block_key": "content.text_9c7ed97",
+      "section": "content",
+      "label": "Content block 5",
+      "type": "html",
+      "value": "<div class=\"elementor-element elementor-element-de434cf elementor-widget elementor-widget-text-editor\" data-element_type=\"widget\" data-id=\"de434cf\" data-settings=\"{&quot;ekit_we_effect_on&quot;:&quot;none&quot;}\" data-widget_type=\"text-editor.default\"><div class=\"elementor-widget-container\"><p>If you’re having problems with flies, don’t hesitate to contact 7 States Pest Control. We’re here to help you get rid of flies and other pests so you can enjoy your home or business pest-free.</p></div></div>"
+    },
+    {
+      "sort_order": 36,
+      "block_key": "content.text_de434cf_3",
+      "section": "content",
+      "label": "Content block 6",
+      "type": "html",
+      "value": "<p>Flies are a common problem in homes and businesses, and they can be more than just a nuisance. They can also carry diseases, so it’s important to get rid of them quickly and effectively.</p><p>That’s where&nbsp;<a href=\"/\"><strong>7 States Pest Control</strong></a>&nbsp;comes in. We offer professional pest control services to get rid of flies and other pests from your property. Our experienced technicians will identify the source of the infestation and develop a customized treatment plan to eliminate the flies and prevent them from coming back.</p>"
+    },
+    {
+      "sort_order": 37,
+      "block_key": "content.list_789d477",
+      "section": "content",
+      "label": "Icon list (789d477)",
+      "type": "json",
+      "metadata": {
+        "items": [
+          "We are experienced and professional. Our technicians have years of experience in eliminating flies and other pests from homes and businesses. We know what works and what doesn't, and we'll use our expertise to develop a customized treatment plan for your property.",
+          "We use safe and effective methods. We use a variety of methods to control flies, including baits, traps, and insecticides. All of our methods are safe for people and pets, and we'll take steps to protect your property during treatment.",
+          "We offer free estimates and same-day service. We understand that fly infestations can be a pressing problem, so we offer free estimates and same-day service. We want to get rid of your flies as quickly as possible so you can enjoy your home or business pest-free.",
+          "We offer free estimates and same-day service. We understand that fly infestations can be a pressing problem, so we offer free estimates and same-day service. We want to get rid of your flies as quickly as possible so you can enjoy your home or business pest-free."
+        ]
+      }
+    },
+    {
+      "sort_order": 38,
+      "block_key": "content.heading_2772224",
+      "section": "content",
+      "label": "Heading: Stages of Treatment",
+      "type": "text",
+      "value": "Stages of Treatment"
+    },
+    {
+      "sort_order": 39,
+      "block_key": "content.heading_4a41640",
+      "section": "content",
+      "label": "Heading: Steps We Undertake to Exterminate Flies from Your Office and",
+      "type": "text",
+      "value": "Steps We Undertake to Exterminate Flies from Your Office and Home"
+    },
+    {
+      "sort_order": 40,
+      "block_key": "content.text_d7374af",
+      "section": "content",
+      "label": "Content block 7",
+      "type": "html",
+      "value": "Our clients call us second to none because of the steps we undertake to eliminate flies from your office or house. If you want to learn what our professionals do before hiring us, read on."
+    },
+    {
+      "sort_order": 41,
+      "block_key": "content.heading_113a5e2",
+      "section": "content",
+      "label": "Heading: Our Survey",
+      "type": "text",
+      "value": "Our Survey"
+    },
+    {
+      "sort_order": 42,
+      "block_key": "content.text_a2624c7",
+      "section": "content",
+      "label": "Content block 8",
+      "type": "html",
+      "value": "<div class=\"elementor-element elementor-element-57329fa elementor-widget elementor-widget-text-editor\" data-element_type=\"widget\" data-id=\"57329fa\" data-settings=\"{&quot;ekit_we_effect_on&quot;:&quot;none&quot;}\" data-widget_type=\"text-editor.default\"><div class=\"elementor-widget-container\"><div class=\"elementor-element elementor-element-9407d80 elementor-widget elementor-widget-text-editor\" data-element_type=\"widget\" data-id=\"9407d80\" data-settings=\"{&quot;ekit_we_effect_on&quot;:&quot;none&quot;}\" data-widget_type=\"text-editor.default\"><div class=\"elementor-widget-container\"><p>We begin by conducting a thorough survey of your property to identify the type of flies you have, the source of the infestation, and the breeding grounds. This information will help us develop a customized treatment plan.</p></div></div></div></div>"
+    },
+    {
+      "sort_order": 43,
+      "block_key": "content.text_57329fa",
+      "section": "content",
+      "label": "Content block 9",
+      "type": "html",
+      "value": "<div class=\"elementor-element elementor-element-9407d80 elementor-widget elementor-widget-text-editor\" data-element_type=\"widget\" data-id=\"9407d80\" data-settings=\"{&quot;ekit_we_effect_on&quot;:&quot;none&quot;}\" data-widget_type=\"text-editor.default\"><div class=\"elementor-widget-container\"><p>We begin by conducting a thorough survey of your property to identify the type of flies you have, the source of the infestation, and the breeding grounds. This information will help us develop a customized treatment plan.</p></div></div>"
+    },
+    {
+      "sort_order": 44,
+      "block_key": "content.text_9407d80",
+      "section": "content",
+      "label": "Content block 10",
+      "type": "html",
+      "value": "<p>We begin by conducting a thorough survey of your property to identify the type of flies you have, the source of the infestation, and the breeding grounds. This information will help us develop a customized treatment plan.</p>"
+    },
+    {
+      "sort_order": 45,
+      "block_key": "content.heading_ce41091",
+      "section": "content",
+      "label": "Heading: Treatment",
+      "type": "text",
+      "value": "Treatment"
+    },
+    {
+      "sort_order": 46,
+      "block_key": "content.text_bc8e2a4",
+      "section": "content",
+      "label": "Content block 11",
+      "type": "html",
+      "value": "<div class=\"elementor-element elementor-element-57329fa elementor-widget elementor-widget-text-editor\" data-element_type=\"widget\" data-id=\"57329fa\" data-settings=\"{&quot;ekit_we_effect_on&quot;:&quot;none&quot;}\" data-widget_type=\"text-editor.default\"><div class=\"elementor-widget-container\"><p>We use a variety of safe and effective methods to eliminate flies, including baits, traps, and insecticides. We will choose the best treatment methods for your specific situation and take steps to protect your property and occupants during treatment.</p></div></div>"
+    },
+    {
+      "sort_order": 47,
+      "block_key": "content.text_57329fa_2",
+      "section": "content",
+      "label": "Content block 12",
+      "type": "html",
+      "value": "<div class=\"elementor-element elementor-element-9407d80 elementor-widget elementor-widget-text-editor\" data-element_type=\"widget\" data-id=\"9407d80\" data-settings=\"{&quot;ekit_we_effect_on&quot;:&quot;none&quot;}\" data-widget_type=\"text-editor.default\"><div class=\"elementor-widget-container\"><p>We begin by conducting a thorough survey of your property to identify the type of flies you have, the source of the infestation, and the breeding grounds. This information will help us develop a customized treatment plan.</p></div></div>"
+    },
+    {
+      "sort_order": 48,
+      "block_key": "content.heading_35840e7",
+      "section": "content",
+      "label": "Heading: Observation",
+      "type": "text",
+      "value": "Observation"
+    },
+    {
+      "sort_order": 49,
+      "block_key": "content.text_138f9ac",
+      "section": "content",
+      "label": "Content block 13",
+      "type": "html",
+      "value": "<div class=\"elementor-element elementor-element-57329fa elementor-widget elementor-widget-text-editor\" data-element_type=\"widget\" data-id=\"57329fa\" data-settings=\"{&quot;ekit_we_effect_on&quot;:&quot;none&quot;}\" data-widget_type=\"text-editor.default\"><div class=\"elementor-widget-container\"><div class=\"elementor-element elementor-element-9407d80 elementor-widget elementor-widget-text-editor\" data-element_type=\"widget\" data-id=\"9407d80\" data-settings=\"{&quot;ekit_we_effect_on&quot;:&quot;none&quot;}\" data-widget_type=\"text-editor.default\"><div class=\"elementor-widget-container\"><div class=\"elementor-element elementor-element-9407d80 elementor-widget elementor-widget-text-editor\" data-element_type=\"widget\" data-id=\"9407d80\" data-settings=\"{&quot;ekit_we_effect_on&quot;:&quot;none&quot;}\" data-widget_type=\"text-editor.default\"><div class=\"elementor-widget-container\"><p>After treatment, we will continue to monitor your property for signs of fly activity. This will help us ensure that the infestation is completely eliminated.</p></div></div></div></div></div></div>"
+    },
+    {
+      "sort_order": 50,
+      "block_key": "content.text_57329fa_3",
+      "section": "content",
+      "label": "Content block 14",
+      "type": "html",
+      "value": "<div class=\"elementor-element elementor-element-9407d80 elementor-widget elementor-widget-text-editor\" data-element_type=\"widget\" data-id=\"9407d80\" data-settings=\"{&quot;ekit_we_effect_on&quot;:&quot;none&quot;}\" data-widget_type=\"text-editor.default\"><div class=\"elementor-widget-container\"><p>We begin by conducting a thorough survey of your property to identify the type of flies you have, the source of the infestation, and the breeding grounds. This information will help us develop a customized treatment plan.</p></div></div>"
+    },
+    {
+      "sort_order": 51,
+      "block_key": "content.text_9407d80_2",
+      "section": "content",
+      "label": "Content block 15",
+      "type": "html",
+      "value": "<p>We begin by conducting a thorough survey of your property to identify the type of flies you have, the source of the infestation, and the breeding grounds. This information will help us develop a customized treatment plan.</p>"
+    },
+    {
+      "sort_order": 52,
+      "block_key": "content.text_9407d80_3",
+      "section": "content",
+      "label": "Content block 16",
+      "type": "html",
+      "value": "<p>We begin by conducting a thorough survey of your property to identify the type of flies you have, the source of the infestation, and the breeding grounds. This information will help us develop a customized treatment plan.</p>"
+    },
+    {
+      "sort_order": 53,
+      "block_key": "content.heading_fe2bf3a",
+      "section": "content",
+      "label": "Heading: Prevention",
+      "type": "text",
+      "value": "Prevention"
+    },
+    {
+      "sort_order": 54,
+      "block_key": "content.text_1b7d436",
+      "section": "content",
+      "label": "Content block 17",
+      "type": "html",
+      "value": "<div class=\"elementor-element elementor-element-57329fa elementor-widget elementor-widget-text-editor\" data-element_type=\"widget\" data-id=\"57329fa\" data-settings=\"{&quot;ekit_we_effect_on&quot;:&quot;none&quot;}\" data-widget_type=\"text-editor.default\"><div class=\"elementor-widget-container\"><p>We can also help you prevent future fly infestations by sealing up entry points and eliminating breeding grounds. We can also provide you with tips on how to keep your property clean and free of food sources that attract flies.</p></div></div>"
+    },
+    {
+      "sort_order": 55,
+      "block_key": "content.text_57329fa_4",
+      "section": "content",
+      "label": "Content block 18",
+      "type": "html",
+      "value": "<div class=\"elementor-element elementor-element-9407d80 elementor-widget elementor-widget-text-editor\" data-element_type=\"widget\" data-id=\"9407d80\" data-settings=\"{&quot;ekit_we_effect_on&quot;:&quot;none&quot;}\" data-widget_type=\"text-editor.default\"><div class=\"elementor-widget-container\"><p>We begin by conducting a thorough survey of your property to identify the type of flies you have, the source of the infestation, and the breeding grounds. This information will help us develop a customized treatment plan.</p></div></div>"
+    },
+    {
+      "sort_order": 56,
+      "block_key": "content.heading_73358e8",
+      "section": "content",
+      "label": "Heading: elimination service",
+      "type": "text",
+      "value": "elimination service"
+    },
+    {
+      "sort_order": 57,
+      "block_key": "content.heading_bd8e94d",
+      "section": "content",
+      "label": "Heading: Choose Us for Bespoke Fly Control & Elimination Services",
+      "type": "text",
+      "value": "Choose Us for Bespoke Fly Control & Elimination Services"
+    },
+    {
+      "sort_order": 58,
+      "block_key": "content.text_4a957b0",
+      "section": "content",
+      "label": "Content block 19",
+      "type": "html",
+      "value": "<p>At 7 States Pest Control, we understand that fly infestations can be a nuisance and a health hazard. That’s why we offer bespoke fly control and elimination services to meet the needs of our clients. As a trusted provider of&nbsp;<a href=\"/\" rel=\"noopener\">affordable pest control in Melbourne</a>, We use safe and effective methods to eliminate flies from your property and prevent them from coming back.</p>"
+    },
+    {
+      "sort_order": 59,
+      "block_key": "content.heading_32945a7",
+      "section": "content",
+      "label": "Heading: Frequently Asked Questions",
+      "type": "text",
+      "value": "Frequently Asked Questions"
+    },
+    {
+      "sort_order": 60,
+      "block_key": "content.image_d26b015",
+      "section": "content",
+      "label": "Image (d26b015)",
+      "type": "image",
+      "image_path": "cms/our-services-fly-control/WhatsApp-Image-2024-08-28-at-15.35.06_bc7d2870-1_ecbbd918.jpg",
+      "metadata": {
+        "elementor_id": "d26b015",
+        "image_src": "/assets/images/WhatsApp-Image-2024-08-28-at-15.35.06_bc7d2870-1_ecbbd918.jpg"
+      }
+    },
+    {
+      "sort_order": 61,
+      "block_key": "content.heading_86b9c75",
+      "section": "content",
+      "label": "Heading: Clients Reviews",
+      "type": "text",
+      "value": "Clients Reviews"
+    },
+    {
+      "sort_order": 62,
+      "block_key": "content.heading_a00a7a7",
+      "section": "content",
+      "label": "Heading: 7 States Pest Control for Reliable Pest Management Solutions",
+      "type": "text",
+      "value": "7 States Pest Control for Reliable Pest Management Solutions"
+    },
+    {
+      "sort_order": 63,
+      "block_key": "content.heading_946e466",
+      "section": "content",
+      "label": "Heading: Reviews of Our Pest Control Services",
+      "type": "text",
+      "value": "Reviews of Our Pest Control Services"
+    },
+    {
+      "sort_order": 64,
+      "block_key": "content.heading_237d1c2",
+      "section": "content",
+      "label": "Heading: EXCELLENT",
+      "type": "text",
+      "value": "EXCELLENT"
+    },
+    {
+      "sort_order": 65,
+      "block_key": "content.text_981378b",
+      "section": "content",
+      "label": "Content block 20",
+      "type": "html",
+      "value": "<p>Based on&nbsp;45 reviews</p>"
+    },
+    {
+      "sort_order": 66,
+      "block_key": "content.heading_4c825b4",
+      "section": "content",
+      "label": "Heading: Ideas to reality",
+      "type": "text",
+      "value": "Ideas to reality"
+    },
+    {
+      "sort_order": 67,
+      "block_key": "content.heading_7c67181",
+      "section": "content",
+      "label": "Heading: Talk to Us Today to Learn More",
+      "type": "text",
+      "value": "Talk to Us Today to Learn More"
+    },
+    {
+      "sort_order": 68,
+      "block_key": "content.text_dbd1d11",
+      "section": "content",
+      "label": "Content block 21",
+      "type": "html",
+      "value": "Do you have any specific questions about us, our services, or anything related to pest infestation issues? Call us today on&nbsp;<a href=\"tel:+61434660060\"> +61 434 660 060</a>&nbsp;or use our contact form to connect with our&nbsp;<b>7 States Pest Control</b>. You can get answers to your questions, get upfront quotes for the&nbsp;<b>7 States Pest Control</b>&nbsp;issues, and receive high-quality tailored services."
+    }
+  ]
+}

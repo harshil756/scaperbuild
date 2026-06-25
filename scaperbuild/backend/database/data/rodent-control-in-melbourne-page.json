@@ -1,0 +1,819 @@
+{
+  "slug": "rodent-control-in-melbourne",
+  "title": "Rodent Control Melbourne",
+  "seo_title": "Rodent Control Melbourne | Affordable Mice & Rat Pest Control",
+  "seo_description": "Affordable & cheap rodent control in Melbourne. Mice pest control, rat pest control & rodent removal services in Melbourne by trusted experts. Book today!",
+  "body_class": "wp-singular page-template page-template-elementor_header_footer page wp-custom-logo wp-embed-responsive wp-theme-hello-elementor elementor-default elementor-template-full-width elementor-kit-9 elementor-page elementor-page-1680",
+  "elementor_id": 1680,
+  "is_published": true,
+  "blocks": [
+    {
+      "sort_order": 0,
+      "block_key": "background.hero",
+      "section": "hero",
+      "label": "Hero background",
+      "type": "background",
+      "background_image_path": "cms/rodent-control-in-melbourne/rodent_94635634.jpg",
+      "metadata": {
+        "elementor_id": "42170a4",
+        "filename": "rodent_94635634.jpg"
+      }
+    },
+    {
+      "sort_order": 1,
+      "block_key": "background.cta",
+      "section": "cta",
+      "label": "CTA background",
+      "type": "background",
+      "background_image_path": "cms/rodent-control-in-melbourne/URUU-01-2048x1365-2_7c216e6d.jpg",
+      "metadata": {
+        "elementor_id": "057b4d3",
+        "filename": "URUU-01-2048x1365-2_7c216e6d.jpg"
+      }
+    },
+    {
+      "sort_order": 2,
+      "block_key": "hero.breadcrumb_parent",
+      "section": "hero",
+      "label": "Breadcrumb parent",
+      "type": "text",
+      "value": "Services"
+    },
+    {
+      "sort_order": 3,
+      "block_key": "hero.breadcrumb_current",
+      "section": "hero",
+      "label": "Breadcrumb current",
+      "type": "text",
+      "value": "Rodent Control In Melbourne"
+    },
+    {
+      "sort_order": 4,
+      "block_key": "hero.title",
+      "section": "hero",
+      "label": "Section title",
+      "type": "text",
+      "value": "Rodent Control"
+    },
+    {
+      "sort_order": 5,
+      "block_key": "hero.heading",
+      "section": "hero",
+      "label": "Main heading",
+      "type": "text",
+      "value": "Rodent Control in Melbourne | Effective Rat & Pest Control Services"
+    },
+    {
+      "sort_order": 6,
+      "block_key": "hero.intro",
+      "section": "hero",
+      "label": "Intro paragraph",
+      "type": "html",
+      "value": "<div class=\"elementor-element elementor-element-de434cf elementor-widget elementor-widget-text-editor\" data-element_type=\"widget\" data-id=\"de434cf\" data-settings=\"{&quot;ekit_we_effect_on&quot;:&quot;none&quot;}\" data-widget_type=\"text-editor.default\"><div class=\"elementor-widget-container\"><p class=\"font-claude-response-body break-words whitespace-normal leading-[1.7]\">Spotting rodents in your property can be worrisome and distressing. We all know that rodents can inflict severe damages on our property and spread dangerous diseases. Whether you’re struggling with rats, mice, or other pests, our <strong>rodent control in Melbourne</strong> is designed to eliminate all forms of infestations.</p><p class=\"font-claude-response-body break-words whitespace-normal leading-[1.7]\">At <a class=\"underline underline underline-offset-2 decoration-1 decoration-current/40 hover:decoration-current focus:decoration-current\" href=\"/\">7 States Pest Control</a>, we specialize in <strong>rodent pest control Melbourne</strong>, using advanced and eco-safe methods that deliver results. With our highly customized <strong>pest control Melbourne rats</strong> solution, you can say goodbye to these destructive intruders.</p><p class=\"font-claude-response-body break-words whitespace-normal leading-[1.7]\">Every rodent infestation is different, which is why we tailor our <strong>rodent removal services in Melbourne</strong> based on the specific conditions of your home or office. Reach out now for professional help and experience our <strong>affordable rodent control</strong> strategies that truly work.</p><p><span >Every rodent infestation is different, which is why we tailor our </span><b>rodent removal services in Melbourne</b><span > based on the specific conditions of your home or office. Reach out now for professional help and experience our </span><b>affordable rodent control</b><span > strategies that truly work.</span></p></div></div>"
+    },
+    {
+      "sort_order": 7,
+      "block_key": "quote_form.title",
+      "section": "quote_form",
+      "label": "Form heading",
+      "type": "text",
+      "value": "Rodent Control in Melbourne | Effective Rat &amp; Pest Control Services"
+    },
+    {
+      "sort_order": 8,
+      "block_key": "quote_form.subtitle",
+      "section": "quote_form",
+      "label": "Form subtitle",
+      "type": "text",
+      "value": "Have an enquiry? Leave us your details and we’ll call you back during business hours."
+    },
+    {
+      "sort_order": 9,
+      "block_key": "quote_form.submit_text",
+      "section": "quote_form",
+      "label": "Submit button text",
+      "type": "text",
+      "value": "Submit Quote"
+    },
+    {
+      "sort_order": 10,
+      "block_key": "faq.items",
+      "section": "faq",
+      "label": "FAQ items",
+      "type": "json",
+      "metadata": {
+        "items": [
+          {
+            "question": "1. What is the cost of rodent control in Melbourne?",
+            "answer_html": "<p><span >Rodent control in Melbourne usually costs between $150 to $400 depending on the infestation level and property size. At </span><b>7 States Pest Control</b><span >, we offer affordable and effective rodent removal solutions.</span></p>"
+          },
+          {
+            "question": "2. Why choose 7 States Pest Control for rodent control in Melbourne?",
+            "answer_html": "<p><b>7 States Pest Control</b><span > provides experienced technicians, safe treatments, and reliable rodent removal services with long-term results across Melbourne.</span></p>"
+          },
+          {
+            "question": "3. How long does rodent removal take with 7 States Pest Control?",
+            "answer_html": "<p><span >Most treatments are completed within a few hours, but complete rodent elimination may take a few days depending on the severity of the infestation.</span></p>"
+          },
+          {
+            "question": "4. What are the signs you need rodent control services?",
+            "answer_html": "<p><span >Signs include droppings, scratching noises, chewed wires, food damage, and foul smells. If you notice these, contact </span><b>7 States Pest Control</b><span > immediately.</span></p>"
+          },
+          {
+            "question": "5. Is rodent control by 7 States Pest Control safe for families and pets?",
+            "answer_html": "<p><span >Yes, </span><b>7 States Pest Control</b><span > uses safe and approved pest control methods to ensure the safety of your family and pets.</span></p>"
+          }
+        ]
+      }
+    },
+    {
+      "sort_order": 11,
+      "block_key": "faq.title",
+      "section": "faq",
+      "label": "FAQ title",
+      "type": "text",
+      "value": "Frequently Asked Questions"
+    },
+    {
+      "sort_order": 12,
+      "block_key": "faq.sidebar_image",
+      "section": "faq",
+      "label": "FAQ sidebar image",
+      "type": "image",
+      "image_path": "cms/rodent-control-in-melbourne/WhatsApp-Image-2024-08-28-at-15.35.06_bc7d2870-1_ecbbd918.jpg",
+      "metadata": {
+        "elementor_id": "d26b015",
+        "image_src": "/assets/images/WhatsApp-Image-2024-08-28-at-15.35.06_bc7d2870-1_ecbbd918.jpg"
+      }
+    },
+    {
+      "sort_order": 13,
+      "block_key": "faq.sidebar_cta_title",
+      "section": "faq",
+      "label": "Sidebar CTA title",
+      "type": "text",
+      "value": "Any questions you want to ask?"
+    },
+    {
+      "sort_order": 14,
+      "block_key": "faq.sidebar_cta_body",
+      "section": "faq",
+      "label": "Sidebar CTA body",
+      "type": "text",
+      "value": "Find answers to common questions about our pest control services, treatments, safety, and scheduling."
+    },
+    {
+      "sort_order": 15,
+      "block_key": "faq.sidebar_cta_button",
+      "section": "faq",
+      "label": "Sidebar CTA button",
+      "type": "link",
+      "value": "Contact Us",
+      "link_url": "/contact-us"
+    },
+    {
+      "sort_order": 16,
+      "block_key": "reviews.eyebrow",
+      "section": "reviews",
+      "label": "Reviews eyebrow",
+      "type": "text",
+      "value": "7 States Pest Control for Reliable Pest Management Solutions"
+    },
+    {
+      "sort_order": 17,
+      "block_key": "reviews.title",
+      "section": "reviews",
+      "label": "Reviews title",
+      "type": "text",
+      "value": "EXCELLENT"
+    },
+    {
+      "sort_order": 18,
+      "block_key": "cta.eyebrow",
+      "section": "cta",
+      "label": "Eyebrow",
+      "type": "text",
+      "value": "Ideas to reality"
+    },
+    {
+      "sort_order": 19,
+      "block_key": "cta.title",
+      "section": "cta",
+      "label": "Section title",
+      "type": "text",
+      "value": "Talk to Us Today to Learn More"
+    },
+    {
+      "sort_order": 20,
+      "block_key": "cta.body",
+      "section": "cta",
+      "label": "Body HTML",
+      "type": "html",
+      "value": "Do you have any specific questions about us, our services, or anything related to pest infestation issues? Call us today on&nbsp;<a href=\"tel:+61434660060\"> +61 434 660 060</a>&nbsp;or use our contact form to connect with our&nbsp;<b>7 States Pest Control</b>. You can get answers to your questions, get upfront quotes for the&nbsp;<b>7 States Pest Control</b>&nbsp;issues, and receive high-quality tailored services."
+    },
+    {
+      "sort_order": 21,
+      "block_key": "cta.button",
+      "section": "cta",
+      "label": "CTA button",
+      "type": "link",
+      "value": "Contact Us",
+      "link_url": "/contact-us"
+    },
+    {
+      "sort_order": 22,
+      "block_key": "content.text_de434cf",
+      "section": "content",
+      "label": "Content block 1",
+      "type": "html",
+      "value": "<p class=\"font-claude-response-body break-words whitespace-normal leading-[1.7]\">Spotting rodents in your property can be worrisome and distressing. We all know that rodents can inflict severe damages on our property and spread dangerous diseases. Whether you’re struggling with rats, mice, or other pests, our <strong>rodent control in Melbourne</strong> is designed to eliminate all forms of infestations.</p><p class=\"font-claude-response-body break-words whitespace-normal leading-[1.7]\">At <a class=\"underline underline underline-offset-2 decoration-1 decoration-current/40 hover:decoration-current focus:decoration-current\" href=\"/\">7 States Pest Control</a>, we specialize in <strong>rodent pest control Melbourne</strong>, using advanced and eco-safe methods that deliver results. With our highly customized <strong>pest control Melbourne rats</strong> solution, you can say goodbye to these destructive intruders.</p><p class=\"font-claude-response-body break-words whitespace-normal leading-[1.7]\">Every rodent infestation is different, which is why we tailor our <strong>rodent removal services in Melbourne</strong> based on the specific conditions of your home or office. Reach out now for professional help and experience our <strong>affordable rodent control</strong> strategies that truly work.</p><p><span >Every rodent infestation is different, which is why we tailor our </span><b>rodent removal services in Melbourne</b><span > based on the specific conditions of your home or office. Reach out now for professional help and experience our </span><b>affordable rodent control</b><span > strategies that truly work.</span></p>"
+    },
+    {
+      "sort_order": 23,
+      "block_key": "content.heading_1cfafdf",
+      "section": "content",
+      "label": "Heading: Get A Free Quote Now!",
+      "type": "text",
+      "value": "Get A Free Quote Now!"
+    },
+    {
+      "sort_order": 24,
+      "block_key": "content.heading_a7b4484",
+      "section": "content",
+      "label": "Heading: Have an enquiry? Leave us your details and we’ll call you ba",
+      "type": "text",
+      "value": "Have an enquiry? Leave us your details and we’ll call you back during business hours."
+    },
+    {
+      "sort_order": 25,
+      "block_key": "content.heading_df7ce2d",
+      "section": "content",
+      "label": "Heading: Rodent Control In Melbourne",
+      "type": "text",
+      "value": "Rodent Control In Melbourne"
+    },
+    {
+      "sort_order": 26,
+      "block_key": "content.text_50209db",
+      "section": "content",
+      "label": "Content block 2",
+      "type": "html",
+      "value": "<p>Spotting rodents in your property can be worrisome and distressing. We all know that rodents can inflict severe damages on our property. Rodents are known to spread various types of illnesses when searching for food. Furthermore, rodents also have a natural and constant gnawing habit. At&nbsp;<a href=\"/\"><strong>7 States Pest Control</strong></a>, we offer highly customized rodent elimination services.</p><p>Being an experienced pest control agency, we know that infestation of rodents in every property is not same. That’s why we adopt a highly tailored approach to deal with rodents in your home or office. With our&nbsp;<a href=\"/our-services-rodent-control\">Rodent Control</a>, you can now effectively remove pesky rats from your home. To know more about our services, contact us today.</p>"
+    },
+    {
+      "sort_order": 27,
+      "block_key": "content.heading_8916f32",
+      "section": "content",
+      "label": "Heading: Rodent removal",
+      "type": "text",
+      "value": "Rodent removal"
+    },
+    {
+      "sort_order": 28,
+      "block_key": "content.heading_dd5b3de",
+      "section": "content",
+      "label": "Heading: Affordable Rodent Control in Melbourne Using Eco-Friendly Me",
+      "type": "text",
+      "value": "Affordable Rodent Control in Melbourne Using Eco-Friendly Methods"
+    },
+    {
+      "sort_order": 29,
+      "block_key": "content.text_76690a4",
+      "section": "content",
+      "label": "Content block 3",
+      "type": "html",
+      "value": "<div class=\"elementor-element elementor-element-de434cf elementor-widget elementor-widget-text-editor\" data-element_type=\"widget\" data-id=\"de434cf\" data-settings=\"{&quot;ekit_we_effect_on&quot;:&quot;none&quot;}\" data-widget_type=\"text-editor.default\"><div class=\"elementor-widget-container\"><div class=\"elementor-element elementor-element-a1039c3 elementor-widget elementor-widget-text-editor\" data-element_type=\"widget\" data-id=\"a1039c3\" data-settings=\"{&quot;ekit_we_effect_on&quot;:&quot;none&quot;}\" data-widget_type=\"text-editor.default\"><div class=\"elementor-widget-container\"><p><span >Did you know rats and mice can transmit over 35 harmful diseases such as Hantavirus, Salmonella, and Leptospirosis? Ignoring even a minor rodent sighting can quickly spiral into a full-blown infestation — putting your family, staff, and property at serious risk.</span></p><p><span >With our </span><b>cheap rodent control</b><span > options, we ensure your safety without hurting your pocket. Our services for </span><b>pest control Melbourne rats</b><span > are tailored to fit both residential and commercial properties across the city.</span></p><p><span >From sealing entry points to eliminating rodents with safe, targeted methods, our </span><b>mice pest control Melbourne</b><span > team works tirelessly to protect your property around the clock. We use eco-friendly treatments that are tough on pests but completely safe for your children, pets, and the environment.</span></p><p><span >We understand the urgency — rodents reproduce fast and can infest your entire building within weeks. A single pair of rats can produce up to 2,000 descendants in just one year. That’s why our </span><b>rodent control in Melbourne</b><span > experts act quickly with tried-and-tested solutions designed to stop infestations before they grow out of control.</span></p><p class=\"font-claude-response-body break-words whitespace-normal leading-[1.7]\">At 7 States Pest Control, our experienced team uses state-of-the-art techniques to ensure effective <strong>mouse control Melbourne</strong> and long-term prevention. We don’t just remove the pests — we identify the root cause and seal every possible entry point, keeping your environment permanently safe. We also provide trusted <a class=\"underline underline underline-offset-2 decoration-1 decoration-current/40 hover:decoration-current focus:decoration-current\" href=\"/our-services-termite-pest-control\"><strong>termite control Melbourne</strong></a> services to protect your property from all angles.</p></div></div></div></div>"
+    },
+    {
+      "sort_order": 30,
+      "block_key": "content.text_de434cf_2",
+      "section": "content",
+      "label": "Content block 4",
+      "type": "html",
+      "value": "<p class=\"font-claude-response-body break-words whitespace-normal leading-[1.7]\">Spotting rodents in your property can be worrisome and distressing. We all know that rodents can inflict severe damages on our property and spread dangerous diseases. Whether you’re struggling with rats, mice, or other pests, our <strong>rodent control in Melbourne</strong> is designed to eliminate all forms of infestations.</p><p class=\"font-claude-response-body break-words whitespace-normal leading-[1.7]\">At <a class=\"underline underline underline-offset-2 decoration-1 decoration-current/40 hover:decoration-current focus:decoration-current\" href=\"/\">7 States Pest Control</a>, we specialize in <strong>rodent pest control Melbourne</strong>, using advanced and eco-safe methods that deliver results. With our highly customized <strong>pest control Melbourne rats</strong> solution, you can say goodbye to these destructive intruders.</p><p class=\"font-claude-response-body break-words whitespace-normal leading-[1.7]\">Every rodent infestation is different, which is why we tailor our <strong>rodent removal services in Melbourne</strong> based on the specific conditions of your home or office. Reach out now for professional help and experience our <strong>affordable rodent control</strong> strategies that truly work.</p><p><span >Every rodent infestation is different, which is why we tailor our </span><b>rodent removal services in Melbourne</b><span > based on the specific conditions of your home or office. Reach out now for professional help and experience our </span><b>affordable rodent control</b><span > strategies that truly work.</span></p>"
+    },
+    {
+      "sort_order": 31,
+      "block_key": "content.text_a1039c3",
+      "section": "content",
+      "label": "Content block 5",
+      "type": "html",
+      "value": "<p><span >Did you know rats and mice can transmit over 35 harmful diseases such as Hantavirus, Salmonella, and Leptospirosis? Ignoring even a minor rodent sighting can quickly spiral into a full-blown infestation — putting your family, staff, and property at serious risk.</span></p><p><span >With our </span><b>cheap rodent control</b><span > options, we ensure your safety without hurting your pocket. Our services for </span><b>pest control Melbourne rats</b><span > are tailored to fit both residential and commercial properties across the city.</span></p><p><span >From sealing entry points to eliminating rodents with safe, targeted methods, our </span><b>mice pest control Melbourne</b><span > team works tirelessly to protect your property around the clock. We use eco-friendly treatments that are tough on pests but completely safe for your children, pets, and the environment.</span></p><p><span >We understand the urgency — rodents reproduce fast and can infest your entire building within weeks. A single pair of rats can produce up to 2,000 descendants in just one year. That’s why our </span><b>rodent control in Melbourne</b><span > experts act quickly with tried-and-tested solutions designed to stop infestations before they grow out of control.</span></p><p class=\"font-claude-response-body break-words whitespace-normal leading-[1.7]\">At 7 States Pest Control, our experienced team uses state-of-the-art techniques to ensure effective <strong>mouse control Melbourne</strong> and long-term prevention. We don’t just remove the pests — we identify the root cause and seal every possible entry point, keeping your environment permanently safe. We also provide trusted <a class=\"underline underline underline-offset-2 decoration-1 decoration-current/40 hover:decoration-current focus:decoration-current\" href=\"/our-services-termite-pest-control\"><strong>termite control Melbourne</strong></a> services to protect your property from all angles.</p>"
+    },
+    {
+      "sort_order": 32,
+      "block_key": "content.text_004944e",
+      "section": "content",
+      "label": "Content block 6",
+      "type": "html",
+      "value": "<h3 class=\"elementor-heading-title elementor-size-default\"><span >Effective Mice Pest Control Solutions in Melbourne for Every Species</span></h3>"
+    },
+    {
+      "sort_order": 33,
+      "block_key": "content.heading_3c55949",
+      "section": "content",
+      "label": "Heading: sign indication",
+      "type": "text",
+      "value": "sign indication"
+    },
+    {
+      "sort_order": 34,
+      "block_key": "content.heading_4ebd325",
+      "section": "content",
+      "label": "Heading: Signs You Need Rodent Pest Control in Melbourne",
+      "type": "text",
+      "value": "Signs You Need Rodent Pest Control in Melbourne"
+    },
+    {
+      "sort_order": 35,
+      "block_key": "content.text_24a7d2a",
+      "section": "content",
+      "label": "Content block 7",
+      "type": "html",
+      "value": "<p><span >Rodents don’t stay hidden for long. The sooner you spot the warning signs, the faster our </span><b>rodent control in Melbourne</b><span > team can step in before the situation worsens. Watch out for these clear indicators of a rodent infestation:</span></p>"
+    },
+    {
+      "sort_order": 36,
+      "block_key": "content.list_c10a8b4",
+      "section": "content",
+      "label": "Icon list (c10a8b4)",
+      "type": "json",
+      "metadata": {
+        "items": [
+          "Droppings: Look for small, dark, and elongated droppings along walls, in basements, and near food sources. Fresh droppings are a strong sign of active mouse pest control Melbourne needs.",
+          "Noises: Rats are nocturnal creatures. Scratching, squeaking, or scurrying sounds at night are a telltale sign it's time to call our rat control Melbourne specialists immediately.",
+          "Gnaw Marks: Rodents have powerful teeth and leave behind gnaw marks on wood, plastic, and electrical wires — a serious fire hazard that demands urgent rodent pest control Melbourne attention.",
+          "Unpleasant Odor: A musty or ammonia-like smell, especially from hidden corners or wall cavities, often signals an active nest. Don't ignore it — our mice control Melbourne experts can locate and eliminate the source fast."
+        ]
+      }
+    },
+    {
+      "sort_order": 37,
+      "block_key": "content.text_8134f3a",
+      "section": "content",
+      "label": "Content block 8",
+      "type": "html",
+      "value": "<p><span >If you notice any of these signs, don’t wait. Call our </span><b>rodent pest control Melbourne</b><span > experts at 7 States Pest Control right away. We also provide trusted</span><a href=\"/wasp-removal-melbourne\"> <b>wasp removal Melbourne</b></a><span > services for complete pest protection across your property. Our </span><b>affordable rodent control</b><span > solutions stop infestations before they escalate — protecting your home, health, and peace of mind.</span></p>"
+    },
+    {
+      "sort_order": 38,
+      "block_key": "content.heading_2772224",
+      "section": "content",
+      "label": "Heading: Our Methodology",
+      "type": "text",
+      "value": "Our Methodology"
+    },
+    {
+      "sort_order": 39,
+      "block_key": "content.heading_4a41640",
+      "section": "content",
+      "label": "Heading: Our Advanced Rodent Control Methodology in Melbourne",
+      "type": "text",
+      "value": "Our Advanced Rodent Control Methodology in Melbourne"
+    },
+    {
+      "sort_order": 40,
+      "block_key": "content.heading_113a5e2",
+      "section": "content",
+      "label": "Heading: Contact Melbourne’s Trusted Rodent Removal Experts Today",
+      "type": "text",
+      "value": "Contact Melbourne’s Trusted Rodent Removal Experts Today"
+    },
+    {
+      "sort_order": 41,
+      "block_key": "content.text_a2624c7",
+      "section": "content",
+      "label": "Content block 9",
+      "type": "html",
+      "value": "<div class=\"elementor-element elementor-element-57329fa elementor-widget elementor-widget-text-editor\" data-element_type=\"widget\" data-id=\"57329fa\" data-settings=\"{&quot;ekit_we_effect_on&quot;:&quot;none&quot;}\" data-widget_type=\"text-editor.default\"><div class=\"elementor-widget-container\"><div class=\"elementor-element elementor-element-9407d80 elementor-widget elementor-widget-text-editor\" data-element_type=\"widget\" data-id=\"9407d80\" data-settings=\"{&quot;ekit_we_effect_on&quot;:&quot;none&quot;}\" data-widget_type=\"text-editor.default\"><div class=\"elementor-widget-container\"><p><span >Don’t let a rodent problem escalate. Our </span><b>rodent removal services in Melbourne</b><span > are available for urgent response. Our </span><b>pest control Melbourne rats</b><span > team will be at your property fast — equipped, experienced, and ready. Whether you need a </span><b>rat exterminator Melbourne</b><span > or a </span><b>mouse exterminator Melbourne</b><span >, we handle it all. Contact 7 States Pest Control today for </span><b>cheap rodent control</b><span > solutions that don’t compromise on quality.</span></p></div></div></div></div>"
+    },
+    {
+      "sort_order": 42,
+      "block_key": "content.text_57329fa",
+      "section": "content",
+      "label": "Content block 10",
+      "type": "html",
+      "value": "<div class=\"elementor-element elementor-element-9407d80 elementor-widget elementor-widget-text-editor\" data-element_type=\"widget\" data-id=\"9407d80\" data-settings=\"{&quot;ekit_we_effect_on&quot;:&quot;none&quot;}\" data-widget_type=\"text-editor.default\"><div class=\"elementor-widget-container\"><p><span >Don’t let a rodent problem escalate. Our </span><b>rodent removal services in Melbourne</b><span > are available for urgent response. Our </span><b>pest control Melbourne rats</b><span > team will be at your property fast — equipped, experienced, and ready. Whether you need a </span><b>rat exterminator Melbourne</b><span > or a </span><b>mouse exterminator Melbourne</b><span >, we handle it all. Contact 7 States Pest Control today for </span><b>cheap rodent control</b><span > solutions that don’t compromise on quality.</span></p></div></div>"
+    },
+    {
+      "sort_order": 43,
+      "block_key": "content.text_9407d80",
+      "section": "content",
+      "label": "Content block 11",
+      "type": "html",
+      "value": "<p><span >Don’t let a rodent problem escalate. Our </span><b>rodent removal services in Melbourne</b><span > are available for urgent response. Our </span><b>pest control Melbourne rats</b><span > team will be at your property fast — equipped, experienced, and ready. Whether you need a </span><b>rat exterminator Melbourne</b><span > or a </span><b>mouse exterminator Melbourne</b><span >, we handle it all. Contact 7 States Pest Control today for </span><b>cheap rodent control</b><span > solutions that don’t compromise on quality.</span></p>"
+    },
+    {
+      "sort_order": 44,
+      "block_key": "content.heading_ce41091",
+      "section": "content",
+      "label": "Heading: Comprehensive Survey & Affordable Rodent Control Plans",
+      "type": "text",
+      "value": "Comprehensive Survey & Affordable Rodent Control Plans"
+    },
+    {
+      "sort_order": 45,
+      "block_key": "content.text_bc8e2a4",
+      "section": "content",
+      "label": "Content block 12",
+      "type": "html",
+      "value": "<div class=\"elementor-element elementor-element-57329fa elementor-widget elementor-widget-text-editor\" data-element_type=\"widget\" data-id=\"57329fa\" data-settings=\"{&quot;ekit_we_effect_on&quot;:&quot;none&quot;}\" data-widget_type=\"text-editor.default\"><div class=\"elementor-widget-container\"><p><span >We begin every service with a complete property survey. Whether it’s a commercial space or residential unit, we assess your rodent situation thoroughly and suggest a </span><b>cheap rodent control</b><span > package that suits your needs. Our </span><b>rodent pest control Melbourne</b><span > experts identify all active infestation zones and design a plan that delivers results. From </span><b>mice pest control Melbourne</b><span > to full-scale </span><b>rat control Melbourne</b><span >, our </span><b>affordable rodent control</b><span > plans are built to fit every budget.</span></p></div></div>"
+    },
+    {
+      "sort_order": 46,
+      "block_key": "content.text_57329fa_2",
+      "section": "content",
+      "label": "Content block 13",
+      "type": "html",
+      "value": "<div class=\"elementor-element elementor-element-9407d80 elementor-widget elementor-widget-text-editor\" data-element_type=\"widget\" data-id=\"9407d80\" data-settings=\"{&quot;ekit_we_effect_on&quot;:&quot;none&quot;}\" data-widget_type=\"text-editor.default\"><div class=\"elementor-widget-container\"><p><span >Don’t let a rodent problem escalate. Our </span><b>rodent removal services in Melbourne</b><span > are available for urgent response. Our </span><b>pest control Melbourne rats</b><span > team will be at your property fast — equipped, experienced, and ready. Whether you need a </span><b>rat exterminator Melbourne</b><span > or a </span><b>mouse exterminator Melbourne</b><span >, we handle it all. Contact 7 States Pest Control today for </span><b>cheap rodent control</b><span > solutions that don’t compromise on quality.</span></p></div></div>"
+    },
+    {
+      "sort_order": 47,
+      "block_key": "content.heading_35840e7",
+      "section": "content",
+      "label": "Heading: Treatment Solutions That Deliver Guaranteed Results",
+      "type": "text",
+      "value": "Treatment Solutions That Deliver Guaranteed Results"
+    },
+    {
+      "sort_order": 48,
+      "block_key": "content.text_138f9ac",
+      "section": "content",
+      "label": "Content block 14",
+      "type": "html",
+      "value": "<div class=\"elementor-element elementor-element-57329fa elementor-widget elementor-widget-text-editor\" data-element_type=\"widget\" data-id=\"57329fa\" data-settings=\"{&quot;ekit_we_effect_on&quot;:&quot;none&quot;}\" data-widget_type=\"text-editor.default\"><div class=\"elementor-widget-container\"><div class=\"elementor-element elementor-element-9407d80 elementor-widget elementor-widget-text-editor\" data-element_type=\"widget\" data-id=\"9407d80\" data-settings=\"{&quot;ekit_we_effect_on&quot;:&quot;none&quot;}\" data-widget_type=\"text-editor.default\"><div class=\"elementor-widget-container\"><div class=\"elementor-element elementor-element-9407d80 elementor-widget elementor-widget-text-editor\" data-element_type=\"widget\" data-id=\"9407d80\" data-settings=\"{&quot;ekit_we_effect_on&quot;:&quot;none&quot;}\" data-widget_type=\"text-editor.default\"><div class=\"elementor-widget-container\"><div><div class=\"standard-markdown grid-cols-1 grid [&_>_*]:min-w-0 gap-3\"><p class=\"font-claude-response-body break-words whitespace-normal leading-[1.7]\">Our treatment plans for <strong>rodent control in Melbourne</strong> include a mix of mechanical traps, advanced baits, and exclusion techniques. Everything is handled with minimal disruption and total safety for your family and pets. We also offer tailored plans for <strong>mice pest control Melbourne</strong> and <strong>mouse pest control Melbourne</strong>. Our <strong>mouse control Melbourne</strong> and <strong>mice control Melbourne</strong> solutions are designed to eliminate every trace of infestation — quickly, safely, and affordably.</p></div></div><div><div class=\"standard-markdown grid-cols-1 grid [&_>_*]:min-w-0 gap-3\">&nbsp;</div></div></div></div></div></div></div></div>"
+    },
+    {
+      "sort_order": 49,
+      "block_key": "content.text_57329fa_3",
+      "section": "content",
+      "label": "Content block 15",
+      "type": "html",
+      "value": "<div class=\"elementor-element elementor-element-9407d80 elementor-widget elementor-widget-text-editor\" data-element_type=\"widget\" data-id=\"9407d80\" data-settings=\"{&quot;ekit_we_effect_on&quot;:&quot;none&quot;}\" data-widget_type=\"text-editor.default\"><div class=\"elementor-widget-container\"><p><span >Don’t let a rodent problem escalate. Our </span><b>rodent removal services in Melbourne</b><span > are available for urgent response. Our </span><b>pest control Melbourne rats</b><span > team will be at your property fast — equipped, experienced, and ready. Whether you need a </span><b>rat exterminator Melbourne</b><span > or a </span><b>mouse exterminator Melbourne</b><span >, we handle it all. Contact 7 States Pest Control today for </span><b>cheap rodent control</b><span > solutions that don’t compromise on quality.</span></p></div></div>"
+    },
+    {
+      "sort_order": 50,
+      "block_key": "content.text_9407d80_2",
+      "section": "content",
+      "label": "Content block 16",
+      "type": "html",
+      "value": "<p><span >Don’t let a rodent problem escalate. Our </span><b>rodent removal services in Melbourne</b><span > are available for urgent response. Our </span><b>pest control Melbourne rats</b><span > team will be at your property fast — equipped, experienced, and ready. Whether you need a </span><b>rat exterminator Melbourne</b><span > or a </span><b>mouse exterminator Melbourne</b><span >, we handle it all. Contact 7 States Pest Control today for </span><b>cheap rodent control</b><span > solutions that don’t compromise on quality.</span></p>"
+    },
+    {
+      "sort_order": 51,
+      "block_key": "content.text_9407d80_3",
+      "section": "content",
+      "label": "Content block 17",
+      "type": "html",
+      "value": "<p><span >Don’t let a rodent problem escalate. Our </span><b>rodent removal services in Melbourne</b><span > are available for urgent response. Our </span><b>pest control Melbourne rats</b><span > team will be at your property fast — equipped, experienced, and ready. Whether you need a </span><b>rat exterminator Melbourne</b><span > or a </span><b>mouse exterminator Melbourne</b><span >, we handle it all. Contact 7 States Pest Control today for </span><b>cheap rodent control</b><span > solutions that don’t compromise on quality.</span></p>"
+    },
+    {
+      "sort_order": 52,
+      "block_key": "content.heading_fe2bf3a",
+      "section": "content",
+      "label": "Heading: Ongoing Aftercare for Long-Term Rodent Pest Control in Melbo",
+      "type": "text",
+      "value": "Ongoing Aftercare for Long-Term Rodent Pest Control in Melbourne"
+    },
+    {
+      "sort_order": 53,
+      "block_key": "content.text_1b7d436",
+      "section": "content",
+      "label": "Content block 18",
+      "type": "html",
+      "value": "<div class=\"elementor-element elementor-element-57329fa elementor-widget elementor-widget-text-editor\" data-element_type=\"widget\" data-id=\"57329fa\" data-settings=\"{&quot;ekit_we_effect_on&quot;:&quot;none&quot;}\" data-widget_type=\"text-editor.default\"><div class=\"elementor-widget-container\"><p class=\"font-claude-response-body break-words whitespace-normal leading-[1.7]\">Our services don’t end with extermination. With routine check-ups and expert advice, our <strong>rodent pest control Melbourne</strong> team ensures you remain rodent-free. From mice to rats, we cover every angle of prevention.</p><p class=\"font-claude-response-body break-words whitespace-normal leading-[1.7]\">At 7 States Pest Control, our goal is to offer personalized, long-term <strong>rodent pest control Melbourne</strong> solutions that give you peace of mind. Contact us today to learn more about our <strong>rodent removal services in Melbourne</strong> and our trusted <strong>local rodent experts Melbourne</strong> who are always ready to help.</p></div></div>"
+    },
+    {
+      "sort_order": 54,
+      "block_key": "content.text_57329fa_4",
+      "section": "content",
+      "label": "Content block 19",
+      "type": "html",
+      "value": "<div class=\"elementor-element elementor-element-9407d80 elementor-widget elementor-widget-text-editor\" data-element_type=\"widget\" data-id=\"9407d80\" data-settings=\"{&quot;ekit_we_effect_on&quot;:&quot;none&quot;}\" data-widget_type=\"text-editor.default\"><div class=\"elementor-widget-container\"><p><span >Don’t let a rodent problem escalate. Our </span><b>rodent removal services in Melbourne</b><span > are available for urgent response. Our </span><b>pest control Melbourne rats</b><span > team will be at your property fast — equipped, experienced, and ready. Whether you need a </span><b>rat exterminator Melbourne</b><span > or a </span><b>mouse exterminator Melbourne</b><span >, we handle it all. Contact 7 States Pest Control today for </span><b>cheap rodent control</b><span > solutions that don’t compromise on quality.</span></p></div></div>"
+    },
+    {
+      "sort_order": 55,
+      "block_key": "content.heading_73358e8",
+      "section": "content",
+      "label": "Heading: Why Rodent",
+      "type": "text",
+      "value": "Why Rodent"
+    },
+    {
+      "sort_order": 56,
+      "block_key": "content.heading_bd8e94d",
+      "section": "content",
+      "label": "Heading: Why Rodent Control in Melbourne is Crucial for Your Health a",
+      "type": "text",
+      "value": "Why Rodent Control in Melbourne is Crucial for Your Health and Safety"
+    },
+    {
+      "sort_order": 57,
+      "block_key": "content.text_4a957b0",
+      "section": "content",
+      "label": "Content block 20",
+      "type": "html",
+      "value": "<p><span >Rodents are not just annoying — they’re dangerous. Failing to act fast can lead to severe health consequences and property damage. Here’s why hiring professionals for </span><b>rodent control in Melbourne</b><span > is essential:</span></p>"
+    },
+    {
+      "sort_order": 58,
+      "block_key": "content.list_ef49918",
+      "section": "content",
+      "label": "Icon list (ef49918)",
+      "type": "json",
+      "metadata": {
+        "items": [
+          "Contamination: Rodent droppings in your kitchen or pantry can contaminate food, leading to illnesses like typhoid and salmonella.",
+          "Health Risks: Contact with rodent waste may cause diseases like leptospirosis and Hantavirus.",
+          "Bites &amp; Infections: Rodents, especially rats, can bite and cause infections or fever. Timely rat control Melbourne can prevent these risks entirely.",
+          "Allergies: Rodents carry allergens that can cause breathing issues, particularly in children and elderly individuals with preexisting conditions."
+        ]
+      }
+    },
+    {
+      "sort_order": 59,
+      "block_key": "content.text_5491949",
+      "section": "content",
+      "label": "Content block 21",
+      "type": "html",
+      "value": "<p class=\"font-claude-response-body break-words whitespace-normal leading-[1.7]\">Don’t wait for the problem to worsen. Trust <a class=\"underline underline underline-offset-2 decoration-1 decoration-current/40 hover:decoration-current focus:decoration-current\" href=\"/\">7 States Pest Control</a> for reliable <strong>rodent pest control Melbourne</strong> solutions. We specialize in <strong>pest control Melbourne rats</strong>, <strong>mice pest control Melbourne</strong>, and <strong>mouse pest control Melbourne</strong>, using safe and effective methods. Our <strong>rodent removal Melbourne</strong> services eliminate threats from your home or business completely. Choose us for <strong>affordable rodent control</strong> and peace of mind.</p>"
+    },
+    {
+      "sort_order": 60,
+      "block_key": "content.image_0bb7e99",
+      "section": "content",
+      "label": "Image (0bb7e99)",
+      "type": "image",
+      "image_path": "cms/rodent-control-in-melbourne/Why-Pest-Control.jpg_ef5bccf6.webp",
+      "metadata": {
+        "elementor_id": "0bb7e99",
+        "image_src": "/assets/images/Why-Pest-Control.jpg_ef5bccf6.webp"
+      }
+    },
+    {
+      "sort_order": 61,
+      "block_key": "content.heading_bfc1b9f",
+      "section": "content",
+      "label": "Heading: importance of hiring professional",
+      "type": "text",
+      "value": "importance of hiring professional"
+    },
+    {
+      "sort_order": 62,
+      "block_key": "content.heading_4209442",
+      "section": "content",
+      "label": "Heading: Importance of Hiring Professional Rodent Pest Control in Mel",
+      "type": "text",
+      "value": "Importance of Hiring Professional Rodent Pest Control in Melbourne"
+    },
+    {
+      "sort_order": 63,
+      "block_key": "content.text_3e01318",
+      "section": "content",
+      "label": "Content block 22",
+      "type": "html",
+      "value": "<p>Rodent infestations can spiral out of control quickly. While DIY methods might offer short-term results, only trained experts in <strong>rodent control in Melbourne</strong> can provide a complete solution.</p>"
+    },
+    {
+      "sort_order": 64,
+      "block_key": "content.list_dece049",
+      "section": "content",
+      "label": "Icon list (dece049)",
+      "type": "json",
+      "metadata": {
+        "items": [
+          "Effective Detection &amp; Elimination: Rodents often hide in walls, ceilings, and hard-to-reach spots. Our rodent pest control Melbourne team uses advanced tools to detect and remove them efficiently — including our skilled rat exterminator Melbourne and mouse exterminator Melbourne specialists.",
+          "Long-Term Prevention: Unlike DIY treatments, our rodent removal services in Melbourne include sealing entry points, regular follow-ups, and proactive strategies to stop reinfestation.",
+          "Expertise Matters: Whether it's pest control Melbourne rats or mice pest control Melbourne, our team has the experience to choose the right methods — traps, baits, exclusion, or eco-friendly treatments."
+        ]
+      }
+    },
+    {
+      "sort_order": 65,
+      "block_key": "content.heading_4b9ae7a",
+      "section": "content",
+      "label": "Heading: Why Choose",
+      "type": "text",
+      "value": "Why Choose"
+    },
+    {
+      "sort_order": 66,
+      "block_key": "content.heading_d1e912c",
+      "section": "content",
+      "label": "Heading: Why Choose 7 States Pest Control for Rodent Pest Control in ",
+      "type": "text",
+      "value": "Why Choose 7 States Pest Control for Rodent Pest Control in Melbourne ?"
+    },
+    {
+      "sort_order": 67,
+      "block_key": "content.text_3dd5454",
+      "section": "content",
+      "label": "Content block 23",
+      "type": "html",
+      "value": "<p><span >If you’re searching for top-rated </span><b>rodent pest control Melbourne</b><span > services, look no further than 7 States Pest Control. Here’s why homeowners and businesses across Melbourne trust our </span><b>local rodent experts Melbourne</b><span >:</span></p>"
+    },
+    {
+      "sort_order": 68,
+      "block_key": "content.list_30fe7d7",
+      "section": "content",
+      "label": "Icon list (30fe7d7)",
+      "type": "json",
+      "metadata": {
+        "items": [
+          "Experienced Technicians: Our team is highly trained in pest control Melbourne rats, mouse pest control Melbourne, and mice pest control Melbourne, tackling all rodent species with precision. From rat control Melbourne to mice control Melbourne, we handle it all.",
+          "Eco-Friendly Treatments: We care about your safety. Our mouse control Melbourne solutions are non-toxic and ideal for homes with kids and pets.",
+          "Custom Rodent Removal Plans: Every infestation is different. We offer tailored rodent control in Melbourne ensuring long-lasting protection. Our cheap rodent control packages are designed to suit every budget without cutting corners.",
+          "Fast Response, Guaranteed Results: We understand urgency. Our affordable rodent control team acts fast and guarantees complete rodent removal Melbourne extermination with zero compromise on quality. Wondering about rat removal Melbourne cost? We offer transparent, budget-friendly pricing with no hidden charges."
+        ]
+      }
+    },
+    {
+      "sort_order": 69,
+      "block_key": "content.text_f7a1b85",
+      "section": "content",
+      "label": "Content block 24",
+      "type": "html",
+      "value": "<h3 class=\"elementor-heading-title elementor-size-default\">Our blog covers a wide range of topics, including:</h3>"
+    },
+    {
+      "sort_order": 70,
+      "block_key": "content.image_6137e1e",
+      "section": "content",
+      "label": "Image (6137e1e)",
+      "type": "image",
+      "image_path": "cms/rodent-control-in-melbourne/How-to-get-rid-of-rats-in-roof-Australia-03-600x315-1_aba74dae.jpg",
+      "metadata": {
+        "elementor_id": "6137e1e",
+        "image_src": "/assets/images/How-to-get-rid-of-rats-in-roof-Australia-03-600x315-1_aba74dae.jpg"
+      }
+    },
+    {
+      "sort_order": 71,
+      "block_key": "content.image_3c83a92",
+      "section": "content",
+      "label": "Image (3c83a92)",
+      "type": "image",
+      "image_path": "cms/rodent-control-in-melbourne/WhatsApp-Image-2024-06-08-at-10.27.48_233bbd88-600x350-_ea63c2be.jpg",
+      "metadata": {
+        "elementor_id": "3c83a92",
+        "image_src": "/assets/images/WhatsApp-Image-2024-06-08-at-10.27.48_233bbd88-600x350-_ea63c2be.jpg"
+      }
+    },
+    {
+      "sort_order": 72,
+      "block_key": "content.heading_62e33f3",
+      "section": "content",
+      "label": "Heading: Clients Reviews",
+      "type": "text",
+      "value": "Clients Reviews"
+    },
+    {
+      "sort_order": 73,
+      "block_key": "content.heading_3020d89",
+      "section": "content",
+      "label": "Heading: 7 States Pest Control for Reliable Pest Management Solutions",
+      "type": "text",
+      "value": "7 States Pest Control for Reliable Pest Management Solutions"
+    },
+    {
+      "sort_order": 74,
+      "block_key": "content.heading_05209c4",
+      "section": "content",
+      "label": "Heading: Reviews of Our Pest Control Services",
+      "type": "text",
+      "value": "Reviews of Our Pest Control Services"
+    },
+    {
+      "sort_order": 75,
+      "block_key": "content.heading_f0749cb",
+      "section": "content",
+      "label": "Heading: EXCELLENT",
+      "type": "text",
+      "value": "EXCELLENT"
+    },
+    {
+      "sort_order": 76,
+      "block_key": "content.text_b726e66",
+      "section": "content",
+      "label": "Content block 25",
+      "type": "html",
+      "value": "<p>Based on&nbsp;45 reviews</p>"
+    },
+    {
+      "sort_order": 77,
+      "block_key": "content.heading_32945a7",
+      "section": "content",
+      "label": "Heading: Frequently Asked Questions",
+      "type": "text",
+      "value": "Frequently Asked Questions"
+    },
+    {
+      "sort_order": 78,
+      "block_key": "content.heading_4c825b4",
+      "section": "content",
+      "label": "Heading: Ideas to reality",
+      "type": "text",
+      "value": "Ideas to reality"
+    },
+    {
+      "sort_order": 79,
+      "block_key": "content.heading_7c67181",
+      "section": "content",
+      "label": "Heading: Talk to Us Today to Learn More",
+      "type": "text",
+      "value": "Talk to Us Today to Learn More"
+    },
+    {
+      "sort_order": 80,
+      "block_key": "content.text_dbd1d11",
+      "section": "content",
+      "label": "Content block 26",
+      "type": "html",
+      "value": "Do you have any specific questions about us, our services, or anything related to pest infestation issues? Call us today on&nbsp;<a href=\"tel:+61434660060\"> +61 434 660 060</a>&nbsp;or use our contact form to connect with our&nbsp;<b>7 States Pest Control</b>. You can get answers to your questions, get upfront quotes for the&nbsp;<b>7 States Pest Control</b>&nbsp;issues, and receive high-quality tailored services."
+    },
+    {
+      "sort_order": 81,
+      "block_key": "content.image_roof_rat_944db16c",
+      "section": "content",
+      "label": "Image: Roof-Rat_944db16c.png",
+      "type": "image",
+      "image_path": "cms/rodent-control-in-melbourne/Roof-Rat_944db16c.png",
+      "metadata": {
+        "image_src": "/assets/images/Roof-Rat_944db16c.png",
+        "filename": "Roof-Rat_944db16c.png"
+      }
+    },
+    {
+      "sort_order": 82,
+      "block_key": "content.image_norway_rat_a3c62413",
+      "section": "content",
+      "label": "Image: Norway-Rat_a3c62413.png",
+      "type": "image",
+      "image_path": "cms/rodent-control-in-melbourne/Norway-Rat_a3c62413.png",
+      "metadata": {
+        "image_src": "/assets/images/Norway-Rat_a3c62413.png",
+        "filename": "Norway-Rat_a3c62413.png"
+      }
+    },
+    {
+      "sort_order": 83,
+      "block_key": "content.image_house_mouse_f456551e",
+      "section": "content",
+      "label": "Image: House-Mouse_f456551e.png",
+      "type": "image",
+      "image_path": "cms/rodent-control-in-melbourne/House-Mouse_f456551e.png",
+      "metadata": {
+        "image_src": "/assets/images/House-Mouse_f456551e.png",
+        "filename": "House-Mouse_f456551e.png"
+      }
+    },
+    {
+      "sort_order": 84,
+      "block_key": "content.image_field_mouse_a31e8933",
+      "section": "content",
+      "label": "Image: Field-Mouse_a31e8933.png",
+      "type": "image",
+      "image_path": "cms/rodent-control-in-melbourne/Field-Mouse_a31e8933.png",
+      "metadata": {
+        "image_src": "/assets/images/Field-Mouse_a31e8933.png",
+        "filename": "Field-Mouse_a31e8933.png"
+      }
+    },
+    {
+      "sort_order": 85,
+      "block_key": "content.image_7_states_8_300x158_5dc0e9a7",
+      "section": "content",
+      "label": "Image: 7-states-8-300x158_5dc0e9a7.png",
+      "type": "image",
+      "image_path": "cms/rodent-control-in-melbourne/7-states-8-300x158_5dc0e9a7.png",
+      "metadata": {
+        "image_src": "/assets/images/7-states-8-300x158_5dc0e9a7.png",
+        "filename": "7-states-8-300x158_5dc0e9a7.png"
+      }
+    },
+    {
+      "sort_order": 86,
+      "block_key": "content.image_7_states_3_300x158_587d3739",
+      "section": "content",
+      "label": "Image: 7-states-3-300x158_587d3739.png",
+      "type": "image",
+      "image_path": "cms/rodent-control-in-melbourne/7-states-3-300x158_587d3739.png",
+      "metadata": {
+        "image_src": "/assets/images/7-states-3-300x158_587d3739.png",
+        "filename": "7-states-3-300x158_587d3739.png"
+      }
+    },
+    {
+      "sort_order": 87,
+      "block_key": "content.image_whatsapp_image_2026_04_20_at_4_55_14_pm_300x158_",
+      "section": "content",
+      "label": "Image: WhatsApp-Image-2026-04-20-at-4.55.14-PM-300x158_93b6df22.jpeg",
+      "type": "image",
+      "image_path": "cms/rodent-control-in-melbourne/WhatsApp-Image-2026-04-20-at-4.55.14-PM-300x158_93b6df22.jpeg",
+      "metadata": {
+        "image_src": "/assets/images/WhatsApp-Image-2026-04-20-at-4.55.14-PM-300x158_93b6df22.jpeg",
+        "filename": "WhatsApp-Image-2026-04-20-at-4.55.14-PM-300x158_93b6df22.jpeg"
+      }
+    }
+  ]
+}

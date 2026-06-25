@@ -1,0 +1,676 @@
+{
+  "slug": "office-pest-control",
+  "title": "Office Pest Control",
+  "seo_title": "Professional Office Pest Control Services | office pest control",
+  "seo_description": "Get reliable office pest control service to keep your workspace pest-free. We offer expert office building pest control and office of pest management solutions.",
+  "body_class": "wp-singular page-template page-template-elementor_header_footer page wp-custom-logo wp-embed-responsive wp-theme-hello-elementor elementor-default elementor-template-full-width elementor-kit-9 elementor-page elementor-page-697",
+  "elementor_id": 697,
+  "is_published": true,
+  "blocks": [
+    {
+      "sort_order": 0,
+      "block_key": "background.hero",
+      "section": "hero",
+      "label": "Hero background",
+      "type": "background",
+      "background_image_path": "cms/office-pest-control/people-disinfecting-biohazard-area-2048x1365-1_b73d3038.jpg",
+      "metadata": {
+        "elementor_id": "d9794c4",
+        "filename": "people-disinfecting-biohazard-area-2048x1365-1_b73d3038.jpg"
+      }
+    },
+    {
+      "sort_order": 1,
+      "block_key": "background.cta",
+      "section": "cta",
+      "label": "CTA background",
+      "type": "background",
+      "background_image_path": "cms/office-pest-control/silverfish_2243216d.svg",
+      "metadata": {
+        "elementor_id": "05c0e40",
+        "filename": "silverfish_2243216d.svg"
+      }
+    },
+    {
+      "sort_order": 2,
+      "block_key": "hero.breadcrumb_current",
+      "section": "hero",
+      "label": "Breadcrumb current",
+      "type": "text",
+      "value": "Office Pest Control"
+    },
+    {
+      "sort_order": 3,
+      "block_key": "hero.title",
+      "section": "hero",
+      "label": "Section title",
+      "type": "text",
+      "value": "Pest Control for Offices"
+    },
+    {
+      "sort_order": 4,
+      "block_key": "hero.heading",
+      "section": "hero",
+      "label": "Main heading",
+      "type": "text",
+      "value": "Office Pest Control In Melbourne"
+    },
+    {
+      "sort_order": 5,
+      "block_key": "hero.intro",
+      "section": "hero",
+      "label": "Intro paragraph",
+      "type": "html",
+      "value": "<div class=\"elementor-element elementor-element-de434cf elementor-widget elementor-widget-text-editor\" data-element_type=\"widget\" data-id=\"de434cf\" data-settings=\"{&quot;ekit_we_effect_on&quot;:&quot;none&quot;}\" data-widget_type=\"text-editor.default\"><div class=\"elementor-widget-container\"><p>Pest infestations present a prevalent and significant challenge for office spaces. These unwelcome intruders not only cause irritation and disruption but also create unhygienic and potentially hazardous conditions within your workplace. If left unattended, such infestations can lead to the spread of diseases, damage your company’s reputation, disrupt daily operations, and have a negative impact on your financial performance. The most effective strategy to combat office pest infestations is proactive prevention, and Assured Environments is here to provide assistance.</p><p>Assured Environments is the oldest and largest commercial pest control specialist. Our dedicated team of experts collaborates with you to develop a comprehensive pest management plan tailored to your unique business and its specific pest-related challenges. We are well-prepared to address existing pest issues and can also create customized prevention programs for entire buildings or individual tenants. Our commitment goes beyond simply resolving your immediate pest problem; we are devoted to ensuring that you never encounter such issues again.</p></div></div>"
+    },
+    {
+      "sort_order": 6,
+      "block_key": "quote_form.title",
+      "section": "quote_form",
+      "label": "Form heading",
+      "type": "text",
+      "value": "Office Pest Control In Melbourne"
+    },
+    {
+      "sort_order": 7,
+      "block_key": "quote_form.subtitle",
+      "section": "quote_form",
+      "label": "Form subtitle",
+      "type": "text",
+      "value": "Have an enquiry? Leave us your details and we’ll call you back during business hours."
+    },
+    {
+      "sort_order": 8,
+      "block_key": "quote_form.submit_text",
+      "section": "quote_form",
+      "label": "Submit button text",
+      "type": "text",
+      "value": "Submit Quote"
+    },
+    {
+      "sort_order": 9,
+      "block_key": "about.counter_title",
+      "section": "about",
+      "label": "Counter label",
+      "type": "text",
+      "value": "Projects Done"
+    },
+    {
+      "sort_order": 10,
+      "block_key": "about.counter_value",
+      "section": "about",
+      "label": "Counter value",
+      "type": "text",
+      "value": "500"
+    },
+    {
+      "sort_order": 11,
+      "block_key": "about.counter_suffix",
+      "section": "about",
+      "label": "Counter suffix",
+      "type": "text",
+      "value": "+"
+    },
+    {
+      "sort_order": 12,
+      "block_key": "about.image",
+      "section": "about",
+      "label": "About section image",
+      "type": "image",
+      "image_path": "cms/office-pest-control/person-protective-equipment-disinfecting-2048x1584-1_f1f2de17.jpg",
+      "metadata": {
+        "elementor_id": "cbed1ab",
+        "image_src": "/assets/images/person-protective-equipment-disinfecting-2048x1584-1_f1f2de17.jpg"
+      }
+    },
+    {
+      "sort_order": 13,
+      "block_key": "about.title",
+      "section": "about",
+      "label": "Section title",
+      "type": "text",
+      "value": "Pest Control for Offices"
+    },
+    {
+      "sort_order": 14,
+      "block_key": "about.subtitle",
+      "section": "about",
+      "label": "Section subtitle",
+      "type": "text",
+      "value": "Pest control service for your offices"
+    },
+    {
+      "sort_order": 15,
+      "block_key": "about.intro",
+      "section": "about",
+      "label": "About intro",
+      "type": "html",
+      "value": "<p>When you choose Assured, you are selecting a pest control service designed to meet the specific needs of your office space. We take pride in delivering pest control solutions customized for your business and its unique pest challenges. Here is an overview of the diverse range of services we offer for your office space in Melbourne.</p>"
+    },
+    {
+      "sort_order": 16,
+      "block_key": "why_choose.eyebrow",
+      "section": "why_choose",
+      "label": "Eyebrow",
+      "type": "text",
+      "value": "Why Choose"
+    },
+    {
+      "sort_order": 17,
+      "block_key": "why_choose.title",
+      "section": "why_choose",
+      "label": "Section title",
+      "type": "text",
+      "value": "7 States Pest Control for Pest Control in Melbourne?"
+    },
+    {
+      "sort_order": 18,
+      "block_key": "why_choose.intro",
+      "section": "why_choose",
+      "label": "Intro HTML",
+      "type": "html",
+      "value": "<p>When you choose Assured, you are selecting a pest control service designed to meet the specific needs of your office space. We take pride in delivering pest control solutions customized for your business and its unique pest challenges. Here is an overview of the diverse range of services we offer for your office space in Melbourne.</p>"
+    },
+    {
+      "sort_order": 19,
+      "block_key": "why_choose.local_expertise",
+      "section": "why_choose",
+      "label": "Why choose: Local Expertise​",
+      "type": "json",
+      "image_path": "cms/office-pest-control/professional-success-r8bomvbu3c93uax0u85h20goco60kp9o7y_4cc9959a.png",
+      "metadata": {
+        "slug": "local_expertise",
+        "id": "fda217e",
+        "image": "/assets/images/professional-success-r8bomvbu3c93uax0u85h20goco60kp9o7y_4cc9959a.png",
+        "title": "Local Expertise​",
+        "description": "Melbourne’s diverse climate and urban environment create specific challenges when it comes to pest control. Our team is well-acquainted with the local pest population and has developed targeted strategies to address Melbourne’s unique pest issues.",
+        "image_src": "/assets/images/professional-success-r8bomvbu3c93uax0u85h20goco60kp9o7y_4cc9959a.png"
+      }
+    },
+    {
+      "sort_order": 20,
+      "block_key": "why_choose.comprehensive_services",
+      "section": "why_choose",
+      "label": "Why choose: Comprehensive Services",
+      "type": "json",
+      "image_path": "cms/office-pest-control/execution-r8boo1mkmvv0cr7kz8foo7sf30dj72xldrxrow7ew0_abca882a.png",
+      "metadata": {
+        "slug": "comprehensive_services",
+        "id": "72b3945",
+        "image": "/assets/images/execution-r8boo1mkmvv0cr7kz8foo7sf30dj72xldrxrow7ew0_abca882a.png",
+        "title": "Comprehensive Services",
+        "description": "From common household pests like ants and spiders to more challenging infestations of termites and rodents, we offer a comprehensive range of pest control services. Our integrated approach ensures that we not only eliminate existing pests but also implement preventive measures to keep them from returning.",
+        "image_src": "/assets/images/execution-r8boo1mkmvv0cr7kz8foo7sf30dj72xldrxrow7ew0_abca882a.png"
+      }
+    },
+    {
+      "sort_order": 21,
+      "block_key": "why_choose.environmentally_friendly_solutions",
+      "section": "why_choose",
+      "label": "Why choose: Environmentally Friendly Solutions",
+      "type": "json",
+      "image_path": "cms/office-pest-control/eco-r8bop2aaa70h95d2wygdaob2gi769mm9p6aqmysi5k_6ad5c5e4.png",
+      "metadata": {
+        "slug": "environmentally_friendly_solutions",
+        "id": "2764490",
+        "image": "/assets/images/eco-r8bop2aaa70h95d2wygdaob2gi769mm9p6aqmysi5k_6ad5c5e4.png",
+        "title": "Environmentally Friendly Solutions",
+        "description": "We prioritize the safety of your family, pets, and the environment. Our Melbourne pest control services incorporate the latest in eco-friendly technologies and methods. Rest assured that our treatments are effective and environmentally responsible.",
+        "image_src": "/assets/images/eco-r8bop2aaa70h95d2wygdaob2gi769mm9p6aqmysi5k_6ad5c5e4.png"
+      }
+    },
+    {
+      "sort_order": 22,
+      "block_key": "why_choose.licensed_and_insured",
+      "section": "why_choose",
+      "label": "Why choose: Licensed and Insured",
+      "type": "json",
+      "image_path": "cms/office-pest-control/clipboard-r8botv8kyxty9sr3z91hm8w7jxodvl1qilf1plkmcg_c7b8178b.png",
+      "metadata": {
+        "slug": "licensed_and_insured",
+        "id": "ed98285",
+        "image": "/assets/images/clipboard-r8botv8kyxty9sr3z91hm8w7jxodvl1qilf1plkmcg_c7b8178b.png",
+        "title": "Licensed and Insured",
+        "description": "7 States Pest Control is a licensed and insured pest control company in Melbourne. Our team of certified technicians undergoes regular training to stay updated on the latest industry standards and best practices. Our Melbourne Pest Control Services",
+        "image_src": "/assets/images/clipboard-r8botv8kyxty9sr3z91hm8w7jxodvl1qilf1plkmcg_c7b8178b.png"
+      }
+    },
+    {
+      "sort_order": 23,
+      "block_key": "why_choose.residential_pest_control",
+      "section": "why_choose",
+      "label": "Why choose: Residential Pest Control",
+      "type": "json",
+      "image_path": "cms/office-pest-control/insecticide-r8bov92115q5d4qqwckpsebn1cuu7jjidfzs59ir6o_c4acec4d.png",
+      "metadata": {
+        "slug": "residential_pest_control",
+        "id": "cf2e90e",
+        "image": "/assets/images/insecticide-r8bov92115q5d4qqwckpsebn1cuu7jjidfzs59ir6o_c4acec4d.png",
+        "title": "Residential Pest Control",
+        "description": "Protect your home from unwanted pests with our residential pest control services. We tailor our treatments to your specific needs, ensuring a safe and pest-free living environment for you and your family.",
+        "image_src": "/assets/images/insecticide-r8bov92115q5d4qqwckpsebn1cuu7jjidfzs59ir6o_c4acec4d.png"
+      }
+    },
+    {
+      "sort_order": 24,
+      "block_key": "why_choose.commercial_pest_management",
+      "section": "why_choose",
+      "label": "Why choose: Commercial Pest Management",
+      "type": "json",
+      "image_path": "cms/office-pest-control/sanitizer-r8bow196q6sr1flsboriv77guwzumgnghbkcjkcy00_3f2a2dd6.png",
+      "metadata": {
+        "slug": "commercial_pest_management",
+        "id": "b051624",
+        "image": "/assets/images/sanitizer-r8bow196q6sr1flsboriv77guwzumgnghbkcjkcy00_3f2a2dd6.png",
+        "title": "Commercial Pest Management",
+        "description": "For businesses in Melbourne, we offer customized pest management solutions to safeguard your reputation and maintain a pest-free workplace. Our services are designed to comply with industry regulations and keep your commercial space pest-free.",
+        "image_src": "/assets/images/sanitizer-r8bow196q6sr1flsboriv77guwzumgnghbkcjkcy00_3f2a2dd6.png"
+      }
+    },
+    {
+      "sort_order": 25,
+      "block_key": "contact.eyebrow",
+      "section": "contact",
+      "label": "Eyebrow",
+      "type": "text",
+      "value": "Get in Touch"
+    },
+    {
+      "sort_order": 26,
+      "block_key": "contact.title",
+      "section": "contact",
+      "label": "Section title",
+      "type": "text",
+      "value": "Contact 7 States Pest Control for Melbourne Pest Control"
+    },
+    {
+      "sort_order": 27,
+      "block_key": "contact.body",
+      "section": "contact",
+      "label": "Body HTML",
+      "type": "html",
+      "value": "<p>Don’t let pests take over your home or business. Contact&nbsp;<a href=\"/\"><strong>7 States Pest Control</strong></a>&nbsp;today for reliable and effective pest control services in Melbourne. Our team is ready to assess your situation and provide tailored solutions to ensure a pest-free environment.</p>"
+    },
+    {
+      "sort_order": 28,
+      "block_key": "contact.button",
+      "section": "contact",
+      "label": "Contact button",
+      "type": "link",
+      "value": "Our Locations",
+      "link_url": "/melbourne"
+    },
+    {
+      "sort_order": 29,
+      "block_key": "services.eyebrow",
+      "section": "services",
+      "label": "Eyebrow",
+      "type": "text",
+      "value": "Our Services"
+    },
+    {
+      "sort_order": 30,
+      "block_key": "services.title",
+      "section": "services",
+      "label": "Section title",
+      "type": "text",
+      "value": "Explore Our Diverse Pest Control Services at 7 States Pest Control"
+    },
+    {
+      "sort_order": 31,
+      "block_key": "services.intro",
+      "section": "services",
+      "label": "Intro HTML",
+      "type": "html",
+      "value": "<p>7 States Pest Control is your one-stop destination<br />to avail of pest control services, including:</p>"
+    },
+    {
+      "sort_order": 32,
+      "block_key": "services.cockroach_control",
+      "section": "services",
+      "label": "Service: Cockroach Control",
+      "type": "json",
+      "image_path": "cms/office-pest-control/Cockroaches.png-1_56844a04.webp",
+      "metadata": {
+        "slug": "cockroach_control",
+        "id": "5024943",
+        "image": "/assets/images/Cockroaches.png-1_56844a04.webp",
+        "title": "Cockroach Control",
+        "link": "/our-services-cockroach-control",
+        "alt": "cockroach pest control",
+        "button_text": "Learn More",
+        "image_src": "/assets/images/Cockroaches.png-1_56844a04.webp"
+      }
+    },
+    {
+      "sort_order": 33,
+      "block_key": "services.bed_bug_treatment",
+      "section": "services",
+      "label": "Service: Bed Bug Treatment",
+      "type": "json",
+      "image_path": "cms/office-pest-control/Bed-Bug.png_1da7e9d8.webp",
+      "metadata": {
+        "slug": "bed_bug_treatment",
+        "id": "9509850",
+        "image": "/assets/images/Bed-Bug.png_1da7e9d8.webp",
+        "title": "Bed Bug Treatment",
+        "link": "/our-services-bed-bug-treatment",
+        "alt": "Bed Bug Pest Control",
+        "button_text": "Learn More",
+        "image_src": "/assets/images/Bed-Bug.png_1da7e9d8.webp"
+      }
+    },
+    {
+      "sort_order": 34,
+      "block_key": "services.ant_pest_control",
+      "section": "services",
+      "label": "Service: Ant Pest Control",
+      "type": "json",
+      "image_path": "cms/office-pest-control/ant-colony-insect-animals-pest-png_73d1a8ca.png",
+      "metadata": {
+        "slug": "ant_pest_control",
+        "id": "8d42819",
+        "image": "/assets/images/ant-colony-insect-animals-pest-png_73d1a8ca.png",
+        "title": "Ant Pest Control",
+        "link": "/our-services-ant-pest-control",
+        "alt": "Ant Pest Control",
+        "button_text": "Learn More",
+        "image_src": "/assets/images/ant-colony-insect-animals-pest-png_73d1a8ca.png"
+      }
+    },
+    {
+      "sort_order": 35,
+      "block_key": "services.mites_control",
+      "section": "services",
+      "label": "Service: Mites Control",
+      "type": "json",
+      "image_path": "cms/office-pest-control/Mite-Control.png_4c3b4b78.webp",
+      "metadata": {
+        "slug": "mites_control",
+        "id": "b6c84e5",
+        "image": "/assets/images/Mite-Control.png_4c3b4b78.webp",
+        "title": "Mites Control",
+        "link": "/our-services-mites-control",
+        "alt": "mites control",
+        "button_text": "Learn More",
+        "image_src": "/assets/images/Mite-Control.png_4c3b4b78.webp"
+      }
+    },
+    {
+      "sort_order": 36,
+      "block_key": "services.fly_control",
+      "section": "services",
+      "label": "Service: Fly Control",
+      "type": "json",
+      "image_path": "cms/office-pest-control/Fly-Control.png_4cfa4c12.webp",
+      "metadata": {
+        "slug": "fly_control",
+        "id": "e429a77",
+        "image": "/assets/images/Fly-Control.png_4cfa4c12.webp",
+        "title": "Fly Control",
+        "link": "/our-services-fly-control",
+        "alt": "Fly-Control",
+        "button_text": "Learn More",
+        "image_src": "/assets/images/Fly-Control.png_4cfa4c12.webp"
+      }
+    },
+    {
+      "sort_order": 37,
+      "block_key": "services.flea_treatment",
+      "section": "services",
+      "label": "Service: Flea Treatment",
+      "type": "json",
+      "image_path": "cms/office-pest-control/Flea-Control.png_a5558f62.webp",
+      "metadata": {
+        "slug": "flea_treatment",
+        "id": "ecb5c6e",
+        "image": "/assets/images/Flea-Control.png_a5558f62.webp",
+        "title": "Flea Treatment",
+        "link": "/flea-treatment",
+        "alt": "Flea Control",
+        "button_text": "Learn More",
+        "image_src": "/assets/images/Flea-Control.png_a5558f62.webp"
+      }
+    },
+    {
+      "sort_order": 38,
+      "block_key": "services.mosquito_pest_control",
+      "section": "services",
+      "label": "Service: Mosquito Pest Control",
+      "type": "json",
+      "image_path": "cms/office-pest-control/Mosquito-Control.png_90777f1c.webp",
+      "metadata": {
+        "slug": "mosquito_pest_control",
+        "id": "94c5437",
+        "image": "/assets/images/Mosquito-Control.png_90777f1c.webp",
+        "title": "Mosquito Pest Control",
+        "link": "/our-services-mosquito-pest-control",
+        "alt": "Mosquito pest Control",
+        "button_text": "Learn More",
+        "image_src": "/assets/images/Mosquito-Control.png_90777f1c.webp"
+      }
+    },
+    {
+      "sort_order": 39,
+      "block_key": "services.rodent_control",
+      "section": "services",
+      "label": "Service: Rodent Control",
+      "type": "json",
+      "image_path": "cms/office-pest-control/Rodent-Control.png-1_0842a15c.webp",
+      "metadata": {
+        "slug": "rodent_control",
+        "id": "c3cbfb9",
+        "image": "/assets/images/Rodent-Control.png-1_0842a15c.webp",
+        "title": "Rodent Control",
+        "link": "/rodent-control-in-melbourne",
+        "alt": "Rodent Pest Control",
+        "button_text": "Learn More",
+        "image_src": "/assets/images/Rodent-Control.png-1_0842a15c.webp"
+      }
+    },
+    {
+      "sort_order": 40,
+      "block_key": "services.moth_control",
+      "section": "services",
+      "label": "Service: Moth Control",
+      "type": "json",
+      "image_path": "cms/office-pest-control/Moth-Control.png-1_737c5080.webp",
+      "metadata": {
+        "slug": "moth_control",
+        "id": "3ef2fbd",
+        "image": "/assets/images/Moth-Control.png-1_737c5080.webp",
+        "title": "Moth Control",
+        "link": "/our-services-moth-control",
+        "alt": "Moth Control",
+        "button_text": "Learn More",
+        "image_src": "/assets/images/Moth-Control.png-1_737c5080.webp"
+      }
+    },
+    {
+      "sort_order": 41,
+      "block_key": "services.wasp_control_services",
+      "section": "services",
+      "label": "Service: Wasp Control Services",
+      "type": "json",
+      "image_path": "cms/office-pest-control/Wasp-Removal.png-1_2802cb47.webp",
+      "metadata": {
+        "slug": "wasp_control_services",
+        "id": "c1247b6",
+        "image": "/assets/images/Wasp-Removal.png-1_2802cb47.webp",
+        "title": "Wasp Control Services",
+        "link": "/wasp-removal-melbourne",
+        "alt": "Wasp Removal melbourne",
+        "button_text": "Learn More",
+        "image_src": "/assets/images/Wasp-Removal.png-1_2802cb47.webp"
+      }
+    },
+    {
+      "sort_order": 42,
+      "block_key": "services.spider_control_treatment",
+      "section": "services",
+      "label": "Service: Spider Control Treatment",
+      "type": "json",
+      "image_path": "cms/office-pest-control/Spider-Control.png-2_18a07ad3.webp",
+      "metadata": {
+        "slug": "spider_control_treatment",
+        "id": "a7e05e7",
+        "image": "/assets/images/Spider-Control.png-2_18a07ad3.webp",
+        "title": "Spider Control Treatment",
+        "link": "/our-services-spider-control-treatment",
+        "alt": "spider control",
+        "button_text": "Learn More",
+        "image_src": "/assets/images/Spider-Control.png-2_18a07ad3.webp"
+      }
+    },
+    {
+      "sort_order": 43,
+      "block_key": "services.silverfish_treatment",
+      "section": "services",
+      "label": "Service: Silverfish Treatment",
+      "type": "json",
+      "image_path": "cms/office-pest-control/Silver-Fish.png_cbd8da70.webp",
+      "metadata": {
+        "slug": "silverfish_treatment",
+        "id": "05c0e40",
+        "image": "/assets/images/Silver-Fish.png_cbd8da70.webp",
+        "title": "Silverfish Treatment",
+        "link": "/our-services-silverfish-treatment",
+        "alt": "silver fish control",
+        "button_text": "Learn More",
+        "image_src": "/assets/images/Silver-Fish.png_cbd8da70.webp"
+      }
+    },
+    {
+      "sort_order": 44,
+      "block_key": "expertise.title",
+      "section": "expertise",
+      "label": "Section title",
+      "type": "text",
+      "value": "Our Expertise"
+    },
+    {
+      "sort_order": 45,
+      "block_key": "expertise.termites",
+      "section": "expertise",
+      "label": "Expertise: Termites",
+      "type": "json",
+      "metadata": {
+        "slug": "termites",
+        "title": "Termites"
+      }
+    },
+    {
+      "sort_order": 46,
+      "block_key": "expertise.all_pest_control",
+      "section": "expertise",
+      "label": "Expertise: All Pest Control",
+      "type": "json",
+      "metadata": {
+        "slug": "all_pest_control",
+        "title": "All Pest Control"
+      }
+    },
+    {
+      "sort_order": 47,
+      "block_key": "expertise.all_sub_location",
+      "section": "expertise",
+      "label": "Expertise: All Sub Location",
+      "type": "json",
+      "metadata": {
+        "slug": "all_sub_location",
+        "title": "All Sub Location"
+      }
+    },
+    {
+      "sort_order": 48,
+      "block_key": "expertise.same_day_services",
+      "section": "expertise",
+      "label": "Expertise: Same Day Services",
+      "type": "json",
+      "metadata": {
+        "slug": "same_day_services",
+        "title": "Same Day Services"
+      }
+    },
+    {
+      "sort_order": 49,
+      "block_key": "faq.items",
+      "section": "faq",
+      "label": "FAQ items",
+      "type": "json",
+      "metadata": {
+        "items": [
+          {
+            "question": "1. What types of pests commonly infest office environments?",
+            "answer_html": "<p>Common office pests include rodents (such as mice and rats), insects like cockroaches, ants, flies, and occasionally bed bugs. These pests can compromise hygiene standards and disrupt daily operations.</p>"
+          },
+          {
+            "question": "2. How can a pest infestation impact my business?",
+            "answer_html": "<p>Pest infestations can lead to health code violations, damage to property and equipment, contamination of products, and a tarnished reputation among clients and employees. Addressing pest issues promptly is essential to maintain a safe and professional work environment.</p>"
+          },
+          {
+            "question": "3. What measures can be taken to prevent pests in the office?",
+            "answer_html": "<p>Preventive measures include maintaining cleanliness, sealing entry points, proper waste management, and regular inspections. Implementing a comprehensive pest management plan with professional assistance can effectively reduce the risk of infestations.</p>"
+          },
+          {
+            "question": "4. How often should pest control services be scheduled for an office?",
+            "answer_html": "<p>The frequency of pest control services depends on factors such as the office's location, size, and history of infestations. Regular inspections, typically quarterly or bi-monthly, are recommended to proactively manage and prevent pest issues.</p>"
+          },
+          {
+            "question": "5. Are the pest control treatments safe for employees and office equipment?",
+            "answer_html": "<p>Reputable pest control providers use treatments that are safe for humans and office equipment. It's important to choose a licensed and experienced pest control company that utilizes environmentally friendly and non-disruptive methods.</p>"
+          },
+          {
+            "question": "6. What should I do if I notice signs of a pest infestation in my office?",
+            "answer_html": "<p>If you observe signs such as droppings, gnaw marks, or unusual odors, contact a professional pest control service promptly. Early intervention can prevent a minor issue from escalating into a major infestation.</p>"
+          }
+        ]
+      }
+    },
+    {
+      "sort_order": 50,
+      "block_key": "faq.title",
+      "section": "faq",
+      "label": "FAQ title",
+      "type": "text",
+      "value": "Frequently Asked Questions"
+    },
+    {
+      "sort_order": 51,
+      "block_key": "faq.sidebar_image",
+      "section": "faq",
+      "label": "FAQ sidebar image",
+      "type": "image",
+      "image_path": "cms/office-pest-control/WhatsApp-Image-2024-08-28-at-15.35.06_bc7d2870-1_ecbbd918.jpg",
+      "metadata": {
+        "elementor_id": "1018b5b",
+        "image_src": "/assets/images/WhatsApp-Image-2024-08-28-at-15.35.06_bc7d2870-1_ecbbd918.jpg"
+      }
+    },
+    {
+      "sort_order": 52,
+      "block_key": "faq.sidebar_cta_title",
+      "section": "faq",
+      "label": "Sidebar CTA title",
+      "type": "text",
+      "value": "Any questions you want to ask?"
+    },
+    {
+      "sort_order": 53,
+      "block_key": "faq.sidebar_cta_body",
+      "section": "faq",
+      "label": "Sidebar CTA body",
+      "type": "text",
+      "value": "Find answers to common questions about our pest control services, treatments, safety, and scheduling."
+    },
+    {
+      "sort_order": 54,
+      "block_key": "faq.sidebar_cta_button",
+      "section": "faq",
+      "label": "Sidebar CTA button",
+      "type": "link",
+      "value": "Contact Us",
+      "link_url": "/contact-us"
+    }
+  ]
+}

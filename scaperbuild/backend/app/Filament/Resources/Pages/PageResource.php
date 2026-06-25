@@ -22,13 +22,22 @@ class PageResource extends Resource
 {
     protected static ?string $model = Page::class;
 
-    protected static ?string $navigationLabel = 'Pages';
+    protected static ?string $navigationLabel = 'All pages';
 
     protected static ?string $modelLabel = 'Page';
 
     protected static string|UnitEnum|null $navigationGroup = 'Content';
 
+    protected static ?int $navigationSort = 99;
+
+    protected static bool $shouldRegisterNavigation = true;
+
     protected static string|BackedEnum|null $navigationIcon = Heroicon::OutlinedDocumentText;
+
+    public static function canCreate(): bool
+    {
+        return false;
+    }
 
     public static function form(Schema $schema): Schema
     {

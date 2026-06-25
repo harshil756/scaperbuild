@@ -1,0 +1,552 @@
+{
+  "slug": "our-services-moth-control",
+  "title": "Moth Control",
+  "seo_title": "Carpet Moth Treatment in Melbourne | Starting Price $170",
+  "seo_description": "Finding Pest control professionals for Carpet moth treatment in Melbourne? At 7 States Pest Control, we offer you with top-quality Moth Control services.",
+  "body_class": "wp-singular page-template page-template-elementor_header_footer page wp-custom-logo wp-embed-responsive wp-theme-hello-elementor elementor-default elementor-template-full-width elementor-kit-9 elementor-page elementor-page-1587",
+  "elementor_id": 1587,
+  "is_published": true,
+  "blocks": [
+    {
+      "sort_order": 0,
+      "block_key": "background.hero",
+      "section": "hero",
+      "label": "Hero background",
+      "type": "background",
+      "background_image_path": "cms/our-services-moth-control/moth-control-1_83611ddb.jpg",
+      "metadata": {
+        "elementor_id": "f469a6a",
+        "filename": "moth-control-1_83611ddb.jpg"
+      }
+    },
+    {
+      "sort_order": 1,
+      "block_key": "background.cta",
+      "section": "cta",
+      "label": "CTA background",
+      "type": "background",
+      "background_image_path": "cms/our-services-moth-control/URUU-01-2048x1365-2_7c216e6d.jpg",
+      "metadata": {
+        "elementor_id": "057b4d3",
+        "filename": "URUU-01-2048x1365-2_7c216e6d.jpg"
+      }
+    },
+    {
+      "sort_order": 2,
+      "block_key": "hero.breadcrumb_parent",
+      "section": "hero",
+      "label": "Breadcrumb parent",
+      "type": "text",
+      "value": "Services"
+    },
+    {
+      "sort_order": 3,
+      "block_key": "hero.breadcrumb_current",
+      "section": "hero",
+      "label": "Breadcrumb current",
+      "type": "text",
+      "value": "moth control"
+    },
+    {
+      "sort_order": 4,
+      "block_key": "hero.title",
+      "section": "hero",
+      "label": "Section title",
+      "type": "text",
+      "value": "eliminatee moths"
+    },
+    {
+      "sort_order": 5,
+      "block_key": "hero.heading",
+      "section": "hero",
+      "label": "Main heading",
+      "type": "text",
+      "value": "Eliminate Moths from your Property with our Expert Pest Control Services"
+    },
+    {
+      "sort_order": 6,
+      "block_key": "hero.intro",
+      "section": "hero",
+      "label": "Intro paragraph",
+      "type": "html",
+      "value": "<div class=\"elementor-element elementor-element-de434cf elementor-widget elementor-widget-text-editor\" data-element_type=\"widget\" data-id=\"de434cf\" data-settings=\"{&quot;ekit_we_effect_on&quot;:&quot;none&quot;}\" data-widget_type=\"text-editor.default\"><div class=\"elementor-widget-container\"><div class=\"elementor-element elementor-element-de434cf elementor-widget elementor-widget-text-editor\" data-element_type=\"widget\" data-id=\"de434cf\" data-settings=\"{&quot;ekit_we_effect_on&quot;:&quot;none&quot;}\" data-widget_type=\"text-editor.default\"><div class=\"elementor-widget-container\"><p>Don’t let your pantry and closets get taken over by moths. Our highly trained moth extermination specialists are well-equipped to address moth infestations in your property. Are you witnessing irregular holes in your outfits and are searching for the reason behind the damage?</p><p>Are you searching for carpet treatment because of moth infestations? At&nbsp;<a href=\"/\"><strong>7 States Pest Control</strong></a>, we offer you with top-quality&nbsp;<strong>Moth Control&nbsp;</strong>services. An established infestation of moths may often need professional treatment. A moth infestation is like a wolf dressed in sheep’s clothing. When compared to other pests, moth may appear to be harmless.</p><p>However, if you leave the infestation untreated, it can cause grave monetary damage. Moth infestations in your property are a potential health hazard too. To get the best moth elimination services, contact 7 States Pest Control today.</p></div></div></div></div>"
+    },
+    {
+      "sort_order": 7,
+      "block_key": "quote_form.title",
+      "section": "quote_form",
+      "label": "Form heading",
+      "type": "text",
+      "value": "Eliminate Moths from your Property with our Expert Pest Control Services"
+    },
+    {
+      "sort_order": 8,
+      "block_key": "quote_form.subtitle",
+      "section": "quote_form",
+      "label": "Form subtitle",
+      "type": "text",
+      "value": "Have an enquiry? Leave us your details and we’ll call you back during business hours."
+    },
+    {
+      "sort_order": 9,
+      "block_key": "quote_form.submit_text",
+      "section": "quote_form",
+      "label": "Submit button text",
+      "type": "text",
+      "value": "Submit Quote"
+    },
+    {
+      "sort_order": 10,
+      "block_key": "faq.items",
+      "section": "faq",
+      "label": "FAQ items",
+      "type": "json",
+      "metadata": {
+        "items": [
+          {
+            "question": "1. What makes 7 States Pest Control the best pest control service in Melbourne?",
+            "answer_html": "<p>&nbsp;<b>7 States Pest Control</b>&nbsp;provides top-rated&nbsp;<b>pest control service in Melbourne</b>, using advanced techniques and eco-friendly products to eliminate pests quickly and safely. Our experienced team handles all types of infestations, ensuring long-term protection.</p>"
+          },
+          {
+            "question": "2. Where can I find reliable pest control in Melbourne CBD?",
+            "answer_html": "<p>For fast and effective&nbsp;<b>pest control Melbourne CBD</b>, trust&nbsp;<b>7 States Pest Control</b>. We serve both residential and commercial properties in the central business district with tailored pest management solutions.</p>"
+          },
+          {
+            "question": "3. How do I choose a professional pest exterminator in Melbourne?",
+            "answer_html": "<p>Look for licensed, experienced providers like&nbsp;<b>7 States Pest Control</b>. As a leading&nbsp;<b>pest exterminator Melbourne</b>, we offer prompt inspections, thorough extermination, and guaranteed results at competitive rates.</p>"
+          },
+          {
+            "question": "4. Is there a trusted pest removal company in Melbourne?",
+            "answer_html": "<p>&nbsp;Yes,&nbsp;<b>7 States Pest Control</b>&nbsp;is your go-to expert for&nbsp;<b>pest removal Melbourne</b>. We identify the root cause of infestations and apply targeted treatments to remove pests from your home or business permanently.</p>"
+          },
+          {
+            "question": "5. Why should I invest in pest control in Melbourne for my home or office?",
+            "answer_html": "<p>Regular&nbsp;<b>pest control in Melbourne</b>&nbsp;helps protect your property from damage and health risks.&nbsp;<b>7 States Pest Control</b>&nbsp;offers comprehensive services that keep your environment pest-free and comfortable year-round.</p>"
+          }
+        ]
+      }
+    },
+    {
+      "sort_order": 11,
+      "block_key": "faq.title",
+      "section": "faq",
+      "label": "FAQ title",
+      "type": "text",
+      "value": "Frequently Asked Questions"
+    },
+    {
+      "sort_order": 12,
+      "block_key": "faq.sidebar_image",
+      "section": "faq",
+      "label": "FAQ sidebar image",
+      "type": "image",
+      "image_path": "cms/our-services-moth-control/Why-Pest-Control.jpg_ef5bccf6.webp",
+      "metadata": {
+        "elementor_id": "0bb7e99",
+        "image_src": "/assets/images/Why-Pest-Control.jpg_ef5bccf6.webp"
+      }
+    },
+    {
+      "sort_order": 13,
+      "block_key": "faq.sidebar_cta_title",
+      "section": "faq",
+      "label": "Sidebar CTA title",
+      "type": "text",
+      "value": "Any questions you want to ask?"
+    },
+    {
+      "sort_order": 14,
+      "block_key": "faq.sidebar_cta_body",
+      "section": "faq",
+      "label": "Sidebar CTA body",
+      "type": "text",
+      "value": "Find answers to common questions about our pest control services, treatments, safety, and scheduling."
+    },
+    {
+      "sort_order": 15,
+      "block_key": "reviews.eyebrow",
+      "section": "reviews",
+      "label": "Reviews eyebrow",
+      "type": "text",
+      "value": "7 States Pest Control for Reliable Pest Management Solutions"
+    },
+    {
+      "sort_order": 16,
+      "block_key": "reviews.title",
+      "section": "reviews",
+      "label": "Reviews title",
+      "type": "text",
+      "value": "EXCELLENT"
+    },
+    {
+      "sort_order": 17,
+      "block_key": "cta.eyebrow",
+      "section": "cta",
+      "label": "Eyebrow",
+      "type": "text",
+      "value": "Ideas to reality"
+    },
+    {
+      "sort_order": 18,
+      "block_key": "cta.title",
+      "section": "cta",
+      "label": "Section title",
+      "type": "text",
+      "value": "Talk to Us Today to Learn More"
+    },
+    {
+      "sort_order": 19,
+      "block_key": "cta.body",
+      "section": "cta",
+      "label": "Body HTML",
+      "type": "html",
+      "value": "Do you have any specific questions about us, our services, or anything related to pest infestation issues? Call us today on&nbsp;<a href=\"tel:+61434660060\"> +61 434 660 060</a>&nbsp;or use our contact form to connect with our&nbsp;<b>7 States Pest Control</b>. You can get answers to your questions, get upfront quotes for the&nbsp;<b>7 States Pest Control</b>&nbsp;issues, and receive high-quality tailored services."
+    },
+    {
+      "sort_order": 20,
+      "block_key": "cta.button",
+      "section": "cta",
+      "label": "CTA button",
+      "type": "link",
+      "value": "Contact Us",
+      "link_url": "/contact-us"
+    },
+    {
+      "sort_order": 21,
+      "block_key": "content.text_de434cf",
+      "section": "content",
+      "label": "Content block 1",
+      "type": "html",
+      "value": "<div class=\"elementor-element elementor-element-de434cf elementor-widget elementor-widget-text-editor\" data-element_type=\"widget\" data-id=\"de434cf\" data-settings=\"{&quot;ekit_we_effect_on&quot;:&quot;none&quot;}\" data-widget_type=\"text-editor.default\"><div class=\"elementor-widget-container\"><p>Don’t let your pantry and closets get taken over by moths. Our highly trained moth extermination specialists are well-equipped to address moth infestations in your property. Are you witnessing irregular holes in your outfits and are searching for the reason behind the damage?</p><p>Are you searching for carpet treatment because of moth infestations? At&nbsp;<a href=\"/\"><strong>7 States Pest Control</strong></a>, we offer you with top-quality&nbsp;<strong>Moth Control&nbsp;</strong>services. An established infestation of moths may often need professional treatment. A moth infestation is like a wolf dressed in sheep’s clothing. When compared to other pests, moth may appear to be harmless.</p><p>However, if you leave the infestation untreated, it can cause grave monetary damage. Moth infestations in your property are a potential health hazard too. To get the best moth elimination services, contact 7 States Pest Control today.</p></div></div>"
+    },
+    {
+      "sort_order": 22,
+      "block_key": "content.text_de434cf_2",
+      "section": "content",
+      "label": "Content block 2",
+      "type": "html",
+      "value": "<div class=\"elementor-element elementor-element-de434cf elementor-widget elementor-widget-text-editor\" data-element_type=\"widget\" data-id=\"de434cf\" data-settings=\"{&quot;ekit_we_effect_on&quot;:&quot;none&quot;}\" data-widget_type=\"text-editor.default\"><div class=\"elementor-widget-container\"><p>Don’t let your pantry and closets get taken over by moths. Our highly trained moth extermination specialists are well-equipped to address moth infestations in your property. Are you witnessing irregular holes in your outfits and are searching for the reason behind the damage?</p><p>Are you searching for carpet treatment because of moth infestations? At&nbsp;<a href=\"/\"><strong>7 States Pest Control</strong></a>, we offer you with top-quality&nbsp;<strong>Moth Control&nbsp;</strong>services. An established infestation of moths may often need professional treatment. A moth infestation is like a wolf dressed in sheep’s clothing. When compared to other pests, moth may appear to be harmless.</p><p>However, if you leave the infestation untreated, it can cause grave monetary damage. Moth infestations in your property are a potential health hazard too. To get the best moth elimination services, contact 7 States Pest Control today.</p></div></div>"
+    },
+    {
+      "sort_order": 23,
+      "block_key": "content.heading_38b7fac",
+      "section": "content",
+      "label": "Heading: Get A Free Quote Now!",
+      "type": "text",
+      "value": "Get A Free Quote Now!"
+    },
+    {
+      "sort_order": 24,
+      "block_key": "content.heading_185ca97",
+      "section": "content",
+      "label": "Heading: Have an enquiry? Leave us your details and we’ll call you ba",
+      "type": "text",
+      "value": "Have an enquiry? Leave us your details and we’ll call you back during business hours."
+    },
+    {
+      "sort_order": 25,
+      "block_key": "content.heading_8916f32",
+      "section": "content",
+      "label": "Heading: eliminatee moths",
+      "type": "text",
+      "value": "eliminatee moths"
+    },
+    {
+      "sort_order": 26,
+      "block_key": "content.heading_dd5b3de",
+      "section": "content",
+      "label": "Heading: Eliminate Moths from your Property with our Expert Pest Cont",
+      "type": "text",
+      "value": "Eliminate Moths from your Property with our Expert Pest Control Services"
+    },
+    {
+      "sort_order": 27,
+      "block_key": "content.text_76690a4",
+      "section": "content",
+      "label": "Content block 3",
+      "type": "html",
+      "value": "<div class=\"elementor-element elementor-element-de434cf elementor-widget elementor-widget-text-editor\" data-element_type=\"widget\" data-id=\"de434cf\" data-settings=\"{&quot;ekit_we_effect_on&quot;:&quot;none&quot;}\" data-widget_type=\"text-editor.default\"><div class=\"elementor-widget-container\"><p>Don’t let your pantry and closets get taken over by moths. Our highly trained moth extermination specialists are well-equipped to address moth infestations in your property. Are you witnessing irregular holes in your outfits and are searching for the reason behind the damage?</p><p>Are you searching for carpet treatment because of moth infestations? At&nbsp;<a href=\"/\"><strong>7 States Pest Control</strong></a>, we offer you with top-quality&nbsp;<strong>Moth Control&nbsp;</strong>services. An established infestation of moths may often need professional treatment. A moth infestation is like a wolf dressed in sheep’s clothing. When compared to other pests, moth may appear to be harmless.</p><p>However, if you leave the infestation untreated, it can cause grave monetary damage. Moth infestations in your property are a potential health hazard too. To get the best moth elimination services, contact 7 States Pest Control today.</p></div></div>"
+    },
+    {
+      "sort_order": 28,
+      "block_key": "content.text_de434cf_3",
+      "section": "content",
+      "label": "Content block 4",
+      "type": "html",
+      "value": "<div class=\"elementor-element elementor-element-de434cf elementor-widget elementor-widget-text-editor\" data-element_type=\"widget\" data-id=\"de434cf\" data-settings=\"{&quot;ekit_we_effect_on&quot;:&quot;none&quot;}\" data-widget_type=\"text-editor.default\"><div class=\"elementor-widget-container\"><p>Don’t let your pantry and closets get taken over by moths. Our highly trained moth extermination specialists are well-equipped to address moth infestations in your property. Are you witnessing irregular holes in your outfits and are searching for the reason behind the damage?</p><p>Are you searching for carpet treatment because of moth infestations? At&nbsp;<a href=\"/\"><strong>7 States Pest Control</strong></a>, we offer you with top-quality&nbsp;<strong>Moth Control&nbsp;</strong>services. An established infestation of moths may often need professional treatment. A moth infestation is like a wolf dressed in sheep’s clothing. When compared to other pests, moth may appear to be harmless.</p><p>However, if you leave the infestation untreated, it can cause grave monetary damage. Moth infestations in your property are a potential health hazard too. To get the best moth elimination services, contact 7 States Pest Control today.</p></div></div>"
+    },
+    {
+      "sort_order": 29,
+      "block_key": "content.heading_3c55949",
+      "section": "content",
+      "label": "Heading: how to approach",
+      "type": "text",
+      "value": "how to approach"
+    },
+    {
+      "sort_order": 30,
+      "block_key": "content.heading_4ebd325",
+      "section": "content",
+      "label": "Heading: Our Approach to Moth Extermination",
+      "type": "text",
+      "value": "Our Approach to Moth Extermination"
+    },
+    {
+      "sort_order": 31,
+      "block_key": "content.text_24a7d2a",
+      "section": "content",
+      "label": "Content block 5",
+      "type": "html",
+      "value": "<p>Being a professional pest control agency, we follow a structured approach to deal with moths in your property.</p>"
+    },
+    {
+      "sort_order": 32,
+      "block_key": "content.list_c10a8b4",
+      "section": "content",
+      "label": "Icon list (c10a8b4)",
+      "type": "json",
+      "metadata": {
+        "items": [
+          "Investigate: Our trained pest control experts will inspect your home minutely to analyze the damage caused by moths. Upon inspection, we can also determine the entryway of moths.",
+          "Treatment: We will treat the affected areas by relying on the safest methods. Unlike other agencies, we don’t use harsh chemicals.",
+          "Fortify: Our experts will do everything they can to keep moths out. We even educate property owners about the signs of moth infestations."
+        ]
+      }
+    },
+    {
+      "sort_order": 33,
+      "block_key": "content.heading_3b861a5",
+      "section": "content",
+      "label": "Heading: Cockroach Elimination",
+      "type": "text",
+      "value": "Cockroach Elimination"
+    },
+    {
+      "sort_order": 34,
+      "block_key": "content.heading_1b1d385",
+      "section": "content",
+      "label": "Heading: Reasons to Opt for Fly Elimination Services from Us",
+      "type": "text",
+      "value": "Reasons to Opt for Fly Elimination Services from Us"
+    },
+    {
+      "sort_order": 35,
+      "block_key": "content.text_9c7ed97",
+      "section": "content",
+      "label": "Content block 6",
+      "type": "html",
+      "value": "<div class=\"elementor-element elementor-element-de434cf elementor-widget elementor-widget-text-editor\" data-element_type=\"widget\" data-id=\"de434cf\" data-settings=\"{&quot;ekit_we_effect_on&quot;:&quot;none&quot;}\" data-widget_type=\"text-editor.default\"><div class=\"elementor-widget-container\"><p>If you’re having problems with flies, don’t hesitate to contact 7 States Pest Control. We’re here to help you get rid of flies and other pests so you can enjoy your home or business pest-free.</p></div></div>"
+    },
+    {
+      "sort_order": 36,
+      "block_key": "content.text_de434cf_4",
+      "section": "content",
+      "label": "Content block 7",
+      "type": "html",
+      "value": "<div class=\"elementor-element elementor-element-de434cf elementor-widget elementor-widget-text-editor\" data-element_type=\"widget\" data-id=\"de434cf\" data-settings=\"{&quot;ekit_we_effect_on&quot;:&quot;none&quot;}\" data-widget_type=\"text-editor.default\"><div class=\"elementor-widget-container\"><p>Don’t let your pantry and closets get taken over by moths. Our highly trained moth extermination specialists are well-equipped to address moth infestations in your property. Are you witnessing irregular holes in your outfits and are searching for the reason behind the damage?</p><p>Are you searching for carpet treatment because of moth infestations? At&nbsp;<a href=\"/\"><strong>7 States Pest Control</strong></a>, we offer you with top-quality&nbsp;<strong>Moth Control&nbsp;</strong>services. An established infestation of moths may often need professional treatment. A moth infestation is like a wolf dressed in sheep’s clothing. When compared to other pests, moth may appear to be harmless.</p><p>However, if you leave the infestation untreated, it can cause grave monetary damage. Moth infestations in your property are a potential health hazard too. To get the best moth elimination services, contact 7 States Pest Control today.</p></div></div>"
+    },
+    {
+      "sort_order": 37,
+      "block_key": "content.list_789d477",
+      "section": "content",
+      "label": "Icon list (789d477)",
+      "type": "json",
+      "metadata": {
+        "items": [
+          "We are experienced and professional. Our technicians have years of experience in eliminating flies and other pests from homes and businesses. We know what works and what doesn't, and we'll use our expertise to develop a customized treatment plan for your property.",
+          "We use safe and effective methods. We use a variety of methods to control flies, including baits, traps, and insecticides. All of our methods are safe for people and pets, and we'll take steps to protect your property during treatment.",
+          "We offer free estimates and same-day service. We understand that fly infestations can be a pressing problem, so we offer free estimates and same-day service. We want to get rid of your flies as quickly as possible so you can enjoy your home or business pest-free.",
+          "We offer free estimates and same-day service. We understand that fly infestations can be a pressing problem, so we offer free estimates and same-day service. We want to get rid of your flies as quickly as possible so you can enjoy your home or business pest-free."
+        ]
+      }
+    },
+    {
+      "sort_order": 38,
+      "block_key": "content.heading_ef9055f",
+      "section": "content",
+      "label": "Heading: elimination service",
+      "type": "text",
+      "value": "elimination service"
+    },
+    {
+      "sort_order": 39,
+      "block_key": "content.heading_fb916a7",
+      "section": "content",
+      "label": "Heading: Components of our Moth Elimination Services",
+      "type": "text",
+      "value": "Components of our Moth Elimination Services"
+    },
+    {
+      "sort_order": 40,
+      "block_key": "content.text_8ae0075",
+      "section": "content",
+      "label": "Content block 8",
+      "type": "html",
+      "value": "<p>Here are the components of our moth elimination services.</p>"
+    },
+    {
+      "sort_order": 41,
+      "block_key": "content.list_013cf33",
+      "section": "content",
+      "label": "Icon list (013cf33)",
+      "type": "json",
+      "metadata": {
+        "items": [
+          "Technician from 7 states pest control will contact you to schedule a convenient time for inspection.",
+          "On arrival, we’ll explain the treatment process before commencing with moth elimination.",
+          "At 7 states pest control, we use highly sophisticated instruments and eco-friendly pesticides to treat moths.",
+          "We will highlight the areas infested by moths.",
+          "After treatment, we will arrange follow-up visits."
+        ]
+      }
+    },
+    {
+      "sort_order": 42,
+      "block_key": "content.text_75ad2e3",
+      "section": "content",
+      "label": "Content block 9",
+      "type": "html",
+      "value": "<p>You can now terminate pesky moths from your property. Contact 7 States Pest Control to eliminate moths.</p>"
+    },
+    {
+      "sort_order": 43,
+      "block_key": "content.heading_73358e8",
+      "section": "content",
+      "label": "Heading: how to do",
+      "type": "text",
+      "value": "how to do"
+    },
+    {
+      "sort_order": 44,
+      "block_key": "content.heading_bd8e94d",
+      "section": "content",
+      "label": "Heading: Why is it Necessary to eliminate Moths from your Property?",
+      "type": "text",
+      "value": "Why is it Necessary to eliminate Moths from your Property?"
+    },
+    {
+      "sort_order": 45,
+      "block_key": "content.text_4a957b0",
+      "section": "content",
+      "label": "Content block 10",
+      "type": "html",
+      "value": "<p>To be precise, moths don’t bite or cause any direct harm to human settlements. But like other pests, they can inflict widespread damage on your personal items. Moreover, infestation of moths can adversely affect your family’s health. Here are some of the common dangers associated with specific types of moths.</p>"
+    },
+    {
+      "sort_order": 46,
+      "block_key": "content.list_824e7d2",
+      "section": "content",
+      "label": "Icon list (824e7d2)",
+      "type": "json",
+      "metadata": {
+        "items": [
+          "There are particular species of moths that can attack carpets and cloths. People wearing and using such things may experience severe allergies.",
+          "The hairs of the moths when they are caterpillars can trigger asthma.",
+          "Brown colored house moths typically feast on cereals and food products and can harm your health.",
+          "Moth droppings can contaminate your food.",
+          "Moths can make your life more stressful."
+        ]
+      }
+    },
+    {
+      "sort_order": 47,
+      "block_key": "content.text_dd5eb08",
+      "section": "content",
+      "label": "Content block 11",
+      "type": "html",
+      "value": "<p>So as you can see, moths are a menace to have in your property. If you are noticing the signs of moth infestations, contact us at the earliest. At 7 States Pest Control, we follow advanced moth control procedures and offer&nbsp;<a href=\"/\"><strong>affordable pest control in Melbourne</strong></a>.</p>"
+    },
+    {
+      "sort_order": 48,
+      "block_key": "content.heading_32945a7",
+      "section": "content",
+      "label": "Heading: Frequently Asked Questions",
+      "type": "text",
+      "value": "Frequently Asked Questions"
+    },
+    {
+      "sort_order": 49,
+      "block_key": "content.image_d26b015",
+      "section": "content",
+      "label": "Image (d26b015)",
+      "type": "image",
+      "image_path": "cms/our-services-moth-control/WhatsApp-Image-2024-08-28-at-15.35.06_bc7d2870-1_ecbbd918.jpg",
+      "metadata": {
+        "elementor_id": "d26b015",
+        "image_src": "/assets/images/WhatsApp-Image-2024-08-28-at-15.35.06_bc7d2870-1_ecbbd918.jpg"
+      }
+    },
+    {
+      "sort_order": 50,
+      "block_key": "content.heading_4483e9a",
+      "section": "content",
+      "label": "Heading: Clients Reviews",
+      "type": "text",
+      "value": "Clients Reviews"
+    },
+    {
+      "sort_order": 51,
+      "block_key": "content.heading_6d8069f",
+      "section": "content",
+      "label": "Heading: 7 States Pest Control for Reliable Pest Management Solutions",
+      "type": "text",
+      "value": "7 States Pest Control for Reliable Pest Management Solutions"
+    },
+    {
+      "sort_order": 52,
+      "block_key": "content.heading_1e4ad7e",
+      "section": "content",
+      "label": "Heading: Reviews of Our Pest Control Services",
+      "type": "text",
+      "value": "Reviews of Our Pest Control Services"
+    },
+    {
+      "sort_order": 53,
+      "block_key": "content.heading_84468a3",
+      "section": "content",
+      "label": "Heading: EXCELLENT",
+      "type": "text",
+      "value": "EXCELLENT"
+    },
+    {
+      "sort_order": 54,
+      "block_key": "content.text_00c768a",
+      "section": "content",
+      "label": "Content block 12",
+      "type": "html",
+      "value": "<p>Based on&nbsp;45 reviews</p>"
+    },
+    {
+      "sort_order": 55,
+      "block_key": "content.heading_1d9f0be",
+      "section": "content",
+      "label": "Heading: Get A Free Quote Now!",
+      "type": "text",
+      "value": "Get A Free Quote Now!"
+    },
+    {
+      "sort_order": 56,
+      "block_key": "content.heading_4c825b4",
+      "section": "content",
+      "label": "Heading: Ideas to reality",
+      "type": "text",
+      "value": "Ideas to reality"
+    },
+    {
+      "sort_order": 57,
+      "block_key": "content.heading_7c67181",
+      "section": "content",
+      "label": "Heading: Talk to Us Today to Learn More",
+      "type": "text",
+      "value": "Talk to Us Today to Learn More"
+    },
+    {
+      "sort_order": 58,
+      "block_key": "content.text_dbd1d11",
+      "section": "content",
+      "label": "Content block 13",
+      "type": "html",
+      "value": "Do you have any specific questions about us, our services, or anything related to pest infestation issues? Call us today on&nbsp;<a href=\"tel:+61434660060\"> +61 434 660 060</a>&nbsp;or use our contact form to connect with our&nbsp;<b>7 States Pest Control</b>. You can get answers to your questions, get upfront quotes for the&nbsp;<b>7 States Pest Control</b>&nbsp;issues, and receive high-quality tailored services."
+    }
+  ]
+}

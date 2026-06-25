@@ -3,15 +3,28 @@
 namespace App\Services;
 
 use App\Models\Page;
+use App\Services\AboutPageBlockMapper;
+use App\Services\HomePageBlockMapper;
+use App\Services\AntPestControlPageBlockMapper;
+use App\Services\MelbournePageBlockMapper;
+use App\Services\ServicePageBlockMapper;
+use App\Services\SolarPanelBirdProofingPageBlockMapper;
 use Illuminate\Support\Facades\Storage;
 
 class PageApiPresenter
 {
     public static function present(Page $page): array
     {
-        $content = $page->slug === 'home'
-            ? HomePageBlockMapper::toForm($page)
-            : self::blocksToGenericContent($page);
+        $content = match ($page->slug) {
+            'home' => HomePageBlockMapper::toForm($page),
+            'about-us' => AboutPageBlockMapper::toForm($page),
+            'solar-panel-bird-proofing' => SolarPanelBirdProofingPageBlockMapper::toForm($page),
+            'our-services-ant-pest-control' => AntPestControlPageBlockMapper::toForm($page),
+            'melbourne' => MelbournePageBlockMapper::toForm($page),
+            default => ServicePageBlockMapper::isServicePage($page->slug)
+                ? ServicePageBlockMapper::toForm($page)
+                : self::blocksToGenericContent($page),
+        };
 
         return [
             'slug' => $page->slug,

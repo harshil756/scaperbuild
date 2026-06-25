@@ -1,0 +1,660 @@
+{
+  "slug": "our-services-fox-pest-control-in-melbourne",
+  "title": "Fox Pest Control",
+  "seo_title": "Fox Removal & Trapping Services in Melbourne | Starting $299",
+  "seo_description": "Need professional fox pest control in Melbourne? 7 States Pest Control offers licensed, humane fox removal and trapping services starting at $299. Get a free quote today.",
+  "body_class": "wp-singular page-template page-template-elementor_header_footer page wp-custom-logo wp-embed-responsive wp-theme-hello-elementor elementor-default elementor-template-full-width elementor-kit-9 elementor-page elementor-page-9877",
+  "elementor_id": 9877,
+  "is_published": true,
+  "blocks": [
+    {
+      "sort_order": 0,
+      "block_key": "background.hero",
+      "section": "hero",
+      "label": "Hero background",
+      "type": "background",
+      "background_image_path": "cms/our-services-fox-pest-control-in-melbourne/fox_529ee701.jpg",
+      "metadata": {
+        "elementor_id": "a342089",
+        "filename": "fox_529ee701.jpg"
+      }
+    },
+    {
+      "sort_order": 1,
+      "block_key": "background.why_inside",
+      "section": "why_inside",
+      "label": "Background (f5e4d41)",
+      "type": "background",
+      "background_image_path": "cms/our-services-fox-pest-control-in-melbourne/BG3_a19772e2.png",
+      "metadata": {
+        "elementor_id": "f5e4d41",
+        "filename": "BG3_a19772e2.png"
+      }
+    },
+    {
+      "sort_order": 2,
+      "block_key": "background.problems",
+      "section": "problems",
+      "label": "Background (235b366)",
+      "type": "background",
+      "background_image_path": "cms/our-services-fox-pest-control-in-melbourne/istockphoto-1414982124-612x612ui_0ade9a1c.jpg",
+      "metadata": {
+        "elementor_id": "235b366",
+        "filename": "istockphoto-1414982124-612x612ui_0ade9a1c.jpg"
+      }
+    },
+    {
+      "sort_order": 3,
+      "block_key": "background.cta",
+      "section": "cta",
+      "label": "CTA background",
+      "type": "background",
+      "background_image_path": "cms/our-services-fox-pest-control-in-melbourne/URUU-01-2048x1365-2_7c216e6d.jpg",
+      "metadata": {
+        "elementor_id": "f732271",
+        "filename": "URUU-01-2048x1365-2_7c216e6d.jpg"
+      }
+    },
+    {
+      "sort_order": 4,
+      "block_key": "hero.breadcrumb_parent",
+      "section": "hero",
+      "label": "Breadcrumb parent",
+      "type": "text",
+      "value": "Services"
+    },
+    {
+      "sort_order": 5,
+      "block_key": "hero.title",
+      "section": "hero",
+      "label": "Section title",
+      "type": "text",
+      "value": "Fox Pest Control"
+    },
+    {
+      "sort_order": 6,
+      "block_key": "hero.heading",
+      "section": "hero",
+      "label": "Main heading",
+      "type": "text",
+      "value": "Get Professional Fox Pest Control in Melbourne"
+    },
+    {
+      "sort_order": 7,
+      "block_key": "hero.intro",
+      "section": "hero",
+      "label": "Intro paragraph",
+      "type": "html",
+      "value": "<p data-end={650} data-start={334}>Foxes may look harmless from a distance, but they can cause serious problems for homes, farms, and commercial properties. Foxes are intelligent, adaptable animals that thrive in urban and semi-urban environments. Once they enter your property, they can attack pets, livestock, damage gardens, and disturb daily life.</p><p data-end={842} data-start={652}>If you are dealing with fox activity or an increasing fox population on your property and are looking for <strong data-end={813} data-start={758}>professional fox pest control services in Melbourne</strong>, you are in the right place.</p><p data-end={1139} data-start={844}>At <a href=\"/\"><strong data-end={872} data-start={847}>7 States Pest Control</strong></a>, we provide <strong data-end={909} data-start={885}>fox removal services</strong>, <strong data-end={940} data-start={911}>fox trapping in Melbourne</strong>, and <strong data-end={968} data-start={946}>humane fox control</strong> solutions tailored to your specific situation. Our licensed and experienced team ensures safe, legal, and effective fox control for residential and commercial properties.</p>"
+    },
+    {
+      "sort_order": 8,
+      "block_key": "quote_form.title",
+      "section": "quote_form",
+      "label": "Form heading",
+      "type": "text",
+      "value": "Get A Free Quote Now!"
+    },
+    {
+      "sort_order": 9,
+      "block_key": "quote_form.subtitle",
+      "section": "quote_form",
+      "label": "Form subtitle",
+      "type": "text",
+      "value": "Have an enquiry? Leave us your details and we’ll call you back during business hours."
+    },
+    {
+      "sort_order": 10,
+      "block_key": "quote_form.submit_text",
+      "section": "quote_form",
+      "label": "Submit button text",
+      "type": "text",
+      "value": "Submit Quote"
+    },
+    {
+      "sort_order": 11,
+      "block_key": "species.eyebrow",
+      "section": "species",
+      "label": "Eyebrow",
+      "type": "text",
+      "value": "FOx special"
+    },
+    {
+      "sort_order": 12,
+      "block_key": "species.title",
+      "section": "species",
+      "label": "Section title",
+      "type": "text",
+      "value": "Types of Fox Issues We Control"
+    },
+    {
+      "sort_order": 13,
+      "block_key": "species.intro",
+      "section": "species",
+      "label": "Intro HTML",
+      "type": "html",
+      "value": "<p>Fox infestations can create serious risks to safety, property, and local wildlife. Our <strong data-end={1436} data-start={1399}>fox control services in Melbourne</strong> are designed to handle all types of fox-related problems, including:</p>"
+    },
+    {
+      "sort_order": 14,
+      "block_key": "species.1_urban_fox_activity",
+      "section": "species",
+      "label": "Species: 1. Urban Fox Activity",
+      "type": "json",
+      "image_path": "cms/our-services-fox-pest-control-in-melbourne/istockphoto-1406487768-612x612-1_598a70c0.jpg",
+      "metadata": {
+        "slug": "1_urban_fox_activity",
+        "image": "/assets/images/istockphoto-1406487768-612x612-1_598a70c0.jpg",
+        "title": "1. Urban Fox Activity",
+        "description": "Urban foxes frequently enter backyards, raid bins, and attack pets. Their presence in residential areas requires professional fox control services to prevent escalation.",
+        "image_src": "/assets/images/istockphoto-1406487768-612x612-1_598a70c0.jpg"
+      }
+    },
+    {
+      "sort_order": 15,
+      "block_key": "species.2_fox_attacks_on_pets_and_livestock",
+      "section": "species",
+      "label": "Species: 2. Fox Attacks on Pets &amp; Livestock",
+      "type": "json",
+      "image_path": "cms/our-services-fox-pest-control-in-melbourne/fox-vince-millet-flickr_0b2f7bca.jpg",
+      "metadata": {
+        "slug": "2_fox_attacks_on_pets_and_livestock",
+        "image": "/assets/images/fox-vince-millet-flickr_0b2f7bca.jpg",
+        "title": "2. Fox Attacks on Pets &amp; Livestock",
+        "description": "Foxes pose a major threat to small pets, poultry, and livestock. Our fox removal experts in Melbourne focus on protecting animals and preventing future attacks.",
+        "image_src": "/assets/images/fox-vince-millet-flickr_0b2f7bca.jpg"
+      }
+    },
+    {
+      "sort_order": 16,
+      "block_key": "species.3_fox_dens_and_burrowing",
+      "section": "species",
+      "label": "Species: 3. Fox Dens &amp; Burrowing",
+      "type": "json",
+      "image_path": "cms/our-services-fox-pest-control-in-melbourne/istockphoto-501596959-612x612-1_74b59c81.jpg",
+      "metadata": {
+        "slug": "3_fox_dens_and_burrowing",
+        "image": "/assets/images/istockphoto-501596959-612x612-1_74b59c81.jpg",
+        "title": "3. Fox Dens &amp; Burrowing",
+        "description": "Foxes often dig dens under houses, sheds, and structures, causing structural risks. Fox trapping services in Melbourne are essential to remove them safely.",
+        "image_src": "/assets/images/istockphoto-501596959-612x612-1_74b59c81.jpg"
+      }
+    },
+    {
+      "sort_order": 17,
+      "block_key": "species.4_high_fox_population_growth",
+      "section": "species",
+      "label": "Species: 4.High Fox Population Growth",
+      "type": "json",
+      "image_path": "cms/our-services-fox-pest-control-in-melbourne/vixen-fox-cubs_600x600_636b4939.jpg",
+      "metadata": {
+        "slug": "4_high_fox_population_growth",
+        "image": "/assets/images/vixen-fox-cubs_600x600_636b4939.jpg",
+        "title": "4.High Fox Population Growth",
+        "description": "Rapid fox population growth can disrupt local ecosystems. Our fox population control strategies help restore ecological balance.",
+        "image_src": "/assets/images/vixen-fox-cubs_600x600_636b4939.jpg"
+      }
+    },
+    {
+      "sort_order": 18,
+      "block_key": "why_inside.eyebrow",
+      "section": "why_inside",
+      "label": "Eyebrow",
+      "type": "text",
+      "value": "why fox coming"
+    },
+    {
+      "sort_order": 19,
+      "block_key": "why_inside.title",
+      "section": "why_inside",
+      "label": "Section title",
+      "type": "text",
+      "value": "Why Are Foxes Coming Onto Your Property?"
+    },
+    {
+      "sort_order": 20,
+      "block_key": "why_inside.list_html",
+      "section": "why_inside",
+      "label": "List HTML",
+      "type": "html",
+      "value": "<ol><li data-end={2413} data-start={2326}><p data-end={2413} data-start={2328}><strong data-end={2349} data-start={2328}>Food Availability</strong> – Pet food, rubbish, fallen fruit, or livestock attract foxes</p></li><li data-end={2495} data-start={2414}><p data-end={2495} data-start={2416}><strong data-end={2434} data-start={2416}>Shelter &amp; Dens</strong> – Foxes seek safe places under buildings, bushes, or sheds</p></li><li data-end={2579} data-start={2496}><p data-end={2579} data-start={2498}><strong data-end={2517} data-start={2498}>Urban Expansion</strong> – Increased development pushes foxes into residential areas</p></li><li data-end={2666} data-start={2580}><p data-end={2666} data-start={2582}><strong data-end={2601} data-start={2582}>Breeding Season</strong> – Fox activity increases significantly during breeding periods</p></li><li data-end={2747} data-start={2667}><p data-end={2747} data-start={2669}><strong data-end={2691} data-start={2669}>Easy Access Points</strong> – Gaps, open fencing, and unsecured yards allow entry</p></li></ol>"
+    },
+    {
+      "sort_order": 21,
+      "block_key": "why_inside.footer",
+      "section": "why_inside",
+      "label": "Footer text",
+      "type": "html",
+      "value": "<p>If fox activity continues, <strong data-end={2822} data-start={2776}>professional fox pest control in Melbourne</strong> is the safest solution.</p>"
+    },
+    {
+      "sort_order": 22,
+      "block_key": "problems.eyebrow",
+      "section": "problems",
+      "label": "Eyebrow",
+      "type": "text",
+      "value": "problems"
+    },
+    {
+      "sort_order": 23,
+      "block_key": "problems.title",
+      "section": "problems",
+      "label": "Section title",
+      "type": "text",
+      "value": "What Problems Can Foxes Cause?"
+    },
+    {
+      "sort_order": 24,
+      "block_key": "problems.intro",
+      "section": "problems",
+      "label": "Intro HTML",
+      "type": "html",
+      "value": "<p>Foxes may appear harmless, but their presence can cause serious problems for residential and commercial properties. Below are some of the common issues caused by fox infestations:</p>"
+    },
+    {
+      "sort_order": 25,
+      "block_key": "problems.threat_to_pets_and_livestock",
+      "section": "problems",
+      "label": "Problem: Threat to Pets &amp; Livestock",
+      "type": "json",
+      "image_path": "cms/our-services-fox-pest-control-in-melbourne/paws-rg6x0he9jevp85to433n79vwjcrm3a6rluz01u69eo_72102c24.png",
+      "metadata": {
+        "slug": "threat_to_pets_and_livestock",
+        "image": "/assets/images/paws-rg6x0he9jevp85to433n79vwjcrm3a6rluz01u69eo_72102c24.png",
+        "title": "Threat to Pets &amp; Livestock",
+        "description": "Foxes are natural predators and can attack small pets, poultry, and livestock. This poses serious risks to households, farms, and rural properties.",
+        "image_src": "/assets/images/paws-rg6x0he9jevp85to433n79vwjcrm3a6rluz01u69eo_72102c24.png"
+      }
+    },
+    {
+      "sort_order": 26,
+      "block_key": "problems.property_and_structural_damage",
+      "section": "problems",
+      "label": "Problem: Property &amp; Structural Damage",
+      "type": "json",
+      "image_path": "cms/our-services-fox-pest-control-in-melbourne/property-rg6x1x3dzaugypqkq7g4ieu97josumw04yupg21lwg_e318c0e5.png",
+      "metadata": {
+        "slug": "property_and_structural_damage",
+        "image": "/assets/images/property-rg6x1x3dzaugypqkq7g4ieu97josumw04yupg21lwg_e318c0e5.png",
+        "title": "Property &amp; Structural Damage",
+        "description": "Foxes dig dens under houses, sheds, and fences. Their burrowing can weaken foundations, damage gardens, and create safety hazards over time.",
+        "image_src": "/assets/images/property-rg6x1x3dzaugypqkq7g4ieu97josumw04yupg21lwg_e318c0e5.png"
+      }
+    },
+    {
+      "sort_order": 27,
+      "block_key": "problems.health_and_disease_risks",
+      "section": "problems",
+      "label": "Problem: Health &amp; Disease Risks",
+      "type": "json",
+      "image_path": "cms/our-services-fox-pest-control-in-melbourne/risks-rg6x3m6wbj63xd9ttfuvihf7tlbnqymk1d99n1j0o0_c94bbe95.png",
+      "metadata": {
+        "slug": "health_and_disease_risks",
+        "image": "/assets/images/risks-rg6x3m6wbj63xd9ttfuvihf7tlbnqymk1d99n1j0o0_c94bbe95.png",
+        "title": "Health &amp; Disease Risks",
+        "description": "Foxes may carry parasites and diseases that can affect pets and humans. Their presence increases health risks, especially in residential areas.",
+        "image_src": "/assets/images/risks-rg6x3m6wbj63xd9ttfuvihf7tlbnqymk1d99n1j0o0_c94bbe95.png"
+      }
+    },
+    {
+      "sort_order": 28,
+      "block_key": "problems.environmental_and_wildlife_impact",
+      "section": "problems",
+      "label": "Problem: Environmental &amp; Wildlife Impact",
+      "type": "json",
+      "image_path": "cms/our-services-fox-pest-control-in-melbourne/landscape-rg6x694lhss2hzfxf2w70bgrtibqce3g2f5b3zm97k_12334cb0.png",
+      "metadata": {
+        "slug": "environmental_and_wildlife_impact",
+        "image": "/assets/images/landscape-rg6x694lhss2hzfxf2w70bgrtibqce3g2f5b3zm97k_12334cb0.png",
+        "title": "Environmental &amp; Wildlife Impact",
+        "description": "Uncontrolled fox populations harm native wildlife and disrupt local ecosystems, leading to biodiversity loss.",
+        "image_src": "/assets/images/landscape-rg6x694lhss2hzfxf2w70bgrtibqce3g2f5b3zm97k_12334cb0.png"
+      }
+    },
+    {
+      "sort_order": 29,
+      "block_key": "problems.rapid_population_growth",
+      "section": "problems",
+      "label": "Problem: Rapid Population Growth",
+      "type": "json",
+      "image_path": "cms/our-services-fox-pest-control-in-melbourne/population-rg6x7j6osoj4avl0y4swwhucxe0ptk6akr43mjpyqo_93cd7d41.png",
+      "metadata": {
+        "slug": "rapid_population_growth",
+        "image": "/assets/images/population-rg6x7j6osoj4avl0y4swwhucxe0ptk6akr43mjpyqo_93cd7d41.png",
+        "title": "Rapid Population Growth",
+        "description": "Foxes reproduce quickly, and once they settle in an area, their population can increase rapidly, making control difficult without professional fox pest control.",
+        "image_src": "/assets/images/population-rg6x7j6osoj4avl0y4swwhucxe0ptk6akr43mjpyqo_93cd7d41.png"
+      }
+    },
+    {
+      "sort_order": 30,
+      "block_key": "problems.business_and_farm_disruptions",
+      "section": "problems",
+      "label": "Problem: Business &amp; Farm Disruptions",
+      "type": "json",
+      "image_path": "cms/our-services-fox-pest-control-in-melbourne/field-rg6xan1hdys8oh2jsz5in7m7m8pe9jico4qvqh4468_aabd1e9e.png",
+      "metadata": {
+        "slug": "business_and_farm_disruptions",
+        "image": "/assets/images/field-rg6xan1hdys8oh2jsz5in7m7m8pe9jico4qvqh4468_aabd1e9e.png",
+        "title": "Business &amp; Farm Disruptions",
+        "description": "For farms and businesses, fox activity can cause livestock losses, property damage, and financial impact, especially in agricultural and semi-urban areas.",
+        "image_src": "/assets/images/field-rg6xan1hdys8oh2jsz5in7m7m8pe9jico4qvqh4468_aabd1e9e.png"
+      }
+    },
+    {
+      "sort_order": 31,
+      "block_key": "prevention.eyebrow",
+      "section": "prevention",
+      "label": "Eyebrow",
+      "type": "text",
+      "value": "protects"
+    },
+    {
+      "sort_order": 32,
+      "block_key": "prevention.title",
+      "section": "prevention",
+      "label": "Section title",
+      "type": "text",
+      "value": "How to Prevent Fox Infestations ?"
+    },
+    {
+      "sort_order": 33,
+      "block_key": "prevention.intro",
+      "section": "prevention",
+      "label": "Intro HTML",
+      "type": "html",
+      "value": "<p>Foxes are intelligent and adaptable animals. Preventing fox infestations requires proactive measures to remove food sources, block access points, and reduce shelter opportunities. Here are some effective ways to keep foxes away from your property:</p>"
+    },
+    {
+      "sort_order": 34,
+      "block_key": "prevention.tips",
+      "section": "prevention",
+      "label": "Prevention tips",
+      "type": "json",
+      "metadata": {
+        "tips": [
+          {
+            "slug": "1_secure_food_sources",
+            "title": "1. Secure Food Sources",
+            "intro": null,
+            "list": [
+              "Do not leave pet food outdoors overnight",
+              "Secure rubbish bins with tight-fitting lids",
+              "Clean up fallen fruits and food waste regularly",
+              "Avoid feeding wildlife near your property"
+            ]
+          },
+          {
+            "slug": "2_seal_entry_points",
+            "title": "2. Seal Entry Points",
+            "intro": null,
+            "list": [
+              "Repair gaps under fences and gates",
+              "Block access under decks, sheds, and houses",
+              "Use wire mesh to seal potential denning areas",
+              "Close off crawl spaces and openings"
+            ]
+          },
+          {
+            "slug": "3_eliminate_shelter_hiding_spots",
+            "title": "3. Eliminate Shelter & Hiding Spots",
+            "intro": null,
+            "list": [
+              "Clear dense bushes and overgrown vegetation",
+              "Remove debris, wood piles, and unused materials",
+              "Trim hedges close to the ground",
+              "Keep yards open and well-maintained"
+            ]
+          },
+          {
+            "slug": "4_protect_pets_livestock",
+            "title": "4. Protect Pets & Livestock",
+            "intro": null,
+            "list": [
+              "Secure poultry coops with strong fencing",
+              "Keep small pets indoors at night",
+              "Use motion-sensor lights around animal enclosures",
+              "Avoid leaving animal carcasses exposed"
+            ]
+          },
+          {
+            "slug": "5_maintain_clean_outdoor_areas",
+            "title": "5. Maintain Clean Outdoor Areas",
+            "intro": null,
+            "list": [
+              "Keep gardens tidy and free of food scraps",
+              "Remove standing water sources",
+              "Store compost securely to avoid attracting foxes",
+              "Maintain regular yard inspections"
+            ]
+          },
+          {
+            "slug": "6_use_deterrents_where_needed",
+            "title": "6. Use Deterrents Where Needed",
+            "intro": null,
+            "list": [
+              "Install motion-activated lights or sprinklers",
+              "Use fox deterrent sprays in high-risk areas",
+              "Fence off vulnerable zones such as chicken runs",
+              "Rotate deterrents to maintain effectiveness"
+            ]
+          },
+          {
+            "slug": "7_monitor_fox_activity",
+            "title": "7.Monitor Fox Activity",
+            "list": [
+              "Watch for signs like tracks, droppings, or digging",
+              "Act quickly if fox activity increases",
+              "Early action helps prevent population growth"
+            ]
+          },
+          {
+            "slug": "8_hire_professional_fox_control_services",
+            "title": "8.Hire Professional Fox Control Services",
+            "intro": "If fox infestations persist,  professional fox pest control in Melbourne  is the safest and most effective solution. Licensed experts can provide  humane fox control ,  fox trapping services , and long-term  fox population control  strategies to prevent re-infestation.",
+            "list": []
+          }
+        ]
+      }
+    },
+    {
+      "sort_order": 35,
+      "block_key": "faq.title",
+      "section": "faq",
+      "label": "FAQ title",
+      "type": "text",
+      "value": "Frequently Asked Questions"
+    },
+    {
+      "sort_order": 36,
+      "block_key": "faq.sidebar_image",
+      "section": "faq",
+      "label": "FAQ sidebar image",
+      "type": "image",
+      "image_path": "cms/our-services-fox-pest-control-in-melbourne/WhatsApp-Image-2024-08-28-at-15.35.06_bc7d2870-1_ecbbd918.jpg",
+      "metadata": {
+        "image_src": "/assets/images/WhatsApp-Image-2024-08-28-at-15.35.06_bc7d2870-1_ecbbd918.jpg"
+      }
+    },
+    {
+      "sort_order": 37,
+      "block_key": "faq.sidebar_cta_title",
+      "section": "faq",
+      "label": "Sidebar CTA title",
+      "type": "text",
+      "value": "Any questions you want to ask?"
+    },
+    {
+      "sort_order": 38,
+      "block_key": "faq.sidebar_cta_body",
+      "section": "faq",
+      "label": "Sidebar CTA body",
+      "type": "text",
+      "value": "Find answers to common questions about our pest control services, treatments, safety, and scheduling."
+    },
+    {
+      "sort_order": 39,
+      "block_key": "faq.sidebar_cta_button",
+      "section": "faq",
+      "label": "Sidebar CTA button",
+      "type": "link",
+      "value": "Contact Us",
+      "link_url": "/contact-us"
+    },
+    {
+      "sort_order": 40,
+      "block_key": "faq.items",
+      "section": "faq",
+      "label": "FAQ items",
+      "type": "json",
+      "metadata": {
+        "items": [
+          {
+            "question": "1. What is the cost of fox trapping services in Melbourne?",
+            "answer_html": "<p><span >Fox trapping services in Melbourne typically cost between $200 to $600 depending on property size and infestation level. </span><b>7 States Pest Control</b><span > offers reliable and cost-effective fox control solutions.</span></p>"
+          },
+          {
+            "question": "2. Is fox trapping legal in Melbourne?",
+            "answer_html": "<p><span >Yes, fox trapping is legal in Melbourne when carried out by licensed professionals following local wildlife regulations. </span><b>7 States Pest Control</b><span > ensures all services comply with Australian laws.</span></p>"
+          },
+          {
+            "question": "3. How do professionals trap and remove foxes?",
+            "answer_html": "<p><span >Professionals use safe and humane trapping methods along with proper relocation or control techniques. </span><b>7 States Pest Control</b><span > uses effective and ethical fox control strategies.</span></p>"
+          },
+          {
+            "question": "4. How quickly can fox removal be done in Melbourne?",
+            "answer_html": "<p><span >Fox trapping and removal time depends on activity level, but </span><b>7 States Pest Control</b><span > offers prompt and efficient service to handle urgent situations.</span></p>"
+          },
+          {
+            "question": "5. How can I prevent foxes from entering my property?",
+            "answer_html": "<p><span >To prevent foxes, secure food sources, close entry points, and maintain clean surroundings. </span><b>7 States Pest Control</b><span > also provides expert advice and prevention solutions.</span></p>"
+          }
+        ]
+      }
+    },
+    {
+      "sort_order": 41,
+      "block_key": "reviews.eyebrow",
+      "section": "reviews",
+      "label": "Reviews eyebrow",
+      "type": "text",
+      "value": "Clients Reviews"
+    },
+    {
+      "sort_order": 42,
+      "block_key": "reviews.title",
+      "section": "reviews",
+      "label": "Reviews title",
+      "type": "text",
+      "value": "7 States Pest Control for Reliable Pest Management Solutions"
+    },
+    {
+      "sort_order": 43,
+      "block_key": "reviews.subtitle",
+      "section": "reviews",
+      "label": "Reviews subtitle",
+      "type": "text",
+      "value": "Reviews of Our Pest Control Services"
+    },
+    {
+      "sort_order": 44,
+      "block_key": "reviews.rating_label",
+      "section": "reviews",
+      "label": "Rating label",
+      "type": "text",
+      "value": "EXCELLENT"
+    },
+    {
+      "sort_order": 45,
+      "block_key": "reviews.count_text",
+      "section": "reviews",
+      "label": "Review count text",
+      "type": "html",
+      "value": "<p class=\"elementor-heading-title elementor-size-default\">Based on&nbsp;<strong>45 reviews</strong></p>"
+    },
+    {
+      "sort_order": 46,
+      "block_key": "blog.eyebrow",
+      "section": "blog",
+      "label": "Section eyebrow",
+      "type": "text",
+      "value": "Our Latest Article"
+    },
+    {
+      "sort_order": 47,
+      "block_key": "blog.title",
+      "section": "blog",
+      "label": "Section title",
+      "type": "text",
+      "value": "Pest Problems? Here's Why Read Might Be Your Secret Weapon."
+    },
+    {
+      "sort_order": 48,
+      "block_key": "blog.posts",
+      "section": "blog",
+      "label": "Blog preview posts",
+      "type": "json",
+      "metadata": {
+        "posts": [
+          {
+            "title": "Why Melbourne Homes Need Professional Termite Pest Control",
+            "excerpt": "Termites are quiet workers. You will not hear them. You will not see them moving around your home in broad daylight. Yet they can quietly chew…",
+            "link": "/why-melbourne-homes-need-professional-termite-pest-control/",
+            "alt": "Why Melbourne Homes Need Professional Termite Pest Control",
+            "image_src": "/assets/images/WhatsApp-Image-2026-05-25-at-11.50.58-AM_83fa8176.jpeg",
+            "image_path": "cms/our-services-fox-pest-control-in-melbourne/WhatsApp-Image-2026-05-25-at-11.50.58-AM_83fa8176.jpeg"
+          },
+          {
+            "title": "5 Myths About Wasp Removal Melbourne You Should Stop Believing",
+            "excerpt": "There is a lot of bad advice out there when it comes to dealing with wasps. People share tips at backyard barbecues, on Facebook groups, and…",
+            "link": "/5-myths-about-wasp-removal-melbourne-you-should-stop-believing/",
+            "alt": "5 Myths About Wasp Removal Melbourne You Should Stop Believing",
+            "image_src": "/assets/images/WhatsApp-Image-2026-05-25-at-11.52.11-AM_ddd44793.jpeg",
+            "image_path": "cms/our-services-fox-pest-control-in-melbourne/WhatsApp-Image-2026-05-25-at-11.52.11-AM_ddd44793.jpeg"
+          },
+          {
+            "title": "The Smart Homeowner’s Guide to Termite Barrier Protection in Melbourne",
+            "excerpt": "If you own a home in Melbourne, you have probably heard about termite damage at least once. Maybe a neighbour found a hollow door frame. Maybe…",
+            "link": "/the-smart-homeowners-guide-to-termite-barrier-protection-in-melbourne/",
+            "alt": "The Smart Homeowner’s Guide to Termite Barrier Protection in Melbourne",
+            "image_src": "/assets/images/WhatsApp-Image-2026-05-25-at-11.53.29-AM_6379c2f3.jpeg",
+            "image_path": "cms/our-services-fox-pest-control-in-melbourne/WhatsApp-Image-2026-05-25-at-11.53.29-AM_6379c2f3.jpeg"
+          }
+        ]
+      }
+    },
+    {
+      "sort_order": 49,
+      "block_key": "cta.eyebrow",
+      "section": "cta",
+      "label": "Eyebrow",
+      "type": "text",
+      "value": "Ideas to reality"
+    },
+    {
+      "sort_order": 50,
+      "block_key": "cta.title",
+      "section": "cta",
+      "label": "Section title",
+      "type": "text",
+      "value": "Talk to Us Today to Learn More"
+    },
+    {
+      "sort_order": 51,
+      "block_key": "cta.body",
+      "section": "cta",
+      "label": "Body HTML",
+      "type": "html",
+      "value": "<p>Do you have any specific questions about us, our services, or anything related to pest infestation issues? Call us today on&nbsp;<a href=\"tel:+61434660060\">( +61 434 660 060 )</a>&nbsp;or use our contact form to connect with our&nbsp;<b>7 States Pest Control</b>. You can get answers to your questions, get upfront quotes for the&nbsp;<b>7 States Pest Control</b>&nbsp;issues, and receive high-quality tailored services.</p>"
+    },
+    {
+      "sort_order": 52,
+      "block_key": "cta.button",
+      "section": "cta",
+      "label": "CTA button",
+      "type": "link",
+      "value": "Contact Us",
+      "link_url": "/contact-us"
+    }
+  ]
+}

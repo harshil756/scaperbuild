@@ -1,0 +1,618 @@
+{
+  "slug": "our-services-mosquito-pest-control",
+  "title": "Mosquito Pest Control",
+  "seo_title": "Mosquito pest control services in Melbourne - 7 States Pest Control",
+  "seo_description": "Eliminate mosquitoes from your office and home with pest control solutions. Consult 7 States Pest Control for mosquito pest control services. Starting price $170.",
+  "body_class": "wp-singular page-template page-template-elementor_header_footer page wp-custom-logo wp-embed-responsive wp-theme-hello-elementor elementor-default elementor-template-full-width elementor-kit-9 elementor-page elementor-page-1463",
+  "elementor_id": 1463,
+  "is_published": true,
+  "blocks": [
+    {
+      "sort_order": 0,
+      "block_key": "background.hero",
+      "section": "hero",
+      "label": "Hero background",
+      "type": "background",
+      "background_image_path": "cms/our-services-mosquito-pest-control/Mosquito-Control-1.jpg_72368132.webp",
+      "metadata": {
+        "elementor_id": "1357195",
+        "filename": "Mosquito-Control-1.jpg_72368132.webp"
+      }
+    },
+    {
+      "sort_order": 1,
+      "block_key": "background.cta",
+      "section": "cta",
+      "label": "CTA background",
+      "type": "background",
+      "background_image_path": "cms/our-services-mosquito-pest-control/URUU-01-2048x1365-2_7c216e6d.jpg",
+      "metadata": {
+        "elementor_id": "057b4d3",
+        "filename": "URUU-01-2048x1365-2_7c216e6d.jpg"
+      }
+    },
+    {
+      "sort_order": 2,
+      "block_key": "hero.breadcrumb_parent",
+      "section": "hero",
+      "label": "Breadcrumb parent",
+      "type": "text",
+      "value": "Services"
+    },
+    {
+      "sort_order": 3,
+      "block_key": "hero.breadcrumb_current",
+      "section": "hero",
+      "label": "Breadcrumb current",
+      "type": "text",
+      "value": "mosquito pest control"
+    },
+    {
+      "sort_order": 4,
+      "block_key": "hero.title",
+      "section": "hero",
+      "label": "Section title",
+      "type": "text",
+      "value": "Pest Control Solution"
+    },
+    {
+      "sort_order": 5,
+      "block_key": "hero.heading",
+      "section": "hero",
+      "label": "Main heading",
+      "type": "text",
+      "value": "Eliminate Mosquitoes from Your Office and Home with Pest Control Solutions"
+    },
+    {
+      "sort_order": 6,
+      "block_key": "hero.intro",
+      "section": "hero",
+      "label": "Intro paragraph",
+      "type": "html",
+      "value": "<div class=\"elementor-element elementor-element-de434cf elementor-widget elementor-widget-text-editor\" data-element_type=\"widget\" data-id=\"de434cf\" data-settings=\"{&quot;ekit_we_effect_on&quot;:&quot;none&quot;}\" data-widget_type=\"text-editor.default\"><div class=\"elementor-widget-container\"><div class=\"elementor-element elementor-element-de434cf elementor-widget elementor-widget-text-editor\" data-element_type=\"widget\" data-id=\"de434cf\" data-settings=\"{&quot;ekit_we_effect_on&quot;:&quot;none&quot;}\" data-widget_type=\"text-editor.default\"><div class=\"elementor-widget-container\"><p>Imagine preparing a barbeque party and ending up staying indoors. We understand how frustrating your experience might become. But if your house is full of mosquitoes, blame them for ruining your evening.</p><p>No matter how tiny they are, mosquitoes can put you in a predicament. They are annoying, loud, and can carry deadly diseases. So, walking outside your yard and immediately feeling their stings can be a dangerous incident. Consult&nbsp;<a href=\"/\"><strong>7 States Pest Control</strong>&nbsp;</a>for mosquito pest control services.</p></div></div></div></div>"
+    },
+    {
+      "sort_order": 7,
+      "block_key": "quote_form.title",
+      "section": "quote_form",
+      "label": "Form heading",
+      "type": "text",
+      "value": "Eliminate Mosquitoes from Your Office and Home with Pest Control Solutions"
+    },
+    {
+      "sort_order": 8,
+      "block_key": "quote_form.subtitle",
+      "section": "quote_form",
+      "label": "Form subtitle",
+      "type": "text",
+      "value": "Have an enquiry? Leave us your details and we’ll call you back during business hours."
+    },
+    {
+      "sort_order": 9,
+      "block_key": "quote_form.submit_text",
+      "section": "quote_form",
+      "label": "Submit button text",
+      "type": "text",
+      "value": "Submit Quote"
+    },
+    {
+      "sort_order": 10,
+      "block_key": "reviews.eyebrow",
+      "section": "reviews",
+      "label": "Reviews eyebrow",
+      "type": "text",
+      "value": "7 States Pest Control for Reliable Pest Management Solutions"
+    },
+    {
+      "sort_order": 11,
+      "block_key": "reviews.title",
+      "section": "reviews",
+      "label": "Reviews title",
+      "type": "text",
+      "value": "EXCELLENT"
+    },
+    {
+      "sort_order": 12,
+      "block_key": "cta.eyebrow",
+      "section": "cta",
+      "label": "Eyebrow",
+      "type": "text",
+      "value": "Ideas to reality"
+    },
+    {
+      "sort_order": 13,
+      "block_key": "cta.title",
+      "section": "cta",
+      "label": "Section title",
+      "type": "text",
+      "value": "Talk to Us Today to Learn More"
+    },
+    {
+      "sort_order": 14,
+      "block_key": "cta.body",
+      "section": "cta",
+      "label": "Body HTML",
+      "type": "html",
+      "value": "<p>Based on&nbsp;45 reviews</p>"
+    },
+    {
+      "sort_order": 15,
+      "block_key": "cta.button",
+      "section": "cta",
+      "label": "CTA button",
+      "type": "link",
+      "value": "Contact Us",
+      "link_url": "/contact-us"
+    },
+    {
+      "sort_order": 16,
+      "block_key": "content.text_de434cf",
+      "section": "content",
+      "label": "Content block 1",
+      "type": "html",
+      "value": "<div class=\"elementor-element elementor-element-de434cf elementor-widget elementor-widget-text-editor\" data-element_type=\"widget\" data-id=\"de434cf\" data-settings=\"{&quot;ekit_we_effect_on&quot;:&quot;none&quot;}\" data-widget_type=\"text-editor.default\"><div class=\"elementor-widget-container\"><p>Imagine preparing a barbeque party and ending up staying indoors. We understand how frustrating your experience might become. But if your house is full of mosquitoes, blame them for ruining your evening.</p><p>No matter how tiny they are, mosquitoes can put you in a predicament. They are annoying, loud, and can carry deadly diseases. So, walking outside your yard and immediately feeling their stings can be a dangerous incident. Consult&nbsp;<a href=\"/\"><strong>7 States Pest Control</strong>&nbsp;</a>for mosquito pest control services.</p></div></div>"
+    },
+    {
+      "sort_order": 17,
+      "block_key": "content.text_de434cf_2",
+      "section": "content",
+      "label": "Content block 2",
+      "type": "html",
+      "value": "<div class=\"elementor-element elementor-element-de434cf elementor-widget elementor-widget-text-editor\" data-element_type=\"widget\" data-id=\"de434cf\" data-settings=\"{&quot;ekit_we_effect_on&quot;:&quot;none&quot;}\" data-widget_type=\"text-editor.default\"><div class=\"elementor-widget-container\"><p>Imagine preparing a barbeque party and ending up staying indoors. We understand how frustrating your experience might become. But if your house is full of mosquitoes, blame them for ruining your evening.</p><p>No matter how tiny they are, mosquitoes can put you in a predicament. They are annoying, loud, and can carry deadly diseases. So, walking outside your yard and immediately feeling their stings can be a dangerous incident. Consult&nbsp;<a href=\"/\"><strong>7 States Pest Control</strong>&nbsp;</a>for mosquito pest control services.</p></div></div>"
+    },
+    {
+      "sort_order": 18,
+      "block_key": "content.heading_553f37b",
+      "section": "content",
+      "label": "Heading: Get A Free Quote Now!",
+      "type": "text",
+      "value": "Get A Free Quote Now!"
+    },
+    {
+      "sort_order": 19,
+      "block_key": "content.heading_3543d37",
+      "section": "content",
+      "label": "Heading: Have an enquiry? Leave us your details and we’ll call you ba",
+      "type": "text",
+      "value": "Have an enquiry? Leave us your details and we’ll call you back during business hours."
+    },
+    {
+      "sort_order": 20,
+      "block_key": "content.heading_8916f32",
+      "section": "content",
+      "label": "Heading: Pest Control Solution",
+      "type": "text",
+      "value": "Pest Control Solution"
+    },
+    {
+      "sort_order": 21,
+      "block_key": "content.heading_dd5b3de",
+      "section": "content",
+      "label": "Heading: Eliminate Mosquitoes from Your Office and Home with Pest Con",
+      "type": "text",
+      "value": "Eliminate Mosquitoes from Your Office and Home with Pest Control Solutions"
+    },
+    {
+      "sort_order": 22,
+      "block_key": "content.text_76690a4",
+      "section": "content",
+      "label": "Content block 3",
+      "type": "html",
+      "value": "<div class=\"elementor-element elementor-element-de434cf elementor-widget elementor-widget-text-editor\" data-element_type=\"widget\" data-id=\"de434cf\" data-settings=\"{&quot;ekit_we_effect_on&quot;:&quot;none&quot;}\" data-widget_type=\"text-editor.default\"><div class=\"elementor-widget-container\"><p>Imagine preparing a barbeque party and ending up staying indoors. We understand how frustrating your experience might become. But if your house is full of mosquitoes, blame them for ruining your evening.</p><p>No matter how tiny they are, mosquitoes can put you in a predicament. They are annoying, loud, and can carry deadly diseases. So, walking outside your yard and immediately feeling their stings can be a dangerous incident. Consult&nbsp;<a href=\"/\"><strong>7 States Pest Control</strong>&nbsp;</a>for mosquito pest control services.</p></div></div>"
+    },
+    {
+      "sort_order": 23,
+      "block_key": "content.text_de434cf_3",
+      "section": "content",
+      "label": "Content block 4",
+      "type": "html",
+      "value": "<div class=\"elementor-element elementor-element-de434cf elementor-widget elementor-widget-text-editor\" data-element_type=\"widget\" data-id=\"de434cf\" data-settings=\"{&quot;ekit_we_effect_on&quot;:&quot;none&quot;}\" data-widget_type=\"text-editor.default\"><div class=\"elementor-widget-container\"><p>Imagine preparing a barbeque party and ending up staying indoors. We understand how frustrating your experience might become. But if your house is full of mosquitoes, blame them for ruining your evening.</p><p>No matter how tiny they are, mosquitoes can put you in a predicament. They are annoying, loud, and can carry deadly diseases. So, walking outside your yard and immediately feeling their stings can be a dangerous incident. Consult&nbsp;<a href=\"/\"><strong>7 States Pest Control</strong>&nbsp;</a>for mosquito pest control services.</p></div></div>"
+    },
+    {
+      "sort_order": 24,
+      "block_key": "content.heading_3c55949",
+      "section": "content",
+      "label": "Heading: Eradicate Mosquitoes",
+      "type": "text",
+      "value": "Eradicate Mosquitoes"
+    },
+    {
+      "sort_order": 25,
+      "block_key": "content.heading_4ebd325",
+      "section": "content",
+      "label": "Heading: Common Reasons to Eradicate Mosquitoes from Your House",
+      "type": "text",
+      "value": "Common Reasons to Eradicate Mosquitoes from Your House"
+    },
+    {
+      "sort_order": 26,
+      "block_key": "content.text_24a7d2a",
+      "section": "content",
+      "label": "Content block 5",
+      "type": "html",
+      "value": "<p>Remember, they are significant public health pests as they transmit disease-causing pathogens to domesticated animals and humans. They can carry life-threatening ailments like:</p>"
+    },
+    {
+      "sort_order": 27,
+      "block_key": "content.list_b484fe7",
+      "section": "content",
+      "label": "Icon list (b484fe7)",
+      "type": "json",
+      "metadata": {
+        "items": [
+          "Dengue",
+          "Malaria"
+        ]
+      }
+    },
+    {
+      "sort_order": 28,
+      "block_key": "content.list_c10a8b4",
+      "section": "content",
+      "label": "Icon list (c10a8b4)",
+      "type": "json",
+      "metadata": {
+        "items": [
+          "Zika virus",
+          "West Nile virus",
+          "Chikungunya virus"
+        ]
+      }
+    },
+    {
+      "sort_order": 29,
+      "block_key": "content.text_ca8f85b",
+      "section": "content",
+      "label": "Content block 6",
+      "type": "html",
+      "value": "<p>At 7 States Pest Control, our pest control associates offer effective mosquito pest control and</p>"
+    },
+    {
+      "sort_order": 30,
+      "block_key": "content.heading_3b861a5",
+      "section": "content",
+      "label": "Heading: Cockroach Elimination",
+      "type": "text",
+      "value": "Cockroach Elimination"
+    },
+    {
+      "sort_order": 31,
+      "block_key": "content.heading_1b1d385",
+      "section": "content",
+      "label": "Heading: Who Should Consult Our Mosquito Pest Control Team?",
+      "type": "text",
+      "value": "Who Should Consult Our Mosquito Pest Control Team?"
+    },
+    {
+      "sort_order": 32,
+      "block_key": "content.text_9c7ed97",
+      "section": "content",
+      "label": "Content block 7",
+      "type": "html",
+      "value": "<div class=\"elementor-element elementor-element-de434cf elementor-widget elementor-widget-text-editor\" data-element_type=\"widget\" data-id=\"de434cf\" data-settings=\"{&quot;ekit_we_effect_on&quot;:&quot;none&quot;}\" data-widget_type=\"text-editor.default\"><div class=\"elementor-widget-container\"><p>Mosquitoes get attracted to certain areas of your house. If you have such areas at home, you must consult a team. 7 States Pest Control professionals implement their astute acumen to exterminate annoying mosquitoes from your office or home. Here are the signs indicating that your house has a mosquito infestation:</p></div></div>"
+    },
+    {
+      "sort_order": 33,
+      "block_key": "content.text_de434cf_4",
+      "section": "content",
+      "label": "Content block 8",
+      "type": "html",
+      "value": "<div class=\"elementor-element elementor-element-de434cf elementor-widget elementor-widget-text-editor\" data-element_type=\"widget\" data-id=\"de434cf\" data-settings=\"{&quot;ekit_we_effect_on&quot;:&quot;none&quot;}\" data-widget_type=\"text-editor.default\"><div class=\"elementor-widget-container\"><p>Imagine preparing a barbeque party and ending up staying indoors. We understand how frustrating your experience might become. But if your house is full of mosquitoes, blame them for ruining your evening.</p><p>No matter how tiny they are, mosquitoes can put you in a predicament. They are annoying, loud, and can carry deadly diseases. So, walking outside your yard and immediately feeling their stings can be a dangerous incident. Consult&nbsp;<a href=\"/\"><strong>7 States Pest Control</strong>&nbsp;</a>for mosquito pest control services.</p></div></div>"
+    },
+    {
+      "sort_order": 34,
+      "block_key": "content.list_789d477",
+      "section": "content",
+      "label": "Icon list (789d477)",
+      "type": "json",
+      "metadata": {
+        "items": [
+          "Standing water on your house or office",
+          "Continuous high blazing sound",
+          "Your property has multiple shaded areas",
+          "Are you getting bit constantly?",
+          "Have you been scratching at night for the past few days?",
+          "These pesky pests are hovering over the food inside the kitchen",
+          "Humid weather conditions can also be another sign of mosquito infestation"
+        ]
+      }
+    },
+    {
+      "sort_order": 35,
+      "block_key": "content.heading_2772224",
+      "section": "content",
+      "label": "Heading: Stages of Treatment",
+      "type": "text",
+      "value": "Stages of Treatment"
+    },
+    {
+      "sort_order": 36,
+      "block_key": "content.heading_4a41640",
+      "section": "content",
+      "label": "Heading: Different Stages of Treatments Offered from 7 States Pest Co",
+      "type": "text",
+      "value": "Different Stages of Treatments Offered from 7 States Pest Control"
+    },
+    {
+      "sort_order": 37,
+      "block_key": "content.text_d7374af",
+      "section": "content",
+      "label": "Content block 9",
+      "type": "html",
+      "value": "After our initial consultation with our clients, we visit\n                            your location on the given date to perform the following tasks."
+    },
+    {
+      "sort_order": 38,
+      "block_key": "content.heading_7b40cf9",
+      "section": "content",
+      "label": "Heading: Investigate",
+      "type": "text",
+      "value": "Investigate"
+    },
+    {
+      "sort_order": 39,
+      "block_key": "content.text_dcc9e04",
+      "section": "content",
+      "label": "Content block 10",
+      "type": "html",
+      "value": "<p>Firstly, we will investigate your house from your yard to all corners.</p>"
+    },
+    {
+      "sort_order": 40,
+      "block_key": "content.image_fa72616",
+      "section": "content",
+      "label": "Image (fa72616)",
+      "type": "image",
+      "image_path": "cms/our-services-mosquito-pest-control/Inspect.jpg-2-1024x589_4c31f610.webp",
+      "metadata": {
+        "elementor_id": "fa72616",
+        "image_src": "/assets/images/Inspect.jpg-2-1024x589_4c31f610.webp"
+      }
+    },
+    {
+      "sort_order": 41,
+      "block_key": "content.heading_9984806",
+      "section": "content",
+      "label": "Heading: Protect",
+      "type": "text",
+      "value": "Protect"
+    },
+    {
+      "sort_order": 42,
+      "block_key": "content.text_5cbad47",
+      "section": "content",
+      "label": "Content block 11",
+      "type": "html",
+      "value": "<p>After that, we will perform our mandatory steps to treat the structure’s perimeters with the right materials. Besides, our team uses the simplest methods to eliminate mosquitoes from your house.</p>"
+    },
+    {
+      "sort_order": 43,
+      "block_key": "content.image_88d7d34",
+      "section": "content",
+      "label": "Image (88d7d34)",
+      "type": "image",
+      "image_path": "cms/our-services-mosquito-pest-control/Pest-Control-Professionals.jpg-2_fb3c30ca.webp",
+      "metadata": {
+        "elementor_id": "88d7d34",
+        "image_src": "/assets/images/Pest-Control-Professionals.jpg-2_fb3c30ca.webp"
+      }
+    },
+    {
+      "sort_order": 44,
+      "block_key": "content.heading_e81dbe9",
+      "section": "content",
+      "label": "Heading: Remove Mosquito Habitats:",
+      "type": "text",
+      "value": "Remove Mosquito Habitats:"
+    },
+    {
+      "sort_order": 45,
+      "block_key": "content.text_ab67da0",
+      "section": "content",
+      "label": "Content block 12",
+      "type": "html",
+      "value": "<p>We will monitor standing water source to:</p>"
+    },
+    {
+      "sort_order": 46,
+      "block_key": "content.list_1403332",
+      "section": "content",
+      "label": "Icon list (1403332)",
+      "type": "json",
+      "metadata": {
+        "items": [
+          "Eliminate standing water",
+          "Treat swimming pool water",
+          "Drain temporary pools",
+          "Empty &amp; change the water in the fountains, rain barrels, bird births, wading pools, and potted plants"
+        ]
+      }
+    },
+    {
+      "sort_order": 47,
+      "block_key": "content.heading_59bd549",
+      "section": "content",
+      "label": "Heading: Use Structural Barriers",
+      "type": "text",
+      "value": "Use Structural Barriers"
+    },
+    {
+      "sort_order": 48,
+      "block_key": "content.text_97793ac",
+      "section": "content",
+      "label": "Content block 13",
+      "type": "html",
+      "value": "<p>We use the structural barriers to reduce the bites incidence:</p>"
+    },
+    {
+      "sort_order": 49,
+      "block_key": "content.list_b8346b6",
+      "section": "content",
+      "label": "Icon list (b8346b6)",
+      "type": "json",
+      "metadata": {
+        "items": [
+          "Cover gaps in doors, walls, and windows",
+          "Install a new door and window",
+          "Cover baby carriers"
+        ]
+      }
+    },
+    {
+      "sort_order": 50,
+      "block_key": "content.image_575479c",
+      "section": "content",
+      "label": "Image (575479c)",
+      "type": "image",
+      "image_path": "cms/our-services-mosquito-pest-control/About-Pest-Control-6.jpg-3_47cafc0b.webp",
+      "metadata": {
+        "elementor_id": "575479c",
+        "image_src": "/assets/images/About-Pest-Control-6.jpg-3_47cafc0b.webp"
+      }
+    },
+    {
+      "sort_order": 51,
+      "block_key": "content.heading_d1c7125",
+      "section": "content",
+      "label": "Heading: Controlling Mosquitoes at their Larval Stage",
+      "type": "text",
+      "value": "Controlling Mosquitoes at their Larval Stage"
+    },
+    {
+      "sort_order": 52,
+      "block_key": "content.text_c94d445",
+      "section": "content",
+      "label": "Content block 14",
+      "type": "html",
+      "value": "<p>The most significant impact on mosquito populations occurs when they are immobile, concentrated, and accessible. So, we focus on habitat management, thereby controlling immature stages before they emerge as adults.</p>"
+    },
+    {
+      "sort_order": 53,
+      "block_key": "content.heading_72d2226",
+      "section": "content",
+      "label": "Heading: Controlling Adult Mosquitoes",
+      "type": "text",
+      "value": "Controlling Adult Mosquitoes"
+    },
+    {
+      "sort_order": 54,
+      "block_key": "content.text_1b35c3f",
+      "section": "content",
+      "label": "Content block 15",
+      "type": "html",
+      "value": "<p>Using the EPA-registered pesticide is a speedy approach to combat mosquito-borne disease outbreaks. So, we also focus on controlling adult mosquitoes and eliminating them from your house.</p>"
+    },
+    {
+      "sort_order": 55,
+      "block_key": "content.image_996d4d3",
+      "section": "content",
+      "label": "Image (996d4d3)",
+      "type": "image",
+      "image_path": "cms/our-services-mosquito-pest-control/Controlling-Adult-Mosquitoes.jpg_ab0b800e.webp",
+      "metadata": {
+        "elementor_id": "996d4d3",
+        "image_src": "/assets/images/Controlling-Adult-Mosquitoes.jpg_ab0b800e.webp"
+      }
+    },
+    {
+      "sort_order": 56,
+      "block_key": "content.heading_73358e8",
+      "section": "content",
+      "label": "Heading: Why Choose",
+      "type": "text",
+      "value": "Why Choose"
+    },
+    {
+      "sort_order": 57,
+      "block_key": "content.heading_bd8e94d",
+      "section": "content",
+      "label": "Heading: Why Choose Us for Mosquito Control Solutions?",
+      "type": "text",
+      "value": "Why Choose Us for Mosquito Control Solutions?"
+    },
+    {
+      "sort_order": 58,
+      "block_key": "content.text_4a957b0",
+      "section": "content",
+      "label": "Content block 16",
+      "type": "html",
+      "value": "<p>Exterminating mosquitoes from your house requires a comprehensive approach. Thus, at 7 States Pest Control, our&nbsp;<a href=\"/\" rel=\"noopener\">affordable pest control Melbourne</a>&nbsp;consultants implement scientifically-proven methodologies to eliminate the pest from commercial and residential properties. Our effective pest control methods target the mosquito life cycle’s larval stage. With our practices, we try to eradicate different species of mosquitoes, including Aedes.</p>"
+    },
+    {
+      "sort_order": 59,
+      "block_key": "content.image_0bb7e99",
+      "section": "content",
+      "label": "Image (0bb7e99)",
+      "type": "image",
+      "image_path": "cms/our-services-mosquito-pest-control/Why-Pest-Control.jpg_ef5bccf6.webp",
+      "metadata": {
+        "elementor_id": "0bb7e99",
+        "image_src": "/assets/images/Why-Pest-Control.jpg_ef5bccf6.webp"
+      }
+    },
+    {
+      "sort_order": 60,
+      "block_key": "content.heading_0569e8e",
+      "section": "content",
+      "label": "Heading: Clients Reviews",
+      "type": "text",
+      "value": "Clients Reviews"
+    },
+    {
+      "sort_order": 61,
+      "block_key": "content.heading_2bf5210",
+      "section": "content",
+      "label": "Heading: 7 States Pest Control for Reliable Pest Management Solutions",
+      "type": "text",
+      "value": "7 States Pest Control for Reliable Pest Management Solutions"
+    },
+    {
+      "sort_order": 62,
+      "block_key": "content.heading_33ab535",
+      "section": "content",
+      "label": "Heading: Reviews of Our Pest Control Services",
+      "type": "text",
+      "value": "Reviews of Our Pest Control Services"
+    },
+    {
+      "sort_order": 63,
+      "block_key": "content.heading_6a62afd",
+      "section": "content",
+      "label": "Heading: EXCELLENT",
+      "type": "text",
+      "value": "EXCELLENT"
+    },
+    {
+      "sort_order": 64,
+      "block_key": "content.text_af100d3",
+      "section": "content",
+      "label": "Content block 17",
+      "type": "html",
+      "value": "<p>Based on&nbsp;45 reviews</p>"
+    },
+    {
+      "sort_order": 65,
+      "block_key": "content.heading_4c825b4",
+      "section": "content",
+      "label": "Heading: Ideas to reality",
+      "type": "text",
+      "value": "Ideas to reality"
+    },
+    {
+      "sort_order": 66,
+      "block_key": "content.heading_7c67181",
+      "section": "content",
+      "label": "Heading: Talk to Us Today to Learn More",
+      "type": "text",
+      "value": "Talk to Us Today to Learn More"
+    },
+    {
+      "sort_order": 67,
+      "block_key": "content.text_dbd1d11",
+      "section": "content",
+      "label": "Content block 18",
+      "type": "html",
+      "value": "Do you have any specific questions about us, our services, or anything related to pest infestation issues? Call us today on&nbsp;<a href=\"tel:+61434660060\"> +61 434 660 060</a>&nbsp;or use our contact form to connect with our&nbsp;<b>7 States Pest Control</b>. You can get answers to your questions, get upfront quotes for the&nbsp;<b>7 States Pest Control</b>&nbsp;issues, and receive high-quality tailored services."
+    }
+  ]
+}

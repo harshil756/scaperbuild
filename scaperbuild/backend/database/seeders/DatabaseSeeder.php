@@ -14,7 +14,13 @@ class DatabaseSeeder extends Seeder
         $this->call([
             AdminUserSeeder::class,
             HomePageSeeder::class,
+            AboutPageSeeder::class,
+            SolarPanelBirdProofingPageSeeder::class,
+            AntPestControlPageSeeder::class,
+            MelbournePageSeeder::class,
+            ServicePagesSeeder::class,
             MenuSeeder::class,
+            BlogSeeder::class,
         ]);
     }
 }

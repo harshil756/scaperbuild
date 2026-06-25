@@ -1,0 +1,492 @@
+{
+  "slug": "melbourne",
+  "title": "Melbourne",
+  "seo_title": "Pest Control Melbourne | Safe & Affordable Pest Removal Services",
+  "seo_description": "Get expert pest control in Melbourne with 7 States Pest Control. We offer safe, eco-friendly, and affordable solutions for rodents, termites, possums, and more.",
+  "body_class": "wp-singular page-template page-template-elementor_header_footer page wp-custom-logo wp-embed-responsive wp-theme-hello-elementor elementor-default elementor-template-full-width elementor-kit-9 elementor-page elementor-page-710",
+  "elementor_id": 710,
+  "is_published": true,
+  "blocks": [
+    {
+      "sort_order": 0,
+      "block_key": "background.hero",
+      "section": "hero",
+      "label": "Hero background",
+      "type": "background",
+      "background_image_path": "cms/melbourne/Melbourne_Skyline_and_Princes_Bridge_-_Dec_2008-2048x13_e31cb323.jpg",
+      "metadata": {
+        "elementor_id": "e7c65bf",
+        "filename": "Melbourne_Skyline_and_Princes_Bridge_-_Dec_2008-2048x13_e31cb323.jpg"
+      }
+    },
+    {
+      "sort_order": 1,
+      "block_key": "background.contact",
+      "section": "contact",
+      "label": "Background (fd1c4b6)",
+      "type": "background",
+      "background_image_path": "cms/melbourne/BG3_a19772e2.png",
+      "metadata": {
+        "elementor_id": "fd1c4b6",
+        "filename": "BG3_a19772e2.png"
+      }
+    },
+    {
+      "sort_order": 2,
+      "block_key": "background.contact_side",
+      "section": "contact_side",
+      "label": "Background (8bb4a2d)",
+      "type": "background",
+      "background_image_path": "cms/melbourne/End-of-Lease-2.png_0c28dc03.webp",
+      "metadata": {
+        "elementor_id": "8bb4a2d",
+        "filename": "End-of-Lease-2.png_0c28dc03.webp"
+      }
+    },
+    {
+      "sort_order": 3,
+      "block_key": "hero.breadcrumb_parent",
+      "section": "hero",
+      "label": "Breadcrumb parent",
+      "type": "text",
+      "value": "our offices"
+    },
+    {
+      "sort_order": 4,
+      "block_key": "hero.breadcrumb_current",
+      "section": "hero",
+      "label": "Breadcrumb current",
+      "type": "text",
+      "value": "melbourne"
+    },
+    {
+      "sort_order": 5,
+      "block_key": "hero.title",
+      "section": "hero",
+      "label": "Section title",
+      "type": "text",
+      "value": "Eco-Friendly Pest Control by 7 States"
+    },
+    {
+      "sort_order": 6,
+      "block_key": "hero.heading",
+      "section": "hero",
+      "label": "Main heading",
+      "type": "text",
+      "value": "Welcome to 7 States Pest Control - Your Trusted Melbourne Pest Control Partner"
+    },
+    {
+      "sort_order": 7,
+      "block_key": "hero.intro",
+      "section": "hero",
+      "label": "Intro paragraph",
+      "type": "html",
+      "value": "<div class=\"elementor-element elementor-element-de434cf elementor-widget elementor-widget-text-editor\" data-element_type=\"widget\" data-id=\"de434cf\" data-settings=\"{&quot;ekit_we_effect_on&quot;:&quot;none&quot;}\" data-widget_type=\"text-editor.default\"><div class=\"elementor-widget-container\"><p>Expert Pest Control Services in Melbourne At&nbsp;<a href=\"/\"><strong>7 States Pest Control</strong></a>, we understand the unique challenges that pests pose to residents and businesses in the vibrant city of Melbourne. Our team of experienced pest control professionals provides effective and environmentally friendly solutions to keep your property pest-free.</p>"
+    },
+    {
+      "sort_order": 8,
+      "block_key": "quote_form.title",
+      "section": "quote_form",
+      "label": "Form heading",
+      "type": "text",
+      "value": "Get A Free Quote Now!"
+    },
+    {
+      "sort_order": 9,
+      "block_key": "quote_form.subtitle",
+      "section": "quote_form",
+      "label": "Form subtitle",
+      "type": "text",
+      "value": "Have an enquiry? Leave us your details and we’ll call you back during business hours."
+    },
+    {
+      "sort_order": 10,
+      "block_key": "quote_form.submit_text",
+      "section": "quote_form",
+      "label": "Submit button text",
+      "type": "text",
+      "value": "Submit Quote"
+    },
+    {
+      "sort_order": 11,
+      "block_key": "why_choose.eyebrow",
+      "section": "why_choose",
+      "label": "Eyebrow",
+      "type": "text",
+      "value": "Why Choose"
+    },
+    {
+      "sort_order": 12,
+      "block_key": "why_choose.title",
+      "section": "why_choose",
+      "label": "Section title",
+      "type": "text",
+      "value": "7 States Pest Control for Pest Control in Melbourne?"
+    },
+    {
+      "sort_order": 13,
+      "block_key": "why_choose.intro",
+      "section": "why_choose",
+      "label": "Intro HTML",
+      "type": "html",
+      "value": "<p>We believe in offering the best solutions to our valued customers. Allow us to attend to your pest control requirements &amp; keep your family and little ones safe.</p>"
+    },
+    {
+      "sort_order": 14,
+      "block_key": "why_choose.local_expertise",
+      "section": "why_choose",
+      "label": "Why choose: Local Expertise​",
+      "type": "json",
+      "image_path": "cms/melbourne/professional-success-r8bomvbu3c93uax0u85h20goco60kp9o7y_4cc9959a.png",
+      "metadata": {
+        "slug": "local_expertise",
+        "id": "433d215",
+        "image": "/assets/images/professional-success-r8bomvbu3c93uax0u85h20goco60kp9o7y_4cc9959a.png",
+        "title": "Local Expertise​",
+        "description": "Melbourne’s diverse climate and urban environment create specific challenges when it comes to pest control. Our team is well-acquainted with the local pest population and has developed targeted strategies to address Melbourne’s unique pest issues.",
+        "image_src": "/assets/images/professional-success-r8bomvbu3c93uax0u85h20goco60kp9o7y_4cc9959a.png"
+      }
+    },
+    {
+      "sort_order": 15,
+      "block_key": "why_choose.comprehensive_services",
+      "section": "why_choose",
+      "label": "Why choose: Comprehensive Services",
+      "type": "json",
+      "image_path": "cms/melbourne/execution-r8boo1mkmvv0cr7kz8foo7sf30dj72xldrxrow7ew0_abca882a.png",
+      "metadata": {
+        "slug": "comprehensive_services",
+        "id": "e0527c9",
+        "image": "/assets/images/execution-r8boo1mkmvv0cr7kz8foo7sf30dj72xldrxrow7ew0_abca882a.png",
+        "title": "Comprehensive Services",
+        "description": "From common household pests like ants and spiders to more challenging infestations of termites and rodents, we offer a comprehensive range of pest control services. Our integrated approach ensures that we not only eliminate existing pests but also implement preventive measures to keep them from returning.",
+        "image_src": "/assets/images/execution-r8boo1mkmvv0cr7kz8foo7sf30dj72xldrxrow7ew0_abca882a.png"
+      }
+    },
+    {
+      "sort_order": 16,
+      "block_key": "why_choose.environmentally_friendly_solutions",
+      "section": "why_choose",
+      "label": "Why choose: Environmentally Friendly Solutions",
+      "type": "json",
+      "image_path": "cms/melbourne/eco-r8bop2aaa70h95d2wygdaob2gi769mm9p6aqmysi5k_6ad5c5e4.png",
+      "metadata": {
+        "slug": "environmentally_friendly_solutions",
+        "id": "b141fa6",
+        "image": "/assets/images/eco-r8bop2aaa70h95d2wygdaob2gi769mm9p6aqmysi5k_6ad5c5e4.png",
+        "title": "Environmentally Friendly Solutions",
+        "description": "We prioritize the safety of your family, pets, and the environment. Our Melbourne pest control services incorporate the latest in eco-friendly technologies and methods. Rest assured that our treatments are effective and environmentally responsible.",
+        "image_src": "/assets/images/eco-r8bop2aaa70h95d2wygdaob2gi769mm9p6aqmysi5k_6ad5c5e4.png"
+      }
+    },
+    {
+      "sort_order": 17,
+      "block_key": "why_choose.licensed_and_insured",
+      "section": "why_choose",
+      "label": "Why choose: Licensed and Insured",
+      "type": "json",
+      "image_path": "cms/melbourne/clipboard-r8botv8kyxty9sr3z91hm8w7jxodvl1qilf1plkmcg_c7b8178b.png",
+      "metadata": {
+        "slug": "licensed_and_insured",
+        "id": "d540973",
+        "image": "/assets/images/clipboard-r8botv8kyxty9sr3z91hm8w7jxodvl1qilf1plkmcg_c7b8178b.png",
+        "title": "Licensed and Insured",
+        "description": "7 States Pest Control is a licensed and insured pest control company in Melbourne. Our team of certified technicians undergoes regular training to stay updated on the latest industry standards and best practices. Our Melbourne Pest Control Services",
+        "image_src": "/assets/images/clipboard-r8botv8kyxty9sr3z91hm8w7jxodvl1qilf1plkmcg_c7b8178b.png"
+      }
+    },
+    {
+      "sort_order": 18,
+      "block_key": "why_choose.residential_pest_control",
+      "section": "why_choose",
+      "label": "Why choose: Residential Pest Control",
+      "type": "json",
+      "image_path": "cms/melbourne/insecticide-r8bov92115q5d4qqwckpsebn1cuu7jjidfzs59ir6o_c4acec4d.png",
+      "metadata": {
+        "slug": "residential_pest_control",
+        "id": "2dc8dec",
+        "image": "/assets/images/insecticide-r8bov92115q5d4qqwckpsebn1cuu7jjidfzs59ir6o_c4acec4d.png",
+        "title": "Residential Pest Control",
+        "description": "Protect your home from unwanted pests with our residential pest control services. We tailor our treatments to your specific needs, ensuring a safe and pest-free living environment for you and your family.",
+        "image_src": "/assets/images/insecticide-r8bov92115q5d4qqwckpsebn1cuu7jjidfzs59ir6o_c4acec4d.png"
+      }
+    },
+    {
+      "sort_order": 19,
+      "block_key": "why_choose.commercial_pest_management",
+      "section": "why_choose",
+      "label": "Why choose: Commercial Pest Management",
+      "type": "json",
+      "image_path": "cms/melbourne/sanitizer-r8bow196q6sr1flsboriv77guwzumgnghbkcjkcy00_3f2a2dd6.png",
+      "metadata": {
+        "slug": "commercial_pest_management",
+        "id": "fa36760",
+        "image": "/assets/images/sanitizer-r8bow196q6sr1flsboriv77guwzumgnghbkcjkcy00_3f2a2dd6.png",
+        "title": "Commercial Pest Management",
+        "description": "For businesses in Melbourne, we offer customized pest management solutions to safeguard your reputation and maintain a pest-free workplace. Our services are designed to comply with industry regulations and keep your commercial space pest-free.",
+        "image_src": "/assets/images/sanitizer-r8bow196q6sr1flsboriv77guwzumgnghbkcjkcy00_3f2a2dd6.png"
+      }
+    },
+    {
+      "sort_order": 20,
+      "block_key": "contact.eyebrow",
+      "section": "contact",
+      "label": "Eyebrow",
+      "type": "text",
+      "value": "Get in Touch"
+    },
+    {
+      "sort_order": 21,
+      "block_key": "contact.title",
+      "section": "contact",
+      "label": "Section title",
+      "type": "text",
+      "value": "Contact 7 States Pest Control for Melbourne Pest Control"
+    },
+    {
+      "sort_order": 22,
+      "block_key": "contact.body",
+      "section": "contact",
+      "label": "Body HTML",
+      "type": "html",
+      "value": "<p>Don’t let pests take over your home or business. Contact&nbsp;<a href=\"/\"><strong>7 States Pest Control</strong></a>&nbsp;today for reliable and effective pest control services in Melbourne. Our team is ready to assess your situation and provide tailored solutions to ensure a pest-free environment.</p>"
+    },
+    {
+      "sort_order": 23,
+      "block_key": "contact.button",
+      "section": "contact",
+      "label": "Contact button",
+      "type": "link",
+      "value": "Our Locations",
+      "link_url": "/location"
+    },
+    {
+      "sort_order": 24,
+      "block_key": "services.eyebrow",
+      "section": "services",
+      "label": "Eyebrow",
+      "type": "text",
+      "value": "Our Services"
+    },
+    {
+      "sort_order": 25,
+      "block_key": "services.title",
+      "section": "services",
+      "label": "Section title",
+      "type": "text",
+      "value": "Explore Our Diverse Pest Control Services at 7 States Pest Control"
+    },
+    {
+      "sort_order": 26,
+      "block_key": "services.intro",
+      "section": "services",
+      "label": "Intro HTML",
+      "type": "html",
+      "value": "<p>7 States Pest Control is your one-stop destination<br />to avail of pest control services, including:</p>"
+    },
+    {
+      "sort_order": 27,
+      "block_key": "services.cockroach_control",
+      "section": "services",
+      "label": "Service: Cockroach Control",
+      "type": "json",
+      "image_path": "cms/melbourne/Cockroaches.png-1_56844a04.webp",
+      "metadata": {
+        "slug": "cockroach_control",
+        "id": "b4e8d53",
+        "image": "/assets/images/Cockroaches.png-1_56844a04.webp",
+        "title": "Cockroach Control",
+        "link": "/our-services-cockroach-control",
+        "alt": "cockroach pest control",
+        "image_src": "/assets/images/Cockroaches.png-1_56844a04.webp"
+      }
+    },
+    {
+      "sort_order": 28,
+      "block_key": "services.bed_bug_treatment",
+      "section": "services",
+      "label": "Service: Bed Bug Treatment",
+      "type": "json",
+      "image_path": "cms/melbourne/Bed-Bug.png_1da7e9d8.webp",
+      "metadata": {
+        "slug": "bed_bug_treatment",
+        "id": "b5197fd",
+        "image": "/assets/images/Bed-Bug.png_1da7e9d8.webp",
+        "title": "Bed Bug Treatment",
+        "link": "/our-services-bed-bug-treatment",
+        "alt": "Bed Bug Pest Control",
+        "image_src": "/assets/images/Bed-Bug.png_1da7e9d8.webp"
+      }
+    },
+    {
+      "sort_order": 29,
+      "block_key": "services.ant_pest_control",
+      "section": "services",
+      "label": "Service: Ant Pest Control",
+      "type": "json",
+      "image_path": "cms/melbourne/ant-colony-insect-animals-pest-png_73d1a8ca.png",
+      "metadata": {
+        "slug": "ant_pest_control",
+        "id": "0927b7a",
+        "image": "/assets/images/ant-colony-insect-animals-pest-png_73d1a8ca.png",
+        "title": "Ant Pest Control",
+        "link": "/our-services-ant-pest-control",
+        "alt": "Ant Pest Control",
+        "image_src": "/assets/images/ant-colony-insect-animals-pest-png_73d1a8ca.png"
+      }
+    },
+    {
+      "sort_order": 30,
+      "block_key": "services.mites_control",
+      "section": "services",
+      "label": "Service: Mites Control",
+      "type": "json",
+      "image_path": "cms/melbourne/Mite-Control.png_4c3b4b78.webp",
+      "metadata": {
+        "slug": "mites_control",
+        "id": "bd22386",
+        "image": "/assets/images/Mite-Control.png_4c3b4b78.webp",
+        "title": "Mites Control",
+        "link": "/our-services-mites-control",
+        "alt": "mites control",
+        "image_src": "/assets/images/Mite-Control.png_4c3b4b78.webp"
+      }
+    },
+    {
+      "sort_order": 31,
+      "block_key": "services.fly_control",
+      "section": "services",
+      "label": "Service: Fly Control",
+      "type": "json",
+      "image_path": "cms/melbourne/Fly-Control.png_4cfa4c12.webp",
+      "metadata": {
+        "slug": "fly_control",
+        "id": "24dc16c",
+        "image": "/assets/images/Fly-Control.png_4cfa4c12.webp",
+        "title": "Fly Control",
+        "link": "/our-services-fly-control",
+        "alt": "Fly-Control",
+        "image_src": "/assets/images/Fly-Control.png_4cfa4c12.webp"
+      }
+    },
+    {
+      "sort_order": 32,
+      "block_key": "services.flea_treatment",
+      "section": "services",
+      "label": "Service: Flea Treatment",
+      "type": "json",
+      "image_path": "cms/melbourne/Flea-Control.png_a5558f62.webp",
+      "metadata": {
+        "slug": "flea_treatment",
+        "id": "18fa58c",
+        "image": "/assets/images/Flea-Control.png_a5558f62.webp",
+        "title": "Flea Treatment",
+        "link": "/flea-treatment",
+        "alt": "Flea Control",
+        "image_src": "/assets/images/Flea-Control.png_a5558f62.webp"
+      }
+    },
+    {
+      "sort_order": 33,
+      "block_key": "services.mosquito_pest_control",
+      "section": "services",
+      "label": "Service: Mosquito Pest Control",
+      "type": "json",
+      "image_path": "cms/melbourne/Mosquito-Control.png_90777f1c.webp",
+      "metadata": {
+        "slug": "mosquito_pest_control",
+        "id": "9c2bb37",
+        "image": "/assets/images/Mosquito-Control.png_90777f1c.webp",
+        "title": "Mosquito Pest Control",
+        "link": "/our-services-mosquito-pest-control",
+        "alt": "Mosquito pest Control",
+        "image_src": "/assets/images/Mosquito-Control.png_90777f1c.webp"
+      }
+    },
+    {
+      "sort_order": 34,
+      "block_key": "services.rodent_control",
+      "section": "services",
+      "label": "Service: Rodent Control",
+      "type": "json",
+      "image_path": "cms/melbourne/Rodent-Control.png-1_0842a15c.webp",
+      "metadata": {
+        "slug": "rodent_control",
+        "id": "c46c969",
+        "image": "/assets/images/Rodent-Control.png-1_0842a15c.webp",
+        "title": "Rodent Control",
+        "link": "/rodent-control-in-melbourne",
+        "alt": "Rodent Pest Control",
+        "image_src": "/assets/images/Rodent-Control.png-1_0842a15c.webp"
+      }
+    },
+    {
+      "sort_order": 35,
+      "block_key": "services.moth_control",
+      "section": "services",
+      "label": "Service: Moth Control",
+      "type": "json",
+      "image_path": "cms/melbourne/Moth-Control.png-1_737c5080.webp",
+      "metadata": {
+        "slug": "moth_control",
+        "id": "fa346a5",
+        "image": "/assets/images/Moth-Control.png-1_737c5080.webp",
+        "title": "Moth Control",
+        "link": "/our-services-moth-control",
+        "alt": "Moth Control",
+        "image_src": "/assets/images/Moth-Control.png-1_737c5080.webp"
+      }
+    },
+    {
+      "sort_order": 36,
+      "block_key": "services.wasp_control_services",
+      "section": "services",
+      "label": "Service: Wasp Control Services",
+      "type": "json",
+      "image_path": "cms/melbourne/Wasp-Removal.png-1_2802cb47.webp",
+      "metadata": {
+        "slug": "wasp_control_services",
+        "id": "70781f4",
+        "image": "/assets/images/Wasp-Removal.png-1_2802cb47.webp",
+        "title": "Wasp Control Services",
+        "link": "/wasp-removal-melbourne",
+        "alt": "Wasp Removal melbourne",
+        "image_src": "/assets/images/Wasp-Removal.png-1_2802cb47.webp"
+      }
+    },
+    {
+      "sort_order": 37,
+      "block_key": "services.spider_control_treatment",
+      "section": "services",
+      "label": "Service: Spider Control Treatment",
+      "type": "json",
+      "image_path": "cms/melbourne/Spider-Control.png-2_18a07ad3.webp",
+      "metadata": {
+        "slug": "spider_control_treatment",
+        "id": "d467c55",
+        "image": "/assets/images/Spider-Control.png-2_18a07ad3.webp",
+        "title": "Spider Control Treatment",
+        "link": "/our-services-spider-control-treatment",
+        "alt": "spider control",
+        "image_src": "/assets/images/Spider-Control.png-2_18a07ad3.webp"
+      }
+    },
+    {
+      "sort_order": 38,
+      "block_key": "services.silverfish_treatment",
+      "section": "services",
+      "label": "Service: Silverfish Treatment",
+      "type": "json",
+      "image_path": "cms/melbourne/Silver-Fish.png_cbd8da70.webp",
+      "metadata": {
+        "slug": "silverfish_treatment",
+        "id": "baff5c3",
+        "image": "/assets/images/Silver-Fish.png_cbd8da70.webp",
+        "title": "Silverfish Treatment",
+        "link": "/our-services-silverfish-treatment",
+        "alt": "silver fish control",
+        "image_src": "/assets/images/Silver-Fish.png_cbd8da70.webp"
+      }
+    }
+  ]
+}

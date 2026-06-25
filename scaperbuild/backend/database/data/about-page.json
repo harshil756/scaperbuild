@@ -1,0 +1,580 @@
+{
+  "slug": "about-us",
+  "title": "About Us",
+  "seo_title": "Australia's No.1 Pest Control Company | 7 States Pest Control",
+  "seo_description": "Melbourne #1 Pest Control Company: Say goodbye to unwanted guests! We offer fast, effective solutions for all pests. Free Quotes. Call Now!",
+  "body_class": "wp-singular page-template page-template-elementor_header_footer page page-id-16 wp-custom-logo wp-embed-responsive wp-theme-hello-elementor elementor-default elementor-template-full-width elementor-kit-9 elementor-page elementor-page-16",
+  "elementor_id": 16,
+  "is_published": true,
+  "blocks": [
+    {
+      "sort_order": 0,
+      "block_key": "background.hero.hidden_banner",
+      "section": "hero",
+      "label": "Hidden banner background",
+      "type": "background",
+      "background_image_path": "cms/about/URUU-01-2048x1365-2_7c216e6d.jpg",
+      "metadata": {
+        "elementor_id": "f945d28",
+        "filename": "URUU-01-2048x1365-2_7c216e6d.jpg"
+      }
+    },
+    {
+      "sort_order": 1,
+      "block_key": "background.hero",
+      "section": "hero",
+      "label": "Hero section background",
+      "type": "background",
+      "background_image_path": "cms/about/About-Pest-Control-6.jpg-3_47cafc0b.webp",
+      "metadata": {
+        "elementor_id": "ec28cb9",
+        "filename": "About-Pest-Control-6.jpg-3_47cafc0b.webp"
+      }
+    },
+    {
+      "sort_order": 2,
+      "block_key": "background.cta",
+      "section": "cta",
+      "label": "Talk to us section background",
+      "type": "background",
+      "background_image_path": "cms/about/mainslide-01-1_2921475d.jpg",
+      "metadata": {
+        "elementor_id": "5529364",
+        "filename": "mainslide-01-1_2921475d.jpg"
+      }
+    },
+    {
+      "sort_order": 3,
+      "block_key": "background.services.rodent",
+      "section": "services",
+      "label": "Rodent card background",
+      "type": "background",
+      "background_image_path": "cms/about/rodent_47b84b6f.svg",
+      "metadata": {
+        "elementor_id": "20c12d2",
+        "filename": "rodent_47b84b6f.svg"
+      }
+    },
+    {
+      "sort_order": 4,
+      "block_key": "background.services.cockroach",
+      "section": "services",
+      "label": "Cockroach card background",
+      "type": "background",
+      "background_image_path": "cms/about/cockroach-control_8e96098e.svg",
+      "metadata": {
+        "elementor_id": "e22eba8",
+        "filename": "cockroach-control_8e96098e.svg"
+      }
+    },
+    {
+      "sort_order": 5,
+      "block_key": "background.services.bed_bug",
+      "section": "services",
+      "label": "Bed bug card background",
+      "type": "background",
+      "background_image_path": "cms/about/bedbugs_7ca32fab.svg",
+      "metadata": {
+        "elementor_id": "f136ba6",
+        "filename": "bedbugs_7ca32fab.svg"
+      }
+    },
+    {
+      "sort_order": 6,
+      "block_key": "background.services.ant",
+      "section": "services",
+      "label": "Ant card background",
+      "type": "background",
+      "background_image_path": "cms/about/ant-pest-control_9aa8a323.svg",
+      "metadata": {
+        "elementor_id": "14a5f46",
+        "filename": "ant-pest-control_9aa8a323.svg"
+      }
+    },
+    {
+      "sort_order": 7,
+      "block_key": "background.why_choose",
+      "section": "why_choose",
+      "label": "Why Choose section background",
+      "type": "background",
+      "background_image_path": "cms/about/Explore-banner-1_63a452ce.png",
+      "metadata": {
+        "elementor_id": "59f28062",
+        "filename": "Explore-banner-1_63a452ce.png"
+      }
+    },
+    {
+      "sort_order": 8,
+      "block_key": "background.process.preventive",
+      "section": "process",
+      "label": "Preventive steps column background",
+      "type": "background",
+      "background_image_path": "cms/about/Pest-Control-Professionals.jpg-1_216510ed.webp",
+      "metadata": {
+        "elementor_id": "4972cab",
+        "filename": "Pest-Control-Professionals.jpg-1_216510ed.webp"
+      }
+    },
+    {
+      "sort_order": 9,
+      "block_key": "hero.breadcrumb",
+      "section": "hero",
+      "label": "Breadcrumb current page",
+      "type": "text",
+      "value": "About Us"
+    },
+    {
+      "sort_order": 10,
+      "block_key": "hero.title",
+      "section": "hero",
+      "label": "Section title",
+      "type": "text",
+      "value": "About Us"
+    },
+    {
+      "sort_order": 11,
+      "block_key": "hero.heading",
+      "section": "hero",
+      "label": "Main heading",
+      "type": "text",
+      "value": "Expert Pest Control Services in Melbourne"
+    },
+    {
+      "sort_order": 12,
+      "block_key": "hero.body",
+      "section": "hero",
+      "label": "Intro body (HTML)",
+      "type": "html",
+      "value": "<p><a href=\"/\"><strong>7 States Pest Control</strong></a>&nbsp;is a pioneer in the pest control industry, with a proven track record of providing exceptional service to residential and commercial clients across Melbourne since last 7 year. Our team of highly trained and experienced technicians is equipped with the latest knowledge and techniques to tackle any pest problem effectively and safely.</p><p>We are committed to providing you with permanent solutions. With our focus on quality services and professional minds, we strive to deliver the best pest-controlling solutions.&nbsp;</p>"
+    },
+    {
+      "sort_order": 13,
+      "block_key": "hero.button",
+      "section": "hero",
+      "label": "Find Services button",
+      "type": "link",
+      "value": "Find Services",
+      "link_url": "/pest-control-services"
+    },
+    {
+      "sort_order": 14,
+      "block_key": "quote_form.title",
+      "section": "quote_form",
+      "label": "Form heading",
+      "type": "text",
+      "value": "Get A Free Quote Now!"
+    },
+    {
+      "sort_order": 15,
+      "block_key": "quote_form.subtitle",
+      "section": "quote_form",
+      "label": "Form subtitle",
+      "type": "text",
+      "value": "Have an enquiry? Leave us your details and we’ll call you back during business hours."
+    },
+    {
+      "sort_order": 16,
+      "block_key": "quote_form.submit_text",
+      "section": "quote_form",
+      "label": "Submit button text",
+      "type": "text",
+      "value": "Submit Quote"
+    },
+    {
+      "sort_order": 17,
+      "block_key": "stand_for.counter_title",
+      "section": "stand_for",
+      "label": "Counter label",
+      "type": "text",
+      "value": "Projects Done"
+    },
+    {
+      "sort_order": 18,
+      "block_key": "stand_for.counter",
+      "section": "stand_for",
+      "label": "Projects counter",
+      "type": "json",
+      "metadata": {
+        "from": 0,
+        "to": 10000,
+        "display": "10,000",
+        "suffix": "+",
+        "duration": 2000
+      }
+    },
+    {
+      "sort_order": 19,
+      "block_key": "stand_for.image",
+      "section": "stand_for",
+      "label": "Stand for section image",
+      "type": "image",
+      "image_path": "cms/about/wan_f3b9d52e.jpg",
+      "metadata": {
+        "alt": "7 States Pest Control",
+        "image_src": "/assets/images/wan_f3b9d52e.jpg"
+      }
+    },
+    {
+      "sort_order": 20,
+      "block_key": "stand_for.eyebrow",
+      "section": "stand_for",
+      "label": "Eyebrow",
+      "type": "text",
+      "value": "What We Stand For"
+    },
+    {
+      "sort_order": 21,
+      "block_key": "stand_for.title",
+      "section": "stand_for",
+      "label": "Section title",
+      "type": "text",
+      "value": "Our Purpose and Principles"
+    },
+    {
+      "sort_order": 22,
+      "block_key": "stand_for.purpose",
+      "section": "stand_for",
+      "label": "Purpose paragraph",
+      "type": "html",
+      "value": "<p>Our purpose is to protect people, property, and the environment from the threats posed by pests, ensuring peace of mind through safe and effective pest management.</p>"
+    },
+    {
+      "sort_order": 23,
+      "block_key": "stand_for.mission",
+      "section": "stand_for",
+      "label": "Stand for mission",
+      "type": "json",
+      "metadata": {
+        "title": "Our Mission",
+        "text": "Our mission is to safeguard our clients’ homes and businesses from the threats posed by pests. We achieve this by providing comprehensive pest control solutions that are tailored to their specific needs. We are committed to using eco-friendly methods whenever possible and ensuring the safety of our clients, their families, and pets."
+      }
+    },
+    {
+      "sort_order": 24,
+      "block_key": "stand_for.vision",
+      "section": "stand_for",
+      "label": "Stand for vision",
+      "type": "json",
+      "metadata": {
+        "title": "Our Vision",
+        "text": "We envision a Melbourne free from the worries and dangers associated with pests. Through our dedication to exceptional service, innovative solutions, and community education, we strive to be the leading pest control company in Melbourne, recognized for our reliability, expertise, and commitment to environmental responsibility."
+      }
+    },
+    {
+      "sort_order": 25,
+      "block_key": "cta.title",
+      "section": "cta",
+      "label": "CTA title",
+      "type": "text",
+      "value": "Talk to us today"
+    },
+    {
+      "sort_order": 26,
+      "block_key": "cta.body",
+      "section": "cta",
+      "label": "CTA body (HTML)",
+      "type": "html",
+      "value": "<p>Do you have any specific questions about us, our services, or anything related to pest infestation issues? Call us today on&nbsp;<a href=\"tel:+61434660060\">( +61 434 660 060 )</a>&nbsp;or use our contact form to connect with our&nbsp;<b>7 States Pest Control</b>. You can get answers to your questions, get upfront quotes for the&nbsp;<b>7 States Pest Control</b>&nbsp;issues, and receive high-quality tailored services.</p>"
+    },
+    {
+      "sort_order": 27,
+      "block_key": "cta.button",
+      "section": "cta",
+      "label": "Contact Us button",
+      "type": "link",
+      "value": "Contact Us",
+      "link_url": "/contact-us"
+    },
+    {
+      "sort_order": 28,
+      "block_key": "services.eyebrow",
+      "section": "services",
+      "label": "Services eyebrow",
+      "type": "text",
+      "value": "Our Services"
+    },
+    {
+      "sort_order": 29,
+      "block_key": "services.title",
+      "section": "services",
+      "label": "Services title",
+      "type": "text",
+      "value": "Expert Pest Control Services We Offer in Melbourne"
+    },
+    {
+      "sort_order": 30,
+      "block_key": "services.intro",
+      "section": "services",
+      "label": "Services intro",
+      "type": "html",
+      "value": "<p>We offer control and extermination services for a wide range of pests and help our customers to ensure a clean, safe, and healthy environment at their property. Our 7 States Pest Control services include the following:</p>"
+    },
+    {
+      "sort_order": 31,
+      "block_key": "services.rodent",
+      "section": "services",
+      "label": "Service card: Rodent Control",
+      "type": "json",
+      "image_path": "cms/about/Rodent-Control.png-1_0842a15c.webp",
+      "metadata": {
+        "slug": "rodent",
+        "title": "Rodent Control",
+        "price_text": "From just $199",
+        "badge": "$199",
+        "alt": "Rodent Pest Control",
+        "image": "/assets/images/Rodent-Control.png-1_0842a15c.webp",
+        "call_label": "Call Now",
+        "call_url": "tel:+61434660060",
+        "image_src": "/assets/images/Rodent-Control.png-1_0842a15c.webp"
+      }
+    },
+    {
+      "sort_order": 32,
+      "block_key": "services.cockroach",
+      "section": "services",
+      "label": "Service card: Cockroach Control",
+      "type": "json",
+      "image_path": "cms/about/Cockroaches.png-1_56844a04.webp",
+      "metadata": {
+        "slug": "cockroach",
+        "title": "Cockroach Control",
+        "price_text": "From just $149",
+        "badge": "$149",
+        "alt": "cockroach pest control",
+        "image": "/assets/images/Cockroaches.png-1_56844a04.webp",
+        "call_label": "Call Now",
+        "call_url": "tel:+61434660060",
+        "image_src": "/assets/images/Cockroaches.png-1_56844a04.webp"
+      }
+    },
+    {
+      "sort_order": 33,
+      "block_key": "services.bed_bug",
+      "section": "services",
+      "label": "Service card: Bed Bug Treatment",
+      "type": "json",
+      "image_path": "cms/about/Bed-Bug.png_1da7e9d8.webp",
+      "metadata": {
+        "slug": "bed_bug",
+        "title": "Bed Bug Treatment",
+        "price_text": "From just $139",
+        "badge": "$139",
+        "alt": "Bed Bug Pest Control",
+        "image": "/assets/images/Bed-Bug.png_1da7e9d8.webp",
+        "call_label": "Call Now",
+        "call_url": "tel:+61434660060",
+        "image_src": "/assets/images/Bed-Bug.png_1da7e9d8.webp"
+      }
+    },
+    {
+      "sort_order": 34,
+      "block_key": "services.ant",
+      "section": "services",
+      "label": "Service card: Ant Pest Control",
+      "type": "json",
+      "image_path": "cms/about/ant-colony-insect-animals-pest-png_73d1a8ca.png",
+      "metadata": {
+        "slug": "ant",
+        "title": "Ant Pest Control",
+        "price_text": "From just $139",
+        "badge": "$139",
+        "alt": "Ant Pest Control",
+        "image": "/assets/images/ant-colony-insect-animals-pest-png_73d1a8ca.png",
+        "call_label": "Call Now",
+        "call_url": "tel:+61434660060",
+        "image_src": "/assets/images/ant-colony-insect-animals-pest-png_73d1a8ca.png"
+      }
+    },
+    {
+      "sort_order": 35,
+      "block_key": "services.more_button",
+      "section": "services",
+      "label": "More Services button",
+      "type": "link",
+      "value": "More Services",
+      "link_url": "/our-services"
+    },
+    {
+      "sort_order": 36,
+      "block_key": "why_choose.eyebrow",
+      "section": "why_choose",
+      "label": "Why Choose eyebrow",
+      "type": "text",
+      "value": "Why Choose"
+    },
+    {
+      "sort_order": 37,
+      "block_key": "why_choose.title",
+      "section": "why_choose",
+      "label": "Why Choose title",
+      "type": "text",
+      "value": "7 State Pest Control ?"
+    },
+    {
+      "sort_order": 38,
+      "block_key": "why_choose.intro",
+      "section": "why_choose",
+      "label": "Why Choose intro",
+      "type": "html",
+      "value": "<p>There are many reasons to choose 7 States Pest Control for your pest control needs. Here are just a few:</p>"
+    },
+    {
+      "sort_order": 39,
+      "block_key": "why_choose.list_left",
+      "section": "why_choose",
+      "label": "Why Choose list (left)",
+      "type": "json",
+      "metadata": {
+        "items": [
+          "Excellent Customer Service",
+          "Quick and Efficient Service",
+          "Affordable Pricing",
+          "Ongoing Support and Maintenance"
+        ]
+      }
+    },
+    {
+      "sort_order": 40,
+      "block_key": "why_choose.list_right",
+      "section": "why_choose",
+      "label": "Why Choose list (right)",
+      "type": "json",
+      "metadata": {
+        "items": [
+          "Experienced and Qualified Technicians",
+          "Safe and Eco-Friendly Solutions",
+          "Customized Treatment Plans",
+          "Guaranteed Results"
+        ]
+      }
+    },
+    {
+      "sort_order": 41,
+      "block_key": "process.eyebrow",
+      "section": "process",
+      "label": "Process eyebrow",
+      "type": "text",
+      "value": "Our Process"
+    },
+    {
+      "sort_order": 42,
+      "block_key": "process.title",
+      "section": "process",
+      "label": "Process title",
+      "type": "text",
+      "value": "Treatment Procedure at 7 State Pest Control"
+    },
+    {
+      "sort_order": 43,
+      "block_key": "process.intro",
+      "section": "process",
+      "label": "Process intro",
+      "type": "html",
+      "value": "<p>At 7 State Pest Control, we follow a comprehensive and systematic approach to ensure effective pest management for your home or business. Our treatment procedure is designed to tackle the root of the problem, providing long-term solutions rather than temporary fixes.</p>"
+    },
+    {
+      "sort_order": 44,
+      "block_key": "process.inspection",
+      "section": "process",
+      "label": "Process step: How We Inspect",
+      "type": "json",
+      "image_path": "cms/about/Inspect.jpg-1_c97bf8a3.webp",
+      "metadata": {
+        "title": "How We Inspect",
+        "body_html": "<p>It helps decide on the right options for treatments. We further check your personal belongings, including products. As soon as our inspection is finished, our pest controller will advise things about the infestation.</p><p>It helps decide on the right options for treatments. We further check your personal belongings, including products. As soon as our inspection is finished, our pest controller will advise things about the infestation.</p>",
+        "list_items": [],
+        "alt": "7 States Pest Control",
+        "image_src": "/assets/images/Inspect.jpg-1_c97bf8a3.webp"
+      }
+    },
+    {
+      "sort_order": 45,
+      "block_key": "process.treatment_plan",
+      "section": "process",
+      "label": "Process step: Treatment Planning",
+      "type": "json",
+      "image_path": "cms/about/End-of-Lease-2.png_0c28dc03.webp",
+      "metadata": {
+        "title": "Treatment Planning",
+        "body_html": "<p>Depending on the finding, we create the treatment plan for the property that includes the process, guidelines, timelines, the expected outcome, etc. We prepare a treatment plan to:</p>",
+        "list_items": [
+          "Reduce clutter",
+          "Clean your personal belongings",
+          "Eradicate bed bug habitats, etc."
+        ],
+        "alt": "7 States Pest Control",
+        "image_src": "/assets/images/End-of-Lease-2.png_0c28dc03.webp"
+      }
+    },
+    {
+      "sort_order": 46,
+      "block_key": "process.eco_friendly",
+      "section": "process",
+      "label": "Process step: Committed to Eco-Friendly Pest Control Solutions",
+      "type": "json",
+      "image_path": "cms/about/WhatsApp-Image-2024-08-28-at-15.35.06_bc7d2870-1-1024x1_359a34a8.jpg",
+      "metadata": {
+        "title": "Committed to Eco-Friendly Pest Control Solutions",
+        "body_html": "<p>At our firm, we are dedicated to maintaining an eco-friendly approach in all our pest control practices. We believe in prioritizing the health and safety of our customers, which is why we refrain from using chemical treatments. Instead, we utilize non-chemical procedures to ensure that your home is not only free from pests but also safe for you and your family.</p><p>Our eco-friendly approach means we thoroughly address every infested material and corner of your house to effectively eliminate pests while minimizing any negative impact on the environment. We understand the importance of maintaining your daily routines, so we work efficiently to provide a bug-free environment with minimal disruption to your regular activities.</p>",
+        "list_items": [],
+        "alt": "7 States Pest Control",
+        "image_src": "/assets/images/WhatsApp-Image-2024-08-28-at-15.35.06_bc7d2870-1-1024x1_359a34a8.jpg"
+      }
+    },
+    {
+      "sort_order": 47,
+      "block_key": "process.preventive",
+      "section": "process",
+      "label": "Process step: What Are Some Preventive Steps 7 States Pest Control Professionals Recommend?",
+      "type": "json",
+      "image_path": null,
+      "metadata": {
+        "title": "What Are Some Preventive Steps 7 States Pest Control Professionals Recommend?",
+        "body_html": "<p>Our pest control treatment is a permanent solution, but it does not guarantee permanent results in the future. That means you must take some precautionary steps to control them in the environment. Don’t worry because we will provide you with some recommendations. Here are they:</p><ul><li>Apply surface pesticides on hiding spots but do not apply them on bedding</li><li>You must clean &amp; vacuum bedding &amp; surfaces thoroughly</li><li>Steam clean your carpets</li><li>Wash clothing and bedding with hot water &amp; dry it</li></ul><p>With our professional consultation, treating pest control becomes the savior solution.</p>",
+        "list_items": [],
+        "alt": "",
+        "image_src": null
+      }
+    },
+    {
+      "sort_order": 48,
+      "block_key": "reviews.eyebrow",
+      "section": "reviews",
+      "label": "Reviews eyebrow",
+      "type": "text",
+      "value": "Clients Reviews"
+    },
+    {
+      "sort_order": 49,
+      "block_key": "reviews.title",
+      "section": "reviews",
+      "label": "Reviews title",
+      "type": "text",
+      "value": "7 States Pest Control for Reliable Pest Management Solutions"
+    },
+    {
+      "sort_order": 50,
+      "block_key": "reviews.subtitle",
+      "section": "reviews",
+      "label": "Reviews subtitle",
+      "type": "text",
+      "value": "Reviews of Our Pest Control Services"
+    },
+    {
+      "sort_order": 51,
+      "block_key": "reviews.rating_label",
+      "section": "reviews",
+      "label": "Rating label",
+      "type": "text",
+      "value": "EXCELLENT"
+    },
+    {
+      "sort_order": 52,
+      "block_key": "reviews.count_text",
+      "section": "reviews",
+      "label": "Reviews count text",
+      "type": "html",
+      "value": "<p>Based on&nbsp;45 reviews</p>"
+    }
+  ]
+}
