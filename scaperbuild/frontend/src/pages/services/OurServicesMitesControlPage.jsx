@@ -1,12 +1,22 @@
 import PhoneNumberInput from '../../components/PhoneNumberInput.jsx'
+import ServiceCmsContentBlocks from '../../components/service/ServiceCmsContentBlocks.jsx'
+import ServiceFaqCms from '../../components/service/ServiceFaqCms.jsx'
+import { cmsText } from '../../utils/cmsMedia.js'
+import usePageCms from '../../hooks/usePageCms.js'
+import ServiceCmsStyles from '../../components/service/ServiceCmsStyles.jsx'
+import CmsHtml from '../../components/home/CmsHtml.jsx'
 import usePageMeta from '../../hooks/usePageMeta.js'
 import { Link } from 'react-router-dom'
 
 export default function OurServicesMitesControlPage() {
-  usePageMeta('our_services_mites_control')
+  const { page, content: c } = usePageCms('our-services-mites-control')
+  usePageMeta('our_services_mites_control', page)
 
   return (
     <>
+      <ServiceCmsStyles content={c} heroBgId="11474e8" ctaBgId="057b4d3" />
+      <ServiceFaqCms faq={c?.faq} accordionWidgetId="5146096" />
+      <ServiceCmsContentBlocks content={c} />
       <div className="elementor elementor-1569" data-elementor-id={1569} data-elementor-post-type="page" data-elementor-type="wp-page">
         <div className="elementor-element elementor-element-11474e8 e-flex e-con-boxed e-con e-parent e-lazyloaded" data-element_type="container" data-id="11474e8" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
           <div className="e-con-inner">
@@ -22,14 +32,14 @@ export default function OurServicesMitesControlPage() {
                       <a href="#">
                         <span className="elementor-icon-list-icon">
                           <svg aria-hidden="true" className="e-font-icon-svg e-fas-angle-right" viewBox="0 0 256 512" xmlns="http://www.w3.org/2000/svg"><path d="M224.3 273l-136 136c-9.4 9.4-24.6 9.4-33.9 0l-22.6-22.6c-9.4-9.4-9.4-24.6 0-33.9l96.4-96.4-96.4-96.4c-9.4-9.4-9.4-24.6 0-33.9L54.3 103c9.4-9.4 24.6-9.4 33.9 0l136 136c9.5 9.4 9.5 24.6.1 34z" /></svg> </span>
-                        <span className="elementor-icon-list-text">Services</span>
+                        <span className="elementor-icon-list-text">{cmsText(c?.hero?.breadcrumb_parent, 'Services')}</span>
                       </a>
                     </li>
                     <li className="elementor-icon-list-item elementor-inline-item">
                       <a href="#">
                         <span className="elementor-icon-list-icon">
                           <svg aria-hidden="true" className="e-font-icon-svg e-fas-angle-right" viewBox="0 0 256 512" xmlns="http://www.w3.org/2000/svg"><path d="M224.3 273l-136 136c-9.4 9.4-24.6 9.4-33.9 0l-22.6-22.6c-9.4-9.4-9.4-24.6 0-33.9l96.4-96.4-96.4-96.4c-9.4-9.4-9.4-24.6 0-33.9L54.3 103c9.4-9.4 24.6-9.4 33.9 0l136 136c9.5 9.4 9.5 24.6.1 34z" /></svg> </span>
-                        <span className="elementor-icon-list-text">mites control</span>
+                        <span className="elementor-icon-list-text">{cmsText(c?.hero?.breadcrumb_current, 'mites control')}</span>
                       </a>
                     </li>
                   </ul>
@@ -37,25 +47,26 @@ export default function OurServicesMitesControlPage() {
               </div>
               <div className="elementor-element elementor-element-a5d8af6 elementor-widget elementor-widget-heading" data-element_type="widget" data-id="a5d8af6" data-settings="{&quot;_animation&quot;:&quot;none&quot;}" data-widget_type="heading.default">
                 <div className="elementor-widget-container">
-                  <h2 className="elementor-heading-title elementor-size-default">Say Goodbye to Harmful Mites</h2> </div>
+                  <h2 className="elementor-heading-title elementor-size-default">{cmsText(c?.hero?.title, 'Say Goodbye to Harmful Mites')}</h2> </div>
               </div>
               <div className="elementor-element elementor-element-36b5536 elementor-widget elementor-widget-heading" data-element_type="widget" data-id="36b5536" data-settings="{&quot;_animation&quot;:&quot;none&quot;}" data-widget_type="heading.default">
                 <div className="elementor-widget-container">
-                  <h1 className="elementor-heading-title elementor-size-default">Bid Adieu to Harmful &amp; Dangerous Mites from Your Home</h1> </div>
+                  <h1 className="elementor-heading-title elementor-size-default">{cmsText(c?.hero?.heading, 'Bid Adieu to Harmful &amp; Dangerous Mites from Your Home')}</h1> </div>
               </div>
               <div className="elementor-element elementor-element-462693a elementor-widget elementor-widget-text-editor" data-element_type="widget" data-id="462693a" data-widget_type="text-editor.default">
                 <div className="elementor-widget-container">
-                  <div className="elementor-element elementor-element-de434cf elementor-widget elementor-widget-text-editor" data-element_type="widget" data-id="de434cf" data-settings="{&quot;ekit_we_effect_on&quot;:&quot;none&quot;}" data-widget_type="text-editor.default"><div className="elementor-widget-container"><div className="elementor-element elementor-element-de434cf elementor-widget elementor-widget-text-editor" data-element_type="widget" data-id="de434cf" data-settings="{&quot;ekit_we_effect_on&quot;:&quot;none&quot;}" data-widget_type="text-editor.default"><div className="elementor-widget-container"><p>The term “mite” refers to microscopic arthropods having jointed legs and external skeletons that are less than 1 mm long (hence the name). Mites are the most successful and diversified group of invertebrates among arthropods; while some are parasitic, the majority are non-parasitic and free-living. On land and in the water, mites can live and reproduce, and the majority of them do not damage animals. Mites can go unnoticed because of their tiny size.</p><p>Mites are very small creatures but can be a huge problem for you. They are quite small, too, making them hard to identify. We are here to help you with mites removal in Melbourne. Contact 7 State Pest Control today for reliable,&nbsp;<Link to="/"><strong>affordable pest control in Melbourne&nbsp;</strong></Link>solutions<strong>.</strong></p></div></div></div></div> </div>
+                  <CmsHtml html={c?.hero?.intro} />
+                </div>
               </div>
             </div>
             <div className="elementor-element elementor-element-edabf93 e-con-full e-flex e-con e-child" data-element_type="container" data-id="edabf93" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
               <div className="elementor-element elementor-element-f2b83cb elementor-widget elementor-widget-heading" data-element_type="widget" data-id="f2b83cb" data-widget_type="heading.default">
                 <div className="elementor-widget-container">
-                  <h2 className="elementor-heading-title elementor-size-default">Get A Free Quote Now!</h2> </div>
+                  <h2 className="elementor-heading-title elementor-size-default">{cmsText(c?.quote_form?.title, 'Get A Free Quote Now!')}</h2> </div>
               </div>
               <div className="elementor-element elementor-element-5e9c808 elementor-widget elementor-widget-heading" data-element_type="widget" data-id="5e9c808" data-widget_type="heading.default">
                 <div className="elementor-widget-container">
-                  <h6 className="elementor-heading-title elementor-size-default">Have an enquiry? Leave us your details and we’ll call you back during business hours.</h6> </div>
+                  <h6 className="elementor-heading-title elementor-size-default">{cmsText(c?.quote_form?.subtitle, 'Have an enquiry? Leave us your details and we\'ll call you back during business hours.')}</h6> </div>
               </div>
               <div className="elementor-element elementor-element-9a083e6 elementor-button-align-center elementor-widget elementor-widget-form" data-element_type="widget" data-id="9a083e6" data-settings="{&quot;step_next_label&quot;:&quot;Next&quot;,&quot;step_previous_label&quot;:&quot;Previous&quot;,&quot;button_width&quot;:&quot;100&quot;,&quot;step_type&quot;:&quot;number_text&quot;,&quot;step_icon_shape&quot;:&quot;circle&quot;}" data-widget_type="form.default">
                 <div className="elementor-widget-container">
@@ -654,7 +665,7 @@ export default function OurServicesMitesControlPage() {
                         </div>
                         <div className="elementor-element elementor-element-327aacd elementor-widget elementor-widget-heading" data-element_type="widget" data-id="327aacd" data-settings="{&quot;_animation&quot;:&quot;none&quot;}" data-widget_type="heading.default">
                           <div className="elementor-widget-container">
-                            <h2 className="elementor-heading-title elementor-size-default">7 States Pest Control for Reliable Pest Management Solutions</h2> </div>
+                            <h2 className="elementor-heading-title elementor-size-default">{cmsText(c?.reviews?.eyebrow, '7 States Pest Control for Reliable Pest Management Solutions')}</h2> </div>
                         </div>
                       </div>
                     </div>
@@ -662,11 +673,11 @@ export default function OurServicesMitesControlPage() {
                       <div className="elementor-widget-wrap elementor-element-populated">
                         <div className="elementor-element elementor-element-71b99fa elementor-widget elementor-widget-heading" data-element_type="widget" data-id="71b99fa" data-widget_type="heading.default">
                           <div className="elementor-widget-container">
-                            <h3 className="elementor-heading-title elementor-size-default">Reviews of Our Pest Control Services</h3> </div>
+                            <h3 className="elementor-heading-title elementor-size-default">{cmsText(c?.reviews?.subtitle, 'Reviews of Our Pest Control Services')}</h3> </div>
                         </div>
                         <div className="elementor-element elementor-element-6085bb0 elementor-widget elementor-widget-heading" data-element_type="widget" data-id="6085bb0" data-widget_type="heading.default">
                           <div className="elementor-widget-container">
-                            <h6 className="elementor-heading-title elementor-size-default">EXCELLENT</h6> </div>
+                            <h6 className="elementor-heading-title elementor-size-default">{cmsText(c?.reviews?.title, 'EXCELLENT')}</h6> </div>
                         </div>
                         <div className="elementor-element elementor-element-ccabe5b elementor-widget elementor-widget-rating" data-element_type="widget" data-id="ccabe5b" data-widget_type="rating.default">
                           <div className="elementor-widget-container">
@@ -752,7 +763,7 @@ export default function OurServicesMitesControlPage() {
               <div className="elementor-element elementor-element-5ca84cf e-con-full e-flex e-con e-child" data-element_type="container" data-id="5ca84cf" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
                 <div className="elementor-element elementor-element-7a98ae6 elementor-widget elementor-widget-heading" data-element_type="widget" data-id="7a98ae6" data-widget_type="heading.default">
                   <div className="elementor-widget-container">
-                    <h2 className="elementor-heading-title elementor-size-default">Get A Free Quote Now!</h2> </div>
+                    <h2 className="elementor-heading-title elementor-size-default">{cmsText(c?.quote_form?.title, 'Get A Free Quote Now!')}</h2> </div>
                 </div>
                 <div className="elementor-element elementor-element-7c02a8b elementor-button-align-center elementor-widget elementor-widget-form" data-element_type="widget" data-id="7c02a8b" data-settings="{&quot;step_next_label&quot;:&quot;Next&quot;,&quot;step_previous_label&quot;:&quot;Previous&quot;,&quot;button_width&quot;:&quot;100&quot;,&quot;step_type&quot;:&quot;number_text&quot;,&quot;step_icon_shape&quot;:&quot;circle&quot;}" data-widget_type="form.default">
                   <div className="elementor-widget-container">

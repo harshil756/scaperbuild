@@ -32,15 +32,20 @@ const PAGE_META = {
   ...THANK_YOU_PAGE_META,
 }
 
-export default function usePageMeta(pageKey) {
+export default function usePageMeta(pageKey, cmsPage = null) {
   useEffect(() => {
     const meta = PAGE_META[pageKey]
     if (!meta) return undefined
 
     const slug = pageKeyToSlug(pageKey)
     const seoExtra = PAGE_SEO_EXTRA[slug] ?? {}
-    const state = applyPageSeo(meta, seoExtra)
+    const mergedMeta = {
+      ...meta,
+      ...(cmsPage?.seo_title ? { title: cmsPage.seo_title } : {}),
+      ...(cmsPage?.seo_description ? { description: cmsPage.seo_description } : {}),
+    }
+    const state = applyPageSeo(mergedMeta, seoExtra)
 
     return () => restorePageSeo(state)
-  }, [pageKey])
+  }, [pageKey, cmsPage])
 }

@@ -1,12 +1,22 @@
 import PhoneNumberInput from '../../components/PhoneNumberInput.jsx'
+import ServiceCmsContentBlocks from '../../components/service/ServiceCmsContentBlocks.jsx'
+import ServiceFaqCms from '../../components/service/ServiceFaqCms.jsx'
+import { cmsText } from '../../utils/cmsMedia.js'
+import usePageCms from '../../hooks/usePageCms.js'
+import ServiceCmsStyles from '../../components/service/ServiceCmsStyles.jsx'
+import CmsHtml from '../../components/home/CmsHtml.jsx'
 import usePageMeta from '../../hooks/usePageMeta.js'
 import { Link } from 'react-router-dom'
 
 export default function WaspRemovalMelbournePage() {
-  usePageMeta('wasp_removal_melbourne')
+  const { page, content: c } = usePageCms('wasp-removal-melbourne')
+  usePageMeta('wasp_removal_melbourne', page)
 
   return (
     <>
+      <ServiceCmsStyles content={c} heroBgId="4ac47ae" ctaBgId="057b4d3" />
+      <ServiceFaqCms faq={c?.faq} accordionWidgetId="5146096" />
+      <ServiceCmsContentBlocks content={c} />
       <div className="elementor elementor-1638" data-elementor-id={1638} data-elementor-post-type="page" data-elementor-type="wp-page">
         <div className="elementor-element elementor-element-4ac47ae e-flex e-con-boxed e-con e-parent e-lazyloaded" data-element_type="container" data-id="4ac47ae" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
           <div className="e-con-inner">
@@ -22,14 +32,14 @@ export default function WaspRemovalMelbournePage() {
                       <a href="#">
                         <span className="elementor-icon-list-icon">
                           <svg aria-hidden="true" className="e-font-icon-svg e-fas-angle-right" viewBox="0 0 256 512" xmlns="http://www.w3.org/2000/svg"><path d="M224.3 273l-136 136c-9.4 9.4-24.6 9.4-33.9 0l-22.6-22.6c-9.4-9.4-9.4-24.6 0-33.9l96.4-96.4-96.4-96.4c-9.4-9.4-9.4-24.6 0-33.9L54.3 103c9.4-9.4 24.6-9.4 33.9 0l136 136c9.5 9.4 9.5 24.6.1 34z" /></svg> </span>
-                        <span className="elementor-icon-list-text">Services</span>
+                        <span className="elementor-icon-list-text">{cmsText(c?.hero?.breadcrumb_parent, 'Services')}</span>
                       </a>
                     </li>
                     <li className="elementor-icon-list-item elementor-inline-item">
                       <a href="#">
                         <span className="elementor-icon-list-icon">
                           <svg aria-hidden="true" className="e-font-icon-svg e-fas-angle-right" viewBox="0 0 256 512" xmlns="http://www.w3.org/2000/svg"><path d="M224.3 273l-136 136c-9.4 9.4-24.6 9.4-33.9 0l-22.6-22.6c-9.4-9.4-9.4-24.6 0-33.9l96.4-96.4-96.4-96.4c-9.4-9.4-9.4-24.6 0-33.9L54.3 103c9.4-9.4 24.6-9.4 33.9 0l136 136c9.5 9.4 9.5 24.6.1 34z" /></svg> </span>
-                        <span className="elementor-icon-list-text">Wasp Nest Removal Melbourne</span>
+                        <span className="elementor-icon-list-text">{cmsText(c?.hero?.breadcrumb_current, 'Wasp Nest Removal Melbourne')}</span>
                       </a>
                     </li>
                   </ul>
@@ -37,26 +47,26 @@ export default function WaspRemovalMelbournePage() {
               </div>
               <div className="elementor-element elementor-element-b5cb612 elementor-widget elementor-widget-heading" data-element_type="widget" data-id="b5cb612" data-settings="{&quot;_animation&quot;:&quot;none&quot;}" data-widget_type="heading.default">
                 <div className="elementor-widget-container">
-                  <h2 className="elementor-heading-title elementor-size-default">Wasp removal</h2> </div>
+                  <h2 className="elementor-heading-title elementor-size-default">{cmsText(c?.hero?.title, 'Wasp removal')}</h2> </div>
               </div>
               <div className="elementor-element elementor-element-e07b7f8 elementor-widget elementor-widget-heading" data-element_type="widget" data-id="e07b7f8" data-settings="{&quot;_animation&quot;:&quot;none&quot;}" data-widget_type="heading.default">
                 <div className="elementor-widget-container">
-                  <h1 className="elementor-heading-title elementor-size-default">Melbourne Wasp Removal &amp; Wasp Nest Removal Services
-                  </h1> </div>
+                  <h1 className="elementor-heading-title elementor-size-default">{cmsText(c?.hero?.heading, 'Melbourne Wasp Removal &amp; Wasp Nest Removal Services')}</h1> </div>
               </div>
               <div className="elementor-element elementor-element-6d0c527 elementor-widget elementor-widget-text-editor" data-element_type="widget" data-id="6d0c527" data-widget_type="text-editor.default">
                 <div className="elementor-widget-container">
-                  <div className="elementor-element elementor-element-de434cf elementor-widget elementor-widget-text-editor" data-element_type="widget" data-id="de434cf" data-settings="{&quot;ekit_we_effect_on&quot;:&quot;none&quot;}" data-widget_type="text-editor.default"><div className="elementor-widget-container"><div className="elementor-element elementor-element-de434cf elementor-widget elementor-widget-text-editor" data-element_type="widget" data-id="de434cf" data-settings="{&quot;ekit_we_effect_on&quot;:&quot;none&quot;}" data-widget_type="text-editor.default"><div className="elementor-widget-container"><div className="elementor-element elementor-element-a1039c3 elementor-widget elementor-widget-text-editor" data-element_type="widget" data-id="a1039c3" data-settings="{&quot;ekit_we_effect_on&quot;:&quot;none&quot;}" data-widget_type="text-editor.default"><div className="elementor-widget-container"><p><span style={{fontWeight: 400}}>Living in Melbourne has its perks—until wasp season takes over. From September to April, the rise in temperatures brings aggressive </span><b>wasps in Melbourne</b><span style={{fontWeight: 400}}> right into our backyards. If you’ve noticed nests or increased wasp activity, it’s time to call the </span><b>Melbourne wasp removal </b><span style={{fontWeight: 400}}>specialists at</span><Link to="/"> <span style={{fontWeight: 400}}>7 States Pest Control</span></Link><span style={{fontWeight: 400}}>.</span></p></div></div></div></div></div></div> </div>
+                  <CmsHtml html={c?.hero?.intro} />
+                </div>
               </div>
             </div>
             <div className="elementor-element elementor-element-1fdc472 e-con-full e-flex e-con e-child" data-element_type="container" data-id="1fdc472" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
               <div className="elementor-element elementor-element-409d206 elementor-widget elementor-widget-heading" data-element_type="widget" data-id="409d206" data-widget_type="heading.default">
                 <div className="elementor-widget-container">
-                  <h2 className="elementor-heading-title elementor-size-default">Get A Free Quote Now!</h2> </div>
+                  <h2 className="elementor-heading-title elementor-size-default">{cmsText(c?.quote_form?.title, 'Get A Free Quote Now!')}</h2> </div>
               </div>
               <div className="elementor-element elementor-element-183bf08 elementor-widget elementor-widget-heading" data-element_type="widget" data-id="183bf08" data-widget_type="heading.default">
                 <div className="elementor-widget-container">
-                  <h6 className="elementor-heading-title elementor-size-default">Have an enquiry? Leave us your details and we’ll call you back during business hours.</h6> </div>
+                  <h6 className="elementor-heading-title elementor-size-default">{cmsText(c?.quote_form?.subtitle, 'Have an enquiry? Leave us your details and we\'ll call you back during business hours.')}</h6> </div>
               </div>
               <div className="elementor-element elementor-element-fc48d94 elementor-button-align-center elementor-widget elementor-widget-form" data-element_type="widget" data-id="fc48d94" data-settings="{&quot;step_next_label&quot;:&quot;Next&quot;,&quot;step_previous_label&quot;:&quot;Previous&quot;,&quot;button_width&quot;:&quot;100&quot;,&quot;step_type&quot;:&quot;number_text&quot;,&quot;step_icon_shape&quot;:&quot;circle&quot;}" data-widget_type="form.default">
                 <div className="elementor-widget-container">
@@ -689,7 +699,7 @@ export default function WaspRemovalMelbournePage() {
                         </div>
                         <div className="elementor-element elementor-element-441e36f elementor-widget elementor-widget-heading" data-element_type="widget" data-id="441e36f" data-settings="{&quot;_animation&quot;:&quot;none&quot;}" data-widget_type="heading.default">
                           <div className="elementor-widget-container">
-                            <h2 className="elementor-heading-title elementor-size-default">7 States Pest Control for Reliable Pest Management Solutions</h2> </div>
+                            <h2 className="elementor-heading-title elementor-size-default">{cmsText(c?.reviews?.eyebrow, '7 States Pest Control for Reliable Pest Management Solutions')}</h2> </div>
                         </div>
                       </div>
                     </div>
@@ -697,11 +707,11 @@ export default function WaspRemovalMelbournePage() {
                       <div className="elementor-widget-wrap elementor-element-populated">
                         <div className="elementor-element elementor-element-3cd8ad3 elementor-widget elementor-widget-heading" data-element_type="widget" data-id="3cd8ad3" data-widget_type="heading.default">
                           <div className="elementor-widget-container">
-                            <h3 className="elementor-heading-title elementor-size-default">Reviews of Our Pest Control Services</h3> </div>
+                            <h3 className="elementor-heading-title elementor-size-default">{cmsText(c?.reviews?.subtitle, 'Reviews of Our Pest Control Services')}</h3> </div>
                         </div>
                         <div className="elementor-element elementor-element-c042cb5 elementor-widget elementor-widget-heading" data-element_type="widget" data-id="c042cb5" data-widget_type="heading.default">
                           <div className="elementor-widget-container">
-                            <h6 className="elementor-heading-title elementor-size-default">EXCELLENT</h6> </div>
+                            <h6 className="elementor-heading-title elementor-size-default">{cmsText(c?.reviews?.title, 'EXCELLENT')}</h6> </div>
                         </div>
                         <div className="elementor-element elementor-element-86aa26f elementor-widget elementor-widget-rating" data-element_type="widget" data-id="86aa26f" data-widget_type="rating.default">
                           <div className="elementor-widget-container">

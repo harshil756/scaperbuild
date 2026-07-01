@@ -9,7 +9,7 @@ from bs4 import BeautifulSoup
 
 from .utils import normalize_url, relative_path
 
-# Wait for TrustIndex reviews + scroll to hero form & reviews
+# Wait for hero banners + TrustIndex reviews + scroll full page
 WIDGET_WAIT_JS = """
 async () => {
   const delay = ms => new Promise(r => setTimeout(r, ms));
@@ -18,6 +18,8 @@ async () => {
     if (el) { el.scrollIntoView({ block: 'center', behavior: 'instant' }); return true; }
     return false;
   };
+  go('.race-hero, .elementor-slides-wrapper, .swiper, .rev_slider, [class*="hero"], [class*="banner"], .elementor-widget-slides');
+  await delay(3000);
   go('[data-id="37fdbc3f"], [data-id="0b53c03"]');
   await delay(1500);
   go('.elementor-form, [data-id="8c7fc6e"], [data-id="e5afdbe"]');
@@ -41,6 +43,62 @@ async () => {
   }
   window.scrollTo(0, 0);
   await delay(1200);
+}
+"""
+
+# Faster scroll + shorter waits — same coverage, ~70% less time
+WIDGET_WAIT_JS_FAST = """
+async () => {
+  const delay = ms => new Promise(r => setTimeout(r, ms));
+  const go = sel => {
+    const el = document.querySelector(sel);
+    if (el) { el.scrollIntoView({ block: 'center', behavior: 'instant' }); return true; }
+    return false;
+  };
+  go('.race-hero, .elementor-slides-wrapper, .swiper, .rev_slider, [class*="hero"], [class*="banner"], .elementor-widget-slides');
+  await delay(1200);
+  go('.elementor-form, .elementor-shortcode, .ti-widget');
+  await delay(800);
+  for (let i = 0; i < 20; i++) {
+    const reviews = document.querySelectorAll('.ti-review-item').length;
+    const ti = document.querySelector('.ti-widget.ti-goog, .ti-widget');
+    if (reviews >= 2 || (ti && (ti.outerHTML || '').length > 600)) break;
+    await delay(250);
+  }
+  const h = Math.max(document.body.scrollHeight, document.documentElement.scrollHeight);
+  for (let y = 0; y <= h; y += 400) {
+    window.scrollTo(0, y);
+    await delay(15);
+  }
+  window.scrollTo(0, 0);
+  await delay(400);
+}
+"""
+
+
+def widget_wait_js(fast: bool = False) -> str:
+    return WIDGET_WAIT_JS_FAST if fast else WIDGET_WAIT_JS
+
+
+# Wait for React / Next.js / Vue SPA to hydrate before capturing HTML
+SPA_HYDRATION_WAIT_JS = """
+async () => {
+  const delay = ms => new Promise(r => setTimeout(r, ms));
+  const roots = ['#__next', '#root', '#app', '[data-reactroot]', '[data-react-root]'];
+  const hasFramework = () =>
+    !!document.querySelector('script[src*="_next/static"]') ||
+    !!document.querySelector('script[src*="static/js"]') ||
+    !!document.getElementById('__NEXT_DATA__') ||
+    !!window.__NEXT_DATA__;
+  if (!hasFramework()) return false;
+  for (let i = 0; i < 50; i++) {
+    for (const sel of roots) {
+      const el = document.querySelector(sel);
+      if (el && el.innerHTML.trim().length > 100) return true;
+    }
+    await delay(300);
+  }
+  return false;
 }
 """
 

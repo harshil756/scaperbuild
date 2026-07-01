@@ -1,12 +1,22 @@
 import PhoneNumberInput from '../../components/PhoneNumberInput.jsx'
+import { cmsText } from '../../utils/cmsMedia.js'
+import usePageCms from '../../hooks/usePageCms.js'
+import ServiceCmsContentBlocks from '../../components/service/ServiceCmsContentBlocks.jsx'
+import ServiceCommercialSectionCms from '../../components/service/ServiceCommercialSectionCms.jsx'
+import ServiceCmsStyles from '../../components/service/ServiceCmsStyles.jsx'
+import CmsHtml from '../../components/home/CmsHtml.jsx'
 import usePageMeta from '../../hooks/usePageMeta.js'
 import { Link } from 'react-router-dom'
 
 export default function WarehouseAndFactoryPestControlServicesMelbournePage() {
-  usePageMeta('warehouse_and_factory_pest_control_services_melbourne')
+  const { page, content: c } = usePageCms('warehouse-and-factory-pest-control-services-melbourne')
+  usePageMeta('warehouse_and_factory_pest_control_services_melbourne', page)
 
   return (
     <>
+      <ServiceCmsStyles content={c} heroBgId="48cd1cc" ctaBgId="1178258" />
+      <ServiceCmsContentBlocks content={c} />
+      <ServiceCommercialSectionCms slug="warehouse-and-factory-pest-control-services-melbourne" content={c} />
       <div className="elementor elementor-704" data-elementor-id={704} data-elementor-post-type="page" data-elementor-type="wp-page">
         <div className="elementor-element elementor-element-48cd1cc e-flex e-con-boxed e-con e-parent e-lazyloaded" data-element_type="container" data-id="48cd1cc" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
           <div className="e-con-inner">
@@ -22,7 +32,7 @@ export default function WarehouseAndFactoryPestControlServicesMelbournePage() {
                       <a href="#">
                         <span className="elementor-icon-list-icon">
                           <svg aria-hidden="true" className="e-font-icon-svg e-fas-angle-right" viewBox="0 0 256 512" xmlns="http://www.w3.org/2000/svg"><path d="M224.3 273l-136 136c-9.4 9.4-24.6 9.4-33.9 0l-22.6-22.6c-9.4-9.4-9.4-24.6 0-33.9l96.4-96.4-96.4-96.4c-9.4-9.4-9.4-24.6 0-33.9L54.3 103c9.4-9.4 24.6-9.4 33.9 0l136 136c9.5 9.4 9.5 24.6.1 34z" /></svg> </span>
-                        <span className="elementor-icon-list-text">Warehouse and Factory Pest Control Services</span>
+                        <span className="elementor-icon-list-text">{cmsText(c?.hero?.breadcrumb_current, 'Warehouse and Factory Pest Control Services')}</span>
                       </a>
                     </li>
                   </ul>
@@ -30,25 +40,24 @@ export default function WarehouseAndFactoryPestControlServicesMelbournePage() {
               </div>
               <div className="elementor-element elementor-element-c285cf2 elementor-widget elementor-widget-heading" data-element_type="widget" data-id="c285cf2" data-settings="{&quot;_animation&quot;:&quot;none&quot;}" data-widget_type="heading.default">
                 <div className="elementor-widget-container">
-                  <h2 className="elementor-heading-title elementor-size-default">Pest Control Services</h2> </div>
+                  <h2 className="elementor-heading-title elementor-size-default">{cmsText(c?.hero?.title, 'Pest Control Services')}</h2> </div>
               </div>
               <div className="elementor-element elementor-element-2331d6e elementor-widget elementor-widget-heading" data-element_type="widget" data-id="2331d6e" data-settings="{&quot;_animation&quot;:&quot;none&quot;}" data-widget_type="heading.default">
                 <div className="elementor-widget-container">
-                  <h1 className="elementor-heading-title elementor-size-default">Warehouse and Factory Pest Control Services Melbourne</h1> </div>
+                  <h1 className="elementor-heading-title elementor-size-default">{cmsText(c?.hero?.heading, 'Warehouse and Factory Pest Control Services Melbourne')}</h1> </div>
               </div>
               <div className="elementor-element elementor-element-ebee901 elementor-widget elementor-widget-text-editor" data-element_type="widget" data-id="ebee901" data-widget_type="text-editor.default">
-                <div className="elementor-widget-container">
-                  <div className="elementor-element elementor-element-de434cf elementor-widget elementor-widget-text-editor" data-element_type="widget" data-id="de434cf" data-settings="{&quot;ekit_we_effect_on&quot;:&quot;none&quot;}" data-widget_type="text-editor.default"><div className="elementor-widget-container"><p>Pest infestations can be a real headache for industrial facilities and warehouses. These unwanted intruders not only cause annoyance and disruption, but they also create unsanitary and potentially dangerous conditions within your premises. If left unchecked, these infestations can lead to the spread of diseases, damage to your company’s reputation, operational disruptions, and negative impacts on your financial performance.</p></div></div> </div>
+                <div className="elementor-widget-container"><CmsHtml html={c?.hero?.intro ?? '<div class="elementor-element elementor-element-de434cf elementor-widget elementor-widget-text-editor" data-element_type="widget" data-id="de434cf" data-settings="{&quot;ekit_we_effect_on&quot;:&quot;none&quot;}" data-widget_type="text-editor.default"><div class="elementor-widget-container"><p>Pest infestations can be a real headache for industrial facilities and warehouses. These unwanted intruders not only cause annoyance and disruption, but they also create unsanitary and potentially dangerous conditions within your premises. If left unchecked, these infestations can lead to the spread of diseases, damage to your company’s reputation, operational disruptions, and negative impacts on your financial performance.</p></div></div>'} /></div>
               </div>
             </div>
             <div className="elementor-element elementor-element-0f1e058 e-con-full e-flex e-con e-child" data-element_type="container" data-id="0f1e058" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
               <div className="elementor-element elementor-element-4e98015 elementor-widget elementor-widget-heading" data-element_type="widget" data-id="4e98015" data-widget_type="heading.default">
                 <div className="elementor-widget-container">
-                  <h2 className="elementor-heading-title elementor-size-default">Get A Free Quote Now!</h2> </div>
+                  <h2 className="elementor-heading-title elementor-size-default">{cmsText(c?.quote_form?.title, 'Warehouse and Factory Pest Control Services Melbourne')}</h2> </div>
               </div>
               <div className="elementor-element elementor-element-e6a1e74 elementor-widget elementor-widget-heading" data-element_type="widget" data-id="e6a1e74" data-widget_type="heading.default">
                 <div className="elementor-widget-container">
-                  <h6 className="elementor-heading-title elementor-size-default">Have an enquiry? Leave us your details and we’ll call you back during business hours.</h6> </div>
+                  <h6 className="elementor-heading-title elementor-size-default">{cmsText(c?.quote_form?.subtitle, 'Have an enquiry? Leave us your details and we’ll call you back during business hours.')}</h6> </div>
               </div>
               <div className="elementor-element elementor-element-c63264d elementor-button-align-center elementor-widget elementor-widget-form" data-element_type="widget" data-id="c63264d" data-settings="{&quot;step_next_label&quot;:&quot;Next&quot;,&quot;step_previous_label&quot;:&quot;Previous&quot;,&quot;button_width&quot;:&quot;100&quot;,&quot;step_type&quot;:&quot;number_text&quot;,&quot;step_icon_shape&quot;:&quot;circle&quot;}" data-widget_type="form.default">
                 <div className="elementor-widget-container">
@@ -80,7 +89,7 @@ export default function WarehouseAndFactoryPestControlServicesMelbournePage() {
                       <div className="elementor-field-group elementor-column elementor-field-type-submit elementor-col-100 e-form__buttons">
                         <button className="elementor-button elementor-size-md" type="submit">
                           <span className="elementor-button-content-wrapper">
-                            <span className="elementor-button-text">Submit Quote</span>
+                            <span className="elementor-button-text">{cmsText(c?.quote_form?.submit_text, 'Submit Quote')}</span>
                           </span>
                         </button>
                       </div>

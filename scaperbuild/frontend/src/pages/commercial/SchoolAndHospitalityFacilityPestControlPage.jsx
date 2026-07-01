@@ -1,12 +1,22 @@
 import PhoneNumberInput from '../../components/PhoneNumberInput.jsx'
+import { cmsText } from '../../utils/cmsMedia.js'
+import usePageCms from '../../hooks/usePageCms.js'
+import ServiceCmsContentBlocks from '../../components/service/ServiceCmsContentBlocks.jsx'
+import ServiceCommercialSectionCms from '../../components/service/ServiceCommercialSectionCms.jsx'
+import ServiceCmsStyles from '../../components/service/ServiceCmsStyles.jsx'
+import CmsHtml from '../../components/home/CmsHtml.jsx'
 import usePageMeta from '../../hooks/usePageMeta.js'
 import { Link } from 'react-router-dom'
 
 export default function SchoolAndHospitalityFacilityPestControlPage() {
-  usePageMeta('school_and_hospitality_facility_pest_control')
+  const { page, content: c } = usePageCms('school-and-hospitality-facility-pest-control')
+  usePageMeta('school_and_hospitality_facility_pest_control', page)
 
   return (
     <>
+      <ServiceCmsStyles content={c} heroBgId="33957bd" ctaBgId="fb163c8" />
+      <ServiceCmsContentBlocks content={c} />
+      <ServiceCommercialSectionCms slug="school-and-hospitality-facility-pest-control" content={c} />
       <div className="elementor elementor-702" data-elementor-id={702} data-elementor-post-type="page" data-elementor-type="wp-page">
         <div className="elementor-element elementor-element-33957bd e-flex e-con-boxed e-con e-parent e-lazyloaded" data-element_type="container" data-id="33957bd" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
           <div className="e-con-inner">
@@ -22,7 +32,7 @@ export default function SchoolAndHospitalityFacilityPestControlPage() {
                       <a href="#">
                         <span className="elementor-icon-list-icon">
                           <svg aria-hidden="true" className="e-font-icon-svg e-fas-angle-right" viewBox="0 0 256 512" xmlns="http://www.w3.org/2000/svg"><path d="M224.3 273l-136 136c-9.4 9.4-24.6 9.4-33.9 0l-22.6-22.6c-9.4-9.4-9.4-24.6 0-33.9l96.4-96.4-96.4-96.4c-9.4-9.4-9.4-24.6 0-33.9L54.3 103c9.4-9.4 24.6-9.4 33.9 0l136 136c9.5 9.4 9.5 24.6.1 34z" /></svg> </span>
-                        <span className="elementor-icon-list-text">School And Hospitality Facility Pest Control</span>
+                        <span className="elementor-icon-list-text">{cmsText(c?.hero?.breadcrumb_current, 'School And Hospitality Facility Pest Control')}</span>
                       </a>
                     </li>
                   </ul>
@@ -30,25 +40,24 @@ export default function SchoolAndHospitalityFacilityPestControlPage() {
               </div>
               <div className="elementor-element elementor-element-4cffa37 elementor-widget elementor-widget-heading" data-element_type="widget" data-id="4cffa37" data-settings="{&quot;_animation&quot;:&quot;none&quot;}" data-widget_type="heading.default">
                 <div className="elementor-widget-container">
-                  <h2 className="elementor-heading-title elementor-size-default">Pest Control Facility</h2> </div>
+                  <h2 className="elementor-heading-title elementor-size-default">{cmsText(c?.hero?.title, 'Pest Control Facility')}</h2> </div>
               </div>
               <div className="elementor-element elementor-element-4be5f53 elementor-widget elementor-widget-heading" data-element_type="widget" data-id="4be5f53" data-settings="{&quot;_animation&quot;:&quot;none&quot;}" data-widget_type="heading.default">
                 <div className="elementor-widget-container">
-                  <h1 className="elementor-heading-title elementor-size-default">School And Hospitality Facility Pest Control in Melbourne</h1> </div>
+                  <h1 className="elementor-heading-title elementor-size-default">{cmsText(c?.hero?.heading, 'School And Hospitality Facility Pest Control in Melbourne')}</h1> </div>
               </div>
               <div className="elementor-element elementor-element-667506c elementor-widget elementor-widget-text-editor" data-element_type="widget" data-id="667506c" data-widget_type="text-editor.default">
-                <div className="elementor-widget-container">
-                  <div className="elementor-element elementor-element-de434cf elementor-widget elementor-widget-text-editor" data-element_type="widget" data-id="de434cf" data-settings="{&quot;ekit_we_effect_on&quot;:&quot;none&quot;}" data-widget_type="text-editor.default"><div className="elementor-widget-container"><p>Pest infestations are not unusual places and are a large impediment for Schools and hospitality institutions. These unwelcome intruders are no longer the simplest purpose of annoyance and disruption however additionally create unsanitary and probably risky situations inside your college or hospitality premises. If left unattended, those infestations can cause the transmission of diseases, damage your institution’s reputation, disrupt operations, and feature terrible consequences on ordinary performance. The best technique for addressing pest troubles in instructional and hospitality settings is a proactive prevention strategy, and Assured Environments is your dependent-on associate on this endeavor.</p><p>&nbsp;</p></div></div> </div>
+                <div className="elementor-widget-container"><CmsHtml html={c?.hero?.intro ?? '<div class="elementor-element elementor-element-de434cf elementor-widget elementor-widget-text-editor" data-element_type="widget" data-id="de434cf" data-settings="{&quot;ekit_we_effect_on&quot;:&quot;none&quot;}" data-widget_type="text-editor.default"><div class="elementor-widget-container"><p>Pest infestations are not unusual places and are a large impediment for Schools and hospitality institutions. These unwelcome intruders are no longer the simplest purpose of annoyance and disruption however additionally create unsanitary and probably risky situations inside your college or hospitality premises. If left unattended, those infestations can cause the transmission of diseases, damage your institution’s reputation, disrupt operations, and feature terrible consequences on ordinary performance. The best technique for addressing pest troubles in instructional and hospitality settings is a proactive prevention strategy, and Assured Environments is your dependent-on associate on this endeavor.</p><p>&nbsp;</p></div></div>'} /></div>
               </div>
             </div>
             <div className="elementor-element elementor-element-2e06d80 e-con-full e-flex e-con e-child" data-element_type="container" data-id="2e06d80" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
               <div className="elementor-element elementor-element-5a55322 elementor-widget elementor-widget-heading" data-element_type="widget" data-id="5a55322" data-widget_type="heading.default">
                 <div className="elementor-widget-container">
-                  <h2 className="elementor-heading-title elementor-size-default">Get A Free Quote Now!</h2> </div>
+                  <h2 className="elementor-heading-title elementor-size-default">{cmsText(c?.quote_form?.title, 'School And Hospitality Facility Pest Control in Melbourne')}</h2> </div>
               </div>
               <div className="elementor-element elementor-element-25b984a elementor-widget elementor-widget-heading" data-element_type="widget" data-id="25b984a" data-widget_type="heading.default">
                 <div className="elementor-widget-container">
-                  <h6 className="elementor-heading-title elementor-size-default">Have an enquiry? Leave us your details and we’ll call you back during business hours.</h6> </div>
+                  <h6 className="elementor-heading-title elementor-size-default">{cmsText(c?.quote_form?.subtitle, 'Have an enquiry? Leave us your details and we’ll call you back during business hours.')}</h6> </div>
               </div>
               <div className="elementor-element elementor-element-a9f17ba elementor-button-align-center elementor-widget elementor-widget-form" data-element_type="widget" data-id="a9f17ba" data-settings="{&quot;step_next_label&quot;:&quot;Next&quot;,&quot;step_previous_label&quot;:&quot;Previous&quot;,&quot;button_width&quot;:&quot;100&quot;,&quot;step_type&quot;:&quot;number_text&quot;,&quot;step_icon_shape&quot;:&quot;circle&quot;}" data-widget_type="form.default">
                 <div className="elementor-widget-container">
@@ -80,7 +89,7 @@ export default function SchoolAndHospitalityFacilityPestControlPage() {
                       <div className="elementor-field-group elementor-column elementor-field-type-submit elementor-col-100 e-form__buttons">
                         <button className="elementor-button elementor-size-md" type="submit">
                           <span className="elementor-button-content-wrapper">
-                            <span className="elementor-button-text">Submit Quote</span>
+                            <span className="elementor-button-text">{cmsText(c?.quote_form?.submit_text, 'Submit Quote')}</span>
                           </span>
                         </button>
                       </div>

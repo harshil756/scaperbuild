@@ -98,6 +98,7 @@ class MelbournePageBlockMapper
 
                 return [
                     'slug' => $meta['slug'] ?? '',
+                    'widget_id' => $meta['id'] ?? null,
                     'title' => $meta['title'] ?? '',
                     'description' => $meta['description'] ?? '',
                     'image' => $block->image_path,
@@ -119,6 +120,7 @@ class MelbournePageBlockMapper
 
                 return [
                     'slug' => $meta['slug'] ?? '',
+                    'widget_id' => $meta['id'] ?? null,
                     'title' => $meta['title'] ?? '',
                     'image' => $block->image_path,
                     'alt' => $meta['alt'] ?? '',

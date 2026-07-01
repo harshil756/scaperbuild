@@ -2,6 +2,8 @@ import { Outlet } from 'react-router-dom'
 import Footer from './Footer.jsx'
 import Header from './Header.jsx'
 import QuotePopupProvider from './QuotePopupProvider.jsx'
+import AnalyticsScripts from './AnalyticsScripts.jsx'
+import FormSubmissionHandler from './FormSubmissionHandler.jsx'
 import SiteScripts from './SiteScripts.jsx'
 
 export default function Layout() {
@@ -15,6 +17,8 @@ export default function Layout() {
         <Outlet />
       </main>
       <Footer />
+      <FormSubmissionHandler />
+      <AnalyticsScripts />
       <SiteScripts />
     </QuotePopupProvider>
   )

@@ -18,7 +18,11 @@ mimetypes.add_type("image/webp", ".webp")
 mimetypes.add_type("image/avif", ".avif")
 mimetypes.add_type("image/svg+xml", ".svg")
 mimetypes.add_type("image/jpeg", ".bin")
+mimetypes.add_type("video/mp4", ".mp4")
+mimetypes.add_type("video/webm", ".webm")
 mimetypes.add_type("font/woff2", ".woff2")
+mimetypes.add_type("font/woff", ".woff")
+mimetypes.add_type("font/ttf", ".ttf")
 
 
 def find_free_port(start: int, max_tries: int = 20) -> int:
@@ -146,7 +150,6 @@ def start_server(
     if not entry:
         raise FileNotFoundError(f"No HTML pages in {site_dir}")
 
-    write_root_redirect(site_dir)
     slug_map = build_slug_map(site_dir)
     entry_rel = entry.relative_to(site_dir).as_posix()
     home_slug = Path(entry_rel).parts[0]

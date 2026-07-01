@@ -1,12 +1,21 @@
+import CmsHtml from '../components/home/CmsHtml.jsx'
+import HomeCmsStyles from '../components/home/HomeCmsStyles.jsx'
+import HomeServiceCards from '../components/home/HomeServiceCards.jsx'
 import PhoneNumberInput from '../components/PhoneNumberInput.jsx'
+import usePageCms from '../hooks/usePageCms.js'
 import usePageMeta from '../hooks/usePageMeta.js'
+import TrustIndexReviews from '../components/TrustIndexReviews.jsx'
+import { cmsMediaUrl, cmsText } from '../utils/cmsMedia.js'
 import { Link } from 'react-router-dom'
 
 export default function HomePage() {
-  usePageMeta('home')
+  const { page, content: c } = usePageCms('home')
+  usePageMeta('home', page)
+  const processStep = (slug) => c?.process?.steps?.find((step) => step.slug === slug)
 
   return (
     <>
+      <HomeCmsStyles content={c} />
       <div className="elementor elementor-14" data-elementor-id={14} data-elementor-post-type="page" data-elementor-type="wp-page">
         <section className="elementor-section elementor-top-section elementor-element elementor-element-37fdbc3f elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-element_type="section" data-id="37fdbc3f" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
           <div className="elementor-background-overlay" />
@@ -18,11 +27,11 @@ export default function HomePage() {
                     <div className="elementor-element elementor-element-e5afdbe e-con-full e-flex e-con e-child" data-element_type="container" data-id="e5afdbe" data-settings="{&quot;background_background&quot;:&quot;gradient&quot;}">
                       <div className="elementor-element elementor-element-d6a136d elementor-widget elementor-widget-heading" data-element_type="widget" data-id="d6a136d" data-widget_type="heading.default">
                         <div className="elementor-widget-container">
-                          <h2 className="elementor-heading-title elementor-size-default">Get A Free Quote Now!</h2> </div>
+                          <h2 className="elementor-heading-title elementor-size-default">{cmsText(c?.quote_form?.title, 'Get A Free Quote Now!')}</h2> </div>
                       </div>
                       <div className="elementor-element elementor-element-ab5d866 elementor-widget elementor-widget-heading" data-element_type="widget" data-id="ab5d866" data-widget_type="heading.default">
                         <div className="elementor-widget-container">
-                          <h6 className="elementor-heading-title elementor-size-default">Have an enquiry? Leave us your details and we’ll call you back during business hours.</h6> </div>
+                          <h6 className="elementor-heading-title elementor-size-default">{cmsText(c?.quote_form?.subtitle, 'Have an enquiry? Leave us your details and we’ll call you back during business hours.')}</h6> </div>
                       </div>
                       <div className="elementor-element elementor-element-8c7fc6e elementor-button-align-center elementor-widget elementor-widget-form" data-element_type="widget" data-id="8c7fc6e" data-settings="{&quot;step_next_label&quot;:&quot;Next&quot;,&quot;step_previous_label&quot;:&quot;Previous&quot;,&quot;button_width&quot;:&quot;100&quot;,&quot;step_type&quot;:&quot;number_text&quot;,&quot;step_icon_shape&quot;:&quot;circle&quot;}" data-widget_type="form.default">
                         <div className="elementor-widget-container">
@@ -54,7 +63,7 @@ export default function HomePage() {
                               <div className="elementor-field-group elementor-column elementor-field-type-submit elementor-col-100 e-form__buttons">
                                 <button className="elementor-button elementor-size-md" type="submit">
                                   <span className="elementor-button-content-wrapper">
-                                    <span className="elementor-button-text">Submit Quote</span>
+                                    <span className="elementor-button-text">{cmsText(c?.quote_form?.submit_text, 'Submit Quote')}</span>
                                   </span>
                                 </button>
                               </div>
@@ -66,20 +75,20 @@ export default function HomePage() {
                     <div className="elementor-element elementor-element-552235e e-con-full e-flex e-con e-child" data-element_type="container" data-id="552235e">
                       <div className="elementor-element elementor-element-2b2e869 elementor-widget__width-auto elementor-widget elementor-widget-heading" data-element_type="widget" data-id="2b2e869" data-settings="{&quot;_animation&quot;:&quot;none&quot;}" data-widget_type="heading.default">
                         <div className="elementor-widget-container">
-                          <h2 className="elementor-heading-title elementor-size-default">What We Do </h2> </div>
+                          <h2 className="elementor-heading-title elementor-size-default">{cmsText(c?.hero?.eyebrow, 'What We Do ')}</h2> </div>
                       </div>
                       <div className="elementor-element elementor-element-2c05737 elementor-widget elementor-widget-heading" data-element_type="widget" data-id="2c05737" data-settings="{&quot;_animation&quot;:&quot;none&quot;}" data-widget_type="heading.default">
                         <div className="elementor-widget-container">
-                          <h1 className="elementor-heading-title elementor-size-default">Pest Control in Melbourne by Certified Experts</h1> </div>
+                          <h1 className="elementor-heading-title elementor-size-default">{cmsText(c?.hero?.title, 'Pest Control in Melbourne by Certified Experts')}</h1> </div>
                       </div>
                       <div className="elementor-element elementor-element-e8742e1 e-con-full e-flex e-con e-child" data-element_type="container" data-id="e8742e1">
                         <div className="elementor-element elementor-element-4446557 e-con-full e-flex e-con e-child" data-element_type="container" data-id={4446557}>
                           <div className="elementor-element elementor-element-45fe351 elementor-widget__width-inherit elementor-mobile-align-justify elementor-widget-mobile__width-inherit elementor-widget-tablet__width-inherit elementor-widget elementor-widget-button animated fadeIn" data-element_type="widget" data-id="45fe351" data-settings="{&quot;_animation&quot;:&quot;fadeIn&quot;,&quot;_animation_delay&quot;:1680}" data-widget_type="button.default">
                             <div className="elementor-widget-container">
                               <div className="elementor-button-wrapper">
-                                <Link className="elementor-button elementor-button-link elementor-size-sm" to="/contact-us">
+                                <Link className="elementor-button elementor-button-link elementor-size-sm" to={cmsText(c?.hero?.button_contact_url, '/contact-us')}>
                                   <span className="elementor-button-content-wrapper">
-                                    <span className="elementor-button-text">Contact Us</span>
+                                    <span className="elementor-button-text">{cmsText(c?.hero?.button_contact_label, 'Contact Us')}</span>
                                   </span>
                                 </Link>
                               </div>
@@ -90,11 +99,11 @@ export default function HomePage() {
                           <div className="elementor-element elementor-element-851fae6 elementor-align-left elementor-widget__width-inherit elementor-mobile-align-justify elementor-widget-mobile__width-inherit elementor-widget elementor-widget-button animated fadeIn" data-element_type="widget" data-id="851fae6" data-settings="{&quot;_animation&quot;:&quot;fadeIn&quot;,&quot;_animation_delay&quot;:1680}" data-widget_type="button.default">
                             <div className="elementor-widget-container">
                               <div className="elementor-button-wrapper">
-                                <Link className="elementor-button elementor-button-link elementor-size-sm" to="/our-services">
+                                <Link className="elementor-button elementor-button-link elementor-size-sm" to={cmsText(c?.hero?.button_services_url, '/our-services')}>
                                   <span className="elementor-button-content-wrapper">
                                     <span className="elementor-button-icon">
                                       <svg aria-hidden="true" className="e-font-icon-svg e-fas-angle-right" viewBox="0 0 256 512" xmlns="http://www.w3.org/2000/svg"><path d="M224.3 273l-136 136c-9.4 9.4-24.6 9.4-33.9 0l-22.6-22.6c-9.4-9.4-9.4-24.6 0-33.9l96.4-96.4-96.4-96.4c-9.4-9.4-9.4-24.6 0-33.9L54.3 103c9.4-9.4 24.6-9.4 33.9 0l136 136c9.5 9.4 9.5 24.6.1 34z" /></svg> </span>
-                                    <span className="elementor-button-text">Our Services</span>
+                                    <span className="elementor-button-text">{cmsText(c?.hero?.button_services_label, 'Our Services')}</span>
                                   </span>
                                 </Link>
                               </div>
@@ -119,11 +128,11 @@ export default function HomePage() {
                       <div className="elementor-widget-wrap elementor-element-populated">
                         <div className="elementor-element elementor-element-5a9324c elementor-widget elementor-widget-heading" data-element_type="widget" data-id="5a9324c" data-settings="{&quot;_animation&quot;:&quot;none&quot;}" data-widget_type="heading.default">
                           <div className="elementor-widget-container">
-                            <h2 className="elementor-heading-title elementor-size-default">Our Services </h2> </div>
+                            <h2 className="elementor-heading-title elementor-size-default">{cmsText(c?.services?.eyebrow, 'Our Services ')}</h2> </div>
                         </div>
                         <div className="elementor-element elementor-element-6b16c23 elementor-widget elementor-widget-heading" data-element_type="widget" data-id="6b16c23" data-settings="{&quot;_animation&quot;:&quot;none&quot;}" data-widget_type="heading.default">
                           <div className="elementor-widget-container">
-                            <h2 className="elementor-heading-title elementor-size-default">Expert Pest Control Services We Offer in Melbourne</h2> </div>
+                            <h2 className="elementor-heading-title elementor-size-default">{cmsText(c?.services?.title, 'Expert Pest Control Services We Offer in Melbourne')}</h2> </div>
                         </div>
                       </div>
                     </div>
@@ -131,7 +140,8 @@ export default function HomePage() {
                       <div className="elementor-widget-wrap elementor-element-populated">
                         <div className="elementor-element elementor-element-2e27784 elementor-widget elementor-widget-text-editor" data-element_type="widget" data-id="2e27784" data-widget_type="text-editor.default">
                           <div className="elementor-widget-container">
-                            <p className="font-claude-response-body break-words whitespace-normal leading-[1.7]">We provide comprehensive <strong>pest control Melbourne</strong> services, ensuring a clean, safe, and healthy environment for your property. At 7 States Pest Control, we offer expert <strong>pest removal Melbourne</strong> services that cover a wide range of pests, delivering effective <strong>pest control Melbourne CBD</strong> control and <strong>pest exterminator Melbourne</strong> solutions tailored to your needs.</p> </div>
+                            <CmsHtml html={c?.services?.intro ?? '<p class="font-claude-response-body break-words whitespace-normal leading-[1.7]">We provide comprehensive <strong>pest control Melbourne</strong> services, ensuring a clean, safe, and healthy environment for your property. At 7 States Pest Control, we offer expert <strong>pest removal Melbourne</strong> services that cover a wide range of pests, delivering effective <strong>pest control Melbourne CBD</strong> control and <strong>pest exterminator Melbourne</strong> solutions tailored to your needs.</p>'} />
+                          </div>
                         </div>
                         <div className="elementor-element elementor-element-e8ac514 elementor-widget-divider--view-line elementor-widget elementor-widget-divider" data-element_type="widget" data-id="e8ac514" data-widget_type="divider.default">
                           <div className="elementor-widget-container">
@@ -145,176 +155,7 @@ export default function HomePage() {
                     </div>
                   </div>
                 </section>
-                <div className="elementor-element elementor-element-78384bb e-flex e-con-boxed e-con e-parent e-lazyloaded" data-element_type="container" data-id="78384bb">
-                  <div className="e-con-inner">
-                    <div className="elementor-element elementor-element-a5afa63 e-con-full e-flex e-con e-child" data-element_type="container" data-id="a5afa63">
-                      <div className="elementor-element elementor-element-9dd63a9 ekit-equal-height-disable elementor-widget elementor-widget-elementskit-icon-box" data-element_type="widget" data-id="9dd63a9" data-widget_type="elementskit-icon-box.default">
-                        <div className="elementor-widget-container">
-                          <div className="ekit-wid-con">
-                            <div className="elementskit-infobox text-left text-left icon-top-align elementor-animation-">
-                              <div className="elementskit-box-header">
-                                <div className="elementskit-info-box-icon">
-                                  <img alt="cockroach pest control" className="attachment- size-" decoding="async" height={150} src="/assets/images/Cockroaches.png-1_56844a04.webp" width={150} /> </div>
-                              </div>
-                              <div className="box-body">
-                                <h3 className="elementskit-info-box-title">
-                                  Cockroach Control              </h3>
-                                <p>From just $149</p>
-                                <div className="box-footer disable_hover_button">
-                                  <div className="btn-wraper">
-                                    <a className="elementskit-btn whitespace--normal elementor-animation-bounce-in" href="#elementor-action%3Aaction%3Dpopup%3Aopen%26settings%3DeyJpZCI6Ijc4NDEiLCJ0b2dnbGUiOmZhbHNlfQ%3D%3D">
-                                      Enquiry Now                                        <svg aria-hidden="true" className="e-font-icon-svg e-fas-angle-right" viewBox="0 0 256 512" xmlns="http://www.w3.org/2000/svg"><path d="M224.3 273l-136 136c-9.4 9.4-24.6 9.4-33.9 0l-22.6-22.6c-9.4-9.4-9.4-24.6 0-33.9l96.4-96.4-96.4-96.4c-9.4-9.4-9.4-24.6 0-33.9L54.3 103c9.4-9.4 24.6-9.4 33.9 0l136 136c9.5 9.4 9.5 24.6.1 34z" /></svg> </a>
-                                  </div>
-                                </div>
-                              </div>
-                              <div className="ekit-icon-box-badge ekit_position_top_left">
-                                <span className="ekit-badge">$149</span>
-                              </div>
-                            </div>
-                          </div> </div>
-                      </div>
-                    </div>
-                    <div className="elementor-element elementor-element-0b99eff e-con-full e-flex e-con e-child" data-element_type="container" data-id="0b99eff">
-                      <div className="elementor-element elementor-element-26bc2d0 ekit-equal-height-disable elementor-widget elementor-widget-elementskit-icon-box" data-element_type="widget" data-id="26bc2d0" data-widget_type="elementskit-icon-box.default">
-                        <div className="elementor-widget-container">
-                          <div className="ekit-wid-con">
-                            <div className="elementskit-infobox text-left text-left icon-top-align elementor-animation-">
-                              <div className="elementskit-box-header">
-                                <div className="elementskit-info-box-icon">
-                                  <img alt="Wasp Removal melbourne" className="attachment- size-" decoding="async" height={150} src="/assets/images/Wasp-Removal.png-1_2802cb47.webp" width={150} /> </div>
-                              </div>
-                              <div className="box-body">
-                                <h3 className="elementskit-info-box-title">
-                                  Wasp Control Services              </h3>
-                                <p>From just $139</p>
-                                <div className="box-footer disable_hover_button">
-                                  <div className="btn-wraper">
-                                    <a className="elementskit-btn whitespace--normal elementor-animation-bounce-in" href="#elementor-action%3Aaction%3Dpopup%3Aopen%26settings%3DeyJpZCI6Ijc4NDEiLCJ0b2dnbGUiOmZhbHNlfQ%3D%3D">
-                                      Enquiry Now                                        <svg aria-hidden="true" className="e-font-icon-svg e-fas-angle-right" viewBox="0 0 256 512" xmlns="http://www.w3.org/2000/svg"><path d="M224.3 273l-136 136c-9.4 9.4-24.6 9.4-33.9 0l-22.6-22.6c-9.4-9.4-9.4-24.6 0-33.9l96.4-96.4-96.4-96.4c-9.4-9.4-9.4-24.6 0-33.9L54.3 103c9.4-9.4 24.6-9.4 33.9 0l136 136c9.5 9.4 9.5 24.6.1 34z" /></svg> </a>
-                                  </div>
-                                </div>
-                              </div>
-                              <div className="ekit-icon-box-badge ekit_position_top_left">
-                                <span className="ekit-badge">$139</span>
-                              </div>
-                            </div>
-                          </div> </div>
-                      </div>
-                    </div>
-                    <div className="elementor-element elementor-element-fff4513 e-con-full e-flex e-con e-child" data-element_type="container" data-id="fff4513">
-                      <div className="elementor-element elementor-element-60b19b0 ekit-equal-height-disable elementor-widget elementor-widget-elementskit-icon-box" data-element_type="widget" data-id="60b19b0" data-widget_type="elementskit-icon-box.default">
-                        <div className="elementor-widget-container">
-                          <div className="ekit-wid-con">
-                            <div className="elementskit-infobox text-left text-left icon-top-align elementor-animation-">
-                              <div className="elementskit-box-header">
-                                <div className="elementskit-info-box-icon">
-                                  <img alt="Spider-Control.png-1.webp" className="attachment- size-" decoding="async" height={150} loading="lazy" src="/assets/images/Spider-Control.png-1_a603fb84.webp" width={150} /> </div>
-                              </div>
-                              <div className="box-body">
-                                <h3 className="elementskit-info-box-title">
-                                  Spider Control Treatment              </h3>
-                                <p>From just $179</p>
-                                <div className="box-footer disable_hover_button">
-                                  <div className="btn-wraper">
-                                    <a className="elementskit-btn whitespace--normal elementor-animation-bounce-in" href="#elementor-action%3Aaction%3Dpopup%3Aopen%26settings%3DeyJpZCI6Ijc4NDEiLCJ0b2dnbGUiOmZhbHNlfQ%3D%3D">
-                                      Enquiry Now                                        <svg aria-hidden="true" className="e-font-icon-svg e-fas-angle-right" viewBox="0 0 256 512" xmlns="http://www.w3.org/2000/svg"><path d="M224.3 273l-136 136c-9.4 9.4-24.6 9.4-33.9 0l-22.6-22.6c-9.4-9.4-9.4-24.6 0-33.9l96.4-96.4-96.4-96.4c-9.4-9.4-9.4-24.6 0-33.9L54.3 103c9.4-9.4 24.6-9.4 33.9 0l136 136c9.5 9.4 9.5 24.6.1 34z" /></svg> </a>
-                                  </div>
-                                </div>
-                              </div>
-                              <div className="ekit-icon-box-badge ekit_position_top_left">
-                                <span className="ekit-badge">$179</span>
-                              </div>
-                            </div>
-                          </div> </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div className="elementor-element elementor-element-e1054f1 e-flex e-con-boxed e-con e-parent e-lazyloaded" data-element_type="container" data-id="e1054f1">
-                  <div className="e-con-inner">
-                    <div className="elementor-element elementor-element-15f6620 e-con-full e-flex e-con e-child" data-element_type="container" data-id="15f6620">
-                      <div className="elementor-element elementor-element-8bbce6f ekit-equal-height-disable elementor-widget elementor-widget-elementskit-icon-box" data-element_type="widget" data-id="8bbce6f" data-widget_type="elementskit-icon-box.default">
-                        <div className="elementor-widget-container">
-                          <div className="ekit-wid-con">
-                            <div className="elementskit-infobox text-left text-left icon-top-align elementor-animation-">
-                              <div className="elementskit-box-header">
-                                <div className="elementskit-info-box-icon">
-                                  <img alt="Moth Control" className="attachment- size-" decoding="async" height={150} loading="lazy" src="/assets/images/Moth-Control.png-1_737c5080.webp" width={150} /> </div>
-                              </div>
-                              <div className="box-body">
-                                <h3 className="elementskit-info-box-title">
-                                  Moth Control              </h3>
-                                <p>From just $149</p>
-                                <div className="box-footer disable_hover_button">
-                                  <div className="btn-wraper">
-                                    <a className="elementskit-btn whitespace--normal elementor-animation-bounce-in" href="#elementor-action%3Aaction%3Dpopup%3Aopen%26settings%3DeyJpZCI6Ijc4NDEiLCJ0b2dnbGUiOmZhbHNlfQ%3D%3D">
-                                      Enquiry Now                                        <svg aria-hidden="true" className="e-font-icon-svg e-fas-angle-right" viewBox="0 0 256 512" xmlns="http://www.w3.org/2000/svg"><path d="M224.3 273l-136 136c-9.4 9.4-24.6 9.4-33.9 0l-22.6-22.6c-9.4-9.4-9.4-24.6 0-33.9l96.4-96.4-96.4-96.4c-9.4-9.4-9.4-24.6 0-33.9L54.3 103c9.4-9.4 24.6-9.4 33.9 0l136 136c9.5 9.4 9.5 24.6.1 34z" /></svg> </a>
-                                  </div>
-                                </div>
-                              </div>
-                              <div className="ekit-icon-box-badge ekit_position_top_left">
-                                <span className="ekit-badge">$149</span>
-                              </div>
-                            </div>
-                          </div> </div>
-                      </div>
-                    </div>
-                    <div className="elementor-element elementor-element-961ac61 e-con-full e-flex e-con e-child" data-element_type="container" data-id="961ac61">
-                      <div className="elementor-element elementor-element-5e1d8c8 ekit-equal-height-disable elementor-widget elementor-widget-elementskit-icon-box" data-element_type="widget" data-id="5e1d8c8" data-widget_type="elementskit-icon-box.default">
-                        <div className="elementor-widget-container">
-                          <div className="ekit-wid-con">
-                            <div className="elementskit-infobox text-left text-left icon-top-align elementor-animation-">
-                              <div className="elementskit-box-header">
-                                <div className="elementskit-info-box-icon">
-                                  <img alt="Rodent Pest Control" className="attachment- size-" decoding="async" height={150} loading="lazy" src="/assets/images/Rodent-Control.png-1_0842a15c.webp" width={150} /> </div>
-                              </div>
-                              <div className="box-body">
-                                <h3 className="elementskit-info-box-title">
-                                  Rodent Control              </h3>
-                                <p>From just $199</p>
-                                <div className="box-footer disable_hover_button">
-                                  <div className="btn-wraper">
-                                    <a className="elementskit-btn whitespace--normal elementor-animation-bounce-in" href="#elementor-action%3Aaction%3Dpopup%3Aopen%26settings%3DeyJpZCI6Ijc4NDEiLCJ0b2dnbGUiOmZhbHNlfQ%3D%3D">
-                                      Enquiry Now                                        <svg aria-hidden="true" className="e-font-icon-svg e-fas-angle-right" viewBox="0 0 256 512" xmlns="http://www.w3.org/2000/svg"><path d="M224.3 273l-136 136c-9.4 9.4-24.6 9.4-33.9 0l-22.6-22.6c-9.4-9.4-9.4-24.6 0-33.9l96.4-96.4-96.4-96.4c-9.4-9.4-9.4-24.6 0-33.9L54.3 103c9.4-9.4 24.6-9.4 33.9 0l136 136c9.5 9.4 9.5 24.6.1 34z" /></svg> </a>
-                                  </div>
-                                </div>
-                              </div>
-                              <div className="ekit-icon-box-badge ekit_position_top_left">
-                                <span className="ekit-badge">$199</span>
-                              </div>
-                            </div>
-                          </div> </div>
-                      </div>
-                    </div>
-                    <div className="elementor-element elementor-element-84aa109 e-con-full e-flex e-con e-child" data-element_type="container" data-id="84aa109">
-                      <div className="elementor-element elementor-element-bc1e76c ekit-equal-height-disable elementor-widget elementor-widget-elementskit-icon-box" data-element_type="widget" data-id="bc1e76c" data-widget_type="elementskit-icon-box.default">
-                        <div className="elementor-widget-container">
-                          <div className="ekit-wid-con">
-                            <div className="elementskit-infobox text-left text-left icon-top-align elementor-animation-">
-                              <div className="elementskit-box-header">
-                                <div className="elementskit-info-box-icon">
-                                  <img alt="Ant Pest Control" className="attachment- size-" decoding="async" height={360} loading="lazy" sizes="(max-width: 360px) 100vw, 360px" src="/assets/images/ant-colony-insect-animals-pest-png_73d1a8ca.png" srcSet="/assets/images/ant-colony-insect-animals-pest-png_73d1a8ca.png 360w, /assets/images/ant-colony-insect-animals-pest-png-300x300_41e7bf02.png 300w, /assets/images/ant-colony-insect-animals-pest-png-150x150_d0bc64f1.png 150w" width={360} /> </div>
-                              </div>
-                              <div className="box-body">
-                                <h3 className="elementskit-info-box-title">
-                                  Ant Pest Control              </h3>
-                                <p>From just $139</p>
-                                <div className="box-footer disable_hover_button">
-                                  <div className="btn-wraper">
-                                    <a className="elementskit-btn whitespace--normal elementor-animation-bounce-in" href="#elementor-action%3Aaction%3Dpopup%3Aopen%26settings%3DeyJpZCI6Ijc4NDEiLCJ0b2dnbGUiOmZhbHNlfQ%3D%3D">
-                                      Enquiry Now                                        <svg aria-hidden="true" className="e-font-icon-svg e-fas-angle-right" viewBox="0 0 256 512" xmlns="http://www.w3.org/2000/svg"><path d="M224.3 273l-136 136c-9.4 9.4-24.6 9.4-33.9 0l-22.6-22.6c-9.4-9.4-9.4-24.6 0-33.9l96.4-96.4-96.4-96.4c-9.4-9.4-9.4-24.6 0-33.9L54.3 103c9.4-9.4 24.6-9.4 33.9 0l136 136c9.5 9.4 9.5 24.6.1 34z" /></svg> </a>
-                                  </div>
-                                </div>
-                              </div>
-                              <div className="ekit-icon-box-badge ekit_position_top_left">
-                                <span className="ekit-badge">$139</span>
-                              </div>
-                            </div>
-                          </div> </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
+                <HomeServiceCards cards={c?.services?.cards} />
               </div>
             </div>
           </div>
@@ -330,22 +171,23 @@ export default function HomePage() {
                       <div className="elementor-widget-wrap elementor-element-populated">
                         <div className="elementor-element elementor-element-22ca238 elementor-widget elementor-widget-heading" data-element_type="widget" data-id="22ca238" data-settings="{&quot;_animation&quot;:&quot;none&quot;}" data-widget_type="heading.default">
                           <div className="elementor-widget-container">
-                            <h2 className="elementor-heading-title elementor-size-default">About Us</h2> </div>
+                            <h2 className="elementor-heading-title elementor-size-default">{cmsText(c?.about?.eyebrow, 'About Us')}</h2> </div>
                         </div>
                         <div className="elementor-element elementor-element-63e59634 elementor-widget elementor-widget-heading" data-element_type="widget" data-id="63e59634" data-settings="{&quot;_animation&quot;:&quot;none&quot;}" data-widget_type="heading.default">
                           <div className="elementor-widget-container">
-                            <h2 className="elementor-heading-title elementor-size-default">Get a Free Consultation from Melbourne Local Pest Controllers</h2> </div>
+                            <h2 className="elementor-heading-title elementor-size-default">{cmsText(c?.about?.title, 'Get a Free Consultation from Melbourne Local Pest Controllers')}</h2> </div>
                         </div>
                         <div className="elementor-element elementor-element-733b5627 elementor-widget elementor-widget-text-editor" data-element_type="widget" data-id="733b5627" data-widget_type="text-editor.default">
                           <div className="elementor-widget-container">
-                            <p className="font-claude-response-body break-words whitespace-normal leading-[1.7]">We are Melbourne locals with over 10 years of experience in <strong>pest control Melbourne</strong>. We understand your pest-related problems and provide tailored <strong>pest removal Melbourne</strong> solutions. You can trust our expertise because we are environmentally friendly, safe for family and pets, and offer a 100% satisfaction guarantee on our <strong>pest control service in Melbourne</strong>.</p><p className="font-claude-response-body break-words whitespace-normal leading-[1.7]">We provide ongoing advice to clients after servicing and offer immediate <strong>same day pest control Melbourne</strong> and free <strong>pest inspection Melbourne</strong>. For eco-friendly, effective, and <strong>affordable pest control Melbourne</strong>, choose 7 States Pest Control — your reliable <strong>pest exterminator Melbourne</strong> and trusted <strong>home pest control Melbourne</strong> provider.</p><p className="font-claude-response-body break-words whitespace-normal leading-[1.7]">We provide ongoing advice to clients after servicing and offer immediate <strong>same day pest control Melbourne</strong> service and free <strong>pest inspection Melbourne</strong>. For eco-friendly, effective, and <strong>affordable pest control Melbourne</strong>, choose 7 States Pest Control — your reliable <strong>pest control near me</strong> provider in Melbourne for all your <strong>pest removal Melbourne</strong> needs.</p> </div>
+                            <CmsHtml html={c?.about?.body ?? '<p class="font-claude-response-body break-words whitespace-normal leading-[1.7]">We are Melbourne locals with over 10 years of experience in <strong>pest control Melbourne</strong>. We understand your pest-related problems and provide tailored <strong>pest removal Melbourne</strong> solutions. You can trust our expertise because we are environmentally friendly, safe for family and pets, and offer a 100% satisfaction guarantee on our <strong>pest control service in Melbourne</strong>.</p><p class="font-claude-response-body break-words whitespace-normal leading-[1.7]">We provide ongoing advice to clients after servicing and offer immediate <strong>same day pest control Melbourne</strong> and free <strong>pest inspection Melbourne</strong>. For eco-friendly, effective, and <strong>affordable pest control Melbourne</strong>, choose 7 States Pest Control — your reliable <strong>pest exterminator Melbourne</strong> and trusted <strong>home pest control Melbourne</strong> provider.</p><p class="font-claude-response-body break-words whitespace-normal leading-[1.7]">We provide ongoing advice to clients after servicing and offer immediate <strong>same day pest control Melbourne</strong> service and free <strong>pest inspection Melbourne</strong>. For eco-friendly, effective, and <strong>affordable pest control Melbourne</strong>, choose 7 States Pest Control — your reliable <strong>pest control near me</strong> provider in Melbourne for all your <strong>pest removal Melbourne</strong> needs.</p>'} />
+                          </div>
                         </div>
                         <div className="elementor-element elementor-element-6e73320e elementor-align-left elementor-tablet-align-left elementor-widget elementor-widget-button" data-element_type="widget" data-id="6e73320e" data-widget_type="button.default">
                           <div className="elementor-widget-container">
                             <div className="elementor-button-wrapper">
-                              <Link className="elementor-button elementor-button-link elementor-size-sm" to="/about-us">
+                              <Link className="elementor-button elementor-button-link elementor-size-sm" to={cmsText(c?.about?.button_url, '/about-us')}>
                                 <span className="elementor-button-content-wrapper">
-                                  <span className="elementor-button-text">More About Us</span>
+                                  <span className="elementor-button-text">{cmsText(c?.about?.button_label, 'More About Us')}</span>
                                 </span>
                               </Link>
                             </div>
@@ -383,7 +225,8 @@ export default function HomePage() {
                     <div className="elementor-icon-box-content">
                       <h3 className="elementor-icon-box-title">
                         <span>
-                          A prompt pest control service is available for today or tomorrow.						</span>
+                          {cmsText(c?.features?.items?.[0]?.text, 'A prompt pest control service is available for today or tomorrow.')}
+                        </span>
                       </h3>
                     </div>
                   </div>
@@ -401,7 +244,8 @@ export default function HomePage() {
                     <div className="elementor-icon-box-content">
                       <h3 className="elementor-icon-box-title">
                         <span>
-                          We Offer Safe and Family-Friendly Pest Control Techniques						</span>
+                          {cmsText(c?.features?.items?.[1]?.text, 'We Offer Safe and Family-Friendly Pest Control Techniques')}
+                        </span>
                       </h3>
                     </div>
                   </div>
@@ -419,7 +263,8 @@ export default function HomePage() {
                     <div className="elementor-icon-box-content">
                       <h3 className="elementor-icon-box-title">
                         <span>
-                          Trained and qualified technicians in Melbourne						</span>
+                          {cmsText(c?.features?.items?.[2]?.text, 'Trained and qualified technicians in Melbourne')}
+                        </span>
                       </h3>
                     </div>
                   </div>
@@ -437,7 +282,8 @@ export default function HomePage() {
                     <div className="elementor-icon-box-content">
                       <h3 className="elementor-icon-box-title">
                         <span>
-                          Professional Methods to Manage Your Pest Problem!						</span>
+                          {cmsText(c?.features?.items?.[3]?.text, 'Professional Methods to Manage Your Pest Problem!')}
+                        </span>
                       </h3>
                     </div>
                   </div>
@@ -453,19 +299,21 @@ export default function HomePage() {
               <div className="elementor-widget-wrap elementor-element-populated">
                 <div className="elementor-element elementor-element-ccd7152 elementor-widget elementor-widget-heading" data-element_type="widget" data-id="ccd7152" data-settings="{&quot;_animation&quot;:&quot;none&quot;}" data-widget_type="heading.default">
                   <div className="elementor-widget-container">
-                    <h2 className="elementor-heading-title elementor-size-default">Why Choose</h2> </div>
+                    <h2 className="elementor-heading-title elementor-size-default">{cmsText(c?.why_choose?.eyebrow, 'Why Choose')}</h2> </div>
                 </div>
                 <div className="elementor-element elementor-element-63a0589a elementor-widget elementor-widget-elementskit-heading" data-element_type="widget" data-id="63a0589a" data-widget_type="elementskit-heading.default">
                   <div className="elementor-widget-container">
-                    <div className="ekit-wid-con"><div className="ekit-heading elementskit-section-title-wraper text_left ekit_heading_tablet- ekit_heading_mobile-"><h2 className="ekit-heading--title elementskit-section-title">Professional Pest Control in Melbourne CBD?</h2></div></div> </div>
+                    <div className="ekit-wid-con"><div className="ekit-heading elementskit-section-title-wraper text_left ekit_heading_tablet- ekit_heading_mobile-"><h2 className="ekit-heading--title elementskit-section-title">{cmsText(c?.why_choose?.title, 'Professional Pest Control in Melbourne CBD?')}</h2></div></div> </div>
                 </div>
                 <div className="elementor-element elementor-element-362ceb03 elementor-widget elementor-widget-text-editor" data-element_type="widget" data-id="362ceb03" data-widget_type="text-editor.default">
                   <div className="elementor-widget-container">
-                    <p><span style={{fontWeight: 400}}>Maintaining a pest-free environment in </span><b>Melbourne CBD</b><span style={{fontWeight: 400}}> is crucial for both residential and commercial spaces. At 7 States Pest Control, we specialize in providing reliable and effective </span><b>pest control Melbourne CBD</b><span style={{fontWeight: 400}}> solutions tailored to meet your specific needs.</span></p> </div>
+                    <CmsHtml html={c?.why_choose?.intro ?? '<p><span style="font-weight:400">Maintaining a pest-free environment in </span><b>Melbourne CBD</b><span style="font-weight:400"> is crucial for both residential and commercial spaces. At 7 States Pest Control, we specialize in providing reliable and effective </span><b>pest control Melbourne CBD</b><span style="font-weight:400"> solutions tailored to meet your specific needs.</span></p>'} />
+                  </div>
                 </div>
                 <div className="elementor-element elementor-element-45d765f elementor-widget elementor-widget-text-editor" data-element_type="widget" data-id="45d765f" data-widget_type="text-editor.default">
                   <div className="elementor-widget-container">
-                    <p><b>Pest control in Melbourne CBD</b><span style={{fontWeight: 400}}> goes beyond mere convenience — it’s about ensuring the health and safety of your home or business. Our </span><b>professional pest control Melbourne</b><span style={{fontWeight: 400}}> services are designed to eliminate pests efficiently and prevent their recurrence. By choosing 7 States Pest Control, you benefit from:</span></p><ul><li aria-level={1} style={{fontWeight: 400}}><b>Expertise and Effectiveness:</b><span style={{fontWeight: 400}}> Our experienced </span><b>pest exterminator Melbourne</b><span style={{fontWeight: 400}}> team utilizes advanced techniques and treatments to tackle a wide range of pests effectively.</span></li><li aria-level={1} style={{fontWeight: 400}}><b>Safety and Peace of Mind:</b><span style={{fontWeight: 400}}> We prioritize safety, using methods that are safe for your family, pets, and the environment.</span></li><li aria-level={1} style={{fontWeight: 400}}><b>Long-term Solutions:</b><span> We don’t just eliminate pests; we provide strategies to prevent future infestations, saving you time and money in the long run.</span></li></ul> </div>
+                    <CmsHtml html={c?.why_choose?.benefits} />
+                  </div>
                 </div>
                 <div className="elementor-element elementor-element-56659ba elementor-widget elementor-widget-elementskit-heading" data-element_type="widget" data-id="56659ba" data-widget_type="elementskit-heading.default">
                   <div className="elementor-widget-container">
@@ -575,22 +423,23 @@ export default function HomePage() {
                       <div className="elementor-widget-wrap elementor-element-populated">
                         <div className="elementor-element elementor-element-62e9fce4 elementor-widget elementor-widget-heading" data-element_type="widget" data-id="62e9fce4" data-settings="{&quot;_animation&quot;:&quot;none&quot;}" data-widget_type="heading.default">
                           <div className="elementor-widget-container">
-                            <h2 className="elementor-heading-title elementor-size-default">Ideas to reality</h2> </div>
+                            <h2 className="elementor-heading-title elementor-size-default">{cmsText(c?.cta?.eyebrow, 'Ideas to reality')}</h2> </div>
                         </div>
                         <div className="elementor-element elementor-element-71cbec9d elementor-widget elementor-widget-heading" data-element_type="widget" data-id="71cbec9d" data-widget_type="heading.default">
                           <div className="elementor-widget-container">
-                            <h2 className="elementor-heading-title elementor-size-default">Talk to Us Today to Learn More</h2> </div>
+                            <h2 className="elementor-heading-title elementor-size-default">{cmsText(c?.cta?.title, 'Talk to Us Today to Learn More')}</h2> </div>
                         </div>
                         <div className="elementor-element elementor-element-6eee8f25 elementor-widget elementor-widget-text-editor" data-element_type="widget" data-id="6eee8f25" data-widget_type="text-editor.default">
                           <div className="elementor-widget-container">
-                            <p>Do you have any specific questions about us, our services, or anything related to pest infestation issues? Call us today on <a href="tel:+61434660060">&nbsp;+61 434 660 060 </a>or use our contact form to connect with our&nbsp;<b>7 States Pest Control</b>. You can get answers to your questions, get upfront quotes for the&nbsp;<b>7 States Pest Control</b>&nbsp;issues, and receive high-quality tailored services.</p> </div>
+                            <CmsHtml html={c?.cta?.body ?? '<p>Do you have any specific questions about us, our services, or anything related to pest infestation issues? Call us today on <a href="tel:+61434660060">&nbsp;+61 434 660 060 </a>or use our contact form to connect with our&nbsp;<b>7 States Pest Control</b>. You can get answers to your questions, get upfront quotes for the&nbsp;<b>7 States Pest Control</b>&nbsp;issues, and receive high-quality tailored services.</p>'} />
+                          </div>
                         </div>
                         <div className="elementor-element elementor-element-2c3c324e elementor-widget elementor-widget-button" data-element_type="widget" data-id="2c3c324e" data-widget_type="button.default">
                           <div className="elementor-widget-container">
                             <div className="elementor-button-wrapper">
-                              <Link className="elementor-button elementor-button-link elementor-size-sm" to="/contact-us">
+                              <Link className="elementor-button elementor-button-link elementor-size-sm" to={cmsText(c?.cta?.button_url, '/contact-us')}>
                                 <span className="elementor-button-content-wrapper">
-                                  <span className="elementor-button-text">Contact Us</span>
+                                  <span className="elementor-button-text">{cmsText(c?.cta?.button_label, 'Contact Us')}</span>
                                 </span>
                               </Link>
                             </div>
@@ -614,11 +463,11 @@ export default function HomePage() {
                       <div className="elementor-widget-wrap elementor-element-populated">
                         <div className="elementor-element elementor-element-7c5f161 elementor-widget elementor-widget-heading" data-element_type="widget" data-id="7c5f161" data-settings="{&quot;_animation&quot;:&quot;none&quot;}" data-widget_type="heading.default">
                           <div className="elementor-widget-container">
-                            <h2 className="elementor-heading-title elementor-size-default">Our Process</h2> </div>
+                            <h2 className="elementor-heading-title elementor-size-default">{cmsText(c?.process?.eyebrow, 'Our Process')}</h2> </div>
                         </div>
                         <div className="elementor-element elementor-element-55c70f33 elementor-widget elementor-widget-heading" data-element_type="widget" data-id="55c70f33" data-settings="{&quot;_animation&quot;:&quot;none&quot;}" data-widget_type="heading.default">
                           <div className="elementor-widget-container">
-                            <h2 className="elementor-heading-title elementor-size-default">Our Proven Process for a Pest-Free Environment</h2> </div>
+                            <h2 className="elementor-heading-title elementor-size-default">{cmsText(c?.process?.title, 'Our Proven Process for a Pest-Free Environment')}</h2> </div>
                         </div>
                       </div>
                     </div>
@@ -626,7 +475,8 @@ export default function HomePage() {
                       <div className="elementor-widget-wrap elementor-element-populated">
                         <div className="elementor-element elementor-element-5c022552 elementor-widget elementor-widget-text-editor" data-element_type="widget" data-id="5c022552" data-widget_type="text-editor.default">
                           <div className="elementor-widget-container">
-                            <p className="font-claude-response-body break-words whitespace-normal leading-[1.7]">At 7 States Pest Control, we take pride in making our customers happy. We get the job done right, leaving your <strong>pest control Melbourne</strong> property free of pests and creating a healthy living or working space with our trusted <strong>pest removal Melbourne</strong> services.</p> </div>
+                            <CmsHtml html={c?.process?.intro ?? '<p class="font-claude-response-body break-words whitespace-normal leading-[1.7]">At 7 States Pest Control, we take pride in making our customers happy. We get the job done right, leaving your <strong>pest control Melbourne</strong> property free of pests and creating a healthy living or working space with our trusted <strong>pest removal Melbourne</strong> services.</p>'} />
+                          </div>
                         </div>
                         <div className="elementor-element elementor-element-728a2f19 elementor-widget-divider--view-line elementor-widget elementor-widget-divider" data-element_type="widget" data-id="728a2f19" data-widget_type="divider.default">
                           <div className="elementor-widget-container">
@@ -650,18 +500,19 @@ export default function HomePage() {
               <div className="elementor-element elementor-element-3356a0b e-con-full e-flex e-con e-child" data-element_type="container" data-id="3356a0b" data-settings="{&quot;background_background&quot;:&quot;classic&quot;,&quot;animation&quot;:&quot;none&quot;}">
                 <div className="elementor-element elementor-element-955adb1 elementor-widget elementor-widget-heading" data-element_type="widget" data-id="955adb1" data-widget_type="heading.default">
                   <div className="elementor-widget-container">
-                    <h2 className="elementor-heading-title elementor-size-default">Inspection</h2> </div>
+                    <h2 className="elementor-heading-title elementor-size-default">{cmsText(processStep('inspection')?.title, 'Inspection')}</h2> </div>
                 </div>
                 <div className="elementor-element elementor-element-91217db elementor-widget elementor-widget-text-editor" data-element_type="widget" data-id="91217db" data-widget_type="text-editor.default">
                   <div className="elementor-widget-container">
-                    <p className="font-claude-response-body break-words whitespace-normal leading-[1.7]">First things first, our <strong>pest inspection Melbourne</strong> experts will come to your Melbourne home or business and take a close look around. They’ll figure out what kind of pests you have, how bad it is, and why they showed up in the first place. This helps our <strong>pest exterminator Melbourne</strong> team target the exact pests and get rid of them for good with our reliable <strong>pest control Melbourne</strong> solutions.</p> </div>
+                    <CmsHtml html={processStep('inspection')?.description} />
+                  </div>
                 </div>
               </div>
             </div>
             <div className="elementor-element elementor-element-ad9a9e6 e-con-full e-flex e-con e-child" data-element_type="container" data-id="ad9a9e6">
               <div className="elementor-element elementor-element-1605948 elementor-widget elementor-widget-image" data-element_type="widget" data-id={1605948} data-widget_type="image.default">
                 <div className="elementor-widget-container">
-                  <img alt="Pest Control Melbourne" className="attachment-large size-large wp-image-556" decoding="async" height={505} loading="lazy" sizes="(max-width: 769px) 100vw, 769px" src="/assets/images/About-Pest-Control-6.jpg-2_ce342d76.webp" srcSet="/assets/images/About-Pest-Control-6.jpg-2_ce342d76.webp 769w, /assets/images/About-Pest-Control-6.jpg-2-300x197_2a18f2f2.webp 300w" width={769} /> </div>
+                  <img alt={cmsText(processStep('inspection')?.alt, 'Pest Control Melbourne')} className="attachment-large size-large wp-image-556" decoding="async" height={505} loading="lazy" sizes="(max-width: 769px) 100vw, 769px" src={cmsMediaUrl(processStep('inspection')?.image, '/assets/images/About-Pest-Control-6.jpg-2_ce342d76.webp')} width={769} /> </div>
               </div>
             </div>
           </div>
@@ -672,18 +523,19 @@ export default function HomePage() {
               <div className="elementor-element elementor-element-e06ce8b e-con-full e-flex e-con e-child" data-element_type="container" data-id="e06ce8b" data-settings="{&quot;background_background&quot;:&quot;classic&quot;,&quot;animation&quot;:&quot;none&quot;}">
                 <div className="elementor-element elementor-element-d81403f elementor-widget elementor-widget-heading" data-element_type="widget" data-id="d81403f" data-widget_type="heading.default">
                   <div className="elementor-widget-container">
-                    <h2 className="elementor-heading-title elementor-size-default">Treatment Plan</h2> </div>
+                    <h2 className="elementor-heading-title elementor-size-default">{cmsText(processStep('treatment_plan')?.title, 'Treatment Plan')}</h2> </div>
                 </div>
                 <div className="elementor-element elementor-element-86afff7 elementor-widget elementor-widget-text-editor" data-element_type="widget" data-id="86afff7" data-widget_type="text-editor.default">
                   <div className="elementor-widget-container">
-                    <p className="font-claude-response-body break-words whitespace-normal leading-[1.7]">After the <strong>pest inspection Melbourne</strong>, we’ll create a personalized <strong>pest control Melbourne</strong> plan just for you. This plan will outline exactly what we’ll do to get rid of the pests safely and effectively. As a trusted <strong>pest control service in Melbourne</strong>, we only use safe products and methods that follow the latest guidelines.</p> </div>
+                    <CmsHtml html={processStep('treatment_plan')?.description} />
+                  </div>
                 </div>
               </div>
             </div>
             <div className="elementor-element elementor-element-b6adbbd e-con-full e-flex e-con e-child" data-element_type="container" data-id="b6adbbd">
               <div className="elementor-element elementor-element-e2eaaba elementor-widget elementor-widget-image" data-element_type="widget" data-id="e2eaaba" data-widget_type="image.default">
                 <div className="elementor-widget-container">
-                  <img alt="pest control" className="attachment-large size-large wp-image-663" decoding="async" height={534} loading="lazy" sizes="(max-width: 800px) 100vw, 800px" src="/assets/images/pest-01-2048x1365-1-1-1024x683_9521438d.jpg" srcSet="/assets/images/pest-01-2048x1365-1-1-1024x683_9521438d.jpg 1024w, /assets/images/pest-01-2048x1365-1-1-300x200_88f6141d.jpg 300w, /assets/images/pest-01-2048x1365-1-1-768x512_c2c7babb.jpg 768w, /assets/images/pest-01-2048x1365-1-1-1536x1024_24f9dfda.jpg 1536w, /assets/images/pest-01-2048x1365-1-1_d6d96978.jpg 2048w" width={800} /> </div>
+                  <img alt={cmsText(processStep('treatment_plan')?.alt, 'pest control')} className="attachment-large size-large wp-image-663" decoding="async" height={534} loading="lazy" sizes="(max-width: 800px) 100vw, 800px" src={cmsMediaUrl(processStep('treatment_plan')?.image, '/assets/images/pest-01-2048x1365-1-1-1024x683_9521438d.jpg')} width={800} /> </div>
               </div>
             </div>
           </div>
@@ -694,18 +546,19 @@ export default function HomePage() {
               <div className="elementor-element elementor-element-01debaf e-con-full e-flex e-con e-child" data-element_type="container" data-id="01debaf" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
                 <div className="elementor-element elementor-element-b9adb7e elementor-widget elementor-widget-heading" data-element_type="widget" data-id="b9adb7e" data-widget_type="heading.default">
                   <div className="elementor-widget-container">
-                    <h2 className="elementor-heading-title elementor-size-default">The Extermination Procedure</h2> </div>
+                    <h2 className="elementor-heading-title elementor-size-default">{cmsText(processStep('extermination')?.title, 'The Extermination Procedure')}</h2> </div>
                 </div>
                 <div className="elementor-element elementor-element-0937eb6 elementor-widget elementor-widget-text-editor" data-element_type="widget" data-id="0937eb6" data-widget_type="text-editor.default">
                   <div className="elementor-widget-container">
-                    <p className="font-claude-response-body break-words whitespace-normal leading-[1.7]">Once you approve the plan, our trained <strong>pest exterminator Melbourne</strong> technicians will get to work! They’ll use the latest tools and methods to get rid of those unwanted visitors, whether it’s ants, spiders, termites, or anything else. As your <strong>professional pest control Melbourne</strong> provider, we’ll work quickly and efficiently to minimize any disruption to your day with our <strong>same day pest control Melbourne</strong> service.</p> </div>
+                    <CmsHtml html={processStep('extermination')?.description} />
+                  </div>
                 </div>
               </div>
             </div>
             <div className="elementor-element elementor-element-f558ec8 e-con-full e-flex e-con e-child" data-element_type="container" data-id="f558ec8">
               <div className="elementor-element elementor-element-affd0ea elementor-widget elementor-widget-image" data-element_type="widget" data-id="affd0ea" data-widget_type="image.default">
                 <div className="elementor-widget-container">
-                  <img alt className="attachment-large size-large wp-image-664" decoding="async" height={534} loading="lazy" sizes="(max-width: 800px) 100vw, 800px" src="/assets/images/JGHJJ-01-2048x1365-2-1024x683_666c5558.jpg" srcSet="/assets/images/JGHJJ-01-2048x1365-2-1024x683_666c5558.jpg 1024w, /assets/images/JGHJJ-01-2048x1365-2-300x200_4f0cfd48.jpg 300w, /assets/images/JGHJJ-01-2048x1365-2-768x512_798ab4e2.jpg 768w, /assets/images/JGHJJ-01-2048x1365-2-1536x1024_421acc4d.jpg 1536w, /assets/images/JGHJJ-01-2048x1365-2_478950c1.jpg 2048w" width={800} /> </div>
+                  <img alt={cmsText(processStep('extermination')?.alt, '')} className="attachment-large size-large wp-image-664" decoding="async" height={534} loading="lazy" sizes="(max-width: 800px) 100vw, 800px" src={cmsMediaUrl(processStep('extermination')?.image, '/assets/images/JGHJJ-01-2048x1365-2-1024x683_666c5558.jpg')} width={800} /> </div>
               </div>
             </div>
           </div>
@@ -716,18 +569,19 @@ export default function HomePage() {
               <div className="elementor-element elementor-element-e8b520a e-con-full e-flex e-con e-child" data-element_type="container" data-id="e8b520a" data-settings="{&quot;background_background&quot;:&quot;classic&quot;,&quot;animation&quot;:&quot;none&quot;}">
                 <div className="elementor-element elementor-element-bcea69a elementor-widget elementor-widget-heading" data-element_type="widget" data-id="bcea69a" data-widget_type="heading.default">
                   <div className="elementor-widget-container">
-                    <h2 className="elementor-heading-title elementor-size-default">Monitoring</h2> </div>
+                    <h2 className="elementor-heading-title elementor-size-default">{cmsText(processStep('monitoring')?.title, 'Monitoring')}</h2> </div>
                 </div>
                 <div className="elementor-element elementor-element-2ca744f elementor-widget elementor-widget-text-editor" data-element_type="widget" data-id="2ca744f" data-widget_type="text-editor.default">
                   <div className="elementor-widget-container">
-                    <p className="font-claude-response-body break-words whitespace-normal leading-[1.7]">Even after we get rid of the pests, our <strong>pest control Melbourne</strong> team will keep an eye on things to make sure they don’t come back. We’ll check for any signs of them and take care of any new problems that might pop up with our reliable <strong>home pest control Melbourne</strong> service. This way, you can be sure your home or business stays pest-free with 7 States <strong>pest control Melbourne CBD</strong> experts by your side.</p> </div>
+                    <CmsHtml html={processStep('monitoring')?.description} />
+                  </div>
                 </div>
               </div>
             </div>
             <div className="elementor-element elementor-element-25a1256 e-con-full e-flex e-con e-child" data-element_type="container" data-id="25a1256">
               <div className="elementor-element elementor-element-2e07a24 elementor-widget elementor-widget-image" data-element_type="widget" data-id="2e07a24" data-widget_type="image.default">
                 <div className="elementor-widget-container">
-                  <img alt="Monitoring" className="attachment-large size-large wp-image-666" decoding="async" height={534} loading="lazy" sizes="(max-width: 800px) 100vw, 800px" src="/assets/images/111-01-2048x1365-2-1024x683_715af706.jpg" srcSet="/assets/images/111-01-2048x1365-2-1024x683_715af706.jpg 1024w, /assets/images/111-01-2048x1365-2-300x200_7208e343.jpg 300w, /assets/images/111-01-2048x1365-2-768x512_f3014e66.jpg 768w, /assets/images/111-01-2048x1365-2-1536x1024_7ca57d33.jpg 1536w, /assets/images/111-01-2048x1365-2_ec883892.jpg 2048w" width={800} /> </div>
+                  <img alt={cmsText(processStep('monitoring')?.alt, 'Monitoring')} className="attachment-large size-large wp-image-666" decoding="async" height={534} loading="lazy" sizes="(max-width: 800px) 100vw, 800px" src={cmsMediaUrl(processStep('monitoring')?.image, '/assets/images/111-01-2048x1365-2-1024x683_715af706.jpg')} width={800} /> </div>
               </div>
             </div>
           </div>
@@ -738,18 +592,19 @@ export default function HomePage() {
               <div className="elementor-element elementor-element-fa46bbc e-con-full e-flex e-con e-child" data-element_type="container" data-id="fa46bbc" data-settings="{&quot;background_background&quot;:&quot;classic&quot;,&quot;animation&quot;:&quot;none&quot;}">
                 <div className="elementor-element elementor-element-f460faf elementor-widget elementor-widget-heading" data-element_type="widget" data-id="f460faf" data-widget_type="heading.default">
                   <div className="elementor-widget-container">
-                    <h2 className="elementor-heading-title elementor-size-default">Prevention Measures and Tips</h2> </div>
+                    <h2 className="elementor-heading-title elementor-size-default">{cmsText(processStep('prevention')?.title, 'Prevention Measures and Tips')}</h2> </div>
                 </div>
                 <div className="elementor-element elementor-element-9e335b2 elementor-widget elementor-widget-text-editor" data-element_type="widget" data-id="9e335b2" data-widget_type="text-editor.default">
                   <div className="elementor-widget-container">
-                    <p><span style={{fontWeight: 400}}>We don’t just get rid of pests, we help you keep them away! Our </span><b>pest control Melbourne</b><span style={{fontWeight: 400}}> experts will give you tips and tricks on how to stop them from coming back in the first place. This might involve sealing up any holes in your walls, keeping things clean, or storing food properly. By following our </span><b>pest removal Melbourne</b><span style={{fontWeight: 400}}> advice, you can create a pest-free environment that lasts — because at 7 States </span><b>pest control service in Melbourne</b><span style={{fontWeight: 400}}>, we believe in long-term </span><b>home pest control Melbourne</b><span style={{fontWeight: 400}}> and </span><Link to="/rodent-control-in-melbourne"><b>rodent control in Melbourne</b></Link><span style={{fontWeight: 400}}> solutions.</span></p> </div>
+                    <CmsHtml html={processStep('prevention')?.description} />
+                  </div>
                 </div>
               </div>
             </div>
             <div className="elementor-element elementor-element-37d58eb e-con-full e-flex e-con e-child" data-element_type="container" data-id="37d58eb">
               <div className="elementor-element elementor-element-ed53ee8 elementor-widget elementor-widget-image" data-element_type="widget" data-id="ed53ee8" data-widget_type="image.default">
                 <div className="elementor-widget-container">
-                  <img alt className="attachment-large size-large wp-image-667" decoding="async" height={534} loading="lazy" sizes="(max-width: 800px) 100vw, 800px" src="/assets/images/URUU-01-2048x1365-2-1024x683_ca0bd96a.jpg" srcSet="/assets/images/URUU-01-2048x1365-2-1024x683_ca0bd96a.jpg 1024w, /assets/images/URUU-01-2048x1365-2-300x200_9126f5fa.jpg 300w, /assets/images/URUU-01-2048x1365-2-768x512_9c874bb1.jpg 768w, /assets/images/URUU-01-2048x1365-2-1536x1024_017ed334.jpg 1536w, /assets/images/URUU-01-2048x1365-2_7c216e6d.jpg 2048w" width={800} /> </div>
+                  <img alt={cmsText(processStep('prevention')?.alt, '')} className="attachment-large size-large wp-image-667" decoding="async" height={534} loading="lazy" sizes="(max-width: 800px) 100vw, 800px" src={cmsMediaUrl(processStep('prevention')?.image, '/assets/images/URUU-01-2048x1365-2-1024x683_ca0bd96a.jpg')} width={800} /> </div>
               </div>
             </div>
           </div>
@@ -764,11 +619,11 @@ export default function HomePage() {
                       <div className="elementor-widget-wrap elementor-element-populated">
                         <div className="elementor-element elementor-element-d13b462 elementor-widget elementor-widget-heading" data-element_type="widget" data-id="d13b462" data-settings="{&quot;_animation&quot;:&quot;none&quot;}" data-widget_type="heading.default">
                           <div className="elementor-widget-container">
-                            <h2 className="elementor-heading-title elementor-size-default">Clients Reviews</h2> </div>
+                            <h2 className="elementor-heading-title elementor-size-default">{cmsText(c?.reviews?.eyebrow, 'Clients Reviews')}</h2> </div>
                         </div>
                         <div className="elementor-element elementor-element-bef6205 elementor-widget elementor-widget-heading" data-element_type="widget" data-id="bef6205" data-settings="{&quot;_animation&quot;:&quot;none&quot;}" data-widget_type="heading.default">
                           <div className="elementor-widget-container">
-                            <h2 className="elementor-heading-title elementor-size-default">7 States Pest Control for Reliable Pest Management Solutions</h2> </div>
+                            <h2 className="elementor-heading-title elementor-size-default">{cmsText(c?.reviews?.title, '7 States Pest Control for Reliable Pest Management Solutions')}</h2> </div>
                         </div>
                       </div>
                     </div>
@@ -776,7 +631,7 @@ export default function HomePage() {
                       <div className="elementor-widget-wrap elementor-element-populated">
                         <div className="elementor-element elementor-element-e35f23f elementor-widget elementor-widget-heading" data-element_type="widget" data-id="e35f23f" data-widget_type="heading.default">
                           <div className="elementor-widget-container">
-                            <h3 className="elementor-heading-title elementor-size-default">Reviews of Our Pest Control Services</h3> </div>
+                            <h3 className="elementor-heading-title elementor-size-default">{cmsText(c?.reviews?.subtitle, 'Reviews of Our Pest Control Services')}</h3> </div>
                         </div>
                         <div className="elementor-element elementor-element-89cdf79 elementor-widget elementor-widget-heading" data-element_type="widget" data-id="89cdf79" data-widget_type="heading.default">
                           <div className="elementor-widget-container">
@@ -824,7 +679,7 @@ export default function HomePage() {
                         </div>
                         <div className="elementor-element elementor-element-eb9e81b elementor-widget elementor-widget-text-editor" data-element_type="widget" data-id="eb9e81b" data-widget_type="text-editor.default">
                           <div className="elementor-widget-container">
-                            <p>Based on&nbsp;45 reviews</p> </div>
+                            <p>{cmsText(c?.reviews?.rating_label, 'Based on\u00a045 reviews')}</p> </div>
                         </div>
                         <div className="elementor-element elementor-element-dd6050e elementor-widget elementor-widget-rating" data-element_type="widget" data-id="dd6050e" data-widget_type="rating.default">
                           <div className="elementor-widget-container">
@@ -882,7 +737,7 @@ export default function HomePage() {
                   <div className="e-con-inner">
                     <div className="elementor-element elementor-element-d7e30f8 elementor-widget elementor-widget-shortcode" data-element_type="widget" data-id="d7e30f8" data-widget_type="shortcode.default">
                       <div className="elementor-widget-container">
-                        <div className="elementor-shortcode"><div data-css-url="https://7statespestcontrol.com.au/wp-content/uploads/trustindex-google-widget.css?1751194100" data-src="https://cdn.trustindex.io/loader.js?wp-widget" data-ti-widget-inited="true" /></div>
+                        <div className="elementor-shortcode"><TrustIndexReviews /></div>
                       </div>
                     </div>
                   </div>
@@ -897,101 +752,48 @@ export default function HomePage() {
               <div className="elementor-widget-wrap elementor-element-populated">
                 <div className="elementor-element elementor-element-e14eb60 elementor-widget elementor-widget-heading" data-element_type="widget" data-id="e14eb60" data-settings="{&quot;_animation&quot;:&quot;none&quot;}" data-widget_type="heading.default">
                   <div className="elementor-widget-container">
-                    <h2 className="elementor-heading-title elementor-size-default">FAQ'S</h2> </div>
+                    <h2 className="elementor-heading-title elementor-size-default">{cmsText(c?.faq?.eyebrow, "FAQ'S")}</h2> </div>
                 </div>
                 <div className="elementor-element elementor-element-5a80fdcb elementor-widget elementor-widget-heading" data-element_type="widget" data-id="5a80fdcb" data-settings="{&quot;_animation&quot;:&quot;none&quot;}" data-widget_type="heading.default">
                   <div className="elementor-widget-container">
-                    <h2 className="elementor-heading-title elementor-size-default">Frequently Asked Questions</h2> </div>
+                    <h2 className="elementor-heading-title elementor-size-default">{cmsText(c?.faq?.title, 'Frequently Asked Questions')}</h2> </div>
                 </div>
                 <div className="elementor-element elementor-element-4874caf3 elementor-widget elementor-widget-elementskit-accordion" data-element_type="widget" data-id="4874caf3" data-widget_type="elementskit-accordion.default">
                   <div className="elementor-widget-container">
                     <div className="ekit-wid-con">
                       <div className="elementskit-accordion accoedion-primary" id="accordion-6a15902bebc0a">
-                        <div className="elementskit-card active">
-                          <div className="elementskit-card-header" id="primaryHeading-0-4874caf3">
-                            <a aria-controls="Collapse-6f491396a15902bebc0a" aria-expanded="true" className="ekit-accordion--toggler elementskit-btn-link collapsed" data-ekit-toggle="collapse" data-target="#Collapse-6f491396a15902bebc0a" href="#collapse-6f491396a15902bebc0a">
-                              <span className="ekit-accordion-title"> 1. What makes 7 States Pest Control the best pest control service in Melbourne?</span>
-                              <div className="ekit_accordion_icon_group">
-                                <div className="ekit_accordion_normal_icon">
-                                  <i className="icon icon-down-arrow1" /> </div>
-                                <div className="ekit_accordion_active_icon">
-                                  <i className="icon icon-up-arrow1" /> </div>
+                        {(c?.faq?.items ?? []).map((item, index) => (
+                          <div key={index} className={`elementskit-card${index === 0 ? ' active' : ''}`}>
+                            <div className="elementskit-card-header" id={`primaryHeading-${index}-4874caf3`}>
+                              <a
+                                aria-controls={`Collapse-faq-${index}`}
+                                aria-expanded={index === 0 ? 'true' : 'false'}
+                                className="ekit-accordion--toggler elementskit-btn-link collapsed"
+                                data-ekit-toggle="collapse"
+                                data-target={`#Collapse-faq-${index}`}
+                                href={`#collapse-faq-${index}`}
+                              >
+                                <span className="ekit-accordion-title"> {cmsText(item?.question, '')}</span>
+                                <div className="ekit_accordion_icon_group">
+                                  <div className="ekit_accordion_normal_icon">
+                                    <i className="icon icon-down-arrow1" /> </div>
+                                  <div className="ekit_accordion_active_icon">
+                                    <i className="icon icon-up-arrow1" /> </div>
+                                </div>
+                              </a>
+                            </div>
+                            <div
+                              aria-labelledby={`primaryHeading-${index}-4874caf3`}
+                              className={index === 0 ? 'show collapse' : 'collapse'}
+                              data-parent="#accordion-6a15902bebc0a"
+                              id={`Collapse-faq-${index}`}
+                            >
+                              <div className="elementskit-card-body ekit-accordion--content">
+                                <CmsHtml html={item?.answer_html} />
                               </div>
-                            </a>
+                            </div>
                           </div>
-                          <div aria-labelledby="primaryHeading-0-4874caf3" className="show collapse" data-parent="#accordion-6a15902bebc0a" id="Collapse-6f491396a15902bebc0a">
-                            <div className="elementskit-card-body ekit-accordion--content">
-                              <p>&nbsp;<b>7 States Pest Control</b>&nbsp;provides top-rated&nbsp;<b>pest control service in Melbourne</b>, using advanced techniques and eco-friendly products to eliminate pests quickly and safely. Our experienced team handles all types of infestations, ensuring long-term protection.</p> </div>
-                          </div>
-                        </div>
-                        <div className="elementskit-card">
-                          <div className="elementskit-card-header" id="primaryHeading-1-4874caf3">
-                            <a aria-controls="Collapse-042b3786a15902bebc0a" aria-expanded="false" className="ekit-accordion--toggler elementskit-btn-link collapsed" data-ekit-toggle="collapse" data-target="#Collapse-042b3786a15902bebc0a" href="#collapse-042b3786a15902bebc0a">
-                              <span className="ekit-accordion-title"> 2. Where can I find reliable pest control in Melbourne CBD?</span>
-                              <div className="ekit_accordion_icon_group">
-                                <div className="ekit_accordion_normal_icon">
-                                  <i className="icon icon-down-arrow1" /> </div>
-                                <div className="ekit_accordion_active_icon">
-                                  <i className="icon icon-up-arrow1" /> </div>
-                              </div>
-                            </a>
-                          </div>
-                          <div aria-labelledby="primaryHeading-1-4874caf3" className="collapse" data-parent="#accordion-6a15902bebc0a" id="Collapse-042b3786a15902bebc0a">
-                            <div className="elementskit-card-body ekit-accordion--content">
-                              <p>For fast and effective&nbsp;<b>pest control Melbourne CBD</b>, trust&nbsp;<b>7 States Pest Control</b>. We serve both residential and commercial properties in the central business district with tailored pest management solutions.</p> </div>
-                          </div>
-                        </div>
-                        <div className="elementskit-card">
-                          <div className="elementskit-card-header" id="primaryHeading-2-4874caf3">
-                            <a aria-controls="Collapse-fcc8da46a15902bebc0a" aria-expanded="false" className="ekit-accordion--toggler elementskit-btn-link collapsed" data-ekit-toggle="collapse" data-target="#Collapse-fcc8da46a15902bebc0a" href="#collapse-fcc8da46a15902bebc0a">
-                              <span className="ekit-accordion-title"> 3. How do I choose a professional pest exterminator in Melbourne?</span>
-                              <div className="ekit_accordion_icon_group">
-                                <div className="ekit_accordion_normal_icon">
-                                  <i className="icon icon-down-arrow1" /> </div>
-                                <div className="ekit_accordion_active_icon">
-                                  <i className="icon icon-up-arrow1" /> </div>
-                              </div>
-                            </a>
-                          </div>
-                          <div aria-labelledby="primaryHeading-2-4874caf3" className="collapse" data-parent="#accordion-6a15902bebc0a" id="Collapse-fcc8da46a15902bebc0a">
-                            <div className="elementskit-card-body ekit-accordion--content">
-                              <p>Look for licensed, experienced providers like&nbsp;<b>7 States Pest Control</b>. As a leading&nbsp;<b>pest exterminator Melbourne</b>, we offer prompt inspections, thorough extermination, and guaranteed results at competitive rates.</p> </div>
-                          </div>
-                        </div>
-                        <div className="elementskit-card">
-                          <div className="elementskit-card-header" id="primaryHeading-3-4874caf3">
-                            <a aria-controls="Collapse-247bb1b6a15902bebc0a" aria-expanded="false" className="ekit-accordion--toggler elementskit-btn-link collapsed" data-ekit-toggle="collapse" data-target="#Collapse-247bb1b6a15902bebc0a" href="#collapse-247bb1b6a15902bebc0a">
-                              <span className="ekit-accordion-title"> 4. Is there a trusted pest removal company in Melbourne?</span>
-                              <div className="ekit_accordion_icon_group">
-                                <div className="ekit_accordion_normal_icon">
-                                  <i className="icon icon-down-arrow1" /> </div>
-                                <div className="ekit_accordion_active_icon">
-                                  <i className="icon icon-up-arrow1" /> </div>
-                              </div>
-                            </a>
-                          </div>
-                          <div aria-labelledby="primaryHeading-3-4874caf3" className="collapse" data-parent="#accordion-6a15902bebc0a" id="Collapse-247bb1b6a15902bebc0a">
-                            <div className="elementskit-card-body ekit-accordion--content">
-                              <p>&nbsp;Yes,&nbsp;<b>7 States Pest Control</b>&nbsp;is your go-to expert for&nbsp;<b>pest removal Melbourne</b>. We identify the root cause of infestations and apply targeted treatments to remove pests from your home or business permanently.</p> </div>
-                          </div>
-                        </div>
-                        <div className="elementskit-card">
-                          <div className="elementskit-card-header" id="primaryHeading-4-4874caf3">
-                            <a aria-controls="Collapse-43386d36a15902bebc0a" aria-expanded="false" className="ekit-accordion--toggler elementskit-btn-link collapsed" data-ekit-toggle="collapse" data-target="#Collapse-43386d36a15902bebc0a" href="#collapse-43386d36a15902bebc0a">
-                              <span className="ekit-accordion-title"> 5. Why should I invest in pest control in Melbourne for my home or office?</span>
-                              <div className="ekit_accordion_icon_group">
-                                <div className="ekit_accordion_normal_icon">
-                                  <i className="icon icon-down-arrow1" /> </div>
-                                <div className="ekit_accordion_active_icon">
-                                  <i className="icon icon-up-arrow1" /> </div>
-                              </div>
-                            </a>
-                          </div>
-                          <div aria-labelledby="primaryHeading-4-4874caf3" className="collapse" data-parent="#accordion-6a15902bebc0a" id="Collapse-43386d36a15902bebc0a">
-                            <div className="elementskit-card-body ekit-accordion--content">
-                              <p>Regular&nbsp;<b>pest control in Melbourne</b>&nbsp;helps protect your property from damage and health risks.&nbsp;<b>7 States Pest Control</b>&nbsp;offers comprehensive services that keep your environment pest-free and comfortable year-round.</p> </div>
-                          </div>
-                        </div>
+                        ))}
                       </div>
                     </div> </div>
                 </div>
@@ -1005,7 +807,7 @@ export default function HomePage() {
                       <div className="elementor-widget-wrap elementor-element-populated">
                         <div className="elementor-element elementor-element-76075da8 elementor-widget elementor-widget-image" data-element_type="widget" data-id="76075da8" data-widget_type="image.default">
                           <div className="elementor-widget-container">
-                            <img alt="7 States Pest Control" className="attachment-full size-full wp-image-778" decoding="async" height={1280} loading="lazy" sizes="(max-width: 1280px) 100vw, 1280px" src="/assets/images/WhatsApp-Image-2024-08-28-at-15.35.06_bc7d2870-1_ecbbd918.jpg" srcSet="/assets/images/WhatsApp-Image-2024-08-28-at-15.35.06_bc7d2870-1_ecbbd918.jpg 1280w, /assets/images/WhatsApp-Image-2024-08-28-at-15.35.06_bc7d2870-1-300x30_e03d7ebf.jpg 300w, /assets/images/WhatsApp-Image-2024-08-28-at-15.35.06_bc7d2870-1-1024x1_359a34a8.jpg 1024w, /assets/images/WhatsApp-Image-2024-08-28-at-15.35.06_bc7d2870-1-150x15_3201d1bd.jpg 150w, /assets/images/WhatsApp-Image-2024-08-28-at-15.35.06_bc7d2870-1-768x76_a05df40f.jpg 768w" width={1280} /> </div>
+                            <img alt="7 States Pest Control" className="attachment-full size-full wp-image-778" decoding="async" height={1280} loading="lazy" sizes="(max-width: 1280px) 100vw, 1280px" src={cmsMediaUrl(c?.faq?.image, '/assets/images/WhatsApp-Image-2024-08-28-at-15.35.06_bc7d2870-1_ecbbd918.jpg')} width={1280} /> </div>
                         </div>
                         <div className="elementor-element elementor-element-6af4e30d elementor-widget__width-initial elementor-absolute ekit-equal-height-disable elementor-widget elementor-widget-elementskit-icon-box" data-element_type="widget" data-id="6af4e30d" data-settings="{&quot;_position&quot;:&quot;absolute&quot;,&quot;_animation&quot;:&quot;none&quot;}" data-widget_type="elementskit-icon-box.default">
                           <div className="elementor-widget-container">
@@ -1013,11 +815,12 @@ export default function HomePage() {
                               <div className="elementskit-infobox text-left text- icon-lef-right-aligin elementor-animation-">
                                 <div className="box-body">
                                   <h3 className="elementskit-info-box-title">
-                                    Any questions you want to ask?              </h3>
-                                  <p>Find answers to common questions about our pest control services, treatments, safety, and scheduling.</p>
+                                    {cmsText(c?.faq?.sidebar_title, 'Any questions you want to ask?')}
+                                  </h3>
+                                  <p>{cmsText(c?.faq?.sidebar_text, 'Find answers to common questions about our pest control services, treatments, safety, and scheduling.')}</p>
                                   <div className="box-footer disable_hover_button">
                                     <div className="btn-wraper">
-                                      <Link className="elementskit-btn whitespace--normal" to="/contact-us">
+                                      <Link className="elementskit-btn whitespace--normal" to={cmsText(c?.faq?.sidebar_link, '/contact-us')}>
                                         Contact Us                                  </Link>
                                     </div>
                                   </div>
@@ -1037,11 +840,11 @@ export default function HomePage() {
           <div className="e-con-inner">
             <div className="elementor-element elementor-element-4744bf9 elementor-widget elementor-widget-heading" data-element_type="widget" data-id="4744bf9" data-settings="{&quot;_animation&quot;:&quot;none&quot;}" data-widget_type="heading.default">
               <div className="elementor-widget-container">
-                <h2 className="elementor-heading-title elementor-size-default">Our Latest Article</h2> </div>
+                <h2 className="elementor-heading-title elementor-size-default">{cmsText(c?.blog?.eyebrow, 'Our Latest Article')}</h2> </div>
             </div>
             <div className="elementor-element elementor-element-affbaf9 elementor-widget elementor-widget-heading" data-element_type="widget" data-id="affbaf9" data-widget_type="heading.default">
               <div className="elementor-widget-container">
-                <h2 className="elementor-heading-title elementor-size-default">Pest Problems? Here's Why Read Might Be Your Secret Weapon.</h2> </div>
+                <h2 className="elementor-heading-title elementor-size-default">{cmsText(c?.blog?.title, "Pest Problems? Here's Why Read Might Be Your Secret Weapon.")}</h2> </div>
             </div>
           </div>
         </div>

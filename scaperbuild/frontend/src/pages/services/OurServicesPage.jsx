@@ -1,12 +1,21 @@
 import PhoneNumberInput from '../../components/PhoneNumberInput.jsx'
+import ServiceCmsContentBlocks from '../../components/service/ServiceCmsContentBlocks.jsx'
+import ServiceFaqCms from '../../components/service/ServiceFaqCms.jsx'
+import { cmsText } from '../../utils/cmsMedia.js'
+import usePageCms from '../../hooks/usePageCms.js'
+import ServiceCmsStyles from '../../components/service/ServiceCmsStyles.jsx'
+import CmsHtml from '../../components/home/CmsHtml.jsx'
 import usePageMeta from '../../hooks/usePageMeta.js'
 import { Link } from 'react-router-dom'
 
 export default function OurServicesPage() {
-  usePageMeta('our_services')
+  const { page, content: c } = usePageCms('our-services')
+  usePageMeta('our_services', page)
 
   return (
     <>
+      <ServiceCmsStyles content={c} heroBgId="d60c811" ctaBgId="057b4d3" />
+      <ServiceCmsContentBlocks content={c} />
       <div className="elementor elementor-7780" data-elementor-id={7780} data-elementor-post-type="page" data-elementor-type="wp-page">
         <div className="elementor-element elementor-element-d60c811 e-flex e-con-boxed e-con e-parent e-lazyloaded" data-element_type="container" data-id="d60c811" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
           <div className="e-con-inner">
@@ -23,14 +32,14 @@ export default function OurServicesPage() {
                       <a href="#">
                         <span className="elementor-icon-list-icon">
                           <svg aria-hidden="true" className="e-font-icon-svg e-fas-angle-right" viewBox="0 0 256 512" xmlns="http://www.w3.org/2000/svg"><path d="M224.3 273l-136 136c-9.4 9.4-24.6 9.4-33.9 0l-22.6-22.6c-9.4-9.4-9.4-24.6 0-33.9l96.4-96.4-96.4-96.4c-9.4-9.4-9.4-24.6 0-33.9L54.3 103c9.4-9.4 24.6-9.4 33.9 0l136 136c9.5 9.4 9.5 24.6.1 34z" /></svg> </span>
-                        <span className="elementor-icon-list-text">Services</span>
+                        <span className="elementor-icon-list-text">{cmsText(c?.hero?.breadcrumb_parent, 'Services')}</span>
                       </a>
                     </li>
                     <li className="elementor-icon-list-item elementor-inline-item">
                       <a href="#">
                         <span className="elementor-icon-list-icon">
                           <svg aria-hidden="true" className="e-font-icon-svg e-fas-angle-right" viewBox="0 0 256 512" xmlns="http://www.w3.org/2000/svg"><path d="M224.3 273l-136 136c-9.4 9.4-24.6 9.4-33.9 0l-22.6-22.6c-9.4-9.4-9.4-24.6 0-33.9l96.4-96.4-96.4-96.4c-9.4-9.4-9.4-24.6 0-33.9L54.3 103c9.4-9.4 24.6-9.4 33.9 0l136 136c9.5 9.4 9.5 24.6.1 34z" /></svg> </span>
-                        <span className="elementor-icon-list-text">pest control services</span>
+                        <span className="elementor-icon-list-text">{cmsText(c?.hero?.breadcrumb_current, 'pest control services')}</span>
                       </a>
                     </li>
                   </ul>
@@ -38,25 +47,26 @@ export default function OurServicesPage() {
               </div>
               <div className="elementor-element elementor-element-69b35b1 elementor-widget elementor-widget-heading" data-element_type="widget" data-id="69b35b1" data-settings="{&quot;_animation&quot;:&quot;none&quot;}" data-widget_type="heading.default">
                 <div className="elementor-widget-container">
-                  <h2 className="elementor-heading-title elementor-size-default">why hire us</h2> </div>
+                  <h2 className="elementor-heading-title elementor-size-default">{cmsText(c?.hero?.title, 'why hire us')}</h2> </div>
               </div>
               <div className="elementor-element elementor-element-6951f92 elementor-widget elementor-widget-heading" data-element_type="widget" data-id="6951f92" data-settings="{&quot;_animation&quot;:&quot;none&quot;}" data-widget_type="heading.default">
                 <div className="elementor-widget-container">
-                  <h1 className="elementor-heading-title elementor-size-default">Why Hire Us for Pest Control and Extermination Services?</h1> </div>
+                  <h1 className="elementor-heading-title elementor-size-default">{cmsText(c?.hero?.heading, 'Why Hire Us for Pest Control and Extermination Services?')}</h1> </div>
               </div>
               <div className="elementor-element elementor-element-664dcac elementor-widget elementor-widget-text-editor" data-element_type="widget" data-id="664dcac" data-widget_type="text-editor.default">
                 <div className="elementor-widget-container">
-                  <div className="elementor-element elementor-element-de434cf elementor-widget elementor-widget-text-editor" data-element_type="widget" data-id="de434cf" data-settings="{&quot;ekit_we_effect_on&quot;:&quot;none&quot;}" data-widget_type="text-editor.default"><div className="elementor-widget-container"><div className="elementor-element elementor-element-0e20da6 elementor-widget elementor-widget-text-editor" data-element_type="widget" data-id="0e20da6" data-settings="{&quot;ekit_we_effect_on&quot;:&quot;none&quot;}" data-widget_type="text-editor.default"><div className="elementor-widget-container"><p>We believe in the effectiveness and quality of our pest control services. Our professionals are astute at backing them up with 100% satisfaction guaranteed. Our pest controllers work their level best to exterminate ants, rats, wasps, cockroaches, and more. Need bed bug elimination services? Or are you suspecting possums in your space? Allow us to take the lead with our pest control and elimination solutions crafted individually for our unique clients.</p></div></div><div className="elementor-element elementor-element-f5ce1ac elementor-widget elementor-widget-text-editor" data-element_type="widget" data-id="f5ce1ac" data-settings="{&quot;ekit_we_effect_on&quot;:&quot;none&quot;}" data-widget_type="text-editor.default"><div className="elementor-widget-container">We understand that not all customers require the kind of services from us. Thus, we design customized solutions for one and all. We send our professionals to your space so that they can inspect, control, and eliminate pests and insects that bother you. Bid farewell to these pesky insects and pests from your residential or commercial spaces by calling us today.</div></div></div></div> </div>
+                  <CmsHtml html={c?.hero?.intro} />
+                </div>
               </div>
             </div>
             <div className="elementor-element elementor-element-fdac6de e-con-full e-flex e-con e-child" data-element_type="container" data-id="fdac6de" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
               <div className="elementor-element elementor-element-470a6fb elementor-widget elementor-widget-heading" data-element_type="widget" data-id="470a6fb" data-widget_type="heading.default">
                 <div className="elementor-widget-container">
-                  <h2 className="elementor-heading-title elementor-size-default">Get A Free Quote Now!</h2> </div>
+                  <h2 className="elementor-heading-title elementor-size-default">{cmsText(c?.quote_form?.title, 'Get A Free Quote Now!')}</h2> </div>
               </div>
               <div className="elementor-element elementor-element-601e49b elementor-widget elementor-widget-heading" data-element_type="widget" data-id="601e49b" data-widget_type="heading.default">
                 <div className="elementor-widget-container">
-                  <h6 className="elementor-heading-title elementor-size-default">Have an enquiry? Leave us your details and we’ll call you back during business hours.</h6> </div>
+                  <h6 className="elementor-heading-title elementor-size-default">{cmsText(c?.quote_form?.subtitle, 'Have an enquiry? Leave us your details and we\'ll call you back during business hours.')}</h6> </div>
               </div>
               <div className="elementor-element elementor-element-5eff88f elementor-button-align-center elementor-widget elementor-widget-form" data-element_type="widget" data-id="5eff88f" data-settings="{&quot;step_next_label&quot;:&quot;Next&quot;,&quot;step_previous_label&quot;:&quot;Previous&quot;,&quot;button_width&quot;:&quot;100&quot;,&quot;step_type&quot;:&quot;number_text&quot;,&quot;step_icon_shape&quot;:&quot;circle&quot;}" data-widget_type="form.default">
                 <div className="elementor-widget-container">

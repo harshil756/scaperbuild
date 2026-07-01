@@ -621,6 +621,42 @@
     },
     {
       "sort_order": 53,
+      "block_key": "process.quote",
+      "section": "process",
+      "label": "Process step: Request a Quote",
+      "type": "json",
+      "metadata": {
+        "slug": "quote",
+        "title": "Request a Quote",
+        "description": "Contact us to receive a detailed quote tailored to your specific needs. We’ll assess the requirements of your property and provide a transparent pricing breakdown."
+      }
+    },
+    {
+      "sort_order": 54,
+      "block_key": "process.inspection",
+      "section": "process",
+      "label": "Process step: Inspection &amp; Custom Solution",
+      "type": "json",
+      "metadata": {
+        "slug": "inspection",
+        "title": "Inspection &amp; Custom Solution",
+        "description": "Our team will inspect your solar panels, identify any bird-related issues, and create a customised bird proofing plan. This includes cleaning your panels and installing effective bird deterrents like bird mesh to ensure long-term protection."
+      }
+    },
+    {
+      "sort_order": 55,
+      "block_key": "process.installation",
+      "section": "process",
+      "label": "Process step: Installation &amp; Ongoing Maintenance",
+      "type": "json",
+      "metadata": {
+        "slug": "installation",
+        "title": "Installation &amp; Ongoing Maintenance",
+        "description": "Once you approve the plan, we’ll carry out the bird-proofing installation quickly and professionally. We also offer regular maintenance services to ensure your panels remain clean and fully protected from bird-related damage."
+      }
+    },
+    {
+      "sort_order": 56,
       "block_key": "process.call_button",
       "section": "process",
       "label": "Call button",
@@ -629,7 +665,7 @@
       "link_url": "tel:+61434660060"
     },
     {
-      "sort_order": 54,
+      "sort_order": 57,
       "block_key": "cost.title",
       "section": "cost",
       "label": "Section title",
@@ -637,7 +673,7 @@
       "value": "Understanding the Cost of Solar Panel Bird Proofing in Melbourne"
     },
     {
-      "sort_order": 55,
+      "sort_order": 58,
       "block_key": "cost.intro",
       "section": "cost",
       "label": "Intro HTML",
@@ -645,7 +681,7 @@
       "value": "<p>The cost of bird proofing your solar panels can vary based on a few key factors:</p>"
     },
     {
-      "sort_order": 56,
+      "sort_order": 59,
       "block_key": "cost.list",
       "section": "cost",
       "label": "Cost factors list",
@@ -659,7 +695,7 @@
       }
     },
     {
-      "sort_order": 57,
+      "sort_order": 60,
       "block_key": "cost.body",
       "section": "cost",
       "label": "Cost body HTML",
@@ -667,7 +703,7 @@
       "value": "<p>At 7 States Pest Control, we offer&nbsp;<a href=\"/\"><strong>affordable pest control Melbourne</strong></a>&nbsp;&amp; bird proofing solutions in Melbourne. Our pricing is competitive, ensuring high-quality service that fits within your budget.</p>"
     },
     {
-      "sort_order": 58,
+      "sort_order": 61,
       "block_key": "why_choose.title",
       "section": "why_choose",
       "label": "Section title",
@@ -675,7 +711,55 @@
       "value": "Why You Should Choose Us for Your Bird Proofing Services"
     },
     {
-      "sort_order": 59,
+      "sort_order": 62,
+      "block_key": "why_choose.experts",
+      "section": "why_choose",
+      "label": "Reason: Trusted Local Experts",
+      "type": "json",
+      "metadata": {
+        "slug": "experts",
+        "title": "Trusted Local Experts",
+        "description": "With over 7 years of experience, we are your local specialists in bird control and solar panel protection. You can rely on our expertise to protect your property from the damage caused by unwanted bird activity."
+      }
+    },
+    {
+      "sort_order": 63,
+      "block_key": "why_choose.quick_service",
+      "section": "why_choose",
+      "label": "Reason: Quick and Efficient Service",
+      "type": "json",
+      "metadata": {
+        "slug": "quick_service",
+        "title": "Quick and Efficient Service",
+        "description": "We understand the urgency when it comes to bird infestations. That’s why we offer same-day or next-day services, ensuring your solar panels and property are protected without delay."
+      }
+    },
+    {
+      "sort_order": 64,
+      "block_key": "why_choose.technicians",
+      "section": "why_choose",
+      "label": "Reason: Skilled and Certified Technicians",
+      "type": "json",
+      "metadata": {
+        "slug": "technicians",
+        "title": "Skilled and Certified Technicians",
+        "description": "Our team is fully certified and equipped with the latest techniques in eco-friendly bird proofing solutions. We take pride in delivering high-quality service with the utmost care for both your property and the environment."
+      }
+    },
+    {
+      "sort_order": 65,
+      "block_key": "why_choose.guarantee",
+      "section": "why_choose",
+      "label": "Reason: Satisfaction Guaranteed",
+      "type": "json",
+      "metadata": {
+        "slug": "guarantee",
+        "title": "Satisfaction Guaranteed",
+        "description": "We are committed to providing top-notch service, which is why we offer a 100% satisfaction guarantee. If you’re not happy with the results, we’ll ensure the issue is resolved to your satisfaction."
+      }
+    },
+    {
+      "sort_order": 66,
       "block_key": "results.title",
       "section": "results",
       "label": "Section title",
@@ -683,7 +767,7 @@
       "value": "Our Results Speak For Themselves"
     },
     {
-      "sort_order": 60,
+      "sort_order": 67,
       "block_key": "results.carousel",
       "section": "results",
       "label": "Before/after carousel images",
@@ -718,7 +802,7 @@
       }
     },
     {
-      "sort_order": 61,
+      "sort_order": 68,
       "block_key": "results.checklist",
       "section": "results",
       "label": "Results checklist",
@@ -728,7 +812,7 @@
       }
     },
     {
-      "sort_order": 62,
+      "sort_order": 69,
       "block_key": "results.body",
       "section": "results",
       "label": "Results body HTML",
@@ -736,7 +820,7 @@
       "value": "<p className data-end={668} data-start={220}>If you haven’t noticed bird activity around your solar panels yet, don’t wait for the damage to start.&nbsp;<a data-end={362} data-start={325} rel=\"noopener\">Contact us today</a>&nbsp;for a quick, same-day inspection and ensure your panels are protected from potential nesting and damage. We specialize in&nbsp;<strong data-end={530} data-start={487}>Bird Blocking</strong>&nbsp;to prevent costly damage to your solar system, and our team is ready to help you maintain the safety and efficiency of your solar panels.</p><p className data-end={918} data-start={670}><strong data-end={699} data-start={670}>Birds around solar panels</strong>&nbsp;can create significant issues, from nesting to debris buildup, which can lead to costly repairs. With our&nbsp;<strong data-end={823} data-start={806}>Bird Blocking</strong>&nbsp;services, we’ll help protect your solar investment and keep your panels functioning optimally.</p><p className data-end={1350} data-start={1127}>We also offer a range of other pest control services such as&nbsp;<strong data-end={1238} data-start={1188}><a data-end={1236} data-start={1190} href=\"/rodent-control-in-melbourne\" rel=\"noopener\">Rodent Extermination</a></strong>&nbsp;and&nbsp;<a data-end={1286} data-start={1245} rel=\"noopener\">Bed Bug Removal</a>&nbsp;to ensure your home remains safe from pests all year round.</p><p className data-end={1520} data-start={1352}>For more pest prevention tips and expert advice, check out our&nbsp;<a data-end={1450} data-start={1417} rel=\"noopener\">latest&nbsp;</a><strong data-end={1452} data-start={1415}><a data-end={1450} data-start={1417} href=\"/blog\" rel=\"noopener\">blog&nbsp;</a></strong><a data-end={1450} data-start={1417} rel=\"noopener\">post</a>&nbsp;to learn how to protect your home from unwanted pests and damage.</p><p className data-end={1659} data-start={1522}>Don’t wait until it’s too late! Get in touch with&nbsp;<strong>7 State<a data-end={1616} data-start={1574} rel=\"noopener\">&nbsp;Pest Control</a></strong>&nbsp;today and ensure your home is protected.</p>"
     },
     {
-      "sort_order": 63,
+      "sort_order": 70,
       "block_key": "blog.eyebrow",
       "section": "blog",
       "label": "Section eyebrow",
@@ -744,7 +828,7 @@
       "value": "Our Latest Article"
     },
     {
-      "sort_order": 64,
+      "sort_order": 71,
       "block_key": "blog.title",
       "section": "blog",
       "label": "Section title",
@@ -752,7 +836,7 @@
       "value": "Pest Problems? Here's Why Read Might Be Your Secret Weapon."
     },
     {
-      "sort_order": 65,
+      "sort_order": 72,
       "block_key": "blog.posts",
       "section": "blog",
       "label": "Blog preview posts",
@@ -787,7 +871,7 @@
       }
     },
     {
-      "sort_order": 66,
+      "sort_order": 73,
       "block_key": "reviews.eyebrow",
       "section": "reviews",
       "label": "Reviews eyebrow",
@@ -795,7 +879,7 @@
       "value": "Clients Reviews"
     },
     {
-      "sort_order": 67,
+      "sort_order": 74,
       "block_key": "reviews.title",
       "section": "reviews",
       "label": "Reviews title",
@@ -803,7 +887,7 @@
       "value": "7 States Pest Control for Reliable Pest Management Solutions"
     },
     {
-      "sort_order": 68,
+      "sort_order": 75,
       "block_key": "reviews.subtitle",
       "section": "reviews",
       "label": "Reviews subtitle",
@@ -811,7 +895,7 @@
       "value": "Reviews of Our Pest Control Services"
     },
     {
-      "sort_order": 69,
+      "sort_order": 76,
       "block_key": "reviews.rating_label",
       "section": "reviews",
       "label": "Rating label",
@@ -819,7 +903,7 @@
       "value": "EXCELLENT"
     },
     {
-      "sort_order": 70,
+      "sort_order": 77,
       "block_key": "reviews.count_text",
       "section": "reviews",
       "label": "Review count text",
@@ -827,7 +911,7 @@
       "value": "<p>Based on&nbsp;45 reviews</p>"
     },
     {
-      "sort_order": 71,
+      "sort_order": 78,
       "block_key": "faq.title",
       "section": "faq",
       "label": "FAQ title",
@@ -835,7 +919,7 @@
       "value": "Frequently Asked Questions"
     },
     {
-      "sort_order": 72,
+      "sort_order": 79,
       "block_key": "faq.items",
       "section": "faq",
       "label": "FAQ items",

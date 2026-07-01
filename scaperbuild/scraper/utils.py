@@ -17,7 +17,7 @@ IMPORT_PATTERN = re.compile(
     re.IGNORECASE,
 )
 ASSET_EXT_RE = re.compile(
-    r"\.(css|js|mjs|cjs|woff2?|ttf|eot|otf|svg|png|jpe?g|webp|gif|ico|avif)(\?|$)",
+    r"\.(css|js|mjs|cjs|woff2?|ttf|eot|otf|svg|png|jpe?g|webp|gif|ico|avif|mp4|webm|ogv|mov|m4v)(\?|$)",
     re.IGNORECASE,
 )
 
@@ -56,6 +56,8 @@ def is_asset_url(url: str, content_type: str = "") -> bool:
             "javascript",
             "image/",
             "font/",
+            "video/",
+            "audio/",
             "woff",
             "svg+xml",
             "octet-stream",
@@ -65,6 +67,113 @@ def is_asset_url(url: str, content_type: str = "") -> bool:
     return bool(ASSET_EXT_RE.search(urlparse(url).path))
 
 
+BLOCKED_DOWNLOAD_HOSTS = (
+    "linkedin.com",
+    "licdn.com",
+    "lnkd.in",
+    "media.licdn.com",
+)
+
+
+def is_blocked_extra_download(url: str) -> bool:
+    """Skip URLs that fail server-side (HTTP 999 bot blocks, Nitro proxies)."""
+    if not url:
+        return True
+    lower = url.lower()
+    host = urlparse(url).netloc.lower()
+    if any(h in host for h in BLOCKED_DOWNLOAD_HOSTS):
+        return True
+    if ".bin/" in lower or re.search(r"/asset_[a-f0-9]+\.bin/", lower):
+        return True
+    if "/nitrocdn/" in lower or "nitrocdn.com" in host:
+        return True
+    return False
+
+
+def is_recoverable_download_error(exc: str | Exception) -> bool:
+    """HTTP failures that are normal during harvest (already mirrored, CDN 404, bot blocks)."""
+    s = str(exc).lower()
+    for code in (400, 403, 404, 408, 410, 429, 499, 500, 502, 503, 999):
+        if f"error {code}" in s or f"http {code}" in s or f": {code}:" in s:
+            return True
+    if any(x in s for x in ("not found", "timed out", "timeout", "forbidden", "unauthorized")):
+        return True
+    return False
+
+
+def extension_from_content_type(content_type: str) -> str | None:
+    ct = (content_type or "").lower().split(";")[0].strip()
+    return {
+        "text/css": ".css",
+        "text/javascript": ".js",
+        "application/javascript": ".js",
+        "application/x-javascript": ".js",
+        "application/json": ".json",
+        "image/jpeg": ".jpg",
+        "image/jpg": ".jpg",
+        "image/png": ".png",
+        "image/webp": ".webp",
+        "image/svg+xml": ".svg",
+        "image/gif": ".gif",
+        "image/x-icon": ".ico",
+        "image/vnd.microsoft.icon": ".ico",
+        "font/woff2": ".woff2",
+        "font/woff": ".woff",
+        "application/font-woff2": ".woff2",
+        "application/font-woff": ".woff",
+        "application/x-font-woff": ".woff",
+        "application/x-font-ttf": ".ttf",
+        "font/ttf": ".ttf",
+        "application/vnd.ms-fontobject": ".eot",
+        "video/mp4": ".mp4",
+        "video/webm": ".webm",
+    }.get(ct)
+
+
+def extension_from_bytes(data: bytes) -> str | None:
+    """Detect real file type from magic bytes / content sniffing."""
+    if not data or len(data) < 4:
+        return None
+    if data[:2] == b"\xff\xd8":
+        return ".jpg"
+    if data[:8] == b"\x89PNG\r\n\x1a\n":
+        return ".png"
+    if data[:4] == b"RIFF" and len(data) > 12 and data[8:12] == b"WEBP":
+        return ".webp"
+    if data[:4] == b"GIF8":
+        return ".gif"
+    if data[:4] in (b"woff", b"wOFF"):
+        return ".woff"
+    if data[:4] == b"wOF2":
+        return ".woff2"
+    if data[:4] == b"\x00\x01\x00\x00":
+        return ".ttf"
+    if data[:2] == b"\x1f\x8b":
+        return None
+    head = data[:2048].lstrip()
+    try:
+        text = head.decode("utf-8", errors="ignore")
+    except Exception:
+        return None
+    sample = text.lstrip().lower()
+    if sample.startswith(("@charset", "@import", "@media", "@font-face", "/*")) or (
+        len(sample) > 2 and sample[0] in ".#[" and "{" in sample[:500]
+    ):
+        return ".css"
+    if any(tok in sample[:300] for tok in ("function ", "const ", "let ", "var ", "=>", "window.", "document.")):
+        if "{" in sample[:800] or "(" in sample[:200]:
+            return ".js"
+    if "<svg" in sample[:300]:
+        return ".svg"
+    return None
+
+
+def is_local_asset_ref(url: str) -> bool:
+    """Relative paths already rewritten to local assets — do not fetch remotely."""
+    u = (url or "").strip().lower()
+    return u.startswith(("assets/", "./assets/", "../assets/", "/assets/"))
+
+
 def extension_from_url(url: str) -> str | None:
     path = urlparse(url).path.lower()
     m = ASSET_EXT_RE.search(path)
@@ -72,6 +181,8 @@ def extension_from_url(url: str) -> str | None:
         ext = m.group(1).lower()
         if ext in ("jpeg", "jpg"):
             return ".jpg"
+        if ext in ("mp4", "webm", "ogv", "mov", "m4v"):
+            return f".{ext}"
         if ext == "js" or ext in ("mjs", "cjs"):
             return ".js"
         return f".{ext}"
@@ -143,5 +254,5 @@ def link_should_download(rel: list[str] | str | None, as_attr: str | None) -> bo
     if any(r in ("stylesheet", "icon", "shortcut icon", "apple-touch-icon") for r in rel):
         return True
     if "preload" in rel and as_attr:
-        return as_attr.lower() in ("style", "font", "script", "image")
+        return as_attr.lower() in ("style", "font", "script", "image", "video")
     return False

@@ -2,7 +2,7 @@
 Single-page website scraper — one URL at a time, no auto-crawl.
 
 Saves each page in its own folder:
-  home/home.html + home/assets/{css,js,images,fonts}/
+  home/home.html + home/assets/{css,js,images,fonts,videos}/
   about-us/about-us.html + about-us/assets/...
 """
 
@@ -14,8 +14,11 @@ import time
 from pathlib import Path
 from urllib.parse import urlparse
 
-from .assets_fix import download_all_upload_images, fix_avatar_bin_files
+from .asset_harvest import download_all_missing_assets
+from .assets_fix import download_all_upload_images, fix_all_bin_extensions, fix_avatar_bin_files
 from .html_cleanup import clean_scraped_html
+from .media_fix import apply_media_fixes, inject_hero_media_css
+from .offline_paths import normalize_offline_html
 from .mirror import PlaywrightMirror
 from .postprocess import (
     apply_lazyload_fixes,
@@ -31,6 +34,7 @@ from .storage import (
     load_manifest,
     page_dir,
     register_page,
+    save_manifest,
     url_to_html_filename,
     url_to_page_slug,
 )
@@ -67,7 +71,9 @@ class PageScraper:
         self.timeout_ms = timeout_ms
         self.headed = headed
         self.mirror_class = mirror_class or PlaywrightMirror
-        self.page_slug = url_to_page_slug(self.url)
+        from .page_discovery import allocate_page_slug
+
+        self.page_slug = allocate_page_slug(self.site_dir, self.url)
         self.page_folder = page_dir(self.site_dir, self.page_slug)
         self.html_name = url_to_html_filename(self.url)
         self.html_path = self.page_folder / self.html_name
@@ -113,7 +119,11 @@ class PageScraper:
             final_html, self.url, mirror.url_map, self.page_folder, self.html_path
         )
         final_html = apply_lazyload_fixes(final_html)
-        manifest = register_page(self.site_dir, self.url, self.html_relpath)
+        from .page_priority import kind_from_url
+
+        manifest = register_page(
+            self.site_dir, self.url, self.html_relpath, kind=kind_from_url(self.url)
+        )
         final_html = rewrite_internal_page_links(
             final_html, self.url, manifest, self.html_path
         )
@@ -123,12 +133,63 @@ class PageScraper:
 
         self.html_path.write_text(final_html, encoding="utf-8")
 
+        n_bin = fix_all_bin_extensions(self.page_folder)
+        if n_bin:
+            print(f"[*] Fixed {n_bin} .bin asset(s) → correct extensions (CSS/JS/fonts/images).")
+            n_fixed = repair_all_css_paths(self.page_folder, self.url, mirror.url_map)
+            if n_fixed:
+                print(f"[*] Repaired {n_fixed} CSS paths after extension fix.")
+
         n_av = fix_avatar_bin_files(self.page_folder, self.url, self.html_path)
         if n_av:
             print(f"[*] Fixed {n_av} avatar file(s).")
         n_img = download_all_upload_images(self.page_folder, self.url)
         if n_img:
             print(f"[*] Downloaded {n_img} extra image(s).")
+        n_extra = download_all_missing_assets(self.page_folder, self.url, self.html_path)
+        if n_extra:
+            n_fixed2 = repair_all_css_paths(self.page_folder, self.url, mirror.url_map)
+            if n_fixed2:
+                print(f"[*] Repaired {n_fixed2} more CSS paths after harvest.")
+
+        from .banner_fix import apply_banner_fixes
+        from .seo_preserve import ensure_seo_head, extract_seo, save_page_seo
+
+        # Re-read HTML after asset harvest rewrites, then fix videos/images for offline
+        final_html = self.html_path.read_text(encoding="utf-8", errors="replace")
+        final_html = apply_banner_fixes(
+            final_html, self.page_folder, self.html_path, self.url, mirror.url_map
+        )
+        final_html = apply_media_fixes(final_html, self.page_folder)
+        final_html = inject_hero_media_css(final_html)
+        from .fidelity import apply_full_fidelity_fixes
+
+        final_html = apply_full_fidelity_fixes(
+            final_html, self.page_folder, self.html_path, self.url, mirror.url_map
+        )
+        final_html = apply_lazyload_fixes(final_html)
+        final_html = normalize_offline_html(final_html, self.page_folder, self.html_path)
+        seo = extract_seo(final_html, self.url)
+        final_html = ensure_seo_head(final_html, seo)
+        save_page_seo(self.site_dir, self.page_slug, seo)
+        manifest = load_manifest(self.site_dir)
+        if self.url in manifest.get("pages", {}):
+            manifest["pages"][self.url]["seo"] = {
+                "title": seo.get("title", ""),
+                "description": seo.get("description", ""),
+                "canonical": seo.get("canonical", self.url),
+            }
+            if seo.get("title"):
+                manifest["pages"][self.url]["name"] = seo["title"]
+            save_manifest(self.site_dir, manifest)
+        self.html_path.write_text(final_html, encoding="utf-8")
+
+        try:
+            from .export_polish import repair_all_css_in_page
+
+            repair_all_css_in_page(self.page_folder)
+        except Exception:
+            pass
 
         counts = count_assets(self.page_folder)
         meta = {
@@ -148,8 +209,6 @@ class PageScraper:
 
         manifest = load_manifest(self.site_dir)
         manifest.setdefault("assets", {})[self.url] = meta
-        from .storage import save_manifest
-
         save_manifest(self.site_dir, manifest)
 
         try:

@@ -2,6 +2,7 @@
 
 namespace App\Filament\Resources\Pages\Schemas;
 
+use App\Filament\Support\CmsImageUpload;
 use App\Models\Page;
 use Filament\Forms\Components\FileUpload;
 use Filament\Forms\Components\Hidden;
@@ -43,22 +44,7 @@ class AntPestControlPageSectionsForm
 
     private static function imageField(string $name, string $label): FileUpload
     {
-        return FileUpload::make($name)
-            ->label($label)
-            ->directory('cms/our-services-ant-pest-control')
-            ->disk('public')
-            ->visibility('public')
-            ->maxFiles(1)
-            ->imagePreviewHeight('120')
-            ->fetchFileInformation(false)
-            ->image()
-            ->dehydrateStateUsing(function (mixed $state): ?string {
-                if (is_array($state)) {
-                    $state = Arr::first($state);
-                }
-
-                return filled($state) && is_string($state) ? $state : null;
-            });
+        return CmsImageUpload::make($name, $label, 'cms/our-services-ant-pest-control');
     }
 
     private static function heroSection(): array

@@ -9,8 +9,60 @@ from pathlib import Path
 from bs4 import BeautifulSoup
 
 from .polite import wait_between_requests
-from .storage import assets_root, url_to_local_path
-from .utils import normalize_url, relative_path
+from .storage import ASSET_TYPES, assets_root, url_to_local_path
+from .utils import extension_from_bytes, normalize_url, relative_path
+
+_FOLDER_DEFAULT_EXT = {"css": ".css", "js": ".js", "fonts": ".woff2", "images": ".jpg", "videos": ".mp4"}
+
+
+def fix_all_bin_extensions(page_dir: Path) -> int:
+    """Rename .bin assets to correct extensions and update HTML/CSS/JS references."""
+    fixed = 0
+    replacements: list[tuple[str, str]] = []
+
+    for folder in ASSET_TYPES:
+        d = assets_root(page_dir) / folder
+        if not d.is_dir():
+            continue
+        for path in list(d.rglob("*.bin")):
+            if not path.is_file():
+                continue
+            data = path.read_bytes()
+            ext = extension_from_bytes(data) or _FOLDER_DEFAULT_EXT.get(folder)
+            if not ext:
+                continue
+            new_path = path.with_suffix(ext)
+            if new_path == path:
+                continue
+            old_name = path.name
+            if new_path.exists():
+                path.unlink()
+            else:
+                path.rename(new_path)
+            replacements.append((old_name, new_path.name))
+            fixed += 1
+
+    if replacements:
+        _apply_text_replacements(page_dir, replacements)
+    return fixed
+
+
+def _apply_text_replacements(page_dir: Path, pairs: list[tuple[str, str]]) -> None:
+    for f in page_dir.rglob("*"):
+        if not f.is_file():
+            continue
+        if f.suffix.lower() not in (".html", ".css", ".js", ".json", ".svg"):
+            continue
+        try:
+            text = f.read_text(encoding="utf-8")
+        except Exception:
+            continue
+        new_text = text
+        for old, new in pairs:
+            if old in new_text:
+                new_text = new_text.replace(old, new)
+        if new_text != text:
+            f.write_text(new_text, encoding="utf-8")
 
 
 def fix_avatar_bin_files(page_dir: Path, page_url: str, html_path: Path) -> int:
@@ -28,10 +80,9 @@ def fix_avatar_bin_files(page_dir: Path, page_url: str, html_path: Path) -> int:
         new_path = path.with_suffix(ext)
         if new_path == path:
             continue
+        old_rel = relative_path(html_path, path)
         path.rename(new_path)
-        html = html.replace(
-            relative_path(html_path, path), relative_path(html_path, new_path)
-        )
+        html = html.replace(old_rel, relative_path(html_path, new_path))
         fixed += 1
 
     if fixed and html_path.exists():

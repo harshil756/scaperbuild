@@ -1,12 +1,22 @@
 import PhoneNumberInput from '../../components/PhoneNumberInput.jsx'
+import { cmsText } from '../../utils/cmsMedia.js'
+import usePageCms from '../../hooks/usePageCms.js'
+import ServiceCmsContentBlocks from '../../components/service/ServiceCmsContentBlocks.jsx'
+import ServiceCommercialSectionCms from '../../components/service/ServiceCommercialSectionCms.jsx'
+import ServiceCmsStyles from '../../components/service/ServiceCmsStyles.jsx'
+import CmsHtml from '../../components/home/CmsHtml.jsx'
 import usePageMeta from '../../hooks/usePageMeta.js'
 import { Link } from 'react-router-dom'
 
 export default function RestaurantCafePestControlPage() {
-  usePageMeta('restaurant_cafe_pest_control')
+  const { page, content: c } = usePageCms('restaurant-cafe-pest-control')
+  usePageMeta('restaurant_cafe_pest_control', page)
 
   return (
     <>
+      <ServiceCmsStyles content={c} heroBgId="f112203" ctaBgId="628b8d2" />
+      <ServiceCmsContentBlocks content={c} />
+      <ServiceCommercialSectionCms slug="restaurant-cafe-pest-control" content={c} />
       <div className="elementor elementor-700" data-elementor-id={700} data-elementor-post-type="page" data-elementor-type="wp-page">
         <div className="elementor-element elementor-element-f112203 e-flex e-con-boxed e-con e-parent e-lazyloaded" data-element_type="container" data-id="f112203" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
           <div className="e-con-inner">
@@ -22,7 +32,7 @@ export default function RestaurantCafePestControlPage() {
                       <a href="#">
                         <span className="elementor-icon-list-icon">
                           <svg aria-hidden="true" className="e-font-icon-svg e-fas-angle-right" viewBox="0 0 256 512" xmlns="http://www.w3.org/2000/svg"><path d="M224.3 273l-136 136c-9.4 9.4-24.6 9.4-33.9 0l-22.6-22.6c-9.4-9.4-9.4-24.6 0-33.9l96.4-96.4-96.4-96.4c-9.4-9.4-9.4-24.6 0-33.9L54.3 103c9.4-9.4 24.6-9.4 33.9 0l136 136c9.5 9.4 9.5 24.6.1 34z" /></svg> </span>
-                        <span className="elementor-icon-list-text">Restaurant &amp; Cafe Pest Control</span>
+                        <span className="elementor-icon-list-text">{cmsText(c?.hero?.breadcrumb_current, 'Restaurant &amp; Cafe Pest Control')}</span>
                       </a>
                     </li>
                   </ul>
@@ -30,25 +40,24 @@ export default function RestaurantCafePestControlPage() {
               </div>
               <div className="elementor-element elementor-element-f18da15 elementor-widget elementor-widget-heading" data-element_type="widget" data-id="f18da15" data-settings="{&quot;_animation&quot;:&quot;none&quot;}" data-widget_type="heading.default">
                 <div className="elementor-widget-container">
-                  <h2 className="elementor-heading-title elementor-size-default">Pest Control for Restaurant</h2> </div>
+                  <h2 className="elementor-heading-title elementor-size-default">{cmsText(c?.hero?.title, 'Pest Control for Restaurant')}</h2> </div>
               </div>
               <div className="elementor-element elementor-element-63a1e0b elementor-widget elementor-widget-heading" data-element_type="widget" data-id="63a1e0b" data-settings="{&quot;_animation&quot;:&quot;none&quot;}" data-widget_type="heading.default">
                 <div className="elementor-widget-container">
                   <h1 className="elementor-heading-title elementor-size-default">Restaurant &amp; Cafe Pest Control In Melbourne</h1> </div>
               </div>
               <div className="elementor-element elementor-element-ad989c7 elementor-widget elementor-widget-text-editor" data-element_type="widget" data-id="ad989c7" data-widget_type="text-editor.default">
-                <div className="elementor-widget-container">
-                  <div className="elementor-element elementor-element-de434cf elementor-widget elementor-widget-text-editor" data-element_type="widget" data-id="de434cf" data-settings="{&quot;ekit_we_effect_on&quot;:&quot;none&quot;}" data-widget_type="text-editor.default"><div className="elementor-widget-container"><p><span style={{fontWeight: 400}}>Restaurant and cafe owners frequently encounter pest and rodent problems due to the abundant food and water sources in their establishments. Insects, rats, and mice are naturally attracted to these resources, making pest control for restaurants and cafes a critical task for operators.</span></p><p><span style={{fontWeight: 400}}>While the key to preventing infestations typically involves limiting access to food and water, this challenge becomes more complicated in the food service industry. In restaurants and cafes, food is consistently exposed, whether in the kitchen, storage areas, or being consumed by customers. Without effective restaurant pest control, these environments become hotspots for pests.</span></p></div></div> </div>
+                <div className="elementor-widget-container"><CmsHtml html={c?.hero?.intro ?? '<div class="elementor-element elementor-element-de434cf elementor-widget elementor-widget-text-editor" data-element_type="widget" data-id="de434cf" data-settings="{&quot;ekit_we_effect_on&quot;:&quot;none&quot;}" data-widget_type="text-editor.default"><div class="elementor-widget-container"><p><span >Restaurant and cafe owners frequently encounter pest and rodent problems due to the abundant food and water sources in their establishments. Insects, rats, and mice are naturally attracted to these resources, making pest control for restaurants and cafes a critical task for operators.</span></p><p><span >While the key to preventing infestations typically involves limiting access to food and water, this challenge becomes more complicated in the food service industry. In restaurants and cafes, food is consistently exposed, whether in the kitchen, storage areas, or being consumed by customers. Without effective restaurant pest control, these environments become hotspots for pests.</span></p></div></div>'} /></div>
               </div>
             </div>
             <div className="elementor-element elementor-element-036f239 e-con-full e-flex e-con e-child" data-element_type="container" data-id="036f239" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
               <div className="elementor-element elementor-element-7a9a07a elementor-widget elementor-widget-heading" data-element_type="widget" data-id="7a9a07a" data-widget_type="heading.default">
                 <div className="elementor-widget-container">
-                  <h2 className="elementor-heading-title elementor-size-default">Get A Free Quote Now!</h2> </div>
+                  <h2 className="elementor-heading-title elementor-size-default">{cmsText(c?.quote_form?.title, 'Restaurant &amp; Cafe Pest Control In Melbourne')}</h2> </div>
               </div>
               <div className="elementor-element elementor-element-0f66fae elementor-widget elementor-widget-heading" data-element_type="widget" data-id="0f66fae" data-widget_type="heading.default">
                 <div className="elementor-widget-container">
-                  <h6 className="elementor-heading-title elementor-size-default">Have an enquiry? Leave us your details and we’ll call you back during business hours.</h6> </div>
+                  <h6 className="elementor-heading-title elementor-size-default">{cmsText(c?.quote_form?.subtitle, 'Have an enquiry? Leave us your details and we’ll call you back during business hours.')}</h6> </div>
               </div>
               <div className="elementor-element elementor-element-89677bf elementor-button-align-center elementor-widget elementor-widget-form" data-element_type="widget" data-id="89677bf" data-settings="{&quot;step_next_label&quot;:&quot;Next&quot;,&quot;step_previous_label&quot;:&quot;Previous&quot;,&quot;button_width&quot;:&quot;100&quot;,&quot;step_type&quot;:&quot;number_text&quot;,&quot;step_icon_shape&quot;:&quot;circle&quot;}" data-widget_type="form.default">
                 <div className="elementor-widget-container">
@@ -80,7 +89,7 @@ export default function RestaurantCafePestControlPage() {
                       <div className="elementor-field-group elementor-column elementor-field-type-submit elementor-col-100 e-form__buttons">
                         <button className="elementor-button elementor-size-md" type="submit">
                           <span className="elementor-button-content-wrapper">
-                            <span className="elementor-button-text">Submit Quote</span>
+                            <span className="elementor-button-text">{cmsText(c?.quote_form?.submit_text, 'Submit Quote')}</span>
                           </span>
                         </button>
                       </div>

@@ -12,8 +12,10 @@ import {
   extractHtmlAfter,
   extractImageBoxes,
   extractImageSrc,
+  extractStructuredGenericSections,
   findAllWidgets,
   jsxToHtml,
+  simplifyHtml,
   slugify,
 } from './service-page-cms-lib.mjs'
 
@@ -59,9 +61,9 @@ function extractHero(jsx, addText, addHtml, skipIds) {
   for (const w of heroWidgets) {
     if (w.type !== 'text-editor.default') continue
     const html = extractHtmlAfter(jsx, w.id)
-    if (!html || html.length < 30) continue
+    if (!html || html.length < 30 || html.includes('{c?.') || html.includes('<CmsHtml')) continue
     skipIds.add(w.id)
-    addHtml('hero.intro', 'hero', 'Intro paragraph', html)
+    addHtml('hero.intro', 'hero', 'Intro paragraph', simplifyHtml(html))
     break
   }
 }
@@ -202,9 +204,10 @@ export function extractGenericPage({ slug, title, seo, jsx, css, elementorId }) 
   const { blocks, add, addText, addHtml, cmsPath } = createBlockCollector(slug)
   const skipIds = new Set()
 
-  extractBackgrounds(css, slug, cmsPath, add, {}, { heroAndCtaOnly: true })
+  extractBackgrounds(css, slug, cmsPath, add, {}, { heroAndCtaOnly: false })
   extractHero(jsx, addText, addHtml, skipIds)
   extractQuoteForm(jsx, addText, skipIds)
+  extractStructuredGenericSections(jsx, css, { add, addText, addHtml, cmsPath, skipIds })
 
   const faqItems = extractFaqItems(jsx)
   if (faqItems.length) {

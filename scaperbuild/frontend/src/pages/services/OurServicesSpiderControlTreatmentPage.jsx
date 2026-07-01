@@ -1,12 +1,22 @@
 import PhoneNumberInput from '../../components/PhoneNumberInput.jsx'
+import ServiceCmsContentBlocks from '../../components/service/ServiceCmsContentBlocks.jsx'
+import ServiceFaqCms from '../../components/service/ServiceFaqCms.jsx'
+import { cmsText } from '../../utils/cmsMedia.js'
+import usePageCms from '../../hooks/usePageCms.js'
+import ServiceCmsStyles from '../../components/service/ServiceCmsStyles.jsx'
+import CmsHtml from '../../components/home/CmsHtml.jsx'
 import usePageMeta from '../../hooks/usePageMeta.js'
 import { Link } from 'react-router-dom'
 
 export default function OurServicesSpiderControlTreatmentPage() {
-  usePageMeta('our_services_spider_control_treatment')
+  const { page, content: c } = usePageCms('our-services-spider-control-treatment')
+  usePageMeta('our_services_spider_control_treatment', page)
 
   return (
     <>
+      <ServiceCmsStyles content={c} heroBgId="75a76e0" ctaBgId="057b4d3" />
+      <ServiceFaqCms faq={c?.faq} accordionWidgetId="5146096" />
+      <ServiceCmsContentBlocks content={c} />
       <div className="elementor elementor-1626" data-elementor-id={1626} data-elementor-post-type="page" data-elementor-type="wp-page">
         <div className="elementor-element elementor-element-75a76e0 e-flex e-con-boxed e-con e-parent e-lazyloaded" data-element_type="container" data-id="75a76e0" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
           <div className="e-con-inner">
@@ -22,14 +32,14 @@ export default function OurServicesSpiderControlTreatmentPage() {
                       <a href="#">
                         <span className="elementor-icon-list-icon">
                           <svg aria-hidden="true" className="e-font-icon-svg e-fas-angle-right" viewBox="0 0 256 512" xmlns="http://www.w3.org/2000/svg"><path d="M224.3 273l-136 136c-9.4 9.4-24.6 9.4-33.9 0l-22.6-22.6c-9.4-9.4-9.4-24.6 0-33.9l96.4-96.4-96.4-96.4c-9.4-9.4-9.4-24.6 0-33.9L54.3 103c9.4-9.4 24.6-9.4 33.9 0l136 136c9.5 9.4 9.5 24.6.1 34z" /></svg> </span>
-                        <span className="elementor-icon-list-text">Services</span>
+                        <span className="elementor-icon-list-text">{cmsText(c?.hero?.breadcrumb_parent, 'Services')}</span>
                       </a>
                     </li>
                     <li className="elementor-icon-list-item elementor-inline-item">
                       <a href="#">
                         <span className="elementor-icon-list-icon">
                           <svg aria-hidden="true" className="e-font-icon-svg e-fas-angle-right" viewBox="0 0 256 512" xmlns="http://www.w3.org/2000/svg"><path d="M224.3 273l-136 136c-9.4 9.4-24.6 9.4-33.9 0l-22.6-22.6c-9.4-9.4-9.4-24.6 0-33.9l96.4-96.4-96.4-96.4c-9.4-9.4-9.4-24.6 0-33.9L54.3 103c9.4-9.4 24.6-9.4 33.9 0l136 136c9.5 9.4 9.5 24.6.1 34z" /></svg> </span>
-                        <span className="elementor-icon-list-text">spider control treatment</span>
+                        <span className="elementor-icon-list-text">{cmsText(c?.hero?.breadcrumb_current, 'spider control treatment')}</span>
                       </a>
                     </li>
                   </ul>
@@ -37,25 +47,26 @@ export default function OurServicesSpiderControlTreatmentPage() {
               </div>
               <div className="elementor-element elementor-element-ceee1f1 elementor-widget elementor-widget-heading" data-element_type="widget" data-id="ceee1f1" data-settings="{&quot;_animation&quot;:&quot;none&quot;}" data-widget_type="heading.default">
                 <div className="elementor-widget-container">
-                  <h2 className="elementor-heading-title elementor-size-default">Trusted and Reliable</h2> </div>
+                  <h2 className="elementor-heading-title elementor-size-default">{cmsText(c?.hero?.title, 'Trusted and Reliable')}</h2> </div>
               </div>
               <div className="elementor-element elementor-element-4fa2aec elementor-widget elementor-widget-heading" data-element_type="widget" data-id="4fa2aec" data-settings="{&quot;_animation&quot;:&quot;none&quot;}" data-widget_type="heading.default">
                 <div className="elementor-widget-container">
-                  <h1 className="elementor-heading-title elementor-size-default">Spider Control Melbourne | Trusted Spider Removal &amp; Pest Control Services</h1> </div>
+                  <h1 className="elementor-heading-title elementor-size-default">{cmsText(c?.hero?.heading, 'Spider Control Melbourne | Trusted Spider Removal &amp; Pest Control Services')}</h1> </div>
               </div>
               <div className="elementor-element elementor-element-d53b42a elementor-widget elementor-widget-text-editor" data-element_type="widget" data-id="d53b42a" data-widget_type="text-editor.default">
                 <div className="elementor-widget-container">
-                  <div className="elementor-element elementor-element-de434cf elementor-widget elementor-widget-text-editor" data-element_type="widget" data-id="de434cf" data-settings="{&quot;ekit_we_effect_on&quot;:&quot;none&quot;}" data-widget_type="text-editor.default"><div className="elementor-widget-container"><div className="elementor-element elementor-element-de434cf elementor-widget elementor-widget-text-editor" data-element_type="widget" data-id="de434cf" data-settings="{&quot;ekit_we_effect_on&quot;:&quot;none&quot;}" data-widget_type="text-editor.default"><div className="elementor-widget-container"><p><span style={{fontWeight: 400}}>With more than 30,000 spider species worldwide, a few can be harmful to humans and pets. Infestation of spiders in your property can cause serious risks to your wellbeing and peace of mind. Spiders are usually attracted to dark, small, and warm spaces, but some species prefer weaving webs in gardens or outdoor spaces.</span></p><p><span style={{fontWeight: 400}}>If you’re searching for </span><b>spider control Melbourne</b><span style={{fontWeight: 400}}>, 7 States Pest Control provides safe and effective solutions through our professional </span><b>spider removal services</b><span style={{fontWeight: 400}}>. We guarantee clean, hygienic, and spider-free spaces for your home or office.</span></p></div></div></div></div> </div>
+                  <CmsHtml html={c?.hero?.intro} />
+                </div>
               </div>
             </div>
             <div className="elementor-element elementor-element-d8436e8 e-con-full e-flex e-con e-child" data-element_type="container" data-id="d8436e8" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
               <div className="elementor-element elementor-element-739a12f elementor-widget elementor-widget-heading" data-element_type="widget" data-id="739a12f" data-widget_type="heading.default">
                 <div className="elementor-widget-container">
-                  <h2 className="elementor-heading-title elementor-size-default">Get A Free Quote Now!</h2> </div>
+                  <h2 className="elementor-heading-title elementor-size-default">{cmsText(c?.quote_form?.title, 'Get A Free Quote Now!')}</h2> </div>
               </div>
               <div className="elementor-element elementor-element-a7303e1 elementor-widget elementor-widget-heading" data-element_type="widget" data-id="a7303e1" data-widget_type="heading.default">
                 <div className="elementor-widget-container">
-                  <h6 className="elementor-heading-title elementor-size-default">Have an enquiry? Leave us your details and we’ll call you back during business hours.</h6> </div>
+                  <h6 className="elementor-heading-title elementor-size-default">{cmsText(c?.quote_form?.subtitle, 'Have an enquiry? Leave us your details and we\'ll call you back during business hours.')}</h6> </div>
               </div>
               <div className="elementor-element elementor-element-83cd08a elementor-button-align-center elementor-widget elementor-widget-form" data-element_type="widget" data-id="83cd08a" data-settings="{&quot;step_next_label&quot;:&quot;Next&quot;,&quot;step_previous_label&quot;:&quot;Previous&quot;,&quot;button_width&quot;:&quot;100&quot;,&quot;step_type&quot;:&quot;number_text&quot;,&quot;step_icon_shape&quot;:&quot;circle&quot;}" data-widget_type="form.default">
                 <div className="elementor-widget-container">
@@ -508,7 +519,7 @@ export default function OurServicesSpiderControlTreatmentPage() {
                         </div>
                         <div className="elementor-element elementor-element-132dead elementor-widget elementor-widget-heading" data-element_type="widget" data-id="132dead" data-settings="{&quot;_animation&quot;:&quot;none&quot;}" data-widget_type="heading.default">
                           <div className="elementor-widget-container">
-                            <h2 className="elementor-heading-title elementor-size-default">7 States Pest Control for Reliable Pest Management Solutions</h2> </div>
+                            <h2 className="elementor-heading-title elementor-size-default">{cmsText(c?.reviews?.eyebrow, '7 States Pest Control for Reliable Pest Management Solutions')}</h2> </div>
                         </div>
                       </div>
                     </div>
@@ -516,11 +527,11 @@ export default function OurServicesSpiderControlTreatmentPage() {
                       <div className="elementor-widget-wrap elementor-element-populated">
                         <div className="elementor-element elementor-element-f62790f elementor-widget elementor-widget-heading" data-element_type="widget" data-id="f62790f" data-widget_type="heading.default">
                           <div className="elementor-widget-container">
-                            <h3 className="elementor-heading-title elementor-size-default">Reviews of Our Pest Control Services</h3> </div>
+                            <h3 className="elementor-heading-title elementor-size-default">{cmsText(c?.reviews?.subtitle, 'Reviews of Our Pest Control Services')}</h3> </div>
                         </div>
                         <div className="elementor-element elementor-element-1452eef elementor-widget elementor-widget-heading" data-element_type="widget" data-id="1452eef" data-widget_type="heading.default">
                           <div className="elementor-widget-container">
-                            <h6 className="elementor-heading-title elementor-size-default">EXCELLENT</h6> </div>
+                            <h6 className="elementor-heading-title elementor-size-default">{cmsText(c?.reviews?.title, 'EXCELLENT')}</h6> </div>
                         </div>
                         <div className="elementor-element elementor-element-e03ae80 elementor-widget elementor-widget-rating" data-element_type="widget" data-id="e03ae80" data-widget_type="rating.default">
                           <div className="elementor-widget-container">

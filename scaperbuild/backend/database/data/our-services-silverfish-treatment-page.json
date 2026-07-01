@@ -21,6 +21,138 @@
     },
     {
       "sort_order": 1,
+      "block_key": "background.b38cb7f",
+      "section": "backgrounds",
+      "label": "Background (b38cb7f)",
+      "type": "background",
+      "background_image_path": "cms/our-services-silverfish-treatment/BG3_a19772e2.png",
+      "metadata": {
+        "elementor_id": "b38cb7f",
+        "filename": "BG3_a19772e2.png"
+      }
+    },
+    {
+      "sort_order": 2,
+      "block_key": "background.c1ca80d",
+      "section": "backgrounds",
+      "label": "Background (c1ca80d)",
+      "type": "background",
+      "background_image_path": "cms/our-services-silverfish-treatment/Silver-Fish-1-compressed1_1b10d30f.jpg",
+      "metadata": {
+        "elementor_id": "c1ca80d",
+        "filename": "Silver-Fish-1-compressed1_1b10d30f.jpg"
+      }
+    },
+    {
+      "sort_order": 3,
+      "block_key": "background.2f23798",
+      "section": "backgrounds",
+      "label": "Background (2f23798)",
+      "type": "background",
+      "background_image_path": "cms/our-services-silverfish-treatment/Explore-banner-1_63a452ce.png",
+      "metadata": {
+        "elementor_id": "2f23798",
+        "filename": "Explore-banner-1_63a452ce.png"
+      }
+    },
+    {
+      "sort_order": 4,
+      "block_key": "background.e82bfa2",
+      "section": "backgrounds",
+      "label": "Background (e82bfa2)",
+      "type": "background",
+      "background_image_path": "cms/our-services-silverfish-treatment/BG3_a19772e2.png",
+      "metadata": {
+        "elementor_id": "e82bfa2",
+        "filename": "BG3_a19772e2.png"
+      }
+    },
+    {
+      "sort_order": 5,
+      "block_key": "background.4d9dc8f",
+      "section": "backgrounds",
+      "label": "Background (4d9dc8f)",
+      "type": "background",
+      "background_image_path": "cms/our-services-silverfish-treatment/Silver-Fish_b74f083d.jpg",
+      "metadata": {
+        "elementor_id": "4d9dc8f",
+        "filename": "Silver-Fish_b74f083d.jpg"
+      }
+    },
+    {
+      "sort_order": 6,
+      "block_key": "background.f8f8fa9",
+      "section": "backgrounds",
+      "label": "Background (f8f8fa9)",
+      "type": "background",
+      "background_image_path": "cms/our-services-silverfish-treatment/Our-Approach-to-Treat-Silverfish-Infestation.jpg_838bc72e.webp",
+      "metadata": {
+        "elementor_id": "f8f8fa9",
+        "filename": "Our-Approach-to-Treat-Silverfish-Infestation.jpg_838bc72e.webp"
+      }
+    },
+    {
+      "sort_order": 7,
+      "block_key": "background.29847cb",
+      "section": "backgrounds",
+      "label": "Background (29847cb)",
+      "type": "background",
+      "background_image_path": "cms/our-services-silverfish-treatment/pest_control_services.jpg_f26d74af.webp",
+      "metadata": {
+        "elementor_id": "29847cb",
+        "filename": "pest_control_services.jpg_f26d74af.webp"
+      }
+    },
+    {
+      "sort_order": 8,
+      "block_key": "background.894f45a",
+      "section": "backgrounds",
+      "label": "Background (894f45a)",
+      "type": "background",
+      "background_image_path": "cms/our-services-silverfish-treatment/Protection-of-Your-Property-from-Silverfish.jpg_6dfca4e1.webp",
+      "metadata": {
+        "elementor_id": "894f45a",
+        "filename": "Protection-of-Your-Property-from-Silverfish.jpg_6dfca4e1.webp"
+      }
+    },
+    {
+      "sort_order": 9,
+      "block_key": "background.caf2005",
+      "section": "backgrounds",
+      "label": "Background (caf2005)",
+      "type": "background",
+      "background_image_path": "cms/our-services-silverfish-treatment/Silver-Fish-1_512b7fad.jpg",
+      "metadata": {
+        "elementor_id": "caf2005",
+        "filename": "Silver-Fish-1_512b7fad.jpg"
+      }
+    },
+    {
+      "sort_order": 10,
+      "block_key": "background.f6e08bf",
+      "section": "backgrounds",
+      "label": "Background (f6e08bf)",
+      "type": "background",
+      "background_image_path": "cms/our-services-silverfish-treatment/Get-Extensive-Reports-with-Detailed-Analysis.jpg_2023a858.webp",
+      "metadata": {
+        "elementor_id": "f6e08bf",
+        "filename": "Get-Extensive-Reports-with-Detailed-Analysis.jpg_2023a858.webp"
+      }
+    },
+    {
+      "sort_order": 11,
+      "block_key": "background.f8f859d",
+      "section": "backgrounds",
+      "label": "Background (f8f859d)",
+      "type": "background",
+      "background_image_path": "cms/our-services-silverfish-treatment/BG3_a19772e2.png",
+      "metadata": {
+        "elementor_id": "f8f859d",
+        "filename": "BG3_a19772e2.png"
+      }
+    },
+    {
+      "sort_order": 12,
       "block_key": "background.cta",
       "section": "cta",
       "label": "CTA background",
@@ -32,7 +164,7 @@
       }
     },
     {
-      "sort_order": 2,
+      "sort_order": 13,
       "block_key": "hero.breadcrumb_parent",
       "section": "hero",
       "label": "Breadcrumb parent",
@@ -40,7 +172,7 @@
       "value": "Services"
     },
     {
-      "sort_order": 3,
+      "sort_order": 14,
       "block_key": "hero.breadcrumb_current",
       "section": "hero",
       "label": "Breadcrumb current",
@@ -48,7 +180,7 @@
       "value": "silverfish treatment"
     },
     {
-      "sort_order": 4,
+      "sort_order": 15,
       "block_key": "hero.title",
       "section": "hero",
       "label": "Section title",
@@ -56,7 +188,7 @@
       "value": "Trusted and Reliable"
     },
     {
-      "sort_order": 5,
+      "sort_order": 16,
       "block_key": "hero.heading",
       "section": "hero",
       "label": "Main heading",
@@ -64,31 +196,31 @@
       "value": "Get Trusted and Reliable Silverfish Treatment Services from Us"
     },
     {
-      "sort_order": 6,
+      "sort_order": 17,
       "block_key": "hero.intro",
       "section": "hero",
       "label": "Intro paragraph",
       "type": "html",
-      "value": "<div class=\"elementor-element elementor-element-de434cf elementor-widget elementor-widget-text-editor\" data-element_type=\"widget\" data-id=\"de434cf\" data-settings=\"{&quot;ekit_we_effect_on&quot;:&quot;none&quot;}\" data-widget_type=\"text-editor.default\"><div class=\"elementor-widget-container\"><div class=\"elementor-element elementor-element-de434cf elementor-widget elementor-widget-text-editor\" data-element_type=\"widget\" data-id=\"de434cf\" data-settings=\"{&quot;ekit_we_effect_on&quot;:&quot;none&quot;}\" data-widget_type=\"text-editor.default\"><div class=\"elementor-widget-container\"><p>Besides being a nuisance in your house, silverfish has destructive feeding habits. It is a pest popular for inflicting widespread damage in residential and commercial properties. If not treated on time, silverfish infestations can wreak havoc on the items of your home or office.</p><p>This small and silver-colored insect also poses significant health hazards that you cannot undermine. At 7 States Pest Control, we offer professional&nbsp;<strong>silverfish treatment</strong>&nbsp;to make your lives simpler.</p><p>Silverfish is nocturnal and discreet. It can cause an infestation to go unnoticed for longer time durations. Moreover, they can sustain in most environments. They are often found in dark and damp areas.</p><p>Note that in small numbers, silverfish bugs don’t create massive problems. However, a large-scale infestation can have severe repercussions. Contact&nbsp;<a href=\"/\"><strong>7 States Pest Control</strong></a>&nbsp;at the earliest to address issues associated with silverfish infestations.&nbsp;</p></div></div></div></div>"
+      "value": "<p>Besides being a nuisance in your house, silverfish has destructive feeding habits. It is a pest popular for inflicting widespread damage in residential and commercial properties. If not treated on time, silverfish infestations can wreak havoc on the items of your home or office.</p><p>This small and silver-colored insect also poses significant health hazards that you cannot undermine. At 7 States Pest Control, we offer professional&nbsp;<strong>silverfish treatment</strong>&nbsp;to make your lives simpler.</p><p>Silverfish is nocturnal and discreet. It can cause an infestation to go unnoticed for longer time durations. Moreover, they can sustain in most environments. They are often found in dark and damp areas.</p><p>Note that in small numbers, silverfish bugs don’t create massive problems. However, a large-scale infestation can have severe repercussions. Contact&nbsp;<a href=\"/\"><strong>7 States Pest Control</strong></a>&nbsp;at the earliest to address issues associated with silverfish infestations.&nbsp;</p>"
     },
     {
-      "sort_order": 7,
+      "sort_order": 18,
       "block_key": "quote_form.title",
       "section": "quote_form",
       "label": "Form heading",
       "type": "text",
-      "value": "Get Trusted and Reliable Silverfish Treatment Services from Us"
+      "value": "Get A Free Quote Now!"
     },
     {
-      "sort_order": 8,
+      "sort_order": 19,
       "block_key": "quote_form.subtitle",
       "section": "quote_form",
       "label": "Form subtitle",
       "type": "text",
-      "value": "Have an enquiry? Leave us your details and we’ll call you back during business hours."
+      "value": "Have an enquiry? Leave us your details and we'll call you back during business hours."
     },
     {
-      "sort_order": 9,
+      "sort_order": 20,
       "block_key": "quote_form.submit_text",
       "section": "quote_form",
       "label": "Submit button text",
@@ -96,7 +228,63 @@
       "value": "Submit Quote"
     },
     {
-      "sort_order": 10,
+      "sort_order": 21,
+      "block_key": "problems.eyebrow",
+      "section": "problems",
+      "label": "Eyebrow",
+      "type": "text",
+      "value": "issues"
+    },
+    {
+      "sort_order": 22,
+      "block_key": "problems.title",
+      "section": "problems",
+      "label": "Section title",
+      "type": "text",
+      "value": "Issues Related to Silverfish Infestations"
+    },
+    {
+      "sort_order": 23,
+      "block_key": "problems.intro",
+      "section": "problems",
+      "label": "Intro",
+      "type": "html",
+      "value": "<p>Here are the issues associated with silverfish infestations in your home and property.</p>"
+    },
+    {
+      "sort_order": 24,
+      "block_key": "prevention.eyebrow",
+      "section": "prevention",
+      "label": "Eyebrow",
+      "type": "text",
+      "value": "symptoms"
+    },
+    {
+      "sort_order": 25,
+      "block_key": "prevention.title",
+      "section": "prevention",
+      "label": "Section title",
+      "type": "text",
+      "value": "Symptoms of a Silverfish Infestation"
+    },
+    {
+      "sort_order": 26,
+      "block_key": "prevention.intro",
+      "section": "prevention",
+      "label": "Intro",
+      "type": "html",
+      "value": "<p>Normally, it is pretty difficult to identify infestations associated with silverfish bugs. Here are some signs that we at 7 States Pest Control recommend to lookout for during silverfish infestations.</p>"
+    },
+    {
+      "sort_order": 27,
+      "block_key": "why_choose.title",
+      "section": "why_choose",
+      "label": "Section title",
+      "type": "text",
+      "value": "Our USPs"
+    },
+    {
+      "sort_order": 28,
       "block_key": "faq.items",
       "section": "faq",
       "label": "FAQ items",
@@ -127,7 +315,7 @@
       }
     },
     {
-      "sort_order": 11,
+      "sort_order": 29,
       "block_key": "faq.title",
       "section": "faq",
       "label": "FAQ title",
@@ -135,7 +323,7 @@
       "value": "Frequently Asked Questions"
     },
     {
-      "sort_order": 12,
+      "sort_order": 30,
       "block_key": "faq.sidebar_image",
       "section": "faq",
       "label": "FAQ sidebar image",
@@ -147,7 +335,7 @@
       }
     },
     {
-      "sort_order": 13,
+      "sort_order": 31,
       "block_key": "faq.sidebar_cta_title",
       "section": "faq",
       "label": "Sidebar CTA title",
@@ -155,7 +343,7 @@
       "value": "Any questions you want to ask?"
     },
     {
-      "sort_order": 14,
+      "sort_order": 32,
       "block_key": "faq.sidebar_cta_body",
       "section": "faq",
       "label": "Sidebar CTA body",
@@ -163,7 +351,7 @@
       "value": "Find answers to common questions about our pest control services, treatments, safety, and scheduling."
     },
     {
-      "sort_order": 15,
+      "sort_order": 33,
       "block_key": "reviews.eyebrow",
       "section": "reviews",
       "label": "Reviews eyebrow",
@@ -171,7 +359,7 @@
       "value": "7 States Pest Control for Reliable Pest Management Solutions"
     },
     {
-      "sort_order": 16,
+      "sort_order": 34,
       "block_key": "reviews.title",
       "section": "reviews",
       "label": "Reviews title",
@@ -179,7 +367,7 @@
       "value": "EXCELLENT"
     },
     {
-      "sort_order": 17,
+      "sort_order": 35,
       "block_key": "cta.eyebrow",
       "section": "cta",
       "label": "Eyebrow",
@@ -187,7 +375,7 @@
       "value": "Ideas to reality"
     },
     {
-      "sort_order": 18,
+      "sort_order": 36,
       "block_key": "cta.title",
       "section": "cta",
       "label": "Section title",
@@ -195,15 +383,15 @@
       "value": "Talk to Us Today to Learn More"
     },
     {
-      "sort_order": 19,
+      "sort_order": 37,
       "block_key": "cta.body",
       "section": "cta",
       "label": "Body HTML",
       "type": "html",
-      "value": "<p>Based on&nbsp;45 reviews</p>"
+      "value": "Do you have any specific questions about us, our services, or anything related to pest infestation issues? Call us today on&nbsp;<a href=\"tel:+61434660060\"> +61 434 660 060</a>&nbsp;or use our contact form to connect with our&nbsp;<b>7 States Pest Control</b>. You can get answers to your questions, get upfront quotes for the&nbsp;<b>7 States Pest Control</b>&nbsp;issues, and receive high-quality tailored services."
     },
     {
-      "sort_order": 20,
+      "sort_order": 38,
       "block_key": "cta.button",
       "section": "cta",
       "label": "CTA button",
@@ -212,47 +400,31 @@
       "link_url": "/contact-us"
     },
     {
-      "sort_order": 21,
-      "block_key": "content.text_de434cf",
-      "section": "content",
-      "label": "Content block 1",
-      "type": "html",
-      "value": "<div class=\"elementor-element elementor-element-de434cf elementor-widget elementor-widget-text-editor\" data-element_type=\"widget\" data-id=\"de434cf\" data-settings=\"{&quot;ekit_we_effect_on&quot;:&quot;none&quot;}\" data-widget_type=\"text-editor.default\"><div class=\"elementor-widget-container\"><p>Besides being a nuisance in your house, silverfish has destructive feeding habits. It is a pest popular for inflicting widespread damage in residential and commercial properties. If not treated on time, silverfish infestations can wreak havoc on the items of your home or office.</p><p>This small and silver-colored insect also poses significant health hazards that you cannot undermine. At 7 States Pest Control, we offer professional&nbsp;<strong>silverfish treatment</strong>&nbsp;to make your lives simpler.</p><p>Silverfish is nocturnal and discreet. It can cause an infestation to go unnoticed for longer time durations. Moreover, they can sustain in most environments. They are often found in dark and damp areas.</p><p>Note that in small numbers, silverfish bugs don’t create massive problems. However, a large-scale infestation can have severe repercussions. Contact&nbsp;<a href=\"/\"><strong>7 States Pest Control</strong></a>&nbsp;at the earliest to address issues associated with silverfish infestations.&nbsp;</p></div></div>"
-    },
-    {
-      "sort_order": 22,
-      "block_key": "content.text_de434cf_2",
-      "section": "content",
-      "label": "Content block 2",
-      "type": "html",
-      "value": "<div class=\"elementor-element elementor-element-de434cf elementor-widget elementor-widget-text-editor\" data-element_type=\"widget\" data-id=\"de434cf\" data-settings=\"{&quot;ekit_we_effect_on&quot;:&quot;none&quot;}\" data-widget_type=\"text-editor.default\"><div class=\"elementor-widget-container\"><p>Besides being a nuisance in your house, silverfish has destructive feeding habits. It is a pest popular for inflicting widespread damage in residential and commercial properties. If not treated on time, silverfish infestations can wreak havoc on the items of your home or office.</p><p>This small and silver-colored insect also poses significant health hazards that you cannot undermine. At 7 States Pest Control, we offer professional&nbsp;<strong>silverfish treatment</strong>&nbsp;to make your lives simpler.</p><p>Silverfish is nocturnal and discreet. It can cause an infestation to go unnoticed for longer time durations. Moreover, they can sustain in most environments. They are often found in dark and damp areas.</p><p>Note that in small numbers, silverfish bugs don’t create massive problems. However, a large-scale infestation can have severe repercussions. Contact&nbsp;<a href=\"/\"><strong>7 States Pest Control</strong></a>&nbsp;at the earliest to address issues associated with silverfish infestations.&nbsp;</p></div></div>"
-    },
-    {
-      "sort_order": 23,
+      "sort_order": 39,
       "block_key": "content.heading_27351ee",
       "section": "content",
-      "label": "Heading: Get A Free Quote Now!",
+      "label": "Heading: {cmsText(c?.quote_form?.title, 'Get A Free Quote Now!')}",
       "type": "text",
       "value": "Get A Free Quote Now!"
     },
     {
-      "sort_order": 24,
+      "sort_order": 40,
       "block_key": "content.heading_9d6e86c",
       "section": "content",
-      "label": "Heading: Have an enquiry? Leave us your details and we’ll call you ba",
+      "label": "Heading: {cmsText(c?.quote_form?.subtitle, \"Have an enquiry? Leave us",
       "type": "text",
-      "value": "Have an enquiry? Leave us your details and we’ll call you back during business hours."
+      "value": "Have an enquiry? Leave us your details and we'll call you back during business hours."
     },
     {
-      "sort_order": 25,
+      "sort_order": 41,
       "block_key": "content.heading_8916f32",
       "section": "content",
-      "label": "Heading: Trusted and Reliable",
+      "label": "Heading: {cmsText(c?.hero?.title, 'Trusted and Reliable')}",
       "type": "text",
       "value": "Trusted and Reliable"
     },
     {
-      "sort_order": 26,
+      "sort_order": 42,
       "block_key": "content.heading_dd5b3de",
       "section": "content",
       "label": "Heading: Get Trusted and Reliable Silverfish Treatment Services from ",
@@ -260,23 +432,23 @@
       "value": "Get Trusted and Reliable Silverfish Treatment Services from Us"
     },
     {
-      "sort_order": 27,
+      "sort_order": 43,
       "block_key": "content.text_76690a4",
       "section": "content",
-      "label": "Content block 3",
+      "label": "Content block 1",
       "type": "html",
       "value": "<div class=\"elementor-element elementor-element-de434cf elementor-widget elementor-widget-text-editor\" data-element_type=\"widget\" data-id=\"de434cf\" data-settings=\"{&quot;ekit_we_effect_on&quot;:&quot;none&quot;}\" data-widget_type=\"text-editor.default\"><div class=\"elementor-widget-container\"><p>Besides being a nuisance in your house, silverfish has destructive feeding habits. It is a pest popular for inflicting widespread damage in residential and commercial properties. If not treated on time, silverfish infestations can wreak havoc on the items of your home or office.</p><p>This small and silver-colored insect also poses significant health hazards that you cannot undermine. At 7 States Pest Control, we offer professional&nbsp;<strong>silverfish treatment</strong>&nbsp;to make your lives simpler.</p><p>Silverfish is nocturnal and discreet. It can cause an infestation to go unnoticed for longer time durations. Moreover, they can sustain in most environments. They are often found in dark and damp areas.</p><p>Note that in small numbers, silverfish bugs don’t create massive problems. However, a large-scale infestation can have severe repercussions. Contact&nbsp;<a href=\"/\"><strong>7 States Pest Control</strong></a>&nbsp;at the earliest to address issues associated with silverfish infestations.&nbsp;</p></div></div>"
     },
     {
-      "sort_order": 28,
-      "block_key": "content.text_de434cf_3",
+      "sort_order": 44,
+      "block_key": "content.text_de434cf",
       "section": "content",
-      "label": "Content block 4",
+      "label": "Content block 2",
       "type": "html",
-      "value": "<div class=\"elementor-element elementor-element-de434cf elementor-widget elementor-widget-text-editor\" data-element_type=\"widget\" data-id=\"de434cf\" data-settings=\"{&quot;ekit_we_effect_on&quot;:&quot;none&quot;}\" data-widget_type=\"text-editor.default\"><div class=\"elementor-widget-container\"><p>Besides being a nuisance in your house, silverfish has destructive feeding habits. It is a pest popular for inflicting widespread damage in residential and commercial properties. If not treated on time, silverfish infestations can wreak havoc on the items of your home or office.</p><p>This small and silver-colored insect also poses significant health hazards that you cannot undermine. At 7 States Pest Control, we offer professional&nbsp;<strong>silverfish treatment</strong>&nbsp;to make your lives simpler.</p><p>Silverfish is nocturnal and discreet. It can cause an infestation to go unnoticed for longer time durations. Moreover, they can sustain in most environments. They are often found in dark and damp areas.</p><p>Note that in small numbers, silverfish bugs don’t create massive problems. However, a large-scale infestation can have severe repercussions. Contact&nbsp;<a href=\"/\"><strong>7 States Pest Control</strong></a>&nbsp;at the earliest to address issues associated with silverfish infestations.&nbsp;</p></div></div>"
+      "value": "<p>Besides being a nuisance in your house, silverfish has destructive feeding habits. It is a pest popular for inflicting widespread damage in residential and commercial properties. If not treated on time, silverfish infestations can wreak havoc on the items of your home or office.</p><p>This small and silver-colored insect also poses significant health hazards that you cannot undermine. At 7 States Pest Control, we offer professional&nbsp;<strong>silverfish treatment</strong>&nbsp;to make your lives simpler.</p><p>Silverfish is nocturnal and discreet. It can cause an infestation to go unnoticed for longer time durations. Moreover, they can sustain in most environments. They are often found in dark and damp areas.</p><p>Note that in small numbers, silverfish bugs don’t create massive problems. However, a large-scale infestation can have severe repercussions. Contact&nbsp;<a href=\"/\"><strong>7 States Pest Control</strong></a>&nbsp;at the earliest to address issues associated with silverfish infestations.&nbsp;</p>"
     },
     {
-      "sort_order": 29,
+      "sort_order": 45,
       "block_key": "content.heading_3c55949",
       "section": "content",
       "label": "Heading: issues",
@@ -284,23 +456,7 @@
       "value": "issues"
     },
     {
-      "sort_order": 30,
-      "block_key": "content.heading_4ebd325",
-      "section": "content",
-      "label": "Heading: Issues Related to Silverfish Infestations",
-      "type": "text",
-      "value": "Issues Related to Silverfish Infestations"
-    },
-    {
-      "sort_order": 31,
-      "block_key": "content.text_24a7d2a",
-      "section": "content",
-      "label": "Content block 5",
-      "type": "html",
-      "value": "<p>Here are the issues associated with silverfish infestations in your home and property.</p>"
-    },
-    {
-      "sort_order": 32,
+      "sort_order": 46,
       "block_key": "content.list_b484fe7",
       "section": "content",
       "label": "Icon list (b484fe7)",
@@ -313,7 +469,7 @@
       }
     },
     {
-      "sort_order": 33,
+      "sort_order": 47,
       "block_key": "content.list_c10a8b4",
       "section": "content",
       "label": "Icon list (c10a8b4)",
@@ -326,7 +482,7 @@
       }
     },
     {
-      "sort_order": 34,
+      "sort_order": 48,
       "block_key": "content.heading_ef9055f",
       "section": "content",
       "label": "Heading: symptoms",
@@ -334,39 +490,23 @@
       "value": "symptoms"
     },
     {
-      "sort_order": 35,
-      "block_key": "content.heading_fb916a7",
+      "sort_order": 49,
+      "block_key": "content.text_de434cf_2",
       "section": "content",
-      "label": "Heading: Symptoms of a Silverfish Infestation",
-      "type": "text",
-      "value": "Symptoms of a Silverfish Infestation"
-    },
-    {
-      "sort_order": 36,
-      "block_key": "content.text_adcf837",
-      "section": "content",
-      "label": "Content block 6",
+      "label": "Content block 3",
       "type": "html",
-      "value": "<div class=\"elementor-element elementor-element-de434cf elementor-widget elementor-widget-text-editor\" data-element_type=\"widget\" data-id=\"de434cf\" data-settings=\"{&quot;ekit_we_effect_on&quot;:&quot;none&quot;}\" data-widget_type=\"text-editor.default\"><div class=\"elementor-widget-container\"><div class=\"elementor-element elementor-element-de434cf elementor-widget elementor-widget-text-editor\" data-element_type=\"widget\" data-id=\"de434cf\" data-settings=\"{&quot;ekit_we_effect_on&quot;:&quot;none&quot;}\" data-widget_type=\"text-editor.default\"><div class=\"elementor-widget-container\"><p>Normally, it is pretty difficult to identify infestations associated with silverfish bugs. Here are some signs that we at 7 States Pest Control recommend to lookout for during silverfish infestations.</p></div></div></div></div>"
+      "value": "<p>Besides being a nuisance in your house, silverfish has destructive feeding habits. It is a pest popular for inflicting widespread damage in residential and commercial properties. If not treated on time, silverfish infestations can wreak havoc on the items of your home or office.</p><p>This small and silver-colored insect also poses significant health hazards that you cannot undermine. At 7 States Pest Control, we offer professional&nbsp;<strong>silverfish treatment</strong>&nbsp;to make your lives simpler.</p><p>Silverfish is nocturnal and discreet. It can cause an infestation to go unnoticed for longer time durations. Moreover, they can sustain in most environments. They are often found in dark and damp areas.</p><p>Note that in small numbers, silverfish bugs don’t create massive problems. However, a large-scale infestation can have severe repercussions. Contact&nbsp;<a href=\"/\"><strong>7 States Pest Control</strong></a>&nbsp;at the earliest to address issues associated with silverfish infestations.&nbsp;</p>"
     },
     {
-      "sort_order": 37,
-      "block_key": "content.text_de434cf_4",
+      "sort_order": 50,
+      "block_key": "content.text_de434cf_3",
       "section": "content",
-      "label": "Content block 7",
+      "label": "Content block 4",
       "type": "html",
-      "value": "<div class=\"elementor-element elementor-element-de434cf elementor-widget elementor-widget-text-editor\" data-element_type=\"widget\" data-id=\"de434cf\" data-settings=\"{&quot;ekit_we_effect_on&quot;:&quot;none&quot;}\" data-widget_type=\"text-editor.default\"><div class=\"elementor-widget-container\"><p>Besides being a nuisance in your house, silverfish has destructive feeding habits. It is a pest popular for inflicting widespread damage in residential and commercial properties. If not treated on time, silverfish infestations can wreak havoc on the items of your home or office.</p><p>This small and silver-colored insect also poses significant health hazards that you cannot undermine. At 7 States Pest Control, we offer professional&nbsp;<strong>silverfish treatment</strong>&nbsp;to make your lives simpler.</p><p>Silverfish is nocturnal and discreet. It can cause an infestation to go unnoticed for longer time durations. Moreover, they can sustain in most environments. They are often found in dark and damp areas.</p><p>Note that in small numbers, silverfish bugs don’t create massive problems. However, a large-scale infestation can have severe repercussions. Contact&nbsp;<a href=\"/\"><strong>7 States Pest Control</strong></a>&nbsp;at the earliest to address issues associated with silverfish infestations.&nbsp;</p></div></div>"
+      "value": "<p>Besides being a nuisance in your house, silverfish has destructive feeding habits. It is a pest popular for inflicting widespread damage in residential and commercial properties. If not treated on time, silverfish infestations can wreak havoc on the items of your home or office.</p><p>This small and silver-colored insect also poses significant health hazards that you cannot undermine. At 7 States Pest Control, we offer professional&nbsp;<strong>silverfish treatment</strong>&nbsp;to make your lives simpler.</p><p>Silverfish is nocturnal and discreet. It can cause an infestation to go unnoticed for longer time durations. Moreover, they can sustain in most environments. They are often found in dark and damp areas.</p><p>Note that in small numbers, silverfish bugs don’t create massive problems. However, a large-scale infestation can have severe repercussions. Contact&nbsp;<a href=\"/\"><strong>7 States Pest Control</strong></a>&nbsp;at the earliest to address issues associated with silverfish infestations.&nbsp;</p>"
     },
     {
-      "sort_order": 38,
-      "block_key": "content.text_de434cf_5",
-      "section": "content",
-      "label": "Content block 8",
-      "type": "html",
-      "value": "<div class=\"elementor-element elementor-element-de434cf elementor-widget elementor-widget-text-editor\" data-element_type=\"widget\" data-id=\"de434cf\" data-settings=\"{&quot;ekit_we_effect_on&quot;:&quot;none&quot;}\" data-widget_type=\"text-editor.default\"><div class=\"elementor-widget-container\"><p>Besides being a nuisance in your house, silverfish has destructive feeding habits. It is a pest popular for inflicting widespread damage in residential and commercial properties. If not treated on time, silverfish infestations can wreak havoc on the items of your home or office.</p><p>This small and silver-colored insect also poses significant health hazards that you cannot undermine. At 7 States Pest Control, we offer professional&nbsp;<strong>silverfish treatment</strong>&nbsp;to make your lives simpler.</p><p>Silverfish is nocturnal and discreet. It can cause an infestation to go unnoticed for longer time durations. Moreover, they can sustain in most environments. They are often found in dark and damp areas.</p><p>Note that in small numbers, silverfish bugs don’t create massive problems. However, a large-scale infestation can have severe repercussions. Contact&nbsp;<a href=\"/\"><strong>7 States Pest Control</strong></a>&nbsp;at the earliest to address issues associated with silverfish infestations.&nbsp;</p></div></div>"
-    },
-    {
-      "sort_order": 39,
+      "sort_order": 51,
       "block_key": "content.list_013cf33",
       "section": "content",
       "label": "Icon list (013cf33)",
@@ -381,7 +521,7 @@
       }
     },
     {
-      "sort_order": 40,
+      "sort_order": 52,
       "block_key": "content.heading_113a5e2",
       "section": "content",
       "label": "Heading: Our Approach to Treat Silverfish Infestation",
@@ -389,31 +529,31 @@
       "value": "Our Approach to Treat Silverfish Infestation"
     },
     {
-      "sort_order": 41,
+      "sort_order": 53,
       "block_key": "content.text_a2624c7",
       "section": "content",
-      "label": "Content block 9",
+      "label": "Content block 5",
       "type": "html",
       "value": "<div class=\"elementor-element elementor-element-57329fa elementor-widget elementor-widget-text-editor\" data-element_type=\"widget\" data-id=\"57329fa\" data-settings=\"{&quot;ekit_we_effect_on&quot;:&quot;none&quot;}\" data-widget_type=\"text-editor.default\"><div class=\"elementor-widget-container\"><div class=\"elementor-element elementor-element-9407d80 elementor-widget elementor-widget-text-editor\" data-element_type=\"widget\" data-id=\"9407d80\" data-settings=\"{&quot;ekit_we_effect_on&quot;:&quot;none&quot;}\" data-widget_type=\"text-editor.default\"><div class=\"elementor-widget-container\"><p>At 7 States Pest Control, we initiate a customized approach to treat silverfish infestation. Our silverfish pest control process depends on the following aspects, ensuring&nbsp;<a href=\"/\"><strong>affordable pest control in Melbourne</strong></a>.</p></div></div></div></div>"
     },
     {
-      "sort_order": 42,
+      "sort_order": 54,
       "block_key": "content.text_57329fa",
       "section": "content",
-      "label": "Content block 10",
+      "label": "Content block 6",
       "type": "html",
       "value": "<div class=\"elementor-element elementor-element-9407d80 elementor-widget elementor-widget-text-editor\" data-element_type=\"widget\" data-id=\"9407d80\" data-settings=\"{&quot;ekit_we_effect_on&quot;:&quot;none&quot;}\" data-widget_type=\"text-editor.default\"><div class=\"elementor-widget-container\"><p>At 7 States Pest Control, we initiate a customized approach to treat silverfish infestation. Our silverfish pest control process depends on the following aspects, ensuring&nbsp;<a href=\"/\"><strong>affordable pest control in Melbourne</strong></a>.</p></div></div>"
     },
     {
-      "sort_order": 43,
+      "sort_order": 55,
       "block_key": "content.text_9407d80",
       "section": "content",
-      "label": "Content block 11",
+      "label": "Content block 7",
       "type": "html",
       "value": "<p>At 7 States Pest Control, we initiate a customized approach to treat silverfish infestation. Our silverfish pest control process depends on the following aspects, ensuring&nbsp;<a href=\"/\"><strong>affordable pest control in Melbourne</strong></a>.</p>"
     },
     {
-      "sort_order": 44,
+      "sort_order": 56,
       "block_key": "content.heading_ce41091",
       "section": "content",
       "label": "Heading: Investigate the Primary Cause of Silverfish Infestation",
@@ -421,23 +561,23 @@
       "value": "Investigate the Primary Cause of Silverfish Infestation"
     },
     {
-      "sort_order": 45,
+      "sort_order": 57,
       "block_key": "content.text_bc8e2a4",
       "section": "content",
-      "label": "Content block 12",
+      "label": "Content block 8",
       "type": "html",
       "value": "<div class=\"elementor-element elementor-element-57329fa elementor-widget elementor-widget-text-editor\" data-element_type=\"widget\" data-id=\"57329fa\" data-settings=\"{&quot;ekit_we_effect_on&quot;:&quot;none&quot;}\" data-widget_type=\"text-editor.default\"><div class=\"elementor-widget-container\"><p>Our professional pest control technicians will inspect your home for the presence of silverfish.</p></div></div>"
     },
     {
-      "sort_order": 46,
+      "sort_order": 58,
       "block_key": "content.text_57329fa_2",
       "section": "content",
-      "label": "Content block 13",
+      "label": "Content block 9",
       "type": "html",
       "value": "<div class=\"elementor-element elementor-element-9407d80 elementor-widget elementor-widget-text-editor\" data-element_type=\"widget\" data-id=\"9407d80\" data-settings=\"{&quot;ekit_we_effect_on&quot;:&quot;none&quot;}\" data-widget_type=\"text-editor.default\"><div class=\"elementor-widget-container\"><p>At 7 States Pest Control, we initiate a customized approach to treat silverfish infestation. Our silverfish pest control process depends on the following aspects, ensuring&nbsp;<a href=\"/\"><strong>affordable pest control in Melbourne</strong></a>.</p></div></div>"
     },
     {
-      "sort_order": 47,
+      "sort_order": 59,
       "block_key": "content.heading_35840e7",
       "section": "content",
       "label": "Heading: Protection of Your Property from Silverfish",
@@ -445,39 +585,39 @@
       "value": "Protection of Your Property from Silverfish"
     },
     {
-      "sort_order": 48,
+      "sort_order": 60,
       "block_key": "content.text_138f9ac",
       "section": "content",
-      "label": "Content block 14",
+      "label": "Content block 10",
       "type": "html",
       "value": "<div class=\"elementor-element elementor-element-57329fa elementor-widget elementor-widget-text-editor\" data-element_type=\"widget\" data-id=\"57329fa\" data-settings=\"{&quot;ekit_we_effect_on&quot;:&quot;none&quot;}\" data-widget_type=\"text-editor.default\"><div class=\"elementor-widget-container\"><div class=\"elementor-element elementor-element-9407d80 elementor-widget elementor-widget-text-editor\" data-element_type=\"widget\" data-id=\"9407d80\" data-settings=\"{&quot;ekit_we_effect_on&quot;:&quot;none&quot;}\" data-widget_type=\"text-editor.default\"><div class=\"elementor-widget-container\"><div class=\"elementor-element elementor-element-9407d80 elementor-widget elementor-widget-text-editor\" data-element_type=\"widget\" data-id=\"9407d80\" data-settings=\"{&quot;ekit_we_effect_on&quot;:&quot;none&quot;}\" data-widget_type=\"text-editor.default\"><div class=\"elementor-widget-container\"><p>We will treat your property’s perimeter properly to eliminate silverfish bugs.</p></div></div></div></div></div></div>"
     },
     {
-      "sort_order": 49,
+      "sort_order": 61,
       "block_key": "content.text_57329fa_3",
       "section": "content",
-      "label": "Content block 15",
+      "label": "Content block 11",
       "type": "html",
       "value": "<div class=\"elementor-element elementor-element-9407d80 elementor-widget elementor-widget-text-editor\" data-element_type=\"widget\" data-id=\"9407d80\" data-settings=\"{&quot;ekit_we_effect_on&quot;:&quot;none&quot;}\" data-widget_type=\"text-editor.default\"><div class=\"elementor-widget-container\"><p>At 7 States Pest Control, we initiate a customized approach to treat silverfish infestation. Our silverfish pest control process depends on the following aspects, ensuring&nbsp;<a href=\"/\"><strong>affordable pest control in Melbourne</strong></a>.</p></div></div>"
     },
     {
-      "sort_order": 50,
+      "sort_order": 62,
       "block_key": "content.text_9407d80_2",
       "section": "content",
-      "label": "Content block 16",
+      "label": "Content block 12",
       "type": "html",
       "value": "<p>At 7 States Pest Control, we initiate a customized approach to treat silverfish infestation. Our silverfish pest control process depends on the following aspects, ensuring&nbsp;<a href=\"/\"><strong>affordable pest control in Melbourne</strong></a>.</p>"
     },
     {
-      "sort_order": 51,
+      "sort_order": 63,
       "block_key": "content.text_9407d80_3",
       "section": "content",
-      "label": "Content block 17",
+      "label": "Content block 13",
       "type": "html",
       "value": "<p>At 7 States Pest Control, we initiate a customized approach to treat silverfish infestation. Our silverfish pest control process depends on the following aspects, ensuring&nbsp;<a href=\"/\"><strong>affordable pest control in Melbourne</strong></a>.</p>"
     },
     {
-      "sort_order": 52,
+      "sort_order": 64,
       "block_key": "content.heading_fe2bf3a",
       "section": "content",
       "label": "Heading: Securing Your Property to Fend off Silverfish Infestations",
@@ -485,23 +625,23 @@
       "value": "Securing Your Property to Fend off Silverfish Infestations"
     },
     {
-      "sort_order": 53,
+      "sort_order": 65,
       "block_key": "content.text_1b7d436",
       "section": "content",
-      "label": "Content block 18",
+      "label": "Content block 14",
       "type": "html",
       "value": "<div class=\"elementor-element elementor-element-57329fa elementor-widget elementor-widget-text-editor\" data-element_type=\"widget\" data-id=\"57329fa\" data-settings=\"{&quot;ekit_we_effect_on&quot;:&quot;none&quot;}\" data-widget_type=\"text-editor.default\"><div class=\"elementor-widget-container\"><p>Our expert pest control technicians will plug holes and seal cracks to prevent the entry of silverfish bugs.</p></div></div>"
     },
     {
-      "sort_order": 54,
+      "sort_order": 66,
       "block_key": "content.text_57329fa_4",
       "section": "content",
-      "label": "Content block 19",
+      "label": "Content block 15",
       "type": "html",
       "value": "<div class=\"elementor-element elementor-element-9407d80 elementor-widget elementor-widget-text-editor\" data-element_type=\"widget\" data-id=\"9407d80\" data-settings=\"{&quot;ekit_we_effect_on&quot;:&quot;none&quot;}\" data-widget_type=\"text-editor.default\"><div class=\"elementor-widget-container\"><p>At 7 States Pest Control, we initiate a customized approach to treat silverfish infestation. Our silverfish pest control process depends on the following aspects, ensuring&nbsp;<a href=\"/\"><strong>affordable pest control in Melbourne</strong></a>.</p></div></div>"
     },
     {
-      "sort_order": 55,
+      "sort_order": 67,
       "block_key": "content.heading_795098b",
       "section": "content",
       "label": "Heading: Get Extensive Reports with Detailed Analysis",
@@ -509,63 +649,47 @@
       "value": "Get Extensive Reports with Detailed Analysis"
     },
     {
-      "sort_order": 56,
+      "sort_order": 68,
       "block_key": "content.text_fea8dfa",
       "section": "content",
-      "label": "Content block 20",
+      "label": "Content block 16",
       "type": "html",
       "value": "<div class=\"elementor-element elementor-element-57329fa elementor-widget elementor-widget-text-editor\" data-element_type=\"widget\" data-id=\"57329fa\" data-settings=\"{&quot;ekit_we_effect_on&quot;:&quot;none&quot;}\" data-widget_type=\"text-editor.default\"><div class=\"elementor-widget-container\"><div class=\"elementor-element elementor-element-9407d80 elementor-widget elementor-widget-text-editor\" data-element_type=\"widget\" data-id=\"9407d80\" data-settings=\"{&quot;ekit_we_effect_on&quot;:&quot;none&quot;}\" data-widget_type=\"text-editor.default\"><div class=\"elementor-widget-container\"><div class=\"elementor-element elementor-element-9407d80 elementor-widget elementor-widget-text-editor\" data-element_type=\"widget\" data-id=\"9407d80\" data-settings=\"{&quot;ekit_we_effect_on&quot;:&quot;none&quot;}\" data-widget_type=\"text-editor.default\"><div class=\"elementor-widget-container\"><p>What sets 7 States Pest Control apart is our transparency. We will provide a detailed report with the analysis of the silverfish control services offered to you.</p></div></div></div></div></div></div>"
     },
     {
-      "sort_order": 57,
+      "sort_order": 69,
       "block_key": "content.text_57329fa_5",
       "section": "content",
-      "label": "Content block 21",
+      "label": "Content block 17",
       "type": "html",
       "value": "<div class=\"elementor-element elementor-element-9407d80 elementor-widget elementor-widget-text-editor\" data-element_type=\"widget\" data-id=\"9407d80\" data-settings=\"{&quot;ekit_we_effect_on&quot;:&quot;none&quot;}\" data-widget_type=\"text-editor.default\"><div class=\"elementor-widget-container\"><p>At 7 States Pest Control, we initiate a customized approach to treat silverfish infestation. Our silverfish pest control process depends on the following aspects, ensuring&nbsp;<a href=\"/\"><strong>affordable pest control in Melbourne</strong></a>.</p></div></div>"
     },
     {
-      "sort_order": 58,
+      "sort_order": 70,
       "block_key": "content.text_9407d80_4",
       "section": "content",
-      "label": "Content block 22",
+      "label": "Content block 18",
       "type": "html",
       "value": "<p>At 7 States Pest Control, we initiate a customized approach to treat silverfish infestation. Our silverfish pest control process depends on the following aspects, ensuring&nbsp;<a href=\"/\"><strong>affordable pest control in Melbourne</strong></a>.</p>"
     },
     {
-      "sort_order": 59,
+      "sort_order": 71,
       "block_key": "content.text_9407d80_5",
       "section": "content",
-      "label": "Content block 23",
+      "label": "Content block 19",
       "type": "html",
       "value": "<p>At 7 States Pest Control, we initiate a customized approach to treat silverfish infestation. Our silverfish pest control process depends on the following aspects, ensuring&nbsp;<a href=\"/\"><strong>affordable pest control in Melbourne</strong></a>.</p>"
     },
     {
-      "sort_order": 60,
-      "block_key": "content.heading_73358e8",
-      "section": "content",
-      "label": "Heading: Our USPs",
-      "type": "text",
-      "value": "Our USPs"
-    },
-    {
-      "sort_order": 61,
-      "block_key": "content.heading_bd8e94d",
-      "section": "content",
-      "label": "Heading: Our USPs",
-      "type": "text",
-      "value": "Our USPs"
-    },
-    {
-      "sort_order": 62,
+      "sort_order": 72,
       "block_key": "content.text_4a957b0",
       "section": "content",
-      "label": "Content block 24",
+      "label": "Content block 20",
       "type": "html",
       "value": "<p>As a trustworthy pest control agency, we at 7 States Pest Control have specific USPs as mentioned below.</p>"
     },
     {
-      "sort_order": 63,
+      "sort_order": 73,
       "block_key": "content.list_ea18cb7",
       "section": "content",
       "label": "Icon list (ea18cb7)",
@@ -579,7 +703,7 @@
       }
     },
     {
-      "sort_order": 64,
+      "sort_order": 74,
       "block_key": "content.heading_32945a7",
       "section": "content",
       "label": "Heading: Frequently Asked Questions",
@@ -587,7 +711,7 @@
       "value": "Frequently Asked Questions"
     },
     {
-      "sort_order": 65,
+      "sort_order": 75,
       "block_key": "content.image_d26b015",
       "section": "content",
       "label": "Image (d26b015)",
@@ -599,7 +723,7 @@
       }
     },
     {
-      "sort_order": 66,
+      "sort_order": 76,
       "block_key": "content.heading_02c8fc4",
       "section": "content",
       "label": "Heading: Clients Reviews",
@@ -607,39 +731,39 @@
       "value": "Clients Reviews"
     },
     {
-      "sort_order": 67,
+      "sort_order": 77,
       "block_key": "content.heading_6eeb43e",
       "section": "content",
-      "label": "Heading: 7 States Pest Control for Reliable Pest Management Solutions",
+      "label": "Heading: {cmsText(c?.reviews?.eyebrow, '7 States Pest Control for Rel",
       "type": "text",
       "value": "7 States Pest Control for Reliable Pest Management Solutions"
     },
     {
-      "sort_order": 68,
+      "sort_order": 78,
       "block_key": "content.heading_ce3fd5e",
       "section": "content",
-      "label": "Heading: Reviews of Our Pest Control Services",
+      "label": "Heading: {cmsText(c?.reviews?.subtitle, 'Reviews of Our Pest Control ",
       "type": "text",
       "value": "Reviews of Our Pest Control Services"
     },
     {
-      "sort_order": 69,
+      "sort_order": 79,
       "block_key": "content.heading_75b617d",
       "section": "content",
-      "label": "Heading: EXCELLENT",
+      "label": "Heading: {cmsText(c?.reviews?.title, 'EXCELLENT')}",
       "type": "text",
       "value": "EXCELLENT"
     },
     {
-      "sort_order": 70,
+      "sort_order": 80,
       "block_key": "content.text_4439bbb",
       "section": "content",
-      "label": "Content block 25",
+      "label": "Content block 21",
       "type": "html",
       "value": "<p>Based on&nbsp;45 reviews</p>"
     },
     {
-      "sort_order": 71,
+      "sort_order": 81,
       "block_key": "content.heading_4c825b4",
       "section": "content",
       "label": "Heading: Ideas to reality",
@@ -647,7 +771,7 @@
       "value": "Ideas to reality"
     },
     {
-      "sort_order": 72,
+      "sort_order": 82,
       "block_key": "content.heading_7c67181",
       "section": "content",
       "label": "Heading: Talk to Us Today to Learn More",
@@ -655,12 +779,153 @@
       "value": "Talk to Us Today to Learn More"
     },
     {
-      "sort_order": 73,
+      "sort_order": 83,
       "block_key": "content.text_dbd1d11",
       "section": "content",
-      "label": "Content block 26",
+      "label": "Content block 22",
       "type": "html",
       "value": "Do you have any specific questions about us, our services, or anything related to pest infestation issues? Call us today on&nbsp;<a href=\"tel:+61434660060\"> +61 434 660 060</a>&nbsp;or use our contact form to connect with our&nbsp;<b>7 States Pest Control</b>. You can get answers to your questions, get upfront quotes for the&nbsp;<b>7 States Pest Control</b>&nbsp;issues, and receive high-quality tailored services."
+    },
+    {
+      "block_key": "services.title",
+      "section": "services",
+      "label": "Approach section title",
+      "type": "text",
+      "value": "Our Approach to Treat Silverfish Infestation",
+      "sort_order": 84
+    },
+    {
+      "block_key": "services.intro",
+      "section": "services",
+      "label": "Approach section intro",
+      "type": "html",
+      "value": "<p>At 7 States Pest Control, we initiate a customized approach to treat silverfish infestation. Our silverfish pest control process depends on the following aspects, ensuring&nbsp;<a href=\"/\"><strong>affordable pest control in Melbourne</strong></a>.</p>",
+      "sort_order": 85
+    },
+    {
+      "block_key": "why_choose.eyebrow",
+      "section": "why_choose",
+      "label": "Eyebrow",
+      "type": "text",
+      "value": "Our USPs",
+      "sort_order": 86
+    },
+    {
+      "block_key": "why_choose.intro",
+      "section": "why_choose",
+      "label": "Intro",
+      "type": "html",
+      "value": "<p>As a trustworthy pest control agency, we at 7 States Pest Control have specific USPs as mentioned below.</p>",
+      "sort_order": 87
+    },
+    {
+      "block_key": "reviews.subtitle",
+      "section": "reviews",
+      "label": "Reviews subtitle",
+      "type": "text",
+      "value": "Reviews of Our Pest Control Services",
+      "sort_order": 88
+    },
+    {
+      "block_key": "reviews.count_text",
+      "section": "reviews",
+      "label": "Review count",
+      "type": "html",
+      "value": "<p>Based on&nbsp;45 reviews</p>",
+      "sort_order": 89
+    },
+    {
+      "block_key": "faq.sidebar_cta_button",
+      "section": "faq",
+      "label": "Sidebar CTA button",
+      "type": "link",
+      "value": "Contact Us",
+      "link_url": "/contact-us",
+      "sort_order": 90
+    },
+    {
+      "block_key": "cards.investigate",
+      "section": "cards",
+      "label": "Step: Investigate the Primary Cause of Silverfish Infestation",
+      "type": "json",
+      "image_path": "cms/our-services-silverfish-treatment/pest_control_services.jpg_f26d74af.webp",
+      "metadata": {
+        "slug": "investigate",
+        "title": "Investigate the Primary Cause of Silverfish Infestation",
+        "description": "<p>Our professional pest control technicians will inspect your home for the presence of silverfish.</p>",
+        "alt": "Investigate the Primary Cause of Silverfish Infestation",
+        "image_src": "/assets/images/pest_control_services.jpg_f26d74af.webp",
+        "elementor_id": "29847cb",
+        "heading_id": "ce41091",
+        "body_id": "bc8e2a4"
+      },
+      "sort_order": 91
+    },
+    {
+      "block_key": "cards.protection",
+      "section": "cards",
+      "label": "Step: Protection of Your Property from Silverfish",
+      "type": "json",
+      "image_path": "cms/our-services-silverfish-treatment/Protection-of-Your-Property-from-Silverfish.jpg_6dfca4e1.webp",
+      "metadata": {
+        "slug": "protection",
+        "title": "Protection of Your Property from Silverfish",
+        "description": "<p>We will treat your property’s perimeter properly to eliminate silverfish bugs.</p>",
+        "alt": "Protection of Your Property from Silverfish",
+        "image_src": "/assets/images/Protection-of-Your-Property-from-Silverfish.jpg_6dfca4e1.webp",
+        "elementor_id": "894f45a",
+        "heading_id": "35840e7",
+        "body_id": "138f9ac"
+      },
+      "sort_order": 92
+    },
+    {
+      "block_key": "cards.securing",
+      "section": "cards",
+      "label": "Step: Securing Your Property to Fend off Silverfish Infestations",
+      "type": "json",
+      "image_path": "cms/our-services-silverfish-treatment/Silver-Fish-1_512b7fad.jpg",
+      "metadata": {
+        "slug": "securing",
+        "title": "Securing Your Property to Fend off Silverfish Infestations",
+        "description": "<p>Our expert pest control technicians will plug holes and seal cracks to prevent the entry of silverfish bugs.</p>",
+        "alt": "Securing Your Property to Fend off Silverfish Infestations",
+        "image_src": "/assets/images/Silver-Fish-1_512b7fad.jpg",
+        "elementor_id": "caf2005",
+        "heading_id": "fe2bf3a",
+        "body_id": "1b7d436"
+      },
+      "sort_order": 93
+    },
+    {
+      "block_key": "cards.reports",
+      "section": "cards",
+      "label": "Step: Get Extensive Reports with Detailed Analysis",
+      "type": "json",
+      "image_path": "cms/our-services-silverfish-treatment/Get-Extensive-Reports-with-Detailed-Analysis.jpg_2023a858.webp",
+      "metadata": {
+        "slug": "reports",
+        "title": "Get Extensive Reports with Detailed Analysis",
+        "description": "<p>What sets 7 States Pest Control apart is our transparency. We will provide a detailed report with the analysis of the silverfish control services offered to you.</p>",
+        "alt": "Get Extensive Reports with Detailed Analysis",
+        "image_src": "/assets/images/Get-Extensive-Reports-with-Detailed-Analysis.jpg_2023a858.webp",
+        "elementor_id": "f6e08bf",
+        "heading_id": "795098b",
+        "body_id": "fea8dfa"
+      },
+      "sort_order": 94
+    },
+    {
+      "block_key": "why_choose.image",
+      "section": "why_choose",
+      "label": "Section image",
+      "type": "image",
+      "image_path": "cms/our-services-silverfish-treatment/Why-Pest-Control.jpg_ef5bccf6.webp",
+      "metadata": {
+        "elementor_id": "0bb7e99",
+        "alt": "Why choose 7 States Pest Control"
+      },
+      "sort_order": 95
     }
   ]
 }

@@ -1051,7 +1051,10 @@ export const PAGE_SEO_EXTRA = {
       "og:url": "https://7statespestcontrol.com.au/",
       "og:site_name": "7 States Pest Control",
       "article:modified_time": "2026-05-21T08:45:32+00:00",
-      "og:image": "https://7statespestcontrol.com.au/wp-content/uploads/2025/06/Cockroaches.png-1.webp"
+      "og:image": "https://7statespestcontrol.com.au/wp-content/uploads/2025/06/Cockroaches.png-1.webp",
+      "og:image:width": "150",
+      "og:image:height": "150",
+      "og:image:type": "image/webp"
     },
     "twitter": {
       "twitter:card": "summary_large_image"

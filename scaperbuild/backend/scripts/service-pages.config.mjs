@@ -4,6 +4,14 @@
  */
 export const SERVICE_PAGES = [
   {
+    slug: 'our-services',
+    title: 'Pest Control Services',
+    seoKey: 'our_services',
+    jsxPath: 'frontend/src/pages/services/OurServicesPage.jsx',
+    elementorId: 7780,
+    template: 'generic',
+  },
+  {
     slug: 'our-services-bed-bug-treatment',
     title: 'Bed Bug Treatment',
     seoKey: 'our-services-bed-bug-treatment',
@@ -41,7 +49,7 @@ export const SERVICE_PAGES = [
     seoKey: 'our-services-fox-pest-control-in-melbourne',
     jsxPath: 'frontend/src/pages/services/OurServicesFoxPestControlInMelbournePage.jsx',
     elementorId: 9877,
-    template: 'ant-like',
+    template: 'generic',
   },
   {
     slug: 'our-services-mites-control',
@@ -65,7 +73,7 @@ export const SERVICE_PAGES = [
     seoKey: 'our-services-possum-pest-control',
     jsxPath: 'frontend/src/pages/services/OurServicesPossumPestControlPage.jsx',
     elementorId: 10278,
-    template: 'ant-like',
+    template: 'generic',
   },
   {
     slug: 'our-services-silverfish-treatment',
@@ -89,7 +97,7 @@ export const SERVICE_PAGES = [
     seoKey: 'our-services-termite-pest-control',
     jsxPath: 'frontend/src/pages/services/OurServicesTermitePestControlPage.jsx',
     elementorId: 10357,
-    template: 'ant-like',
+    template: 'generic',
   },
   {
     slug: 'our-services-end-of-lease-pest-control',
@@ -118,6 +126,14 @@ export const SERVICE_PAGES = [
 ]
 
 export const COMMERCIAL_PAGES = [
+  {
+    slug: 'commercial-pest-control',
+    title: 'Commercial Pest Control',
+    seoKey: 'commercial-pest-control',
+    jsxPath: 'frontend/src/pages/commercial/CommercialPestControlPage.jsx',
+    elementorId: 694,
+    template: 'commercial',
+  },
   {
     slug: 'office-pest-control',
     title: 'Office Pest Control',

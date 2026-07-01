@@ -2,6 +2,7 @@
 
 namespace App\Filament\Resources\Pages\Schemas;
 
+use App\Filament\Support\CmsImageUpload;
 use App\Models\Page;
 use App\Services\ServicePageBlockMapper;
 use Filament\Forms\Components\FileUpload;
@@ -33,9 +34,15 @@ class ServicePageSectionsForm
                             Section::make('About section')->icon('heroicon-o-building-office')->collapsible()
                                 ->visible(fn (?Page $record): bool => ServicePageBlockMapper::isCommercialPage($record?->slug))
                                 ->schema(self::aboutSection()),
+                            Section::make('Why choose us / USPs')->icon('heroicon-o-star')->collapsible()->collapsed()
+                                ->visible(fn (?Page $record): bool => ServicePageBlockMapper::isGenericServicePage($record?->slug))
+                                ->schema(self::whyChooseGenericSection()),
                             Section::make('Why choose us')->icon('heroicon-o-star')->collapsible()
                                 ->visible(fn (?Page $record): bool => ServicePageBlockMapper::isCommercialPage($record?->slug))
                                 ->schema(self::whyChooseSection()),
+                            Section::make('Our approach')->icon('heroicon-o-wrench-screwdriver')->collapsible()->collapsed()
+                                ->visible(fn (?Page $record): bool => ServicePageBlockMapper::isGenericServicePage($record?->slug))
+                                ->schema(self::approachSection()),
                             Section::make('Contact section')->icon('heroicon-o-envelope')->collapsible()
                                 ->visible(fn (?Page $record): bool => ServicePageBlockMapper::isCommercialPage($record?->slug))
                                 ->schema(self::contactSection()),
@@ -86,22 +93,25 @@ class ServicePageSectionsForm
 
     private static function imageField(string $name, string $label): FileUpload
     {
-        return FileUpload::make($name)
-            ->label($label)
-            ->directory(fn (?Page $record): string => 'cms/'.($record?->slug ?? 'service-pages'))
-            ->disk('public')
-            ->visibility('public')
-            ->maxFiles(1)
-            ->imagePreviewHeight('120')
-            ->fetchFileInformation(false)
-            ->image()
-            ->dehydrateStateUsing(function (mixed $state): ?string {
-                if (is_array($state)) {
-                    $state = Arr::first($state);
-                }
+        return CmsImageUpload::make($name, $label, 'cms/service-pages')
+            ->directory(fn (?Page $record): string => 'cms/'.($record?->slug ?? 'service-pages'));
+    }
 
-                return filled($state) && is_string($state) ? $state : null;
-            });
+    private static function approachSection(): array
+    {
+        return [
+            TextInput::make('services.title')->label('Section title')->columnSpanFull(),
+            Textarea::make('services.intro')->label('Intro (HTML)')->rows(4)->columnSpanFull(),
+        ];
+    }
+
+    private static function whyChooseGenericSection(): array
+    {
+        return [
+            TextInput::make('why_choose.eyebrow')->label('Eyebrow'),
+            TextInput::make('why_choose.title')->label('Section title')->columnSpanFull(),
+            Textarea::make('why_choose.intro')->label('Intro (HTML)')->rows(3)->columnSpanFull(),
+        ];
     }
 
     private static function heroSection(): array

@@ -1,12 +1,22 @@
 import PhoneNumberInput from '../../components/PhoneNumberInput.jsx'
+import ServiceCmsContentBlocks from '../../components/service/ServiceCmsContentBlocks.jsx'
+import ServiceFaqCms from '../../components/service/ServiceFaqCms.jsx'
+import { cmsText } from '../../utils/cmsMedia.js'
+import usePageCms from '../../hooks/usePageCms.js'
+import ServiceCmsStyles from '../../components/service/ServiceCmsStyles.jsx'
+import CmsHtml from '../../components/home/CmsHtml.jsx'
 import usePageMeta from '../../hooks/usePageMeta.js'
 import { Link } from 'react-router-dom'
 
 export default function OurServicesFlyControlPage() {
-  usePageMeta('our_services_fly_control')
+  const { page, content: c } = usePageCms('our-services-fly-control')
+  usePageMeta('our_services_fly_control', page)
 
   return (
     <>
+      <ServiceCmsStyles content={c} heroBgId="46a82e4" ctaBgId="057b4d3" />
+      <ServiceFaqCms faq={c?.faq} accordionWidgetId="5146096" />
+      <ServiceCmsContentBlocks content={c} />
       <div className="elementor elementor-1544" data-elementor-id={1544} data-elementor-post-type="page" data-elementor-type="wp-page">
         <div className="elementor-element elementor-element-46a82e4 e-flex e-con-boxed e-con e-parent e-lazyloaded" data-element_type="container" data-id="46a82e4" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
           <div className="e-con-inner">
@@ -22,14 +32,14 @@ export default function OurServicesFlyControlPage() {
                       <a href="#">
                         <span className="elementor-icon-list-icon">
                           <svg aria-hidden="true" className="e-font-icon-svg e-fas-angle-right" viewBox="0 0 256 512" xmlns="http://www.w3.org/2000/svg"><path d="M224.3 273l-136 136c-9.4 9.4-24.6 9.4-33.9 0l-22.6-22.6c-9.4-9.4-9.4-24.6 0-33.9l96.4-96.4-96.4-96.4c-9.4-9.4-9.4-24.6 0-33.9L54.3 103c9.4-9.4 24.6-9.4 33.9 0l136 136c9.5 9.4 9.5 24.6.1 34z" /></svg> </span>
-                        <span className="elementor-icon-list-text">Services</span>
+                        <span className="elementor-icon-list-text">{cmsText(c?.hero?.breadcrumb_parent, 'Services')}</span>
                       </a>
                     </li>
                     <li className="elementor-icon-list-item elementor-inline-item">
                       <a href="#">
                         <span className="elementor-icon-list-icon">
                           <svg aria-hidden="true" className="e-font-icon-svg e-fas-angle-right" viewBox="0 0 256 512" xmlns="http://www.w3.org/2000/svg"><path d="M224.3 273l-136 136c-9.4 9.4-24.6 9.4-33.9 0l-22.6-22.6c-9.4-9.4-9.4-24.6 0-33.9l96.4-96.4-96.4-96.4c-9.4-9.4-9.4-24.6 0-33.9L54.3 103c9.4-9.4 24.6-9.4 33.9 0l136 136c9.5 9.4 9.5 24.6.1 34z" /></svg> </span>
-                        <span className="elementor-icon-list-text">fly control</span>
+                        <span className="elementor-icon-list-text">{cmsText(c?.hero?.breadcrumb_current, 'fly control')}</span>
                       </a>
                     </li>
                   </ul>
@@ -37,25 +47,26 @@ export default function OurServicesFlyControlPage() {
               </div>
               <div className="elementor-element elementor-element-05f303e elementor-widget elementor-widget-heading" data-element_type="widget" data-id="05f303e" data-settings="{&quot;_animation&quot;:&quot;none&quot;}" data-widget_type="heading.default">
                 <div className="elementor-widget-container">
-                  <h2 className="elementor-heading-title elementor-size-default">Pest Control Services</h2> </div>
+                  <h2 className="elementor-heading-title elementor-size-default">{cmsText(c?.hero?.title, 'Pest Control Services')}</h2> </div>
               </div>
               <div className="elementor-element elementor-element-db1c820 elementor-widget elementor-widget-heading" data-element_type="widget" data-id="db1c820" data-settings="{&quot;_animation&quot;:&quot;none&quot;}" data-widget_type="heading.default">
                 <div className="elementor-widget-container">
-                  <h1 className="elementor-heading-title elementor-size-default">Get Rid of Moths with Our Pest Control Services</h1> </div>
+                  <h1 className="elementor-heading-title elementor-size-default">{cmsText(c?.hero?.heading, 'Get Rid of Moths with Our Pest Control Services')}</h1> </div>
               </div>
               <div className="elementor-element elementor-element-0e60e7a elementor-widget elementor-widget-text-editor" data-element_type="widget" data-id="0e60e7a" data-widget_type="text-editor.default">
                 <div className="elementor-widget-container">
-                  <div className="elementor-element elementor-element-de434cf elementor-widget elementor-widget-text-editor" data-element_type="widget" data-id="de434cf" data-settings="{&quot;ekit_we_effect_on&quot;:&quot;none&quot;}" data-widget_type="text-editor.default"><div className="elementor-widget-container"><p>Flies are a common problem in homes and businesses, and they can be more than just a nuisance. They can also carry diseases, so it’s important to get rid of them quickly and effectively.</p><p>That’s where&nbsp;<Link to="/"><strong>7 States Pest Control</strong></Link>&nbsp;comes in. We offer professional pest control services to get rid of flies and other pests from your property. Our experienced technicians will identify the source of the infestation and develop a customized treatment plan to eliminate the flies and prevent them from coming back.</p></div></div> </div>
+                  <CmsHtml html={c?.hero?.intro} />
+                </div>
               </div>
             </div>
             <div className="elementor-element elementor-element-b5aae0c e-con-full e-flex e-con e-child" data-element_type="container" data-id="b5aae0c" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
               <div className="elementor-element elementor-element-943bca5 elementor-widget elementor-widget-heading" data-element_type="widget" data-id="943bca5" data-widget_type="heading.default">
                 <div className="elementor-widget-container">
-                  <h2 className="elementor-heading-title elementor-size-default">Get A Free Quote Now!</h2> </div>
+                  <h2 className="elementor-heading-title elementor-size-default">{cmsText(c?.quote_form?.title, 'Get A Free Quote Now!')}</h2> </div>
               </div>
               <div className="elementor-element elementor-element-54cfe0e elementor-widget elementor-widget-heading" data-element_type="widget" data-id="54cfe0e" data-widget_type="heading.default">
                 <div className="elementor-widget-container">
-                  <h6 className="elementor-heading-title elementor-size-default">Have an enquiry? Leave us your details and we’ll call you back during business hours.</h6> </div>
+                  <h6 className="elementor-heading-title elementor-size-default">{cmsText(c?.quote_form?.subtitle, 'Have an enquiry? Leave us your details and we\'ll call you back during business hours.')}</h6> </div>
               </div>
               <div className="elementor-element elementor-element-dd404a3 elementor-button-align-center elementor-widget elementor-widget-form" data-element_type="widget" data-id="dd404a3" data-settings="{&quot;step_next_label&quot;:&quot;Next&quot;,&quot;step_previous_label&quot;:&quot;Previous&quot;,&quot;button_width&quot;:&quot;100&quot;,&quot;step_type&quot;:&quot;number_text&quot;,&quot;step_icon_shape&quot;:&quot;circle&quot;}" data-widget_type="form.default">
                 <div className="elementor-widget-container">
@@ -600,7 +611,7 @@ export default function OurServicesFlyControlPage() {
                         </div>
                         <div className="elementor-element elementor-element-a00a7a7 elementor-widget elementor-widget-heading" data-element_type="widget" data-id="a00a7a7" data-settings="{&quot;_animation&quot;:&quot;none&quot;}" data-widget_type="heading.default">
                           <div className="elementor-widget-container">
-                            <h2 className="elementor-heading-title elementor-size-default">7 States Pest Control for Reliable Pest Management Solutions</h2> </div>
+                            <h2 className="elementor-heading-title elementor-size-default">{cmsText(c?.reviews?.eyebrow, '7 States Pest Control for Reliable Pest Management Solutions')}</h2> </div>
                         </div>
                       </div>
                     </div>
@@ -608,11 +619,11 @@ export default function OurServicesFlyControlPage() {
                       <div className="elementor-widget-wrap elementor-element-populated">
                         <div className="elementor-element elementor-element-946e466 elementor-widget elementor-widget-heading" data-element_type="widget" data-id="946e466" data-widget_type="heading.default">
                           <div className="elementor-widget-container">
-                            <h3 className="elementor-heading-title elementor-size-default">Reviews of Our Pest Control Services</h3> </div>
+                            <h3 className="elementor-heading-title elementor-size-default">{cmsText(c?.reviews?.subtitle, 'Reviews of Our Pest Control Services')}</h3> </div>
                         </div>
                         <div className="elementor-element elementor-element-237d1c2 elementor-widget elementor-widget-heading" data-element_type="widget" data-id="237d1c2" data-widget_type="heading.default">
                           <div className="elementor-widget-container">
-                            <h6 className="elementor-heading-title elementor-size-default">EXCELLENT</h6> </div>
+                            <h6 className="elementor-heading-title elementor-size-default">{cmsText(c?.reviews?.title, 'EXCELLENT')}</h6> </div>
                         </div>
                         <div className="elementor-element elementor-element-9bf4b14 elementor-widget elementor-widget-rating" data-element_type="widget" data-id="9bf4b14" data-widget_type="rating.default">
                           <div className="elementor-widget-container">

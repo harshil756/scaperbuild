@@ -81,7 +81,9 @@ export function extractHeading(jsx, id) {
   const re = new RegExp(`data-id="${id}"[\\s\\S]*?<h[1-6][^>]*>([\\s\\S]*?)</h[1-6]>`)
   const m = jsx.match(re)
   if (!m) return null
-  return m[1].replace(/<[^>]+>/g, '').replace(/\s+/g, ' ').replace(/&amp;/g, '&').trim()
+  const text = m[1].replace(/<[^>]+>/g, '').replace(/\s+/g, ' ').replace(/&amp;/g, '&').trim()
+  if (text.includes('{cmsText') || text.includes('c?.')) return null
+  return text
 }
 
 export function extractHtmlAfter(jsx, id) {
@@ -116,6 +118,7 @@ export function extractImageSrc(jsx, id) {
 export function extractBackgrounds(css, slug, cmsPath, add, sectionMap = {}, options = {}) {
   if (!css) return
   const onlyMapped = options.onlyMapped ?? false
+  const heroAndCtaOnly = options.heroAndCtaOnly ?? false
   const bgRe = /elementor-element-([a-f0-9]+)[^{]*\{[^}]*background-image:url\(["']?\.\.\/images\/([^"')]+)/g
   const items = []
   let m
@@ -127,7 +130,7 @@ export function extractBackgrounds(css, slug, cmsPath, add, sectionMap = {}, opt
     let section = sectionMap[item.id] ?? null
     if (!section) {
       if (onlyMapped) return
-      if (options.heroAndCtaOnly) {
+      if (heroAndCtaOnly) {
         if (index === 0) {
           section = 'hero'
         } else if (index === items.length - 1 && items.length > 1) {
@@ -140,19 +143,157 @@ export function extractBackgrounds(css, slug, cmsPath, add, sectionMap = {}, opt
       } else if (index === items.length - 1 && items.length > 1) {
         section = 'cta'
       } else {
-        section = `section_${item.id}`
+        section = item.id
       }
     }
 
     add({
-      block_key: `background.${section}`,
-      section,
+      block_key: section === 'hero' || section === 'cta' ? `background.${section}` : `background.${item.id}`,
+      section: section === 'hero' || section === 'cta' ? section : 'backgrounds',
       label: section === 'hero' ? 'Hero background' : (section === 'cta' ? 'CTA background' : `Background (${item.id})`),
       type: 'background',
       background_image_path: cmsPath(item.file),
       metadata: { elementor_id: item.id, filename: item.file },
     })
   })
+}
+
+/** Strip nested Elementor widget wrappers — keep inner content only. */
+export function simplifyHtml(html) {
+  if (!html) return html
+  let out = html.trim()
+  if (!out.includes('elementor-element-')) return out
+  const ps = [...out.matchAll(/<p[^>]*>([\s\S]*?)<\/p>/gi)].map((m) => `<p>${m[1]}</p>`)
+  if (ps.length) return ps.join('')
+  return out.replace(/<div[^>]*class="elementor[^"]*"[^>]*>/gi, '').replace(/<\/div>/gi, '')
+}
+
+export function parseCssBackgrounds(css) {
+  if (!css) return []
+  const bgRe = /elementor-element-([a-f0-9]+)[^{]*\{[^}]*background-image:url\(["']?\.\.\/images\/([^"')]+)/g
+  const items = []
+  let m
+  while ((m = bgRe.exec(css))) {
+    items.push({ id: m[1], file: m[2] })
+  }
+  return items
+}
+
+function headingNearContainer(jsx, containerId) {
+  const idx = jsx.indexOf(`data-id="${containerId}"`)
+  if (idx === -1) return null
+  const chunk = jsx.slice(Math.max(0, idx - 4000), idx + 8000)
+  const sibling = jsx.slice(idx, idx + 8000)
+  for (const source of [sibling, chunk]) {
+    const m =
+      source.match(/elementskit-section-title[^>]*>([^<]+)</)?.[1]
+      ?? source.match(/elementor-heading-title[^>]*>([^<]+)</)?.[1]
+    if (m && m.trim().length > 3 && !/^home$/i.test(m.trim())) {
+      return m.replace(/\s+/g, ' ').trim()
+    }
+  }
+  return null
+}
+
+function introNearContainer(jsx, containerId) {
+  const idx = jsx.indexOf(`data-id="${containerId}"`)
+  if (idx === -1) return null
+  const chunk = jsx.slice(idx, idx + 8000)
+  const widgets = findAllWidgets(chunk).filter((w) => w.type === 'text-editor.default')
+  for (const w of widgets) {
+    const html = extractHtmlAfter(chunk, w.id)
+    if (html && html.length > 20) return simplifyHtml(html)
+  }
+  return null
+}
+
+function eyebrowBefore(jsx, titleWidgetId) {
+  const idx = jsx.indexOf(`data-id="${titleWidgetId}"`)
+  if (idx === -1) return null
+  const before = jsx.slice(Math.max(0, idx - 2500), idx)
+  const headings = [...before.matchAll(/elementor-heading-title[^>]*>([^<]+)</g)].map((x) => x[1].replace(/\s+/g, ' ').trim())
+  return headings.at(-1) ?? null
+}
+
+/** Map problems / prevention / image step cards for generic service pages. */
+export function extractStructuredGenericSections(jsx, css, { add, addText, addHtml, cmsPath, skipIds }) {
+  for (const w of findAllWidgets(jsx)) {
+    const title =
+      (w.type === 'heading.default' || w.type === 'elementskit-heading.default' ? extractHeading(jsx, w.id) : null)
+      ?? (w.type === 'elementskit-heading.default'
+        ? jsx.match(new RegExp(`data-id="${w.id}"[\\s\\S]*?elementskit-section-title[^>]*>([^<]+)`))?.[1]?.trim()
+        : null)
+    if (!title) continue
+
+    if (/issues related|problems caused|problems with/i.test(title)) {
+      skipIds.add(w.id)
+      const eyebrow = eyebrowBefore(jsx, w.id)
+      if (eyebrow) addText('problems.eyebrow', 'problems', 'Eyebrow', eyebrow)
+      addText('problems.title', 'problems', 'Section title', title)
+      const introWidget = findAllWidgets(jsx).find((tw) => {
+        if (tw.type !== 'text-editor.default') return false
+        const pos = jsx.indexOf(`data-id="${tw.id}"`)
+        const titlePos = jsx.indexOf(`data-id="${w.id}"`)
+        return pos > titlePos && pos < titlePos + 3000
+      })
+      if (introWidget) {
+        skipIds.add(introWidget.id)
+        const html = simplifyHtml(extractHtmlAfter(jsx, introWidget.id))
+        if (html) addHtml('problems.intro', 'problems', 'Intro', html)
+      }
+    }
+
+    if (/symptoms of|signs of|how to identify/i.test(title)) {
+      skipIds.add(w.id)
+      const eyebrow = eyebrowBefore(jsx, w.id)
+      if (eyebrow) addText('prevention.eyebrow', 'prevention', 'Eyebrow', eyebrow)
+      addText('prevention.title', 'prevention', 'Section title', title)
+      const introWidget = findAllWidgets(jsx).find((tw) => {
+        if (tw.type !== 'text-editor.default') return false
+        const pos = jsx.indexOf(`data-id="${tw.id}"`)
+        const titlePos = jsx.indexOf(`data-id="${w.id}"`)
+        return pos > titlePos && pos < titlePos + 3000
+      })
+      if (introWidget) {
+        skipIds.add(introWidget.id)
+        const html = simplifyHtml(extractHtmlAfter(jsx, introWidget.id))
+        if (html) addHtml('prevention.intro', 'prevention', 'Intro', html)
+      }
+    }
+
+    if (/^our usps$/i.test(title)) {
+      skipIds.add(w.id)
+      addText('why_choose.title', 'why_choose', 'Section title', title)
+    }
+  }
+
+  const decorative = /^BG3_/i
+  for (const { id, file } of parseCssBackgrounds(css)) {
+    if (decorative.test(file)) continue
+    if (id === 'd4c4a94' || id === '057b4d3') continue
+
+    const title = headingNearContainer(jsx, id)
+    if (!title) continue
+    const description = introNearContainer(jsx, id) ?? ''
+    const itemSlug = slugify(title) || slugify(file.replace(/\.[^.]+$/, ''))
+    if (skipIds.has(id)) continue
+
+    add({
+      block_key: `cards.${itemSlug}`,
+      section: 'cards',
+      label: `Card: ${title}`,
+      type: 'json',
+      image_path: cmsPath(`/assets/images/${file}`),
+      metadata: {
+        slug: itemSlug,
+        title,
+        description,
+        alt: title,
+        image_src: `/assets/images/${file}`,
+        elementor_id: id,
+      },
+    })
+  }
 }
 
 export function extractFaqItems(jsx) {

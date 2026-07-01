@@ -1,12 +1,20 @@
 import PhoneNumberInput from '../../components/PhoneNumberInput.jsx'
+import MelbourneCmsStyles from '../../components/melbourne/MelbourneCmsStyles.jsx'
+import MelbourneSectionCms from '../../components/melbourne/MelbourneSectionCms.jsx'
+import CmsHtml from '../../components/home/CmsHtml.jsx'
+import usePageCms from '../../hooks/usePageCms.js'
 import usePageMeta from '../../hooks/usePageMeta.js'
+import { cmsText } from '../../utils/cmsMedia.js'
 import { Link } from 'react-router-dom'
 
 export default function MelbournePage() {
-  usePageMeta('melbourne')
+  const { page, content: c, loading } = usePageCms('melbourne')
+  usePageMeta('melbourne', page)
 
   return (
     <>
+      <MelbourneCmsStyles content={c} pageId={710} />
+      <MelbourneSectionCms content={c} />
       <div className="elementor elementor-710" data-elementor-id={710} data-elementor-post-type="page" data-elementor-type="wp-page">
         <div className="elementor-element elementor-element-e7c65bf e-flex e-con-boxed e-con e-parent e-lazyloaded" data-element_type="container" data-id="e7c65bf" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
           <div className="e-con-inner">
@@ -22,14 +30,14 @@ export default function MelbournePage() {
                       <a href="#">
                         <span className="elementor-icon-list-icon">
                           <svg aria-hidden="true" className="e-font-icon-svg e-fas-angle-right" viewBox="0 0 256 512" xmlns="http://www.w3.org/2000/svg"><path d="M224.3 273l-136 136c-9.4 9.4-24.6 9.4-33.9 0l-22.6-22.6c-9.4-9.4-9.4-24.6 0-33.9l96.4-96.4-96.4-96.4c-9.4-9.4-9.4-24.6 0-33.9L54.3 103c9.4-9.4 24.6-9.4 33.9 0l136 136c9.5 9.4 9.5 24.6.1 34z" /></svg> </span>
-                        <span className="elementor-icon-list-text">our offices</span>
+                        <span className="elementor-icon-list-text">{cmsText(c?.hero?.breadcrumb_parent, 'our offices')}</span>
                       </a>
                     </li>
                     <li className="elementor-icon-list-item elementor-inline-item">
                       <a href="#">
                         <span className="elementor-icon-list-icon">
                           <svg aria-hidden="true" className="e-font-icon-svg e-fas-angle-right" viewBox="0 0 256 512" xmlns="http://www.w3.org/2000/svg"><path d="M224.3 273l-136 136c-9.4 9.4-24.6 9.4-33.9 0l-22.6-22.6c-9.4-9.4-9.4-24.6 0-33.9l96.4-96.4-96.4-96.4c-9.4-9.4-9.4-24.6 0-33.9L54.3 103c9.4-9.4 24.6-9.4 33.9 0l136 136c9.5 9.4 9.5 24.6.1 34z" /></svg> </span>
-                        <span className="elementor-icon-list-text">melbourne</span>
+                        <span className="elementor-icon-list-text">{cmsText(c?.hero?.breadcrumb_current, 'melbourne')}</span>
                       </a>
                     </li>
                   </ul>
@@ -37,25 +45,30 @@ export default function MelbournePage() {
               </div>
               <div className="elementor-element elementor-element-b4e84d1 elementor-widget elementor-widget-heading" data-element_type="widget" data-id="b4e84d1" data-settings="{&quot;_animation&quot;:&quot;none&quot;}" data-widget_type="heading.default">
                 <div className="elementor-widget-container">
-                  <h2 className="elementor-heading-title elementor-size-default">Eco-Friendly Pest Control by 7 States</h2> </div>
+                  <h2 className="elementor-heading-title elementor-size-default">{cmsText(c?.hero?.title, 'Eco-Friendly Pest Control by 7 States')}</h2> </div>
               </div>
               <div className="elementor-element elementor-element-1726365 elementor-widget elementor-widget-heading" data-element_type="widget" data-id="1726365" data-settings="{&quot;_animation&quot;:&quot;none&quot;}" data-widget_type="heading.default">
                 <div className="elementor-widget-container">
-                  <h1 className="elementor-heading-title elementor-size-default">Welcome to 7 States Pest Control - Your Trusted Melbourne Pest Control Partner</h1> </div>
+                  <h1 className="elementor-heading-title elementor-size-default">{cmsText(c?.hero?.heading, 'Welcome to 7 States Pest Control - Your Trusted Melbourne Pest Control Partner')}</h1> </div>
               </div>
               <div className="elementor-element elementor-element-952a4e6 elementor-widget elementor-widget-text-editor" data-element_type="widget" data-id="952a4e6" data-widget_type="text-editor.default">
                 <div className="elementor-widget-container">
-                  <div className="elementor-element elementor-element-de434cf elementor-widget elementor-widget-text-editor" data-element_type="widget" data-id="de434cf" data-settings="{&quot;ekit_we_effect_on&quot;:&quot;none&quot;}" data-widget_type="text-editor.default"><div className="elementor-widget-container"><p>Expert Pest Control Services in Melbourne At&nbsp;<Link to="/"><strong>7 States Pest Control</strong></Link>, we understand the unique challenges that pests pose to residents and businesses in the vibrant city of Melbourne. Our team of experienced pest control professionals provides effective and environmentally friendly solutions to keep your property pest-free.</p></div></div> </div>
+                  {c?.hero?.intro ? (
+                    <CmsHtml html={c.hero.intro} />
+                  ) : !loading ? (
+                    <p>Expert Pest Control Services in Melbourne At&nbsp;<Link to="/"><strong>7 States Pest Control</strong></Link>, we understand the unique challenges that pests pose to residents and businesses in the vibrant city of Melbourne. Our team of experienced pest control professionals provides effective and environmentally friendly solutions to keep your property pest-free.</p>
+                  ) : null}
+                </div>
               </div>
             </div>
             <div className="elementor-element elementor-element-fda84af e-con-full e-flex e-con e-child" data-element_type="container" data-id="fda84af" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
               <div className="elementor-element elementor-element-bbce55a elementor-widget elementor-widget-heading" data-element_type="widget" data-id="bbce55a" data-widget_type="heading.default">
                 <div className="elementor-widget-container">
-                  <h2 className="elementor-heading-title elementor-size-default">Get A Free Quote Now!</h2> </div>
+                  <h2 className="elementor-heading-title elementor-size-default">{cmsText(c?.quote_form?.title, 'Get A Free Quote Now!')}</h2> </div>
               </div>
               <div className="elementor-element elementor-element-e9ccf15 elementor-widget elementor-widget-heading" data-element_type="widget" data-id="e9ccf15" data-widget_type="heading.default">
                 <div className="elementor-widget-container">
-                  <h6 className="elementor-heading-title elementor-size-default">Have an enquiry? Leave us your details and we’ll call you back during business hours.</h6> </div>
+                  <h6 className="elementor-heading-title elementor-size-default">{cmsText(c?.quote_form?.subtitle, "Have an enquiry? Leave us your details and we'll call you back during business hours.")}</h6> </div>
               </div>
               <div className="elementor-element elementor-element-d11b4b0 elementor-button-align-center elementor-widget elementor-widget-form" data-element_type="widget" data-id="d11b4b0" data-settings="{&quot;step_next_label&quot;:&quot;Next&quot;,&quot;step_previous_label&quot;:&quot;Previous&quot;,&quot;button_width&quot;:&quot;100&quot;,&quot;step_type&quot;:&quot;number_text&quot;,&quot;step_icon_shape&quot;:&quot;circle&quot;}" data-widget_type="form.default">
                 <div className="elementor-widget-container">

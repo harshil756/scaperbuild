@@ -82,6 +82,21 @@ function extractIconBoxes(sectionStart, sectionEnd) {
   return items
 }
 
+function extractTextIconBoxes(sectionStart, sectionEnd) {
+  const chunk = jsx.split(sectionStart)[1]?.split(sectionEnd)[0] ?? ''
+  const re =
+    /elementor-icon-box-title">\s*<span>\s*([^<]+?)\s*<\/span>[\s\S]*?elementor-icon-box-description">\s*([\s\S]*?)<\/p>/g
+  const items = []
+  let m
+  while ((m = re.exec(chunk))) {
+    items.push({
+      title: m[1].replace(/\s+/g, ' ').trim(),
+      description: m[2].replace(/\s+/g, ' ').trim(),
+    })
+  }
+  return items
+}
+
 function extractSectionChunk(sectionStart, sectionEnd, occurrence = 0) {
   let idx = -1
   for (let i = 0; i <= occurrence; i++) {
@@ -266,7 +281,7 @@ advantageItems.forEach((item, i) => {
 // Process
 addText('process.title', 'process', 'Section title', extractHeading('146cab3'))
 addHtml('process.intro', 'process', 'Intro HTML', extractParagraph('1a621e7') ? `<p>${extractParagraph('1a621e7')}</p>` : null)
-const processItems = extractIconBoxes('Solar Panel Bird Proofing and Cleaning Process', 'Understanding the Cost')
+const processItems = extractTextIconBoxes('Solar Panel Bird Proofing and Cleaning Process', 'Understanding the Cost')
 const processSlugs = ['quote', 'inspection', 'installation']
 processItems.forEach((item, i) => {
   const slug = processSlugs[i] ?? `step_${i}`
@@ -304,7 +319,7 @@ addHtml('cost.body', 'cost', 'Cost body HTML', extractHtmlAfter('687d362'))
 
 // Why choose us
 addText('why_choose.title', 'why_choose', 'Section title', extractHeading('dfdc56d'))
-const whyItems = extractIconBoxes('Why You Should Choose Us for Your Bird Proofing Services', 'Our Results Speak For Themselves')
+const whyItems = extractTextIconBoxes('Why You Should Choose Us for Your Bird Proofing Services', 'Our Results Speak For Themselves')
 const whySlugs = ['experts', 'quick_service', 'technicians', 'guarantee']
 whyItems.forEach((item, i) => {
   const slug = whySlugs[i] ?? `reason_${i}`

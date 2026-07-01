@@ -10,6 +10,7 @@ class ServicePageBlockMapper
 {
     /** @var list<string> */
     public const SERVICE_PAGE_SLUGS = [
+        'our-services',
         'our-services-bed-bug-treatment',
         'our-services-cockroach-control',
         'our-services-mosquito-pest-control',
@@ -28,10 +29,12 @@ class ServicePageBlockMapper
         'restaurant-cafe-pest-control',
         'school-and-hospitality-facility-pest-control',
         'warehouse-and-factory-pest-control-services-melbourne',
+        'commercial-pest-control',
     ];
 
     /** @var list<string> */
     public const COMMERCIAL_PAGE_SLUGS = [
+        'commercial-pest-control',
         'office-pest-control',
         'restaurant-cafe-pest-control',
         'school-and-hospitality-facility-pest-control',
@@ -106,6 +109,7 @@ class ServicePageBlockMapper
                 'eyebrow' => $blocks->get('why_choose.eyebrow')?->value,
                 'title' => $blocks->get('why_choose.title')?->value,
                 'intro' => $blocks->get('why_choose.intro')?->value,
+                'image' => $blocks->get('why_choose.image')?->image_path,
                 'items' => self::mapCardItems($blocks, 'why_choose'),
             ],
             'contact' => [
@@ -128,6 +132,7 @@ class ServicePageBlockMapper
             'faq' => [
                 'title' => $blocks->get('faq.title')?->value,
                 'sidebar_image' => $blocks->get('faq.sidebar_image')?->image_path,
+                'sidebar_image_elementor_id' => $blocks->get('faq.sidebar_image')?->metadata['elementor_id'] ?? null,
                 'sidebar_cta_title' => $blocks->get('faq.sidebar_cta_title')?->value,
                 'sidebar_cta_body' => $blocks->get('faq.sidebar_cta_body')?->value,
                 'sidebar_cta_button_label' => $blocks->get('faq.sidebar_cta_button')?->value,
@@ -169,13 +174,14 @@ class ServicePageBlockMapper
                 ->all(),
             'backgrounds' => $blocks
                 ->filter(fn (PageBlock $block): bool => str_starts_with($block->block_key, 'background.')
-                    && ! str_starts_with($block->block_key, 'background.section_'))
+                    && ! in_array($block->block_key, ['background.hero', 'background.cta'], true))
                 ->sortBy('sort_order')
                 ->map(fn (PageBlock $block): array => [
                     'block_key' => $block->block_key,
                     'key' => str_replace('background.', '', $block->block_key),
                     'label' => $block->label,
                     'image' => $block->background_image_path,
+                    'elementor_id' => $block->metadata['elementor_id'] ?? null,
                 ])
                 ->values()
                 ->all(),
@@ -232,6 +238,7 @@ class ServicePageBlockMapper
         self::setText($blocks, 'why_choose.eyebrow', $whyChoose['eyebrow'] ?? null);
         self::setText($blocks, 'why_choose.title', $whyChoose['title'] ?? null);
         self::setHtml($blocks, 'why_choose.intro', $whyChoose['intro'] ?? null);
+        self::setImage($blocks, 'why_choose.image', $whyChoose['image'] ?? null);
         self::syncCardItems($blocks, 'why_choose', $whyChoose['items'] ?? []);
 
         $contact = $content['contact'] ?? [];
@@ -339,6 +346,7 @@ class ServicePageBlockMapper
 
                 return [
                     'slug' => $meta['slug'] ?? '',
+                    'widget_id' => $meta['id'] ?? null,
                     'title' => $meta['title'] ?? '',
                     'description' => $meta['description'] ?? '',
                     'image' => $block->image_path,
@@ -368,6 +376,7 @@ class ServicePageBlockMapper
 
                 return [
                     'slug' => $meta['slug'] ?? '',
+                    'widget_id' => $meta['id'] ?? null,
                     'title' => $meta['title'] ?? '',
                     'image' => $block->image_path,
                     'alt' => $meta['alt'] ?? '',

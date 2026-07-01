@@ -1,12 +1,22 @@
 import PhoneNumberInput from '../../components/PhoneNumberInput.jsx'
+import ServiceCmsContentBlocks from '../../components/service/ServiceCmsContentBlocks.jsx'
+import ServiceFaqCms from '../../components/service/ServiceFaqCms.jsx'
+import { cmsText } from '../../utils/cmsMedia.js'
+import usePageCms from '../../hooks/usePageCms.js'
+import ServiceCmsStyles from '../../components/service/ServiceCmsStyles.jsx'
+import CmsHtml from '../../components/home/CmsHtml.jsx'
 import usePageMeta from '../../hooks/usePageMeta.js'
 import { Link } from 'react-router-dom'
 
 export default function RodentControlInMelbournePage() {
-  usePageMeta('rodent_control_in_melbourne')
+  const { page, content: c } = usePageCms('rodent-control-in-melbourne')
+  usePageMeta('rodent_control_in_melbourne', page)
 
   return (
     <>
+      <ServiceCmsStyles content={c} heroBgId="42170a4" ctaBgId="057b4d3" />
+      <ServiceFaqCms faq={c?.faq} accordionWidgetId="5146096" />
+      <ServiceCmsContentBlocks content={c} />
       <div className="elementor elementor-1680" data-elementor-id={1680} data-elementor-post-type="page" data-elementor-type="wp-page">
         <div className="elementor-element elementor-element-42170a4 e-flex e-con-boxed e-con e-parent e-lazyloaded" data-element_type="container" data-id="42170a4" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
           <div className="e-con-inner">
@@ -22,14 +32,14 @@ export default function RodentControlInMelbournePage() {
                       <a href="#">
                         <span className="elementor-icon-list-icon">
                           <svg aria-hidden="true" className="e-font-icon-svg e-fas-angle-right" viewBox="0 0 256 512" xmlns="http://www.w3.org/2000/svg"><path d="M224.3 273l-136 136c-9.4 9.4-24.6 9.4-33.9 0l-22.6-22.6c-9.4-9.4-9.4-24.6 0-33.9l96.4-96.4-96.4-96.4c-9.4-9.4-9.4-24.6 0-33.9L54.3 103c9.4-9.4 24.6-9.4 33.9 0l136 136c9.5 9.4 9.5 24.6.1 34z" /></svg> </span>
-                        <span className="elementor-icon-list-text">Services</span>
+                        <span className="elementor-icon-list-text">{cmsText(c?.hero?.breadcrumb_parent, 'Services')}</span>
                       </a>
                     </li>
                     <li className="elementor-icon-list-item elementor-inline-item">
                       <a href="#">
                         <span className="elementor-icon-list-icon">
                           <svg aria-hidden="true" className="e-font-icon-svg e-fas-angle-right" viewBox="0 0 256 512" xmlns="http://www.w3.org/2000/svg"><path d="M224.3 273l-136 136c-9.4 9.4-24.6 9.4-33.9 0l-22.6-22.6c-9.4-9.4-9.4-24.6 0-33.9l96.4-96.4-96.4-96.4c-9.4-9.4-9.4-24.6 0-33.9L54.3 103c9.4-9.4 24.6-9.4 33.9 0l136 136c9.5 9.4 9.5 24.6.1 34z" /></svg> </span>
-                        <span className="elementor-icon-list-text">Rodent Control In Melbourne</span>
+                        <span className="elementor-icon-list-text">{cmsText(c?.hero?.breadcrumb_current, 'Rodent Control In Melbourne')}</span>
                       </a>
                     </li>
                   </ul>
@@ -37,25 +47,26 @@ export default function RodentControlInMelbournePage() {
               </div>
               <div className="elementor-element elementor-element-192e3a7 elementor-widget elementor-widget-heading" data-element_type="widget" data-id="192e3a7" data-settings="{&quot;_animation&quot;:&quot;none&quot;}" data-widget_type="heading.default">
                 <div className="elementor-widget-container">
-                  <h2 className="elementor-heading-title elementor-size-default">Rodent Control</h2> </div>
+                  <h2 className="elementor-heading-title elementor-size-default">{cmsText(c?.hero?.title, 'Rodent Control')}</h2> </div>
               </div>
               <div className="elementor-element elementor-element-46b76d7 elementor-widget elementor-widget-heading" data-element_type="widget" data-id="46b76d7" data-settings="{&quot;_animation&quot;:&quot;none&quot;}" data-widget_type="heading.default">
                 <div className="elementor-widget-container">
-                  <h1 className="elementor-heading-title elementor-size-default">Rodent Control in Melbourne | Effective Rat &amp; Pest Control Services</h1> </div>
+                  <h1 className="elementor-heading-title elementor-size-default">{cmsText(c?.hero?.heading, 'Rodent Control in Melbourne | Effective Rat &amp; Pest Control Services')}</h1> </div>
               </div>
               <div className="elementor-element elementor-element-7b59144 elementor-widget elementor-widget-text-editor" data-element_type="widget" data-id="7b59144" data-widget_type="text-editor.default">
                 <div className="elementor-widget-container">
-                  <div className="elementor-element elementor-element-de434cf elementor-widget elementor-widget-text-editor" data-element_type="widget" data-id="de434cf" data-settings="{&quot;ekit_we_effect_on&quot;:&quot;none&quot;}" data-widget_type="text-editor.default"><div className="elementor-widget-container"><p className="font-claude-response-body break-words whitespace-normal leading-[1.7]">Spotting rodents in your property can be worrisome and distressing. We all know that rodents can inflict severe damages on our property and spread dangerous diseases. Whether you’re struggling with rats, mice, or other pests, our <strong>rodent control in Melbourne</strong> is designed to eliminate all forms of infestations.</p><p className="font-claude-response-body break-words whitespace-normal leading-[1.7]">At <Link className="underline underline underline-offset-2 decoration-1 decoration-current/40 hover:decoration-current focus:decoration-current" to="/">7 States Pest Control</Link>, we specialize in <strong>rodent pest control Melbourne</strong>, using advanced and eco-safe methods that deliver results. With our highly customized <strong>pest control Melbourne rats</strong> solution, you can say goodbye to these destructive intruders.</p><p className="font-claude-response-body break-words whitespace-normal leading-[1.7]">Every rodent infestation is different, which is why we tailor our <strong>rodent removal services in Melbourne</strong> based on the specific conditions of your home or office. Reach out now for professional help and experience our <strong>affordable rodent control</strong> strategies that truly work.</p><p><span style={{fontWeight: 400}}>Every rodent infestation is different, which is why we tailor our </span><b>rodent removal services in Melbourne</b><span style={{fontWeight: 400}}> based on the specific conditions of your home or office. Reach out now for professional help and experience our </span><b>affordable rodent control</b><span style={{fontWeight: 400}}> strategies that truly work.</span></p></div></div> </div>
+                  <CmsHtml html={c?.hero?.intro} />
+                </div>
               </div>
             </div>
             <div className="elementor-element elementor-element-9cbb334 e-con-full e-flex e-con e-child" data-element_type="container" data-id="9cbb334" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
               <div className="elementor-element elementor-element-1cfafdf elementor-widget elementor-widget-heading" data-element_type="widget" data-id="1cfafdf" data-widget_type="heading.default">
                 <div className="elementor-widget-container">
-                  <h2 className="elementor-heading-title elementor-size-default">Get A Free Quote Now!</h2> </div>
+                  <h2 className="elementor-heading-title elementor-size-default">{cmsText(c?.quote_form?.title, 'Get A Free Quote Now!')}</h2> </div>
               </div>
               <div className="elementor-element elementor-element-a7b4484 elementor-widget elementor-widget-heading" data-element_type="widget" data-id="a7b4484" data-widget_type="heading.default">
                 <div className="elementor-widget-container">
-                  <h6 className="elementor-heading-title elementor-size-default">Have an enquiry? Leave us your details and we’ll call you back during business hours.</h6> </div>
+                  <h6 className="elementor-heading-title elementor-size-default">{cmsText(c?.quote_form?.subtitle, 'Have an enquiry? Leave us your details and we\'ll call you back during business hours.')}</h6> </div>
               </div>
               <div className="elementor-element elementor-element-37a0431 elementor-button-align-center elementor-widget elementor-widget-form" data-element_type="widget" data-id="37a0431" data-settings="{&quot;step_next_label&quot;:&quot;Next&quot;,&quot;step_previous_label&quot;:&quot;Previous&quot;,&quot;button_width&quot;:&quot;100&quot;,&quot;step_type&quot;:&quot;number_text&quot;,&quot;step_icon_shape&quot;:&quot;circle&quot;}" data-widget_type="form.default">
                 <div className="elementor-widget-container">
@@ -650,7 +661,7 @@ export default function RodentControlInMelbournePage() {
                         </div>
                         <div className="elementor-element elementor-element-3020d89 elementor-widget elementor-widget-heading" data-element_type="widget" data-id="3020d89" data-settings="{&quot;_animation&quot;:&quot;none&quot;}" data-widget_type="heading.default">
                           <div className="elementor-widget-container">
-                            <h2 className="elementor-heading-title elementor-size-default">7 States Pest Control for Reliable Pest Management Solutions</h2> </div>
+                            <h2 className="elementor-heading-title elementor-size-default">{cmsText(c?.reviews?.eyebrow, '7 States Pest Control for Reliable Pest Management Solutions')}</h2> </div>
                         </div>
                       </div>
                     </div>
@@ -658,11 +669,11 @@ export default function RodentControlInMelbournePage() {
                       <div className="elementor-widget-wrap elementor-element-populated">
                         <div className="elementor-element elementor-element-05209c4 elementor-widget elementor-widget-heading" data-element_type="widget" data-id="05209c4" data-widget_type="heading.default">
                           <div className="elementor-widget-container">
-                            <h3 className="elementor-heading-title elementor-size-default">Reviews of Our Pest Control Services</h3> </div>
+                            <h3 className="elementor-heading-title elementor-size-default">{cmsText(c?.reviews?.subtitle, 'Reviews of Our Pest Control Services')}</h3> </div>
                         </div>
                         <div className="elementor-element elementor-element-f0749cb elementor-widget elementor-widget-heading" data-element_type="widget" data-id="f0749cb" data-widget_type="heading.default">
                           <div className="elementor-widget-container">
-                            <h6 className="elementor-heading-title elementor-size-default">EXCELLENT</h6> </div>
+                            <h6 className="elementor-heading-title elementor-size-default">{cmsText(c?.reviews?.title, 'EXCELLENT')}</h6> </div>
                         </div>
                         <div className="elementor-element elementor-element-74e9e46 elementor-widget elementor-widget-rating" data-element_type="widget" data-id="74e9e46" data-widget_type="rating.default">
                           <div className="elementor-widget-container">

@@ -30,6 +30,7 @@ class CmsPageNavigation
     public static function servicePages(): array
     {
         return [
+            ['slug' => 'our-services', 'title' => 'Pest Control Services', 'path' => '/our-services', 'sort' => 5],
             ['slug' => 'solar-panel-bird-proofing', 'title' => 'Solar Panel Bird Proofing', 'path' => '/solar-panel-bird-proofing', 'sort' => 10],
             ['slug' => 'our-services-ant-pest-control', 'title' => 'Ant Pest Control', 'path' => '/our-services/ant-pest-control', 'sort' => 20],
             ['slug' => 'our-services-bed-bug-treatment', 'title' => 'Bed Bug Treatment', 'path' => '/our-services/bed-bug-treatment', 'sort' => 30],
@@ -53,6 +54,7 @@ class CmsPageNavigation
     public static function commercialPages(): array
     {
         return [
+            ['slug' => 'commercial-pest-control', 'title' => 'Commercial Pest Control', 'path' => '/commercial-pest-control', 'sort' => 5],
             ['slug' => 'office-pest-control', 'title' => 'Office Pest Control', 'path' => '/office-pest-control', 'sort' => 10],
             ['slug' => 'restaurant-cafe-pest-control', 'title' => 'Restaurant & Cafe Pest Control', 'path' => '/restaurant-cafe-pest-control', 'sort' => 20],
             ['slug' => 'school-and-hospitality-facility-pest-control', 'title' => 'School & Hospitality Facility Pest Control', 'path' => '/school-and-hospitality-facility-pest-control', 'sort' => 30],

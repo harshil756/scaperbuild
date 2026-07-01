@@ -19,6 +19,31 @@ LAZYLOAD_FIX_CSS = """
   background-position: center;
   background-repeat: no-repeat;
 }
+/* Elementor background video — same-to-same offline */
+.elementor-background-video-container,
+.elementor-background-video-embed {
+  position: absolute;
+  inset: 0;
+  overflow: hidden;
+  pointer-events: none;
+}
+video.elementor-background-video-hosted {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  min-width: 100%;
+  min-height: 100%;
+}
+/* Preserve CSS animations offline */
+@media (prefers-reduced-motion: no-preference) {
+  .animated, [class*="elementor-animation-"] {
+    animation-fill-mode: both;
+  }
+}
 """
 
 
@@ -30,7 +55,11 @@ def repair_all_css_paths(
     css_dir = assets_root(page_dir) / "css"
     if not css_dir.exists():
         return 0
-    for css_file in css_dir.rglob("*.css"):
+    for css_file in css_dir.rglob("*"):
+        if not css_file.is_file():
+            continue
+        if css_file.suffix.lower() not in (".css", ".bin"):
+            continue
         text = css_file.read_text(encoding="utf-8", errors="replace")
         original = text
         base = _base_url_for_css(css_file, page_url, url_map)
@@ -56,6 +85,58 @@ def _base_url_for_css(
         if path == css_file:
             return url
     return page_url
+
+
+OFFLINE_STUB_SCRIPT = """
+(function () {
+  var noop = function () {};
+  window.dataLayer = window.dataLayer || [];
+  window.gtag = window.gtag || noop;
+  window.fbq = window.fbq || function () {
+    (window.fbq.queue = window.fbq.queue || []).push(arguments);
+  };
+  window.fbq.queue = window.fbq.queue || [];
+  window.grecaptcha = window.grecaptcha || {
+    ready: function (cb) { if (cb) setTimeout(cb, 0); },
+    execute: function () { return Promise.resolve("offline"); },
+    render: noop,
+  };
+})();
+"""
+
+_OFFLINE_SCRIPT_MARKERS = (
+    "recaptcha",
+    "googletagmanager",
+    "gtm.js",
+    "fbevents",
+    "clarity.ms",
+    "google-analytics",
+    "connect.facebook",
+)
+
+
+def apply_offline_runtime_fixes(html: str) -> str:
+    """Stub analytics/recaptcha and drop scripts that cannot run offline."""
+    soup = BeautifulSoup(html, "lxml")
+    if not soup.head:
+        return html
+
+    for script in list(soup.find_all("script", src=True)):
+        src = (script.get("src") or "").lower()
+        if any(m in src for m in _OFFLINE_SCRIPT_MARKERS):
+            script.decompose()
+            continue
+        if "asset_" in src and (".jpg" in src or ".png" in src) and (
+            "gtm" in src or "fbevents" in src or ".js" in src
+        ):
+            script.decompose()
+
+    if not soup.find("script", id="scraper-offline-stubs"):
+        stub = soup.new_tag("script", id="scraper-offline-stubs")
+        stub.string = OFFLINE_STUB_SCRIPT
+        soup.head.insert(0, stub)
+
+    return str(soup)
 
 
 def apply_lazyload_fixes(html: str) -> str:
@@ -85,18 +166,25 @@ def fix_srcset_to_local(
     site_dir: Path,
     html_path: Path,
 ) -> str:
+    from .storage import find_existing_local_asset
+
+    page_dir = html_path.parent
     soup = BeautifulSoup(html, "lxml")
-    for img in soup.find_all(srcset=True):
+    for el in soup.find_all(srcset=True):
         parts = []
-        for part in img["srcset"].split(","):
+        for part in el["srcset"].split(","):
             bits = part.strip().split()
             if not bits:
                 continue
             n = normalize_url(bits[0], page_url)
             if n and n in url_map:
                 bits[0] = relative_path(html_path, url_map[n])
+            elif n:
+                hit = find_existing_local_asset(page_dir, n)
+                if hit:
+                    bits[0] = relative_path(html_path, hit)
             parts.append(" ".join(bits))
-        img["srcset"] = ", ".join(parts)
+        el["srcset"] = ", ".join(parts)
     return str(soup)
 
 

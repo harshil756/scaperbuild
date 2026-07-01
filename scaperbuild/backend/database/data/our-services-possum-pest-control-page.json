@@ -21,30 +21,6 @@
     },
     {
       "sort_order": 1,
-      "block_key": "background.why_inside",
-      "section": "why_inside",
-      "label": "Background (f5e4d41)",
-      "type": "background",
-      "background_image_path": "cms/our-services-possum-pest-control/BG3_a19772e2.png",
-      "metadata": {
-        "elementor_id": "f5e4d41",
-        "filename": "BG3_a19772e2.png"
-      }
-    },
-    {
-      "sort_order": 2,
-      "block_key": "background.problems",
-      "section": "problems",
-      "label": "Background (235b366)",
-      "type": "background",
-      "background_image_path": "cms/our-services-possum-pest-control/istockphoto-1414982124-612x612ui_0ade9a1c.jpg",
-      "metadata": {
-        "elementor_id": "235b366",
-        "filename": "istockphoto-1414982124-612x612ui_0ade9a1c.jpg"
-      }
-    },
-    {
-      "sort_order": 3,
       "block_key": "background.cta",
       "section": "cta",
       "label": "CTA background",
@@ -56,23 +32,31 @@
       }
     },
     {
-      "sort_order": 4,
+      "sort_order": 2,
       "block_key": "hero.breadcrumb_parent",
       "section": "hero",
       "label": "Breadcrumb parent",
       "type": "text",
-      "value": "Services"
+      "value": "{cmsText(c?.hero?.breadcrumb_parent, 'Services')}"
     },
     {
-      "sort_order": 5,
-      "block_key": "hero.title",
+      "sort_order": 3,
+      "block_key": "hero.breadcrumb_current",
       "section": "hero",
-      "label": "Section title",
+      "label": "Breadcrumb current",
       "type": "text",
       "value": "Possum Pest Control"
     },
     {
-      "sort_order": 6,
+      "sort_order": 4,
+      "block_key": "hero.title",
+      "section": "hero",
+      "label": "Section title",
+      "type": "text",
+      "value": "{cmsText(c?.hero?.title, 'Possum Pest Control')}"
+    },
+    {
+      "sort_order": 5,
       "block_key": "hero.heading",
       "section": "hero",
       "label": "Main heading",
@@ -80,423 +64,39 @@
       "value": "Get Professional Possum Pest Control in Melbourne"
     },
     {
-      "sort_order": 7,
+      "sort_order": 6,
       "block_key": "hero.intro",
       "section": "hero",
       "label": "Intro paragraph",
       "type": "html",
-      "value": "<p><span >Possums may appear harmless at first, but they can cause serious problems for both residential and commercial properties. Being highly active at night, possums commonly enter roof spaces where they create loud scratching and thumping noises that disturb sleep. Over time, they can damage roof structures, insulation, electrical wiring, and tiles, increasing the risk of costly repairs. Possum droppings and urine can also impact hygiene and indoor air quality, creating unpleasant odours and potential health concerns.</span></p><p><span >If you are experiencing possum activity or hearing constant movement in your roof and are searching for professional possum pest control in Melbourne, you are in the right place.</span><span ><br /></span><span > At</span><a href=\"/\"><b> 7 State Pest Control</b></a><b>,</b><span > we provide licensed possum removal in Melbourne, humane possum trapping, and effective possum control solutions tailored to your specific situation. Our experienced team ensures safe, legal, and long-term possum control for residential and commercial properties.</span></p>"
+      "value": "<CmsHtml html={c?.hero?.intro ?? '<p><span >Possums may appear harmless at first, but they can cause serious problems for both residential and commercial properties. Being highly active at night, possums commonly enter roof spaces where they create loud scratching and thumping noises that disturb sleep. Over time, they can damage roof structures, insulation, electrical wiring, and tiles, increasing the risk of costly repairs. Possum droppings and urine can also impact hygiene and indoor air quality, creating unpleasant odours and potential health concerns.</span></p><p><span >If you are experiencing possum activity or hearing constant movement in your roof and are searching for professional possum pest control in Melbourne, you are in the right place.</span><span ><br /></span><span > At</span><a href=\"/\"><b> 7 State Pest Control</b></a><b>,</b><span > we provide licensed possum removal in Melbourne, humane possum trapping, and effective possum control solutions tailored to your specific situation. Our experienced team ensures safe, legal, and long-term possum control for residential and commercial properties.</span></p>'} />"
     },
     {
-      "sort_order": 8,
+      "sort_order": 7,
       "block_key": "quote_form.title",
       "section": "quote_form",
       "label": "Form heading",
       "type": "text",
-      "value": "Get A Free Quote Now!"
+      "value": "{cmsText(c?.quote_form?.subtitle, 'Have an enquiry? Leave us your details and we’ll call you back during business hours.')}"
     },
     {
-      "sort_order": 9,
+      "sort_order": 8,
       "block_key": "quote_form.subtitle",
       "section": "quote_form",
       "label": "Form subtitle",
       "type": "text",
-      "value": "Have an enquiry? Leave us your details and we’ll call you back during business hours."
+      "value": "{cmsText(c?.quote_form?.subtitle, 'Have an enquiry? Leave us your details and we’ll call you back during business hours.')}"
     },
     {
-      "sort_order": 10,
+      "sort_order": 9,
       "block_key": "quote_form.submit_text",
       "section": "quote_form",
       "label": "Submit button text",
       "type": "text",
-      "value": "Submit Quote"
+      "value": "{cmsText(c?.quote_form?.submit_text, 'Submit Quote')}"
     },
     {
-      "sort_order": 11,
-      "block_key": "species.eyebrow",
-      "section": "species",
-      "label": "Eyebrow",
-      "type": "text",
-      "value": "Possum special"
-    },
-    {
-      "sort_order": 12,
-      "block_key": "species.title",
-      "section": "species",
-      "label": "Section title",
-      "type": "text",
-      "value": "Types of Possum Issues We Control"
-    },
-    {
-      "sort_order": 13,
-      "block_key": "species.intro",
-      "section": "species",
-      "label": "Intro HTML",
-      "type": "html",
-      "value": "<p><b>Possum infestations</b><span > cause noise, damage, and hygiene issues in homes and businesses. Our </span><b>Melbourne possum pest control</b><span > handles all possum problems.</span></p>"
-    },
-    {
-      "sort_order": 14,
-      "block_key": "species.1_possums_in_roof_spaces",
-      "section": "species",
-      "label": "Species: 1. Possums in Roof Spaces",
-      "type": "json",
-      "image_path": "cms/our-services-possum-pest-control/possum-in-roof_6ef8b914.jpg",
-      "metadata": {
-        "slug": "1_possums_in_roof_spaces",
-        "image": "/assets/images/possum-in-roof_6ef8b914.jpg",
-        "title": "1. Possums in Roof Spaces",
-        "description": "Possums often enter roof cavities and cause loud scratching and thumping noises at night. They can damage insulation, wiring, and roofing materials.",
-        "image_src": "/assets/images/possum-in-roof_6ef8b914.jpg"
-      }
-    },
-    {
-      "sort_order": 15,
-      "block_key": "species.2_possum_damage_to_property",
-      "section": "species",
-      "label": "Species: 2. Possum Damage to Property",
-      "type": "json",
-      "image_path": "cms/our-services-possum-pest-control/Brushtailed-Possum-Ry-Beaver-2_62474410.jpg",
-      "metadata": {
-        "slug": "2_possum_damage_to_property",
-        "image": "/assets/images/Brushtailed-Possum-Ry-Beaver-2_62474410.jpg",
-        "title": "2. Possum Damage to Property",
-        "description": "Possums chew electrical wires and damage wood, roof tiles, and vents. This can lead to costly repairs and increase fire and safety risks.",
-        "image_src": "/assets/images/Brushtailed-Possum-Ry-Beaver-2_62474410.jpg"
-      }
-    },
-    {
-      "sort_order": 16,
-      "block_key": "species.3_possum_nesting_and_breeding",
-      "section": "species",
-      "label": "Species: 3. Possum Nesting &amp; Breeding",
-      "type": "json",
-      "image_path": "cms/our-services-possum-pest-control/shutterstock_2325589199_a910cffb.jpg",
-      "metadata": {
-        "slug": "3_possum_nesting_and_breeding",
-        "image": "/assets/images/shutterstock_2325589199_a910cffb.jpg",
-        "title": "3. Possum Nesting &amp; Breeding",
-        "description": "Possums build nests in roofs, sheds, and wall cavities. Breeding can increase numbers quickly, leading to more noise, odours, and infestation issues.",
-        "image_src": "/assets/images/shutterstock_2325589199_a910cffb.jpg"
-      }
-    },
-    {
-      "sort_order": 17,
-      "block_key": "species.4_possum_droppings_and_hygiene_issues",
-      "section": "species",
-      "label": "Species: 4.Possum Droppings &amp; Hygiene Issues",
-      "type": "json",
-      "image_path": "cms/our-services-possum-pest-control/Common-Brushtail-Possum-6_67fa8ce2.jpg",
-      "metadata": {
-        "slug": "4_possum_droppings_and_hygiene_issues",
-        "image": "/assets/images/Common-Brushtail-Possum-6_67fa8ce2.jpg",
-        "title": "4.Possum Droppings &amp; Hygiene Issues",
-        "description": "Possum droppings and urine contaminate roof spaces, affect air quality, and cause strong odours. Professional control helps restore hygiene safely.",
-        "image_src": "/assets/images/Common-Brushtail-Possum-6_67fa8ce2.jpg"
-      }
-    },
-    {
-      "sort_order": 18,
-      "block_key": "why_inside.eyebrow",
-      "section": "why_inside",
-      "label": "Eyebrow",
-      "type": "text",
-      "value": "why Possum coming"
-    },
-    {
-      "sort_order": 19,
-      "block_key": "why_inside.title",
-      "section": "why_inside",
-      "label": "Section title",
-      "type": "text",
-      "value": "Why Are Possums Coming Onto Your Property?"
-    },
-    {
-      "sort_order": 20,
-      "block_key": "why_inside.list_html",
-      "section": "why_inside",
-      "label": "List HTML",
-      "type": "html",
-      "value": "<ol><li><b>Food Availability</b><span > – Fruit trees, vegetable gardens, pet food, and rubbish attract possums.</span><p>&nbsp;</p></li><li><b>Shelter &amp; Nesting</b><span > – Possums look for warm, safe spaces in roof cavities, wall gaps, sheds, and trees.</span><p>&nbsp;</p></li><li><b>Urban Expansion</b><span > – Ongoing development reduces natural habitats, pushing possums into residential areas.</span><p>&nbsp;</p></li><li><b>Breeding Season</b><span > – </span><b>Possum activity</b><span > increases during breeding periods, leading to more noise and movement.</span><p>&nbsp;</p></li><li><b>Easy Access Points</b><span > – Broken roof tiles, vents, and gaps make it easy for possums to enter.</span></li></ol>"
-    },
-    {
-      "sort_order": 21,
-      "block_key": "why_inside.footer",
-      "section": "why_inside",
-      "label": "Footer text",
-      "type": "html",
-      "value": "<p><span >If possum activity continues, professional </span><b>possum pest control in Melbourne</b><span > is the safest and most effective solution.</span></p>"
-    },
-    {
-      "sort_order": 22,
-      "block_key": "problems.eyebrow",
-      "section": "problems",
-      "label": "Eyebrow",
-      "type": "text",
-      "value": "problems"
-    },
-    {
-      "sort_order": 23,
-      "block_key": "problems.title",
-      "section": "problems",
-      "label": "Section title",
-      "type": "text",
-      "value": "What Problems Can Possums Cause?"
-    },
-    {
-      "sort_order": 24,
-      "block_key": "problems.intro",
-      "section": "problems",
-      "label": "Intro HTML",
-      "type": "html",
-      "value": "<p><span >Possums may look harmless, but their presence can create serious issues for residential and commercial properties. Common problems caused by possum infestations include:</span></p>"
-    },
-    {
-      "sort_order": 25,
-      "block_key": "problems.roof_noise_and_sleep_disturbance",
-      "section": "problems",
-      "label": "Problem: Roof Noise &amp; Sleep Disturbance",
-      "type": "json",
-      "image_path": "cms/our-services-possum-pest-control/sleep-rheasqks6dnamkyfybvaua2hsikjcykzq32gn5ws2o_ea8763dc.png",
-      "metadata": {
-        "slug": "roof_noise_and_sleep_disturbance",
-        "image": "/assets/images/sleep-rheasqks6dnamkyfybvaua2hsikjcykzq32gn5ws2o_ea8763dc.png",
-        "title": "Roof Noise &amp; Sleep Disturbance",
-        "description": "Possums are active at night and create loud scratching, thumping, and running noises in roof spaces, disturbing sleep and daily comfort.",
-        "image_src": "/assets/images/sleep-rheasqks6dnamkyfybvaua2hsikjcykzq32gn5ws2o_ea8763dc.png"
-      }
-    },
-    {
-      "sort_order": 26,
-      "block_key": "problems.damage_to_roofing_and_insulation",
-      "section": "problems",
-      "label": "Problem: Damage to Roofing &amp; Insulation",
-      "type": "json",
-      "image_path": "cms/our-services-possum-pest-control/property-rg6x1x3dzaugypqkq7g4ieu97josumw04yupg21lwg_e318c0e5.png",
-      "metadata": {
-        "slug": "damage_to_roofing_and_insulation",
-        "image": "/assets/images/property-rg6x1x3dzaugypqkq7g4ieu97josumw04yupg21lwg_e318c0e5.png",
-        "title": "Damage to Roofing &amp; Insulation",
-        "description": "Possums tear insulation, damage roof tiles, and chew timber structures, leading to heat loss, leaks, and expensive repair work.",
-        "image_src": "/assets/images/property-rg6x1x3dzaugypqkq7g4ieu97josumw04yupg21lwg_e318c0e5.png"
-      }
-    },
-    {
-      "sort_order": 27,
-      "block_key": "problems.electrical_and_fire_risks",
-      "section": "problems",
-      "label": "Problem: Electrical &amp; Fire Risks",
-      "type": "json",
-      "image_path": "cms/our-services-possum-pest-control/high-voltage-rheaxfrqck2woe4oid05b3dgpveluh8odchv0yxwyo_5e7ebd4d.png",
-      "metadata": {
-        "slug": "electrical_and_fire_risks",
-        "image": "/assets/images/high-voltage-rheaxfrqck2woe4oid05b3dgpveluh8odchv0yxwyo_5e7ebd4d.png",
-        "title": "Electrical &amp; Fire Risks",
-        "description": "Chewing on electrical wiring by possums increases the risk of power faults and potential fire hazards inside roof cavities.",
-        "image_src": "/assets/images/high-voltage-rheaxfrqck2woe4oid05b3dgpveluh8odchv0yxwyo_5e7ebd4d.png"
-      }
-    },
-    {
-      "sort_order": 28,
-      "block_key": "problems.droppings_and_hygiene_issues",
-      "section": "problems",
-      "label": "Problem: Droppings &amp; Hygiene Issues",
-      "type": "json",
-      "image_path": "cms/our-services-possum-pest-control/messed-up-rheb1btomvemqah8sjjk4m158a8apdooklp7j7697k_1f463ef0.png",
-      "metadata": {
-        "slug": "droppings_and_hygiene_issues",
-        "image": "/assets/images/messed-up-rheb1btomvemqah8sjjk4m158a8apdooklp7j7697k_1f463ef0.png",
-        "title": "Droppings &amp; Hygiene Issues",
-        "description": "Possum droppings and urine contaminate roof spaces, create strong odours, reduce air quality, and pose hygiene concerns for occupants.",
-        "image_src": "/assets/images/messed-up-rheb1btomvemqah8sjjk4m158a8apdooklp7j7697k_1f463ef0.png"
-      }
-    },
-    {
-      "sort_order": 29,
-      "block_key": "problems.breeding_and_infestation_growth",
-      "section": "problems",
-      "label": "Problem: Breeding &amp; Infestation Growth",
-      "type": "json",
-      "image_path": "cms/our-services-possum-pest-control/pest-control-rheb6e6dgqc9an4d7qd6kc0kh19i6nslxo9emvnvog_e4102923.png",
-      "metadata": {
-        "slug": "breeding_and_infestation_growth",
-        "image": "/assets/images/pest-control-rheb6e6dgqc9an4d7qd6kc0kh19i6nslxo9emvnvog_e4102923.png",
-        "title": "Breeding &amp; Infestation Growth",
-        "description": "Breeding possums can quickly increase activity levels, leading to multiple animals nesting in one roof space if not controlled early.",
-        "image_src": "/assets/images/pest-control-rheb6e6dgqc9an4d7qd6kc0kh19i6nslxo9emvnvog_e4102923.png"
-      }
-    },
-    {
-      "sort_order": 30,
-      "block_key": "problems.garden_and_property_damage",
-      "section": "problems",
-      "label": "Problem: Garden &amp; Property Damage",
-      "type": "json",
-      "image_path": "cms/our-services-possum-pest-control/damaged-rheb88wwxyvm6yffe17ozd6ane4kd65juukvpiwxeo_6567c389.png",
-      "metadata": {
-        "slug": "garden_and_property_damage",
-        "image": "/assets/images/damaged-rheb88wwxyvm6yffe17ozd6ane4kd65juukvpiwxeo_6567c389.png",
-        "title": "Garden &amp; Property Damage",
-        "description": "Possums damage gardens, fruit trees, and plants, and can tear vents or entry points while accessing roofs and wall cavities.",
-        "image_src": "/assets/images/damaged-rheb88wwxyvm6yffe17ozd6ane4kd65juukvpiwxeo_6567c389.png"
-      }
-    },
-    {
-      "sort_order": 31,
-      "block_key": "prevention.eyebrow",
-      "section": "prevention",
-      "label": "Eyebrow",
-      "type": "text",
-      "value": "protects"
-    },
-    {
-      "sort_order": 32,
-      "block_key": "prevention.title",
-      "section": "prevention",
-      "label": "Section title",
-      "type": "text",
-      "value": "How to Prevent Possum Infestations?"
-    },
-    {
-      "sort_order": 33,
-      "block_key": "prevention.intro",
-      "section": "prevention",
-      "label": "Intro HTML",
-      "type": "html",
-      "value": "<p><span >Possums are highly adaptable and often enter properties seeking food and shelter. Preventing </span><b>possum infestations</b><span > requires proactive steps to block access, remove attractants, and secure roof spaces.</span></p>"
-    },
-    {
-      "sort_order": 34,
-      "block_key": "prevention.tips",
-      "section": "prevention",
-      "label": "Prevention tips",
-      "type": "json",
-      "metadata": {
-        "tips": [
-          {
-            "slug": "1_secure_food_sources",
-            "title": "1. Secure Food Sources",
-            "intro": null,
-            "list": [
-              "Do not leave pet food outdoors overnight",
-              "Secure rubbish bins with tight-fitting lids",
-              "Clean up fallen fruits and food waste regularly"
-            ]
-          },
-          {
-            "slug": "2_trim_trees_branches",
-            "title": "2. Trim Trees & Branches",
-            "intro": null,
-            "list": [
-              "Cut back branches near your roof.",
-              "Remove climbing paths to your home.",
-              "Keep trees and shrubs away from walls."
-            ]
-          },
-          {
-            "slug": "3_seal_entry_points",
-            "title": "3. Seal Entry Points",
-            "intro": null,
-            "list": [
-              "Check roofs, vents, and eaves for gaps.",
-              "Install mesh over chimney and vent openings.",
-              "Seal holes with timber or metal sheets."
-            ]
-          },
-          {
-            "slug": "4_remove_shelter_options",
-            "title": "4. Remove Shelter Options",
-            "intro": null,
-            "list": [
-              "Declutter garages, sheds, and woodpiles.",
-              "Keep roof spaces clean and inaccessible.",
-              "Store outdoor furniture securely."
-            ]
-          },
-          {
-            "slug": "5_use_motion_activated_lights",
-            "title": "5. Use Motion-Activated Lights",
-            "intro": null,
-            "list": [
-              "Install lights near rooflines and gardens.",
-              "Lights startle possums and discourage visits.",
-              "Combine with noise deterrents for best effect."
-            ]
-          },
-          {
-            "slug": "6_install_possum_proof_fencing",
-            "title": "6. Install Possum-Proof Fencing",
-            "intro": null,
-            "list": [
-              "Add smooth metal sheets to fences.",
-              "Ensure fences are high and free from gaps.",
-              "Check fences regularly for weak spots."
-            ]
-          },
-          {
-            "slug": "7_apply_safe_deterrents",
-            "title": "7. Apply Safe Deterrents",
-            "list": [
-              "Use natural repellents like garlic or ammonia.",
-              "Commercial possum repellents around entry points.",
-              "Avoid poisons; use humane methods only."
-            ]
-          },
-          {
-            "slug": "8_monitor_your_property",
-            "title": "8. Monitor Your Property",
-            "intro": "Monitor Your Property  If  possum  infestations persist, professional  possum  pest control in Melbourne is the safest and most effective solution. Licensed experts can provide humane  possum  control,  possum  trapping services, and long-term  possum  population control strategies to prevent re-infestation.",
-            "list": []
-          }
-        ]
-      }
-    },
-    {
-      "sort_order": 35,
-      "block_key": "faq.title",
-      "section": "faq",
-      "label": "FAQ title",
-      "type": "text",
-      "value": "Frequently Asked Questions"
-    },
-    {
-      "sort_order": 36,
-      "block_key": "faq.sidebar_image",
-      "section": "faq",
-      "label": "FAQ sidebar image",
-      "type": "image",
-      "image_path": "cms/our-services-possum-pest-control/WhatsApp-Image-2024-08-28-at-15.35.06_bc7d2870-1_ecbbd918.jpg",
-      "metadata": {
-        "image_src": "/assets/images/WhatsApp-Image-2024-08-28-at-15.35.06_bc7d2870-1_ecbbd918.jpg"
-      }
-    },
-    {
-      "sort_order": 37,
-      "block_key": "faq.sidebar_cta_title",
-      "section": "faq",
-      "label": "Sidebar CTA title",
-      "type": "text",
-      "value": "Any questions you want to ask?"
-    },
-    {
-      "sort_order": 38,
-      "block_key": "faq.sidebar_cta_body",
-      "section": "faq",
-      "label": "Sidebar CTA body",
-      "type": "text",
-      "value": "Find answers to common questions about our pest control services, treatments, safety, and scheduling."
-    },
-    {
-      "sort_order": 39,
-      "block_key": "faq.sidebar_cta_button",
-      "section": "faq",
-      "label": "Sidebar CTA button",
-      "type": "link",
-      "value": "Contact Us",
-      "link_url": "/contact-us"
-    },
-    {
-      "sort_order": 40,
+      "sort_order": 10,
       "block_key": "faq.items",
       "section": "faq",
       "label": "FAQ items",
@@ -527,31 +127,68 @@
       }
     },
     {
-      "sort_order": 41,
+      "sort_order": 11,
+      "block_key": "faq.title",
+      "section": "faq",
+      "label": "FAQ title",
+      "type": "text",
+      "value": "Frequently Asked Questions"
+    },
+    {
+      "sort_order": 12,
+      "block_key": "faq.sidebar_image",
+      "section": "faq",
+      "label": "FAQ sidebar image",
+      "type": "image",
+      "image_path": "cms/our-services-possum-pest-control/WhatsApp-Image-2024-08-28-at-15.35.06_bc7d2870-1_ecbbd918.jpg",
+      "metadata": {
+        "elementor_id": "e9f2f6e",
+        "image_src": "/assets/images/WhatsApp-Image-2024-08-28-at-15.35.06_bc7d2870-1_ecbbd918.jpg"
+      }
+    },
+    {
+      "sort_order": 13,
+      "block_key": "faq.sidebar_cta_title",
+      "section": "faq",
+      "label": "Sidebar CTA title",
+      "type": "text",
+      "value": "Any questions you want to ask?"
+    },
+    {
+      "sort_order": 14,
+      "block_key": "faq.sidebar_cta_body",
+      "section": "faq",
+      "label": "Sidebar CTA body",
+      "type": "text",
+      "value": "Find answers to common questions about our pest control services, treatments, safety, and scheduling."
+    },
+    {
+      "sort_order": 15,
+      "block_key": "faq.sidebar_cta_button",
+      "section": "faq",
+      "label": "Sidebar CTA button",
+      "type": "link",
+      "value": "Contact Us",
+      "link_url": "/contact-us"
+    },
+    {
+      "sort_order": 16,
       "block_key": "reviews.eyebrow",
       "section": "reviews",
       "label": "Reviews eyebrow",
       "type": "text",
-      "value": "Clients Reviews"
+      "value": "7 States Pest Control for Reliable Pest Management Solutions"
     },
     {
-      "sort_order": 42,
+      "sort_order": 17,
       "block_key": "reviews.title",
       "section": "reviews",
       "label": "Reviews title",
       "type": "text",
-      "value": "7 States Pest Control for Reliable Pest Management Solutions"
+      "value": "EXCELLENT"
     },
     {
-      "sort_order": 43,
-      "block_key": "reviews.subtitle",
-      "section": "reviews",
-      "label": "Reviews subtitle",
-      "type": "text",
-      "value": "Reviews of Our Pest Control Services"
-    },
-    {
-      "sort_order": 44,
+      "sort_order": 18,
       "block_key": "reviews.rating_label",
       "section": "reviews",
       "label": "Rating label",
@@ -559,31 +196,165 @@
       "value": "EXCELLENT"
     },
     {
-      "sort_order": 45,
+      "sort_order": 19,
       "block_key": "reviews.count_text",
       "section": "reviews",
       "label": "Review count text",
       "type": "html",
-      "value": "<p class=\"elementor-heading-title elementor-size-default\">Based on&nbsp;<strong>45 reviews</strong></p>"
+      "value": "<h6>EXCELLENT</h6>"
     },
     {
-      "sort_order": 46,
-      "block_key": "blog.eyebrow",
-      "section": "blog",
-      "label": "Section eyebrow",
-      "type": "text",
-      "value": "Our Latest Article"
+      "sort_order": 20,
+      "block_key": "cards.1_possums_in_roof_spaces",
+      "section": "cards",
+      "label": "Card: 1. Possums in Roof Spaces",
+      "type": "json",
+      "image_path": "cms/our-services-possum-pest-control/possum-in-roof_6ef8b914.jpg",
+      "metadata": {
+        "slug": "1_possums_in_roof_spaces",
+        "image": "/assets/images/possum-in-roof_6ef8b914.jpg",
+        "title": "1. Possums in Roof Spaces",
+        "description": "Possums often enter roof cavities and cause loud scratching and thumping noises at night. They can damage insulation, wiring, and roofing materials.",
+        "image_src": "/assets/images/possum-in-roof_6ef8b914.jpg"
+      }
     },
     {
-      "sort_order": 47,
-      "block_key": "blog.title",
-      "section": "blog",
-      "label": "Section title",
-      "type": "text",
-      "value": "Pest Problems? Here's Why Read Might Be Your Secret Weapon."
+      "sort_order": 21,
+      "block_key": "cards.2_possum_damage_to_property",
+      "section": "cards",
+      "label": "Card: 2. Possum Damage to Property",
+      "type": "json",
+      "image_path": "cms/our-services-possum-pest-control/Brushtailed-Possum-Ry-Beaver-2_62474410.jpg",
+      "metadata": {
+        "slug": "2_possum_damage_to_property",
+        "image": "/assets/images/Brushtailed-Possum-Ry-Beaver-2_62474410.jpg",
+        "title": "2. Possum Damage to Property",
+        "description": "Possums chew electrical wires and damage wood, roof tiles, and vents. This can lead to costly repairs and increase fire and safety risks.",
+        "image_src": "/assets/images/Brushtailed-Possum-Ry-Beaver-2_62474410.jpg"
+      }
     },
     {
-      "sort_order": 48,
+      "sort_order": 22,
+      "block_key": "cards.3_possum_nesting_and_breeding",
+      "section": "cards",
+      "label": "Card: 3. Possum Nesting &amp; Breeding",
+      "type": "json",
+      "image_path": "cms/our-services-possum-pest-control/shutterstock_2325589199_a910cffb.jpg",
+      "metadata": {
+        "slug": "3_possum_nesting_and_breeding",
+        "image": "/assets/images/shutterstock_2325589199_a910cffb.jpg",
+        "title": "3. Possum Nesting &amp; Breeding",
+        "description": "Possums build nests in roofs, sheds, and wall cavities. Breeding can increase numbers quickly, leading to more noise, odours, and infestation issues.",
+        "image_src": "/assets/images/shutterstock_2325589199_a910cffb.jpg"
+      }
+    },
+    {
+      "sort_order": 23,
+      "block_key": "cards.4_possum_droppings_and_hygiene_issues",
+      "section": "cards",
+      "label": "Card: 4.Possum Droppings &amp; Hygiene Issues",
+      "type": "json",
+      "image_path": "cms/our-services-possum-pest-control/Common-Brushtail-Possum-6_67fa8ce2.jpg",
+      "metadata": {
+        "slug": "4_possum_droppings_and_hygiene_issues",
+        "image": "/assets/images/Common-Brushtail-Possum-6_67fa8ce2.jpg",
+        "title": "4.Possum Droppings &amp; Hygiene Issues",
+        "description": "Possum droppings and urine contaminate roof spaces, affect air quality, and cause strong odours. Professional control helps restore hygiene safely.",
+        "image_src": "/assets/images/Common-Brushtail-Possum-6_67fa8ce2.jpg"
+      }
+    },
+    {
+      "sort_order": 24,
+      "block_key": "cards.roof_noise_and_sleep_disturbance",
+      "section": "cards",
+      "label": "Card: Roof Noise &amp; Sleep Disturbance",
+      "type": "json",
+      "image_path": "cms/our-services-possum-pest-control/sleep-rheasqks6dnamkyfybvaua2hsikjcykzq32gn5ws2o_ea8763dc.png",
+      "metadata": {
+        "slug": "roof_noise_and_sleep_disturbance",
+        "image": "/assets/images/sleep-rheasqks6dnamkyfybvaua2hsikjcykzq32gn5ws2o_ea8763dc.png",
+        "title": "Roof Noise &amp; Sleep Disturbance",
+        "description": "Possums are active at night and create loud scratching, thumping, and running noises in roof spaces, disturbing sleep and daily comfort.",
+        "image_src": "/assets/images/sleep-rheasqks6dnamkyfybvaua2hsikjcykzq32gn5ws2o_ea8763dc.png"
+      }
+    },
+    {
+      "sort_order": 25,
+      "block_key": "cards.damage_to_roofing_and_insulation",
+      "section": "cards",
+      "label": "Card: Damage to Roofing &amp; Insulation",
+      "type": "json",
+      "image_path": "cms/our-services-possum-pest-control/property-rg6x1x3dzaugypqkq7g4ieu97josumw04yupg21lwg_e318c0e5.png",
+      "metadata": {
+        "slug": "damage_to_roofing_and_insulation",
+        "image": "/assets/images/property-rg6x1x3dzaugypqkq7g4ieu97josumw04yupg21lwg_e318c0e5.png",
+        "title": "Damage to Roofing &amp; Insulation",
+        "description": "Possums tear insulation, damage roof tiles, and chew timber structures, leading to heat loss, leaks, and expensive repair work.",
+        "image_src": "/assets/images/property-rg6x1x3dzaugypqkq7g4ieu97josumw04yupg21lwg_e318c0e5.png"
+      }
+    },
+    {
+      "sort_order": 26,
+      "block_key": "cards.electrical_and_fire_risks",
+      "section": "cards",
+      "label": "Card: Electrical &amp; Fire Risks",
+      "type": "json",
+      "image_path": "cms/our-services-possum-pest-control/high-voltage-rheaxfrqck2woe4oid05b3dgpveluh8odchv0yxwyo_5e7ebd4d.png",
+      "metadata": {
+        "slug": "electrical_and_fire_risks",
+        "image": "/assets/images/high-voltage-rheaxfrqck2woe4oid05b3dgpveluh8odchv0yxwyo_5e7ebd4d.png",
+        "title": "Electrical &amp; Fire Risks",
+        "description": "Chewing on electrical wiring by possums increases the risk of power faults and potential fire hazards inside roof cavities.",
+        "image_src": "/assets/images/high-voltage-rheaxfrqck2woe4oid05b3dgpveluh8odchv0yxwyo_5e7ebd4d.png"
+      }
+    },
+    {
+      "sort_order": 27,
+      "block_key": "cards.droppings_and_hygiene_issues",
+      "section": "cards",
+      "label": "Card: Droppings &amp; Hygiene Issues",
+      "type": "json",
+      "image_path": "cms/our-services-possum-pest-control/messed-up-rheb1btomvemqah8sjjk4m158a8apdooklp7j7697k_1f463ef0.png",
+      "metadata": {
+        "slug": "droppings_and_hygiene_issues",
+        "image": "/assets/images/messed-up-rheb1btomvemqah8sjjk4m158a8apdooklp7j7697k_1f463ef0.png",
+        "title": "Droppings &amp; Hygiene Issues",
+        "description": "Possum droppings and urine contaminate roof spaces, create strong odours, reduce air quality, and pose hygiene concerns for occupants.",
+        "image_src": "/assets/images/messed-up-rheb1btomvemqah8sjjk4m158a8apdooklp7j7697k_1f463ef0.png"
+      }
+    },
+    {
+      "sort_order": 28,
+      "block_key": "cards.breeding_and_infestation_growth",
+      "section": "cards",
+      "label": "Card: Breeding &amp; Infestation Growth",
+      "type": "json",
+      "image_path": "cms/our-services-possum-pest-control/pest-control-rheb6e6dgqc9an4d7qd6kc0kh19i6nslxo9emvnvog_e4102923.png",
+      "metadata": {
+        "slug": "breeding_and_infestation_growth",
+        "image": "/assets/images/pest-control-rheb6e6dgqc9an4d7qd6kc0kh19i6nslxo9emvnvog_e4102923.png",
+        "title": "Breeding &amp; Infestation Growth",
+        "description": "Breeding possums can quickly increase activity levels, leading to multiple animals nesting in one roof space if not controlled early.",
+        "image_src": "/assets/images/pest-control-rheb6e6dgqc9an4d7qd6kc0kh19i6nslxo9emvnvog_e4102923.png"
+      }
+    },
+    {
+      "sort_order": 29,
+      "block_key": "cards.garden_and_property_damage",
+      "section": "cards",
+      "label": "Card: Garden &amp; Property Damage",
+      "type": "json",
+      "image_path": "cms/our-services-possum-pest-control/damaged-rheb88wwxyvm6yffe17ozd6ane4kd65juukvpiwxeo_6567c389.png",
+      "metadata": {
+        "slug": "garden_and_property_damage",
+        "image": "/assets/images/damaged-rheb88wwxyvm6yffe17ozd6ane4kd65juukvpiwxeo_6567c389.png",
+        "title": "Garden &amp; Property Damage",
+        "description": "Possums damage gardens, fruit trees, and plants, and can tear vents or entry points while accessing roofs and wall cavities.",
+        "image_src": "/assets/images/damaged-rheb88wwxyvm6yffe17ozd6ane4kd65juukvpiwxeo_6567c389.png"
+      }
+    },
+    {
+      "sort_order": 30,
       "block_key": "blog.posts",
       "section": "blog",
       "label": "Blog preview posts",
@@ -618,7 +389,7 @@
       }
     },
     {
-      "sort_order": 49,
+      "sort_order": 31,
       "block_key": "cta.eyebrow",
       "section": "cta",
       "label": "Eyebrow",
@@ -626,7 +397,7 @@
       "value": "Ideas to reality"
     },
     {
-      "sort_order": 50,
+      "sort_order": 32,
       "block_key": "cta.title",
       "section": "cta",
       "label": "Section title",
@@ -634,7 +405,7 @@
       "value": "Talk to Us Today to Learn More"
     },
     {
-      "sort_order": 51,
+      "sort_order": 33,
       "block_key": "cta.body",
       "section": "cta",
       "label": "Body HTML",
@@ -642,13 +413,491 @@
       "value": "<p>Do you have any specific questions about us, our services, or anything related to pest infestation issues? Call us today on&nbsp;<a href=\"tel:+61434660060\">( +61 434 660 060 )</a>&nbsp;or use our contact form to connect with our&nbsp;<b>7 States Pest Control</b>. You can get answers to your questions, get upfront quotes for the&nbsp;<b>7 States Pest Control</b>&nbsp;issues, and receive high-quality tailored services.</p>"
     },
     {
-      "sort_order": 52,
+      "sort_order": 34,
       "block_key": "cta.button",
       "section": "cta",
       "label": "CTA button",
       "type": "link",
       "value": "Contact Us",
-      "link_url": "/contact-us"
+      "link_url": "/why-melbourne-homes-need-professional-termite-pest-control/"
+    },
+    {
+      "sort_order": 35,
+      "block_key": "content.heading_ed9cb71",
+      "section": "content",
+      "label": "Heading: {cmsText(c?.quote_form?.title, 'Get A Free Quote Now!')}",
+      "type": "text",
+      "value": "{cmsText(c?.quote_form?.title, 'Get A Free Quote Now!')}"
+    },
+    {
+      "sort_order": 36,
+      "block_key": "content.heading_fb9a1f0",
+      "section": "content",
+      "label": "Heading: {cmsText(c?.quote_form?.subtitle, 'Have an enquiry? Leave us",
+      "type": "text",
+      "value": "{cmsText(c?.quote_form?.subtitle, 'Have an enquiry? Leave us your details and we’ll call you back during business hours.')}"
+    },
+    {
+      "sort_order": 37,
+      "block_key": "content.heading_6501e7d",
+      "section": "content",
+      "label": "Heading: Possum special",
+      "type": "text",
+      "value": "Possum special"
+    },
+    {
+      "sort_order": 38,
+      "block_key": "content.heading_578d989",
+      "section": "content",
+      "label": "Heading: Types of Possum Issues We Control",
+      "type": "text",
+      "value": "Types of Possum Issues We Control"
+    },
+    {
+      "sort_order": 39,
+      "block_key": "content.text_f6bb8ec",
+      "section": "content",
+      "label": "Content block 1",
+      "type": "html",
+      "value": "<p><b>Possum infestations</b><span > cause noise, damage, and hygiene issues in homes and businesses. Our </span><b>Melbourne possum pest control</b><span > handles all possum problems.</span></p>"
+    },
+    {
+      "sort_order": 40,
+      "block_key": "content.heading_cee4cbe",
+      "section": "content",
+      "label": "Heading: why Possum coming",
+      "type": "text",
+      "value": "why Possum coming"
+    },
+    {
+      "sort_order": 41,
+      "block_key": "content.heading_6d22bd0",
+      "section": "content",
+      "label": "Heading: Why Are Possums Coming Onto Your Property?",
+      "type": "text",
+      "value": "Why Are Possums Coming Onto Your Property?"
+    },
+    {
+      "sort_order": 42,
+      "block_key": "content.text_59fd6df",
+      "section": "content",
+      "label": "Content block 2",
+      "type": "html",
+      "value": "<ol><li><b>Food Availability</b><span > – Fruit trees, vegetable gardens, pet food, and rubbish attract possums.</span><p>&nbsp;</p></li><li><b>Shelter &amp; Nesting</b><span > – Possums look for warm, safe spaces in roof cavities, wall gaps, sheds, and trees.</span><p>&nbsp;</p></li><li><b>Urban Expansion</b><span > – Ongoing development reduces natural habitats, pushing possums into residential areas.</span><p>&nbsp;</p></li><li><b>Breeding Season</b><span > – </span><b>Possum activity</b><span > increases during breeding periods, leading to more noise and movement.</span><p>&nbsp;</p></li><li><b>Easy Access Points</b><span > – Broken roof tiles, vents, and gaps make it easy for possums to enter.</span></li></ol>"
+    },
+    {
+      "sort_order": 43,
+      "block_key": "content.text_2e1c8d0",
+      "section": "content",
+      "label": "Content block 3",
+      "type": "html",
+      "value": "<p><span >If possum activity continues, professional </span><b>possum pest control in Melbourne</b><span > is the safest and most effective solution.</span></p>"
+    },
+    {
+      "sort_order": 44,
+      "block_key": "content.image_dc6bb88",
+      "section": "content",
+      "label": "Image (dc6bb88)",
+      "type": "image",
+      "image_path": "cms/our-services-possum-pest-control/r134_179_1542_1122_w1677_h1123_fmax-1024x686_7aa5f5d6.jpg",
+      "metadata": {
+        "elementor_id": "dc6bb88",
+        "image_src": "/assets/images/r134_179_1542_1122_w1677_h1123_fmax-1024x686_7aa5f5d6.jpg"
+      }
+    },
+    {
+      "sort_order": 45,
+      "block_key": "content.heading_c204f1d",
+      "section": "content",
+      "label": "Heading: problems",
+      "type": "text",
+      "value": "problems"
+    },
+    {
+      "sort_order": 46,
+      "block_key": "content.heading_5de8f7d",
+      "section": "content",
+      "label": "Heading: What Problems Can Possums Cause?",
+      "type": "text",
+      "value": "What Problems Can Possums Cause?"
+    },
+    {
+      "sort_order": 47,
+      "block_key": "content.text_ea758e9",
+      "section": "content",
+      "label": "Content block 4",
+      "type": "html",
+      "value": "<p><span >Possums may look harmless, but their presence can create serious issues for residential and commercial properties. Common problems caused by possum infestations include:</span></p>"
+    },
+    {
+      "sort_order": 48,
+      "block_key": "content.heading_e47cc08",
+      "section": "content",
+      "label": "Heading: 7. Apply Safe Deterrents",
+      "type": "text",
+      "value": "7. Apply Safe Deterrents"
+    },
+    {
+      "sort_order": 49,
+      "block_key": "content.list_acb9541",
+      "section": "content",
+      "label": "Icon list (acb9541)",
+      "type": "json",
+      "metadata": {
+        "items": [
+          "Use natural repellents like garlic or ammonia.",
+          "Commercial possum repellents around entry points.",
+          "Avoid poisons; use humane methods only."
+        ]
+      }
+    },
+    {
+      "sort_order": 50,
+      "block_key": "content.heading_d5d1b1b",
+      "section": "content",
+      "label": "Heading: 8. Monitor Your Property",
+      "type": "text",
+      "value": "8. Monitor Your Property"
+    },
+    {
+      "sort_order": 51,
+      "block_key": "content.text_b50781c",
+      "section": "content",
+      "label": "Content block 5",
+      "type": "html",
+      "value": "<p><strong data-end={91} data-start={66}>Monitor Your Property</strong><br data-end={94} data-start={91} />If <strong data-end={107} data-start={97}>possum</strong> infestations persist, professional <strong data-end={153} data-start={143}>possum</strong> pest control in Melbourne is the safest and most effective solution. Licensed experts can provide humane <strong data-end={269} data-is-only-node data-start={259}>possum</strong> control, <strong data-end={289} data-start={279}>possum</strong> trapping services, and long-term <strong data-end={333} data-start={323}>possum</strong> population control strategies to prevent re-infestation.</p>"
+    },
+    {
+      "sort_order": 52,
+      "block_key": "content.heading_e0495b8",
+      "section": "content",
+      "label": "Heading: 4. Remove Shelter Options",
+      "type": "text",
+      "value": "4. Remove Shelter Options"
+    },
+    {
+      "sort_order": 53,
+      "block_key": "content.list_cb3d33f",
+      "section": "content",
+      "label": "Icon list (cb3d33f)",
+      "type": "json",
+      "metadata": {
+        "items": [
+          "Declutter garages, sheds, and woodpiles.",
+          "Keep roof spaces clean and inaccessible.",
+          "Store outdoor furniture securely."
+        ]
+      }
+    },
+    {
+      "sort_order": 54,
+      "block_key": "content.heading_79db49d",
+      "section": "content",
+      "label": "Heading: 5. Use Motion-Activated Lights",
+      "type": "text",
+      "value": "5. Use Motion-Activated Lights"
+    },
+    {
+      "sort_order": 55,
+      "block_key": "content.list_a55e290",
+      "section": "content",
+      "label": "Icon list (a55e290)",
+      "type": "json",
+      "metadata": {
+        "items": [
+          "Install lights near rooflines and gardens.",
+          "Lights startle possums and discourage visits.",
+          "Combine with noise deterrents for best effect."
+        ]
+      }
+    },
+    {
+      "sort_order": 56,
+      "block_key": "content.heading_8d109a3",
+      "section": "content",
+      "label": "Heading: 6. Install Possum-Proof Fencing",
+      "type": "text",
+      "value": "6. Install Possum-Proof Fencing"
+    },
+    {
+      "sort_order": 57,
+      "block_key": "content.list_8c84a46",
+      "section": "content",
+      "label": "Icon list (8c84a46)",
+      "type": "json",
+      "metadata": {
+        "items": [
+          "Add smooth metal sheets to fences.",
+          "Ensure fences are high and free from gaps.",
+          "Check fences regularly for weak spots."
+        ]
+      }
+    },
+    {
+      "sort_order": 58,
+      "block_key": "content.heading_3bce987",
+      "section": "content",
+      "label": "Heading: 1. Secure Food Sources",
+      "type": "text",
+      "value": "1. Secure Food Sources"
+    },
+    {
+      "sort_order": 59,
+      "block_key": "content.list_446fbbb",
+      "section": "content",
+      "label": "Icon list (446fbbb)",
+      "type": "json",
+      "metadata": {
+        "items": [
+          "Do not leave pet food outdoors overnight",
+          "Secure rubbish bins with tight-fitting lids",
+          "Clean up fallen fruits and food waste regularly"
+        ]
+      }
+    },
+    {
+      "sort_order": 60,
+      "block_key": "content.heading_d668ba4",
+      "section": "content",
+      "label": "Heading: 2. Trim Trees & Branches",
+      "type": "text",
+      "value": "2. Trim Trees & Branches"
+    },
+    {
+      "sort_order": 61,
+      "block_key": "content.list_a4646d8",
+      "section": "content",
+      "label": "Icon list (a4646d8)",
+      "type": "json",
+      "metadata": {
+        "items": [
+          "Cut back branches near your roof.",
+          "Remove climbing paths to your home.",
+          "Keep trees and shrubs away from walls."
+        ]
+      }
+    },
+    {
+      "sort_order": 62,
+      "block_key": "content.heading_8da92f1",
+      "section": "content",
+      "label": "Heading: 3. Seal Entry Points",
+      "type": "text",
+      "value": "3. Seal Entry Points"
+    },
+    {
+      "sort_order": 63,
+      "block_key": "content.list_5750a6f",
+      "section": "content",
+      "label": "Icon list (5750a6f)",
+      "type": "json",
+      "metadata": {
+        "items": [
+          "Check roofs, vents, and eaves for gaps.",
+          "Install mesh over chimney and vent openings.",
+          "Seal holes with timber or metal sheets."
+        ]
+      }
+    },
+    {
+      "sort_order": 64,
+      "block_key": "content.heading_326f094",
+      "section": "content",
+      "label": "Heading: protects",
+      "type": "text",
+      "value": "protects"
+    },
+    {
+      "sort_order": 65,
+      "block_key": "content.heading_010327e",
+      "section": "content",
+      "label": "Heading: How to Prevent Possum Infestations?",
+      "type": "text",
+      "value": "How to Prevent Possum Infestations?"
+    },
+    {
+      "sort_order": 66,
+      "block_key": "content.text_7696069",
+      "section": "content",
+      "label": "Content block 6",
+      "type": "html",
+      "value": "<p><span >Possums are highly adaptable and often enter properties seeking food and shelter. Preventing </span><b>possum infestations</b><span > requires proactive steps to block access, remove attractants, and secure roof spaces.</span></p>"
+    },
+    {
+      "sort_order": 67,
+      "block_key": "content.heading_bfd6cde",
+      "section": "content",
+      "label": "Heading: Frequently Asked Questions",
+      "type": "text",
+      "value": "Frequently Asked Questions"
+    },
+    {
+      "sort_order": 68,
+      "block_key": "content.heading_110e690",
+      "section": "content",
+      "label": "Heading: Clients Reviews",
+      "type": "text",
+      "value": "Clients Reviews"
+    },
+    {
+      "sort_order": 69,
+      "block_key": "content.heading_e19f5a7",
+      "section": "content",
+      "label": "Heading: 7 States Pest Control for Reliable Pest Management Solutions",
+      "type": "text",
+      "value": "7 States Pest Control for Reliable Pest Management Solutions"
+    },
+    {
+      "sort_order": 70,
+      "block_key": "content.heading_b16caa1",
+      "section": "content",
+      "label": "Heading: Reviews of Our Pest Control Services",
+      "type": "text",
+      "value": "Reviews of Our Pest Control Services"
+    },
+    {
+      "sort_order": 71,
+      "block_key": "content.text_5c76140",
+      "section": "content",
+      "label": "Content block 7",
+      "type": "html",
+      "value": "<p class=\"elementor-heading-title elementor-size-default\">Based on&nbsp;<strong>45 reviews</strong></p>"
+    },
+    {
+      "sort_order": 72,
+      "block_key": "content.heading_575a21f",
+      "section": "content",
+      "label": "Heading: Our Latest Article",
+      "type": "text",
+      "value": "Our Latest Article"
+    },
+    {
+      "sort_order": 73,
+      "block_key": "content.heading_2fd4f30",
+      "section": "content",
+      "label": "Heading: Pest Problems? Here's Why Read Might Be Your Secret Weapon.",
+      "type": "text",
+      "value": "Pest Problems? Here's Why Read Might Be Your Secret Weapon."
+    },
+    {
+      "sort_order": 74,
+      "block_key": "content.heading_eb45e17",
+      "section": "content",
+      "label": "Heading: Ideas to reality",
+      "type": "text",
+      "value": "Ideas to reality"
+    },
+    {
+      "sort_order": 75,
+      "block_key": "content.heading_0d6851b",
+      "section": "content",
+      "label": "Heading: Talk to Us Today to Learn More",
+      "type": "text",
+      "value": "Talk to Us Today to Learn More"
+    },
+    {
+      "sort_order": 76,
+      "block_key": "content.text_4852935",
+      "section": "content",
+      "label": "Content block 8",
+      "type": "html",
+      "value": "<p>Do you have any specific questions about us, our services, or anything related to pest infestation issues? Call us today on&nbsp;<a href=\"tel:+61434660060\">( +61 434 660 060 )</a>&nbsp;or use our contact form to connect with our&nbsp;<b>7 States Pest Control</b>. You can get answers to your questions, get upfront quotes for the&nbsp;<b>7 States Pest Control</b>&nbsp;issues, and receive high-quality tailored services.</p>"
+    },
+    {
+      "sort_order": 77,
+      "block_key": "content.image_controll_5_150x150_2e53f6c6",
+      "section": "content",
+      "label": "Image: controll-5-150x150_2e53f6c6.png",
+      "type": "image",
+      "image_path": "cms/our-services-possum-pest-control/controll-5-150x150_2e53f6c6.png",
+      "metadata": {
+        "image_src": "/assets/images/controll-5-150x150_2e53f6c6.png",
+        "filename": "controll-5-150x150_2e53f6c6.png"
+      }
+    },
+    {
+      "sort_order": 78,
+      "block_key": "content.image_controll_4_8dd6b2b1",
+      "section": "content",
+      "label": "Image: controll-4_8dd6b2b1.png",
+      "type": "image",
+      "image_path": "cms/our-services-possum-pest-control/controll-4_8dd6b2b1.png",
+      "metadata": {
+        "image_src": "/assets/images/controll-4_8dd6b2b1.png",
+        "filename": "controll-4_8dd6b2b1.png"
+      }
+    },
+    {
+      "sort_order": 79,
+      "block_key": "content.image_controll_1_431ab690",
+      "section": "content",
+      "label": "Image: controll-1_431ab690.png",
+      "type": "image",
+      "image_path": "cms/our-services-possum-pest-control/controll-1_431ab690.png",
+      "metadata": {
+        "image_src": "/assets/images/controll-1_431ab690.png",
+        "filename": "controll-1_431ab690.png"
+      }
+    },
+    {
+      "sort_order": 80,
+      "block_key": "content.image_controll_2_9d975649",
+      "section": "content",
+      "label": "Image: controll-2_9d975649.png",
+      "type": "image",
+      "image_path": "cms/our-services-possum-pest-control/controll-2_9d975649.png",
+      "metadata": {
+        "image_src": "/assets/images/controll-2_9d975649.png",
+        "filename": "controll-2_9d975649.png"
+      }
+    },
+    {
+      "sort_order": 81,
+      "block_key": "content.image_controll_3_80d72978",
+      "section": "content",
+      "label": "Image: controll-3_80d72978.png",
+      "type": "image",
+      "image_path": "cms/our-services-possum-pest-control/controll-3_80d72978.png",
+      "metadata": {
+        "image_src": "/assets/images/controll-3_80d72978.png",
+        "filename": "controll-3_80d72978.png"
+      }
+    },
+    {
+      "sort_order": 82,
+      "block_key": "content.image_whatsapp_image_2026_05_25_at_11_50_58_am_83fa817",
+      "section": "content",
+      "label": "Image: WhatsApp-Image-2026-05-25-at-11.50.58-AM_83fa8176.jpeg",
+      "type": "image",
+      "image_path": "cms/our-services-possum-pest-control/WhatsApp-Image-2026-05-25-at-11.50.58-AM_83fa8176.jpeg",
+      "metadata": {
+        "image_src": "/assets/images/WhatsApp-Image-2026-05-25-at-11.50.58-AM_83fa8176.jpeg",
+        "filename": "WhatsApp-Image-2026-05-25-at-11.50.58-AM_83fa8176.jpeg"
+      }
+    },
+    {
+      "sort_order": 83,
+      "block_key": "content.image_whatsapp_image_2026_05_25_at_11_52_11_am_ddd4479",
+      "section": "content",
+      "label": "Image: WhatsApp-Image-2026-05-25-at-11.52.11-AM_ddd44793.jpeg",
+      "type": "image",
+      "image_path": "cms/our-services-possum-pest-control/WhatsApp-Image-2026-05-25-at-11.52.11-AM_ddd44793.jpeg",
+      "metadata": {
+        "image_src": "/assets/images/WhatsApp-Image-2026-05-25-at-11.52.11-AM_ddd44793.jpeg",
+        "filename": "WhatsApp-Image-2026-05-25-at-11.52.11-AM_ddd44793.jpeg"
+      }
+    },
+    {
+      "sort_order": 84,
+      "block_key": "content.image_whatsapp_image_2026_05_25_at_11_53_29_am_6379c2f",
+      "section": "content",
+      "label": "Image: WhatsApp-Image-2026-05-25-at-11.53.29-AM_6379c2f3.jpeg",
+      "type": "image",
+      "image_path": "cms/our-services-possum-pest-control/WhatsApp-Image-2026-05-25-at-11.53.29-AM_6379c2f3.jpeg",
+      "metadata": {
+        "image_src": "/assets/images/WhatsApp-Image-2026-05-25-at-11.53.29-AM_6379c2f3.jpeg",
+        "filename": "WhatsApp-Image-2026-05-25-at-11.53.29-AM_6379c2f3.jpeg"
+      }
     }
   ]
 }

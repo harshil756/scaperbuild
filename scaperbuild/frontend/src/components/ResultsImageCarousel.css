@@ -1,0 +1,34 @@
+.results-image-carousel .elementor-image-carousel-wrapper {
+  --e-image-carousel-slides-to-show: 3;
+}
+
+.results-image-carousel .swiper-slide-inner {
+  margin: 0;
+}
+
+.results-image-carousel .swiper-slide-image {
+  display: block;
+  height: auto;
+  width: 100%;
+}
+
+.results-image-carousel.elementor-pagination-position-outside .swiper {
+  padding-bottom: 30px;
+}
+
+.results-image-carousel.elementor-arrows-position-inside .swiper .elementor-swiper-button-prev,
+.results-image-carousel.elementor-arrows-position-inside .swiper .elementor-swiper-button-next {
+  top: calc(50% - 15px);
+}
+
+@media (max-width: 767px) {
+  .results-image-carousel .elementor-image-carousel-wrapper {
+    --e-image-carousel-slides-to-show: 1;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .results-image-carousel .elementor-image-carousel-wrapper {
+    --e-image-carousel-slides-to-show: 2;
+  }
+}

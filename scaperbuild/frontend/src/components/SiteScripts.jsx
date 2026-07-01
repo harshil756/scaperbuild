@@ -80,6 +80,20 @@ function setupLazyBackgrounds() {
   lazyloadBackgrounds.forEach((node) => observer.observe(node))
 }
 
+function initTrustIndexWidgets() {
+  const placeholders = document.querySelectorAll('[data-src*="cdn.trustindex.io/loader.js"]')
+  if (!placeholders.length) return
+
+  const src = 'https://cdn.trustindex.io/loader.js?wp-widget'
+  if (document.querySelector(`script[src="${src}"]`)) return
+
+  const script = document.createElement('script')
+  script.src = src
+  script.async = true
+  script.dataset.wpStrategy = 'async'
+  document.body.appendChild(script)
+}
+
 export default function SiteScripts() {
   useEffect(() => {
     let cancelled = false
@@ -92,8 +106,10 @@ export default function SiteScripts() {
           await loadScript(src)
         }
         setupLazyBackgrounds()
+        initTrustIndexWidgets()
       } catch {
         setupLazyBackgrounds()
+        initTrustIndexWidgets()
       }
     }
 

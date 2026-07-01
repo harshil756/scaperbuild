@@ -1,12 +1,22 @@
 import PhoneNumberInput from '../../components/PhoneNumberInput.jsx'
+import { cmsText } from '../../utils/cmsMedia.js'
+import usePageCms from '../../hooks/usePageCms.js'
+import ServiceCmsContentBlocks from '../../components/service/ServiceCmsContentBlocks.jsx'
+import ServiceCommercialSectionCms from '../../components/service/ServiceCommercialSectionCms.jsx'
+import ServiceCmsStyles from '../../components/service/ServiceCmsStyles.jsx'
+import CmsHtml from '../../components/home/CmsHtml.jsx'
 import usePageMeta from '../../hooks/usePageMeta.js'
 import { Link } from 'react-router-dom'
 
 export default function OfficePestControlPage() {
-  usePageMeta('office_pest_control')
+  const { page, content: c } = usePageCms('office-pest-control')
+  usePageMeta('office_pest_control', page)
 
   return (
     <>
+      <ServiceCmsStyles content={c} heroBgId="d9794c4" ctaBgId="05c0e40" />
+      <ServiceCmsContentBlocks content={c} />
+      <ServiceCommercialSectionCms slug="office-pest-control" content={c} />
       <div className="elementor elementor-697" data-elementor-id={697} data-elementor-post-type="page" data-elementor-type="wp-page">
         <div className="elementor-element elementor-element-d9794c4 e-flex e-con-boxed e-con e-parent e-lazyloaded" data-element_type="container" data-id="d9794c4" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
           <div className="e-con-inner">
@@ -22,7 +32,7 @@ export default function OfficePestControlPage() {
                       <a href="#">
                         <span className="elementor-icon-list-icon">
                           <svg aria-hidden="true" className="e-font-icon-svg e-fas-angle-right" viewBox="0 0 256 512" xmlns="http://www.w3.org/2000/svg"><path d="M224.3 273l-136 136c-9.4 9.4-24.6 9.4-33.9 0l-22.6-22.6c-9.4-9.4-9.4-24.6 0-33.9l96.4-96.4-96.4-96.4c-9.4-9.4-9.4-24.6 0-33.9L54.3 103c9.4-9.4 24.6-9.4 33.9 0l136 136c9.5 9.4 9.5 24.6.1 34z" /></svg> </span>
-                        <span className="elementor-icon-list-text">Office Pest Control</span>
+                        <span className="elementor-icon-list-text">{cmsText(c?.hero?.breadcrumb_current, 'Office Pest Control')}</span>
                       </a>
                     </li>
                   </ul>
@@ -30,25 +40,24 @@ export default function OfficePestControlPage() {
               </div>
               <div className="elementor-element elementor-element-768b2cf elementor-widget elementor-widget-heading" data-element_type="widget" data-id="768b2cf" data-settings="{&quot;_animation&quot;:&quot;none&quot;}" data-widget_type="heading.default">
                 <div className="elementor-widget-container">
-                  <h2 className="elementor-heading-title elementor-size-default">Pest Control for Offices</h2> </div>
+                  <h2 className="elementor-heading-title elementor-size-default">{cmsText(c?.hero?.title, 'Pest Control for Offices')}</h2> </div>
               </div>
               <div className="elementor-element elementor-element-e0c4cec elementor-widget elementor-widget-heading" data-element_type="widget" data-id="e0c4cec" data-settings="{&quot;_animation&quot;:&quot;none&quot;}" data-widget_type="heading.default">
                 <div className="elementor-widget-container">
-                  <h1 className="elementor-heading-title elementor-size-default">Office Pest Control In Melbourne</h1> </div>
+                  <h1 className="elementor-heading-title elementor-size-default">{cmsText(c?.hero?.heading, 'Office Pest Control In Melbourne')}</h1> </div>
               </div>
               <div className="elementor-element elementor-element-4dece9b elementor-widget elementor-widget-text-editor" data-element_type="widget" data-id="4dece9b" data-widget_type="text-editor.default">
-                <div className="elementor-widget-container">
-                  <div className="elementor-element elementor-element-de434cf elementor-widget elementor-widget-text-editor" data-element_type="widget" data-id="de434cf" data-settings="{&quot;ekit_we_effect_on&quot;:&quot;none&quot;}" data-widget_type="text-editor.default"><div className="elementor-widget-container"><p>Pest infestations present a prevalent and significant challenge for office spaces. These unwelcome intruders not only cause irritation and disruption but also create unhygienic and potentially hazardous conditions within your workplace. If left unattended, such infestations can lead to the spread of diseases, damage your company’s reputation, disrupt daily operations, and have a negative impact on your financial performance. The most effective strategy to combat office pest infestations is proactive prevention, and Assured Environments is here to provide assistance.</p><p>Assured Environments is the oldest and largest commercial pest control specialist. Our dedicated team of experts collaborates with you to develop a comprehensive pest management plan tailored to your unique business and its specific pest-related challenges. We are well-prepared to address existing pest issues and can also create customized prevention programs for entire buildings or individual tenants. Our commitment goes beyond simply resolving your immediate pest problem; we are devoted to ensuring that you never encounter such issues again.</p></div></div> </div>
+                <div className="elementor-widget-container"><CmsHtml html={c?.hero?.intro ?? '<div class="elementor-element elementor-element-de434cf elementor-widget elementor-widget-text-editor" data-element_type="widget" data-id="de434cf" data-settings="{&quot;ekit_we_effect_on&quot;:&quot;none&quot;}" data-widget_type="text-editor.default"><div class="elementor-widget-container"><p>Pest infestations present a prevalent and significant challenge for office spaces. These unwelcome intruders not only cause irritation and disruption but also create unhygienic and potentially hazardous conditions within your workplace. If left unattended, such infestations can lead to the spread of diseases, damage your company’s reputation, disrupt daily operations, and have a negative impact on your financial performance. The most effective strategy to combat office pest infestations is proactive prevention, and Assured Environments is here to provide assistance.</p><p>Assured Environments is the oldest and largest commercial pest control specialist. Our dedicated team of experts collaborates with you to develop a comprehensive pest management plan tailored to your unique business and its specific pest-related challenges. We are well-prepared to address existing pest issues and can also create customized prevention programs for entire buildings or individual tenants. Our commitment goes beyond simply resolving your immediate pest problem; we are devoted to ensuring that you never encounter such issues again.</p></div></div>'} /></div>
               </div>
             </div>
             <div className="elementor-element elementor-element-75e72fb e-con-full e-flex e-con e-child" data-element_type="container" data-id="75e72fb" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
               <div className="elementor-element elementor-element-694da6a elementor-widget elementor-widget-heading" data-element_type="widget" data-id="694da6a" data-widget_type="heading.default">
                 <div className="elementor-widget-container">
-                  <h2 className="elementor-heading-title elementor-size-default">Get A Free Quote Now!</h2> </div>
+                  <h2 className="elementor-heading-title elementor-size-default">{cmsText(c?.quote_form?.title, 'Office Pest Control In Melbourne')}</h2> </div>
               </div>
               <div className="elementor-element elementor-element-2154067 elementor-widget elementor-widget-heading" data-element_type="widget" data-id="2154067" data-widget_type="heading.default">
                 <div className="elementor-widget-container">
-                  <h6 className="elementor-heading-title elementor-size-default">Have an enquiry? Leave us your details and we’ll call you back during business hours.</h6> </div>
+                  <h6 className="elementor-heading-title elementor-size-default">{cmsText(c?.quote_form?.subtitle, 'Have an enquiry? Leave us your details and we’ll call you back during business hours.')}</h6> </div>
               </div>
               <div className="elementor-element elementor-element-30184ef elementor-button-align-center elementor-widget elementor-widget-form" data-element_type="widget" data-id="30184ef" data-settings="{&quot;step_next_label&quot;:&quot;Next&quot;,&quot;step_previous_label&quot;:&quot;Previous&quot;,&quot;button_width&quot;:&quot;100&quot;,&quot;step_type&quot;:&quot;number_text&quot;,&quot;step_icon_shape&quot;:&quot;circle&quot;}" data-widget_type="form.default">
                 <div className="elementor-widget-container">
@@ -80,7 +89,7 @@ export default function OfficePestControlPage() {
                       <div className="elementor-field-group elementor-column elementor-field-type-submit elementor-col-100 e-form__buttons">
                         <button className="elementor-button elementor-size-md" type="submit">
                           <span className="elementor-button-content-wrapper">
-                            <span className="elementor-button-text">Submit Quote</span>
+                            <span className="elementor-button-text">{cmsText(c?.quote_form?.submit_text, 'Submit Quote')}</span>
                           </span>
                         </button>
                       </div>
