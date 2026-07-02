@@ -1,2 +1,0 @@
-# cineglobal
-# hostcarbon
