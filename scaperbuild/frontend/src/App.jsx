@@ -9,11 +9,13 @@ import ContactPage from './pages/ContactPage.jsx'
 import HomePage from './pages/HomePage.jsx'
 import ThankYouPage from './pages/ThankYouPage.jsx'
 import { serviceRoutes } from './serviceRoutes.jsx'
+import TrustIndexAutoMount from './components/TrustIndexAutoMount.jsx'
 
 export default function App() {
   return (
     <BrowserRouter>
       <ScrollToTop />
+      <TrustIndexAutoMount />
       <Routes>
         <Route element={<Layout />}>
           <Route index element={<HomePage />} />

@@ -9,14 +9,14 @@ const frontend = path.resolve(__dirname, '..')
 
 const PAGES = {
   home: {
-    htmlPath: path.join(root, 'export/7statespestcontrol.com.au/home/home.html'),
+    htmlPath: path.join(root, 'scraped/export/7statespestcontrol.com.au/home/home.html'),
     start: '<div class="elementor elementor-14"',
     end: '<div class="ekit-template-content-markup ekit-template-content-footer',
     outPath: path.join(frontend, 'src/pages/HomePage.jsx'),
     componentName: 'HomePage',
   },
   about: {
-    htmlPath: path.join(root, 'export/7statespestcontrol.com.au/about-us/about-us.html'),
+    htmlPath: path.join(root, 'scraped/export/7statespestcontrol.com.au/about-us/about-us.html'),
     start: '<div class="elementor elementor-16"',
     end: '<div class="ekit-template-content-markup ekit-template-content-footer',
     outPath: path.join(frontend, 'src/pages/AboutPage.jsx'),

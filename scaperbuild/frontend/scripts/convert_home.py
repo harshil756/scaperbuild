@@ -6,7 +6,7 @@ import re
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[2]
-HTML_PATH = ROOT / "export/7statespestcontrol.com.au/home/home.html"
+HTML_PATH = ROOT / "scraped/export/7statespestcontrol.com.au/home/home.html"
 FRONTEND = Path(__file__).resolve().parents[1]
 SRC = FRONTEND / "src"
 

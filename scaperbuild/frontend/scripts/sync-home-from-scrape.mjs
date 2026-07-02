@@ -10,12 +10,12 @@ import { extractSeoFromHtml } from './extract-seo-from-html.mjs'
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url))
 const root = path.resolve(__dirname, '../..')
-const htmlPath = path.join(root, 'export/7statespestcontrol.com.au/home/home.html')
+const htmlPath = path.join(root, 'scraped/export/7statespestcontrol.com.au/home/home.html')
 const seoExtraPath = path.join(__dirname, '../src/config/pageSeoExtra.js')
 const reviewsOut = path.join(__dirname, '../public/assets/html/trustindex-home-reviews.html')
 
 if (!fs.existsSync(htmlPath)) {
-  console.error('Missing scraped home.html — run: python scrape_page.py https://7statespestcontrol.com.au/')
+  console.error('Missing scraped home.html — run: cd scraped && python scrape_page.py https://7statespestcontrol.com.au/')
   process.exit(1)
 }
 

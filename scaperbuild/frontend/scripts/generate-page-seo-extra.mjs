@@ -5,7 +5,7 @@ import { extractSeoFromHtml } from './extract-seo-from-html.mjs'
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url))
 const root = path.resolve(__dirname, '../..')
-const exportRoot = path.join(root, 'export/7statespestcontrol.com.au')
+const exportRoot = path.join(root, 'scraped/export/7statespestcontrol.com.au')
 const outPath = path.join(__dirname, '../src/config/pageSeoExtra.js')
 
 function findHtmlFile(dir) {

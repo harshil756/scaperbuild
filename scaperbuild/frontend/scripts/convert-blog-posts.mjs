@@ -7,7 +7,7 @@ import { convertInternalAnchorsToLinks } from './link-utils.mjs'
 const __dirname = path.dirname(fileURLToPath(import.meta.url))
 const root = path.resolve(__dirname, '../..')
 const frontend = path.resolve(__dirname, '..')
-const exportRoot = path.join(root, 'export/7statespestcontrol.com.au')
+const exportRoot = path.join(root, 'scraped/export/7statespestcontrol.com.au')
 const pagesDir = path.join(frontend, 'src/pages/blog')
 const publicAssets = path.join(frontend, 'public/assets')
 

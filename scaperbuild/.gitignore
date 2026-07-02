@@ -1,8 +1,4 @@
-venv/
-.venv/
-output/
-export/
-__pycache__/
+scraped/
 *.pyc
 .pytest_cache/
 *.egg-info/
