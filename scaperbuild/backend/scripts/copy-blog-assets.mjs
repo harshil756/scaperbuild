@@ -10,7 +10,7 @@ const __dirname = path.dirname(fileURLToPath(import.meta.url))
 const root = path.resolve(__dirname, '../..')
 const dataFile = path.join(__dirname, '../database/data/blogs.json')
 const srcDir = path.join(root, 'frontend/public/assets/images')
-const exportRoot = path.join(root, 'export/7statespestcontrol.com.au')
+const exportRoot = path.join(root, 'scraped/export/7statespestcontrol.com.au')
 const destDir = path.join(__dirname, '../storage/app/public/cms/blog')
 
 if (!fs.existsSync(dataFile)) {

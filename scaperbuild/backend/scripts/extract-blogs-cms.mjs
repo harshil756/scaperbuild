@@ -8,7 +8,7 @@ import { fileURLToPath } from 'node:url'
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url))
 const root = path.resolve(__dirname, '../..')
-const exportRoot = path.join(root, 'export/7statespestcontrol.com.au')
+const exportRoot = path.join(root, 'scraped/export/7statespestcontrol.com.au')
 const frontend = path.join(root, 'frontend')
 const outFile = path.join(__dirname, '../database/data/blogs.json')
 
