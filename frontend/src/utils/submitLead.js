@@ -1,4 +1,10 @@
 import { apiUrl } from './api.js'
+import {
+  PHONE_DIGITS_LENGTH,
+  applyPhoneInputValidity,
+  isValidPhoneNumber,
+  normalizePhoneDigits,
+} from './phoneNumber.js'
 
 function fieldValue(formData, ...keys) {
   for (const key of keys) {
@@ -22,11 +28,13 @@ export function detectFormType(form) {
 
 export function buildLeadPayload(form) {
   const formData = new FormData(form)
+  const rawPhone = fieldValue(formData, 'form_fields[mobile_number]', 'form_fields[phone]')
+  const phone = rawPhone ? normalizePhoneDigits(rawPhone) : ''
 
   return {
     name: fieldValue(formData, 'form_fields[first_name]', 'form_fields[name]'),
     email: fieldValue(formData, 'form_fields[user_email]', 'form_fields[email]'),
-    phone: fieldValue(formData, 'form_fields[mobile_number]', 'form_fields[phone]'),
+    phone: phone || null,
     message: fieldValue(formData, 'form_fields[message]'),
     form_type: detectFormType(form),
     post_id: fieldValue(formData, 'post_id') || null,
@@ -37,6 +45,19 @@ export function buildLeadPayload(form) {
 }
 
 export async function submitLead(form) {
+  const phoneInput = form.querySelector(
+    'input[name="form_fields[mobile_number]"], input[name="form_fields[phone]"]',
+  )
+  if (phoneInput instanceof HTMLInputElement) {
+    applyPhoneInputValidity(phoneInput)
+    const digits = normalizePhoneDigits(phoneInput.value)
+    const mustValidate = phoneInput.required || digits.length > 0
+    if (mustValidate && !isValidPhoneNumber(digits)) {
+      phoneInput.reportValidity()
+      throw new Error(`Please enter a valid ${PHONE_DIGITS_LENGTH}-digit mobile number.`)
+    }
+  }
+
   const payload = buildLeadPayload(form)
 
   const response = await fetch(apiUrl('/api/leads'), {

@@ -66,11 +66,13 @@ export function createBlockCollector(slug) {
 
   function addText(key, section, label, value) {
     if (!value?.trim()) return
+    if (value.includes('{cmsText(') || value.includes('<CmsHtml')) return
     add({ block_key: key, section, label, type: 'text', value: value.trim() })
   }
 
   function addHtml(key, section, label, value) {
     if (!value?.trim()) return
+    if (value.includes('{cmsText(') || value.includes('<CmsHtml')) return
     add({ block_key: key, section, label, type: 'html', value: value.trim() })
   }
 
@@ -453,11 +455,19 @@ export function extractFaqSidebar(jsx, add, addText, addHtml, cmsPath, skipIds) 
 }
 
 export function findAllWidgets(jsx) {
-  const re = /data-element_type="widget" data-id="([a-f0-9]+)"[^>]*data-widget_type="([^"]+)"/g
   const widgets = []
-  let m
-  while ((m = re.exec(jsx))) {
-    widgets.push({ id: m[1], type: m[2] })
+  const seen = new Set()
+  const patterns = [
+    /data-element_type="widget" data-id="([a-f0-9]+)"[^>]*data-widget_type="([^"]+)"/g,
+    /data-id="([a-f0-9]+)"[^>]*data-element_type="widget"[^>]*data-widget_type="([^"]+)"/g,
+  ]
+  for (const re of patterns) {
+    let m
+    while ((m = re.exec(jsx))) {
+      if (seen.has(m[1])) continue
+      seen.add(m[1])
+      widgets.push({ id: m[1], type: m[2] })
+    }
   }
   return widgets
 }

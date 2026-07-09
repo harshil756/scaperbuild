@@ -21,6 +21,30 @@
     },
     {
       "sort_order": 1,
+      "block_key": "background.f5e4d41",
+      "section": "backgrounds",
+      "label": "Background (f5e4d41)",
+      "type": "background",
+      "background_image_path": "cms/our-services-termite-pest-control/BG3_a19772e2.png",
+      "metadata": {
+        "elementor_id": "f5e4d41",
+        "filename": "BG3_a19772e2.png"
+      }
+    },
+    {
+      "sort_order": 2,
+      "block_key": "background.235b366",
+      "section": "backgrounds",
+      "label": "Background (235b366)",
+      "type": "background",
+      "background_image_path": "cms/our-services-termite-pest-control/istockphoto-1414982124-612x612ui_0ade9a1c.jpg",
+      "metadata": {
+        "elementor_id": "235b366",
+        "filename": "istockphoto-1414982124-612x612ui_0ade9a1c.jpg"
+      }
+    },
+    {
+      "sort_order": 3,
       "block_key": "background.cta",
       "section": "cta",
       "label": "CTA background",
@@ -32,15 +56,15 @@
       }
     },
     {
-      "sort_order": 2,
+      "sort_order": 4,
       "block_key": "hero.breadcrumb_parent",
       "section": "hero",
       "label": "Breadcrumb parent",
       "type": "text",
-      "value": "{cmsText(c?.hero?.breadcrumb_parent, 'Services')}"
+      "value": "Services"
     },
     {
-      "sort_order": 3,
+      "sort_order": 5,
       "block_key": "hero.breadcrumb_current",
       "section": "hero",
       "label": "Breadcrumb current",
@@ -48,55 +72,111 @@
       "value": "termite pest control"
     },
     {
-      "sort_order": 4,
+      "sort_order": 6,
       "block_key": "hero.title",
       "section": "hero",
       "label": "Section title",
       "type": "text",
-      "value": "{cmsText(c?.hero?.title, 'termite pest control')}"
+      "value": "termite pest control"
     },
     {
-      "sort_order": 5,
+      "sort_order": 7,
       "block_key": "hero.heading",
       "section": "hero",
       "label": "Main heading",
       "type": "text",
-      "value": "{cmsText(c?.hero?.heading, 'Get Professional Termite Control in Melbourne')}"
+      "value": "Get Professional Termite Control in Melbourne"
     },
     {
-      "sort_order": 6,
+      "sort_order": 8,
       "block_key": "hero.intro",
       "section": "hero",
       "label": "Intro paragraph",
       "type": "html",
-      "value": "<CmsHtml html={c?.hero?.intro ?? '<p class=\"font-claude-response-body break-words whitespace-normal leading-[1.7]\">Termites are silent destroyers that can cause serious structural damage before you even realise they are present. Unlike other pests, termites work behind walls, under floors, and inside wooden structures — making early detection difficult. Without professional <strong>termite pest control</strong>, the damage can become expensive and dangerous.</p><p class=\"font-claude-response-body break-words whitespace-normal leading-[1.7]\">If you are noticing signs of termite activity and searching for reliable <strong>termite control Melbourne</strong> or expert <strong>termite treatment Melbourne</strong>, you are in the right place.</p><p class=\"font-claude-response-body break-words whitespace-normal leading-[1.7]\">At <a class=\"underline underline underline-offset-2 decoration-1 decoration-current/40 hover:decoration-current focus:decoration-current\" href=\"/\">7 States Pest Control</a>, we specialise in advanced <strong>termite pest control</strong>, effective <strong>termite removal Melbourne</strong>, and long-term <strong>termite barrier</strong> solutions tailored to residential and commercial properties. Our licensed technicians deliver safe, compliant, and highly effective <strong>termite control</strong> across Melbourne — protecting your home before costly damage sets in.</p>'} />"
+      "value": "<p><span style=\"font-weight: 400;\">Termites are silent destroyers that can cause serious structural damage before you even realise they are present. Unlike other pests, termites work behind walls, under floors, and inside wooden structures, making early detection difficult. Without professional termite pest control, the damage can become expensive and dangerous.</span></p><p><span style=\"font-weight: 400;\">If you are noticing signs of termite activity and searching for reliable </span><b>termite control Melbourne</b><span style=\"font-weight: 400;\">, expert </span><b>termite treatment Melbourne</b><span style=\"font-weight: 400;\">, or a thorough </span><b>termite inspection and treatment</b><span style=\"font-weight: 400;\">, you are in the right place. Our team also provides a detailed </span><b>termite inspection &amp; report</b><span style=\"font-weight: 400;\">, so you know exactly where you stand before any treatment begins.</span></p><p><span style=\"font-weight: 400;\">At</span><a href=\"https://7statespestcontrol.com.au/\"> <b>7 States Pest Control</b></a><b>,</b><span style=\"font-weight: 400;\"> we specialise in advanced termite pest control, effective </span><b>termite removal Melbourne</b><span style=\"font-weight: 400;\">, and long-term </span><b>termite barrier solutions</b><span style=\"font-weight: 400;\"> tailored to residential and commercial properties. This includes professional </span><b>termite chemical barrier</b><span style=\"font-weight: 400;\"> installation, complete </span><b>termite reticulation system installation</b><span style=\"font-weight: 400;\">, and ongoing </span><b>termite reticulation refill Melbourne</b><span style=\"font-weight: 400;\"> services to keep your protection active year after year. We also offer transparent pricing on </span><b>termite reticulation system refill cost</b><span style=\"font-weight: 400;\">, so you always know what to expect. </span></p>"
     },
     {
-      "sort_order": 7,
+      "sort_order": 9,
       "block_key": "quote_form.title",
       "section": "quote_form",
       "label": "Form heading",
       "type": "text",
-      "value": "{cmsText(c?.quote_form?.subtitle, 'Have an enquiry? Leave us your details and we’ll call you back during business hours.')}"
+      "value": "Get A Free Quote Now!"
     },
     {
-      "sort_order": 8,
+      "sort_order": 10,
       "block_key": "quote_form.subtitle",
       "section": "quote_form",
       "label": "Form subtitle",
       "type": "text",
-      "value": "{cmsText(c?.quote_form?.subtitle, 'Have an enquiry? Leave us your details and we’ll call you back during business hours.')}"
+      "value": "Have an enquiry? Leave us your details and we'll call you back during business hours."
     },
     {
-      "sort_order": 9,
+      "sort_order": 11,
       "block_key": "quote_form.submit_text",
       "section": "quote_form",
       "label": "Submit button text",
       "type": "text",
-      "value": "{cmsText(c?.quote_form?.submit_text, 'Submit Quote')}"
+      "value": "Submit Quote"
     },
     {
-      "sort_order": 10,
+      "sort_order": 12,
+      "block_key": "prevention.title",
+      "section": "prevention",
+      "label": "Section title",
+      "type": "text",
+      "value": "7. Monitor Signs of Termite Activity"
+    },
+    {
+      "sort_order": 13,
+      "block_key": "cards.cmstext_c_hero_title_termite_pest_control",
+      "section": "cards",
+      "label": "Card: {cmsText(c?.hero?.title, 'termite pest control')}",
+      "type": "json",
+      "image_path": "cms/our-services-termite-pest-control/pngtree-two-white-and-orange-termites-fighting-for-food_5d6a0a65.jpg",
+      "metadata": {
+        "slug": "cmstext_c_hero_title_termite_pest_control",
+        "title": "{cmsText(c?.hero?.title, 'termite pest control')}",
+        "description": "<CmsHtml html={c?.hero?.intro} />",
+        "alt": "{cmsText(c?.hero?.title, 'termite pest control')}",
+        "image_src": "/assets/images/pngtree-two-white-and-orange-termites-fighting-for-food_5d6a0a65.jpg",
+        "elementor_id": "a342089"
+      }
+    },
+    {
+      "sort_order": 14,
+      "block_key": "cards.problems",
+      "section": "cards",
+      "label": "Card: problems",
+      "type": "json",
+      "image_path": "cms/our-services-termite-pest-control/istockphoto-1414982124-612x612ui_0ade9a1c.jpg",
+      "metadata": {
+        "slug": "problems",
+        "title": "problems",
+        "description": "<p>Termites may remain hidden, but the damage they cause can be devastating. Here are the major risks:</p>",
+        "alt": "problems",
+        "image_src": "/assets/images/istockphoto-1414982124-612x612ui_0ade9a1c.jpg",
+        "elementor_id": "235b366"
+      }
+    },
+    {
+      "sort_order": 15,
+      "block_key": "cards.ideas_to_reality",
+      "section": "cards",
+      "label": "Card: Ideas to reality",
+      "type": "json",
+      "image_path": "cms/our-services-termite-pest-control/URUU-01-2048x1365-2_7c216e6d.jpg",
+      "metadata": {
+        "slug": "ideas_to_reality",
+        "title": "Ideas to reality",
+        "description": "<p>Do you have any specific questions about us, our services, or anything related to pest infestation issues? Call us today on&nbsp;<a href=\"tel:+61434660060\">( +61 434 660 060 )</a>&nbsp;or use our contact form to connect with our&nbsp;<b>7 States Pest Control</b>.</p><p class=\"font-claude-response-body break-words whitespace-normal leading-[1.7]\">You can get answers to your questions, get upfront quotes for all your pest control issues, and receive high-quality tailored services. Need help beyond termites? We also provide expert <a class=\"underline underline underline-offset-2 decoration-1 decoration-current/40 hover:decoration-current focus:decoration-current\" href=\"/rodent-control-in-melbourne\">rodent pest control Melbourne</a> to keep your property fully protected.</p>",
+        "alt": "Ideas to reality",
+        "image_src": "/assets/images/URUU-01-2048x1365-2_7c216e6d.jpg",
+        "elementor_id": "f732271"
+      }
+    },
+    {
+      "sort_order": 16,
       "block_key": "faq.items",
       "section": "faq",
       "label": "FAQ items",
@@ -127,7 +207,7 @@
       }
     },
     {
-      "sort_order": 11,
+      "sort_order": 17,
       "block_key": "faq.title",
       "section": "faq",
       "label": "FAQ title",
@@ -135,7 +215,7 @@
       "value": "Frequently Asked Questions"
     },
     {
-      "sort_order": 12,
+      "sort_order": 18,
       "block_key": "faq.sidebar_image",
       "section": "faq",
       "label": "FAQ sidebar image",
@@ -147,7 +227,7 @@
       }
     },
     {
-      "sort_order": 13,
+      "sort_order": 19,
       "block_key": "faq.sidebar_cta_title",
       "section": "faq",
       "label": "Sidebar CTA title",
@@ -155,7 +235,7 @@
       "value": "Any questions you want to ask?"
     },
     {
-      "sort_order": 14,
+      "sort_order": 20,
       "block_key": "faq.sidebar_cta_body",
       "section": "faq",
       "label": "Sidebar CTA body",
@@ -163,7 +243,7 @@
       "value": "Find answers to common questions about our pest control services, treatments, safety, and scheduling."
     },
     {
-      "sort_order": 15,
+      "sort_order": 21,
       "block_key": "faq.sidebar_cta_button",
       "section": "faq",
       "label": "Sidebar CTA button",
@@ -172,15 +252,7 @@
       "link_url": "/contact-us"
     },
     {
-      "sort_order": 16,
-      "block_key": "reviews.eyebrow",
-      "section": "reviews",
-      "label": "Reviews eyebrow",
-      "type": "text",
-      "value": "7 States Pest Control for Reliable Pest Management Solutions"
-    },
-    {
-      "sort_order": 17,
+      "sort_order": 22,
       "block_key": "reviews.title",
       "section": "reviews",
       "label": "Reviews title",
@@ -188,7 +260,7 @@
       "value": "EXCELLENT"
     },
     {
-      "sort_order": 18,
+      "sort_order": 23,
       "block_key": "reviews.rating_label",
       "section": "reviews",
       "label": "Rating label",
@@ -196,7 +268,7 @@
       "value": "EXCELLENT"
     },
     {
-      "sort_order": 19,
+      "sort_order": 24,
       "block_key": "reviews.count_text",
       "section": "reviews",
       "label": "Review count text",
@@ -204,7 +276,7 @@
       "value": "<h6>EXCELLENT</h6>"
     },
     {
-      "sort_order": 20,
+      "sort_order": 25,
       "block_key": "cards.1_subterranean_termites",
       "section": "cards",
       "label": "Card: 1. Subterranean Termites",
@@ -219,7 +291,7 @@
       }
     },
     {
-      "sort_order": 21,
+      "sort_order": 26,
       "block_key": "cards.2_timber_and_structural_damage",
       "section": "cards",
       "label": "Card: 2. Timber &amp; Structural Damage",
@@ -234,7 +306,7 @@
       }
     },
     {
-      "sort_order": 22,
+      "sort_order": 27,
       "block_key": "cards.3_active_termite_infestations",
       "section": "cards",
       "label": "Card: 3. Active Termite Infestations",
@@ -249,7 +321,7 @@
       }
     },
     {
-      "sort_order": 23,
+      "sort_order": 28,
       "block_key": "cards.4_recurrent_termite_attacks",
       "section": "cards",
       "label": "Card: 4. Recurrent Termite Attacks",
@@ -264,7 +336,7 @@
       }
     },
     {
-      "sort_order": 24,
+      "sort_order": 29,
       "block_key": "cards.threat_to_property_structure",
       "section": "cards",
       "label": "Card: Threat to Property Structure",
@@ -279,7 +351,7 @@
       }
     },
     {
-      "sort_order": 25,
+      "sort_order": 30,
       "block_key": "cards.property_and_structural_damage",
       "section": "cards",
       "label": "Card: Property &amp; Structural Damage",
@@ -294,7 +366,7 @@
       }
     },
     {
-      "sort_order": 26,
+      "sort_order": 31,
       "block_key": "cards.hidden_and_expensive_damage",
       "section": "cards",
       "label": "Card: Hidden &amp; Expensive Damage",
@@ -309,7 +381,7 @@
       }
     },
     {
-      "sort_order": 27,
+      "sort_order": 32,
       "block_key": "cards.environmental_and_moisture_risks",
       "section": "cards",
       "label": "Card: Environmental &amp; Moisture Risks",
@@ -324,7 +396,7 @@
       }
     },
     {
-      "sort_order": 28,
+      "sort_order": 33,
       "block_key": "cards.rapid_colony_growth",
       "section": "cards",
       "label": "Card: Rapid Colony Growth",
@@ -339,7 +411,7 @@
       }
     },
     {
-      "sort_order": 29,
+      "sort_order": 34,
       "block_key": "cards.business_and_investment_risks",
       "section": "cards",
       "label": "Card: Business &amp; Investment Risks",
@@ -354,7 +426,7 @@
       }
     },
     {
-      "sort_order": 30,
+      "sort_order": 35,
       "block_key": "blog.posts",
       "section": "blog",
       "label": "Blog preview posts",
@@ -389,7 +461,7 @@
       }
     },
     {
-      "sort_order": 31,
+      "sort_order": 36,
       "block_key": "cta.eyebrow",
       "section": "cta",
       "label": "Eyebrow",
@@ -397,7 +469,7 @@
       "value": "Ideas to reality"
     },
     {
-      "sort_order": 32,
+      "sort_order": 37,
       "block_key": "cta.title",
       "section": "cta",
       "label": "Section title",
@@ -405,7 +477,7 @@
       "value": "Talk to Us Today to Learn More"
     },
     {
-      "sort_order": 33,
+      "sort_order": 38,
       "block_key": "cta.body",
       "section": "cta",
       "label": "Body HTML",
@@ -413,7 +485,7 @@
       "value": "<p>Do you have any specific questions about us, our services, or anything related to pest infestation issues? Call us today on&nbsp;<a href=\"tel:+61434660060\">( +61 434 660 060 )</a>&nbsp;or use our contact form to connect with our&nbsp;<b>7 States Pest Control</b>.</p><p class=\"font-claude-response-body break-words whitespace-normal leading-[1.7]\">You can get answers to your questions, get upfront quotes for all your pest control issues, and receive high-quality tailored services. Need help beyond termites? We also provide expert <a class=\"underline underline underline-offset-2 decoration-1 decoration-current/40 hover:decoration-current focus:decoration-current\" href=\"/rodent-control-in-melbourne\">rodent pest control Melbourne</a> to keep your property fully protected.</p>"
     },
     {
-      "sort_order": 34,
+      "sort_order": 39,
       "block_key": "cta.button",
       "section": "cta",
       "label": "CTA button",
@@ -422,23 +494,21 @@
       "link_url": "/why-melbourne-homes-need-professional-termite-pest-control/"
     },
     {
-      "sort_order": 35,
-      "block_key": "content.heading_ed9cb71",
+      "sort_order": 40,
+      "block_key": "content.list_fd02c33",
       "section": "content",
-      "label": "Heading: {cmsText(c?.quote_form?.title, 'Get A Free Quote Now!')}",
-      "type": "text",
-      "value": "{cmsText(c?.quote_form?.title, 'Get A Free Quote Now!')}"
+      "label": "Icon list (fd02c33)",
+      "type": "json",
+      "metadata": {
+        "items": [
+          "Home",
+          "{cmsText(c?.hero?.breadcrumb_parent, 'Services')}",
+          "{cmsText(c?.hero?.breadcrumb_current, 'termite pest control')}"
+        ]
+      }
     },
     {
-      "sort_order": 36,
-      "block_key": "content.heading_fb9a1f0",
-      "section": "content",
-      "label": "Heading: {cmsText(c?.quote_form?.subtitle, 'Have an enquiry? Leave us",
-      "type": "text",
-      "value": "{cmsText(c?.quote_form?.subtitle, 'Have an enquiry? Leave us your details and we’ll call you back during business hours.')}"
-    },
-    {
-      "sort_order": 37,
+      "sort_order": 41,
       "block_key": "content.heading_6501e7d",
       "section": "content",
       "label": "Heading: Termite special",
@@ -446,7 +516,7 @@
       "value": "Termite special"
     },
     {
-      "sort_order": 38,
+      "sort_order": 42,
       "block_key": "content.heading_578d989",
       "section": "content",
       "label": "Heading: Types of Termite Problems We Control",
@@ -454,7 +524,7 @@
       "value": "Types of Termite Problems We Control"
     },
     {
-      "sort_order": 39,
+      "sort_order": 43,
       "block_key": "content.text_f6bb8ec",
       "section": "content",
       "label": "Content block 1",
@@ -462,7 +532,7 @@
       "value": "<p><span >Termites can cause severe damage if not treated early. Our </span><b>termite control Melbourne</b><span > services are designed to handle all types of termite infestations, including:</span></p>"
     },
     {
-      "sort_order": 40,
+      "sort_order": 44,
       "block_key": "content.heading_cee4cbe",
       "section": "content",
       "label": "Heading: why Termite coming",
@@ -470,7 +540,7 @@
       "value": "why Termite coming"
     },
     {
-      "sort_order": 41,
+      "sort_order": 45,
       "block_key": "content.heading_6d22bd0",
       "section": "content",
       "label": "Heading: Why Are Termites Coming Into Your Property?",
@@ -478,7 +548,7 @@
       "value": "Why Are Termites Coming Into Your Property?"
     },
     {
-      "sort_order": 42,
+      "sort_order": 46,
       "block_key": "content.text_59fd6df",
       "section": "content",
       "label": "Content block 2",
@@ -486,7 +556,7 @@
       "value": "<ol><li aria-level={1} ><b>Moisture Around Foundations</b><span > – Damp areas attract termites and accelerate </span><b>termite pest control</b><span > needs</span></li><li aria-level={1} ><b>Wood-to-Soil Contact</b><span > – Direct timber contact allows easy colony access</span></li><li aria-level={1} ><b>Cracks in Walls &amp; Slabs</b><span > – Common entry points that require </span><b>termite inspection Melbourne</b></li><li aria-level={1} ><b>Poor Ventilation</b><span > – Creates ideal breeding conditions for hidden infestations</span></li><li aria-level={1} ><b>No Termite Barrier Installed</b><span > – Properties without a </span><b>termite barrier</b><span > face significantly higher infestation risk</span></li></ol>"
     },
     {
-      "sort_order": 43,
+      "sort_order": 47,
       "block_key": "content.text_2e1c8d0",
       "section": "content",
       "label": "Content block 3",
@@ -494,7 +564,7 @@
       "value": "<p class=\"font-claude-response-body break-words whitespace-normal leading-[1.7]\">If termite activity continues, professional <strong>termite treatment Melbourne</strong> is the safest and most effective solution for long-term <strong>termite control Melbourne</strong> protection — get a free quote today and know your exact <strong>termite treatment cost Melbourne</strong> upfront.</p>"
     },
     {
-      "sort_order": 44,
+      "sort_order": 48,
       "block_key": "content.image_dc6bb88",
       "section": "content",
       "label": "Image (dc6bb88)",
@@ -506,7 +576,7 @@
       }
     },
     {
-      "sort_order": 45,
+      "sort_order": 49,
       "block_key": "content.heading_c204f1d",
       "section": "content",
       "label": "Heading: problems",
@@ -514,7 +584,7 @@
       "value": "problems"
     },
     {
-      "sort_order": 46,
+      "sort_order": 50,
       "block_key": "content.heading_5de8f7d",
       "section": "content",
       "label": "Heading: What Problems Can Termites Cause?",
@@ -522,7 +592,7 @@
       "value": "What Problems Can Termites Cause?"
     },
     {
-      "sort_order": 47,
+      "sort_order": 51,
       "block_key": "content.text_ea758e9",
       "section": "content",
       "label": "Content block 4",
@@ -530,15 +600,7 @@
       "value": "<p>Termites may remain hidden, but the damage they cause can be devastating. Here are the major risks:</p>"
     },
     {
-      "sort_order": 48,
-      "block_key": "content.heading_e47cc08",
-      "section": "content",
-      "label": "Heading: 7. Monitor Signs of Termite Activity",
-      "type": "text",
-      "value": "7. Monitor Signs of Termite Activity"
-    },
-    {
-      "sort_order": 49,
+      "sort_order": 52,
       "block_key": "content.list_acb9541",
       "section": "content",
       "label": "Icon list (acb9541)",
@@ -553,7 +615,7 @@
       }
     },
     {
-      "sort_order": 50,
+      "sort_order": 53,
       "block_key": "content.heading_d5d1b1b",
       "section": "content",
       "label": "Heading: 8. Hire Professional Termite Control Melbourne",
@@ -561,7 +623,7 @@
       "value": "8. Hire Professional Termite Control Melbourne"
     },
     {
-      "sort_order": 51,
+      "sort_order": 54,
       "block_key": "content.text_b50781c",
       "section": "content",
       "label": "Content block 5",
@@ -569,7 +631,7 @@
       "value": "<p><span >If termites persist, professional </span><b>termite control Melbourne</b><span > is the safest solution. Experts provide effective </span><b>termite treatment Melbourne</b><span >, complete </span><b>termite removal Melbourne</b><span >, and long-lasting </span><b>termite barrier</b><span > protection to prevent re-infestation — backed by experienced </span><b>termite pest control Melbourne</b><span > specialists you can trust. We also offer </span><a href=\"/wasp-removal-melbourne\"><b>wasp nest control Melbourne</b></a><span > and other pest management services for complete property protection.</span></p>"
     },
     {
-      "sort_order": 52,
+      "sort_order": 55,
       "block_key": "content.heading_e0495b8",
       "section": "content",
       "label": "Heading: 4. Seal Entry Points",
@@ -577,7 +639,7 @@
       "value": "4. Seal Entry Points"
     },
     {
-      "sort_order": 53,
+      "sort_order": 56,
       "block_key": "content.list_cb3d33f",
       "section": "content",
       "label": "Icon list (cb3d33f)",
@@ -592,7 +654,7 @@
       }
     },
     {
-      "sort_order": 54,
+      "sort_order": 57,
       "block_key": "content.heading_79db49d",
       "section": "content",
       "label": "Heading: 5. Schedule Regular Termite Inspections",
@@ -600,7 +662,7 @@
       "value": "5. Schedule Regular Termite Inspections"
     },
     {
-      "sort_order": 55,
+      "sort_order": 58,
       "block_key": "content.list_a55e290",
       "section": "content",
       "label": "Icon list (a55e290)",
@@ -615,7 +677,7 @@
       }
     },
     {
-      "sort_order": 56,
+      "sort_order": 59,
       "block_key": "content.heading_8d109a3",
       "section": "content",
       "label": "Heading: 6. Remove Termite Food Sources",
@@ -623,7 +685,7 @@
       "value": "6. Remove Termite Food Sources"
     },
     {
-      "sort_order": 57,
+      "sort_order": 60,
       "block_key": "content.list_8c84a46",
       "section": "content",
       "label": "Icon list (8c84a46)",
@@ -638,7 +700,7 @@
       }
     },
     {
-      "sort_order": 58,
+      "sort_order": 61,
       "block_key": "content.heading_3bce987",
       "section": "content",
       "label": "Heading: 1. Reduce Moisture Around Property",
@@ -646,7 +708,7 @@
       "value": "1. Reduce Moisture Around Property"
     },
     {
-      "sort_order": 59,
+      "sort_order": 62,
       "block_key": "content.list_446fbbb",
       "section": "content",
       "label": "Icon list (446fbbb)",
@@ -661,7 +723,7 @@
       }
     },
     {
-      "sort_order": 60,
+      "sort_order": 63,
       "block_key": "content.heading_d668ba4",
       "section": "content",
       "label": "Heading: 2. Install a Termite Barrier",
@@ -669,7 +731,7 @@
       "value": "2. Install a Termite Barrier"
     },
     {
-      "sort_order": 61,
+      "sort_order": 64,
       "block_key": "content.list_a4646d8",
       "section": "content",
       "label": "Icon list (a4646d8)",
@@ -684,7 +746,7 @@
       }
     },
     {
-      "sort_order": 62,
+      "sort_order": 65,
       "block_key": "content.heading_8da92f1",
       "section": "content",
       "label": "Heading: 3. Eliminate Wood-to-Soil Contact",
@@ -692,7 +754,7 @@
       "value": "3. Eliminate Wood-to-Soil Contact"
     },
     {
-      "sort_order": 63,
+      "sort_order": 66,
       "block_key": "content.list_5750a6f",
       "section": "content",
       "label": "Icon list (5750a6f)",
@@ -707,7 +769,7 @@
       }
     },
     {
-      "sort_order": 64,
+      "sort_order": 67,
       "block_key": "content.heading_326f094",
       "section": "content",
       "label": "Heading: protects",
@@ -715,7 +777,7 @@
       "value": "protects"
     },
     {
-      "sort_order": 65,
+      "sort_order": 68,
       "block_key": "content.heading_010327e",
       "section": "content",
       "label": "Heading: How to Prevent Termite Infestations?",
@@ -723,7 +785,7 @@
       "value": "How to Prevent Termite Infestations?"
     },
     {
-      "sort_order": 66,
+      "sort_order": 69,
       "block_key": "content.text_7696069",
       "section": "content",
       "label": "Content block 6",
@@ -731,7 +793,7 @@
       "value": "<p class=\"font-claude-response-body break-words whitespace-normal leading-[1.7]\">Termites are silent destroyers that often remain hidden until significant damage has already occurred. Preventing termite infestations requires proactive steps to reduce moisture, eliminate wood-to-soil contact, and install a proper <strong>termite barrier</strong>. Here are some effective ways to protect your property with professional <strong>termite control Melbourne</strong> solutions — because early <strong>termite management Melbourne</strong> is always better than costly repairs.</p>"
     },
     {
-      "sort_order": 67,
+      "sort_order": 70,
       "block_key": "content.heading_bfd6cde",
       "section": "content",
       "label": "Heading: Frequently Asked Questions",
@@ -739,7 +801,7 @@
       "value": "Frequently Asked Questions"
     },
     {
-      "sort_order": 68,
+      "sort_order": 71,
       "block_key": "content.heading_110e690",
       "section": "content",
       "label": "Heading: Clients Reviews",
@@ -747,23 +809,7 @@
       "value": "Clients Reviews"
     },
     {
-      "sort_order": 69,
-      "block_key": "content.heading_e19f5a7",
-      "section": "content",
-      "label": "Heading: 7 States Pest Control for Reliable Pest Management Solutions",
-      "type": "text",
-      "value": "7 States Pest Control for Reliable Pest Management Solutions"
-    },
-    {
-      "sort_order": 70,
-      "block_key": "content.heading_b16caa1",
-      "section": "content",
-      "label": "Heading: Reviews of Our Pest Control Services",
-      "type": "text",
-      "value": "Reviews of Our Pest Control Services"
-    },
-    {
-      "sort_order": 71,
+      "sort_order": 72,
       "block_key": "content.text_5c76140",
       "section": "content",
       "label": "Content block 7",
@@ -771,7 +817,7 @@
       "value": "<p class=\"elementor-heading-title elementor-size-default\">Based on&nbsp;<strong>45 reviews</strong></p>"
     },
     {
-      "sort_order": 72,
+      "sort_order": 73,
       "block_key": "content.heading_575a21f",
       "section": "content",
       "label": "Heading: Our Latest Article",
@@ -779,7 +825,7 @@
       "value": "Our Latest Article"
     },
     {
-      "sort_order": 73,
+      "sort_order": 74,
       "block_key": "content.heading_2fd4f30",
       "section": "content",
       "label": "Heading: Pest Problems? Here's Why Read Might Be Your Secret Weapon.",
@@ -787,7 +833,7 @@
       "value": "Pest Problems? Here's Why Read Might Be Your Secret Weapon."
     },
     {
-      "sort_order": 74,
+      "sort_order": 75,
       "block_key": "content.heading_eb45e17",
       "section": "content",
       "label": "Heading: Ideas to reality",
@@ -795,7 +841,7 @@
       "value": "Ideas to reality"
     },
     {
-      "sort_order": 75,
+      "sort_order": 76,
       "block_key": "content.heading_0d6851b",
       "section": "content",
       "label": "Heading: Talk to Us Today to Learn More",
@@ -803,7 +849,7 @@
       "value": "Talk to Us Today to Learn More"
     },
     {
-      "sort_order": 76,
+      "sort_order": 77,
       "block_key": "content.text_4852935",
       "section": "content",
       "label": "Content block 8",
@@ -811,7 +857,67 @@
       "value": "<p>Do you have any specific questions about us, our services, or anything related to pest infestation issues? Call us today on&nbsp;<a href=\"tel:+61434660060\">( +61 434 660 060 )</a>&nbsp;or use our contact form to connect with our&nbsp;<b>7 States Pest Control</b>.</p><p class=\"font-claude-response-body break-words whitespace-normal leading-[1.7]\">You can get answers to your questions, get upfront quotes for all your pest control issues, and receive high-quality tailored services. Need help beyond termites? We also provide expert <a class=\"underline underline underline-offset-2 decoration-1 decoration-current/40 hover:decoration-current focus:decoration-current\" href=\"/rodent-control-in-melbourne\">rodent pest control Melbourne</a> to keep your property fully protected.</p>"
     },
     {
-      "sort_order": 77,
+      "sort_order": 78,
+      "block_key": "content.text_432d6d4",
+      "section": "content",
+      "label": "Content block 9",
+      "type": "html",
+      "value": "<h3><b>Why Choose Our Termite Reticulation Refill Service</b></h3><p><span >A termite barrier does not last forever, and skipping maintenance can leave your home exposed without you even realising it. Our </span><b>termite reticulation refill Melbourne</b><span > service ensures your existing protection stays fully active, giving you continuous peace of mind year after year.</span></p><p><span >We start every job with a proper </span><b>termite inspection treatment</b><span >, checking the condition of your reticulation system before any chemical is applied. This is followed by a complete </span><b>termite inspection and treatment</b><span >, so any early signs of activity are addressed alongside the refill itself. You will also receive a detailed </span><b>termite inspection &amp; report</b><span >, outlining exactly what was found and what action was taken, starting from just </span><b>$299</b><span > for a full termite inspection.</span></p><p><span >Our refill process is suited to both common house types in Melbourne. For </span><b>stump houses with subfloor access</b><span >, the focus is on maintaining a strong </span><b>termite chemical barrier</b><span > around the perimeter and subfloor area, ensuring full protection without the need for a reticulation system. For </span><b>concrete slab houses</b><span >, our technicians top up the </span><b>termite chemical barrier</b><span > through the existing </span><b>termite reticulation system installation</b><span > embedded in the slab, ensuring full coverage without any need to break or disturb the concrete. A complete </span><b>termite reticulation system installation</b><span > starts from </span><b>$1999.</b></p><p><span >Whether your home has an older </span><b>termite reticulation system installation</b><span > or a more recent setup, our technicians know how to safely top up the </span><b>termite chemical barrier</b><span > through the existing piping network, without disturbing your landscaping or flooring.</span></p><p><span >Many homeowners delay their </span><b>termite reticulation refill</b><span > simply because they are unsure of the price. We keep our </span><b>termite reticulation system refill cost</b><span > transparent and affordable, with refills starting from just </span><b>$300,</b><span > especially when compared to the expense of repairing termite damage. With our team, you get reliable protection, clear reporting, and fair pricing, all in one visit.</span></p>"
+    },
+    {
+      "sort_order": 79,
+      "block_key": "content.image_4070229",
+      "section": "content",
+      "label": "Image (4070229)",
+      "type": "image",
+      "image_path": "cms/our-services-termite-pest-control/Untitled-design-1_df95d78a.png",
+      "metadata": {
+        "elementor_id": "4070229",
+        "image_src": "/assets/images/Untitled-design-1_df95d78a.png"
+      }
+    },
+    {
+      "sort_order": 80,
+      "block_key": "content.text_2eaba90",
+      "section": "content",
+      "label": "Content block 10",
+      "type": "html",
+      "value": "<h3><b>Termite Treatment Cost: What You Are Paying For</b></h3><p><span >Understanding what you are paying for helps you make an informed decision about protecting your home. Termite treatment costs vary based on property size, accessibility, existing infrastructure, and the type of service required.</span></p><p><span >A </span><b>termite inspection treatment</b><span > starting from </span><b>$299</b><span > covers a full property assessment, checking subfloors, roof voids, and perimeter areas for signs of activity, along with a detailed </span><b>termite inspection &amp; report</b><span > you can refer back to.</span></p><p><span >A </span><b>termite reticulation refill</b><span > starting from </span><b>$300 </b><span >involves topping up the chemical in your existing </span><b>termite reticulation system installation</b><span >, using the embedded piping network. The cost reflects the chemical used, system size, and accessibility of the property.</span></p><p><span >A complete </span><b>termite reticulation system installation</b><span > starting from</span><b> $1999</b><span > is a larger investment, as it involves installing a network of pipes around the perimeter, designed to last for years and make future refills quick and easy.</span></p><p><span >For stump houses, a </span><b>termite chemical barrier</b><span > is applied around the internal and external walls, covering each and every stump to create complete protection from all access points, also starting from </span><b>$1999.</b></p><p><span >If active termites are found during the inspection, we also provide a targeted spot treatment alongside the </span><b>termite chemical barrier</b><span >, ensuring any existing infestation is treated effectively before it spreads further.&nbsp;</span></p><p><span >While these costs may seem significant upfront, they are minor compared to the cost of repairing structural termite damage, which can run into thousands of dollars and affect the safety and value of your property.</span></p><p><span >Prices are indicative and may vary based on property assessment.</span></p>"
+    },
+    {
+      "sort_order": 81,
+      "block_key": "content.image_eba1023",
+      "section": "content",
+      "label": "Image (eba1023)",
+      "type": "image",
+      "image_path": "cms/our-services-termite-pest-control/7states_pest_collage-1024x901_64c6b4cd.jpg",
+      "metadata": {
+        "elementor_id": "eba1023",
+        "image_src": "/assets/images/7states_pest_collage-1024x901_64c6b4cd.jpg"
+      }
+    },
+    {
+      "sort_order": 82,
+      "block_key": "content.text_1a5e132",
+      "section": "content",
+      "label": "Content block 11",
+      "type": "html",
+      "value": "<h2>Comprehensive Termite Protection Services in Melbourne</h2><p class=\"isSelectedEnd\">Protecting your property from termites starts with professional <strong>termite inspection and treatment</strong> services. A thorough <strong>termite inspection &amp; report</strong> helps identify existing infestations, potential risks, and areas vulnerable to termite activity. Whether you’re buying a new property or maintaining your current home, regular <strong>termite inspection treatment</strong> is essential for long-term protection.</p><p>For effective termite prevention, many Melbourne homeowners choose a <strong>termite chemical barrier</strong> or a <strong>termite reticulation system installation</strong>. A reticulation system allows termiticides to be distributed evenly around the property’s perimeter, creating a protective zone against termites. To maintain its effectiveness, regular <strong>termite reticulation refill</strong> services are required. If you’re searching for reliable <strong>termite reticulation refill Melbourne</strong> solutions, professional pest control specialists can ensure your system remains fully operational and compliant with industry standards.</p>"
+    },
+    {
+      "sort_order": 83,
+      "block_key": "content.image_239807c",
+      "section": "content",
+      "label": "Image (239807c)",
+      "type": "image",
+      "image_path": "cms/our-services-termite-pest-control/Untitled-design-2_b65e092b.png",
+      "metadata": {
+        "elementor_id": "239807c",
+        "image_src": "/assets/images/Untitled-design-2_b65e092b.png"
+      }
+    },
+    {
+      "sort_order": 84,
       "block_key": "content.image_controll_5_150x150_2e53f6c6",
       "section": "content",
       "label": "Image: controll-5-150x150_2e53f6c6.png",
@@ -823,7 +929,7 @@
       }
     },
     {
-      "sort_order": 78,
+      "sort_order": 85,
       "block_key": "content.image_controll_4_8dd6b2b1",
       "section": "content",
       "label": "Image: controll-4_8dd6b2b1.png",
@@ -835,7 +941,7 @@
       }
     },
     {
-      "sort_order": 79,
+      "sort_order": 86,
       "block_key": "content.image_controll_1_431ab690",
       "section": "content",
       "label": "Image: controll-1_431ab690.png",
@@ -847,7 +953,7 @@
       }
     },
     {
-      "sort_order": 80,
+      "sort_order": 87,
       "block_key": "content.image_controll_2_9d975649",
       "section": "content",
       "label": "Image: controll-2_9d975649.png",
@@ -859,7 +965,7 @@
       }
     },
     {
-      "sort_order": 81,
+      "sort_order": 88,
       "block_key": "content.image_controll_3_80d72978",
       "section": "content",
       "label": "Image: controll-3_80d72978.png",
@@ -871,7 +977,7 @@
       }
     },
     {
-      "sort_order": 82,
+      "sort_order": 89,
       "block_key": "content.image_whatsapp_image_2026_05_25_at_11_50_58_am_83fa817",
       "section": "content",
       "label": "Image: WhatsApp-Image-2026-05-25-at-11.50.58-AM_83fa8176.jpeg",
@@ -883,7 +989,7 @@
       }
     },
     {
-      "sort_order": 83,
+      "sort_order": 90,
       "block_key": "content.image_whatsapp_image_2026_05_25_at_11_52_11_am_ddd4479",
       "section": "content",
       "label": "Image: WhatsApp-Image-2026-05-25-at-11.52.11-AM_ddd44793.jpeg",
@@ -895,7 +1001,7 @@
       }
     },
     {
-      "sort_order": 84,
+      "sort_order": 91,
       "block_key": "content.image_whatsapp_image_2026_05_25_at_11_53_29_am_6379c2f",
       "section": "content",
       "label": "Image: WhatsApp-Image-2026-05-25-at-11.53.29-AM_6379c2f3.jpeg",

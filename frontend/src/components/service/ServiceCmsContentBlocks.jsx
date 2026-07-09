@@ -1,5 +1,5 @@
 import { useLayoutEffect } from 'react'
-import { cmsMediaUrl } from '../../utils/cmsMedia.js'
+import { cmsMediaUrl, cmsText } from '../../utils/cmsMedia.js'
 
 function patchHeading(widgetId, text) {
   if (!text) return
@@ -71,8 +71,8 @@ function applyContentBlocks(blocks) {
     // Skip duplicate extract blocks and parent wrappers that embed child widgets.
     if (/^content\.(heading|text|image|list)_[a-f0-9]+_\d+$/.test(key)) continue
 
-    if (type === 'heading') patchHeading(widgetId, block.value)
-    else if (type === 'text') patchHtml(widgetId, block.value)
+    if (type === 'heading') patchHeading(widgetId, cmsText(block.value, ''))
+    else if (type === 'text') patchHtml(widgetId, cmsText(block.value, ''))
     else if (type === 'image') patchImage(widgetId, block.image ?? block.image_url, block.metadata?.alt)
     else if (type === 'list') patchList(widgetId, block.metadata?.items)
   }

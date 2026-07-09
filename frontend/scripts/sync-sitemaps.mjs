@@ -8,6 +8,7 @@ const baseUrl = 'https://7statespestcontrol.com.au'
 
 const files = [
   'robots.txt',
+  'llms.txt',
   'sitemap_index.xml',
   'sitemap.xml',
   'post-sitemap.xml',

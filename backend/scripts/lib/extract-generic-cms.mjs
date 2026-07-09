@@ -19,9 +19,25 @@ import {
   slugify,
 } from './service-page-cms-lib.mjs'
 
-function extractHero(jsx, addText, addHtml, skipIds) {
+function cmsTextFallback(jsx, dottedKey) {
+  const escaped = dottedKey.replace(/\./g, '\\?\\.')
+  const match = jsx.match(new RegExp(`cmsText\\(c\\?\\.${escaped},\\s*'((?:\\\\'|[^'])*)'`))
+  return match?.[1]?.replace(/\\'/g, "'")
+}
+
+function extractLiveWidgetHtml(html, widgetId) {
+  const chunk = html.match(new RegExp(`data-id="${widgetId}"[\\s\\S]*?elementor-widget-container">\\s*([\\s\\S]*?)\\s*</div>\\s*</div>`, 'i'))?.[1]
+  return chunk?.trim() ?? ''
+}
+
+function extractHero(jsx, addText, addHtml, skipIds, liveHtml) {
+  const breadcrumbParent = cmsTextFallback(jsx, 'hero.breadcrumb_parent')
+  const breadcrumbCurrent = cmsTextFallback(jsx, 'hero.breadcrumb_current')
+  if (breadcrumbParent) addText('hero.breadcrumb_parent', 'hero', 'Breadcrumb parent', breadcrumbParent)
+  if (breadcrumbCurrent) addText('hero.breadcrumb_current', 'hero', 'Breadcrumb current', breadcrumbCurrent)
+
   const iconWidget = findAllWidgets(jsx).find((w) => w.type === 'icon-list.default')
-  if (iconWidget) {
+  if (iconWidget && !breadcrumbParent && !breadcrumbCurrent) {
     skipIds.add(iconWidget.id)
     const chunk = jsx.match(new RegExp(`data-id="${iconWidget.id}"[\\s\\S]*?<\\/ul>`))?.[0] ?? ''
     const crumbs = [...chunk.matchAll(/elementor-icon-list-text">([^<]+)</g)].map((m) => m[1].trim())
@@ -49,22 +65,44 @@ function extractHero(jsx, addText, addHtml, skipIds) {
     if (level === '1' && !heroH1) heroH1 = { id: w.id, text }
   }
 
-  if (heroH2) {
-    skipIds.add(heroH2.id)
-    addText('hero.title', 'hero', 'Section title', heroH2.text)
+  if (heroH2 || cmsTextFallback(jsx, 'hero.title')) {
+    if (heroH2) skipIds.add(heroH2.id)
+    addText('hero.title', 'hero', 'Section title', cmsTextFallback(jsx, 'hero.title') ?? heroH2?.text)
   }
-  if (heroH1) {
-    skipIds.add(heroH1.id)
-    addText('hero.heading', 'hero', 'Main heading', heroH1.text)
+  if (heroH1 || cmsTextFallback(jsx, 'hero.heading')) {
+    if (heroH1) skipIds.add(heroH1.id)
+    addText('hero.heading', 'hero', 'Main heading', cmsTextFallback(jsx, 'hero.heading') ?? heroH1?.text)
   }
 
+  let introAdded = false
   for (const w of heroWidgets) {
     if (w.type !== 'text-editor.default') continue
+    const usesCmsHtml = jsx.match(new RegExp(`data-id="${w.id}"[\\s\\S]*?<CmsHtml html=\\{c\\?\\.hero\\?\\.intro\\}`))
+    if (usesCmsHtml) {
+      skipIds.add(w.id)
+      const liveIntro = liveHtml ? simplifyHtml(extractLiveWidgetHtml(liveHtml, w.id)) : ''
+      if (liveIntro) {
+        addHtml('hero.intro', 'hero', 'Intro paragraph', liveIntro)
+        introAdded = true
+      }
+      continue
+    }
     const html = extractHtmlAfter(jsx, w.id)
     if (!html || html.length < 30 || html.includes('{c?.') || html.includes('<CmsHtml')) continue
     skipIds.add(w.id)
     addHtml('hero.intro', 'hero', 'Intro paragraph', simplifyHtml(html))
+    introAdded = true
     break
+  }
+  if (!introAdded && liveHtml) {
+    const introWidget = heroWidgets.find((w) => w.type === 'text-editor.default')
+    if (introWidget) {
+      const liveIntro = simplifyHtml(extractLiveWidgetHtml(liveHtml, introWidget.id))
+      if (liveIntro) {
+        skipIds.add(introWidget.id)
+        addHtml('hero.intro', 'hero', 'Intro paragraph', liveIntro)
+      }
+    }
   }
 }
 
@@ -73,19 +111,19 @@ function extractQuoteForm(jsx, addText, skipIds) {
   if (!formWidget) return
   skipIds.add(formWidget.id)
 
+  const titleFromCms = jsx.match(/cmsText\(c\?\.quote_form\?\.title,\s*'([^']*)'/)?.[1]
+  const subtitleFromCms = jsx.match(/cmsText\(c\?\.quote_form\?\.subtitle,\s*'((?:\\'|[^'])*)'/)?.[1]?.replace(/\\'/g, "'")
+  const submitFromCms = jsx.match(/cmsText\(c\?\.quote_form\?\.submit_text,\s*'([^']*)'/)?.[1]
+
   const formIdx = jsx.indexOf(`data-id="${formWidget.id}"`)
   const before = jsx.slice(0, formIdx)
-  const quoteHeadings = [...before.matchAll(/data-widget_type="heading\.default"[\s\S]*?data-id="([^"]+)"[\s\S]*?<h[1-6][^>]*>([^<]+)</g)]
-    .map((m) => ({ id: m[1], text: m[1].replace(/\s+/g, ' ').trim() }))
-    .slice(-4)
-
   const allQuoteHeadings = [...before.matchAll(/data-widget_type="heading\.default"[\s\S]*?data-id="([^"]+)"[\s\S]*?<h[1-6][^>]*>([^<]+)</g)]
-  const title = allQuoteHeadings.find((m) => /quote/i.test(m[2]))?.[2]?.trim() ?? allQuoteHeadings.at(-2)?.[2]?.trim()
-  const subtitle = allQuoteHeadings.find((m) => /enquiry/i.test(m[2]))?.[2]?.trim() ?? allQuoteHeadings.at(-1)?.[2]?.trim()
+  const title = titleFromCms ?? allQuoteHeadings.find((m) => /quote/i.test(m[2]))?.[2]?.trim() ?? allQuoteHeadings.at(-2)?.[2]?.trim()
+  const subtitle = subtitleFromCms ?? allQuoteHeadings.find((m) => /enquiry/i.test(m[2]))?.[2]?.trim() ?? allQuoteHeadings.at(-1)?.[2]?.trim()
 
   addText('quote_form.title', 'quote_form', 'Form heading', title)
   addText('quote_form.subtitle', 'quote_form', 'Form subtitle', subtitle)
-  const submit = jsx.match(new RegExp(`data-id="${formWidget.id}"[\\s\\S]*?elementor-button-text">([^<]+)<`))?.[1]
+  const submit = submitFromCms ?? jsx.match(new RegExp(`data-id="${formWidget.id}"[\\s\\S]*?elementor-button-text">([^<]+)<`))?.[1]
   addText('quote_form.submit_text', 'quote_form', 'Submit button text', submit ?? 'Submit Quote')
 }
 
@@ -200,12 +238,12 @@ function extractContentWidgets(jsx, add, addText, addHtml, cmsPath, skipIds) {
   }
 }
 
-export function extractGenericPage({ slug, title, seo, jsx, css, elementorId }) {
+export function extractGenericPage({ slug, title, seo, jsx, css, elementorId, liveHtml }) {
   const { blocks, add, addText, addHtml, cmsPath } = createBlockCollector(slug)
   const skipIds = new Set()
 
   extractBackgrounds(css, slug, cmsPath, add, {}, { heroAndCtaOnly: false })
-  extractHero(jsx, addText, addHtml, skipIds)
+  extractHero(jsx, addText, addHtml, skipIds, liveHtml)
   extractQuoteForm(jsx, addText, skipIds)
   extractStructuredGenericSections(jsx, css, { add, addText, addHtml, cmsPath, skipIds })
 

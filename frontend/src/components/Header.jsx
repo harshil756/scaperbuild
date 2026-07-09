@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react'
-import { Link } from 'react-router-dom'
+import { Link, useLocation } from 'react-router-dom'
 import { mainNav } from '../config/navigation.js'
 import useMenu from '../hooks/useMenu.js'
 import NavMenu from './NavMenu.jsx'
@@ -11,6 +11,11 @@ export default function Header() {
   const navItems = useMenu('header', mainNav)
   const [mobileOpen, setMobileOpen] = useState(false)
   const [sticky, setSticky] = useState(false)
+  const location = useLocation()
+
+  useEffect(() => {
+    setMobileOpen(false)
+  }, [location.pathname])
 
   useEffect(() => {
     const onScroll = () => setSticky(window.scrollY > 10)
@@ -93,7 +98,8 @@ export default function Header() {
                     <NavMenu
                       items={navItems}
                       mobileOpen={mobileOpen}
-                      onClose={setMobileOpen}
+                      onClose={() => setMobileOpen(false)}
+                      onToggle={() => setMobileOpen((open) => !open)}
                     />
                   </div>
                 </div>

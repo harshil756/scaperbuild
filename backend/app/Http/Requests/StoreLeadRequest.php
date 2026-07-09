@@ -19,7 +19,12 @@ class StoreLeadRequest extends FormRequest
         return [
             'name' => [$isNewsletter ? 'nullable' : 'required', 'string', 'max:255'],
             'email' => ['required', 'email', 'max:255'],
-            'phone' => ['nullable', 'string', 'max:64'],
+            'phone' => [
+                Rule::requiredIf(! $isNewsletter),
+                'nullable',
+                'string',
+                'regex:/^\d{9}$/',
+            ],
             'message' => ['nullable', 'string', 'max:5000'],
             'form_type' => ['required', Rule::in(['quote', 'popup', 'contact', 'newsletter'])],
             'post_id' => ['nullable', 'integer'],
