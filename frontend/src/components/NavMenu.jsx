@@ -8,6 +8,13 @@ function isOffcanvasNav() {
   return window.matchMedia(OFFCANVAS_NAV_QUERY).matches
 }
 
+function getMegaMenuClass(item) {
+  if (item.megaMenuClass) return item.megaMenuClass
+  if (item.label === 'Pest Control Services') return 'services-mega-menu'
+  if (item.label === 'Commercial Pest Control') return 'commercial-mega-menu'
+  return ''
+}
+
 function NavItem({ item, onNavigate }) {
   const [open, setOpen] = useState(false)
 
@@ -37,6 +44,8 @@ function NavItem({ item, onNavigate }) {
     )
   }
 
+  const megaMenuClass = getMegaMenuClass(item)
+
   return (
     <li
       className={`menu-item menu-item-has-children nav-item elementskit-dropdown-has relative_position elementskit-dropdown-menu-default_width elementskit-mobile-builder-content${open ? ' elementskit-dropdown-open' : ''}`}
@@ -60,7 +69,7 @@ function NavItem({ item, onNavigate }) {
         {item.label}
         <i aria-hidden="true" className="icon icon-down-arrow1 elementskit-submenu-indicator" />
       </Link>
-      <ul className={`elementskit-dropdown elementskit-submenu-panel${open ? ' elementskit-dropdown-open' : ''}`}>
+      <ul className={`elementskit-dropdown elementskit-submenu-panel${open ? ' elementskit-dropdown-open' : ''}${megaMenuClass ? ` ${megaMenuClass}` : ''}`}>
         {item.children.map((child) => (
           <li key={child.path} className="menu-item nav-item elementskit-mobile-builder-content">
             <Link className="dropdown-item" to={child.path} onClick={onNavigate}>

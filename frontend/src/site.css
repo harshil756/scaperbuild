@@ -212,4 +212,73 @@
   }
 }
 
+/* Elementor flex rows: keep multi-column layouts side-by-side on tablet+ */
+@media (min-width: 768px) {
+  .elementor .e-con.e-flex.e-parent:has(> .e-con-inner > .e-con.e-child:nth-child(2)) > .e-con-inner {
+    display: flex;
+    flex-direction: var(--flex-direction, row);
+    flex-wrap: nowrap;
+    align-items: stretch;
+  }
+
+  .elementor .e-con.e-flex.e-parent:has(> .e-con-inner > .e-con.e-child:nth-child(2)) > .e-con-inner > .e-con.e-child {
+    flex: 1 1 0;
+    min-width: 0;
+    width: auto !important;
+    max-width: 100%;
+  }
+
+  .elementor .e-con.e-grid.e-parent > .e-con-inner {
+    display: grid !important;
+    grid-template-columns: var(--e-con-grid-template-columns, repeat(2, 1fr));
+    grid-template-rows: var(--e-con-grid-template-rows, auto);
+  }
+}
+
+/* Our Services page — 3 cards per row (old site order) */
+@media (min-width: 768px) {
+  .elementor-7780 .service-pages-grid-inner {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    gap: 20px;
+    align-items: stretch;
+  }
+
+  .elementor-7780 .service-pages-grid-cell {
+    flex: 1 1 0;
+    min-width: 0;
+    width: auto !important;
+  }
+}
+
+@media (max-width: 767px) {
+  .elementor-7780 .service-pages-grid-inner {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+}
+
+/* Desktop nav: multi-column service dropdown (old site menu order) */
+@media (min-width: 1025px) {
+  .ekit-template-content-header .elementskit-dropdown.services-mega-menu {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(240px, 1fr));
+    gap: 0;
+    min-width: 520px;
+    padding: 8px 0;
+  }
+
+  .ekit-template-content-header .elementskit-dropdown.services-mega-menu > li {
+    width: auto;
+  }
+
+  .ekit-template-content-header .elementskit-dropdown.commercial-mega-menu {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(220px, 1fr));
+    min-width: 480px;
+  }
+}
+
 

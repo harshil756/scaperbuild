@@ -1,19 +1,20 @@
+/** Pest Control Services dropdown — exact order from 7statespestcontrol.com.au live menu */
 export const pestControlServices = [
+  { label: 'Termite pest control', path: '/our-services/termite-pest-control' },
+  { label: 'Fox Pest Control', path: '/our-services/fox-pest-control-in-melbourne' },
+  { label: 'Rodent Control In Melbourne', path: '/rodent-control-in-melbourne' },
+  { label: 'Wasp Nest Removal Melbourne', path: '/wasp-removal-melbourne' },
   { label: 'Solar Panel Bird Proofing', path: '/solar-panel-bird-proofing' },
   { label: 'Ant Pest Control', path: '/our-services/ant-pest-control' },
   { label: 'Bed Bug Treatment', path: '/our-services/bed-bug-treatment' },
   { label: 'Cockroach Control', path: '/our-services/cockroach-control' },
   { label: 'Mosquito Pest Control', path: '/our-services/mosquito-pest-control' },
   { label: 'Fly Control', path: '/our-services/fly-control' },
-  { label: 'Fox Pest Control', path: '/our-services/fox-pest-control-in-melbourne' },
   { label: 'Mites control', path: '/our-services/mites-control' },
   { label: 'Moth control', path: '/our-services/moth-control' },
   { label: 'Possum Pest Control', path: '/our-services/possum-pest-control' },
-  { label: 'Rodent Control In Melbourne', path: '/rodent-control-in-melbourne' },
   { label: 'Silverfish Treatment', path: '/our-services/silverfish-treatment' },
   { label: 'Spider Control Treatment', path: '/our-services/spider-control-treatment' },
-  { label: 'Termite pest control', path: '/our-services/termite-pest-control' },
-  { label: 'Wasp Nest Removal Melbourne', path: '/wasp-removal-melbourne' },
   { label: 'End of Lease Pest Control', path: '/our-services/end-of-lease-pest-control' },
 ]
 
@@ -35,16 +36,18 @@ export const mainNav = [
   {
     label: 'Pest Control Services',
     path: '/our-services',
+    megaMenuClass: 'services-mega-menu',
     children: pestControlServices,
   },
   {
     label: 'Our Offices',
-    path: '/melbourne',
+    path: '#',
     children: [{ label: 'Melbourne', path: '/melbourne' }],
   },
   {
     label: 'Commercial Pest Control',
     path: '/commercial-pest-control',
+    megaMenuClass: 'commercial-mega-menu',
     children: commercialServices,
   },
   { label: 'Blog', path: '/blog' },
