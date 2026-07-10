@@ -1,6 +1,7 @@
 import { BrowserRouter, Route, Routes } from 'react-router-dom'
 import { blogPostRoutes } from './blogPostRoutes.jsx'
 import { commercialOfficeRoutes } from './commercialOfficeRoutes.jsx'
+import { locationRoutes } from './locationRoutes.jsx'
 import Layout from './components/Layout.jsx'
 import ScrollToTop from './components/ScrollToTop.jsx'
 import AboutPage from './pages/AboutPage.jsx'
@@ -27,6 +28,9 @@ export default function App() {
             <Route key={path} path={path} element={element} />
           ))}
           {commercialOfficeRoutes.map(({ path, element }) => (
+            <Route key={path} path={path} element={element} />
+          ))}
+          {locationRoutes.map(({ path, element }) => (
             <Route key={path} path={path} element={element} />
           ))}
           {blogPostRoutes.map(({ path, element }) => (

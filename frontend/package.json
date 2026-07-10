@@ -15,6 +15,7 @@
     "convert:commercial": "node scripts/convert-commercial.mjs",
     "convert:blog": "node scripts/convert-blog.mjs",
     "convert:contact": "node scripts/convert-contact.mjs",
+    "convert:location": "node scripts/scrape-and-convert-location.mjs",
     "convert:blog-posts": "node scripts/convert-blog-posts.mjs",
     "fix:links": "node scripts/fix-internal-links.mjs",
     "fix:blog-links": "node scripts/fix-blog-links.mjs",

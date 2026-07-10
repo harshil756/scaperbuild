@@ -24,6 +24,7 @@ function collectAppRoutes() {
     '../src/App.jsx',
     '../src/serviceRoutes.jsx',
     '../src/commercialOfficeRoutes.jsx',
+    '../src/locationRoutes.jsx',
     '../src/blogPostRoutes.jsx',
   ]
   for (const rel of files) {
@@ -57,7 +58,6 @@ const contentUrls = new Set(
     (p) =>
       !p.startsWith('/category/') &&
       !p.startsWith('/author/') &&
-      !p.startsWith('/location') &&
       !p.includes('elementskit_template') &&
       p !== '/404-page',
   ),

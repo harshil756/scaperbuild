@@ -4,7 +4,9 @@ import ElementorPopupModal from './ElementorPopupModal.jsx'
 
 const QuotePopupContext = createContext(null)
 
-const MANUAL_POPUP_HREF = '#elementor-action%3Aaction%3Dpopup%3Aopen%26settings%3DeyJpZCI6Ijc4NDEiLCJ0b2dnbGUiOmZhbHNlfQ%3D%3D'
+export const QUOTE_POPUP_HREF =
+  '#elementor-action%3Aaction%3Dpopup%3Aopen%26settings%3DeyJpZCI6Ijc4NDEiLCJ0b2dnbGUiOmZhbHNlfQ%3D%3D'
+const MANUAL_POPUP_HREF = QUOTE_POPUP_HREF
 const AUTO_OPEN_DELAY_MS = 5000
 const AUTO_CLOSE_DELAY_MS = 5000
 

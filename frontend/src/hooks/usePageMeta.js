@@ -3,6 +3,7 @@ import { BLOG_PAGE_META } from '../config/blogPageMeta.js'
 import { BLOG_POST_PAGE_META } from '../config/blogPostPageMeta.js'
 import { CONTACT_PAGE_META } from '../config/contactPageMeta.js'
 import { COMMERCIAL_OFFICE_PAGE_META } from '../config/commercialOfficePageMeta.js'
+import { LOCATION_PAGE_META } from '../config/locationPageMeta.js'
 import { SERVICE_PAGE_META } from '../config/servicePageMeta.js'
 import { THANK_YOU_PAGE_META } from '../config/thankYouPageMeta.js'
 import { PAGE_SEO_EXTRA } from '../config/pageSeoExtra.js'
@@ -26,6 +27,7 @@ const PAGE_META = {
   },
   ...SERVICE_PAGE_META,
   ...COMMERCIAL_OFFICE_PAGE_META,
+  ...LOCATION_PAGE_META,
   ...BLOG_PAGE_META,
   ...BLOG_POST_PAGE_META,
   ...CONTACT_PAGE_META,
