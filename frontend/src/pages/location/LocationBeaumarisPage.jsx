@@ -11,7 +11,7 @@ export default function LocationBeaumarisPage() {
           <div className="e-con-inner">
             <div className="elementor-element elementor-element-757fb984 elementor-widget elementor-widget-text-editor" data-id="757fb984" data-element_type="widget" data-widget_type="text-editor.default">
               <div className="elementor-widget-container">
-                <h2><b>Pest Control Beaumaris – Trusted Local Experts</b></h2>
+                <h1><b>Pest Control Beaumaris – Trusted Local Experts</b></h1>
                 <p><span style={{fontWeight: 400}}>Welcome to</span><Link to="/"> <b>7 States Pest Control</b></Link><span style={{fontWeight: 400}}>, your go-to solution for complete pest control in </span><b>Beaumaris, VIC</b><span style={{fontWeight: 400}}>. Whether you’re dealing with wasps, rodents, spiders, or a bed bug infestation, our certified technicians are ready to help. We deliver reliable, eco-friendly pest management tailored to the unique needs of suburban homes and businesses in Beaumaris.</span></p>
                 <h2><b>Why Choose 7 States Pest Control in Beaumaris?</b></h2>
                 <p><span style={{fontWeight: 400}}>Beaumaris is a beautiful coastal suburb, but it’s not immune to pest problems. Pests like rodents and spiders often find shelter in garden sheds, roof spaces, and wall cavities. When these pests invade, they pose not only a nuisance but also health risks.</span></p>

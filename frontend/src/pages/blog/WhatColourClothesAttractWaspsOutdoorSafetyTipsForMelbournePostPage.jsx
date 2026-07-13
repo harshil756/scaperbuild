@@ -130,7 +130,7 @@ export default function WhatColourClothesAttractWaspsOutdoorSafetyTipsForMelbour
                 <p><Link to="/home/home.html"><b>7 States Pest Control</b></Link><span style={{fontWeight: 400}}> is a trusted name in Melbourne for reliable and affordable pest management. With years of experience, a local team, and fully licensed technicians, they offer safe and tailored pest control services to homes and businesses across Melbourne.&nbsp;</span></p>
                 <p><span style={{fontWeight: 400}}>Whether you’re dealing with wasps, termites, ants, or rodents, they bring expert solutions and peace of mind.</span></p>
                 <p><span style={{fontWeight: 400}}>If you suspect a nest nearby, don’t wait for the problem to escalate.</span></p>
-                <p><span style={{fontWeight: 400}}>Book professional</span><Link to="/our-services-wasp-nest-removal-melbourne"> <b>Wasp Nest Control in Melbourne</b></Link><span style={{fontWeight: 400}}> with 7 States Pest Control.</span></p>
+                <p><span style={{fontWeight: 400}}>Book professional</span><Link to="/wasp-removal-melbourne"> <b>Wasp Nest Control in Melbourne</b></Link><span style={{fontWeight: 400}}> with 7 States Pest Control.</span></p>
               </div>
             </div>
           </div>

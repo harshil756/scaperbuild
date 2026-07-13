@@ -11,7 +11,7 @@ export default function LocationDandenongPage() {
           <div className="e-con-inner">
             <div className="elementor-element elementor-element-757fb984 elementor-widget elementor-widget-text-editor" data-id="757fb984" data-element_type="widget" data-widget_type="text-editor.default">
               <div className="elementor-widget-container">
-                <h2><b>Pest Control Services in Dandenong</b></h2>
+                <h1><b>Pest Control Services in Dandenong</b></h1>
                 <p><span style={{fontWeight: 400}}>Are you looking for reliable, affordable pest control services in Dandenong? At </span><Link to="/"><b>7 States Pest Control</b><span style={{fontWeight: 400}}>,</span></Link><span style={{fontWeight: 400}}> we understand how stressful and overwhelming a pest infestation can be — whether in your home or business. Pests such as ants, termites, rodents, bed bugs, cockroaches, spiders, and wasps can quickly multiply, damage property, or pose health hazards if not addressed promptly.</span></p>
                 <p><span style={{fontWeight: 400}}>Whether you’re dealing with a sudden infestation or seeking ongoing prevention, our experienced pest-control team delivers </span><b>tailored, effective solutions</b><span style={{fontWeight: 400}}> to ensure a clean, safe, and pest-free environment.</span></p>
                 <h2><b>Why Choose 7 States Pest Control in Dandenong?</b></h2>

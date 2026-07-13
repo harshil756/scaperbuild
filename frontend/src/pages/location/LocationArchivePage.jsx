@@ -14,7 +14,7 @@ export default function LocationArchivePage() {
               <div className="elementor-widget-wrap elementor-element-populated">
                 <div className="elementor-element elementor-element-5ddc84d elementor-invisible elementor-widget elementor-widget-heading" data-id="5ddc84d" data-element_type="widget" data-settings="{&quot;_animation&quot;:&quot;fadeInDown&quot;}" data-widget_type="heading.default">
                   <div className="elementor-widget-container">
-                    <h2 className="elementor-heading-title elementor-size-default">Locations</h2>				</div>
+                    <h1 className="elementor-heading-title elementor-size-default">Locations</h1>				</div>
                 </div>
                 <div className="elementor-element elementor-element-d68400a elementor-icon-list--layout-inline elementor-align-center elementor-widget__width-auto elementor-list-item-link-full_width elementor-invisible elementor-widget elementor-widget-icon-list" data-id="d68400a" data-element_type="widget" data-settings="{&quot;_animation&quot;:&quot;fadeInDown&quot;,&quot;_animation_delay&quot;:720}" data-widget_type="icon-list.default">
                   <div className="elementor-widget-container">

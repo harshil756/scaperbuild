@@ -51,7 +51,7 @@ export default function LocationRichmondPage() {
                     <p>Cockroaches are one of the most stubborn pests in Richmond. They multiply fast, contaminate food, and carry germs harmful to health. Our cockroach control services attack infestations at the source and help prevent future outbreaks.</p>
                     <h4><b>Wasp Removal in Richmond</b></h4>
                     <p>Wasps can be aggressive, especially when they feel threatened. Their stings are painful and can pose serious risks. Our 
-                      <Link to="/our-services-wasp-nest-removal-melbourne"><b>wasp exterminator in Richmond</b></Link> safely removes nests and applies preventative treatments so your property stays safe.</p>
+                      <Link to="/wasp-removal-melbourne"><b>wasp exterminator in Richmond</b></Link> safely removes nests and applies preventative treatments so your property stays safe.</p>
                     <h4><b>Long-Term Benefits of Professional Pest Control</b></h4>
                     <ul>
                       <li>Protection from costly property damage</li>

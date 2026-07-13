@@ -11,7 +11,7 @@ export default function LocationFootscrayPage() {
           <div className="e-con-inner">
             <div className="elementor-element elementor-element-757fb984 elementor-widget elementor-widget-text-editor" data-id="757fb984" data-element_type="widget" data-widget_type="text-editor.default">
               <div className="elementor-widget-container">
-                <h2><b>Pest Control Services in Footscray</b></h2>
+                <h1><b>Pest Control Services in Footscray</b></h1>
                 <p><span style={{fontWeight: 400}}>Are you searching for reliable and affordable pest control services in </span><b>Footscray</b><span style={{fontWeight: 400}}>? At </span><Link to="/"><b>7 States Pest Control</b><span style={{fontWeight: 400}}>,</span></Link><span style={{fontWeight: 400}}> we understand how frustrating and stressful it can be to deal with unwanted pests in your home or business.</span></p>
                 <p><span style={{fontWeight: 400}}>From tiny ants and cockroaches to destructive termites, rodents, and even bed bugs, pests can quickly disrupt your peace of mind and cause serious property damage if not addressed on time. That’s why our mission is simple — to create a safe, clean, and pest-free environment for you, your family, and your customers.</span></p>
                 <p><span style={{fontWeight: 400}}>With years of experience in the industry, our professional pest control team offers tailor-made solutions for every situation. Whether you are facing a sudden infestation or want to safeguard your property with preventative measures, we’ve got you covered.</span></p>
@@ -51,7 +51,7 @@ export default function LocationFootscrayPage() {
                     <p>Cockroaches are among the most common and persistent pests in Footscray. They breed quickly, contaminate food, and carry harmful bacteria that can affect your health. Our cockroach control services target infestations at the source, ensuring complete removal and long-term prevention.</p>
                     <h4><b>Wasp Removal in Footscray</b></h4>
                     <p>Wasps can be aggressive, especially when their nests are disturbed. A wasp sting is painful and can even be dangerous for those with allergies. Our 
-                      <Link to="/our-services-wasp-nest-removal-melbourne"><b>wasp exterminator Footscray</b></Link> service provides fast, safe, and effective solutions. We carefully remove nests and apply preventative treatments to ensure wasps don’t return, keeping your property safe for your family, staff, and visitors.</p>
+                      <Link to="/wasp-removal-melbourne"><b>wasp exterminator Footscray</b></Link> service provides fast, safe, and effective solutions. We carefully remove nests and apply preventative treatments to ensure wasps don’t return, keeping your property safe for your family, staff, and visitors.</p>
                     <h4><b>Long-Term Benefits of Professional Pest Control</b></h4>
                     <ul>
                       <li>Protection of your property from costly damage</li>

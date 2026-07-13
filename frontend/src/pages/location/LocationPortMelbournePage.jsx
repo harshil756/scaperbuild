@@ -11,7 +11,7 @@ export default function LocationPortMelbournePage() {
           <div className="e-con-inner">
             <div className="elementor-element elementor-element-757fb984 elementor-widget elementor-widget-text-editor" data-id="757fb984" data-element_type="widget" data-widget_type="text-editor.default">
               <div className="elementor-widget-container">
-                <h2><b>Pest Control Services in Port Melbourne</b></h2>
+                <h1><b>Pest Control Services in Port Melbourne</b></h1>
                 <p><span style={{fontWeight: 400}}>Are you searching for reliable and affordable pest control services in Port Melbourne? At </span><Link to="/"><b>7 States Pest Control,</b></Link><span style={{fontWeight: 400}}> we understand how stressful and frustrating it can be to deal with unwanted pests in your home or business.</span></p>
                 <p><span style={{fontWeight: 400}}>From tiny ants and cockroaches to destructive termites, rodents, and bed bugs, pests can quickly disturb your comfort and damage your property if not treated on time. Our goal is simple — to create a safe, clean, and pest-free environment for you, your family, and your customers.</span></p>
                 <p><span style={{fontWeight: 400}}>With years of experience in the pest control industry, our professional team offers customized solutions for every situation. Whether you’re dealing with a sudden infestation or want to protect your property with preventative treatments, we are here to help.</span></p>
@@ -51,7 +51,7 @@ export default function LocationPortMelbournePage() {
                     <p>Cockroaches are one of the most stubborn pests in Port Melbourne. They multiply fast, contaminate food, and carry harmful germs. Our cockroach control services attack infestations at the source and help prevent future outbreaks.</p>
                     <h4><b>Wasp Removal in Port Melbourne</b></h4>
                     <p>Wasps can be aggressive and dangerous, especially for those with allergies. Our 
-                      <Link to="/our-services-wasp-nest-removal-melbourne"><b>wasp exterminator in Port Melbourne</b></Link> safely removes nests and applies preventative treatments so your property stays safe.</p>
+                      <Link to="/wasp-removal-melbourne"><b>wasp exterminator in Port Melbourne</b></Link> safely removes nests and applies preventative treatments so your property stays safe.</p>
                     <h4><b>Long-Term Benefits of Professional Pest Control</b></h4>
                     <ul>
                       <li>Protection from costly property damage</li>

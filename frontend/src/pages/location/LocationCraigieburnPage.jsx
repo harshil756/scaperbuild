@@ -11,7 +11,7 @@ export default function LocationCraigieburnPage() {
           <div className="e-con-inner">
             <div className="elementor-element elementor-element-757fb984 elementor-widget elementor-widget-text-editor" data-id="757fb984" data-element_type="widget" data-widget_type="text-editor.default">
               <div className="elementor-widget-container">
-                <h2><b>Pest Control Services in Craigieburn</b></h2>
+                <h1><b>Pest Control Services in Craigieburn</b></h1>
                 <p><span style={{fontWeight: 400}}>Are you looking for reliable and affordable pest control services in Craigieburn? At </span><Link to="/"><b>7 States Pest Control</b></Link><span style={{fontWeight: 400}}>, we know how stressful it can be to deal with unwanted pests in your home or business. If left untreated, pests can quickly multiply, cause damage, and create serious health risks.</span></p>
                 <p><span style={{fontWeight: 400}}>From ants and cockroaches to termites, rodents, spiders, wasps, and bed bugs, pests can disrupt your comfort and peace of mind. Our mission is simple — to provide a </span><b>safe, clean, and pest-free environment</b><span style={{fontWeight: 400}}> for Craigieburn residents and businesses.</span></p>
                 <p><span style={{fontWeight: 400}}>With years of industry experience, our skilled pest control professionals deliver </span><b>customised solutions</b><span style={{fontWeight: 400}}> designed to eliminate pests and prevent future infestations. Whether it’s an urgent pest problem or a preventive treatment plan, we are here to help.</span></p>

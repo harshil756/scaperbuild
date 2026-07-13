@@ -1,7 +1,6 @@
 import { Outlet } from 'react-router-dom'
 import Footer from './Footer.jsx'
 import Header from './Header.jsx'
-import MobileStickyQuoteCta from './MobileStickyQuoteCta.jsx'
 import LocationReadMore from './LocationReadMore.jsx'
 import LocationPageReviews from './LocationPageReviews.jsx'
 import QuotePopupProvider from './QuotePopupProvider.jsx'
@@ -20,7 +19,6 @@ export default function Layout() {
         <Outlet />
       </main>
       <Footer />
-      <MobileStickyQuoteCta />
       <LocationReadMore />
       <LocationPageReviews />
       <FormSubmissionHandler />

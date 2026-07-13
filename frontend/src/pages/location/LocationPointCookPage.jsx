@@ -11,7 +11,7 @@ export default function LocationPointCookPage() {
           <div className="e-con-inner">
             <div className="elementor-element elementor-element-757fb984 elementor-widget elementor-widget-text-editor" data-id="757fb984" data-element_type="widget" data-widget_type="text-editor.default">
               <div className="elementor-widget-container">
-                <h2><b>Pest Control Services in Point Cook</b></h2>
+                <h1><b>Pest Control Services in Point Cook</b></h1>
                 <p><span style={{fontWeight: 400}}>Are you searching for reliable and affordable pest control services in Point Cook? At </span><Link to="/"><b>7 States Pest Control</b></Link><span style={{fontWeight: 400}}>, we understand how stressful and frustrating it can be to deal with unwanted pests in your home or business.</span></p>
                 <p><span style={{fontWeight: 400}}>From tiny ants and cockroaches to destructive termites, rodents, and bed bugs, pests can quickly disturb your comfort and damage your property if not treated on time. Our goal is simple — to create a safe, clean, and pest-free environment for you, your family, and your customers.</span></p>
                 <p><span style={{fontWeight: 400}}>With years of experience in the pest control industry, our professional team offers customized solutions for every situation. Whether you’re dealing with a sudden infestation or want to protect your property with preventative treatments, we are here to help.</span></p>
@@ -51,7 +51,7 @@ export default function LocationPointCookPage() {
                     <p>Cockroaches are one of the most stubborn pests in Point Cook. They multiply fast, contaminate food, and carry germs that are harmful to health. Our cockroach control services attack the infestation at its source and help prevent future outbreaks.</p>
                     <h4><b>Wasp Removal in Point Cook</b></h4>
                     <p>Wasps can be aggressive, especially when they feel threatened. Their stings are painful and can pose serious risks to those with allergies. Our 
-                      <Link to="/our-services-wasp-nest-removal-melbourne"><b>wasp exterminator in Point Cook</b></Link> safely removes wasp nests and applies preventative treatments so your property stays safe for family, staff, and visitors.</p>
+                      <Link to="/wasp-removal-melbourne"><b>wasp exterminator in Point Cook</b></Link> safely removes wasp nests and applies preventative treatments so your property stays safe for family, staff, and visitors.</p>
                     <h4><b>Long-Term Benefits of Professional Pest Control</b></h4>
                     <ul>
                       <li>Protection from costly property damage</li>

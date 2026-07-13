@@ -11,7 +11,7 @@ export default function LocationBentleighPage() {
           <div className="e-con-inner">
             <div className="elementor-element elementor-element-757fb984 elementor-widget elementor-widget-text-editor" data-id="757fb984" data-element_type="widget" data-widget_type="text-editor.default">
               <div className="elementor-widget-container">
-                <h2><b>Pest Control Bentleigh – Reliable, Safe and Professional Services</b></h2>
+                <h1><b>Pest Control Bentleigh – Reliable, Safe and Professional Services</b></h1>
                 <p><span style={{fontWeight: 400}}>Pest problems can affect the health, comfort, and safety of your home or business. At </span><Link to="/"><b>7 States Pest Control</b></Link><span style={{fontWeight: 400}}>, we provide high-quality, affordable and efficient </span><b>pest control services in Bentleigh</b><span style={{fontWeight: 400}}>, designed to eliminate pests and prevent them from returning. Whether you are dealing with wasps, rodents, spiders, bed bugs, or other common pests, our licensed technicians offer precise and long-lasting solutions tailored to your property.</span></p>
                 <h3><b>Complete Pest Control Service in Bentleigh</b></h3>
                 <p><span style={{fontWeight: 400}}>We deliver comprehensive pest management for both residential and commercial properties. Our approach focuses on accurate inspection, safe treatment, and long-term prevention.</span></p>

@@ -11,7 +11,7 @@ export default function LocationBrightonPage() {
           <div className="e-con-inner">
             <div className="elementor-element elementor-element-757fb984 elementor-widget elementor-widget-text-editor" data-id="757fb984" data-element_type="widget" data-widget_type="text-editor.default">
               <div className="elementor-widget-container">
-                <h2><b>Pest Control in Brighton — 7 States Pest Control</b></h2>
+                <h1><b>Pest Control in Brighton — 7 States Pest Control</b></h1>
                 <p><span style={{fontWeight: 400}}>When pest problems strike in Brighton, you want a reliable, experienced partner who can deliver prompt, effective, and safe pest control. At </span><Link to="/"><b>7 States Pest Control</b><span style={{fontWeight: 400}}>, </span></Link><span style={{fontWeight: 400}}>we’re proud to offer tailored pest management solutions for homes and businesses across the Brighton area. Whether you’re dealing with wasps, rodents, spiders or bed bugs — we’ve got you covered.</span></p>
                 <h3><b>Why Choose 7 States Pest Control in Brighton</b></h3>
                 <ul>

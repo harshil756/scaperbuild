@@ -1,21 +1,33 @@
-import { useEffect, useState } from 'react'
+import { useEffect, useRef, useState } from 'react'
 import { Link, useLocation } from 'react-router-dom'
 import { mainNav } from '../config/navigation.js'
 import useMenu from '../hooks/useMenu.js'
 import NavMenu from './NavMenu.jsx'
+import { QUOTE_POPUP_HREF } from './QuotePopupProvider.jsx'
 
 const LOGO = '/assets/images/7-states-logo-1.png-1_b6fda841.webp'
 const LOGO_SRCSET = `${LOGO} 344w, /assets/images/7-states-logo-1.png-1-300x92_6c062508.webp 300w`
+const MOBILE_QUERY = '(max-width: 767px)'
 
 export default function Header() {
   const navItems = useMenu('header', mainNav)
   const [mobileOpen, setMobileOpen] = useState(false)
   const [sticky, setSticky] = useState(false)
+  const [isMobile, setIsMobile] = useState(() => window.matchMedia(MOBILE_QUERY).matches)
+  const [barHeight, setBarHeight] = useState(0)
+  const stickyBarRef = useRef(null)
   const location = useLocation()
 
   useEffect(() => {
     setMobileOpen(false)
   }, [location.pathname])
+
+  useEffect(() => {
+    const mediaQuery = window.matchMedia(MOBILE_QUERY)
+    const onChange = () => setIsMobile(mediaQuery.matches)
+    mediaQuery.addEventListener('change', onChange)
+    return () => mediaQuery.removeEventListener('change', onChange)
+  }, [])
 
   useEffect(() => {
     const onScroll = () => setSticky(window.scrollY > 10)
@@ -25,11 +37,30 @@ export default function Header() {
   }, [])
 
   useEffect(() => {
+    const bar = stickyBarRef.current
+    if (!bar) return undefined
+
+    const updateHeight = () => setBarHeight(bar.offsetHeight)
+    updateHeight()
+
+    const resizeObserver = new ResizeObserver(updateHeight)
+    resizeObserver.observe(bar)
+    window.addEventListener('resize', updateHeight)
+
+    return () => {
+      resizeObserver.disconnect()
+      window.removeEventListener('resize', updateHeight)
+    }
+  }, [isMobile])
+
+  useEffect(() => {
     document.body.style.overflow = mobileOpen ? 'hidden' : ''
     return () => {
       document.body.style.overflow = ''
     }
   }, [mobileOpen])
+
+  const stickyActive = sticky || isMobile
 
   return (
     <div className="ekit-template-content-markup ekit-template-content-header ekit-template-content-theme-support">
@@ -40,30 +71,30 @@ export default function Header() {
         data-elementor-type="wp-post"
       >
         <section
-          className={`elementor-section elementor-top-section elementor-element elementor-element-1673af9 elementor-section-content-middle elementor-section-boxed elementor-section-height-default elementor-sticky${sticky ? ' elementor-sticky--active elementor-sticky--effects' : ''}`}
+          ref={stickyBarRef}
+          className={`elementor-section elementor-top-section elementor-element elementor-element-1673af9 elementor-section-content-middle elementor-section-boxed elementor-section-height-default elementor-sticky${stickyActive ? ' elementor-sticky--active elementor-sticky--effects' : ''}`}
           data-element_type="section"
           data-id="1673af9"
         >
-          <div className="elementor-container elementor-column-gap-no">
-            <div className="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-064086c">
-              <div className="elementor-widget-wrap elementor-element-populated">
-                <div className="elementor-element elementor-element-38e4785 elementor-icon-list--layout-inline elementor-mobile-align-center elementor-align-center elementor-list-item-link-full_width elementor-widget elementor-widget-icon-list">
-                  <div className="elementor-widget-container">
-                    <ul className="elementor-icon-list-items elementor-inline-items">
-                      <li className="elementor-icon-list-item elementor-inline-item">
-                        <a href="tel:+61434660060">
-                          <span className="elementor-icon-list-text">
-                            Same-Day Pest Control Available – Call +61 434 660 060
-                          </span>
-                        </a>
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-            </div>
+          <div className="header-sticky-bar">
+            <a className="header-sticky-bar__call" href="tel:+61434660060">
+              <span className="header-sticky-bar__call-title">Same-Day Pest Control Available</span>
+              <span className="header-sticky-bar__call-number">
+                <i aria-hidden="true" className="icon icon-phone1" />
+                Call +61 434 660 060
+              </span>
+            </a>
+            <a className="header-sticky-bar__quote" href={QUOTE_POPUP_HREF}>
+              <i aria-hidden="true" className="icon icon-phone1" />
+              <span>Request A Quote</span>
+            </a>
           </div>
         </section>
+        <div
+          aria-hidden="true"
+          className="header-sticky-bar-spacer"
+          style={isMobile || sticky ? { height: barHeight } : undefined}
+        />
 
         <section
           className="elementor-section elementor-top-section elementor-element elementor-element-31eb5e5 elementor-section-content-middle elementor-section-boxed elementor-section-height-default site-main-nav"
@@ -113,7 +144,7 @@ export default function Header() {
                     <div className="elementor-button-wrapper">
                       <a
                         className="elementor-button elementor-button-link elementor-size-sm"
-                        href="#elementor-action%3Aaction%3Dpopup%3Aopen%26settings%3DeyJpZCI6Ijc4NDEiLCJ0b2dnbGUiOmZhbHNlfQ%3D%3D"
+                        href={QUOTE_POPUP_HREF}
                       >
                         <span className="elementor-button-content-wrapper">
                           <span className="elementor-button-icon">

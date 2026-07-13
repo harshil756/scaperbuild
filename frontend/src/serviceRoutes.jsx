@@ -57,6 +57,7 @@ const legacyRedirects = [
   ['our-services-spider-control-treatment', '/our-services/spider-control-treatment'],
   ['our-services-termite-pest-control', '/our-services/termite-pest-control'],
   ['our-services-end-of-lease-pest-control', '/our-services/end-of-lease-pest-control'],
+  ['our-services-wasp-nest-removal-melbourne', '/wasp-removal-melbourne'],
   ['flea-treatment', '/our-services/flea-treatment'],
 ].map(([from, to]) => ({
   path: from,

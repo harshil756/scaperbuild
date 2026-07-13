@@ -11,7 +11,7 @@ export default function LocationCranbournePage() {
           <div className="e-con-inner">
             <div className="elementor-element elementor-element-757fb984 elementor-widget elementor-widget-text-editor" data-id="757fb984" data-element_type="widget" data-widget_type="text-editor.default">
               <div className="elementor-widget-container">
-                <h2><b>Pest Control Services in Cranbourne</b></h2>
+                <h1><b>Pest Control Services in Cranbourne</b></h1>
                 <p><span style={{fontWeight: 400}}>Are you looking for dependable and affordable pest control services in Cranbourne? At </span><Link to="/"><b>7 States Pest Control</b><span style={{fontWeight: 400}}>,</span></Link><span style={{fontWeight: 400}}> we know how stressful it can be to deal with unwanted pests — whether in your home or your business premises. Pests like ants, termites, rodents, bed bugs, cockroaches, spiders, and wasps can quickly multiply, spread disease or damage property when left unchecked.</span></p>
                 <p><span style={{fontWeight: 400}}>Whether it’s a sudden infestation or a preventive treatment you need, our experienced pest-control team delivers </span><b>tailored, effective solutions</b><span style={{fontWeight: 400}}> designed to restore and maintain a safe, clean, pest-free environment.</span></p>
                 <h2>&nbsp;</h2>

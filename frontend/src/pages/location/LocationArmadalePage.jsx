@@ -11,7 +11,7 @@ export default function LocationArmadalePage() {
           <div className="e-con-inner">
             <div className="elementor-element elementor-element-757fb984 elementor-widget elementor-widget-text-editor" data-id="757fb984" data-element_type="widget" data-widget_type="text-editor.default">
               <div className="elementor-widget-container">
-                <h2><b>Pest Control Services in Armadale</b></h2>
+                <h1><b>Pest Control Services in Armadale</b></h1>
                 <p><span style={{fontWeight: 400}}>Are you looking for </span><b>trusted and affordable pest control services in Armadale</b><span style={{fontWeight: 400}}>? At </span><Link to="/"><b>7 States Pest Control</b><span style={{fontWeight: 400}}>,</span></Link><span style={{fontWeight: 400}}> we know how stressful and disruptive pest problems can be for both homeowners and businesses. From ants and cockroaches creeping into your kitchen to termites silently damaging your property or rodents spreading disease, pests can quickly cause health risks and expensive damage if not controlled on time.</span></p>
                 <p><span style={{fontWeight: 400}}>That’s why our mission is clear: to create a safe, hygienic, and pest-free environment for our clients across Armadale.</span></p>
                 <h3><b>Why Choose 7 States Pest Control in Armadale?</b></h3>
@@ -46,7 +46,7 @@ export default function LocationArmadalePage() {
                     <h4><b>Cockroach Removal</b></h4>
                     <p>Cockroaches are among the most persistent pests in Armadale. They reproduce rapidly, contaminate food, and spread harmful bacteria that can cause illnesses. Our cockroach control services target infestations at their source, ensuring complete elimination and preventing future outbreaks. We use safe and effective methods that deliver lasting results.</p>
                     <h4><b>Wasp Removal in Armadale</b></h4>
-                    <p>Wasps can be aggressive, especially when their nests are disturbed. A wasp sting is painful and can even be dangerous for those with allergies. Our <Link to="/our-services-wasp-nest-removal-melbourne"><b>wasp removal in Armadale</b></Link> provides fast, safe, and effective solutions. We carefully remove nests and apply preventative treatments to ensure wasps don’t return, keeping your property safe for your family, staff, and visitors.</p>
+                    <p>Wasps can be aggressive, especially when their nests are disturbed. A wasp sting is painful and can even be dangerous for those with allergies. Our <Link to="/wasp-removal-melbourne"><b>wasp removal in Armadale</b></Link> provides fast, safe, and effective solutions. We carefully remove nests and apply preventative treatments to ensure wasps don’t return, keeping your property safe for your family, staff, and visitors.</p>
                     <h4><b>Benefits of Professional Pest Control in Armadale</b></h4>
                     <ul>
                       <li>Protection from costly property damage</li>

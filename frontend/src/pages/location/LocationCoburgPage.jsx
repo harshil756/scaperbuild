@@ -11,7 +11,7 @@ export default function LocationCoburgPage() {
           <div className="e-con-inner">
             <div className="elementor-element elementor-element-757fb984 elementor-widget elementor-widget-text-editor" data-id="757fb984" data-element_type="widget" data-widget_type="text-editor.default">
               <div className="elementor-widget-container">
-                <h2><b>Pest Control Services in Coburg</b></h2>
+                <h1><b>Pest Control Services in Coburg</b></h1>
                 <p><span style={{fontWeight: 400}}>Are you searching for reliable and affordable pest control services in Coburg? At </span><Link to="/"><b>7 States Pest Control,</b></Link><span style={{fontWeight: 400}}> we understand how stressful and frustrating it can be to deal with unwanted pests in your home or business.</span><span style={{fontWeight: 400}}><br /></span><span style={{fontWeight: 400}}> From tiny ants and cockroaches to destructive termites, rodents, and bed bugs, pests can quickly disturb your comfort and damage your property if not treated on time. Our goal is simple — to create a safe, clean, and pest-free environment for you, your family, and your customers.</span></p>
                 <p><span style={{fontWeight: 400}}>With years of experience in the pest control industry, our professional team offers customised solutions for every situation. Whether you’re dealing with a sudden infestation or want to protect your property with preventative treatments, we are here to help.</span></p>
                 <h2><b>Why Choose 7 States Pest Control in Coburg?</b></h2>

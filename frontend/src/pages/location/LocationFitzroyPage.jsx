@@ -11,7 +11,7 @@ export default function LocationFitzroyPage() {
           <div className="e-con-inner">
             <div className="elementor-element elementor-element-757fb984 elementor-widget elementor-widget-text-editor" data-id="757fb984" data-element_type="widget" data-widget_type="text-editor.default">
               <div className="elementor-widget-container">
-                <h2><b>Pest Control Services in Fitzroy</b></h2>
+                <h1><b>Pest Control Services in Fitzroy</b></h1>
                 <p><span style={{fontWeight: 400}}>Are you searching for reliable and affordable pest control services in </span><b>Fitzroy</b><span style={{fontWeight: 400}}>? At </span><Link to="/"><b>7 States Pest Control</b></Link><span style={{fontWeight: 400}}>, we understand how frustrating and stressful it can be to deal with unwanted pests in your home or business.</span></p>
                 <p><span style={{fontWeight: 400}}>From tiny ants and cockroaches to destructive termites, rodents, and even bed bugs, pests can quickly disrupt your peace of mind and cause serious property damage if not addressed on time. That’s why our mission is simple — to create a safe, clean, and pest-free environment for you, your family, and your customers.</span></p>
                 <p><span style={{fontWeight: 400}}>With years of experience in the industry, our professional pest control team offers tailor-made solutions for every situation. Whether you are facing a sudden infestation or want to safeguard your property with preventative measures, we’ve got you covered.</span></p>
@@ -51,7 +51,7 @@ export default function LocationFitzroyPage() {
                     <p>Cockroaches are among the most common and persistent pests in Fitzroy. They multiply rapidly, contaminate food, and spread harmful bacteria. Our cockroach control services remove infestations at the source and help prevent future outbreaks.</p>
                     <h4><b>Wasp Removal in Fitzroy</b></h4>
                     <p>Wasps can be aggressive, especially when their nests are disturbed. Our 
-                      <Link to="/our-services-wasp-nest-removal-melbourne"><b>wasp removal in Fitzroy</b></Link> services safely remove nests and apply preventative treatments to protect your family, staff, and visitors.</p>
+                      <Link to="/wasp-removal-melbourne"><b>wasp removal in Fitzroy</b></Link> services safely remove nests and apply preventative treatments to protect your family, staff, and visitors.</p>
                     <h4><b>Long-Term Benefits of Professional Pest Control</b></h4>
                     <ul>
                       <li>Protection of your property from costly damage</li>
