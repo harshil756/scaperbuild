@@ -5,15 +5,16 @@ namespace App\Http\Controllers\Api;
 use App\Http\Controllers\Controller;
 use App\Http\Requests\StoreLeadRequest;
 use App\Models\Lead;
+use App\Services\LeadMailService;
 use Illuminate\Http\JsonResponse;
 
 class LeadController extends Controller
 {
-    public function store(StoreLeadRequest $request): JsonResponse
+    public function store(StoreLeadRequest $request, LeadMailService $leadMail): JsonResponse
     {
         $validated = $request->validated();
 
-        Lead::create([
+        $lead = Lead::create([
             'form_type' => $validated['form_type'],
             'status' => Lead::STATUS_NEW,
             'name' => $validated['name'] ?? null,
@@ -27,6 +28,8 @@ class LeadController extends Controller
             'ip_address' => $request->ip(),
             'user_agent' => $request->userAgent(),
         ]);
+
+        $leadMail->sendFor($lead);
 
         return response()->json([
             'success' => true,
