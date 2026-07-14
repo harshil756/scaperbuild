@@ -49,6 +49,11 @@ class LeadAdminNotification extends Mailable
      */
     private function sharedViewData(): array
     {
+        $submittedAt = ($this->lead->created_at ?? now())->timezone('Australia/Melbourne');
+        $siteUrl = rtrim((string) config('contact.site_url'), '/');
+        $path = $this->lead->source_page ?: '/';
+        $pageUrl = $siteUrl.(str_starts_with($path, '/') ? $path : '/'.$path);
+
         return [
             'lead' => $this->lead,
             'displayName' => $this->displayName(),
@@ -59,8 +64,11 @@ class LeadAdminNotification extends Mailable
                 'popup' => 'Popup quote request',
                 default => 'Quote request',
             },
-            'siteUrl' => config('contact.site_url'),
+            'siteUrl' => $siteUrl,
             'phone' => config('contact.phone'),
+            'metaDate' => $submittedAt->format('F j, Y'),
+            'metaTime' => $submittedAt->format('g:i a'),
+            'pageUrl' => $pageUrl,
         ];
     }
 

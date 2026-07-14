@@ -45,22 +45,12 @@
                                 <td style="padding:10px 0;border-bottom:1px solid #e5e7eb;color:#6b7280;vertical-align:top;">Form type</td>
                                 <td style="padding:10px 0;border-bottom:1px solid #e5e7eb;">{{ $typeLabel }}</td>
                             </tr>
-                            @if($lead->source_page)
-                            <tr>
-                                <td style="padding:10px 0;border-bottom:1px solid #e5e7eb;color:#6b7280;vertical-align:top;">Source page</td>
-                                <td style="padding:10px 0;border-bottom:1px solid #e5e7eb;">{{ $lead->source_page }}</td>
-                            </tr>
-                            @endif
                             @if($lead->referer_title)
                             <tr>
                                 <td style="padding:10px 0;border-bottom:1px solid #e5e7eb;color:#6b7280;vertical-align:top;">Page title</td>
                                 <td style="padding:10px 0;border-bottom:1px solid #e5e7eb;">{{ $lead->referer_title }}</td>
                             </tr>
                             @endif
-                            <tr>
-                                <td style="padding:10px 0;border-bottom:1px solid #e5e7eb;color:#6b7280;vertical-align:top;">Submitted</td>
-                                <td style="padding:10px 0;border-bottom:1px solid #e5e7eb;">{{ $lead->created_at?->timezone(config('app.timezone'))->format('d M Y, g:ia') }}</td>
-                            </tr>
                             @if($lead->message)
                             <tr>
                                 <td style="padding:10px 0;color:#6b7280;vertical-align:top;">Message</td>
@@ -72,6 +62,16 @@
                         <p style="margin:24px 0 0;font-size:13px;color:#6b7280;">
                             Reply directly to this email to contact the customer.
                         </p>
+
+                        {{-- Matches old Elementor form notification footer --}}
+                        <div style="margin:28px 0 0;padding-top:16px;border-top:1px solid #e5e7eb;font-size:13px;line-height:1.7;color:#6b7280;">
+                            <p style="margin:0;"><strong style="color:#374151;">Date:</strong> {{ $metaDate }}</p>
+                            <p style="margin:0;"><strong style="color:#374151;">Time:</strong> {{ $metaTime }}</p>
+                            <p style="margin:0;"><strong style="color:#374151;">Page URL:</strong> <a href="{{ $pageUrl }}" style="color:#0f5132;text-decoration:none;word-break:break-all;">{{ $pageUrl }}</a></p>
+                            <p style="margin:0;"><strong style="color:#374151;">User Agent:</strong> {{ $lead->user_agent ?: '—' }}</p>
+                            <p style="margin:0;"><strong style="color:#374151;">Remote IP:</strong> {{ $lead->ip_address ?: '—' }}</p>
+                            <p style="margin:0;"><strong style="color:#374151;">Powered by:</strong> Elementor</p>
+                        </div>
                     </td>
                 </tr>
                 <tr>
