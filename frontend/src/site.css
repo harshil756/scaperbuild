@@ -487,4 +487,217 @@
   }
 }
 
+/* Commercial Pest Control landing — no Elementor post-694 CSS in assets */
+.elementor-694 .elementor-element-d694001 {
+  --display: flex;
+  --flex-direction: row;
+  --gap: 20px;
+  --overlay-opacity: 0.8;
+  --padding-top: 40px;
+  --padding-bottom: 40px;
+  background-image: url('/assets/images/people-disinfecting-biohazard-area-2048x1365-1_b73d3038.jpg');
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+.elementor-694 .elementor-element-d694001::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background-color: var(--e-global-color-primary, #1a1a4e);
+  opacity: var(--overlay-opacity, 0.8);
+  pointer-events: none;
+  z-index: 0;
+}
+
+.elementor-694 .elementor-element-d694001 > .e-con-inner {
+  position: relative;
+  z-index: 1;
+  gap: 20px;
+}
+
+.elementor-694 .elementor-element-d694010 {
+  --width: 55%;
+  color: #fff;
+}
+
+.elementor-694 .elementor-element-d694010 .elementor-heading-title,
+.elementor-694 .elementor-element-d694010 .elementor-icon-list-text,
+.elementor-694 .elementor-element-d694010 .elementor-widget-text-editor,
+.elementor-694 .elementor-element-d694010 .elementor-widget-text-editor p {
+  color: #fff;
+}
+
+.elementor-694 .elementor-element-d694012 .elementor-heading-title {
+  font-size: 18px;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+
+.elementor-694 .elementor-element-d694013 .elementor-heading-title {
+  font-size: clamp(28px, 3vw, 40px);
+  line-height: 1.2;
+  margin: 0.25em 0 0.5em;
+}
+
+.elementor-694 .elementor-element-d694015 {
+  --width: 45%;
+  --display: flex;
+  --justify-content: center;
+  --padding-top: 40px;
+  --padding-bottom: 40px;
+  --padding-left: 40px;
+  --padding-right: 40px;
+  background-color: #ffffffc4;
+  border-radius: 4px;
+}
+
+.elementor-694 .elementor-element-d694016 {
+  text-align: center;
+}
+
+.elementor-694 .elementor-element-d694016 .elementor-heading-title {
+  color: var(--e-global-color-secondary, #1a1a4e);
+}
+
+.elementor-694 .elementor-element-d694017 {
+  text-align: center;
+}
+
+.elementor-694 .elementor-element-d694017 .elementor-heading-title {
+  font-size: 14px;
+  color: var(--e-global-color-secondary, #1a1a4e);
+}
+
+.elementor-694 .elementor-element-d694018 .elementor-field-group {
+  margin-bottom: 15px;
+}
+
+.elementor-694 .elementor-element-d694018 .e-form__buttons {
+  margin-top: 0;
+}
+
+.elementor-694 .elementor-element-d694018 .elementor-button {
+  width: 100%;
+}
+
+.elementor-694 .elementor-element-d694020,
+.elementor-694 .elementor-element-d694021,
+.elementor-694 .elementor-element-d694022,
+.elementor-694 .elementor-element-d694030,
+.elementor-694 .elementor-element-d694031,
+.elementor-694 .elementor-element-d694032 {
+  text-align: center;
+}
+
+.elementor-694 .elementor-element-d694020 .elementor-heading-title,
+.elementor-694 .elementor-element-d694030 .elementor-heading-title {
+  color: var(--e-global-color-accent, #f15a29);
+  text-transform: uppercase;
+  font-size: 16px;
+}
+
+.elementor-694 .elementor-element-d694021 .elementor-heading-title,
+.elementor-694 .elementor-element-d694031 .elementor-heading-title {
+  color: var(--e-global-color-secondary, #1a1a4e);
+  font-size: clamp(24px, 2.5vw, 36px);
+}
+
+.elementor-694 .elementor-element-d694033 {
+  text-align: center;
+}
+
+.elementor-694 .elementor-element-d694023 {
+  --display: grid;
+  --flex-direction: row;
+  --e-con-grid-template-columns: repeat(4, minmax(0, 1fr));
+  width: 100%;
+  margin: 30px 0 10px;
+}
+
+.elementor-694 .elementor-element-d694023.e-con.e-flex > .e-con-inner.commercial-service-grid-inner,
+.elementor-694 .commercial-service-grid-inner {
+  display: grid !important;
+  grid-template-columns: repeat(4, minmax(0, 1fr)) !important;
+  gap: 24px !important;
+  width: 100% !important;
+  flex-direction: unset !important;
+  flex-wrap: unset !important;
+}
+
+.elementor-694 .commercial-service-grid-cell {
+  min-width: 0;
+  width: 100% !important;
+  max-width: 100% !important;
+  flex: unset !important;
+}
+
+.elementor-694 .commercial-service-grid-cell .elementskit-infobox {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.elementor-694 .commercial-service-grid-cell .box-body {
+  display: flex;
+  flex-direction: column;
+  flex: 1 1 auto;
+}
+
+.elementor-694 .commercial-service-grid-cell .box-footer {
+  margin-top: auto;
+}
+
+.elementor-694 .commercial-service-grid-cell .elementskit-info-box-icon img {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 4px;
+}
+
+.elementor-694 .elementor-element-d694002 {
+  padding: 60px 0;
+  background-color: #f7f7f9 !important;
+  background-image: none !important;
+  background-size: auto !important;
+  position: relative;
+}
+
+.elementor-694 .elementor-element-d694002 .elementor-widget-wrap,
+.elementor-694 .elementor-element-d694002 .elementor-element {
+  position: relative;
+  z-index: 1;
+}
+
+@media (max-width: 1024px) {
+  .elementor-694 .elementor-element-d694023.e-con.e-flex > .e-con-inner.commercial-service-grid-inner,
+  .elementor-694 .commercial-service-grid-inner {
+    grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+  }
+}
+
+@media (max-width: 767px) {
+  .elementor-694 .elementor-element-d694001 > .e-con-inner {
+    flex-direction: column !important;
+  }
+
+  .elementor-694 .elementor-element-d694010,
+  .elementor-694 .elementor-element-d694015 {
+    --width: 100%;
+    width: 100% !important;
+  }
+
+  .elementor-694 .elementor-element-d694015 {
+    --padding-left: 20px;
+    --padding-right: 20px;
+  }
+
+  .elementor-694 .elementor-element-d694023.e-con.e-flex > .e-con-inner.commercial-service-grid-inner,
+  .elementor-694 .commercial-service-grid-inner {
+    grid-template-columns: 1fr !important;
+  }
+}
+
 

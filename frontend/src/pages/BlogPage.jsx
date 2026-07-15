@@ -40,7 +40,7 @@ export default function BlogPage() {
         </section>
         <section className="elementor-section elementor-top-section elementor-element elementor-element-b1a52cf elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-element_type="section" data-id="b1a52cf" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
           <div className="elementor-container elementor-column-gap-default">
-            <div className="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-0751171" data-element_type="column" data-id={0751171} data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+            <div className="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-0751171" data-element_type="column" data-id="0751171" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
               <div className="elementor-widget-wrap elementor-element-populated">
                 <BlogPostsList />
               </div>

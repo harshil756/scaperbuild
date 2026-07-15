@@ -11,6 +11,11 @@ export default function AboutPage() {
   const { page, content: c } = usePageCms('about-us')
   usePageMeta('about', page)
   const processStep = (slug) => c?.process?.steps?.find((step) => step.slug === slug)
+  const rawFindServicesUrl = cmsText(c?.hero?.button_url, '/our-services')
+  const findServicesUrl =
+    rawFindServicesUrl === '/pest-control-services' || rawFindServicesUrl === '/pest-control-services/'
+      ? '/our-services'
+      : rawFindServicesUrl
 
   return (
     <>
@@ -83,7 +88,7 @@ export default function AboutPage() {
               <div className="elementor-element elementor-element-d399c22 elementor-align-left elementor-tablet-align-left elementor-widget elementor-widget-button" data-element_type="widget" data-id="d399c22" data-widget_type="button.default">
                 <div className="elementor-widget-container">
                   <div className="elementor-button-wrapper">
-                    <Link className="elementor-button elementor-button-link elementor-size-sm" to={cmsText(c?.hero?.button_url, '/pest-control-services')}>
+                    <Link className="elementor-button elementor-button-link elementor-size-sm" to={findServicesUrl}>
                       <span className="elementor-button-content-wrapper">
                         <span className="elementor-button-text">{cmsText(c?.hero?.button_label, 'Find Services')}</span>
                       </span>

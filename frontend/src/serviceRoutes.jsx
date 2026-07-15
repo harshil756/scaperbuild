@@ -59,6 +59,7 @@ const legacyRedirects = [
   ['our-services-end-of-lease-pest-control', '/our-services/end-of-lease-pest-control'],
   ['our-services-wasp-nest-removal-melbourne', '/wasp-removal-melbourne'],
   ['flea-treatment', '/our-services/flea-treatment'],
+  ['pest-control-services', '/our-services'],
 ].map(([from, to]) => ({
   path: from,
   element: <Navigate to={to} replace />,
