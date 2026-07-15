@@ -64,7 +64,11 @@ class AboutPageBlockMapper
                 'heading' => $blocks->get('hero.heading')?->value,
                 'body' => $blocks->get('hero.body')?->value,
                 'button_label' => $blocks->get('hero.button')?->value ?? 'Find Services',
-                'button_url' => $blocks->get('hero.button')?->link_url ?? '/pest-control-services',
+                'button_url' => self::normalizeInternalUrl(
+                    $blocks->get('hero.button')?->link_url ?? '/our-services',
+                    '/pest-control-services',
+                    '/our-services',
+                ),
             ],
             'quote_form' => [
                 'title' => $blocks->get('quote_form.title')?->value,
@@ -296,6 +300,14 @@ class AboutPageBlockMapper
                 'alt' => $step['alt'] ?? '',
             ]),
         ]);
+    }
+
+    private static function normalizeInternalUrl(?string $url, string $legacy, string $replacement): string
+    {
+        $normalized = rtrim((string) $url, '/') ?: $replacement;
+        $legacyNormalized = rtrim($legacy, '/');
+
+        return $normalized === $legacyNormalized ? $replacement : ($url ?: $replacement);
     }
 
 }

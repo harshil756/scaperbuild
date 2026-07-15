@@ -10,7 +10,7 @@ export const ABOUT_PAGE_SOURCE = {
     heading: 'Expert Pest Control Services in Melbourne',
     body: '<p><a href="/"><strong>7 States Pest Control</strong></a>&nbsp;is a pioneer in the pest control industry, with a proven track record of providing exceptional service to residential and commercial clients across Melbourne since last 7 year. Our team of highly trained and experienced technicians is equipped with the latest knowledge and techniques to tackle any pest problem effectively and safely.</p><p>We are committed to providing you with permanent solutions. With our focus on quality services and professional minds, we strive to deliver the best pest-controlling solutions.&nbsp;</p>',
     button_label: 'Find Services',
-    button_url: '/pest-control-services',
+    button_url: '/our-services',
   },
   quote_form: {
     title: 'Get A Free Quote Now!',
