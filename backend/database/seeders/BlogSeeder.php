@@ -48,7 +48,9 @@ class BlogSeeder extends Seeder
                         'wordpress_id' => $post['wordpress_id'] ?? null,
                         'elementor_id' => $post['elementor_id'] ?? null,
                         'is_published' => $post['is_published'] ?? true,
-                        'published_at' => now(),
+                        'published_at' => filled($post['published_at'] ?? null)
+                            ? $post['published_at']
+                            : now(),
                     ],
                 );
 

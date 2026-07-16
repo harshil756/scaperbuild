@@ -16,7 +16,7 @@ class BlogPostsTable
     public static function configure(Table $table): Table
     {
         return $table
-            ->defaultSort('title')
+            ->defaultSort('published_at', 'desc')
             ->columns([
                 ImageColumn::make('featured_image_path')
                     ->label('Image')
@@ -38,6 +38,10 @@ class BlogPostsTable
                 IconColumn::make('is_published')
                     ->label('Published')
                     ->boolean(),
+                TextColumn::make('published_at')
+                    ->label('Published at')
+                    ->dateTime()
+                    ->sortable(),
                 TextColumn::make('updated_at')
                     ->dateTime()
                     ->sortable()

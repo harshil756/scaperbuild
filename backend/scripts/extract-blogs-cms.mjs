@@ -190,6 +190,25 @@ function extractTitle(html) {
   return decodeEntities(metaTitle ?? '')
 }
 
+function extractPublishedAt(html) {
+  const jsonLdBlocks = [...html.matchAll(/<script[^>]+type="application\/ld\+json"[^>]*>([\s\S]*?)<\/script>/gi)]
+  for (const match of jsonLdBlocks) {
+    try {
+      const data = JSON.parse(match[1])
+      const graph = Array.isArray(data['@graph']) ? data['@graph'] : [data]
+      const article = graph.find((node) => node['@type'] === 'Article')
+      if (article?.datePublished) return article.datePublished
+    } catch {
+      // try next block
+    }
+  }
+
+  const ogPublished = html.match(
+    /<meta[^>]+property="article:published_time"[^>]+content="([^"]+)"/i,
+  )?.[1]
+  return ogPublished ?? null
+}
+
 function extractExcerpt(contentHtml, fallback = '') {
   const firstP = contentHtml.match(/<p[^>]*>([\s\S]*?)<\/p>/i)?.[1]
   if (firstP) {
@@ -260,6 +279,7 @@ function extractPost(slug, listExcerpts) {
       name: categorySlugToName(tagSlug),
     })),
     is_published: true,
+    published_at: extractPublishedAt(html),
   }
 }
 
