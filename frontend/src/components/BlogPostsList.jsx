@@ -1,6 +1,7 @@
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
 import { Link } from 'react-router-dom'
-import { BLOG_POSTS_PER_PAGE, blogPosts } from '../data/blogPosts.js'
+import { BLOG_POSTS_PER_PAGE } from '../data/blogPosts.js'
+import useBlogPostsCms from '../hooks/useBlogPostsCms.js'
 
 function BlogPostCard({ post, eagerImage }) {
   const thumbClasses = ['elementor-post__thumbnail', post.thumbClass].filter(Boolean).join(' ')
@@ -49,20 +50,25 @@ function BlogPostCard({ post, eagerImage }) {
 }
 
 export default function BlogPostsList() {
+  const { posts } = useBlogPostsCms()
   const [visibleCount, setVisibleCount] = useState(BLOG_POSTS_PER_PAGE)
   const [loading, setLoading] = useState(false)
 
-  const visiblePosts = blogPosts.slice(0, visibleCount)
-  const hasMore = visibleCount < blogPosts.length
+  useEffect(() => {
+    setVisibleCount(BLOG_POSTS_PER_PAGE)
+  }, [posts.length])
+
+  const visiblePosts = posts.slice(0, visibleCount)
+  const hasMore = visibleCount < posts.length
   const currentPage = Math.ceil(visibleCount / BLOG_POSTS_PER_PAGE)
-  const maxPage = Math.ceil(blogPosts.length / BLOG_POSTS_PER_PAGE)
+  const maxPage = Math.ceil(posts.length / BLOG_POSTS_PER_PAGE)
 
   const handleLoadMore = () => {
     if (!hasMore || loading) return
 
     setLoading(true)
     window.setTimeout(() => {
-      setVisibleCount((count) => Math.min(count + BLOG_POSTS_PER_PAGE, blogPosts.length))
+      setVisibleCount((count) => Math.min(count + BLOG_POSTS_PER_PAGE, posts.length))
       setLoading(false)
     }, 300)
   }

@@ -9,6 +9,7 @@ import BlogPage from './pages/BlogPage.jsx'
 import ContactPage from './pages/ContactPage.jsx'
 import HomePage from './pages/HomePage.jsx'
 import ThankYouPage from './pages/ThankYouPage.jsx'
+import BlogPostCmsPage from './pages/blog/BlogPostCmsPage.jsx'
 import { serviceRoutes } from './serviceRoutes.jsx'
 import TrustIndexAutoMount from './components/TrustIndexAutoMount.jsx'
 
@@ -36,6 +37,7 @@ export default function App() {
           {blogPostRoutes.map(({ path, element }) => (
             <Route key={path} path={path} element={element} />
           ))}
+          <Route path=":slug" element={<BlogPostCmsPage />} />
         </Route>
       </Routes>
     </BrowserRouter>
