@@ -2,8 +2,8 @@
 
 namespace App\Filament\Resources\BlogPosts\Schemas;
 
+use App\Filament\Forms\Components\BlogContentEditor;
 use Filament\Forms\Components\FileUpload;
-use Filament\Forms\Components\RichEditor;
 use Filament\Forms\Components\Select;
 use Filament\Forms\Components\Textarea;
 use Filament\Forms\Components\TextInput;
@@ -58,10 +58,8 @@ class BlogPostForm
                     ]),
                 Section::make('Content')
                     ->schema([
-                        RichEditor::make('content_html')
+                        BlogContentEditor::make('content_html')
                             ->label('Post body')
-                            ->fileAttachmentsDirectory('cms/blog')
-                            ->fileAttachmentsDisk('public')
                             ->columnSpanFull(),
                     ]),
                 Section::make('SEO')

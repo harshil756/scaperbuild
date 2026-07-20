@@ -3,6 +3,7 @@
 namespace App\Providers\Filament;
 
 use App\Support\CmsPageNavigation;
+use Filament\View\PanelsRenderHook;
 use Filament\Http\Middleware\Authenticate;
 use Filament\Http\Middleware\AuthenticateSession;
 use Filament\Http\Middleware\DisableBladeIconComponents;
@@ -63,6 +64,10 @@ class AdminPanelProvider extends PanelProvider
             ])
             ->authMiddleware([
                 Authenticate::class,
-            ]);
+            ])
+            ->renderHook(
+                PanelsRenderHook::BODY_END,
+                fn (): string => view('filament.hooks.rich-editor-upload-fix')->render(),
+            );
     }
 }

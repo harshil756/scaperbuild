@@ -19,6 +19,13 @@ class AppServiceProvider extends ServiceProvider
      */
     public function boot(): void
     {
-        //
+        foreach ([
+            storage_path('app/public/cms/blog'),
+            storage_path('app/private/livewire-tmp'),
+        ] as $directory) {
+            if (! is_dir($directory)) {
+                mkdir($directory, 0755, true);
+            }
+        }
     }
 }
