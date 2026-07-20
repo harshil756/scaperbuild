@@ -20,6 +20,7 @@ class LeadController extends Controller
             'name' => $validated['name'] ?? null,
             'email' => $validated['email'],
             'phone' => $validated['phone'] ?? null,
+            'suburb' => $validated['suburb'] ?? null,
             'message' => $validated['message'] ?? null,
             'source_page' => $this->sourcePageFromReferrer($validated['referrer'] ?? null),
             'referer_title' => $validated['referer_title'] ?? null,

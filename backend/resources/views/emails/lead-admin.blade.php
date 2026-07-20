@@ -51,6 +51,12 @@
                                 <td style="padding:10px 0;border-bottom:1px solid #e5e7eb;">{{ $lead->referer_title }}</td>
                             </tr>
                             @endif
+                            @if($lead->suburb)
+                            <tr>
+                                <td style="padding:10px 0;border-bottom:1px solid #e5e7eb;color:#6b7280;vertical-align:top;">Suburb</td>
+                                <td style="padding:10px 0;border-bottom:1px solid #e5e7eb;color:#111827;">{{ $lead->suburb }}</td>
+                            </tr>
+                            @endif
                             @if($lead->message)
                             <tr>
                                 <td style="padding:10px 0;color:#6b7280;vertical-align:top;">Message</td>

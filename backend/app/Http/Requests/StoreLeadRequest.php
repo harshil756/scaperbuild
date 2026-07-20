@@ -25,6 +25,7 @@ class StoreLeadRequest extends FormRequest
                 'string',
                 'regex:/^\d{9}$/',
             ],
+            'suburb' => ['nullable', 'string', 'max:255'],
             'message' => ['nullable', 'string', 'max:5000'],
             'form_type' => ['required', Rule::in(['quote', 'popup', 'contact', 'newsletter'])],
             'post_id' => ['nullable', 'integer'],

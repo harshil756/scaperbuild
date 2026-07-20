@@ -25,6 +25,7 @@ class Lead extends Model
         'name',
         'email',
         'phone',
+        'suburb',
         'message',
         'source_page',
         'referer_title',

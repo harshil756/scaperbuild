@@ -35,6 +35,7 @@ export function buildLeadPayload(form) {
     name: fieldValue(formData, 'form_fields[first_name]', 'form_fields[name]'),
     email: fieldValue(formData, 'form_fields[user_email]', 'form_fields[email]'),
     phone: phone || null,
+    suburb: fieldValue(formData, 'form_fields[suburb]') || null,
     message: fieldValue(formData, 'form_fields[message]'),
     form_type: detectFormType(form),
     post_id: fieldValue(formData, 'post_id') || null,

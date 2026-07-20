@@ -44,6 +44,10 @@ class LeadForm
                         TextInput::make('phone')
                             ->disabled()
                             ->dehydrated(false),
+                        TextInput::make('suburb')
+                            ->disabled()
+                            ->dehydrated(false)
+                            ->placeholder('—'),
                         TextInput::make('source_page')
                             ->label('Source page')
                             ->disabled()

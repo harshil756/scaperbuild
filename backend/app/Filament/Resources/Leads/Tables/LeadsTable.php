@@ -29,6 +29,10 @@ class LeadsTable
                 TextColumn::make('phone')
                     ->searchable()
                     ->toggleable(),
+                TextColumn::make('suburb')
+                    ->searchable()
+                    ->toggleable()
+                    ->placeholder('—'),
                 TextColumn::make('form_type')
                     ->label('Type')
                     ->badge()

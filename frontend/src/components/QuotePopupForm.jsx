@@ -46,6 +46,19 @@ export default function QuotePopupForm({ postId, formId, idPrefix }) {
             size="lg"
           />
         </div>
+        <div className="elementor-field-type-text elementor-field-group elementor-column elementor-field-group-suburb elementor-col-100">
+          <label className="elementor-field-label elementor-screen-only" htmlFor={`${idPrefix}-suburb`}>
+            Suburb
+          </label>
+          <input
+            className="elementor-field elementor-size-lg elementor-field-textual"
+            id={`${idPrefix}-suburb`}
+            name="form_fields[suburb]"
+            placeholder="Suburb"
+            size={1}
+            type="text"
+          />
+        </div>
         <div className="elementor-field-type-textarea elementor-field-group elementor-column elementor-field-group-message elementor-col-100 elementor-field-required">
           <label className="elementor-field-label elementor-screen-only" htmlFor={`${idPrefix}-message`}>
             Job description
