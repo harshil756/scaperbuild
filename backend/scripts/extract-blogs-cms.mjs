@@ -87,6 +87,15 @@ function decodeEntities(text) {
     .replace(/&nbsp;/g, ' ')
 }
 
+function extractMetaDescription(html) {
+  const raw =
+    html.match(/<meta[^>]+name=["']description["'][^>]+content=["']([^"']*)["']/i)?.[1] ??
+    html.match(/<meta[^>]+content=["']([^"']*)["'][^>]+name=["']description["']/i)?.[1] ??
+    ''
+
+  return decodeEntities(raw)
+}
+
 function categorySlugToName(slug) {
   if (CATEGORY_LABELS[slug]) return CATEGORY_LABELS[slug]
   return slug
@@ -245,9 +254,7 @@ function loadBlogListExcerpts() {
 function extractPost(slug, listExcerpts) {
   const html = fs.readFileSync(findHtmlFile(slug), 'utf8')
   const seoTitle = decodeEntities(html.match(/<title>([^<]*)<\/title>/i)?.[1] ?? '')
-  const seoDescription = decodeEntities(
-    html.match(/<meta[^>]+name="description"[^>]+content="([^"]*)"/i)?.[1] ?? '',
-  )
+  const seoDescription = extractMetaDescription(html)
   const wordpressId =
     html.match(/\bpostid-(\d+)\b/)?.[1] ??
     html.match(/\bpost-(\d+)\b/)?.[1] ??
