@@ -9,6 +9,7 @@ import { TERMS_PAGE_META } from '../config/termsPageMeta.js'
 import { THANK_YOU_PAGE_META } from '../config/thankYouPageMeta.js'
 import { PAGE_SEO_EXTRA } from '../config/pageSeoExtra.js'
 import { applyPageSeo, restorePageSeo } from '../utils/applyPageSeo.js'
+import { mergeBodyClass } from '../utils/mergeBodyClass.js'
 import { pageKeyToSlug } from '../utils/pageKeyToSlug.js'
 
 const PAGE_META = {
@@ -47,7 +48,7 @@ export default function usePageMeta(pageKey, cmsPage = null) {
       ...meta,
       ...(cmsPage?.seo_title ? { title: cmsPage.seo_title } : {}),
       ...(cmsPage?.seo_description ? { description: cmsPage.seo_description } : {}),
-      ...(cmsPage?.body_class ? { bodyClass: cmsPage.body_class } : {}),
+      bodyClass: mergeBodyClass(meta.bodyClass, cmsPage?.body_class),
     }
     const state = applyPageSeo(mergedMeta, seoExtra)
 

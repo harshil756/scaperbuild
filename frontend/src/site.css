@@ -160,7 +160,7 @@
     margin: 0 !important;
     padding: 0 !important;
     overflow: visible !important;
-    background-color: var(--e-global-color-a291686, #fff) !important;
+    background-color: var(--e-global-color-secondary, #1b1646) !important;
   }
 
   .ekit-template-content-header .header-sticky-bar {
@@ -172,7 +172,7 @@
     margin: 0;
     padding: 0 0 10px;
     gap: 10px;
-    background-color: var(--e-global-color-a291686, #fff);
+    background-color: var(--e-global-color-secondary, #1b1646);
   }
 
   .ekit-template-content-header .header-sticky-bar__call {
@@ -365,14 +365,14 @@
 
 /* Elementor flex rows: keep multi-column layouts side-by-side on tablet+ */
 @media (min-width: 768px) {
-  .elementor .e-con.e-flex.e-parent:has(> .e-con-inner > .e-con.e-child:nth-child(2)) > .e-con-inner {
+  .elementor .e-con.e-flex.e-parent:not(.elementor-element-0b53c03):has(> .e-con-inner > .e-con.e-child:nth-child(2)) > .e-con-inner {
     display: flex;
     flex-direction: var(--flex-direction, row);
     flex-wrap: nowrap;
     align-items: stretch;
   }
 
-  .elementor .e-con.e-flex.e-parent:has(> .e-con-inner > .e-con.e-child:nth-child(2)) > .e-con-inner > .e-con.e-child {
+  .elementor .e-con.e-flex.e-parent:not(.elementor-element-0b53c03):has(> .e-con-inner > .e-con.e-child:nth-child(2)) > .e-con-inner > .e-con.e-child {
     flex: 1 1 0;
     min-width: 0;
     width: auto !important;
@@ -438,58 +438,6 @@
 
   .elementor-14 .elementor-element-e8742e1 .elementor-button {
     width: 100%;
-  }
-}
-
-/* Homepage hero quote form — scoped to homepage only */
-.elementor-14 .elementor-element-0b53c03 > .e-con-inner {
-  align-items: stretch;
-  gap: 24px;
-}
-
-.elementor-14 .elementor-element-e5afdbe {
-  flex: 0 1 400px;
-  max-width: 400px;
-  width: 100%;
-}
-
-.elementor-14 .elementor-element-8c7fc6e .elementor-field-group {
-  margin-bottom: 10px;
-}
-
-.elementor-14 .elementor-element-8c7fc6e .elementor-form-fields-wrapper {
-  margin-bottom: 0;
-}
-
-.elementor-14 .elementor-element-8c7fc6e textarea.elementor-field {
-  min-height: 72px;
-  max-height: 96px;
-}
-
-.elementor-14 .elementor-element-8c7fc6e .elementor-button[type="submit"] {
-  background-color: #000 !important;
-  color: #fff !important;
-  border: 0;
-  cursor: pointer;
-  display: inline-flex;
-  justify-content: center;
-  width: 100%;
-}
-
-.elementor-14 .elementor-element-8c7fc6e .e-form__buttons {
-  width: 100%;
-}
-
-.elementor-14 .elementor-element-45fe351 .elementor-button {
-  background-color: rgba(0, 0, 0, 0.82) !important;
-  color: #fff !important;
-  border-color: #fff !important;
-}
-
-@media (max-width: 767px) {
-  .elementor-14 .elementor-element-e5afdbe {
-    flex: 1 1 auto;
-    max-width: none;
   }
 }
 
