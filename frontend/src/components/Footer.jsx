@@ -247,9 +247,15 @@ export default function Footer() {
                 <div className="elementor-element elementor-element-c27169b elementor-widget elementor-widget-heading">
                   <div className="elementor-widget-container">
                     <h2 className="elementor-heading-title elementor-size-default">
-                      Copyright ©️ 2025 7 States Pest Control. All Rights Reserved.{' '}
-                      <Link to="/terms-and-conditions">Terms &amp; Conditions</Link>
+                      Copyright ©️ 2025 7 States Pest Control. All Rights Reserved.
                     </h2>
+                  </div>
+                </div>
+                <div className="elementor-element elementor-element-terms-link elementor-widget elementor-widget-text-editor">
+                  <div className="elementor-widget-container">
+                    <p className="elementor-heading-title elementor-size-default" style={{ fontSize: '14px', margin: 0 }}>
+                      <Link to="/terms-and-conditions">Terms &amp; Conditions</Link>
+                    </p>
                   </div>
                 </div>
               </div>

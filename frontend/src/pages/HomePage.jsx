@@ -64,7 +64,7 @@ export default function HomePage() {
                               <div className="elementor-field-type-textarea elementor-field-group elementor-column elementor-field-group-message elementor-col-100 elementor-field-required">
                                 <label className="elementor-field-label elementor-screen-only" htmlFor="form-field-message">
                                   Job description							</label>
-                                <textarea className="elementor-field-textual elementor-field elementor-size-lg" id="form-field-message" name="form_fields[message]" placeholder="Job description" required rows={4} defaultValue={""} /> </div>
+                                <textarea className="elementor-field-textual elementor-field elementor-size-lg" id="form-field-message" name="form_fields[message]" placeholder="Job description" required rows={3} defaultValue={""} /> </div>
                               <div className="elementor-field-group elementor-column elementor-field-type-submit elementor-col-100 e-form__buttons">
                                 <button className="elementor-button elementor-size-md" type="submit">
                                   <span className="elementor-button-content-wrapper">

@@ -13,8 +13,13 @@ function normalizeApiPost(post) {
     excerpt: post.excerpt || '',
     img: {
       alt: post.featured_image_alt || post.title || '',
-      className: 'attachment-medium size-medium',
+      className: post.wordpress_id
+        ? `attachment-medium size-medium wp-image-${post.wordpress_id}`
+        : 'attachment-medium size-medium',
+      height: '158',
+      sizes: '(max-width: 300px) 100vw, 300px',
       src: cmsMediaUrl(post.featured_image_url, FALLBACK_IMAGE),
+      width: '300',
     },
     thumbClass: 'elementor-fit-height',
     category: 'category-blog',
