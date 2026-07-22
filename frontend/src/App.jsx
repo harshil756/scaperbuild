@@ -9,6 +9,7 @@ import BlogPage from './pages/BlogPage.jsx'
 import ContactPage from './pages/ContactPage.jsx'
 import HomePage from './pages/HomePage.jsx'
 import ThankYouPage from './pages/ThankYouPage.jsx'
+import TermsAndConditionsPage from './pages/TermsAndConditionsPage.jsx'
 import BlogPostCmsPage from './pages/blog/BlogPostCmsPage.jsx'
 import { serviceRoutes } from './serviceRoutes.jsx'
 import TrustIndexAutoMount from './components/TrustIndexAutoMount.jsx'
@@ -24,6 +25,7 @@ export default function App() {
           <Route path="about-us" element={<AboutPage />} />
           <Route path="blog" element={<BlogPage />} />
           <Route path="contact-us" element={<ContactPage />} />
+          <Route path="terms-and-conditions" element={<TermsAndConditionsPage />} />
           <Route path="thank-you" element={<ThankYouPage />} />
           {serviceRoutes.map(({ path, element }) => (
             <Route key={path} path={path} element={element} />

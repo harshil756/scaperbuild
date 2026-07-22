@@ -1,6 +1,9 @@
 import { useEffect, useState } from 'react'
 import { blogPosts as fallbackPosts } from '../data/blogPosts.js'
 import { apiUrl } from '../utils/api.js'
+import { cmsMediaUrl } from '../utils/cmsMedia.js'
+
+const FALLBACK_IMAGE = '/assets/images/blog-image-1_64df4213.jpeg'
 
 function normalizeApiPost(post) {
   return {
@@ -11,7 +14,7 @@ function normalizeApiPost(post) {
     img: {
       alt: post.featured_image_alt || post.title || '',
       className: 'attachment-medium size-medium',
-      src: post.featured_image_url || '/assets/images/blog-image-1_64df4213.jpeg',
+      src: cmsMediaUrl(post.featured_image_url, FALLBACK_IMAGE),
     },
     thumbClass: 'elementor-fit-height',
     category: 'category-blog',

@@ -13,8 +13,6 @@ class BlogPostController extends Controller
     {
         $posts = BlogPost::query()
             ->where('is_published', true)
-            ->orderByRaw('wordpress_id IS NULL')
-            ->orderByDesc('wordpress_id')
             ->orderByDesc('published_at')
             ->orderByDesc('id')
             ->get();

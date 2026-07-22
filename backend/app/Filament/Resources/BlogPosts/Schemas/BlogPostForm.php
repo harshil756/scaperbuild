@@ -3,6 +3,7 @@
 namespace App\Filament\Resources\BlogPosts\Schemas;
 
 use App\Filament\Forms\Components\BlogContentEditor;
+use Filament\Forms\Components\DateTimePicker;
 use Filament\Forms\Components\FileUpload;
 use Filament\Forms\Components\Select;
 use Filament\Forms\Components\Textarea;
@@ -41,6 +42,10 @@ class BlogPostForm
                         Toggle::make('is_published')
                             ->label('Published')
                             ->default(true),
+                        DateTimePicker::make('published_at')
+                            ->label('Published date')
+                            ->seconds(false)
+                            ->helperText('Controls display order on the blog page. Defaults to now when publishing.'),
                         Textarea::make('excerpt')
                             ->rows(3)
                             ->columnSpanFull(),

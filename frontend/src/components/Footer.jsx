@@ -247,7 +247,8 @@ export default function Footer() {
                 <div className="elementor-element elementor-element-c27169b elementor-widget elementor-widget-heading">
                   <div className="elementor-widget-container">
                     <h2 className="elementor-heading-title elementor-size-default">
-                      Copyright ©️ 2025 7 States Pest Control. All Rights Reserved.
+                      Copyright ©️ 2025 7 States Pest Control. All Rights Reserved.{' '}
+                      <Link to="/terms-and-conditions">Terms &amp; Conditions</Link>
                     </h2>
                   </div>
                 </div>

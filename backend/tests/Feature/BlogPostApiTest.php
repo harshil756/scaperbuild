@@ -41,6 +41,31 @@ class BlogPostApiTest extends TestCase
             ->assertJsonPath('items.1.slug', 'older-post');
     }
 
+    public function test_new_cms_post_without_wordpress_id_appears_before_older_migrated_post(): void
+    {
+        BlogPost::create([
+            'slug' => 'migrated-post',
+            'title' => 'Migrated Post',
+            'is_published' => true,
+            'wordpress_id' => 10631,
+            'published_at' => now()->subYear(),
+        ]);
+
+        BlogPost::create([
+            'slug' => 'new-cms-post',
+            'title' => 'New CMS Post',
+            'is_published' => true,
+            'published_at' => now(),
+        ]);
+
+        $response = $this->getJson('/api/blog-posts');
+
+        $response
+            ->assertOk()
+            ->assertJsonPath('items.0.slug', 'new-cms-post')
+            ->assertJsonPath('items.1.slug', 'migrated-post');
+    }
+
     public function test_show_returns_published_post_details(): void
     {
         BlogPost::create([

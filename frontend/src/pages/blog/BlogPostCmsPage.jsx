@@ -106,7 +106,7 @@ export default function BlogPostCmsPage() {
                 data-widget_type="text-editor.default"
               >
                 <div className="elementor-widget-container">
-                  <CmsHtml html={post.content_html} />
+                  <CmsHtml html={post.content_html} rewriteMedia />
                 </div>
               </div>
             </div>

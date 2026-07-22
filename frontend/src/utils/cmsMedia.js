@@ -9,6 +9,21 @@ export function cmsMediaUrl(pathOrUrl, fallback = '') {
   return `/storage/${pathOrUrl}`
 }
 
+/** Rewrite CMS storage paths inside HTML content for frontend display. */
+export function rewriteCmsHtmlMedia(html) {
+  if (!html) return html
+
+  return html
+    .replace(
+      /(\s(?:src|href)=["'])(?:https?:\/\/[^"']+)?(\/?storage\/[^"']+)(["'])/gi,
+      '$1$2$3',
+    )
+    .replace(
+      /(\s(?:src|href)=["'])(?!https?:\/\/|\/|#|mailto:|tel:)(cms\/[^"']+)(["'])/gi,
+      '$1/storage/$2$3',
+    )
+}
+
 function isCorruptCmsLiteral(value) {
   if (typeof value !== 'string') return false
   const trimmed = value.trim()

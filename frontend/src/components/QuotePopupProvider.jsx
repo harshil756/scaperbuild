@@ -8,7 +8,6 @@ export const QUOTE_POPUP_HREF =
   '#elementor-action%3Aaction%3Dpopup%3Aopen%26settings%3DeyJpZCI6Ijc4NDEiLCJ0b2dnbGUiOmZhbHNlfQ%3D%3D'
 const MANUAL_POPUP_HREF = QUOTE_POPUP_HREF
 const AUTO_OPEN_DELAY_MS = 5000
-const AUTO_CLOSE_DELAY_MS = 5000
 
 export function useQuotePopup() {
   return useContext(QuotePopupContext)
@@ -41,13 +40,6 @@ export default function QuotePopupProvider({ children }) {
 
     return () => window.clearTimeout(timer)
   }, [location.pathname])
-
-  useEffect(() => {
-    if (openPopupId !== '9458') return undefined
-
-    const timer = window.setTimeout(closePopup, AUTO_CLOSE_DELAY_MS)
-    return () => window.clearTimeout(timer)
-  }, [openPopupId, closePopup])
 
   useEffect(() => {
     function handlePopupLinkClick(event) {

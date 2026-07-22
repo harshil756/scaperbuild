@@ -5,6 +5,7 @@ import { CONTACT_PAGE_META } from '../config/contactPageMeta.js'
 import { COMMERCIAL_OFFICE_PAGE_META } from '../config/commercialOfficePageMeta.js'
 import { LOCATION_PAGE_META } from '../config/locationPageMeta.js'
 import { SERVICE_PAGE_META } from '../config/servicePageMeta.js'
+import { TERMS_PAGE_META } from '../config/termsPageMeta.js'
 import { THANK_YOU_PAGE_META } from '../config/thankYouPageMeta.js'
 import { PAGE_SEO_EXTRA } from '../config/pageSeoExtra.js'
 import { applyPageSeo, restorePageSeo } from '../utils/applyPageSeo.js'
@@ -32,6 +33,7 @@ const PAGE_META = {
   ...BLOG_POST_PAGE_META,
   ...CONTACT_PAGE_META,
   ...THANK_YOU_PAGE_META,
+  ...TERMS_PAGE_META,
 }
 
 export default function usePageMeta(pageKey, cmsPage = null) {
@@ -39,12 +41,13 @@ export default function usePageMeta(pageKey, cmsPage = null) {
     const meta = PAGE_META[pageKey]
     if (!meta) return undefined
 
-    const slug = pageKeyToSlug(pageKey)
+    const slug = cmsPage?.slug ?? pageKeyToSlug(pageKey)
     const seoExtra = PAGE_SEO_EXTRA[slug] ?? {}
     const mergedMeta = {
       ...meta,
       ...(cmsPage?.seo_title ? { title: cmsPage.seo_title } : {}),
       ...(cmsPage?.seo_description ? { description: cmsPage.seo_description } : {}),
+      ...(cmsPage?.body_class ? { bodyClass: cmsPage.body_class } : {}),
     }
     const state = applyPageSeo(mergedMeta, seoExtra)
 

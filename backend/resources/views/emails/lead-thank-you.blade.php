@@ -42,7 +42,7 @@
                                     <td style="padding:18px 20px;">
                                         <p style="margin:0 0 12px;font-size:15px;font-weight:700;color:#0f5132;">What happens next?</p>
                                         <p style="margin:0 0 8px;font-size:14px;line-height:1.5;color:#166534;">✓ Our team will review your request within 2 hours</p>
-                                        <p style="margin:0 0 8px;font-size:14px;line-height:1.5;color:#166534;">✓ We’ll call you to schedule your free inspection</p>
+                                        <p style="margin:0 0 8px;font-size:14px;line-height:1.5;color:#166534;">✓ We’ll call you to schedule your free quotation</p>
                                         <p style="margin:0;font-size:14px;line-height:1.5;color:#166534;">✓ A licensed technician will visit your property</p>
                                     </td>
                                 </tr>

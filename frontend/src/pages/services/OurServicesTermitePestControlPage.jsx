@@ -92,6 +92,11 @@ export default function OurServicesTermitePestControlPage() {
                           Mobile Number							</label>
                         <PhoneNumberInput id="form-field-mobile_number" name="form_fields[mobile_number]" size="md" />
                       </div>
+                      <div className="elementor-field-type-text elementor-field-group elementor-column elementor-field-group-suburb elementor-col-100">
+                        <label className="elementor-field-label elementor-screen-only" htmlFor="form-field-suburb">
+                          Suburb								</label>
+                        <input className="elementor-field elementor-size-md elementor-field-textual" id="form-field-suburb" name="form_fields[suburb]" placeholder="Suburb" type="text" />
+                      </div>
                       <div className="elementor-field-type-textarea elementor-field-group elementor-column elementor-field-group-message elementor-col-100 elementor-field-required">
                         <label className="elementor-field-label elementor-screen-only" htmlFor="form-field-message">
                           Job description							</label>

@@ -1,5 +1,6 @@
 import { useEffect } from 'react'
 import { useNavigate } from 'react-router-dom'
+import { useQuotePopup } from './QuotePopupProvider.jsx'
 import { submitLead } from '../utils/submitLead.js'
 
 function setSubmitting(form, submitting) {
@@ -37,6 +38,7 @@ function clearFormError(form) {
 /** Intercept Elementor quote/contact/newsletter forms and store leads/dev API. */
 export default function FormSubmissionHandler() {
   const navigate = useNavigate()
+  const quotePopup = useQuotePopup()
 
   useEffect(() => {
     async function handleSubmit(event) {
@@ -53,6 +55,7 @@ export default function FormSubmissionHandler() {
       try {
         const result = await submitLead(form)
         form.reset()
+        quotePopup?.closePopup?.()
         const redirect = result?.data?.redirect_url || '/thank-you'
         navigate(redirect)
       } catch (error) {
@@ -64,7 +67,7 @@ export default function FormSubmissionHandler() {
 
     document.addEventListener('submit', handleSubmit, true)
     return () => document.removeEventListener('submit', handleSubmit, true)
-  }, [navigate])
+  }, [navigate, quotePopup])
 
   return null
 }

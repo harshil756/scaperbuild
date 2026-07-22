@@ -2686,7 +2686,7 @@ export const PAGE_SEO_EXTRA = {
       "og:locale": "en_US",
       "og:type": "article",
       "og:title": "Thank You - 7 States Pest Control",
-      "og:description": "Thank You Home Thank You Thank You for Your Request! We&#8217;ve received your request and will contact you soon. What happens next? Our team will review your request within 2 hours We&#8217;ll call you to schedule your free inspection A licensed technician will visit your property Return to Home Need immediate assistance? +61 434 660 [&hellip;]",
+      "og:description": "Thank You Home Thank You Thank You for Your Request! We&#8217;ve received your request and will contact you soon. What happens next? Our team will review your request within 2 hours We&#8217;ll call you to schedule your free quotation A licensed technician will visit your property Return to Home Need immediate assistance? +61 434 660 [&hellip;]",
       "og:url": "https://7statespestcontrol.com.au/thank-you/",
       "og:site_name": "7 States Pest Control",
       "article:modified_time": "2025-07-12T15:35:59+00:00"
