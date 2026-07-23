@@ -1,42 +1,36 @@
-/** Known public site hosts that load media from the Laravel CMS server. */
-const PRODUCTION_MEDIA_ORIGIN = 'https://7sbd.durjainfotech.com'
-const PRODUCTION_SITE_HOSTS = new Set([
-  '7statespestcontrol.com.au',
-  'www.7statespestcontrol.com.au',
-  '7s.durjainfotech.com',
-])
+/** CMS storage host — blog images must use this full origin in <img src>. */
+export const CMS_MEDIA_ORIGIN = 'https://7sbd.durjainfotech.com'
 
-/** Laravel API / media origin (no trailing slash). Empty in local Vite → use proxy. */
 function mediaOrigin() {
-  const fromEnv = String(import.meta.env.VITE_API_URL ?? '')
+  const fromEnv = String(import.meta.env?.VITE_API_URL ?? '')
     .trim()
     .replace(/\/$/, '')
 
   if (fromEnv) return fromEnv
 
-  if (typeof window !== 'undefined' && PRODUCTION_SITE_HOSTS.has(window.location.hostname)) {
-    return PRODUCTION_MEDIA_ORIGIN
+  // Local Vite uses /storage proxy → keep paths root-relative.
+  if (typeof window !== 'undefined') {
+    const { hostname } = window.location
+    if (hostname === 'localhost' || hostname === '127.0.0.1') {
+      return ''
+    }
   }
 
-  return ''
+  // Any deployed site → always load media from the Laravel backend.
+  return CMS_MEDIA_ORIGIN
 }
 
-/**
- * Normalize any CMS path/URL to a browser-loadable URL.
- * Absolute http(s) URLs from the API are kept as-is (cross-origin storage).
- * Relative cms/storage paths are resolved against the media origin when set.
- */
-export function cmsMediaUrl(pathOrUrl, fallback = '') {
-  if (!pathOrUrl) return fallback
+function toStoragePath(pathOrUrl) {
+  let pathname = String(pathOrUrl).trim()
 
-  const raw = String(pathOrUrl).trim()
-
-  // API already returns full backend URLs — never strip the host.
-  if (raw.startsWith('http://') || raw.startsWith('https://')) {
-    return raw
+  if (pathname.startsWith('http://') || pathname.startsWith('https://')) {
+    try {
+      const url = new URL(pathname)
+      pathname = `${url.pathname}${url.search}`
+    } catch {
+      return null
+    }
   }
-
-  let pathname = raw
 
   if (pathname.startsWith('storage/')) {
     pathname = `/${pathname}`
@@ -48,15 +42,27 @@ export function cmsMediaUrl(pathOrUrl, fallback = '') {
     pathname = `/storage/${pathname}`
   }
 
-  if (!pathname.startsWith('/storage/')) {
-    return pathname || fallback
+  return pathname.startsWith('/storage/') ? pathname : null
+}
+
+/**
+ * Always return a full URL for CMS images on deployed sites, e.g.
+ * https://7sbd.durjainfotech.com/storage/cms/blog/file.webp
+ */
+export function cmsMediaUrl(pathOrUrl, fallback = '') {
+  if (!pathOrUrl) return fallback
+
+  const pathname = toStoragePath(pathOrUrl)
+  if (!pathname) {
+    const raw = String(pathOrUrl).trim()
+    return raw || fallback
   }
 
   const origin = mediaOrigin()
   return origin ? `${origin}${pathname}` : pathname
 }
 
-/** Rewrite CMS storage paths inside HTML content for frontend display. */
+/** Force every CMS <img> to use a full backend storage URL. */
 export function rewriteCmsHtmlMedia(html) {
   if (!html) return html
 
@@ -66,18 +72,17 @@ export function rewriteCmsHtmlMedia(html) {
     const dataId = dataIdMatch?.[1]?.trim() || ''
     const src = srcMatch?.[1]?.trim() || ''
 
-    // Prefer existing absolute src; otherwise build from data-id / relative src.
-    const rawPath = src.startsWith('http://') || src.startsWith('https://')
-      ? src
-      : (dataId && (dataId.includes('cms/') || dataId.includes('storage/')))
-        ? dataId
-        : (src && (src.includes('cms/') || src.includes('storage/')))
-          ? src
-          : ''
+    const candidates = [src, dataId].filter(Boolean)
+    let resolved = ''
 
-    if (!rawPath) return full
+    for (const candidate of candidates) {
+      const url = cmsMediaUrl(candidate)
+      if (url && (url.startsWith('http://') || url.startsWith('https://') || url.startsWith('/storage/'))) {
+        resolved = url
+        break
+      }
+    }
 
-    const resolved = cmsMediaUrl(rawPath)
     if (!resolved) return full
 
     if (srcMatch) {
