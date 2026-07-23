@@ -9,7 +9,6 @@ use App\Services\AntPestControlPageBlockMapper;
 use App\Services\MelbournePageBlockMapper;
 use App\Services\ServicePageBlockMapper;
 use App\Services\SolarPanelBirdProofingPageBlockMapper;
-use Illuminate\Support\Facades\Storage;
 
 class PageApiPresenter
 {
@@ -100,6 +99,69 @@ class PageApiPresenter
             return $path;
         }
 
-        return Storage::disk('public')->url($path);
+        if (str_starts_with($path, '/storage/')) {
+            $relative = $path;
+        } elseif (str_starts_with($path, 'storage/')) {
+            $relative = '/'.$path;
+        } else {
+            $relative = '/storage/'.ltrim($path, '/');
+        }
+
+        // Absolute URL so the public site (different host) can load Laravel storage.
+        return rtrim((string) config('app.url'), '/').$relative;
+    }
+
+    /**
+     * Ensure Filament rich-text <img> tags have a loadable src (from src or data-id).
+     */
+    public static function rewriteHtmlMedia(?string $html): ?string
+    {
+        if (blank($html)) {
+            return $html;
+        }
+
+        return preg_replace_callback(
+            '/<img\b([^>]*?)>/i',
+            static function (array $matches): string {
+                $attrs = $matches[1];
+                $dataId = null;
+                $src = null;
+
+                if (preg_match('/\bdata-id=["\']([^"\']+)["\']/i', $attrs, $idMatch) === 1) {
+                    $dataId = trim($idMatch[1]);
+                }
+
+                if (preg_match('/\bsrc=["\']([^"\']*)["\']/i', $attrs, $srcMatch) === 1) {
+                    $src = trim($srcMatch[1]);
+                }
+
+                $raw = null;
+                if (filled($dataId) && (str_contains($dataId, 'cms/') || str_contains($dataId, 'storage/'))) {
+                    $raw = $dataId;
+                } elseif (filled($src) && (str_contains($src, 'cms/') || str_contains($src, 'storage/') || str_starts_with($src, 'http'))) {
+                    $raw = $src;
+                }
+
+                if (! filled($raw)) {
+                    return $matches[0];
+                }
+
+                $url = self::mediaUrl($raw);
+                if (! filled($url)) {
+                    return $matches[0];
+                }
+
+                $escaped = e($url);
+
+                if (preg_match('/\bsrc=["\']/', $attrs) === 1) {
+                    $attrs = preg_replace('/\bsrc=["\'][^"\']*["\']/i', 'src="'.$escaped.'"', $attrs, 1);
+
+                    return '<img'.$attrs.'>';
+                }
+
+                return '<img src="'.$escaped.'"'.$attrs.'>';
+            },
+            $html,
+        );
     }
 }

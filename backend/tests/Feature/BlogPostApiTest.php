@@ -85,4 +85,40 @@ class BlogPostApiTest extends TestCase
             ->assertJsonPath('title', 'CMS Post')
             ->assertJsonPath('content_html', '<p>Hello from Filament.</p>');
     }
+
+    public function test_featured_image_url_is_root_relative_storage_path(): void
+    {
+        BlogPost::create([
+            'slug' => 'with-image',
+            'title' => 'With Image',
+            'featured_image_path' => 'cms/blog/example.jpeg',
+            'featured_image_alt' => 'Example alt',
+            'is_published' => true,
+            'published_at' => now(),
+        ]);
+
+        $expected = rtrim((string) config('app.url'), '/').'/storage/cms/blog/example.jpeg';
+
+        $this->getJson('/api/blog-posts/with-image')
+            ->assertOk()
+            ->assertJsonPath('featured_image_url', $expected)
+            ->assertJsonPath('featured_image_alt', 'Example alt');
+    }
+
+    public function test_content_html_images_get_src_from_data_id(): void
+    {
+        BlogPost::create([
+            'slug' => 'html-images',
+            'title' => 'HTML Images',
+            'content_html' => '<p><img data-id="cms/blog/demo.webp"></p>',
+            'is_published' => true,
+            'published_at' => now(),
+        ]);
+
+        $expected = rtrim((string) config('app.url'), '/').'/storage/cms/blog/demo.webp';
+
+        $this->getJson('/api/blog-posts/html-images')
+            ->assertOk()
+            ->assertJsonPath('content_html', '<p><img src="'.$expected.'" data-id="cms/blog/demo.webp"></p>');
+    }
 }

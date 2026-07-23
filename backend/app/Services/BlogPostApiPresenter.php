@@ -27,7 +27,7 @@ class BlogPostApiPresenter
     {
         return [
             ...self::presentSummary($post),
-            'content_html' => $post->content_html,
+            'content_html' => PageApiPresenter::rewriteHtmlMedia($post->content_html),
             'body_class' => $post->body_class,
             'tags' => $post->tags
                 ->map(fn ($tag) => [

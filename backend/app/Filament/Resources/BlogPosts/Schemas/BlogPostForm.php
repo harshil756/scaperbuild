@@ -3,6 +3,7 @@
 namespace App\Filament\Resources\BlogPosts\Schemas;
 
 use App\Filament\Forms\Components\BlogContentEditor;
+use App\Filament\Support\CmsImageUpload;
 use Filament\Forms\Components\DateTimePicker;
 use Filament\Forms\Components\FileUpload;
 use Filament\Forms\Components\Select;
@@ -11,7 +12,6 @@ use Filament\Forms\Components\TextInput;
 use Filament\Forms\Components\Toggle;
 use Filament\Schemas\Components\Section;
 use Filament\Schemas\Schema;
-use Illuminate\Support\Arr;
 use Illuminate\Support\Str;
 
 class BlogPostForm
@@ -94,21 +94,6 @@ class BlogPostForm
 
     private static function imageField(string $name, string $label): FileUpload
     {
-        return FileUpload::make($name)
-            ->label($label)
-            ->directory('cms/blog')
-            ->disk('public')
-            ->visibility('public')
-            ->maxFiles(1)
-            ->imagePreviewHeight('120')
-            ->fetchFileInformation(false)
-            ->dehydrateStateUsing(function (mixed $state): ?string {
-                if (is_array($state)) {
-                    $state = Arr::first($state);
-                }
-
-                return filled($state) && is_string($state) ? $state : null;
-            })
-            ->image();
+        return CmsImageUpload::make($name, $label, 'cms/blog');
     }
 }
