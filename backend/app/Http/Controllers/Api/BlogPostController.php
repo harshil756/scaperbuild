@@ -13,6 +13,7 @@ class BlogPostController extends Controller
     {
         $posts = BlogPost::query()
             ->where('is_published', true)
+            ->with('tags')
             ->orderByDesc('published_at')
             ->orderByDesc('id')
             ->get();

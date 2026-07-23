@@ -5,6 +5,13 @@ import { cmsMediaUrl } from '../utils/cmsMedia.js'
 
 const FALLBACK_IMAGE = '/assets/images/blog-image-1_64df4213.jpeg'
 
+function resolveCategory(post) {
+  const tagSlug = post.tags?.[0]?.slug
+  if (tagSlug) return tagSlug
+  if (post.category) return post.category
+  return 'category-blog'
+}
+
 function normalizeApiPost(post) {
   return {
     id: String(post.id ?? post.slug),
@@ -22,7 +29,8 @@ function normalizeApiPost(post) {
       width: '300',
     },
     thumbClass: 'elementor-fit-height',
-    category: 'category-blog',
+    category: resolveCategory(post),
+    categoryLabel: post.tags?.[0]?.name || null,
   }
 }
 

@@ -20,6 +20,15 @@ class BlogPostApiPresenter
             'seo_title' => $post->seo_title,
             'seo_description' => $post->seo_description,
             'published_at' => optional($post->published_at)->toIso8601String(),
+            'tags' => $post->relationLoaded('tags')
+                ? $post->tags
+                    ->map(fn ($tag) => [
+                        'name' => $tag->name,
+                        'slug' => $tag->slug,
+                    ])
+                    ->values()
+                    ->all()
+                : [],
         ];
     }
 

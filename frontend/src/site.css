@@ -95,6 +95,79 @@
   font: inherit;
 }
 
+/* Blog listing search + category filter — matches Elementor field styling */
+.blog-posts-filters {
+  margin: 0 0 28px;
+}
+
+.blog-posts-filters__row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  align-items: center;
+}
+
+.blog-posts-filters__field {
+  flex: 1 1 220px;
+  min-width: 0;
+}
+
+.blog-posts-filters__field--search {
+  flex: 2 1 280px;
+}
+
+.blog-posts-filters__field .elementor-field {
+  width: 100%;
+  margin: 0;
+  box-sizing: border-box;
+  border: 1px solid #e0e0e0;
+  border-radius: 4px;
+  background: #fff;
+  color: var(--e-global-color-secondary, #1b1646);
+  font: inherit;
+  line-height: 1.4;
+  padding: 10px 14px;
+}
+
+.blog-posts-filters__field select.elementor-field {
+  appearance: none;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8' viewBox='0 0 12 8'%3E%3Cpath fill='%231b1646' d='M1.4.6 6 5.2 10.6.6 12 2 6 8 0 2z'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: right 14px center;
+  background-size: 12px 8px;
+  padding-right: 36px;
+  cursor: pointer;
+}
+
+.blog-posts-filters__field .elementor-field:focus {
+  outline: 2px solid var(--e-global-color-accent, #ff9210);
+  outline-offset: 1px;
+  border-color: var(--e-global-color-accent, #ff9210);
+}
+
+.blog-posts-filters__clear {
+  flex: 0 0 auto;
+  border: none;
+  background: transparent;
+  color: var(--e-global-color-accent, #ff9210);
+  cursor: pointer;
+  font: inherit;
+  font-weight: 600;
+  padding: 8px 4px;
+  text-decoration: underline;
+}
+
+.blog-posts-filters__clear:hover {
+  color: var(--e-global-color-secondary, #1b1646);
+}
+
+.blog-posts-filters__meta {
+  margin: 10px 0 0;
+  color: #6b6b6b;
+  font-size: 0.9em;
+  line-height: 1.4;
+}
+
 /* Sticky top action bar — Call + Request A Quote */
 .header-sticky-bar {
   display: flex;
