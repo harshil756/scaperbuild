@@ -3,7 +3,9 @@
 namespace App\Filament\Forms\Components;
 
 use Filament\Forms\Components\RichEditor;
+use Filament\Forms\Components\RichEditor\RichEditorTool;
 use Filament\Support\Components\Attributes\ExposedLivewireMethod;
+use Filament\Support\Icons\Heroicon;
 use Illuminate\Support\Facades\Validator;
 use Illuminate\Validation\ValidationException;
 use Livewire\Attributes\Renderless;
@@ -24,7 +26,29 @@ class BlogContentEditor extends RichEditor
                 'image/jpeg',
                 'image/gif',
                 'image/webp',
-            ]);
+            ])
+            ->resizableImages()
+            ->tools([
+                RichEditorTool::make('deleteImage')
+                    ->label('Remove image')
+                    ->jsHandler('$getEditor()?.chain().focus().deleteSelection().run()')
+                    ->icon(Heroicon::Trash)
+                    ->activeKey('image'),
+            ])
+            ->floatingToolbars([
+                'table' => [
+                    'tableAddColumnBefore', 'tableAddColumnAfter', 'tableDeleteColumn',
+                    'tableAddRowBefore', 'tableAddRowAfter', 'tableDeleteRow',
+                    'tableMergeCells', 'tableSplitCell',
+                    'tableToggleHeaderRow', 'tableToggleHeaderCell',
+                    'tableDelete',
+                ],
+                'image' => [
+                    'attachFiles',
+                    'deleteImage',
+                ],
+            ])
+            ->helperText('Click an image to show the toolbar. Use the trash icon to remove it (or press Delete / Backspace).');
     }
 
     #[ExposedLivewireMethod]

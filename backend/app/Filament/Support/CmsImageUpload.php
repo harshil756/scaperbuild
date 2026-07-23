@@ -15,7 +15,8 @@ class CmsImageUpload
             ->disk('public')
             ->visibility('public')
             ->maxFiles(1)
-            ->imagePreviewHeight('120')
+            ->deletable()
+            ->imagePreviewHeight('160')
             ->fetchFileInformation(false)
             ->formatStateUsing(fn (mixed $state): array => is_array($state)
                 ? $state
@@ -26,18 +27,28 @@ class CmsImageUpload
                 }
 
                 return filled($state) && is_string($state) ? $state : null;
-            });
+            })
+            ->helperText('Use the × button on the image to remove it, then save.');
 
         if ($allowSvg) {
-            return $field->acceptedFileTypes([
-                'image/jpeg',
-                'image/png',
-                'image/webp',
-                'image/gif',
-                'image/svg+xml',
-            ]);
+            return $field
+                ->acceptedFileTypes([
+                    'image/jpeg',
+                    'image/png',
+                    'image/webp',
+                    'image/gif',
+                    'image/svg+xml',
+                ])
+                ->panelLayout('compact')
+                ->removeUploadedFileButtonPosition('right')
+                ->uploadButtonPosition('right');
         }
 
-        return $field->image();
+        // Call panelLayout AFTER image() so the remove (×) button stays visible.
+        return $field
+            ->image()
+            ->panelLayout('compact')
+            ->removeUploadedFileButtonPosition('right')
+            ->uploadButtonPosition('right');
     }
 }
