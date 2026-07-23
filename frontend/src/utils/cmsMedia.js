@@ -1,27 +1,42 @@
+/** Known public site hosts that load media from the Laravel CMS server. */
+const PRODUCTION_MEDIA_ORIGIN = 'https://7sbd.durjainfotech.com'
+const PRODUCTION_SITE_HOSTS = new Set([
+  '7statespestcontrol.com.au',
+  'www.7statespestcontrol.com.au',
+  '7s.durjainfotech.com',
+])
+
 /** Laravel API / media origin (no trailing slash). Empty in local Vite → use proxy. */
 function mediaOrigin() {
-  return String(import.meta.env.VITE_API_URL ?? '')
+  const fromEnv = String(import.meta.env.VITE_API_URL ?? '')
     .trim()
     .replace(/\/$/, '')
+
+  if (fromEnv) return fromEnv
+
+  if (typeof window !== 'undefined' && PRODUCTION_SITE_HOSTS.has(window.location.hostname)) {
+    return PRODUCTION_MEDIA_ORIGIN
+  }
+
+  return ''
 }
 
 /**
  * Normalize any CMS path/URL to a browser-loadable URL.
- * Cross-origin deploys (site ≠ API) must use VITE_API_URL so /storage hits Laravel.
+ * Absolute http(s) URLs from the API are kept as-is (cross-origin storage).
+ * Relative cms/storage paths are resolved against the media origin when set.
  */
 export function cmsMediaUrl(pathOrUrl, fallback = '') {
   if (!pathOrUrl) return fallback
 
-  let pathname = String(pathOrUrl).trim()
+  const raw = String(pathOrUrl).trim()
 
-  if (pathname.startsWith('http://') || pathname.startsWith('https://')) {
-    try {
-      const url = new URL(pathname)
-      pathname = `${url.pathname}${url.search}`
-    } catch {
-      return pathOrUrl
-    }
+  // API already returns full backend URLs — never strip the host.
+  if (raw.startsWith('http://') || raw.startsWith('https://')) {
+    return raw
   }
+
+  let pathname = raw
 
   if (pathname.startsWith('storage/')) {
     pathname = `/${pathname}`
@@ -51,9 +66,13 @@ export function rewriteCmsHtmlMedia(html) {
     const dataId = dataIdMatch?.[1]?.trim() || ''
     const src = srcMatch?.[1]?.trim() || ''
 
-    const rawPath =
-      (dataId && (dataId.includes('cms/') || dataId.includes('storage/'))) ? dataId
-        : (src && (src.includes('cms/') || src.includes('storage/') || src.startsWith('http'))) ? src
+    // Prefer existing absolute src; otherwise build from data-id / relative src.
+    const rawPath = src.startsWith('http://') || src.startsWith('https://')
+      ? src
+      : (dataId && (dataId.includes('cms/') || dataId.includes('storage/')))
+        ? dataId
+        : (src && (src.includes('cms/') || src.includes('storage/')))
+          ? src
           : ''
 
     if (!rawPath) return full
