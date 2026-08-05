@@ -1,8 +1,10 @@
 import usePageMeta from '../hooks/usePageMeta.js'
+import useSiteContact from '../hooks/useSiteContact.js'
 import { Link } from 'react-router-dom'
 
 export default function TermsAndConditionsPage() {
   usePageMeta('terms_and_conditions')
+  const { phoneNumber, phoneUrl, emailAddress, emailUrl } = useSiteContact()
 
   return (
     <>
@@ -135,8 +137,8 @@ export default function TermsAndConditionsPage() {
                     <h3 className="elementor-heading-title elementor-size-default">12. Contact us</h3>
                     <p>
                       If you have questions about these terms, contact us at{' '}
-                      <a href="mailto:7statespestcontrol@gmail.com">7statespestcontrol@gmail.com</a> or call{' '}
-                      <a href="tel:+61434660060">+61 434 660 060</a>.
+                      <a href={emailUrl}>{emailAddress}</a> or call{' '}
+                      <a href={phoneUrl}>{phoneNumber}</a>.
                     </p>
                   </div>
                 </div>

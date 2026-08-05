@@ -111,8 +111,13 @@ class ContactPageSectionsForm
     {
         return [
             TextInput::make('phone.title')->label('Title'),
-            TextInput::make('phone.number')->label('Display number'),
-            TextInput::make('phone.url')->label('Phone link (tel:...)')->columnSpanFull(),
+            TextInput::make('phone.number')
+                ->label('Display number')
+                ->helperText('Used site-wide (header, footer, contact page, and call CTAs).'),
+            TextInput::make('phone.url')
+                ->label('Phone link (tel:...)')
+                ->helperText('Optional — auto-generated from the display number on save if left empty.')
+                ->columnSpanFull(),
         ];
     }
 

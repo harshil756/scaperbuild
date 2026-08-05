@@ -1,4 +1,5 @@
 import { Link } from 'react-router-dom'
+import SitePhoneLink from '../../components/SitePhoneLink.jsx'
 import usePageMeta from '../../hooks/usePageMeta.js'
 
 export default function LocationPortMelbournePage() {
@@ -62,7 +63,7 @@ export default function LocationPortMelbournePage() {
                     </ul>
                     <h4><b>Protect Your Property with 7 States Pest Control</b></h4>
                     <p>At 7 States Pest Control, our mission is to keep your home and business pest-free. From ants and cockroaches to termites, rodents, spiders, and wasps, we offer effective pest solutions across Port Melbourne and surrounding Melbourne suburbs.</p>
-                    <p>📞 Call <a href="tel:+61434660060"><b>+61 434 660 060</b></a> today to book an inspection and take the first step toward a clean, safe, and pest-free property.</p>
+                    <p>📞 Call <SitePhoneLink bold /> today to book an inspection and take the first step toward a clean, safe, and pest-free property.</p>
                   </div>
                   <button className="readmore-btn" type="button">Read More</button>
                 </div>
@@ -209,7 +210,7 @@ export default function LocationPortMelbournePage() {
                       </div>
                       <div id="Collapse-247bb1b6a50993ba1911" className=" collapse" aria-labelledby="primaryHeading-3-4b93f8f" data-parent="#accordion-6a50993ba1911">
                         <div className="elementskit-card-body ekit-accordion--content">
-                          <p><span style={{fontWeight: 400}}>&nbsp;You can call us at </span><a href="tel:+61434660060"><span style={{fontWeight: 400}}>+61 434 660 060,</span></a><span style={{fontWeight: 400}}> submit an online enquiry, or message us directly to schedule an inspection.</span></p>                      </div>
+                          <p><span style={{fontWeight: 400}}>&nbsp;You can call us at </span><SitePhoneLink suffix="," /><span style={{fontWeight: 400}}> submit an online enquiry, or message us directly to schedule an inspection.</span></p>                      </div>
                       </div>
                     </div>
                     <div className="elementskit-card ">

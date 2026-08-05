@@ -1,3 +1,4 @@
+import useSiteContact from '../../hooks/useSiteContact.js'
 import { cmsMediaUrl, cmsText } from '../../utils/cmsMedia.js'
 
 const CARD_LAYOUT = [
@@ -8,12 +9,13 @@ const CARD_LAYOUT = [
 ]
 
 function ServiceCard({ card, widgetId, tall }) {
+  const { phoneUrl } = useSiteContact()
   const title = cmsText(card?.title, 'Service')
   const price = cmsText(card?.price_text, '')
   const badge = cmsText(card?.badge, '')
   const alt = cmsText(card?.alt, title)
   const callLabel = cmsText(card?.call_label, 'Call Now')
-  const callUrl = cmsText(card?.call_url, 'tel:+61434660060')
+  const callUrl = cmsText(card?.call_url, phoneUrl)
   const src = cmsMediaUrl(card?.image, '/assets/images/placeholder.webp')
   const height = tall ? 360 : 150
   const width = tall ? 360 : 150

@@ -1,4 +1,5 @@
 import { Link } from 'react-router-dom'
+import SitePhoneLink from '../../components/SitePhoneLink.jsx'
 import usePageMeta from '../../hooks/usePageMeta.js'
 
 export default function LocationBrightonPage() {
@@ -15,7 +16,7 @@ export default function LocationBrightonPage() {
                 <p><span style={{fontWeight: 400}}>When pest problems strike in Brighton, you want a reliable, experienced partner who can deliver prompt, effective, and safe pest control. At </span><Link to="/"><b>7 States Pest Control</b><span style={{fontWeight: 400}}>, </span></Link><span style={{fontWeight: 400}}>we’re proud to offer tailored pest management solutions for homes and businesses across the Brighton area. Whether you’re dealing with wasps, rodents, spiders or bed bugs — we’ve got you covered.</span></p>
                 <h3><b>Why Choose 7 States Pest Control in Brighton</b></h3>
                 <ul>
-                  <li style={{fontWeight: 400}} aria-level={1}><b>Same-day service available</b><span style={{fontWeight: 400}}>: We understand how urgent pest issues can be. Our Brighton team can respond quickly — just call </span><a href="tel:+61434660060"><b>+61 434 660 060</b></a><span style={{fontWeight: 400}}> for fast, effective support.</span><span style={{fontWeight: 400}}><br /><br /></span></li>
+                  <li style={{fontWeight: 400}} aria-level={1}><b>Same-day service available</b><span style={{fontWeight: 400}}>: We understand how urgent pest issues can be. Our Brighton team can respond quickly — just call </span><SitePhoneLink bold /><span style={{fontWeight: 400}}> for fast, effective support.</span><span style={{fontWeight: 400}}><br /><br /></span></li>
                   <li style={{fontWeight: 400}} aria-level={1}><b>Licensed and experienced technicians</b><span style={{fontWeight: 400}}>: Our staff are fully trained, insured, and operate with the highest standards of professionalism.</span><span style={{fontWeight: 400}}><br /><br /></span></li>
                   <li style={{fontWeight: 400}} aria-level={1}><b>Eco-friendly treatments</b><span style={{fontWeight: 400}}>: Safety is our top priority. We use modern, environmentally conscious products that are effective yet safe for your family, pets, and property.</span><span style={{fontWeight: 400}}><br /><br /></span></li>
                   <li><b>Customized pest management plans</b><span style={{fontWeight: 400}}>: Every infestation is unique — we don’t apply “one-size-fits-all” remedies. We assess your property, understand the pest behavior, and design a plan to get rid of the problem and prevent recurrence.<br /></span><br /><b>Preventative strategies</b><span style={{fontWeight: 400}}>: Beyond elimination, we help you implement measures so pests don’t come back, saving you time, stress, and expense in the future.</span><span style={{fontWeight: 400}}><br /></span></li>
@@ -121,7 +122,7 @@ export default function LocationBrightonPage() {
                     </ul>
                     <h5><b>Get Fast &amp; Reliable Pest Control in Brighton</b></h5>
                     <p>Whether it's rodents, spiders, wasps, bed bugs, or general pests — we’re here to help with fast and affordable pest control services in Brighton.</p>
-                    <p>Call us at <a href="tel:+61434660060"><b>+61 434 660 060</b></a> or 
+                    <p>Call us at <SitePhoneLink bold /> or 
                       <Link to="/contact-us"><b>request a free quote</b></Link> today. Enjoy a <b>safe, clean, and pest-free home</b> with 7 States Pest Control.</p>
                   </div>
                   <button className="readmore-btn" type="button">Read More</button>

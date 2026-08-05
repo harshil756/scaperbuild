@@ -1,4 +1,5 @@
 import PhoneNumberInput from '../../components/PhoneNumberInput.jsx'
+import SitePhoneLink from '../../components/SitePhoneLink.jsx'
 import ServiceCmsContentBlocks from '../../components/service/ServiceCmsContentBlocks.jsx'
 import ServiceFaqCms from '../../components/service/ServiceFaqCms.jsx'
 import { cmsText } from '../../utils/cmsMedia.js'
@@ -1150,7 +1151,7 @@ export default function OurServicesFoxPestControlInMelbournePage() {
                         </div>
                         <div className="elementor-element elementor-element-4852935 elementor-widget elementor-widget-text-editor" data-element_type="widget" data-id="4852935" data-widget_type="text-editor.default">
                           <div className="elementor-widget-container">
-                            <p>Do you have any specific questions about us, our services, or anything related to pest infestation issues? Call us today on&nbsp;<a href="tel:+61434660060">( +61 434 660 060 )</a>&nbsp;or use our contact form to connect with our&nbsp;<b>7 States Pest Control</b>. You can get answers to your questions, get upfront quotes for the&nbsp;<b>7 States Pest Control</b>&nbsp;issues, and receive high-quality tailored services.</p> </div>
+                            <p>Do you have any specific questions about us, our services, or anything related to pest infestation issues? Call us today on&nbsp;<SitePhoneLink />&nbsp;or use our contact form to connect with our&nbsp;<b>7 States Pest Control</b>. You can get answers to your questions, get upfront quotes for the&nbsp;<b>7 States Pest Control</b>&nbsp;issues, and receive high-quality tailored services.</p> </div>
                         </div>
                         <div className="elementor-element elementor-element-3a9556f elementor-widget elementor-widget-button" data-element_type="widget" data-id="3a9556f" data-widget_type="button.default">
                           <div className="elementor-widget-container">

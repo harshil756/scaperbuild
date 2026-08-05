@@ -1,4 +1,5 @@
 import { Link } from 'react-router-dom'
+import SitePhoneLink from '../../components/SitePhoneLink.jsx'
 import usePageMeta from '../../hooks/usePageMeta.js'
 
 export default function LocationSandringhamPage() {
@@ -62,7 +63,7 @@ export default function LocationSandringhamPage() {
                     </ul>
                     <h4><b>Protect Your Property with 7 States Pest Control in Sandringham</b></h4>
                     <p>At 7 States Pest Control, our mission is to keep your home and business pest-free. From ants and cockroaches to termites, rodents, spiders, and wasps, we offer effective pest solutions across Sandringham and surrounding Melbourne suburbs.</p>
-                    <p>Call us at <a href="tel:+61434660060"><b>+61 434 660 060</b></a> today to book an inspection and take the first step toward a clean, safe, and pest-free property. With our professional support, you can feel confident knowing your space is protected.</p>
+                    <p>Call us at <SitePhoneLink bold /> today to book an inspection and take the first step toward a clean, safe, and pest-free property. With our professional support, you can feel confident knowing your space is protected.</p>
                   </div>
                   <button className="readmore-btn" type="button">Read More</button>
                 </div>
@@ -209,7 +210,7 @@ export default function LocationSandringhamPage() {
                       </div>
                       <div id="Collapse-247bb1b6a50993e92ebe" className=" collapse" aria-labelledby="primaryHeading-3-4b93f8f" data-parent="#accordion-6a50993e92ebe">
                         <div className="elementskit-card-body ekit-accordion--content">
-                          <p><span style={{fontWeight: 400}}>You can call us at </span><a href="tel:+61434660060"><b>+61 434 660 060</b></a><span style={{fontWeight: 400}}>, submit an online enquiry, or message us directly to schedule an inspection.</span></p>                      </div>
+                          <p><span style={{fontWeight: 400}}>You can call us at </span><SitePhoneLink bold /><span style={{fontWeight: 400}}>, submit an online enquiry, or message us directly to schedule an inspection.</span></p>                      </div>
                       </div>
                     </div>
                     <div className="elementskit-card ">

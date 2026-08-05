@@ -1,4 +1,5 @@
 import { Link } from 'react-router-dom'
+import SitePhoneLink from '../../components/SitePhoneLink.jsx'
 import usePageMeta from '../../hooks/usePageMeta.js'
 
 export default function LocationCaufieldPage() {
@@ -57,7 +58,7 @@ export default function LocationCaufieldPage() {
                     </ul>
                     <h4><b>Protect Your Property with 7 States Pest Control</b></h4>
                     <p>At 7 States Pest Control, our goal is simple: to keep your home and business pest-free. From common invaders like ants and cockroaches to specialized treatments for rodents, bed bugs, spiders, and wasps, we deliver effective solutions across Caulfield and surrounding Melbourne suburbs.</p>
-                    <p>Call us at <a href="tel:+61434660060"><b>+61 434 660 060</b></a> today to schedule an inspection and take the first step toward a safe, clean, and pest-free property.</p>
+                    <p>Call us at <SitePhoneLink bold /> today to schedule an inspection and take the first step toward a safe, clean, and pest-free property.</p>
                   </div>
                   <button className="readmore-btn" type="button">Read More</button>
                 </div>
@@ -204,7 +205,7 @@ export default function LocationCaufieldPage() {
                       </div>
                       <div id="Collapse-247bb1b6a4fc3c824840" className=" collapse" aria-labelledby="primaryHeading-3-4b93f8f" data-parent="#accordion-6a4fc3c824840">
                         <div className="elementskit-card-body ekit-accordion--content">
-                          <p><span style={{fontWeight: 400}}>Booking is simple. You can call us directly at </span><a href="tel:+61434660060"><b>+61 434 660 060</b></a><span style={{fontWeight: 400}}>, fill out our online enquiry form, or message us to schedule an inspection. Our team will guide you through the process and recommend the best treatment plan for your situation.</span></p>                      </div>
+                          <p><span style={{fontWeight: 400}}>Booking is simple. You can call us directly at </span><SitePhoneLink bold suffix="," /> <span style={{fontWeight: 400}}>fill out our online enquiry form, or message us to schedule an inspection. Our team will guide you through the process and recommend the best treatment plan for your situation.</span></p>                      </div>
                       </div>
                     </div>
                     <div className="elementskit-card ">

@@ -1,8 +1,10 @@
 import usePageMeta from '../hooks/usePageMeta.js'
+import useSiteContact from '../hooks/useSiteContact.js'
 import { Link } from 'react-router-dom'
 
 export default function ThankYouPage() {
   usePageMeta('thank_you')
+  const { phoneNumber, phoneUrl } = useSiteContact()
 
   return (
     <>
@@ -116,12 +118,12 @@ export default function ThankYouPage() {
                 <div className="elementor-element elementor-element-726be6c elementor-align-center elementor-widget elementor-widget-button" data-element_type="widget" data-id="726be6c" data-widget_type="button.default">
                   <div className="elementor-widget-container">
                     <div className="elementor-button-wrapper">
-                      <a className="elementor-button elementor-button-link elementor-size-sm" href="tel:+61434660060">
+                      <a className="elementor-button elementor-button-link elementor-size-sm" href={phoneUrl}>
                         <span className="elementor-button-content-wrapper">
                           <span className="elementor-button-icon">
                             <i aria-hidden="true" className="icon icon-phone-call1" />
                           </span>
-                          <span className="elementor-button-text">+61 434 660 060</span>
+                          <span className="elementor-button-text">{phoneNumber}</span>
                         </span>
                       </a>
                     </div>

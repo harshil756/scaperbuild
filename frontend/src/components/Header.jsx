@@ -2,6 +2,7 @@ import { useEffect, useRef, useState } from 'react'
 import { Link, useLocation } from 'react-router-dom'
 import { mainNav } from '../config/navigation.js'
 import useMenu from '../hooks/useMenu.js'
+import useSiteContact from '../hooks/useSiteContact.js'
 import NavMenu from './NavMenu.jsx'
 import { QUOTE_POPUP_HREF } from './QuotePopupProvider.jsx'
 
@@ -10,6 +11,7 @@ const LOGO_SRCSET = `${LOGO} 344w, /assets/images/7-states-logo-1.png-1-300x92_6
 const MOBILE_QUERY = '(max-width: 767px)'
 
 export default function Header() {
+  const { phoneNumber, phoneUrl } = useSiteContact()
   const navItems = useMenu('header', mainNav)
   const [mobileOpen, setMobileOpen] = useState(false)
   const [sticky, setSticky] = useState(false)
@@ -77,11 +79,11 @@ export default function Header() {
           data-id="1673af9"
         >
           <div className="header-sticky-bar">
-            <a className="header-sticky-bar__call" href="tel:+61434660060">
+            <a className="header-sticky-bar__call" href={phoneUrl}>
               <span className="header-sticky-bar__call-title">Same-Day Pest Control Available</span>
               <span className="header-sticky-bar__call-number">
                 <i aria-hidden="true" className="icon icon-phone1" />
-                Call +61 434 660 060
+                Call {phoneNumber}
               </span>
             </a>
             <a className="header-sticky-bar__quote" href={QUOTE_POPUP_HREF}>

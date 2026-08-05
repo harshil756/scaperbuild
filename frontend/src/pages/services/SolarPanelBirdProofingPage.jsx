@@ -1,4 +1,5 @@
 import PhoneNumberInput from '../../components/PhoneNumberInput.jsx'
+import SitePhoneLink from '../../components/SitePhoneLink.jsx'
 import CmsHtml from '../../components/home/CmsHtml.jsx'
 import SolarAdvantagesCards from '../../components/solar/SolarAdvantagesCards.jsx'
 import SolarBlogPosts from '../../components/solar/SolarBlogPosts.jsx'
@@ -10,12 +11,14 @@ import SolarSignsCards from '../../components/solar/SolarSignsCards.jsx'
 import SolarWhyChooseCards from '../../components/solar/SolarWhyChooseCards.jsx'
 import SolarWhyEssentialCards from '../../components/solar/SolarWhyEssentialCards.jsx'
 import usePageCms from '../../hooks/usePageCms.js'
+import useSiteContact from '../../hooks/useSiteContact.js'
 import { cmsText } from '../../utils/cmsMedia.js'
 import usePageMeta from '../../hooks/usePageMeta.js'
 import { Link } from 'react-router-dom'
 
 export default function SolarPanelBirdProofingPage() {
   const { page, content: c } = usePageCms('solar-panel-bird-proofing')
+  const { phoneNumber } = useSiteContact()
   usePageMeta('solar_panel_bird_proofing', page)
 
   return (
@@ -375,11 +378,11 @@ export default function SolarPanelBirdProofingPage() {
                 <div className="elementor-element elementor-element-903b6e0 elementor-align-center elementor-widget elementor-widget-button" data-element_type="widget" data-id="903b6e0" data-widget_type="button.default">
                   <div className="elementor-widget-container">
                     <div className="elementor-button-wrapper">
-                      <a className="elementor-button elementor-button-link elementor-size-sm" href="tel:+61434660060">
+                      <SitePhoneLink className="elementor-button elementor-button-link elementor-size-sm">
                         <span className="elementor-button-content-wrapper">
-                          <span className="elementor-button-text">Call us Now : +61 434 660 060</span>
+                          <span className="elementor-button-text">Call us Now : {phoneNumber}</span>
                         </span>
-                      </a>
+                      </SitePhoneLink>
                     </div>
                   </div>
                 </div>

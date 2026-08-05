@@ -1,4 +1,5 @@
 import { Link } from 'react-router-dom'
+import SitePhoneLink from '../../components/SitePhoneLink.jsx'
 import usePageMeta from '../../hooks/usePageMeta.js'
 
 export default function LocationSouthMelbournePage() {
@@ -47,7 +48,7 @@ export default function LocationSouthMelbournePage() {
                     </ul>
                     <h4><b>Protect Your Property with 7 States Pest Control in South Melbourne</b></h4>
                     <p>At 7 States Pest Control, our mission is to keep your home and business pest-free. From ants and cockroaches to termites, rodents, spiders, and wasps, we offer effective pest solutions across South Melbourne and surrounding suburbs.</p>
-                    <p>📞 Call <a href="tel:+61434660060"><b>+61 434 660 060</b></a> today to book an inspection and take the first step toward a clean, safe, and pest-free property.</p>
+                    <p>📞 Call <SitePhoneLink bold /> today to book an inspection and take the first step toward a clean, safe, and pest-free property.</p>
                   </div>
                   <button className="readmore-btn" type="button">Read More</button>
                 </div>

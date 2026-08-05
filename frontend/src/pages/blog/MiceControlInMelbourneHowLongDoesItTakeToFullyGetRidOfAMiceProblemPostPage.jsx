@@ -1,4 +1,5 @@
 import { Link } from 'react-router-dom'
+import SitePhoneLink from '../../components/SitePhoneLink.jsx'
 import usePageMeta from '../../hooks/usePageMeta.js'
 
 export default function MiceControlInMelbourneHowLongDoesItTakeToFullyGetRidOfAMiceProblemPostPage() {
@@ -92,7 +93,7 @@ export default function MiceControlInMelbourneHowLongDoesItTakeToFullyGetRidOfAM
                 <p><span style={{fontWeight: 400}}>If you have got mice in your Melbourne home right now, the best thing you can do is call a professional sooner rather than later. The longer you wait, the bigger the job becomes.</span></p>
                 <p><span style={{fontWeight: 400}}>At </span><Link to="/"><b>7 States Pest Control,</b></Link><span style={{fontWeight: 400}}> we provide thorough and affordable </span><Link to="/rodent-control-in-melbourne"><b>mice control in Melbourne</b></Link><span style={{fontWeight: 400}}> for both homes and businesses. Our licensed technicians carry out a full inspection, apply professional grade treatments, and make sure entry points are sealed so the problem does not come back.</span></p>
                 <p><span style={{fontWeight: 400}}>We also handle rat control in Melbourne, mouse exterminator services, and full rodent control across the greater Melbourne area.</span></p>
-                <p><span style={{fontWeight: 400}}>Call us on </span><a href="tel:+61434660060"><span style={{fontWeight: 400}}>+61 434 660 060</span></a><span style={{fontWeight: 400}}> book your inspection today. Same day service is available.</span></p>
+                <p><span style={{fontWeight: 400}}>Call us on </span><SitePhoneLink /><span style={{fontWeight: 400}}> book your inspection today. Same day service is available.</span></p>
                 <p><span style={{fontWeight: 400}}>Get professional</span><Link to="/"> <b>pest control Melbourne</b></Link><span style={{fontWeight: 400}}> solutions for all types of infestations. From</span><Link to="/our-services-spider-control-treatment"> <b>spider control services</b></Link><span style={{fontWeight: 400}}> to complete</span><Link to="/our-services-spider-control-treatment"> <b>spider removal service</b></Link><span style={{fontWeight: 400}}>, we ensure safe results. We also offer</span><Link to="/our-services-fox-pest-control-in-melbourne"> <b>fox population control</b></Link><span style={{fontWeight: 400}}> and</span><Link to="/our-services-possum-pest-control"> <b>possum removal service Melbourne</b></Link><span style={{fontWeight: 400}}>. Keep your home secure with</span><Link to="/our-services-termite-pest-control"> <b>termite control Melbourne</b></Link><span style={{fontWeight: 400}}> and effective</span><Link to="/our-services-termite-pest-control"> <b>termite treatment Melbourne</b></Link><span style={{fontWeight: 400}}>.</span></p>
               </div>
             </div>

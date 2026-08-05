@@ -1,4 +1,5 @@
 import { Link } from 'react-router-dom'
+import SitePhoneLink from '../../components/SitePhoneLink.jsx'
 import usePageMeta from '../../hooks/usePageMeta.js'
 
 export default function LocationAltonaPage() {
@@ -58,7 +59,7 @@ export default function LocationAltonaPage() {
                     <h4><b>Protect Your Property with 7 States Pest Control</b></h4>
                     <p>At 7 States Pest Control, our goal is simple: to keep your home and business pest-free. From common invaders like ants and cockroaches to specialized treatments for rodents, bed bugs, spiders, and wasps, we deliver effective solutions across Altona and surrounding Melbourne suburbs.</p>
                     <p>Visit us: <Link to="/"><b>7 States Pest Control</b></Link></p>
-                    <p>Call us at <a href="tel:+61434660060"><b>+61 434 660 060</b></a> today to schedule an inspection and take the first step toward a safe, clean, and pest-free property. With our professional support, you can enjoy peace of mind knowing your environment is protected.</p>
+                    <p>Call us at <SitePhoneLink bold /> today to schedule an inspection and take the first step toward a safe, clean, and pest-free property. With our professional support, you can enjoy peace of mind knowing your environment is protected.</p>
                   </div>
                   <button className="readmore-btn" type="button">Read More</button>
                 </div>

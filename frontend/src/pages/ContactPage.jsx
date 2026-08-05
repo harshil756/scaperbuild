@@ -3,17 +3,23 @@ import CmsHtml from '../components/home/CmsHtml.jsx'
 import PhoneNumberInput from '../components/PhoneNumberInput.jsx'
 import usePageCms from '../hooks/usePageCms.js'
 import usePageMeta from '../hooks/usePageMeta.js'
+import useSiteContact from '../hooks/useSiteContact.js'
 import { cmsText } from '../utils/cmsMedia.js'
 import { Link } from 'react-router-dom'
 
 export default function ContactPage() {
   const { page, content: c } = usePageCms('contact-us')
+  const siteContact = useSiteContact()
   usePageMeta('contact_us', page)
 
-  const phoneNumber = cmsText(c?.phone?.number, '(03) 4320 5325')
-  const phoneUrl = cmsText(c?.phone?.url, 'tel:0343205325')
-  const emailAddress = cmsText(c?.email?.address, '7statespestcontrol@gmail.com')
-  const emailUrl = cmsText(c?.email?.url, `mailto:${emailAddress}`)
+  // Prefer page CMS; fall back to shared site contact (same Filament source).
+  const phoneNumber = cmsText(c?.phone?.number, siteContact.phoneNumber)
+  const phoneUrl = cmsText(c?.phone?.url, siteContact.phoneUrl)
+  const emailAddress = cmsText(c?.email?.address, siteContact.emailAddress)
+  const emailUrl = cmsText(c?.email?.url, siteContact.emailUrl)
+  const hoursTitle = cmsText(c?.hours?.title, siteContact.hoursTitle)
+  const hoursBody = cmsText(c?.hours?.body, siteContact.hoursBody)
+  const addressText = cmsText(c?.address?.text, siteContact.address)
   const mapEmbedUrl = cmsText(
     c?.map?.embed_url,
     'https://www.google.com/maps/d/embed?mid=1BO16EFVGlD-7b3DEl0Ib_lKR61UoHTI&ehbc=2E312F&noprof=1',
@@ -126,13 +132,8 @@ export default function ContactPage() {
                                 </div>
                                 <div className="box-body">
                                   <h3 className="elementskit-info-box-title">
-                                    {cmsText(c?.hours?.title, 'Opening Hours')}              </h3>
-                                  {c?.hours?.body ? (
-                                    <CmsHtml html={c.hours.body} as="p" />
-                                  ) : (
-                                    <p>Daily: 07:00 AM – 07:00 PM<br />
-                                      Sunday &amp; Holidays: Closed</p>
-                                  )}
+                                    {hoursTitle}              </h3>
+                                  <CmsHtml html={hoursBody} as="p" />
                                 </div>
                               </div>
                             </div> </div>
@@ -156,7 +157,7 @@ export default function ContactPage() {
                                 </div>
                                 <div className="box-body">
                                   <h3 className="elementskit-info-box-title">
-                                    {cmsText(c?.phone?.title, 'Contact Us')}              </h3>
+                                    {cmsText(c?.phone?.title, siteContact.phoneTitle)}              </h3>
                                   <p><a href={phoneUrl}>{phoneNumber}</a></p>
                                 </div>
                               </div>
@@ -181,7 +182,7 @@ export default function ContactPage() {
                                 </div>
                                 <div className="box-body">
                                   <h3 className="elementskit-info-box-title">
-                                    {cmsText(c?.email?.title, 'Email')}              </h3>
+                                    {cmsText(c?.email?.title, siteContact.emailTitle)}              </h3>
                                   <p><a href={emailUrl}>{emailAddress}</a></p>
                                 </div>
                               </div>
@@ -206,8 +207,8 @@ export default function ContactPage() {
                                 </div>
                                 <div className="box-body">
                                   <h3 className="elementskit-info-box-title">
-                                    {cmsText(c?.address?.title, 'Our Address')}              </h3>
-                                  <p>{cmsText(c?.address?.text, 'Melbourne, Australia')}</p>
+                                    {cmsText(c?.address?.title, siteContact.addressTitle)}              </h3>
+                                  <p>{addressText}</p>
                                 </div>
                               </div>
                             </div> </div>

@@ -1,4 +1,5 @@
 import { Link } from 'react-router-dom'
+import SitePhoneLink from '../../components/SitePhoneLink.jsx'
 import usePageMeta from '../../hooks/usePageMeta.js'
 
 export default function FoxControlServicesMelbourneABeginnersCompleteGuide2026PostPage() {
@@ -106,7 +107,7 @@ export default function FoxControlServicesMelbourneABeginnersCompleteGuide2026Po
                 <h4><b>Ready to Fix Your Fox Problem?</b></h4>
                 <p><span style={{fontWeight: 400}}>If you’re seeing signs of fox activity on your Melbourne property, don’t wait for it to get worse.&nbsp;</span></p>
                 <p><span style={{fontWeight: 400}}>7 States Pest Control offers licensed, humane </span><Link to="/our-services-fox-pest-control-in-melbourne"><b>fox control services</b></Link><span style={{fontWeight: 400}}> across Melbourne — fast response, fully compliant with Victorian regulations, and tailored to your specific situation.</span></p>
-                <p><b>Call </b><a href="tel:+61434660060"><b>+61 434 660 060</b></a><b> today or visit </b><Link to="/"><b>7statespestcontrol.com.au</b></Link><b> for a free quote.</b></p>
+                <p><b>Call </b><SitePhoneLink bold /><b> today or visit </b><Link to="/"><b>7statespestcontrol.com.au</b></Link><b> for a free quote.</b></p>
               </div>
             </div>
           </div>

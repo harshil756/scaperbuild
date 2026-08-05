@@ -1,4 +1,5 @@
 import { Link } from 'react-router-dom'
+import SitePhoneLink from '../../components/SitePhoneLink.jsx'
 import usePageMeta from '../../hooks/usePageMeta.js'
 
 export default function LocationArmadalePage() {
@@ -57,7 +58,7 @@ export default function LocationArmadalePage() {
                     </ul>
                     <h4><b>Protect Your Property with 7 States Pest Control</b></h4>
                     <p>At 7 States Pest Control, we are committed to keeping your home or business pest-free. From common pests like ants and cockroaches to stubborn infestations of rodents, bed bugs, spiders, and wasps—we’ve got you covered.</p>
-                    <p>Call us today at <a href="tel:+61434660060"><b>+61 434 660 060</b></a> to schedule an inspection and take the first step toward a pest-free environment in Armadale. With our expert team by your side, you can enjoy peace of mind, safety, and lasting protection.</p>
+                    <p>Call us today at <SitePhoneLink bold /> to schedule an inspection and take the first step toward a pest-free environment in Armadale. With our expert team by your side, you can enjoy peace of mind, safety, and lasting protection.</p>
                   </div>
                   <button className="readmore-btn" type="button">Read More</button>
                 </div>

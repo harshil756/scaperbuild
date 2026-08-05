@@ -1,4 +1,5 @@
 import { Link } from 'react-router-dom'
+import SitePhoneLink from '../../components/SitePhoneLink.jsx'
 import usePageMeta from '../../hooks/usePageMeta.js'
 
 export default function LocationBeaumarisPage() {
@@ -93,7 +94,7 @@ export default function LocationBeaumarisPage() {
                       <li>Long-term prevention and support</li>
                     </ul>
                     <p><span style={{fontWeight: 400}}>Ready to make your Beaumaris home pest-free?</span></p>
-                    <p><span style={{fontWeight: 400}}>Call us today at </span><a href="tel:+61434660060"><b>+61 434 660 060</b></a><span style={{fontWeight: 400}}> or email </span><b>7statespestcontrol@gmail.com</b><span style={{fontWeight: 400}}> for expert pest control assistance.</span></p>
+                    <p><span style={{fontWeight: 400}}>Call us today at </span><SitePhoneLink bold /><span style={{fontWeight: 400}}> or email </span><b>7statespestcontrol@gmail.com</b><span style={{fontWeight: 400}}> for expert pest control assistance.</span></p>
                   </div>
                   <button className="readmore-btn" type="button">Read More</button>
                 </div>

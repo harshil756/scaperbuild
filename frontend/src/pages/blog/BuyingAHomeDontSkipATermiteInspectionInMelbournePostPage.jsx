@@ -1,4 +1,5 @@
 import { Link } from 'react-router-dom'
+import SitePhoneLink from '../../components/SitePhoneLink.jsx'
 import usePageMeta from '../../hooks/usePageMeta.js'
 
 export default function BuyingAHomeDontSkipATermiteInspectionInMelbournePostPage() {
@@ -91,7 +92,7 @@ export default function BuyingAHomeDontSkipATermiteInspectionInMelbournePostPage
                 <p><span style={{fontWeight: 400}}>Not all pest inspectors are the same. When you are booking a termite inspection for a property purchase, make sure the person carrying it out is properly licensed and experienced in termite identification and assessment.</span></p>
                 <p><span style={{fontWeight: 400}}>At </span><Link to="/"><b>7 States Pest Control, </b></Link><span style={{fontWeight: 400}}>our team carries out thorough termite inspections across Melbourne for home buyers, property owners, and real estate transactions. We give you a clear, detailed report with no jargon and no upselling. Just honest advice about what we found and what your options are.</span></p>
                 <p><span style={{fontWeight: 400}}>Whether you need a pre-purchase termite inspection, a termite barrier installed, or ongoing termite management for a property you already own, we can help.</span></p>
-                <p><span style={{fontWeight: 400}}>Call us on </span><a href="tel:+61434660060"><span style={{fontWeight: 400}}>+61 434 660 060 </span></a><span style={{fontWeight: 400}}>&nbsp;to book your inspection.</span></p>
+                <p><span style={{fontWeight: 400}}>Call us on </span><SitePhoneLink /><span style={{fontWeight: 400}}>&nbsp;to book your inspection.</span></p>
                 <p><span style={{fontWeight: 400}}>Looking for reliable</span><Link to="/"> <b>pest control Melbourne</b></Link><span style={{fontWeight: 400}}> services ? We provide complete solutions including</span><Link to="/our-services-spider-control-treatment"> <b>spider control services</b></Link><span style={{fontWeight: 400}}> and</span><Link to="/our-services-spider-control-treatment"> <b>spider removal service</b></Link><span style={{fontWeight: 400}}> to keep your property safe. Our experts also handle</span><Link to="/our-services-fox-pest-control-in-melbourne"> <b>fox population control</b></Link><span style={{fontWeight: 400}}> and</span><Link to="/our-services-possum-pest-control"> <b>possum removal service Melbourne</b></Link><span style={{fontWeight: 400}}>. For long-term protection, we offer</span><Link to="/our-services-termite-pest-control"> <b>termite control Melbourne</b></Link><span style={{fontWeight: 400}}> and effective</span><Link to="/our-services-termite-pest-control"> <b>termite treatment Melbourne</b></Link><span style={{fontWeight: 400}}>.</span></p>
               </div>
             </div>

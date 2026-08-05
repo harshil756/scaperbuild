@@ -1,4 +1,5 @@
 import { Link } from 'react-router-dom'
+import SitePhoneLink from '../../components/SitePhoneLink.jsx'
 import usePageMeta from '../../hooks/usePageMeta.js'
 
 export default function LocationBentleighPage() {
@@ -114,7 +115,7 @@ export default function LocationBentleighPage() {
                     </ul>
                     <h5><b>Protect Your Property with 7 States Pest Control</b></h5>
                     <p>Whether it’s rodents, spiders, bed bugs, wasps, or general pests — we’re here to help with fast, reliable, and affordable pest control services in Bentleigh.</p>
-                    <p>Call us today at <a href="tel:+61434660060"><b>+61 434 660 060</b></a> for a free quote and same-day service. Enjoy a <b>safe, clean, and pest-free property</b> with 7 States Pest Control.</p>
+                    <p>Call us today at <SitePhoneLink bold /> for a free quote and same-day service. Enjoy a <b>safe, clean, and pest-free property</b> with 7 States Pest Control.</p>
                   </div>
                   <button className="readmore-btn" type="button">Read More</button>
                 </div>

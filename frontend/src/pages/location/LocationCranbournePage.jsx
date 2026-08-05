@@ -1,4 +1,5 @@
 import { Link } from 'react-router-dom'
+import SitePhoneLink from '../../components/SitePhoneLink.jsx'
 import usePageMeta from '../../hooks/usePageMeta.js'
 
 export default function LocationCranbournePage() {
@@ -58,7 +59,7 @@ export default function LocationCranbournePage() {
                     </ul>
                     <h4><b>Protect Your Property with 7 States Pest Control</b></h4>
                     <p>At 7 States Pest Control, we’re committed to helping Cranbourne homes and businesses stay pest-free. Whether you’re dealing with ants, cockroaches, spiders, termites, rodents, bed bugs, or wasps — we offer reliable and effective pest control services across Cranbourne and surrounding suburbs.</p>
-                    <p>📞 Call us at <a href="tel:+61434660060"><b>+61 434 660 060</b></a> today to book an inspection and take the first step toward a clean, safe, and pest-free property.</p>
+                    <p>📞 Call us at <SitePhoneLink bold /> today to book an inspection and take the first step toward a clean, safe, and pest-free property.</p>
                   </div>
                   <button className="readmore-btn" type="button">Read More</button>
                 </div>
