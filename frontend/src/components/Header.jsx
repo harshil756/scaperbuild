@@ -2,7 +2,7 @@ import { useEffect, useRef, useState } from 'react'
 import { Link, useLocation } from 'react-router-dom'
 import { mainNav } from '../config/navigation.js'
 import useMenu from '../hooks/useMenu.js'
-import useSiteContact from '../hooks/useSiteContact.js'
+import useSiteContact from '../hooks/useSiteContact.jsx'
 import NavMenu from './NavMenu.jsx'
 import { QUOTE_POPUP_HREF } from './QuotePopupProvider.jsx'
 

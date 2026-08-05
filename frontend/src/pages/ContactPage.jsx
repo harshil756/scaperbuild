@@ -3,7 +3,7 @@ import CmsHtml from '../components/home/CmsHtml.jsx'
 import PhoneNumberInput from '../components/PhoneNumberInput.jsx'
 import usePageCms from '../hooks/usePageCms.js'
 import usePageMeta from '../hooks/usePageMeta.js'
-import useSiteContact from '../hooks/useSiteContact.js'
+import useSiteContact from '../hooks/useSiteContact.jsx'
 import { cmsText } from '../utils/cmsMedia.js'
 import { Link } from 'react-router-dom'
 

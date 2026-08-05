@@ -1,5 +1,5 @@
 import usePageMeta from '../hooks/usePageMeta.js'
-import useSiteContact from '../hooks/useSiteContact.js'
+import useSiteContact from '../hooks/useSiteContact.jsx'
 import { Link } from 'react-router-dom'
 
 export default function ThankYouPage() {

@@ -6,7 +6,7 @@ import {
   socialLinks,
 } from '../config/navigation.js'
 import useMenu from '../hooks/useMenu.js'
-import useSiteContact from '../hooks/useSiteContact.js'
+import useSiteContact from '../hooks/useSiteContact.jsx'
 
 const LOGO = '/assets/images/7-states-logo-1.png-1_b6fda841.webp'
 const LOGO_SRCSET = `${LOGO} 344w, /assets/images/7-states-logo-1.png-1-300x92_6c062508.webp 300w`

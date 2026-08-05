@@ -1,4 +1,4 @@
-import useSiteContact from '../../hooks/useSiteContact.js'
+import useSiteContact from '../../hooks/useSiteContact.jsx'
 import { rewriteSiteContactHtml } from '../../config/siteContact.js'
 import { rewriteCmsHtmlMedia } from '../../utils/cmsMedia.js'
 

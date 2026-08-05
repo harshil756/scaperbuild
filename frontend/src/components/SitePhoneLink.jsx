@@ -1,4 +1,4 @@
-import useSiteContact from '../hooks/useSiteContact.js'
+import useSiteContact from '../hooks/useSiteContact.jsx'
 
 /**
  * Renders a tel: link using Filament Contact Us phone (site-wide).

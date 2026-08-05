@@ -1,4 +1,4 @@
-import useSiteContact from '../../hooks/useSiteContact.js'
+import useSiteContact from '../../hooks/useSiteContact.jsx'
 import { cmsMediaUrl, cmsText } from '../../utils/cmsMedia.js'
 
 const CARD_LAYOUT = [
