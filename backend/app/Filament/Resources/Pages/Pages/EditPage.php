@@ -4,6 +4,7 @@ namespace App\Filament\Resources\Pages\Pages;
 
 use App\Filament\Resources\Pages\PageResource;
 use App\Services\AboutPageBlockMapper;
+use App\Services\ContactPageBlockMapper;
 use App\Services\HomePageBlockMapper;
 use App\Services\AntPestControlPageBlockMapper;
 use App\Services\MelbournePageBlockMapper;
@@ -63,6 +64,7 @@ class EditPage extends EditRecord
         return match ($slug) {
             'home' => HomePageBlockMapper::class,
             'about-us' => AboutPageBlockMapper::class,
+            'contact-us' => ContactPageBlockMapper::class,
             'solar-panel-bird-proofing' => SolarPanelBirdProofingPageBlockMapper::class,
             'our-services-ant-pest-control' => AntPestControlPageBlockMapper::class,
             'melbourne' => MelbournePageBlockMapper::class,

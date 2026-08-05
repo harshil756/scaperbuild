@@ -45,6 +45,7 @@ class PageForm
                     ]),
                 ...HomePageSectionsForm::sections(),
                 ...AboutPageSectionsForm::sections(),
+                ...ContactPageSectionsForm::sections(),
                 ...SolarPanelBirdProofingPageSectionsForm::sections(),
                 ...AntPestControlPageSectionsForm::sections(),
                 ...MelbournePageSectionsForm::sections(),

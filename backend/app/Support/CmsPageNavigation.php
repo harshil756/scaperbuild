@@ -23,6 +23,7 @@ class CmsPageNavigation
         return [
             ['slug' => 'home', 'title' => 'Home', 'path' => '/', 'sort' => 10],
             ['slug' => 'about-us', 'title' => 'About Us', 'path' => '/about-us', 'sort' => 20],
+            ['slug' => 'contact-us', 'title' => 'Contact Us', 'path' => '/contact-us', 'sort' => 30],
         ];
     }
 

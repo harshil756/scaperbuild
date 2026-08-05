@@ -1,12 +1,27 @@
+import ContactCmsStyles from '../components/contact/ContactCmsStyles.jsx'
+import CmsHtml from '../components/home/CmsHtml.jsx'
 import PhoneNumberInput from '../components/PhoneNumberInput.jsx'
+import usePageCms from '../hooks/usePageCms.js'
 import usePageMeta from '../hooks/usePageMeta.js'
+import { cmsText } from '../utils/cmsMedia.js'
 import { Link } from 'react-router-dom'
 
 export default function ContactPage() {
-  usePageMeta('contact_us')
+  const { page, content: c } = usePageCms('contact-us')
+  usePageMeta('contact_us', page)
+
+  const phoneNumber = cmsText(c?.phone?.number, '(03) 4320 5325')
+  const phoneUrl = cmsText(c?.phone?.url, 'tel:0343205325')
+  const emailAddress = cmsText(c?.email?.address, '7statespestcontrol@gmail.com')
+  const emailUrl = cmsText(c?.email?.url, `mailto:${emailAddress}`)
+  const mapEmbedUrl = cmsText(
+    c?.map?.embed_url,
+    'https://www.google.com/maps/d/embed?mid=1BO16EFVGlD-7b3DEl0Ib_lKR61UoHTI&ehbc=2E312F&noprof=1',
+  )
 
   return (
     <>
+      <ContactCmsStyles content={c} />
       <div className="elementor elementor-86" data-elementor-id={86} data-elementor-post-type="page" data-elementor-type="wp-page">
         <section className="elementor-section elementor-top-section elementor-element elementor-element-51da502 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-element_type="section" data-id="51da502" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
           <div className="elementor-background-overlay" />
@@ -15,7 +30,7 @@ export default function ContactPage() {
               <div className="elementor-widget-wrap elementor-element-populated">
                 <div className="elementor-element elementor-element-dffeb15 elementor-widget elementor-widget-heading animated fadeInDown" data-element_type="widget" data-id="dffeb15" data-settings="{&quot;_animation&quot;:&quot;fadeInDown&quot;}" data-widget_type="heading.default">
                   <div className="elementor-widget-container">
-                    <h2 className="elementor-heading-title elementor-size-default">Contact</h2> </div>
+                    <h2 className="elementor-heading-title elementor-size-default">{cmsText(c?.hero?.title, 'Contact')}</h2> </div>
                 </div>
                 <div className="elementor-element elementor-element-0aab09e elementor-icon-list--layout-inline elementor-align-center elementor-widget__width-auto elementor-list-item-link-full_width elementor-widget elementor-widget-icon-list animated fadeInDown" data-element_type="widget" data-id="0aab09e" data-settings="{&quot;_animation&quot;:&quot;fadeInDown&quot;,&quot;_animation_delay&quot;:720}" data-widget_type="icon-list.default">
                   <div className="elementor-widget-container">
@@ -28,7 +43,7 @@ export default function ContactPage() {
                         <a href="#">
                           <span className="elementor-icon-list-icon">
                             <svg aria-hidden="true" className="e-font-icon-svg e-fas-angle-right" viewBox="0 0 256 512" xmlns="http://www.w3.org/2000/svg"><path d="M224.3 273l-136 136c-9.4 9.4-24.6 9.4-33.9 0l-22.6-22.6c-9.4-9.4-9.4-24.6 0-33.9l96.4-96.4-96.4-96.4c-9.4-9.4-9.4-24.6 0-33.9L54.3 103c9.4-9.4 24.6-9.4 33.9 0l136 136c9.5 9.4 9.5 24.6.1 34z" /></svg> </span>
-                          <span className="elementor-icon-list-text">Contact Us</span>
+                          <span className="elementor-icon-list-text">{cmsText(c?.hero?.breadcrumb, 'Contact Us')}</span>
                         </a>
                       </li>
                     </ul>
@@ -48,11 +63,11 @@ export default function ContactPage() {
                       <div className="elementor-widget-wrap elementor-element-populated">
                         <div className="elementor-element elementor-element-ede26d4 elementor-widget elementor-widget-heading animated fadeInDown" data-element_type="widget" data-id="ede26d4" data-settings="{&quot;_animation&quot;:&quot;fadeInDown&quot;}" data-widget_type="heading.default">
                           <div className="elementor-widget-container">
-                            <h2 className="elementor-heading-title elementor-size-default">Contact Us</h2> </div>
+                            <h2 className="elementor-heading-title elementor-size-default">{cmsText(c?.intro?.eyebrow, 'Contact Us')}</h2> </div>
                         </div>
                         <div className="elementor-element elementor-element-96c8c97 elementor-widget elementor-widget-heading animated fadeInLeft" data-element_type="widget" data-id="96c8c97" data-settings="{&quot;_animation&quot;:&quot;fadeInLeft&quot;}" data-widget_type="heading.default">
                           <div className="elementor-widget-container">
-                            <h1 className="elementor-heading-title elementor-size-default">Our Contacts &amp; Location</h1> </div>
+                            <h1 className="elementor-heading-title elementor-size-default">{cmsText(c?.intro?.heading, 'Our Contacts & Location')}</h1> </div>
                         </div>
                       </div>
                     </div>
@@ -60,11 +75,21 @@ export default function ContactPage() {
                       <div className="elementor-widget-wrap elementor-element-populated">
                         <div className="elementor-element elementor-element-c4b41cd elementor-widget elementor-widget-text-editor" data-element_type="widget" data-id="c4b41cd" data-widget_type="text-editor.default">
                           <div className="elementor-widget-container">
-                            <p>Do you want to relocate to a new neighborhood? Are you looking for a reliable pest control company? At 7 States Pest Control, we provide&nbsp;<strong>end of lease pest control Melbourne&nbsp;</strong>to make it easier for you to terminate pests from your property. 7 States Pest Control is your one-stop option for pest control when you’re nearing a lease.</p> </div>
+                            {c?.intro?.body_1 ? (
+                              <CmsHtml html={c.intro.body_1} />
+                            ) : (
+                              <p>Do you want to relocate to a new neighborhood? Are you looking for a reliable pest control company? At 7 States Pest Control, we provide&nbsp;<strong>end of lease pest control Melbourne&nbsp;</strong>to make it easier for you to terminate pests from your property. 7 States Pest Control is your one-stop option for pest control when you’re nearing a lease.</p>
+                            )}
+                          </div>
                         </div>
                         <div className="elementor-element elementor-element-16ec06c elementor-widget elementor-widget-text-editor" data-element_type="widget" data-id="16ec06c" data-widget_type="text-editor.default">
                           <div className="elementor-widget-container">
-                            <p>With our effective end of lease mosquito and cockroach control, we ensure that your rental property is free from unwanted guests. The highly advanced pest control services are provided by registered pest control technicians of our company. What sets us apart is our specialized end-of-lease checklist to ensure that all requirements are met properly.</p> </div>
+                            {c?.intro?.body_2 ? (
+                              <CmsHtml html={c.intro.body_2} />
+                            ) : (
+                              <p>With our effective end of lease mosquito and cockroach control, we ensure that your rental property is free from unwanted guests. The highly advanced pest control services are provided by registered pest control technicians of our company. What sets us apart is our specialized end-of-lease checklist to ensure that all requirements are met properly.</p>
+                            )}
+                          </div>
                         </div>
                         <div className="elementor-element elementor-element-b6473e9 elementor-widget-divider--view-line elementor-widget elementor-widget-divider" data-element_type="widget" data-id="b6473e9" data-widget_type="divider.default">
                           <div className="elementor-widget-container">
@@ -101,9 +126,13 @@ export default function ContactPage() {
                                 </div>
                                 <div className="box-body">
                                   <h3 className="elementskit-info-box-title">
-                                    Opening Hours              </h3>
-                                  <p>Daily: 07:00 AM – 07:00 PM<br />
-                                    Sunday &amp; Holidays: Closed</p>
+                                    {cmsText(c?.hours?.title, 'Opening Hours')}              </h3>
+                                  {c?.hours?.body ? (
+                                    <CmsHtml html={c.hours.body} as="p" />
+                                  ) : (
+                                    <p>Daily: 07:00 AM – 07:00 PM<br />
+                                      Sunday &amp; Holidays: Closed</p>
+                                  )}
                                 </div>
                               </div>
                             </div> </div>
@@ -127,8 +156,8 @@ export default function ContactPage() {
                                 </div>
                                 <div className="box-body">
                                   <h3 className="elementskit-info-box-title">
-                                    Contact Us              </h3>
-                                  <p><a href="tel:034320 5325">(03) 4320 5325</a></p>
+                                    {cmsText(c?.phone?.title, 'Contact Us')}              </h3>
+                                  <p><a href={phoneUrl}>{phoneNumber}</a></p>
                                 </div>
                               </div>
                             </div> </div>
@@ -152,8 +181,8 @@ export default function ContactPage() {
                                 </div>
                                 <div className="box-body">
                                   <h3 className="elementskit-info-box-title">
-                                    Email              </h3>
-                                  <p><a href="mailto:7statespestcontrol@gmail.com">7statespestcontrol@gmail.com</a></p>
+                                    {cmsText(c?.email?.title, 'Email')}              </h3>
+                                  <p><a href={emailUrl}>{emailAddress}</a></p>
                                 </div>
                               </div>
                             </div> </div>
@@ -177,8 +206,8 @@ export default function ContactPage() {
                                 </div>
                                 <div className="box-body">
                                   <h3 className="elementskit-info-box-title">
-                                    Our Address              </h3>
-                                  <p>Melbourne, Australia</p>
+                                    {cmsText(c?.address?.title, 'Our Address')}              </h3>
+                                  <p>{cmsText(c?.address?.text, 'Melbourne, Australia')}</p>
                                 </div>
                               </div>
                             </div> </div>
@@ -190,11 +219,11 @@ export default function ContactPage() {
                         <div className="elementor-element elementor-element-521edfa e-con-full e-flex e-con e-child" data-element_type="container" data-id="521edfa" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
                           <div className="elementor-element elementor-element-cbd0177 elementor-widget elementor-widget-heading" data-element_type="widget" data-id="cbd0177" data-widget_type="heading.default">
                             <div className="elementor-widget-container">
-                              <h2 className="elementor-heading-title elementor-size-default">Get A Free Quote Now!</h2> </div>
+                              <h2 className="elementor-heading-title elementor-size-default">{cmsText(c?.quote_form?.title, 'Get A Free Quote Now!')}</h2> </div>
                           </div>
                           <div className="elementor-element elementor-element-9b90def elementor-widget elementor-widget-heading" data-element_type="widget" data-id="9b90def" data-widget_type="heading.default">
                             <div className="elementor-widget-container">
-                              <h6 className="elementor-heading-title elementor-size-default">Have an enquiry? Leave us your details and we’ll call you back during business hours.</h6> </div>
+                              <h6 className="elementor-heading-title elementor-size-default">{cmsText(c?.quote_form?.subtitle, 'Have an enquiry? Leave us your details and we’ll call you back during business hours.')}</h6> </div>
                           </div>
                           <div className="elementor-element elementor-element-bb2fb84 elementor-button-align-center elementor-widget elementor-widget-form" data-element_type="widget" data-id="bb2fb84" data-settings="{&quot;step_next_label&quot;:&quot;Next&quot;,&quot;step_previous_label&quot;:&quot;Previous&quot;,&quot;button_width&quot;:&quot;100&quot;,&quot;step_type&quot;:&quot;number_text&quot;,&quot;step_icon_shape&quot;:&quot;circle&quot;}" data-widget_type="form.default">
                             <div className="elementor-widget-container">
@@ -231,7 +260,7 @@ export default function ContactPage() {
                                   <div className="elementor-field-group elementor-column elementor-field-type-submit elementor-col-100 e-form__buttons">
                                     <button className="elementor-button elementor-size-md" type="submit">
                                       <span className="elementor-button-content-wrapper">
-                                        <span className="elementor-button-text">Submit Quote</span>
+                                        <span className="elementor-button-text">{cmsText(c?.quote_form?.submit_text, 'Submit Quote')}</span>
                                       </span>
                                     </button>
                                   </div>
@@ -252,7 +281,7 @@ export default function ContactPage() {
           <div className="e-con-inner">
             <div className="elementor-element elementor-element-ac143e2 elementor-widget elementor-widget-html" data-element_type="widget" data-id="ac143e2" data-widget_type="html.default">
               <div className="elementor-widget-container">
-                <iframe height={480} src="https://www.google.com/maps/d/embed?mid=1BO16EFVGlD-7b3DEl0Ib_lKR61UoHTI&ehbc=2E312F&noprof=1" width={640} /> </div>
+                <iframe height={480} src={mapEmbedUrl} title="Contact map" width={640} /> </div>
             </div>
           </div>
         </div>

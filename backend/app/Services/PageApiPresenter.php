@@ -4,6 +4,7 @@ namespace App\Services;
 
 use App\Models\Page;
 use App\Services\AboutPageBlockMapper;
+use App\Services\ContactPageBlockMapper;
 use App\Services\HomePageBlockMapper;
 use App\Services\AntPestControlPageBlockMapper;
 use App\Services\MelbournePageBlockMapper;
@@ -17,6 +18,7 @@ class PageApiPresenter
         $content = match ($page->slug) {
             'home' => HomePageBlockMapper::toForm($page),
             'about-us' => AboutPageBlockMapper::toForm($page),
+            'contact-us' => ContactPageBlockMapper::toForm($page),
             'solar-panel-bird-proofing' => SolarPanelBirdProofingPageBlockMapper::toForm($page),
             'our-services-ant-pest-control' => AntPestControlPageBlockMapper::toForm($page),
             'melbourne' => MelbournePageBlockMapper::toForm($page),

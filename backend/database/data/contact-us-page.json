@@ -1,0 +1,168 @@
+{
+  "slug": "contact-us",
+  "title": "Contact Us",
+  "seo_title": "Contact Us | 7 States Pest Control.",
+  "seo_description": "Need pest control services in Melbourne? Contact 7 States Pest Control for expert solutions. Trusted professionals serving Melbourne and surrounding areas.",
+  "body_class": "wp-singular page-template page-template-elementor_header_footer page page-id-86 wp-custom-logo wp-embed-responsive wp-theme-hello-elementor elementor-default elementor-template-full-width elementor-kit-9 elementor-page elementor-page-86",
+  "elementor_id": 86,
+  "is_published": true,
+  "blocks": [
+    {
+      "sort_order": 0,
+      "block_key": "background.hero",
+      "section": "hero",
+      "label": "Hero section background",
+      "type": "background",
+      "background_image_path": null,
+      "metadata": {
+        "elementor_id": "51da502"
+      }
+    },
+    {
+      "sort_order": 1,
+      "block_key": "hero.title",
+      "section": "hero",
+      "label": "Hero title",
+      "type": "text",
+      "value": "Contact"
+    },
+    {
+      "sort_order": 2,
+      "block_key": "hero.breadcrumb",
+      "section": "hero",
+      "label": "Hero breadcrumb",
+      "type": "text",
+      "value": "Contact Us"
+    },
+    {
+      "sort_order": 3,
+      "block_key": "intro.eyebrow",
+      "section": "intro",
+      "label": "Intro eyebrow",
+      "type": "text",
+      "value": "Contact Us"
+    },
+    {
+      "sort_order": 4,
+      "block_key": "intro.heading",
+      "section": "intro",
+      "label": "Intro heading",
+      "type": "text",
+      "value": "Our Contacts & Location"
+    },
+    {
+      "sort_order": 5,
+      "block_key": "intro.body_1",
+      "section": "intro",
+      "label": "Intro body paragraph 1",
+      "type": "html",
+      "value": "<p>Do you want to relocate to a new neighborhood? Are you looking for a reliable pest control company? At 7 States Pest Control, we provide&nbsp;<strong>end of lease pest control Melbourne&nbsp;</strong>to make it easier for you to terminate pests from your property. 7 States Pest Control is your one-stop option for pest control when you’re nearing a lease.</p>"
+    },
+    {
+      "sort_order": 6,
+      "block_key": "intro.body_2",
+      "section": "intro",
+      "label": "Intro body paragraph 2",
+      "type": "html",
+      "value": "<p>With our effective end of lease mosquito and cockroach control, we ensure that your rental property is free from unwanted guests. The highly advanced pest control services are provided by registered pest control technicians of our company. What sets us apart is our specialized end-of-lease checklist to ensure that all requirements are met properly.</p>"
+    },
+    {
+      "sort_order": 7,
+      "block_key": "hours.title",
+      "section": "info",
+      "label": "Opening hours title",
+      "type": "text",
+      "value": "Opening Hours"
+    },
+    {
+      "sort_order": 8,
+      "block_key": "hours.body",
+      "section": "info",
+      "label": "Opening hours body",
+      "type": "html",
+      "value": "Daily: 07:00 AM – 07:00 PM<br />\n                                    Sunday &amp; Holidays: Closed"
+    },
+    {
+      "sort_order": 9,
+      "block_key": "phone.title",
+      "section": "info",
+      "label": "Phone title",
+      "type": "text",
+      "value": "Contact Us"
+    },
+    {
+      "sort_order": 10,
+      "block_key": "phone.number",
+      "section": "info",
+      "label": "Phone number display",
+      "type": "text",
+      "value": "(03) 4320 5325",
+      "link_url": "tel:0343205325"
+    },
+    {
+      "sort_order": 11,
+      "block_key": "email.title",
+      "section": "info",
+      "label": "Email title",
+      "type": "text",
+      "value": "Email"
+    },
+    {
+      "sort_order": 12,
+      "block_key": "email.address",
+      "section": "info",
+      "label": "Email address",
+      "type": "text",
+      "value": "7statespestcontrol@gmail.com",
+      "link_url": "mailto:7statespestcontrol@gmail.com"
+    },
+    {
+      "sort_order": 13,
+      "block_key": "address.title",
+      "section": "info",
+      "label": "Address title",
+      "type": "text",
+      "value": "Our Address"
+    },
+    {
+      "sort_order": 14,
+      "block_key": "address.text",
+      "section": "info",
+      "label": "Address text",
+      "type": "text",
+      "value": "Melbourne, Australia"
+    },
+    {
+      "sort_order": 15,
+      "block_key": "quote_form.title",
+      "section": "quote_form",
+      "label": "Quote form title",
+      "type": "text",
+      "value": "Get A Free Quote Now!"
+    },
+    {
+      "sort_order": 16,
+      "block_key": "quote_form.subtitle",
+      "section": "quote_form",
+      "label": "Quote form subtitle",
+      "type": "text",
+      "value": "Have an enquiry? Leave us your details and we’ll call you back during business hours."
+    },
+    {
+      "sort_order": 17,
+      "block_key": "quote_form.submit_text",
+      "section": "quote_form",
+      "label": "Quote form submit button",
+      "type": "text",
+      "value": "Submit Quote"
+    },
+    {
+      "sort_order": 18,
+      "block_key": "map.embed_url",
+      "section": "map",
+      "label": "Google Maps embed URL",
+      "type": "text",
+      "value": "https://www.google.com/maps/d/embed?mid=1BO16EFVGlD-7b3DEl0Ib_lKR61UoHTI&ehbc=2E312F&noprof=1"
+    }
+  ]
+}
