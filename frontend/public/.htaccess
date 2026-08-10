@@ -2,11 +2,20 @@
   RewriteEngine On
   RewriteBase /
 
+  # Suburb location pages removed — redirect to Melbourne office page
+  RewriteRule ^location(/.*)?$ /melbourne/ [R=301,L]
+
   # Serve existing files (sitemap_index.xml, llms.txt, robots.txt, assets, etc.)
   RewriteCond %{REQUEST_FILENAME} -f [OR]
   RewriteCond %{REQUEST_FILENAME} -d
   RewriteRule ^ - [L]
 
-  # SPA fallback for client-side routes
+  # Pre-rendered route HTML (unique title/meta per page from build)
+  RewriteCond %{REQUEST_FILENAME} !-f
+  RewriteCond %{REQUEST_FILENAME} !-d
+  RewriteCond %{REQUEST_FILENAME}/index.html -f
+  RewriteRule ^(.+?)/?$ $1/index.html [L]
+
+  # SPA fallback for unmatched routes
   RewriteRule ^ index.html [L]
 </IfModule>

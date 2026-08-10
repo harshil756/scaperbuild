@@ -291,7 +291,7 @@ export default function MelbournePage() {
                         <div className="elementor-element elementor-element-a701e34 elementor-align-left elementor-tablet-align-left elementor-widget elementor-widget-button" data-element_type="widget" data-id="a701e34" data-widget_type="button.default">
                           <div className="elementor-widget-container">
                             <div className="elementor-button-wrapper">
-                              <Link className="elementor-button elementor-button-link elementor-size-sm" to="/location">
+                              <Link className="elementor-button elementor-button-link elementor-size-sm" to="/melbourne">
                                 <span className="elementor-button-content-wrapper">
                                   <span className="elementor-button-text">Our Locations</span>
                                 </span>
