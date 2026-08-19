@@ -96,8 +96,8 @@
       "section": "info",
       "label": "Phone number display",
       "type": "text",
-      "value": "(03) 4320 5325",
-      "link_url": "tel:0343205325"
+      "value": "+61 434 660 060",
+      "link_url": "tel:+61434660060"
     },
     {
       "sort_order": 11,

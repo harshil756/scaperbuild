@@ -132,7 +132,11 @@ class ContactPageBlockMapper
 
         $digits = preg_replace('/\D+/', '', $number);
 
-        return filled($digits) ? 'tel:'.$digits : null;
+        if (! filled($digits)) {
+            return null;
+        }
+
+        return str_starts_with($digits, '61') ? 'tel:+'.$digits : 'tel:'.$digits;
     }
 
     private static function setText(Page $page, $blocks, string $key, ?string $value): void
