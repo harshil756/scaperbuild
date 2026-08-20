@@ -1,10 +1,10 @@
+import { apiOrigin } from './apiOrigin.js'
+
 /** CMS storage host — blog images must use this full origin in <img src>. */
 export const CMS_MEDIA_ORIGIN = 'https://7sbd.7statespestcontrol.com.au'
 
 function mediaOrigin() {
-  const fromEnv = String(import.meta.env?.VITE_API_URL ?? '')
-    .trim()
-    .replace(/\/$/, '')
+  const fromEnv = apiOrigin()
 
   if (fromEnv) return fromEnv
 

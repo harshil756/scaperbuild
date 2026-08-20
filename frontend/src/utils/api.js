@@ -1,3 +1,5 @@
+import { apiOrigin } from './apiOrigin.js'
+
 /**
  * Build a full API URL.
  *
@@ -7,7 +9,7 @@
  * `path` must start with `/api/` (e.g. `/api/menus/header`).
  */
 export function apiUrl(path) {
-  const base = (import.meta.env.VITE_API_URL ?? '').replace(/\/$/, '')
+  const base = apiOrigin()
   let normalized = path.startsWith('/') ? path : `/${path}`
 
   if (!normalized.startsWith('/api/')) {
