@@ -244,7 +244,7 @@ export default function Footer() {
 
         <section className="elementor-section elementor-top-section elementor-element elementor-element-cc971de elementor-section-content-middle elementor-section-boxed elementor-section-height-default">
           <div className="elementor-container elementor-column-gap-default">
-            <div className="elementor-column elementor-col-50 elementor-top-column elementor-element elementor-element-d76058d">
+            <div className="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-d76058d">
               <div className="elementor-widget-wrap elementor-element-populated">
                 <div className="elementor-element elementor-element-c27169b elementor-widget elementor-widget-heading">
                   <div className="elementor-widget-container">
@@ -258,23 +258,6 @@ export default function Footer() {
                     <p className="elementor-heading-title elementor-size-default" style={{ fontSize: '14px', margin: 0 }}>
                       <Link to="/terms-and-conditions">Terms &amp; Conditions</Link>
                     </p>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div className="elementor-column elementor-col-50 elementor-top-column elementor-element elementor-element-b969a35">
-              <div className="elementor-widget-wrap elementor-element-populated">
-                <div className="elementor-element elementor-element-37db289 elementor-widget-mobile__width-auto elementor-widget elementor-widget-elementskit-heading">
-                  <div className="elementor-widget-container">
-                    <div className="ekit-wid-con">
-                      <div className="ekit-heading elementskit-section-title-wraper text_right ekit_heading_tablet- ekit_heading_mobile-">
-                        <a href="https://durjainfotech.com/" target="_blank" rel="noreferrer">
-                          <h2 className="ekit-heading--title elementskit-section-title">
-                            Web Design By <span><span> Durja Infotech</span></span>
-                          </h2>
-                        </a>
-                      </div>
-                    </div>
                   </div>
                 </div>
               </div>

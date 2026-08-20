@@ -1,5 +1,5 @@
 /** CMS storage host — blog images must use this full origin in <img src>. */
-export const CMS_MEDIA_ORIGIN = 'https://7sbd.durjainfotech.com'
+export const CMS_MEDIA_ORIGIN = 'https://7sbd.7statespestcontrol.com.au'
 
 function mediaOrigin() {
   const fromEnv = String(import.meta.env?.VITE_API_URL ?? '')
@@ -47,7 +47,7 @@ function toStoragePath(pathOrUrl) {
 
 /**
  * Always return a full URL for CMS images on deployed sites, e.g.
- * https://7sbd.durjainfotech.com/storage/cms/blog/file.webp
+ * https://7sbd.7statespestcontrol.com.au/storage/cms/blog/file.webp
  */
 export function cmsMediaUrl(pathOrUrl, fallback = '') {
   if (!pathOrUrl) return fallback
