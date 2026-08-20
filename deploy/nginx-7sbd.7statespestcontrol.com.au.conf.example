@@ -1,0 +1,35 @@
+# 7 States Pest Control — Laravel CMS / API
+# Copy to: /etc/nginx/sites-available/7sbd.7statespestcontrol.com.au
+# Then: sudo ln -sf .../sites-available/7sbd... sites-enabled/ && sudo nginx -t && sudo systemctl reload nginx
+#
+# IMPORTANT: This vhost must serve THIS repo's backend (7 States), not another Laravel app.
+# Wrong app symptom: /admin/login title shows another project, /api/menus/header returns 404.
+
+server {
+    listen 80;
+    listen [::]:80;
+    server_name 7sbd.7statespestcontrol.com.au;
+
+    root /var/www/7states/backend/public;
+    index index.php;
+
+    client_max_body_size 64M;
+
+    location / {
+        try_files $uri $uri/ /index.php?$query_string;
+    }
+
+    location ~ \.php$ {
+        include snippets/fastcgi-php.conf;
+        fastcgi_pass unix:/run/php/php8.2-fpm.sock;
+        fastcgi_param SCRIPT_FILENAME $realpath_root$fastcgi_script_name;
+        include fastcgi_params;
+    }
+
+    location ~ /\.(?!well-known).* {
+        deny all;
+    }
+}
+
+# After HTTP works, add SSL (certbot):
+# sudo certbot --nginx -d 7sbd.7statespestcontrol.com.au
