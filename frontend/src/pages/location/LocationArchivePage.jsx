@@ -7,16 +7,16 @@ export default function LocationArchivePage() {
   return (
     <>
       <div data-elementor-type="archive" data-elementor-id={9386} className="elementor elementor-9386 elementor-location-archive" data-elementor-post-type="elementor_library">
-        <section className="elementor-section elementor-top-section elementor-element elementor-element-ee8e8c5 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="ee8e8c5" data-element_type="section" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+        <section className="elementor-section elementor-top-section elementor-element elementor-element-ee8e8c5 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="ee8e8c5" data-element_type="section" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}" style={{backgroundImage:'url("/assets/images/URUU-01-2048x1365-2_7c216e6d.jpg")',backgroundPosition:'top left',backgroundRepeat:'no-repeat',backgroundSize:'cover'}}>
           <div className="elementor-background-overlay" />
           <div className="elementor-container elementor-column-gap-default">
             <div className="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-dfb1c37" data-id="dfb1c37" data-element_type="column">
               <div className="elementor-widget-wrap elementor-element-populated">
-                <div className="elementor-element elementor-element-5ddc84d elementor-invisible elementor-widget elementor-widget-heading" data-id="5ddc84d" data-element_type="widget" data-settings="{&quot;_animation&quot;:&quot;fadeInDown&quot;}" data-widget_type="heading.default">
+                <div className="elementor-element elementor-element-5ddc84d elementor-widget elementor-widget-heading" data-id="5ddc84d" data-element_type="widget" data-widget_type="heading.default">
                   <div className="elementor-widget-container">
                     <h1 className="elementor-heading-title elementor-size-default">Locations</h1>				</div>
                 </div>
-                <div className="elementor-element elementor-element-d68400a elementor-icon-list--layout-inline elementor-align-center elementor-widget__width-auto elementor-list-item-link-full_width elementor-invisible elementor-widget elementor-widget-icon-list" data-id="d68400a" data-element_type="widget" data-settings="{&quot;_animation&quot;:&quot;fadeInDown&quot;,&quot;_animation_delay&quot;:720}" data-widget_type="icon-list.default">
+                <div className="elementor-element elementor-element-d68400a elementor-icon-list--layout-inline elementor-align-center elementor-widget__width-auto elementor-list-item-link-full_width elementor-widget elementor-widget-icon-list" data-id="d68400a" data-element_type="widget" data-widget_type="icon-list.default">
                   <div className="elementor-widget-container">
                     <ul className="elementor-icon-list-items elementor-inline-items">
                       <li className="elementor-icon-list-item elementor-inline-item">
