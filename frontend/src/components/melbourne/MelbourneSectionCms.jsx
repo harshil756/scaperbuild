@@ -75,7 +75,29 @@ export default function MelbourneSectionCms({ content }) {
     const btn = document.querySelector('.elementor-element-a701e34 .elementor-button-text')
     if (btn && contact?.button_label) btn.textContent = contact.button_label
     const btnLink = document.querySelector('.elementor-element-a701e34 a.elementor-button')
-    if (btnLink && contact?.button_url) btnLink.setAttribute('href', contact.button_url)
+    if (btnLink) {
+      let url = String(contact?.button_url || '').trim()
+      // Always send "Our Locations" to the suburb archive — never self-link to /melbourne
+      if (
+        !url ||
+        url === '#' ||
+        url === '/melbourne' ||
+        url === '/melbourne/' ||
+        url.endsWith('/melbourne') ||
+        url.endsWith('/melbourne/')
+      ) {
+        url = '/location'
+      }
+      try {
+        if (url.startsWith('http://') || url.startsWith('https://')) {
+          const parsed = new URL(url)
+          url = `${parsed.pathname}${parsed.search}${parsed.hash}` || '/location'
+        }
+      } catch {
+        url = '/location'
+      }
+      btnLink.setAttribute('href', url)
+    }
 
     const svc = content.services
     patchHeading('7b2b0f7', cmsText(svc?.eyebrow, 'Our Services'))
