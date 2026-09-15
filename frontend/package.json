@@ -21,6 +21,7 @@
     "fix:blog-links": "node scripts/fix-blog-links.mjs",
     "refresh:blogs": "npm run convert:blog-posts && npm run fix:blog-links",
     "generate:seo": "node scripts/generate-page-seo-extra.mjs",
+    "generate:location-sitemap": "node scripts/generate-location-sitemap.mjs",
     "sync:sitemaps": "node scripts/sync-sitemaps.mjs",
     "verify:sitemaps": "node scripts/verify-sitemap-routes.mjs"
   },

@@ -1,6 +1,7 @@
 import fs from 'fs'
 import path from 'path'
 import { fileURLToPath } from 'url'
+import { spawnSync } from 'child_process'
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url))
 const publicDir = path.join(__dirname, '../public')
@@ -8,6 +9,7 @@ const sourceUrl = (process.env.SITEMAP_SOURCE_URL || 'https://7statespestcontrol
 const siteUrl = (process.env.SITE_URL || process.env.VITE_SITE_URL || sourceUrl).replace(/\/$/, '')
 const xslPath = '/main-sitemap.xsl'
 
+// location-sitemap.xml is generated locally from SPA routes — live WP no longer serves it as XML.
 const files = [
   'robots.txt',
   'llms.txt',
@@ -16,7 +18,6 @@ const files = [
   'post-sitemap.xml',
   'page-sitemap.xml',
   'elementskit_template-sitemap.xml',
-  'location-sitemap.xml',
   'category-sitemap.xml',
   'author-sitemap.xml',
 ]
@@ -45,6 +46,11 @@ function rewriteSeoFiles(body, file) {
   return next
 }
 
+function looksLikeXmlSitemap(body) {
+  const trimmed = body.trimStart()
+  return trimmed.startsWith('<?xml') || trimmed.startsWith('<urlset') || trimmed.startsWith('<sitemapindex')
+}
+
 fs.mkdirSync(publicDir, { recursive: true })
 
 const xslRes = await fetch(`${sourceUrl}/wp-content/plugins/wordpress-seo/css/main-sitemap.xsl`)
@@ -65,10 +71,24 @@ for (const file of files) {
     process.exitCode = 1
     continue
   }
-  const body = rewriteSeoFiles(await res.text(), file)
+  const raw = await res.text()
+  if (file.endsWith('.xml') && !looksLikeXmlSitemap(raw)) {
+    console.warn(`Skipped ${file}: response was not XML (likely SPA HTML fallback)`)
+    continue
+  }
+  const body = rewriteSeoFiles(raw, file)
   const outPath = path.join(publicDir, file)
   fs.writeFileSync(outPath, body, 'utf8')
   console.log(`Wrote ${file} (${body.length.toLocaleString()} bytes)`)
+}
+
+const gen = spawnSync(process.execPath, [path.join(__dirname, 'generate-location-sitemap.mjs')], {
+  stdio: 'inherit',
+  env: process.env,
+})
+if (gen.status !== 0) {
+  console.error('Failed to generate location-sitemap.xml')
+  process.exitCode = 1
 }
 
 console.log(`Sitemap source: ${sourceUrl}`)
