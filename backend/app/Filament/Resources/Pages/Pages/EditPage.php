@@ -33,7 +33,9 @@ class EditPage extends EditRecord
         $mapper = self::mapperForSlug($this->record->slug);
         if ($mapper) {
             $this->record->loadMissing('blocks');
-            $data['content'] = $mapper::toForm($this->record);
+            $data['content'] = method_exists($mapper, 'toFilamentForm')
+                ? $mapper::toFilamentForm($this->record)
+                : $mapper::toForm($this->record);
         }
 
         return $data;
@@ -55,6 +57,9 @@ class EditPage extends EditRecord
         if ($mapper && is_array($this->pageContent)) {
             $this->record->load('blocks');
             $mapper::sync($this->record, $this->pageContent);
+            // Reload so the form still shows the saved CMS values.
+            $this->record->refresh()->load('blocks');
+            $this->fillForm();
         }
     }
 

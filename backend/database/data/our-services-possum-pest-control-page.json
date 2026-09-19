@@ -37,7 +37,7 @@
       "section": "hero",
       "label": "Breadcrumb parent",
       "type": "text",
-      "value": "{cmsText(c?.hero?.breadcrumb_parent, 'Services')}"
+      "value": "Services"
     },
     {
       "sort_order": 3,
@@ -53,7 +53,7 @@
       "section": "hero",
       "label": "Section title",
       "type": "text",
-      "value": "{cmsText(c?.hero?.title, 'Possum Pest Control')}"
+      "value": "Possum Pest Control"
     },
     {
       "sort_order": 5,
@@ -69,7 +69,7 @@
       "section": "hero",
       "label": "Intro paragraph",
       "type": "html",
-      "value": "<CmsHtml html={c?.hero?.intro ?? '<p><span >Possums may appear harmless at first, but they can cause serious problems for both residential and commercial properties. Being highly active at night, possums commonly enter roof spaces where they create loud scratching and thumping noises that disturb sleep. Over time, they can damage roof structures, insulation, electrical wiring, and tiles, increasing the risk of costly repairs. Possum droppings and urine can also impact hygiene and indoor air quality, creating unpleasant odours and potential health concerns.</span></p><p><span >If you are experiencing possum activity or hearing constant movement in your roof and are searching for professional possum pest control in Melbourne, you are in the right place.</span><span ><br /></span><span > At</span><a href=\"/\"><b> 7 State Pest Control</b></a><b>,</b><span > we provide licensed possum removal in Melbourne, humane possum trapping, and effective possum control solutions tailored to your specific situation. Our experienced team ensures safe, legal, and long-term possum control for residential and commercial properties.</span></p>'} />"
+      "value": "<p><span >Possums may appear harmless at first, but they can cause serious problems for both residential and commercial properties. Being highly active at night, possums commonly enter roof spaces where they create loud scratching and thumping noises that disturb sleep. Over time, they can damage roof structures, insulation, electrical wiring, and tiles, increasing the risk of costly repairs. Possum droppings and urine can also impact hygiene and indoor air quality, creating unpleasant odours and potential health concerns.</span></p><p><span >If you are experiencing possum activity or hearing constant movement in your roof and are searching for professional possum pest control in Melbourne, you are in the right place.</span><span ><br /></span><span > At</span><a href=\"/\"><b> 7 State Pest Control</b></a><b>,</b><span > we provide licensed possum removal in Melbourne, humane possum trapping, and effective possum control solutions tailored to your specific situation. Our experienced team ensures safe, legal, and long-term possum control for residential and commercial properties.</span></p>"
     },
     {
       "sort_order": 7,
@@ -77,7 +77,7 @@
       "section": "quote_form",
       "label": "Form heading",
       "type": "text",
-      "value": "{cmsText(c?.quote_form?.subtitle, 'Have an enquiry? Leave us your details and we’ll call you back during business hours.')}"
+      "value": "Have an enquiry? Leave us your details and we’ll call you back during business hours."
     },
     {
       "sort_order": 8,
@@ -85,7 +85,7 @@
       "section": "quote_form",
       "label": "Form subtitle",
       "type": "text",
-      "value": "{cmsText(c?.quote_form?.subtitle, 'Have an enquiry? Leave us your details and we’ll call you back during business hours.')}"
+      "value": "Have an enquiry? Leave us your details and we’ll call you back during business hours."
     },
     {
       "sort_order": 9,
@@ -93,7 +93,7 @@
       "section": "quote_form",
       "label": "Submit button text",
       "type": "text",
-      "value": "{cmsText(c?.quote_form?.submit_text, 'Submit Quote')}"
+      "value": "Submit Quote"
     },
     {
       "sort_order": 10,
@@ -425,17 +425,17 @@
       "sort_order": 35,
       "block_key": "content.heading_ed9cb71",
       "section": "content",
-      "label": "Heading: {cmsText(c?.quote_form?.title, 'Get A Free Quote Now!')}",
+      "label": "Heading: Get A Free Quote Now!",
       "type": "text",
-      "value": "{cmsText(c?.quote_form?.title, 'Get A Free Quote Now!')}"
+      "value": "Get A Free Quote Now!"
     },
     {
       "sort_order": 36,
       "block_key": "content.heading_fb9a1f0",
       "section": "content",
-      "label": "Heading: {cmsText(c?.quote_form?.subtitle, 'Have an enquiry? Leave us",
+      "label": "Heading: Have an enquiry? Leave us your details and we'll call you back during business hours.",
       "type": "text",
-      "value": "{cmsText(c?.quote_form?.subtitle, 'Have an enquiry? Leave us your details and we’ll call you back during business hours.')}"
+      "value": "Have an enquiry? Leave us your details and we’ll call you back during business hours."
     },
     {
       "sort_order": 37,

@@ -16,6 +16,7 @@ export default function OurServicesBedBugTreatmentPage() {
   return (
     <>
       <ServiceCmsStyles content={c} heroBgId="11c1f5d" ctaBgId="057b4d3" />
+      <ServiceFaqCms faq={c?.faq} accordionWidgetId="57e8489" />
       <ServiceCmsContentBlocks content={c} />
       <div className="elementor elementor-714" data-elementor-id={714} data-elementor-post-type="page" data-elementor-type="wp-page">
         <div className="elementor-element elementor-element-11c1f5d e-flex e-con-boxed e-con e-parent e-lazyloaded" data-element_type="container" data-id="11c1f5d" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
@@ -102,7 +103,7 @@ export default function OurServicesBedBugTreatmentPage() {
                       <div className="elementor-field-group elementor-column elementor-field-type-submit elementor-col-100 e-form__buttons">
                         <button className="elementor-button elementor-size-md" type="submit">
                           <span className="elementor-button-content-wrapper">
-                            <span className="elementor-button-text">Submit Quote</span>
+                            <span className="elementor-button-text">{cmsText(c?.quote_form?.submit_text, 'Submit Quote')}</span>
                           </span>
                         </button>
                       </div>

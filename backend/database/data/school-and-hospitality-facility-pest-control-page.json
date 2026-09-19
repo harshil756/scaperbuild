@@ -619,6 +619,30 @@
       "type": "link",
       "value": "Contact Us",
       "link_url": "/contact-us"
+    },
+    {
+      "sort_order": 3,
+      "block_key": "hero.title",
+      "section": "hero",
+      "label": "Hero title",
+      "type": "text",
+      "value": "Pest Control Facility"
+    },
+    {
+      "sort_order": 4,
+      "block_key": "hero.heading",
+      "section": "hero",
+      "label": "Hero heading",
+      "type": "text",
+      "value": "School And Hospitality Facility Pest Control in Melbourne"
+    },
+    {
+      "sort_order": 2,
+      "block_key": "hero.breadcrumb_parent",
+      "section": "hero",
+      "label": "Hero breadcrumb_parent",
+      "type": "text",
+      "value": "Services"
     }
   ]
 }

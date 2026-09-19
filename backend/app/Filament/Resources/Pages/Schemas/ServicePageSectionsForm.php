@@ -14,7 +14,6 @@ use Filament\Forms\Components\TextInput;
 use Filament\Schemas\Components\Group;
 use Filament\Schemas\Components\Section;
 use Filament\Schemas\Components\Utilities\Get;
-use Illuminate\Support\Arr;
 
 class ServicePageSectionsForm
 {
@@ -22,79 +21,91 @@ class ServicePageSectionsForm
     {
         return [
             Section::make('Service page content')
-                ->description('Manage pest control service page content — text, images, and backgrounds.')
-                ->visible(fn (?Page $record): bool => ServicePageBlockMapper::isServicePage($record?->slug))
+                ->description('Edit hero, quote form, FAQ, reviews and CTA here. Mid-page body headings/paragraphs/images are under the “Content blocks” tab below — edit any block and save; the website updates automatically.')
                 ->columnSpanFull()
                 ->schema([
                     Group::make()
                         ->statePath('content')
+                        ->columnSpanFull()
                         ->schema([
                             Section::make('Hero / intro')->icon('heroicon-o-home')->collapsible()->schema(self::heroSection()),
                             Section::make('Quote form')->icon('heroicon-o-chat-bubble-left-right')->collapsible()->schema(self::quoteFormSection()),
                             Section::make('About section')->icon('heroicon-o-building-office')->collapsible()
-                                ->visible(fn (?Page $record): bool => ServicePageBlockMapper::isCommercialPage($record?->slug))
+                                ->visible(fn (?Page $record, $livewire): bool => self::isCommercial($record, $livewire))
                                 ->schema(self::aboutSection()),
                             Section::make('Why choose us / USPs')->icon('heroicon-o-star')->collapsible()->collapsed()
-                                ->visible(fn (?Page $record): bool => ServicePageBlockMapper::isGenericServicePage($record?->slug))
+                                ->visible(fn (?Page $record, $livewire): bool => self::isGeneric($record, $livewire))
                                 ->schema(self::whyChooseGenericSection()),
                             Section::make('Why choose us')->icon('heroicon-o-star')->collapsible()
-                                ->visible(fn (?Page $record): bool => ServicePageBlockMapper::isCommercialPage($record?->slug))
+                                ->visible(fn (?Page $record, $livewire): bool => self::isCommercial($record, $livewire))
                                 ->schema(self::whyChooseSection()),
                             Section::make('Our approach')->icon('heroicon-o-wrench-screwdriver')->collapsible()->collapsed()
-                                ->visible(fn (?Page $record): bool => ServicePageBlockMapper::isGenericServicePage($record?->slug))
+                                ->visible(fn (?Page $record, $livewire): bool => self::isGeneric($record, $livewire))
                                 ->schema(self::approachSection()),
                             Section::make('Contact section')->icon('heroicon-o-envelope')->collapsible()
-                                ->visible(fn (?Page $record): bool => ServicePageBlockMapper::isCommercialPage($record?->slug))
+                                ->visible(fn (?Page $record, $livewire): bool => self::isCommercial($record, $livewire))
                                 ->schema(self::contactSection()),
                             Section::make('Our services grid')->icon('heroicon-o-squares-2x2')->collapsible()
-                                ->visible(fn (?Page $record): bool => ServicePageBlockMapper::isCommercialPage($record?->slug))
+                                ->visible(fn (?Page $record, $livewire): bool => self::isCommercial($record, $livewire))
                                 ->schema(self::servicesSection()),
                             Section::make('Our expertise')->icon('heroicon-o-academic-cap')->collapsible()
-                                ->visible(fn (?Page $record): bool => ServicePageBlockMapper::isCommercialPage($record?->slug))
+                                ->visible(fn (?Page $record, $livewire): bool => self::isCommercial($record, $livewire))
                                 ->schema(self::expertiseSection()),
                             Section::make('Species / types cards')->icon('heroicon-o-bug-ant')->collapsible()->collapsed()
-                                ->visible(fn (?Page $record): bool => ServicePageBlockMapper::isGenericServicePage($record?->slug))
+                                ->visible(fn (?Page $record, $livewire): bool => self::isGeneric($record, $livewire))
                                 ->schema(self::cardSection('species', 'Species cards')),
                             Section::make('Why pests come inside')->icon('heroicon-o-question-mark-circle')->collapsible()->collapsed()
-                                ->visible(fn (?Page $record): bool => ServicePageBlockMapper::isGenericServicePage($record?->slug))
+                                ->visible(fn (?Page $record, $livewire): bool => self::isGeneric($record, $livewire))
                                 ->schema(self::whyInsideSection()),
                             Section::make('Problems caused')->icon('heroicon-o-exclamation-triangle')->collapsible()->collapsed()
-                                ->visible(fn (?Page $record): bool => ServicePageBlockMapper::isGenericServicePage($record?->slug))
+                                ->visible(fn (?Page $record, $livewire): bool => self::isGeneric($record, $livewire))
                                 ->schema(self::cardSection('problems', 'Problem cards')),
                             Section::make('Prevention tips')->icon('heroicon-o-shield-check')->collapsible()->collapsed()
-                                ->visible(fn (?Page $record): bool => ServicePageBlockMapper::isGenericServicePage($record?->slug))
+                                ->visible(fn (?Page $record, $livewire): bool => self::isGeneric($record, $livewire))
                                 ->schema(self::preventionSection()),
                             Section::make('Features / trust badges')->icon('heroicon-o-check-badge')->collapsible()->collapsed()
-                                ->visible(fn (?Page $record): bool => ServicePageBlockMapper::isGenericServicePage($record?->slug))
+                                ->visible(fn (?Page $record, $livewire): bool => self::isGeneric($record, $livewire))
                                 ->schema(self::featuresSection()),
                             Section::make('Image cards')->icon('heroicon-o-squares-2x2')->collapsible()->collapsed()
-                                ->visible(fn (?Page $record): bool => ServicePageBlockMapper::isGenericServicePage($record?->slug))
+                                ->visible(fn (?Page $record, $livewire): bool => self::isGeneric($record, $livewire))
                                 ->schema(self::cardsSection()),
                             Section::make('FAQ')->icon('heroicon-o-chat-bubble-bottom-center-text')->collapsible()->schema(self::faqSection()),
-                            Section::make('Client reviews')->icon('heroicon-o-heart')->collapsible()->collapsed()
-                                ->visible(fn (?Page $record): bool => ServicePageBlockMapper::isGenericServicePage($record?->slug))
+                            Section::make('Client reviews')->icon('heroicon-o-heart')->collapsible()
+                                ->visible(fn (?Page $record, $livewire): bool => self::isGeneric($record, $livewire))
                                 ->schema(self::reviewsSection()),
                             Section::make('Blog previews')->icon('heroicon-o-newspaper')->collapsible()->collapsed()
-                                ->visible(fn (?Page $record): bool => ServicePageBlockMapper::isGenericServicePage($record?->slug))
+                                ->visible(fn (?Page $record, $livewire): bool => self::isGeneric($record, $livewire))
                                 ->schema(self::blogSection()),
-                            Section::make('Call to action')->icon('heroicon-o-phone')->collapsible()->collapsed()
-                                ->visible(fn (?Page $record): bool => ServicePageBlockMapper::isGenericServicePage($record?->slug))
+                            Section::make('Call to action')->icon('heroicon-o-phone')->collapsible()
+                                ->visible(fn (?Page $record, $livewire): bool => self::isGeneric($record, $livewire))
                                 ->schema(self::ctaSection()),
-                            Section::make('Section backgrounds')->icon('heroicon-o-photo')->collapsible()->collapsed()
-                                ->visible(fn (?Page $record): bool => ServicePageBlockMapper::isGenericServicePage($record?->slug))
-                                ->schema(self::backgroundsSection()),
-                            Section::make('Additional content blocks')->icon('heroicon-o-document-text')->collapsible()->collapsed()
-                                ->visible(fn (?Page $record): bool => ServicePageBlockMapper::isGenericServicePage($record?->slug))
-                                ->schema(self::contentBlocksSection()),
                         ]),
                 ]),
         ];
     }
 
+    private static function pageSlug(?Page $record, $livewire = null): ?string
+    {
+        return $record?->slug
+            ?? (is_object($livewire) && method_exists($livewire, 'getRecord')
+                ? $livewire->getRecord()?->slug
+                : null);
+    }
+
+    private static function isGeneric(?Page $record, $livewire = null): bool
+    {
+        return ServicePageBlockMapper::isGenericServicePage(self::pageSlug($record, $livewire));
+    }
+
+    private static function isCommercial(?Page $record, $livewire = null): bool
+    {
+        return ServicePageBlockMapper::isCommercialPage(self::pageSlug($record, $livewire));
+    }
+
     private static function imageField(string $name, string $label): FileUpload
     {
         return CmsImageUpload::make($name, $label, 'cms/service-pages')
-            ->directory(fn (?Page $record): string => 'cms/'.($record?->slug ?? 'service-pages'));
+            ->directory(fn (?Page $record, $livewire): string => 'cms/'.(self::pageSlug($record, $livewire) ?? 'service-pages'));
     }
 
     private static function approachSection(): array
@@ -131,16 +142,18 @@ class ServicePageSectionsForm
         return [
             Repeater::make('backgrounds')
                 ->label('Page section backgrounds')
-                ->default([])
                 ->schema([
-                    Hidden::make('block_key'),
-                    Hidden::make('key'),
-                    TextInput::make('label')->disabled()->columnSpanFull(),
+                    Hidden::make('block_key')->dehydrated(),
+                    Hidden::make('key')->dehydrated(),
+                    TextInput::make('label')->disabled()->dehydrated()->columnSpanFull(),
                     self::imageField('image', 'Background image'),
                 ])
                 ->collapsible()
                 ->itemLabel(fn (?array $state): ?string => $state['label'] ?? $state['key'] ?? null)
-                ->columnSpanFull(),
+                ->columnSpanFull()
+                ->addable(false)
+                ->deletable(false)
+                ->reorderable(false),
         ];
     }
 
@@ -400,11 +413,10 @@ class ServicePageSectionsForm
     {
         return [
             Repeater::make('content_blocks')
-                ->label('Page-specific content blocks')
-                ->default([])
+                ->label('Body content blocks')
                 ->schema([
-                    Hidden::make('block_key'),
-                    TextInput::make('label')->disabled()->columnSpanFull(),
+                    Hidden::make('block_key')->dehydrated(),
+                    TextInput::make('label')->disabled()->dehydrated()->columnSpanFull(),
                     Select::make('type')
                         ->options([
                             'text' => 'Text',
@@ -412,7 +424,8 @@ class ServicePageSectionsForm
                             'image' => 'Image',
                             'json' => 'Structured (JSON)',
                         ])
-                        ->disabled(),
+                        ->disabled()
+                        ->dehydrated(),
                     Textarea::make('value')
                         ->label('Content')
                         ->rows(fn (Get $get): int => $get('type') === 'html' ? 8 : 3)
@@ -437,8 +450,26 @@ class ServicePageSectionsForm
                         ->columnSpanFull(),
                 ])
                 ->collapsible()
-                ->itemLabel(fn (?array $state): ?string => $state['label'] ?? $state['block_key'] ?? null)
-                ->columnSpanFull(),
+                ->itemLabel(function (?array $state): ?string {
+                    $label = $state['label'] ?? null;
+                    $key = $state['block_key'] ?? null;
+                    $preview = is_string($state['value'] ?? null)
+                        ? trim(strip_tags($state['value']))
+                        : '';
+                    if ($preview !== '') {
+                        $preview = mb_strlen($preview) > 60 ? mb_substr($preview, 0, 60).'…' : $preview;
+                    }
+
+                    if (filled($label) && filled($preview) && ! str_contains((string) $label, $preview)) {
+                        return "{$label} — {$preview}";
+                    }
+
+                    return $label ?? ($preview !== '' ? $preview : $key);
+                })
+                ->columnSpanFull()
+                ->addable(false)
+                ->deletable(false)
+                ->reorderable(false),
         ];
     }
 }

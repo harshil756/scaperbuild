@@ -2,12 +2,12 @@
 
 namespace App\Filament\Resources\Pages\RelationManagers;
 
+use App\Filament\Support\CmsImageUpload;
 use Filament\Actions\BulkActionGroup;
 use Filament\Actions\CreateAction;
 use Filament\Actions\DeleteAction;
 use Filament\Actions\DeleteBulkAction;
 use Filament\Actions\EditAction;
-use Filament\Forms\Components\FileUpload;
 use Filament\Forms\Components\Select;
 use Filament\Forms\Components\Textarea;
 use Filament\Forms\Components\TextInput;
@@ -18,6 +18,8 @@ use Filament\Tables\Columns\ImageColumn;
 use Filament\Tables\Columns\TextColumn;
 use Filament\Tables\Filters\SelectFilter;
 use Filament\Tables\Table;
+use Illuminate\Database\Eloquent\Builder;
+use Illuminate\Database\Eloquent\Model;
 
 class BlocksRelationManager extends RelationManager
 {
@@ -25,17 +27,28 @@ class BlocksRelationManager extends RelationManager
 
     protected static ?string $title = 'Content blocks';
 
+    public static function getBadge(Model $ownerRecord, string $pageClass): ?string
+    {
+        $count = $ownerRecord->blocks()->where('section', 'content')->count();
+
+        return $count > 0 ? (string) $count : null;
+    }
+
     public function form(Schema $schema): Schema
     {
+        $slug = $this->getOwnerRecord()->slug ?? 'pages';
+
         return $schema
             ->components([
                 TextInput::make('block_key')
                     ->required()
                     ->maxLength(255)
-                    ->disabled(fn (?string $operation): bool => $operation === 'edit'),
+                    ->disabled(fn (?string $operation): bool => $operation === 'edit')
+                    ->dehydrated(),
                 TextInput::make('section')
                     ->required()
-                    ->maxLength(255),
+                    ->maxLength(255)
+                    ->default('content'),
                 TextInput::make('label')
                     ->required()
                     ->maxLength(255)
@@ -57,26 +70,16 @@ class BlocksRelationManager extends RelationManager
                         'link' => 'Button label',
                         default => 'Text content',
                     })
-                    ->rows(fn (Get $get): int => $get('type') === 'html' ? 12 : 4)
+                    ->rows(fn (Get $get): int => $get('type') === 'html' ? 14 : 4)
                     ->visible(fn (Get $get): bool => in_array($get('type'), ['text', 'html', 'link'], true))
                     ->columnSpanFull(),
                 TextInput::make('link_url')
                     ->label('Link URL')
                     ->maxLength(255)
                     ->visible(fn (Get $get): bool => $get('type') === 'link'),
-                FileUpload::make('image_path')
-                    ->label('Image')
-                    ->image()
-                    ->directory('cms/home')
-                    ->disk('public')
-                    ->visibility('public')
+                CmsImageUpload::make('image_path', 'Image', 'cms/'.$slug)
                     ->visible(fn (Get $get): bool => in_array($get('type'), ['image', 'json'], true)),
-                FileUpload::make('background_image_path')
-                    ->label('Background image')
-                    ->image()
-                    ->directory('cms/home')
-                    ->disk('public')
-                    ->visibility('public')
+                CmsImageUpload::make('background_image_path', 'Background image', 'cms/'.$slug)
                     ->visible(fn (Get $get): bool => in_array($get('type'), ['background', 'json'], true)),
                 Textarea::make('metadata')
                     ->label('Metadata (JSON)')
@@ -104,6 +107,7 @@ class BlocksRelationManager extends RelationManager
         return $table
             ->recordTitleAttribute('label')
             ->defaultSort('sort_order')
+            ->modifyQueryUsing(fn (Builder $query) => $query->orderBy('sort_order'))
             ->columns([
                 TextColumn::make('sort_order')
                     ->label('#')
@@ -113,12 +117,18 @@ class BlocksRelationManager extends RelationManager
                     ->sortable(),
                 TextColumn::make('label')
                     ->searchable()
-                    ->wrap(),
+                    ->wrap()
+                    ->description(fn ($record): ?string => filled($record->value)
+                        ? str($record->value)->stripTags()->limit(80)->toString()
+                        : null),
                 TextColumn::make('type')
                     ->badge(),
                 TextColumn::make('value')
-                    ->limit(40)
-                    ->placeholder('—')
+                    ->label('Preview')
+                    ->formatStateUsing(fn (?string $state): string => filled($state)
+                        ? str($state)->stripTags()->limit(50)->toString()
+                        : '—')
+                    ->wrap()
                     ->toggleable(),
                 ImageColumn::make('image_path')
                     ->disk('public')
@@ -137,15 +147,16 @@ class BlocksRelationManager extends RelationManager
                         ->distinct()
                         ->orderBy('section')
                         ->pluck('section', 'section')
-                        ->all()),
+                        ->all())
+                    ->default('content'),
                 SelectFilter::make('type')
                     ->options([
-                        'text' => 'Text',
-                        'html' => 'HTML',
+                        'text' => 'Text / heading',
+                        'html' => 'HTML paragraph',
                         'image' => 'Image',
                         'background' => 'Background',
                         'link' => 'Link',
-                        'json' => 'JSON',
+                        'json' => 'JSON / list',
                     ]),
             ])
             ->headerActions([

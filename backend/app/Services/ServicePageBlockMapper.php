@@ -58,9 +58,24 @@ class ServicePageBlockMapper
 
     public static function toForm(Page $page): array
     {
+        return self::mapForm($page, includeHeavyContent: true);
+    }
+
+    /**
+     * Lighter payload for Filament edit screens.
+     * Body content_blocks stay editable via the Content blocks relation tab
+     * (loading 50–70 HTML blocks into the main form exhausts memory and blanks the UI).
+     */
+    public static function toFilamentForm(Page $page): array
+    {
+        return self::mapForm($page, includeHeavyContent: false);
+    }
+
+    private static function mapForm(Page $page, bool $includeHeavyContent): array
+    {
         $blocks = $page->blocks->keyBy('block_key');
 
-        return [
+        $form = [
             'hero' => [
                 'background_image' => $blocks->get('background.hero')?->background_image_path,
                 'breadcrumb_parent' => $blocks->get('hero.breadcrumb_parent')?->value,
@@ -159,7 +174,10 @@ class ServicePageBlockMapper
                 'button_label' => $blocks->get('cta.button')?->value,
                 'button_url' => $blocks->get('cta.button')?->link_url,
             ],
-            'content_blocks' => $blocks
+        ];
+
+        if ($includeHeavyContent) {
+            $form['content_blocks'] = $blocks
                 ->filter(fn (PageBlock $block): bool => $block->section === 'content')
                 ->sortBy('sort_order')
                 ->map(fn (PageBlock $block): array => [
@@ -171,8 +189,8 @@ class ServicePageBlockMapper
                     'metadata' => $block->metadata,
                 ])
                 ->values()
-                ->all(),
-            'backgrounds' => $blocks
+                ->all();
+            $form['backgrounds'] = $blocks
                 ->filter(fn (PageBlock $block): bool => str_starts_with($block->block_key, 'background.')
                     && ! in_array($block->block_key, ['background.hero', 'background.cta'], true))
                 ->sortBy('sort_order')
@@ -184,117 +202,120 @@ class ServicePageBlockMapper
                     'elementor_id' => $block->metadata['elementor_id'] ?? null,
                 ])
                 ->values()
-                ->all(),
-        ];
+                ->all();
+        }
+
+        return $form;
     }
 
     public static function sync(Page $page, array $content): void
     {
-        $blocks = $page->blocks->keyBy('block_key');
+        $blocks = $page->blocks()->get()->keyBy('block_key');
 
         $hero = $content['hero'] ?? [];
-        self::setBackground($blocks, 'background.hero', $hero['background_image'] ?? null);
-        self::setText($blocks, 'hero.breadcrumb_parent', $hero['breadcrumb_parent'] ?? null);
-        self::setText($blocks, 'hero.breadcrumb_current', $hero['breadcrumb_current'] ?? null);
-        self::setText($blocks, 'hero.title', $hero['title'] ?? null);
-        self::setText($blocks, 'hero.heading', $hero['heading'] ?? null);
-        self::setHtml($blocks, 'hero.intro', $hero['intro'] ?? null);
+        self::setBackground($page, $blocks, 'background.hero', $hero['background_image'] ?? null);
+        self::setText($page, $blocks, 'hero.breadcrumb_parent', $hero['breadcrumb_parent'] ?? null);
+        self::setText($page, $blocks, 'hero.breadcrumb_current', $hero['breadcrumb_current'] ?? null);
+        self::setText($page, $blocks, 'hero.title', $hero['title'] ?? null);
+        self::setText($page, $blocks, 'hero.heading', $hero['heading'] ?? null);
+        self::setHtml($page, $blocks, 'hero.intro', $hero['intro'] ?? null);
 
         $quote = $content['quote_form'] ?? [];
-        self::setText($blocks, 'quote_form.title', $quote['title'] ?? null);
-        self::setText($blocks, 'quote_form.subtitle', $quote['subtitle'] ?? null);
-        self::setText($blocks, 'quote_form.submit_text', $quote['submit_text'] ?? null);
+        self::setText($page, $blocks, 'quote_form.title', $quote['title'] ?? null);
+        self::setText($page, $blocks, 'quote_form.subtitle', $quote['subtitle'] ?? null);
+        self::setText($page, $blocks, 'quote_form.submit_text', $quote['submit_text'] ?? null);
 
-        self::syncCardSection($blocks, 'species', $content['species'] ?? []);
-        self::syncCardSection($blocks, 'problems', $content['problems'] ?? []);
+        self::syncCardSection($page, $blocks, 'species', $content['species'] ?? []);
+        self::syncCardSection($page, $blocks, 'problems', $content['problems'] ?? []);
 
         $whyInside = $content['why_inside'] ?? [];
-        self::setBackground($blocks, 'background.why_inside', $whyInside['background_image'] ?? null);
-        self::setText($blocks, 'why_inside.eyebrow', $whyInside['eyebrow'] ?? null);
-        self::setText($blocks, 'why_inside.title', $whyInside['title'] ?? null);
-        self::setHtml($blocks, 'why_inside.list_html', $whyInside['list_html'] ?? null);
-        self::setHtml($blocks, 'why_inside.footer', $whyInside['footer'] ?? null);
-        self::setImage($blocks, 'why_inside.image', $whyInside['image'] ?? null);
+        self::setBackground($page, $blocks, 'background.why_inside', $whyInside['background_image'] ?? null);
+        self::setText($page, $blocks, 'why_inside.eyebrow', $whyInside['eyebrow'] ?? null);
+        self::setText($page, $blocks, 'why_inside.title', $whyInside['title'] ?? null);
+        self::setHtml($page, $blocks, 'why_inside.list_html', $whyInside['list_html'] ?? null);
+        self::setHtml($page, $blocks, 'why_inside.footer', $whyInside['footer'] ?? null);
+        self::setImage($page, $blocks, 'why_inside.image', $whyInside['image'] ?? null);
 
         $prevention = $content['prevention'] ?? [];
-        self::setText($blocks, 'prevention.eyebrow', $prevention['eyebrow'] ?? null);
-        self::setText($blocks, 'prevention.title', $prevention['title'] ?? null);
-        self::setHtml($blocks, 'prevention.intro', $prevention['intro'] ?? null);
-        self::setMetadata($blocks, 'prevention.tips', ['tips' => self::syncPreventionTipsData($prevention['tips'] ?? [])]);
+        self::setText($page, $blocks, 'prevention.eyebrow', $prevention['eyebrow'] ?? null);
+        self::setText($page, $blocks, 'prevention.title', $prevention['title'] ?? null);
+        self::setHtml($page, $blocks, 'prevention.intro', $prevention['intro'] ?? null);
+        self::setMetadata($page, $blocks, 'prevention.tips', ['tips' => self::syncPreventionTipsData($prevention['tips'] ?? [])]);
 
-        self::syncCardItems($blocks, 'features', $content['features']['items'] ?? []);
-        self::syncCardItems($blocks, 'cards', $content['cards']['items'] ?? []);
+        self::syncCardItems($page, $blocks, 'features', $content['features']['items'] ?? []);
+        self::syncCardItems($page, $blocks, 'cards', $content['cards']['items'] ?? []);
 
         $about = $content['about'] ?? [];
-        self::setText($blocks, 'about.title', $about['title'] ?? null);
-        self::setText($blocks, 'about.subtitle', $about['subtitle'] ?? null);
-        self::setHtml($blocks, 'about.intro', $about['intro'] ?? null);
-        self::setImage($blocks, 'about.image', $about['image'] ?? null);
-        self::setText($blocks, 'about.counter_title', $about['counter_title'] ?? null);
-        self::setText($blocks, 'about.counter_value', $about['counter_value'] ?? null);
-        self::setText($blocks, 'about.counter_suffix', $about['counter_suffix'] ?? null);
+        self::setText($page, $blocks, 'about.title', $about['title'] ?? null);
+        self::setText($page, $blocks, 'about.subtitle', $about['subtitle'] ?? null);
+        self::setHtml($page, $blocks, 'about.intro', $about['intro'] ?? null);
+        self::setImage($page, $blocks, 'about.image', $about['image'] ?? null);
+        self::setText($page, $blocks, 'about.counter_title', $about['counter_title'] ?? null);
+        self::setText($page, $blocks, 'about.counter_value', $about['counter_value'] ?? null);
+        self::setText($page, $blocks, 'about.counter_suffix', $about['counter_suffix'] ?? null);
 
         $whyChoose = $content['why_choose'] ?? [];
-        self::setText($blocks, 'why_choose.eyebrow', $whyChoose['eyebrow'] ?? null);
-        self::setText($blocks, 'why_choose.title', $whyChoose['title'] ?? null);
-        self::setHtml($blocks, 'why_choose.intro', $whyChoose['intro'] ?? null);
-        self::setImage($blocks, 'why_choose.image', $whyChoose['image'] ?? null);
-        self::syncCardItems($blocks, 'why_choose', $whyChoose['items'] ?? []);
+        self::setText($page, $blocks, 'why_choose.eyebrow', $whyChoose['eyebrow'] ?? null);
+        self::setText($page, $blocks, 'why_choose.title', $whyChoose['title'] ?? null);
+        self::setHtml($page, $blocks, 'why_choose.intro', $whyChoose['intro'] ?? null);
+        self::setImage($page, $blocks, 'why_choose.image', $whyChoose['image'] ?? null);
+        self::syncCardItems($page, $blocks, 'why_choose', $whyChoose['items'] ?? []);
 
         $contact = $content['contact'] ?? [];
-        self::setText($blocks, 'contact.eyebrow', $contact['eyebrow'] ?? null);
-        self::setText($blocks, 'contact.title', $contact['title'] ?? null);
-        self::setHtml($blocks, 'contact.body', $contact['body'] ?? null);
-        self::setLink($blocks, 'contact.button', $contact['button_label'] ?? null, $contact['button_url'] ?? null);
+        self::setText($page, $blocks, 'contact.eyebrow', $contact['eyebrow'] ?? null);
+        self::setText($page, $blocks, 'contact.title', $contact['title'] ?? null);
+        self::setHtml($page, $blocks, 'contact.body', $contact['body'] ?? null);
+        self::setLink($page, $blocks, 'contact.button', $contact['button_label'] ?? null, $contact['button_url'] ?? null);
 
         $services = $content['services'] ?? [];
-        self::setText($blocks, 'services.eyebrow', $services['eyebrow'] ?? null);
-        self::setText($blocks, 'services.title', $services['title'] ?? null);
-        self::setHtml($blocks, 'services.intro', $services['intro'] ?? null);
-        self::syncServiceItems($blocks, $services['items'] ?? []);
+        self::setText($page, $blocks, 'services.eyebrow', $services['eyebrow'] ?? null);
+        self::setText($page, $blocks, 'services.title', $services['title'] ?? null);
+        self::setHtml($page, $blocks, 'services.intro', $services['intro'] ?? null);
+        self::syncServiceItems($page, $blocks, $services['items'] ?? []);
 
         $expertise = $content['expertise'] ?? [];
-        self::setText($blocks, 'expertise.title', $expertise['title'] ?? null);
-        self::syncExpertiseItems($blocks, $expertise['items'] ?? []);
+        self::setText($page, $blocks, 'expertise.title', $expertise['title'] ?? null);
+        self::syncExpertiseItems($page, $blocks, $expertise['items'] ?? []);
 
         $faq = $content['faq'] ?? [];
-        self::setText($blocks, 'faq.title', $faq['title'] ?? null);
-        self::setImage($blocks, 'faq.sidebar_image', $faq['sidebar_image'] ?? null);
-        self::setText($blocks, 'faq.sidebar_cta_title', $faq['sidebar_cta_title'] ?? null);
-        self::setText($blocks, 'faq.sidebar_cta_body', $faq['sidebar_cta_body'] ?? null);
+        self::setText($page, $blocks, 'faq.title', $faq['title'] ?? null);
+        self::setImage($page, $blocks, 'faq.sidebar_image', $faq['sidebar_image'] ?? null);
+        self::setText($page, $blocks, 'faq.sidebar_cta_title', $faq['sidebar_cta_title'] ?? null);
+        self::setText($page, $blocks, 'faq.sidebar_cta_body', $faq['sidebar_cta_body'] ?? null);
         self::setLink(
+            $page,
             $blocks,
             'faq.sidebar_cta_button',
             $faq['sidebar_cta_button_label'] ?? null,
             $faq['sidebar_cta_button_url'] ?? null,
         );
-        self::setMetadata($blocks, 'faq.items', ['items' => $faq['items'] ?? []]);
+        self::setMetadata($page, $blocks, 'faq.items', ['items' => $faq['items'] ?? []]);
 
         $reviews = $content['reviews'] ?? [];
-        self::setText($blocks, 'reviews.eyebrow', $reviews['eyebrow'] ?? null);
-        self::setText($blocks, 'reviews.title', $reviews['title'] ?? null);
-        self::setText($blocks, 'reviews.subtitle', $reviews['subtitle'] ?? null);
-        self::setText($blocks, 'reviews.rating_label', $reviews['rating_label'] ?? null);
-        self::setHtml($blocks, 'reviews.count_text', $reviews['count_text'] ?? null);
+        self::setText($page, $blocks, 'reviews.eyebrow', $reviews['eyebrow'] ?? null);
+        self::setText($page, $blocks, 'reviews.title', $reviews['title'] ?? null);
+        self::setText($page, $blocks, 'reviews.subtitle', $reviews['subtitle'] ?? null);
+        self::setText($page, $blocks, 'reviews.rating_label', $reviews['rating_label'] ?? null);
+        self::setHtml($page, $blocks, 'reviews.count_text', $reviews['count_text'] ?? null);
 
         $blog = $content['blog'] ?? [];
-        self::setText($blocks, 'blog.eyebrow', $blog['eyebrow'] ?? null);
-        self::setText($blocks, 'blog.title', $blog['title'] ?? null);
-        self::setMetadata($blocks, 'blog.posts', ['posts' => $blog['posts'] ?? []]);
+        self::setText($page, $blocks, 'blog.eyebrow', $blog['eyebrow'] ?? null);
+        self::setText($page, $blocks, 'blog.title', $blog['title'] ?? null);
+        self::setMetadata($page, $blocks, 'blog.posts', ['posts' => $blog['posts'] ?? []]);
 
         $cta = $content['cta'] ?? [];
-        self::setBackground($blocks, 'background.cta', $cta['background_image'] ?? null);
-        self::setText($blocks, 'cta.eyebrow', $cta['eyebrow'] ?? null);
-        self::setText($blocks, 'cta.title', $cta['title'] ?? null);
-        self::setHtml($blocks, 'cta.body', $cta['body'] ?? null);
-        self::setLink($blocks, 'cta.button', $cta['button_label'] ?? null, $cta['button_url'] ?? null);
+        self::setBackground($page, $blocks, 'background.cta', $cta['background_image'] ?? null);
+        self::setText($page, $blocks, 'cta.eyebrow', $cta['eyebrow'] ?? null);
+        self::setText($page, $blocks, 'cta.title', $cta['title'] ?? null);
+        self::setHtml($page, $blocks, 'cta.body', $cta['body'] ?? null);
+        self::setLink($page, $blocks, 'cta.button', $cta['button_label'] ?? null, $cta['button_url'] ?? null);
 
         foreach ($content['backgrounds'] ?? [] as $item) {
             $key = $item['block_key'] ?? ('background.'.($item['key'] ?? ''));
             if (! str_starts_with($key, 'background.')) {
                 $key = 'background.'.$key;
             }
-            self::setBackground($blocks, $key, $item['image'] ?? null);
+            self::setBackground($page, $blocks, $key, $item['image'] ?? null);
         }
 
         foreach ($content['content_blocks'] ?? [] as $item) {
@@ -302,10 +323,7 @@ class ServicePageBlockMapper
             if (! $key) {
                 continue;
             }
-            $block = $blocks->get($key);
-            if (! $block) {
-                continue;
-            }
+
             $update = [];
             if (array_key_exists('value', $item)) {
                 $update['value'] = $item['value'];
@@ -314,13 +332,33 @@ class ServicePageBlockMapper
                 $update['image_path'] = $item['image'];
             }
             if (array_key_exists('metadata', $item)) {
-                $update['metadata'] = is_array($item['metadata']) ? $item['metadata'] : json_decode($item['metadata'] ?? '', true);
+                $update['metadata'] = is_array($item['metadata'])
+                    ? $item['metadata']
+                    : json_decode($item['metadata'] ?? '', true);
             }
-            if ($update !== []) {
-                $block->update($update);
+            if (array_key_exists('label', $item) && filled($item['label'] ?? null)) {
+                $update['label'] = $item['label'];
             }
-        }
+            if (array_key_exists('type', $item) && filled($item['type'] ?? null)) {
+                $update['type'] = $item['type'];
+            }
 
+            if ($update === []) {
+                continue;
+            }
+
+            self::upsert(
+                $page,
+                $blocks,
+                $key,
+                array_merge([
+                    'section' => 'content',
+                    'label' => $item['label'] ?? $key,
+                    'type' => $item['type'] ?? 'html',
+                    'sort_order' => 900,
+                ], $update),
+            );
+        }
     }
 
     private static function mapCardSection($blocks, string $prefix): array
@@ -357,12 +395,12 @@ class ServicePageBlockMapper
             ->all();
     }
 
-    private static function syncCardSection($blocks, string $prefix, array $section): void
+    private static function syncCardSection(Page $page, $blocks, string $prefix, array $section): void
     {
-        self::setText($blocks, "{$prefix}.eyebrow", $section['eyebrow'] ?? null);
-        self::setText($blocks, "{$prefix}.title", $section['title'] ?? null);
-        self::setHtml($blocks, "{$prefix}.intro", $section['intro'] ?? null);
-        self::syncCardItems($blocks, $prefix, $section['items'] ?? []);
+        self::setText($page, $blocks, "{$prefix}.eyebrow", $section['eyebrow'] ?? null);
+        self::setText($page, $blocks, "{$prefix}.title", $section['title'] ?? null);
+        self::setHtml($page, $blocks, "{$prefix}.intro", $section['intro'] ?? null);
+        self::syncCardItems($page, $blocks, $prefix, $section['items'] ?? []);
     }
 
     private static function mapServiceItems($blocks): array
@@ -406,109 +444,220 @@ class ServicePageBlockMapper
             ->all();
     }
 
-    private static function syncServiceItems($blocks, array $items): void
+    private static function syncServiceItems(Page $page, $blocks, array $items): void
     {
-        foreach ($items as $item) {
+        foreach ($items as $index => $item) {
             $slug = $item['slug'] ?? null;
             if (! $slug) {
                 continue;
             }
-            $block = $blocks->get("services.{$slug}");
-            if (! $block) {
-                continue;
-            }
-            $block->update([
-                'image_path' => $item['image'] ?? $block->image_path,
-                'metadata' => array_merge($block->metadata ?? [], [
+            self::upsert($page, $blocks, "services.{$slug}", [
+                'section' => 'services',
+                'label' => 'Service: '.($item['title'] ?? $slug),
+                'type' => 'image',
+                'sort_order' => 200 + $index,
+                'image_path' => $item['image'] ?? null,
+                'metadata' => [
                     'slug' => $slug,
                     'title' => $item['title'] ?? '',
                     'alt' => $item['alt'] ?? '',
                     'link' => $item['link'] ?? '',
                     'button_text' => $item['button_text'] ?? 'Learn More',
-                ]),
+                ],
             ]);
         }
     }
 
-    private static function syncExpertiseItems($blocks, array $items): void
+    private static function syncExpertiseItems(Page $page, $blocks, array $items): void
     {
-        foreach ($items as $item) {
+        foreach ($items as $index => $item) {
             $slug = $item['slug'] ?? null;
             if (! $slug) {
                 continue;
             }
-            $block = $blocks->get("expertise.{$slug}");
-            if (! $block) {
-                continue;
-            }
-            $block->update([
-                'metadata' => array_merge($block->metadata ?? [], [
+            self::upsert($page, $blocks, "expertise.{$slug}", [
+                'section' => 'expertise',
+                'label' => 'Expertise: '.($item['title'] ?? $slug),
+                'type' => 'json',
+                'sort_order' => 300 + $index,
+                'metadata' => [
                     'slug' => $slug,
                     'title' => $item['title'] ?? '',
-                ]),
+                ],
             ]);
         }
     }
 
-    private static function syncCardItems($blocks, string $prefix, array $items): void
+    private static function syncCardItems(Page $page, $blocks, string $prefix, array $items): void
     {
-        foreach ($items as $item) {
+        foreach ($items as $index => $item) {
             $slug = $item['slug'] ?? null;
             if (! $slug) {
                 continue;
             }
-            $block = $blocks->get("{$prefix}.{$slug}");
-            if (! $block) {
-                continue;
-            }
-            $block->update([
-                'image_path' => $item['image'] ?? $block->image_path,
-                'metadata' => array_merge($block->metadata ?? [], [
+            self::upsert($page, $blocks, "{$prefix}.{$slug}", [
+                'section' => $prefix,
+                'label' => 'Card: '.($item['title'] ?? $slug),
+                'type' => 'image',
+                'sort_order' => 100 + $index,
+                'image_path' => $item['image'] ?? null,
+                'metadata' => [
                     'slug' => $slug,
                     'title' => $item['title'] ?? '',
                     'description' => $item['description'] ?? '',
                     'alt' => $item['alt'] ?? '',
-                ]),
+                ],
             ]);
         }
     }
 
-    private static function setText($blocks, string $key, ?string $value): void
+    private static function setText(Page $page, $blocks, string $key, ?string $value): void
     {
-        $blocks->get($key)?->update(['value' => $value]);
+        self::upsert($page, $blocks, $key, ['value' => $value, 'type' => 'text']);
     }
 
-    private static function setHtml($blocks, string $key, ?string $value): void
+    private static function setHtml(Page $page, $blocks, string $key, ?string $value): void
     {
-        $blocks->get($key)?->update(['value' => $value]);
+        self::upsert($page, $blocks, $key, ['value' => $value, 'type' => 'html']);
     }
 
-    private static function setLink($blocks, string $key, ?string $label, ?string $url): void
+    private static function setLink(Page $page, $blocks, string $key, ?string $label, ?string $url): void
     {
+        self::upsert($page, $blocks, $key, [
+            'value' => $label,
+            'link_url' => $url,
+            'type' => 'link',
+        ]);
+    }
+
+    private static function setBackground(Page $page, $blocks, string $key, mixed $path): void
+    {
+        self::upsert($page, $blocks, $key, [
+            'background_image_path' => self::normalizeUploadPath($path),
+            'type' => 'background',
+        ]);
+    }
+
+    private static function setImage(Page $page, $blocks, string $key, mixed $path): void
+    {
+        self::upsert($page, $blocks, $key, [
+            'image_path' => self::normalizeUploadPath($path),
+            'type' => 'image',
+        ]);
+    }
+
+    private static function normalizeUploadPath(mixed $path): ?string
+    {
+        if (is_array($path)) {
+            $path = \Illuminate\Support\Arr::first($path);
+        }
+
+        return filled($path) && is_string($path) ? $path : null;
+    }
+
+    private static function setMetadata(Page $page, $blocks, string $key, array $metadata): void
+    {
+        $existing = $blocks->get($key);
+        $merged = array_merge($existing?->metadata ?? [], $metadata);
+        self::upsert($page, $blocks, $key, [
+            'metadata' => $merged,
+            'type' => 'json',
+        ]);
+    }
+
+    /**
+     * @param  \Illuminate\Support\Collection<string, PageBlock>  $blocks
+     * @param  array<string, mixed>  $attributes
+     */
+    private static function upsert(Page $page, $blocks, string $key, array $attributes): void
+    {
+        $meta = self::blockMetaForKey($key);
+        $payload = array_merge([
+            'section' => $meta['section'],
+            'label' => $meta['label'],
+            'type' => $meta['type'],
+            'sort_order' => $meta['sort_order'],
+        ], $attributes);
+
         $block = $blocks->get($key);
-        if (! $block) {
+        if ($block) {
+            // Keep existing type/section/label/sort unless explicitly overridden with non-empty values.
+            $update = $payload;
+            unset($update['section'], $update['label'], $update['type'], $update['sort_order']);
+
+            if (array_key_exists('type', $attributes)) {
+                $update['type'] = $attributes['type'];
+            }
+            if (array_key_exists('label', $attributes) && filled($attributes['label'])) {
+                $update['label'] = $attributes['label'];
+            }
+            if (array_key_exists('section', $attributes) && filled($attributes['section'])) {
+                $update['section'] = $attributes['section'];
+            }
+            if (array_key_exists('sort_order', $attributes)) {
+                $update['sort_order'] = $attributes['sort_order'];
+            }
+
+            $block->update($update);
+
             return;
         }
-        $block->update(['value' => $label, 'link_url' => $url]);
+
+        $created = $page->blocks()->create([
+            'block_key' => $key,
+            ...$payload,
+        ]);
+
+        $blocks->put($key, $created);
     }
 
-    private static function setBackground($blocks, string $key, ?string $path): void
+    /** @return array{section: string, label: string, type: string, sort_order: int} */
+    private static function blockMetaForKey(string $key): array
     {
-        $blocks->get($key)?->update(['background_image_path' => $path]);
-    }
+        $defaults = [
+            'background.hero' => ['section' => 'hero', 'label' => 'Hero background', 'type' => 'background', 'sort_order' => 1],
+            'hero.breadcrumb_parent' => ['section' => 'hero', 'label' => 'Hero breadcrumb parent', 'type' => 'text', 'sort_order' => 2],
+            'hero.breadcrumb_current' => ['section' => 'hero', 'label' => 'Hero breadcrumb current', 'type' => 'text', 'sort_order' => 3],
+            'hero.title' => ['section' => 'hero', 'label' => 'Hero title', 'type' => 'text', 'sort_order' => 4],
+            'hero.heading' => ['section' => 'hero', 'label' => 'Hero heading', 'type' => 'text', 'sort_order' => 5],
+            'hero.intro' => ['section' => 'hero', 'label' => 'Hero intro', 'type' => 'html', 'sort_order' => 6],
+            'quote_form.title' => ['section' => 'quote_form', 'label' => 'Quote form title', 'type' => 'text', 'sort_order' => 10],
+            'quote_form.subtitle' => ['section' => 'quote_form', 'label' => 'Quote form subtitle', 'type' => 'text', 'sort_order' => 11],
+            'quote_form.submit_text' => ['section' => 'quote_form', 'label' => 'Quote form submit', 'type' => 'text', 'sort_order' => 12],
+            'faq.title' => ['section' => 'faq', 'label' => 'FAQ title', 'type' => 'text', 'sort_order' => 40],
+            'faq.sidebar_image' => ['section' => 'faq', 'label' => 'FAQ sidebar image', 'type' => 'image', 'sort_order' => 41],
+            'faq.sidebar_cta_title' => ['section' => 'faq', 'label' => 'FAQ sidebar CTA title', 'type' => 'text', 'sort_order' => 42],
+            'faq.sidebar_cta_body' => ['section' => 'faq', 'label' => 'FAQ sidebar CTA body', 'type' => 'text', 'sort_order' => 43],
+            'faq.sidebar_cta_button' => ['section' => 'faq', 'label' => 'FAQ sidebar CTA button', 'type' => 'link', 'sort_order' => 44],
+            'faq.items' => ['section' => 'faq', 'label' => 'FAQ items', 'type' => 'json', 'sort_order' => 45],
+            'reviews.eyebrow' => ['section' => 'reviews', 'label' => 'Reviews eyebrow', 'type' => 'text', 'sort_order' => 50],
+            'reviews.title' => ['section' => 'reviews', 'label' => 'Reviews title', 'type' => 'text', 'sort_order' => 51],
+            'reviews.subtitle' => ['section' => 'reviews', 'label' => 'Reviews subtitle', 'type' => 'text', 'sort_order' => 52],
+            'reviews.rating_label' => ['section' => 'reviews', 'label' => 'Reviews rating label', 'type' => 'text', 'sort_order' => 53],
+            'reviews.count_text' => ['section' => 'reviews', 'label' => 'Reviews count text', 'type' => 'html', 'sort_order' => 54],
+            'blog.eyebrow' => ['section' => 'blog', 'label' => 'Blog eyebrow', 'type' => 'text', 'sort_order' => 60],
+            'blog.title' => ['section' => 'blog', 'label' => 'Blog title', 'type' => 'text', 'sort_order' => 61],
+            'blog.posts' => ['section' => 'blog', 'label' => 'Blog posts', 'type' => 'json', 'sort_order' => 62],
+            'cta.eyebrow' => ['section' => 'cta', 'label' => 'CTA eyebrow', 'type' => 'text', 'sort_order' => 70],
+            'cta.title' => ['section' => 'cta', 'label' => 'CTA title', 'type' => 'text', 'sort_order' => 71],
+            'cta.body' => ['section' => 'cta', 'label' => 'CTA body', 'type' => 'html', 'sort_order' => 72],
+            'cta.button' => ['section' => 'cta', 'label' => 'CTA button', 'type' => 'link', 'sort_order' => 73],
+            'background.cta' => ['section' => 'cta', 'label' => 'CTA background', 'type' => 'background', 'sort_order' => 74],
+            'prevention.tips' => ['section' => 'prevention', 'label' => 'Prevention tips', 'type' => 'json', 'sort_order' => 80],
+        ];
 
-    private static function setImage($blocks, string $key, ?string $path): void
-    {
-        $blocks->get($key)?->update(['image_path' => $path]);
-    }
-
-    private static function setMetadata($blocks, string $key, array $metadata): void
-    {
-        $block = $blocks->get($key);
-        if (! $block) {
-            return;
+        if (isset($defaults[$key])) {
+            return $defaults[$key];
         }
-        $block->update(['metadata' => array_merge($block->metadata ?? [], $metadata)]);
+
+        $section = explode('.', $key)[0] ?: 'content';
+
+        return [
+            'section' => $section,
+            'label' => $key,
+            'type' => 'text',
+            'sort_order' => 99,
+        ];
     }
 
     private static function mapPreventionTips($blocks): array

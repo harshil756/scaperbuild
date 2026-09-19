@@ -1,7 +1,6 @@
 import PhoneNumberInput from '../../components/PhoneNumberInput.jsx'
 import SitePhoneLink from '../../components/SitePhoneLink.jsx'
 import ServiceCmsContentBlocks from '../../components/service/ServiceCmsContentBlocks.jsx'
-import ServiceFaqCms from '../../components/service/ServiceFaqCms.jsx'
 import { cmsText } from '../../utils/cmsMedia.js'
 import usePageCms from '../../hooks/usePageCms.js'
 import ServiceCmsStyles from '../../components/service/ServiceCmsStyles.jsx'
@@ -103,7 +102,7 @@ export default function OurServicesMosquitoPestControlPage() {
                       <div className="elementor-field-group elementor-column elementor-field-type-submit elementor-col-100 e-form__buttons">
                         <button className="elementor-button elementor-size-md" type="submit">
                           <span className="elementor-button-content-wrapper">
-                            <span className="elementor-button-text">Submit Quote</span>
+                            <span className="elementor-button-text">{cmsText(c?.quote_form?.submit_text, 'Submit Quote')}</span>
                           </span>
                         </button>
                       </div>

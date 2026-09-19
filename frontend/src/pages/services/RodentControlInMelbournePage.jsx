@@ -104,7 +104,7 @@ export default function RodentControlInMelbournePage() {
                       <div className="elementor-field-group elementor-column elementor-field-type-submit elementor-col-100 e-form__buttons">
                         <button className="elementor-button elementor-size-md" type="submit">
                           <span className="elementor-button-content-wrapper">
-                            <span className="elementor-button-text">Submit Quote</span>
+                            <span className="elementor-button-text">{cmsText(c?.quote_form?.submit_text, 'Submit Quote')}</span>
                           </span>
                         </button>
                       </div>

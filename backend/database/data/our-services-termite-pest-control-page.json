@@ -131,14 +131,14 @@
       "sort_order": 13,
       "block_key": "cards.cmstext_c_hero_title_termite_pest_control",
       "section": "cards",
-      "label": "Card: {cmsText(c?.hero?.title, 'termite pest control')}",
+      "label": "Card: termite pest control",
       "type": "json",
       "image_path": "cms/our-services-termite-pest-control/pngtree-two-white-and-orange-termites-fighting-for-food_5d6a0a65.jpg",
       "metadata": {
         "slug": "cmstext_c_hero_title_termite_pest_control",
-        "title": "{cmsText(c?.hero?.title, 'termite pest control')}",
-        "description": "<CmsHtml html={c?.hero?.intro} />",
-        "alt": "{cmsText(c?.hero?.title, 'termite pest control')}",
+        "title": "termite pest control",
+        "description": "",
+        "alt": "termite pest control",
         "image_src": "/assets/images/pngtree-two-white-and-orange-termites-fighting-for-food_5d6a0a65.jpg",
         "elementor_id": "a342089"
       }
@@ -502,8 +502,8 @@
       "metadata": {
         "items": [
           "Home",
-          "{cmsText(c?.hero?.breadcrumb_parent, 'Services')}",
-          "{cmsText(c?.hero?.breadcrumb_current, 'termite pest control')}"
+          "Services",
+          "termite pest control"
         ]
       }
     },

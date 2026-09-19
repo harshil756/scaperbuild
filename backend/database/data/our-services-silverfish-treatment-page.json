@@ -403,7 +403,7 @@
       "sort_order": 39,
       "block_key": "content.heading_27351ee",
       "section": "content",
-      "label": "Heading: {cmsText(c?.quote_form?.title, 'Get A Free Quote Now!')}",
+      "label": "Heading: Get A Free Quote Now!",
       "type": "text",
       "value": "Get A Free Quote Now!"
     },
@@ -411,7 +411,7 @@
       "sort_order": 40,
       "block_key": "content.heading_9d6e86c",
       "section": "content",
-      "label": "Heading: {cmsText(c?.quote_form?.subtitle, \"Have an enquiry? Leave us",
+      "label": "Heading: Have an enquiry? Leave us your details and we'll call you back during business hours.",
       "type": "text",
       "value": "Have an enquiry? Leave us your details and we'll call you back during business hours."
     },
@@ -419,7 +419,7 @@
       "sort_order": 41,
       "block_key": "content.heading_8916f32",
       "section": "content",
-      "label": "Heading: {cmsText(c?.hero?.title, 'Trusted and Reliable')}",
+      "label": "Heading: Trusted and Reliable",
       "type": "text",
       "value": "Trusted and Reliable"
     },
@@ -734,7 +734,7 @@
       "sort_order": 77,
       "block_key": "content.heading_6eeb43e",
       "section": "content",
-      "label": "Heading: {cmsText(c?.reviews?.eyebrow, '7 States Pest Control for Rel",
+      "label": "Heading: 7 States Pest Control for Reliable Pest Management Solutions",
       "type": "text",
       "value": "7 States Pest Control for Reliable Pest Management Solutions"
     },
@@ -742,7 +742,7 @@
       "sort_order": 78,
       "block_key": "content.heading_ce3fd5e",
       "section": "content",
-      "label": "Heading: {cmsText(c?.reviews?.subtitle, 'Reviews of Our Pest Control ",
+      "label": "Heading: Have an enquiry? Leave us your details and we'll call you back during business hours.",
       "type": "text",
       "value": "Reviews of Our Pest Control Services"
     },
@@ -750,7 +750,7 @@
       "sort_order": 79,
       "block_key": "content.heading_75b617d",
       "section": "content",
-      "label": "Heading: {cmsText(c?.reviews?.title, 'EXCELLENT')}",
+      "label": "Heading: EXCELLENT",
       "type": "text",
       "value": "EXCELLENT"
     },
