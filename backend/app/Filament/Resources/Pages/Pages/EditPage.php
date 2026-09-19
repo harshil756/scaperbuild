@@ -12,6 +12,7 @@ use App\Services\ServicePageBlockMapper;
 use App\Services\SolarPanelBirdProofingPageBlockMapper;
 use Filament\Actions\DeleteAction;
 use Filament\Actions\ViewAction;
+use Filament\Notifications\Notification;
 use Filament\Resources\Pages\EditRecord;
 
 class EditPage extends EditRecord
@@ -19,6 +20,40 @@ class EditPage extends EditRecord
     protected static string $resource = PageResource::class;
 
     protected ?array $pageContent = null;
+
+    public function mount(int|string $record): void
+    {
+        parent::mount($record);
+
+        if (ServicePageBlockMapper::isServicePage($this->record->slug)
+            || in_array($this->record->slug, [
+                'solar-panel-bird-proofing',
+                'our-services-ant-pest-control',
+            ], true)) {
+            $bodyCount = $this->record->blocks()->where('section', 'content')->count();
+
+            Notification::make()
+                ->title('Where to edit this page')
+                ->body(
+                    $bodyCount > 0
+                        ? "Use the “Page sections” tab for Hero / FAQ / Reviews. Use the “Page body content” tab ({$bodyCount} blocks) for mid-page headings, paragraphs and images. Save → website updates."
+                        : 'Use the form sections below (Hero, Quote, FAQ, etc.). Save → website updates.'
+                )
+                ->info()
+                ->persistent()
+                ->send();
+        }
+    }
+
+    public function hasCombinedRelationManagerTabsWithContent(): bool
+    {
+        return true;
+    }
+
+    public function getContentTabLabel(): ?string
+    {
+        return 'Page sections';
+    }
 
     protected function getHeaderActions(): array
     {
@@ -57,7 +92,6 @@ class EditPage extends EditRecord
         if ($mapper && is_array($this->pageContent)) {
             $this->record->load('blocks');
             $mapper::sync($this->record, $this->pageContent);
-            // Reload so the form still shows the saved CMS values.
             $this->record->refresh()->load('blocks');
             $this->fillForm();
         }

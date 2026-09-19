@@ -25,7 +25,9 @@ class BlocksRelationManager extends RelationManager
 {
     protected static string $relationship = 'blocks';
 
-    protected static ?string $title = 'Content blocks';
+    protected static ?string $title = 'Page body content';
+
+    protected static ?string $navigationLabel = 'Page body content';
 
     public static function getBadge(Model $ownerRecord, string $pageClass): ?string
     {
