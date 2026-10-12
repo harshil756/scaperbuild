@@ -1,0 +1,626 @@
+{
+  "slug": "our-services-mites-control",
+  "title": "Mites Control",
+  "seo_title": "Mites Control in Melbourne - 7 States Pest Control",
+  "seo_description": "Our astute pest controllers use state-of-the-art equipment for exterminating possums. Consult our knowledgeable professionals today for Possum Removal Control solutions. Starting price: $170.",
+  "body_class": "wp-singular page-template page-template-elementor_header_footer page wp-custom-logo wp-embed-responsive wp-theme-hello-elementor elementor-default elementor-template-full-width elementor-kit-9 elementor-page elementor-page-1569",
+  "elementor_id": 1569,
+  "is_published": true,
+  "blocks": [
+    {
+      "sort_order": 0,
+      "block_key": "background.hero",
+      "section": "hero",
+      "label": "Hero background",
+      "type": "background",
+      "background_image_path": "cms/our-services-mites-control/Mite-Control.jpg_d5270788.webp",
+      "metadata": {
+        "elementor_id": "11474e8",
+        "filename": "Mite-Control.jpg_d5270788.webp"
+      }
+    },
+    {
+      "sort_order": 1,
+      "block_key": "background.cta",
+      "section": "cta",
+      "label": "CTA background",
+      "type": "background",
+      "background_image_path": "cms/our-services-mites-control/URUU-01-2048x1365-2_7c216e6d.jpg",
+      "metadata": {
+        "elementor_id": "057b4d3",
+        "filename": "URUU-01-2048x1365-2_7c216e6d.jpg"
+      }
+    },
+    {
+      "sort_order": 2,
+      "block_key": "hero.breadcrumb_parent",
+      "section": "hero",
+      "label": "Breadcrumb parent",
+      "type": "text",
+      "value": "Services"
+    },
+    {
+      "sort_order": 3,
+      "block_key": "hero.breadcrumb_current",
+      "section": "hero",
+      "label": "Breadcrumb current",
+      "type": "text",
+      "value": "mites control"
+    },
+    {
+      "sort_order": 4,
+      "block_key": "hero.title",
+      "section": "hero",
+      "label": "Section title",
+      "type": "text",
+      "value": "Say Goodbye to Harmful Mites"
+    },
+    {
+      "sort_order": 5,
+      "block_key": "hero.heading",
+      "section": "hero",
+      "label": "Main heading",
+      "type": "text",
+      "value": "Bid Adieu to Harmful & Dangerous Mites from Your Home"
+    },
+    {
+      "sort_order": 6,
+      "block_key": "hero.intro",
+      "section": "hero",
+      "label": "Intro paragraph",
+      "type": "html",
+      "value": "<div class=\"elementor-element elementor-element-de434cf elementor-widget elementor-widget-text-editor\" data-element_type=\"widget\" data-id=\"de434cf\" data-settings=\"{&quot;ekit_we_effect_on&quot;:&quot;none&quot;}\" data-widget_type=\"text-editor.default\"><div class=\"elementor-widget-container\"><div class=\"elementor-element elementor-element-de434cf elementor-widget elementor-widget-text-editor\" data-element_type=\"widget\" data-id=\"de434cf\" data-settings=\"{&quot;ekit_we_effect_on&quot;:&quot;none&quot;}\" data-widget_type=\"text-editor.default\"><div class=\"elementor-widget-container\"><p>The term “mite” refers to microscopic arthropods having jointed legs and external skeletons that are less than 1 mm long (hence the name). Mites are the most successful and diversified group of invertebrates among arthropods; while some are parasitic, the majority are non-parasitic and free-living. On land and in the water, mites can live and reproduce, and the majority of them do not damage animals. Mites can go unnoticed because of their tiny size.</p><p>Mites are very small creatures but can be a huge problem for you. They are quite small, too, making them hard to identify. We are here to help you with mites removal in Melbourne. Contact 7 State Pest Control today for reliable,&nbsp;<a href=\"/\"><strong>affordable pest control in Melbourne&nbsp;</strong></a>solutions<strong>.</strong></p></div></div></div></div>"
+    },
+    {
+      "sort_order": 7,
+      "block_key": "quote_form.title",
+      "section": "quote_form",
+      "label": "Form heading",
+      "type": "text",
+      "value": "Bid Adieu to Harmful &amp; Dangerous Mites from Your Home"
+    },
+    {
+      "sort_order": 8,
+      "block_key": "quote_form.subtitle",
+      "section": "quote_form",
+      "label": "Form subtitle",
+      "type": "text",
+      "value": "Have an enquiry? Leave us your details and we’ll call you back during business hours."
+    },
+    {
+      "sort_order": 9,
+      "block_key": "quote_form.submit_text",
+      "section": "quote_form",
+      "label": "Submit button text",
+      "type": "text",
+      "value": "Submit Quote"
+    },
+    {
+      "sort_order": 10,
+      "block_key": "faq.items",
+      "section": "faq",
+      "label": "FAQ items",
+      "type": "json",
+      "metadata": {
+        "items": [
+          {
+            "question": "1. What makes 7 States Pest Control the best pest control service in Melbourne?",
+            "answer_html": "<p>&nbsp;<b>7 States Pest Control</b>&nbsp;provides top-rated&nbsp;<b>pest control service in Melbourne</b>, using advanced techniques and eco-friendly products to eliminate pests quickly and safely. Our experienced team handles all types of infestations, ensuring long-term protection.</p>"
+          },
+          {
+            "question": "2. Where can I find reliable pest control in Melbourne CBD?",
+            "answer_html": "<p>For fast and effective&nbsp;<b>pest control Melbourne CBD</b>, trust&nbsp;<b>7 States Pest Control</b>. We serve both residential and commercial properties in the central business district with tailored pest management solutions.</p>"
+          },
+          {
+            "question": "3. How do I choose a professional pest exterminator in Melbourne?",
+            "answer_html": "<p>Look for licensed, experienced providers like&nbsp;<b>7 States Pest Control</b>. As a leading&nbsp;<b>pest exterminator Melbourne</b>, we offer prompt inspections, thorough extermination, and guaranteed results at competitive rates.</p>"
+          },
+          {
+            "question": "4. Is there a trusted pest removal company in Melbourne?",
+            "answer_html": "<p>&nbsp;Yes,&nbsp;<b>7 States Pest Control</b>&nbsp;is your go-to expert for&nbsp;<b>pest removal Melbourne</b>. We identify the root cause of infestations and apply targeted treatments to remove pests from your home or business permanently.</p>"
+          },
+          {
+            "question": "5. Why should I invest in pest control in Melbourne for my home or office?",
+            "answer_html": "<p>Regular&nbsp;<b>pest control in Melbourne</b>&nbsp;helps protect your property from damage and health risks.&nbsp;<b>7 States Pest Control</b>&nbsp;offers comprehensive services that keep your environment pest-free and comfortable year-round.</p>"
+          }
+        ]
+      }
+    },
+    {
+      "sort_order": 11,
+      "block_key": "faq.title",
+      "section": "faq",
+      "label": "FAQ title",
+      "type": "text",
+      "value": "Frequently Asked Questions"
+    },
+    {
+      "sort_order": 12,
+      "block_key": "faq.sidebar_image",
+      "section": "faq",
+      "label": "FAQ sidebar image",
+      "type": "image",
+      "image_path": "cms/our-services-mites-control/Why-Pest-Control.jpg_ef5bccf6.webp",
+      "metadata": {
+        "elementor_id": "0bb7e99",
+        "image_src": "/assets/images/Why-Pest-Control.jpg_ef5bccf6.webp"
+      }
+    },
+    {
+      "sort_order": 13,
+      "block_key": "faq.sidebar_cta_title",
+      "section": "faq",
+      "label": "Sidebar CTA title",
+      "type": "text",
+      "value": "Any questions you want to ask?"
+    },
+    {
+      "sort_order": 14,
+      "block_key": "faq.sidebar_cta_body",
+      "section": "faq",
+      "label": "Sidebar CTA body",
+      "type": "text",
+      "value": "Find answers to common questions about our pest control services, treatments, safety, and scheduling."
+    },
+    {
+      "sort_order": 15,
+      "block_key": "reviews.eyebrow",
+      "section": "reviews",
+      "label": "Reviews eyebrow",
+      "type": "text",
+      "value": "7 States Pest Control for Reliable Pest Management Solutions"
+    },
+    {
+      "sort_order": 16,
+      "block_key": "reviews.title",
+      "section": "reviews",
+      "label": "Reviews title",
+      "type": "text",
+      "value": "EXCELLENT"
+    },
+    {
+      "sort_order": 17,
+      "block_key": "cta.eyebrow",
+      "section": "cta",
+      "label": "Eyebrow",
+      "type": "text",
+      "value": "Ideas to reality"
+    },
+    {
+      "sort_order": 18,
+      "block_key": "cta.title",
+      "section": "cta",
+      "label": "Section title",
+      "type": "text",
+      "value": "Talk to Us Today to Learn More"
+    },
+    {
+      "sort_order": 19,
+      "block_key": "cta.body",
+      "section": "cta",
+      "label": "Body HTML",
+      "type": "html",
+      "value": "Do you have any specific questions about us, our services, or anything related to pest infestation issues? Call us today on&nbsp;<a href=\"tel:+61434660060\"> +61 434 660 060</a>&nbsp;or use our contact form to connect with our&nbsp;<b>7 States Pest Control</b>. You can get answers to your questions, get upfront quotes for the&nbsp;<b>7 States Pest Control</b>&nbsp;issues, and receive high-quality tailored services."
+    },
+    {
+      "sort_order": 20,
+      "block_key": "cta.button",
+      "section": "cta",
+      "label": "CTA button",
+      "type": "link",
+      "value": "Contact Us",
+      "link_url": "/contact-us"
+    },
+    {
+      "sort_order": 21,
+      "block_key": "content.text_de434cf",
+      "section": "content",
+      "label": "Content block 1",
+      "type": "html",
+      "value": "<div class=\"elementor-element elementor-element-de434cf elementor-widget elementor-widget-text-editor\" data-element_type=\"widget\" data-id=\"de434cf\" data-settings=\"{&quot;ekit_we_effect_on&quot;:&quot;none&quot;}\" data-widget_type=\"text-editor.default\"><div class=\"elementor-widget-container\"><p>The term “mite” refers to microscopic arthropods having jointed legs and external skeletons that are less than 1 mm long (hence the name). Mites are the most successful and diversified group of invertebrates among arthropods; while some are parasitic, the majority are non-parasitic and free-living. On land and in the water, mites can live and reproduce, and the majority of them do not damage animals. Mites can go unnoticed because of their tiny size.</p><p>Mites are very small creatures but can be a huge problem for you. They are quite small, too, making them hard to identify. We are here to help you with mites removal in Melbourne. Contact 7 State Pest Control today for reliable,&nbsp;<a href=\"/\"><strong>affordable pest control in Melbourne&nbsp;</strong></a>solutions<strong>.</strong></p></div></div>"
+    },
+    {
+      "sort_order": 22,
+      "block_key": "content.text_de434cf_2",
+      "section": "content",
+      "label": "Content block 2",
+      "type": "html",
+      "value": "<div class=\"elementor-element elementor-element-de434cf elementor-widget elementor-widget-text-editor\" data-element_type=\"widget\" data-id=\"de434cf\" data-settings=\"{&quot;ekit_we_effect_on&quot;:&quot;none&quot;}\" data-widget_type=\"text-editor.default\"><div class=\"elementor-widget-container\"><p>The term “mite” refers to microscopic arthropods having jointed legs and external skeletons that are less than 1 mm long (hence the name). Mites are the most successful and diversified group of invertebrates among arthropods; while some are parasitic, the majority are non-parasitic and free-living. On land and in the water, mites can live and reproduce, and the majority of them do not damage animals. Mites can go unnoticed because of their tiny size.</p><p>Mites are very small creatures but can be a huge problem for you. They are quite small, too, making them hard to identify. We are here to help you with mites removal in Melbourne. Contact 7 State Pest Control today for reliable,&nbsp;<a href=\"/\"><strong>affordable pest control in Melbourne&nbsp;</strong></a>solutions<strong>.</strong></p></div></div>"
+    },
+    {
+      "sort_order": 23,
+      "block_key": "content.heading_f2b83cb",
+      "section": "content",
+      "label": "Heading: Get A Free Quote Now!",
+      "type": "text",
+      "value": "Get A Free Quote Now!"
+    },
+    {
+      "sort_order": 24,
+      "block_key": "content.heading_5e9c808",
+      "section": "content",
+      "label": "Heading: Have an enquiry? Leave us your details and we’ll call you ba",
+      "type": "text",
+      "value": "Have an enquiry? Leave us your details and we’ll call you back during business hours."
+    },
+    {
+      "sort_order": 25,
+      "block_key": "content.heading_8916f32",
+      "section": "content",
+      "label": "Heading: Say Goodbye to Harmful Mites",
+      "type": "text",
+      "value": "Say Goodbye to Harmful Mites"
+    },
+    {
+      "sort_order": 26,
+      "block_key": "content.heading_dd5b3de",
+      "section": "content",
+      "label": "Heading: Bid Adieu to Harmful & Dangerous Mites from Your Home",
+      "type": "text",
+      "value": "Bid Adieu to Harmful & Dangerous Mites from Your Home"
+    },
+    {
+      "sort_order": 27,
+      "block_key": "content.text_76690a4",
+      "section": "content",
+      "label": "Content block 3",
+      "type": "html",
+      "value": "<div class=\"elementor-element elementor-element-de434cf elementor-widget elementor-widget-text-editor\" data-element_type=\"widget\" data-id=\"de434cf\" data-settings=\"{&quot;ekit_we_effect_on&quot;:&quot;none&quot;}\" data-widget_type=\"text-editor.default\"><div class=\"elementor-widget-container\"><p>The term “mite” refers to microscopic arthropods having jointed legs and external skeletons that are less than 1 mm long (hence the name). Mites are the most successful and diversified group of invertebrates among arthropods; while some are parasitic, the majority are non-parasitic and free-living. On land and in the water, mites can live and reproduce, and the majority of them do not damage animals. Mites can go unnoticed because of their tiny size.</p><p>Mites are very small creatures but can be a huge problem for you. They are quite small, too, making them hard to identify. We are here to help you with mites removal in Melbourne. Contact 7 State Pest Control today for reliable,&nbsp;<a href=\"/\"><strong>affordable pest control in Melbourne&nbsp;</strong></a>solutions<strong>.</strong></p></div></div>"
+    },
+    {
+      "sort_order": 28,
+      "block_key": "content.text_de434cf_3",
+      "section": "content",
+      "label": "Content block 4",
+      "type": "html",
+      "value": "<div class=\"elementor-element elementor-element-de434cf elementor-widget elementor-widget-text-editor\" data-element_type=\"widget\" data-id=\"de434cf\" data-settings=\"{&quot;ekit_we_effect_on&quot;:&quot;none&quot;}\" data-widget_type=\"text-editor.default\"><div class=\"elementor-widget-container\"><p>The term “mite” refers to microscopic arthropods having jointed legs and external skeletons that are less than 1 mm long (hence the name). Mites are the most successful and diversified group of invertebrates among arthropods; while some are parasitic, the majority are non-parasitic and free-living. On land and in the water, mites can live and reproduce, and the majority of them do not damage animals. Mites can go unnoticed because of their tiny size.</p><p>Mites are very small creatures but can be a huge problem for you. They are quite small, too, making them hard to identify. We are here to help you with mites removal in Melbourne. Contact 7 State Pest Control today for reliable,&nbsp;<a href=\"/\"><strong>affordable pest control in Melbourne&nbsp;</strong></a>solutions<strong>.</strong></p></div></div>"
+    },
+    {
+      "sort_order": 29,
+      "block_key": "content.heading_3c55949",
+      "section": "content",
+      "label": "Heading: Mite Bites",
+      "type": "text",
+      "value": "Mite Bites"
+    },
+    {
+      "sort_order": 30,
+      "block_key": "content.heading_4ebd325",
+      "section": "content",
+      "label": "Heading: How does a mite bite look like?",
+      "type": "text",
+      "value": "How does a mite bite look like?"
+    },
+    {
+      "sort_order": 31,
+      "block_key": "content.text_24a7d2a",
+      "section": "content",
+      "label": "Content block 5",
+      "type": "html",
+      "value": "<p>Without magnification, it is challenging to distinguish between different types of mites. It is advised to get in touch with us to undertake an extensive and thorough assessment to locate the mite source if you suspect a mite infestation inside or around your home.</p>"
+    },
+    {
+      "sort_order": 32,
+      "block_key": "content.list_b484fe7",
+      "section": "content",
+      "label": "Icon list (b484fe7)",
+      "type": "json",
+      "metadata": {
+        "items": [
+          "The bites can become extremely painful.",
+          "Your pet may have been bitten by mites if you notice them scratching themselves often.",
+          "Become uncomfortable from the bites, and they risk getting sick."
+        ]
+      }
+    },
+    {
+      "sort_order": 33,
+      "block_key": "content.list_c10a8b4",
+      "section": "content",
+      "label": "Icon list (c10a8b4)",
+      "type": "json",
+      "metadata": {
+        "items": [
+          "Mite bites cause skin rashes on the legs, arms, and trunk as well as a single lump of skin with a distinct puncture site.",
+          "In the skin, mites bury their heads deeply.",
+          "The bites can last up to two weeks and at first glance resemble pimples."
+        ]
+      }
+    },
+    {
+      "sort_order": 34,
+      "block_key": "content.heading_3b861a5",
+      "section": "content",
+      "label": "Heading: Cockroach Elimination",
+      "type": "text",
+      "value": "Cockroach Elimination"
+    },
+    {
+      "sort_order": 35,
+      "block_key": "content.heading_1b1d385",
+      "section": "content",
+      "label": "Heading: Reasons to Opt for Fly Elimination Services from Us",
+      "type": "text",
+      "value": "Reasons to Opt for Fly Elimination Services from Us"
+    },
+    {
+      "sort_order": 36,
+      "block_key": "content.text_9c7ed97",
+      "section": "content",
+      "label": "Content block 6",
+      "type": "html",
+      "value": "<div class=\"elementor-element elementor-element-de434cf elementor-widget elementor-widget-text-editor\" data-element_type=\"widget\" data-id=\"de434cf\" data-settings=\"{&quot;ekit_we_effect_on&quot;:&quot;none&quot;}\" data-widget_type=\"text-editor.default\"><div class=\"elementor-widget-container\"><p>If you’re having problems with flies, don’t hesitate to contact 7 States Pest Control. We’re here to help you get rid of flies and other pests so you can enjoy your home or business pest-free.</p></div></div>"
+    },
+    {
+      "sort_order": 37,
+      "block_key": "content.text_de434cf_4",
+      "section": "content",
+      "label": "Content block 7",
+      "type": "html",
+      "value": "<div class=\"elementor-element elementor-element-de434cf elementor-widget elementor-widget-text-editor\" data-element_type=\"widget\" data-id=\"de434cf\" data-settings=\"{&quot;ekit_we_effect_on&quot;:&quot;none&quot;}\" data-widget_type=\"text-editor.default\"><div class=\"elementor-widget-container\"><p>The term “mite” refers to microscopic arthropods having jointed legs and external skeletons that are less than 1 mm long (hence the name). Mites are the most successful and diversified group of invertebrates among arthropods; while some are parasitic, the majority are non-parasitic and free-living. On land and in the water, mites can live and reproduce, and the majority of them do not damage animals. Mites can go unnoticed because of their tiny size.</p><p>Mites are very small creatures but can be a huge problem for you. They are quite small, too, making them hard to identify. We are here to help you with mites removal in Melbourne. Contact 7 State Pest Control today for reliable,&nbsp;<a href=\"/\"><strong>affordable pest control in Melbourne&nbsp;</strong></a>solutions<strong>.</strong></p></div></div>"
+    },
+    {
+      "sort_order": 38,
+      "block_key": "content.list_789d477",
+      "section": "content",
+      "label": "Icon list (789d477)",
+      "type": "json",
+      "metadata": {
+        "items": [
+          "We are experienced and professional. Our technicians have years of experience in eliminating flies and other pests from homes and businesses. We know what works and what doesn't, and we'll use our expertise to develop a customized treatment plan for your property.",
+          "We use safe and effective methods. We use a variety of methods to control flies, including baits, traps, and insecticides. All of our methods are safe for people and pets, and we'll take steps to protect your property during treatment.",
+          "We offer free estimates and same-day service. We understand that fly infestations can be a pressing problem, so we offer free estimates and same-day service. We want to get rid of your flies as quickly as possible so you can enjoy your home or business pest-free.",
+          "We offer free estimates and same-day service. We understand that fly infestations can be a pressing problem, so we offer free estimates and same-day service. We want to get rid of your flies as quickly as possible so you can enjoy your home or business pest-free."
+        ]
+      }
+    },
+    {
+      "sort_order": 39,
+      "block_key": "content.heading_ef9055f",
+      "section": "content",
+      "label": "Heading: reproduction and life cycle",
+      "type": "text",
+      "value": "reproduction and life cycle"
+    },
+    {
+      "sort_order": 40,
+      "block_key": "content.heading_fb916a7",
+      "section": "content",
+      "label": "Heading: Mite reproduction and life cycle",
+      "type": "text",
+      "value": "Mite reproduction and life cycle"
+    },
+    {
+      "sort_order": 41,
+      "block_key": "content.list_013cf33",
+      "section": "content",
+      "label": "Icon list (013cf33)",
+      "type": "json",
+      "metadata": {
+        "items": [
+          "Eggs : Most mite eggs are extremely tiny. Once laid, it can vary as to how long it may take for the eggs to door, ranging from between three to four days, to as long as six weeks.",
+          "Larva : When mite eggs door, six-lawful naiads crop . During this stage, the naiad will exfoliate several times before moving on to the nymph stage.",
+          "Nymph : During this life stage, diminutives exfoliate as numerous as three further times, growing another set of legs and adding in size.",
+          "Adult : After a few days, a completely- formed, eight-lawful mite begins the cycle each over again. Diminutives have a shorter lifetime compared to other arachnids, living only for several months."
+        ]
+      }
+    },
+    {
+      "sort_order": 42,
+      "block_key": "content.heading_2772224",
+      "section": "content",
+      "label": "Heading: Stages of Treatment",
+      "type": "text",
+      "value": "Stages of Treatment"
+    },
+    {
+      "sort_order": 43,
+      "block_key": "content.heading_4a41640",
+      "section": "content",
+      "label": "Heading: Different Treatments Stages 7 States Pest Control Profession",
+      "type": "text",
+      "value": "Different Treatments Stages 7 States Pest Control Professionals Perform"
+    },
+    {
+      "sort_order": 44,
+      "block_key": "content.heading_113a5e2",
+      "section": "content",
+      "label": "Heading: Inspection",
+      "type": "text",
+      "value": "Inspection"
+    },
+    {
+      "sort_order": 45,
+      "block_key": "content.text_a2624c7",
+      "section": "content",
+      "label": "Content block 8",
+      "type": "html",
+      "value": "<div class=\"elementor-element elementor-element-57329fa elementor-widget elementor-widget-text-editor\" data-element_type=\"widget\" data-id=\"57329fa\" data-settings=\"{&quot;ekit_we_effect_on&quot;:&quot;none&quot;}\" data-widget_type=\"text-editor.default\"><div class=\"elementor-widget-container\"><div class=\"elementor-element elementor-element-9407d80 elementor-widget elementor-widget-text-editor\" data-element_type=\"widget\" data-id=\"9407d80\" data-settings=\"{&quot;ekit_we_effect_on&quot;:&quot;none&quot;}\" data-widget_type=\"text-editor.default\"><div class=\"elementor-widget-container\"><p>Our certified mites removalists visit your property. We’ll inspect your home from top to bottom, inside and out. After this, we identify the level of infestation. We confirm the type present at your house.</p></div></div></div></div>"
+    },
+    {
+      "sort_order": 46,
+      "block_key": "content.text_57329fa",
+      "section": "content",
+      "label": "Content block 9",
+      "type": "html",
+      "value": "<div class=\"elementor-element elementor-element-9407d80 elementor-widget elementor-widget-text-editor\" data-element_type=\"widget\" data-id=\"9407d80\" data-settings=\"{&quot;ekit_we_effect_on&quot;:&quot;none&quot;}\" data-widget_type=\"text-editor.default\"><div class=\"elementor-widget-container\"><p>Our certified mites removalists visit your property. We’ll inspect your home from top to bottom, inside and out. After this, we identify the level of infestation. We confirm the type present at your house.</p></div></div>"
+    },
+    {
+      "sort_order": 47,
+      "block_key": "content.text_9407d80",
+      "section": "content",
+      "label": "Content block 10",
+      "type": "html",
+      "value": "<p>Our certified mites removalists visit your property. We’ll inspect your home from top to bottom, inside and out. After this, we identify the level of infestation. We confirm the type present at your house.</p>"
+    },
+    {
+      "sort_order": 48,
+      "block_key": "content.heading_ce41091",
+      "section": "content",
+      "label": "Heading: Removal/Elimination",
+      "type": "text",
+      "value": "Removal/Elimination"
+    },
+    {
+      "sort_order": 49,
+      "block_key": "content.text_bc8e2a4",
+      "section": "content",
+      "label": "Content block 11",
+      "type": "html",
+      "value": "<div class=\"elementor-element elementor-element-57329fa elementor-widget elementor-widget-text-editor\" data-element_type=\"widget\" data-id=\"57329fa\" data-settings=\"{&quot;ekit_we_effect_on&quot;:&quot;none&quot;}\" data-widget_type=\"text-editor.default\"><div class=\"elementor-widget-container\"><p>Depending on the inspection, We ’ll treat the border of your structure with the applicable accoutrements, remove all accessible spiderwebs and wasp nests, and use the safest styles available. This plan includes the removal process, the procedure’s timeline, different approvals required from the government, etc.</p></div></div>"
+    },
+    {
+      "sort_order": 50,
+      "block_key": "content.text_57329fa_2",
+      "section": "content",
+      "label": "Content block 12",
+      "type": "html",
+      "value": "<div class=\"elementor-element elementor-element-9407d80 elementor-widget elementor-widget-text-editor\" data-element_type=\"widget\" data-id=\"9407d80\" data-settings=\"{&quot;ekit_we_effect_on&quot;:&quot;none&quot;}\" data-widget_type=\"text-editor.default\"><div class=\"elementor-widget-container\"><p>Our certified mites removalists visit your property. We’ll inspect your home from top to bottom, inside and out. After this, we identify the level of infestation. We confirm the type present at your house.</p></div></div>"
+    },
+    {
+      "sort_order": 51,
+      "block_key": "content.heading_35840e7",
+      "section": "content",
+      "label": "Heading: Prevention",
+      "type": "text",
+      "value": "Prevention"
+    },
+    {
+      "sort_order": 52,
+      "block_key": "content.text_138f9ac",
+      "section": "content",
+      "label": "Content block 13",
+      "type": "html",
+      "value": "<p>For preventive measures, we perform the following:</p><p>We ’ll do everything we can to keep insects out — seal, caulk, draw, and secure gaps and cracks.</p><p>We ’ll treat the innards of your home and install pest observers in critical areas similar as kitchens, cataracts, mileage apartments, and garages.</p>"
+    },
+    {
+      "sort_order": 53,
+      "block_key": "content.list_e5e4c94",
+      "section": "content",
+      "label": "Icon list (e5e4c94)",
+      "type": "json",
+      "metadata": {
+        "items": [
+          "Vacuum your house as much as you can because these tiny brutes are delicate to spot with naked eyes you can remove them by continuously vacuuming the house.",
+          "Contact us for mites removal in greenhouses, fruit tree orchards, and vegetable gardens with us we with the help of our professional technician's team provide a customized pocket-friendly plan for mites and other pest control services."
+        ]
+      }
+    },
+    {
+      "sort_order": 54,
+      "block_key": "content.heading_73358e8",
+      "section": "content",
+      "label": "Heading: how to do",
+      "type": "text",
+      "value": "how to do"
+    },
+    {
+      "sort_order": 55,
+      "block_key": "content.heading_bd8e94d",
+      "section": "content",
+      "label": "Heading: How Do I Know If I Have Mites In My House?",
+      "type": "text",
+      "value": "How Do I Know If I Have Mites In My House?"
+    },
+    {
+      "sort_order": 56,
+      "block_key": "content.text_4a957b0",
+      "section": "content",
+      "label": "Content block 14",
+      "type": "html",
+      "value": "<p>In a 2003 study, an estimated 84% of homes have a detectable dust mite population. The ugly truth is, if you live in a home, there’s a high probability you ’ve got dust diminutives. still, an average dust mite population is nothing to sneeze at and will probably go unnoticed. It’s when inhabitants display increased antipathetic symptoms that there may be a problem.</p><p>Before taking any way to reduce a problematic dust mite population, first check the home for bed bugs. Why? Dust mites and bed bugs induce analogous antipathetic responses in humans and, as similar, are frequently conflated. thus, the stylish way to ascertain which pest you have is to rule out the other. Check mattresses in the home, if there are rust- colored smears, it’s bed bugs, so schedule&nbsp;<a href=\"/our-services-bed-bug-treatment\">bed bug removal services</a>&nbsp;right away. If not it’s time to fight some mites.</p>"
+    },
+    {
+      "sort_order": 57,
+      "block_key": "content.heading_32945a7",
+      "section": "content",
+      "label": "Heading: Frequently Asked Questions",
+      "type": "text",
+      "value": "Frequently Asked Questions"
+    },
+    {
+      "sort_order": 58,
+      "block_key": "content.image_d26b015",
+      "section": "content",
+      "label": "Image (d26b015)",
+      "type": "image",
+      "image_path": "cms/our-services-mites-control/WhatsApp-Image-2024-08-28-at-15.35.06_bc7d2870-1_ecbbd918.jpg",
+      "metadata": {
+        "elementor_id": "d26b015",
+        "image_src": "/assets/images/WhatsApp-Image-2024-08-28-at-15.35.06_bc7d2870-1_ecbbd918.jpg"
+      }
+    },
+    {
+      "sort_order": 59,
+      "block_key": "content.heading_9ad3dec",
+      "section": "content",
+      "label": "Heading: Clients Reviews",
+      "type": "text",
+      "value": "Clients Reviews"
+    },
+    {
+      "sort_order": 60,
+      "block_key": "content.heading_327aacd",
+      "section": "content",
+      "label": "Heading: 7 States Pest Control for Reliable Pest Management Solutions",
+      "type": "text",
+      "value": "7 States Pest Control for Reliable Pest Management Solutions"
+    },
+    {
+      "sort_order": 61,
+      "block_key": "content.heading_71b99fa",
+      "section": "content",
+      "label": "Heading: Reviews of Our Pest Control Services",
+      "type": "text",
+      "value": "Reviews of Our Pest Control Services"
+    },
+    {
+      "sort_order": 62,
+      "block_key": "content.heading_6085bb0",
+      "section": "content",
+      "label": "Heading: EXCELLENT",
+      "type": "text",
+      "value": "EXCELLENT"
+    },
+    {
+      "sort_order": 63,
+      "block_key": "content.text_d078e2f",
+      "section": "content",
+      "label": "Content block 15",
+      "type": "html",
+      "value": "<p>Based on&nbsp;45 reviews</p>"
+    },
+    {
+      "sort_order": 64,
+      "block_key": "content.heading_7a98ae6",
+      "section": "content",
+      "label": "Heading: Get A Free Quote Now!",
+      "type": "text",
+      "value": "Get A Free Quote Now!"
+    },
+    {
+      "sort_order": 65,
+      "block_key": "content.heading_4c825b4",
+      "section": "content",
+      "label": "Heading: Ideas to reality",
+      "type": "text",
+      "value": "Ideas to reality"
+    },
+    {
+      "sort_order": 66,
+      "block_key": "content.heading_7c67181",
+      "section": "content",
+      "label": "Heading: Talk to Us Today to Learn More",
+      "type": "text",
+      "value": "Talk to Us Today to Learn More"
+    },
+    {
+      "sort_order": 67,
+      "block_key": "content.text_dbd1d11",
+      "section": "content",
+      "label": "Content block 16",
+      "type": "html",
+      "value": "Do you have any specific questions about us, our services, or anything related to pest infestation issues? Call us today on&nbsp;<a href=\"tel:+61434660060\"> +61 434 660 060</a>&nbsp;or use our contact form to connect with our&nbsp;<b>7 States Pest Control</b>. You can get answers to your questions, get upfront quotes for the&nbsp;<b>7 States Pest Control</b>&nbsp;issues, and receive high-quality tailored services."
+    }
+  ]
+}

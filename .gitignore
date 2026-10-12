@@ -1,0 +1,19 @@
+**/node_modules/
+**/.vite/
+**/dist/
+.env
+.env.*
+!.env.example
+
+# Dependencies
+**/node_modules/
+**/vendor/
+
+# Build/cache files
+**/.vite/
+**/dist/
+
+# Environment secrets
+.env
+.env.*
+!.env.example

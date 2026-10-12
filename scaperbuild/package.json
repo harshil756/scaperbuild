@@ -1,0 +1,10 @@
+{
+  "name": "7states-scaperbuild",
+  "private": true,
+  "scripts": {
+    "cms:extract": "node backend/scripts/extract-home-cms.mjs",
+    "cms:copy": "node backend/scripts/copy-home-assets.mjs",
+    "cms:seed": "cd backend && php artisan db:seed --class=HomePageSeeder",
+    "cms:sync": "npm run cms:extract && npm run cms:copy && npm run cms:seed"
+  }
+}

@@ -1,0 +1,50 @@
+# ----------------------------------------
+# 7 States Pest Control - Robots.txt
+# Optimized for SEO + Crawl Budget
+# ----------------------------------------
+
+User-agent: *
+Disallow: /wp-admin/
+Allow: /wp-admin/admin-ajax.php
+
+# Block unnecessary internal searches
+Disallow: /?s=
+Disallow: /search/
+
+# Sitemap
+Sitemap: https://7statespestcontrol.com.au/sitemap_index.xml
+
+
+# ----------------------------------------
+# Google Specific
+# ----------------------------------------
+
+User-agent: Googlebot
+Allow: /
+
+User-agent: AdsBot-Google
+Allow: /
+
+
+# ----------------------------------------
+# AI Crawlers (Recommended: Allow for brand visibility)
+# ----------------------------------------
+
+User-agent: GPTBot
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+User-agent: anthropic-ai
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+# Block bulk dataset crawler
+User-agent: CCBot
+Disallow: /
