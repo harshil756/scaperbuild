@@ -1,0 +1,379 @@
+{
+  "slug": "our-services-end-of-lease-pest-control",
+  "title": "End of Lease Pest Control",
+  "seo_title": "End of Lease Pest Control in Melbourne | 7 States",
+  "seo_description": "Affordable end of lease pest control in Melbourne. 100% bond-back service with same-day treatment. Trusted by tenants, agents & landlords. Book now!",
+  "body_class": "wp-singular page-template page-template-elementor_header_footer page wp-custom-logo wp-embed-responsive wp-theme-hello-elementor elementor-default elementor-template-full-width elementor-kit-9 elementor-page elementor-page-1666",
+  "elementor_id": 1666,
+  "is_published": true,
+  "blocks": [
+    {
+      "sort_order": 0,
+      "block_key": "background.hero",
+      "section": "hero",
+      "label": "Hero background",
+      "type": "background",
+      "background_image_path": "cms/our-services-end-of-lease-pest-control/End-of-Lease-2.png_0c28dc03.webp",
+      "metadata": {
+        "elementor_id": "04044b8",
+        "filename": "End-of-Lease-2.png_0c28dc03.webp"
+      }
+    },
+    {
+      "sort_order": 1,
+      "block_key": "background.cta",
+      "section": "cta",
+      "label": "CTA background",
+      "type": "background",
+      "background_image_path": "cms/our-services-end-of-lease-pest-control/URUU-01-2048x1365-2_7c216e6d.jpg",
+      "metadata": {
+        "elementor_id": "057b4d3",
+        "filename": "URUU-01-2048x1365-2_7c216e6d.jpg"
+      }
+    },
+    {
+      "sort_order": 2,
+      "block_key": "hero.breadcrumb_parent",
+      "section": "hero",
+      "label": "Breadcrumb parent",
+      "type": "text",
+      "value": "Services"
+    },
+    {
+      "sort_order": 3,
+      "block_key": "hero.breadcrumb_current",
+      "section": "hero",
+      "label": "Breadcrumb current",
+      "type": "text",
+      "value": "end of lease pest control"
+    },
+    {
+      "sort_order": 4,
+      "block_key": "hero.title",
+      "section": "hero",
+      "label": "Section title",
+      "type": "text",
+      "value": "Pest Control Services"
+    },
+    {
+      "sort_order": 5,
+      "block_key": "hero.heading",
+      "section": "hero",
+      "label": "Main heading",
+      "type": "text",
+      "value": "End of Lease Pest Control Services"
+    },
+    {
+      "sort_order": 6,
+      "block_key": "hero.intro",
+      "section": "hero",
+      "label": "Intro paragraph",
+      "type": "html",
+      "value": "<div class=\"elementor-element elementor-element-de434cf elementor-widget elementor-widget-text-editor\" data-element_type=\"widget\" data-id=\"de434cf\" data-settings=\"{&quot;ekit_we_effect_on&quot;:&quot;none&quot;}\" data-widget_type=\"text-editor.default\"><div class=\"elementor-widget-container\"><div class=\"elementor-element elementor-element-de434cf elementor-widget elementor-widget-text-editor\" data-element_type=\"widget\" data-id=\"de434cf\" data-settings=\"{&quot;ekit_we_effect_on&quot;:&quot;none&quot;}\" data-widget_type=\"text-editor.default\"><div class=\"elementor-widget-container\"><div>Are you relocating to your rental residence? Are you looking for a 7 States Pest Control company that can help you with your end of lease 7 States Pest Control. Do you want your deposit refunded? Welcome to 7 States Pest Control, one-stop shop for 7 States Pest Control at the end of a lease.</div><div>Our end of lease flea treatment ensures that your rental property is free of unwanted guests. The service is provided by registered 7 States Pest Control technicians in the area and comes with a money-back guarantee. They use a special end-of-lease checklist to make sure that all agency or landowner requirements are met, and you won’t have to worry about your bond being returned.</div><div>There is no need for hassles when moving out of a rented home. We will assist you in finishing the operation without difficulty. So, join several happy and satisfied 7 States Pest Control customers and get your bond back!</div></div></div></div></div>"
+    },
+    {
+      "sort_order": 7,
+      "block_key": "quote_form.title",
+      "section": "quote_form",
+      "label": "Form heading",
+      "type": "text",
+      "value": "End of Lease Pest Control Services"
+    },
+    {
+      "sort_order": 8,
+      "block_key": "quote_form.subtitle",
+      "section": "quote_form",
+      "label": "Form subtitle",
+      "type": "text",
+      "value": "Have an enquiry? Leave us your details and we’ll call you back during business hours."
+    },
+    {
+      "sort_order": 9,
+      "block_key": "quote_form.submit_text",
+      "section": "quote_form",
+      "label": "Submit button text",
+      "type": "text",
+      "value": "Submit Quote"
+    },
+    {
+      "sort_order": 10,
+      "block_key": "reviews.eyebrow",
+      "section": "reviews",
+      "label": "Reviews eyebrow",
+      "type": "text",
+      "value": "7 States Pest Control for Reliable Pest Management Solutions"
+    },
+    {
+      "sort_order": 11,
+      "block_key": "reviews.title",
+      "section": "reviews",
+      "label": "Reviews title",
+      "type": "text",
+      "value": "EXCELLENT"
+    },
+    {
+      "sort_order": 12,
+      "block_key": "cta.eyebrow",
+      "section": "cta",
+      "label": "Eyebrow",
+      "type": "text",
+      "value": "Ideas to reality"
+    },
+    {
+      "sort_order": 13,
+      "block_key": "cta.title",
+      "section": "cta",
+      "label": "Section title",
+      "type": "text",
+      "value": "Talk to Us Today to Learn More"
+    },
+    {
+      "sort_order": 14,
+      "block_key": "cta.body",
+      "section": "cta",
+      "label": "Body HTML",
+      "type": "html",
+      "value": "<p>Based on&nbsp;45 reviews</p>"
+    },
+    {
+      "sort_order": 15,
+      "block_key": "cta.button",
+      "section": "cta",
+      "label": "CTA button",
+      "type": "link",
+      "value": "Contact Us",
+      "link_url": "/contact-us"
+    },
+    {
+      "sort_order": 16,
+      "block_key": "content.text_de434cf",
+      "section": "content",
+      "label": "Content block 1",
+      "type": "html",
+      "value": "<div class=\"elementor-element elementor-element-de434cf elementor-widget elementor-widget-text-editor\" data-element_type=\"widget\" data-id=\"de434cf\" data-settings=\"{&quot;ekit_we_effect_on&quot;:&quot;none&quot;}\" data-widget_type=\"text-editor.default\"><div class=\"elementor-widget-container\"><div>Are you relocating to your rental residence? Are you looking for a 7 States Pest Control company that can help you with your end of lease 7 States Pest Control. Do you want your deposit refunded? Welcome to 7 States Pest Control, one-stop shop for 7 States Pest Control at the end of a lease.</div><div>Our end of lease flea treatment ensures that your rental property is free of unwanted guests. The service is provided by registered 7 States Pest Control technicians in the area and comes with a money-back guarantee. They use a special end-of-lease checklist to make sure that all agency or landowner requirements are met, and you won’t have to worry about your bond being returned.</div><div>There is no need for hassles when moving out of a rented home. We will assist you in finishing the operation without difficulty. So, join several happy and satisfied 7 States Pest Control customers and get your bond back!</div></div></div>"
+    },
+    {
+      "sort_order": 17,
+      "block_key": "content.text_de434cf_2",
+      "section": "content",
+      "label": "Content block 2",
+      "type": "html",
+      "value": "<div class=\"elementor-element elementor-element-de434cf elementor-widget elementor-widget-text-editor\" data-element_type=\"widget\" data-id=\"de434cf\" data-settings=\"{&quot;ekit_we_effect_on&quot;:&quot;none&quot;}\" data-widget_type=\"text-editor.default\"><div class=\"elementor-widget-container\"><div>Are you relocating to your rental residence? Are you looking for a 7 States Pest Control company that can help you with your end of lease 7 States Pest Control. Do you want your deposit refunded? Welcome to 7 States Pest Control, one-stop shop for 7 States Pest Control at the end of a lease.</div><div>Our end of lease flea treatment ensures that your rental property is free of unwanted guests. The service is provided by registered 7 States Pest Control technicians in the area and comes with a money-back guarantee. They use a special end-of-lease checklist to make sure that all agency or landowner requirements are met, and you won’t have to worry about your bond being returned.</div><div>There is no need for hassles when moving out of a rented home. We will assist you in finishing the operation without difficulty. So, join several happy and satisfied 7 States Pest Control customers and get your bond back!</div></div></div>"
+    },
+    {
+      "sort_order": 18,
+      "block_key": "content.heading_fa41fdb",
+      "section": "content",
+      "label": "Heading: Get A Free Quote Now!",
+      "type": "text",
+      "value": "Get A Free Quote Now!"
+    },
+    {
+      "sort_order": 19,
+      "block_key": "content.heading_aa7ed26",
+      "section": "content",
+      "label": "Heading: Have an enquiry? Leave us your details and we’ll call you ba",
+      "type": "text",
+      "value": "Have an enquiry? Leave us your details and we’ll call you back during business hours."
+    },
+    {
+      "sort_order": 20,
+      "block_key": "content.heading_3c55949",
+      "section": "content",
+      "label": "Heading: sign indication",
+      "type": "text",
+      "value": "sign indication"
+    },
+    {
+      "sort_order": 21,
+      "block_key": "content.heading_4ebd325",
+      "section": "content",
+      "label": "Heading: When to Get Our End of Lease 7 States Pest Control Service?",
+      "type": "text",
+      "value": "When to Get Our End of Lease 7 States Pest Control Service?"
+    },
+    {
+      "sort_order": 22,
+      "block_key": "content.text_24a7d2a",
+      "section": "content",
+      "label": "Content block 3",
+      "type": "html",
+      "value": "<p>When you suspect you have a pest problem, it’s probably too late. Pests are known for attacking human properties to survive. Pests are attracted to your property due to a lack of hygiene, food crumbs, and so on. As a result, let us remove them so you may give over your old residence to your landlord in decent condition.</p>"
+    },
+    {
+      "sort_order": 23,
+      "block_key": "content.list_c10a8b4",
+      "section": "content",
+      "label": "Icon list (c10a8b4)",
+      "type": "json",
+      "metadata": {
+        "items": [
+          "Disturbing noises at unusual times, such as creaking or faint movement sounds in walls.",
+          "Pets experiencing increased itchiness or irritation may indicate a flea infestation.",
+          "Seeing more pests surrounding your property, such as ants, moths, termites, bugs, and so on."
+        ]
+      }
+    },
+    {
+      "sort_order": 24,
+      "block_key": "content.text_830d9c1",
+      "section": "content",
+      "label": "Content block 4",
+      "type": "html",
+      "value": "<p>End-of-lease pest treatment may securely destroy them while avoiding any harm they may have caused to your old home. The move out 7 States Pest Control treatments we provide locations include everything from inspection to removal. Say goodbye to paying extra charges since we keep our services clear when you engage us! When you notice any of the following indicators, contact our end of lease pest treatment experts:</p>"
+    },
+    {
+      "sort_order": 25,
+      "block_key": "content.heading_ef9055f",
+      "section": "content",
+      "label": "Heading: Pest Control Experts",
+      "type": "text",
+      "value": "Pest Control Experts"
+    },
+    {
+      "sort_order": 26,
+      "block_key": "content.heading_fb916a7",
+      "section": "content",
+      "label": "Heading: Advantages of Hiring Our End of Lease 7 States Pest Control ",
+      "type": "text",
+      "value": "Advantages of Hiring Our End of Lease 7 States Pest Control Experts!"
+    },
+    {
+      "sort_order": 27,
+      "block_key": "content.text_adcf837",
+      "section": "content",
+      "label": "Content block 5",
+      "type": "html",
+      "value": "<div class=\"elementor-element elementor-element-de434cf elementor-widget elementor-widget-text-editor\" data-element_type=\"widget\" data-id=\"de434cf\" data-settings=\"{&quot;ekit_we_effect_on&quot;:&quot;none&quot;}\" data-widget_type=\"text-editor.default\"><div class=\"elementor-widget-container\"><div class=\"elementor-element elementor-element-5eac199 elementor-widget elementor-widget-text-editor\" data-element_type=\"widget\" data-id=\"5eac199\" data-settings=\"{&quot;ekit_we_effect_on&quot;:&quot;none&quot;}\" data-widget_type=\"text-editor.default\"><div class=\"elementor-widget-container\"><p>We work around the clock at 7 States Pest Control to guarantee that our clients are secure and comfortable without having to worry about termites, silverfish, rodents, termites, or other pests.</p></div></div></div></div>"
+    },
+    {
+      "sort_order": 28,
+      "block_key": "content.text_de434cf_3",
+      "section": "content",
+      "label": "Content block 6",
+      "type": "html",
+      "value": "<div class=\"elementor-element elementor-element-de434cf elementor-widget elementor-widget-text-editor\" data-element_type=\"widget\" data-id=\"de434cf\" data-settings=\"{&quot;ekit_we_effect_on&quot;:&quot;none&quot;}\" data-widget_type=\"text-editor.default\"><div class=\"elementor-widget-container\"><div>Are you relocating to your rental residence? Are you looking for a 7 States Pest Control company that can help you with your end of lease 7 States Pest Control. Do you want your deposit refunded? Welcome to 7 States Pest Control, one-stop shop for 7 States Pest Control at the end of a lease.</div><div>Our end of lease flea treatment ensures that your rental property is free of unwanted guests. The service is provided by registered 7 States Pest Control technicians in the area and comes with a money-back guarantee. They use a special end-of-lease checklist to make sure that all agency or landowner requirements are met, and you won’t have to worry about your bond being returned.</div><div>There is no need for hassles when moving out of a rented home. We will assist you in finishing the operation without difficulty. So, join several happy and satisfied 7 States Pest Control customers and get your bond back!</div></div></div>"
+    },
+    {
+      "sort_order": 29,
+      "block_key": "content.text_5eac199",
+      "section": "content",
+      "label": "Content block 7",
+      "type": "html",
+      "value": "<p>We work around the clock at 7 States Pest Control to guarantee that our clients are secure and comfortable without having to worry about termites, silverfish, rodents, termites, or other pests.</p>"
+    },
+    {
+      "sort_order": 30,
+      "block_key": "content.list_013cf33",
+      "section": "content",
+      "label": "Icon list (013cf33)",
+      "type": "json",
+      "metadata": {
+        "items": [
+          "We offer you eco-friendly pest control treatments using cutting-edge technology.",
+          "Our exterminators are trained, vetted, and completely qualified to handle any type of pest infestation."
+        ]
+      }
+    },
+    {
+      "sort_order": 31,
+      "block_key": "content.heading_73358e8",
+      "section": "content",
+      "label": "Heading: elimination service",
+      "type": "text",
+      "value": "elimination service"
+    },
+    {
+      "sort_order": 32,
+      "block_key": "content.heading_bd8e94d",
+      "section": "content",
+      "label": "Heading: 7 States Pest Control Complete End of Lease Pest Services!",
+      "type": "text",
+      "value": "7 States Pest Control Complete End of Lease Pest Services!"
+    },
+    {
+      "sort_order": 33,
+      "block_key": "content.text_4a957b0",
+      "section": "content",
+      "label": "Content block 8",
+      "type": "html",
+      "value": "<p>Every job receives the same level of attention from our team. Depending on the size of your property, we give end-of-lease flea treatment and 7 States Pest Control spiders control. We do a preliminary property inspection and provide a complete analysis. As a result, at 7 States Pest Control, we provide more than just end of lease pest fumigation. Our professionals will then create custom treatment strategies for both indoor and outdoor locations.<br /><br />We ensure that there is a minimal interruption and the best quality services are delivered on time.<br /><br />We start by finding the root cause, and then we provide effective 7 States Pest Control&nbsp; solutions to target the pests and stop their spread immediately. We have access to the most up-to-date equipment and materials for removing all forms of pests.</p><p>Book our pest removal services for your home or office to protect what you care about from harm and infection. 7 States Pest Control offers the following high-end services and more at the most competitive costs!</p>"
+    },
+    {
+      "sort_order": 34,
+      "block_key": "content.image_0bb7e99",
+      "section": "content",
+      "label": "Image (0bb7e99)",
+      "type": "image",
+      "image_path": "cms/our-services-end-of-lease-pest-control/Why-Pest-Control.jpg_ef5bccf6.webp",
+      "metadata": {
+        "elementor_id": "0bb7e99",
+        "image_src": "/assets/images/Why-Pest-Control.jpg_ef5bccf6.webp"
+      }
+    },
+    {
+      "sort_order": 35,
+      "block_key": "content.heading_200e0db",
+      "section": "content",
+      "label": "Heading: Clients Reviews",
+      "type": "text",
+      "value": "Clients Reviews"
+    },
+    {
+      "sort_order": 36,
+      "block_key": "content.heading_4725065",
+      "section": "content",
+      "label": "Heading: 7 States Pest Control for Reliable Pest Management Solutions",
+      "type": "text",
+      "value": "7 States Pest Control for Reliable Pest Management Solutions"
+    },
+    {
+      "sort_order": 37,
+      "block_key": "content.heading_a9a9581",
+      "section": "content",
+      "label": "Heading: Reviews of Our Pest Control Services",
+      "type": "text",
+      "value": "Reviews of Our Pest Control Services"
+    },
+    {
+      "sort_order": 38,
+      "block_key": "content.heading_984b25a",
+      "section": "content",
+      "label": "Heading: EXCELLENT",
+      "type": "text",
+      "value": "EXCELLENT"
+    },
+    {
+      "sort_order": 39,
+      "block_key": "content.text_d360bff",
+      "section": "content",
+      "label": "Content block 9",
+      "type": "html",
+      "value": "<p>Based on&nbsp;45 reviews</p>"
+    },
+    {
+      "sort_order": 40,
+      "block_key": "content.heading_4c825b4",
+      "section": "content",
+      "label": "Heading: Ideas to reality",
+      "type": "text",
+      "value": "Ideas to reality"
+    },
+    {
+      "sort_order": 41,
+      "block_key": "content.heading_7c67181",
+      "section": "content",
+      "label": "Heading: Talk to Us Today to Learn More",
+      "type": "text",
+      "value": "Talk to Us Today to Learn More"
+    },
+    {
+      "sort_order": 42,
+      "block_key": "content.text_dbd1d11",
+      "section": "content",
+      "label": "Content block 10",
+      "type": "html",
+      "value": "Do you have any specific questions about us, our services, or anything related to pest infestation issues? Call us today on&nbsp;<a href=\"tel:+61434660060\"> +61 434 660 060</a>&nbsp;or use our contact form to connect with our&nbsp;<b>7 States Pest Control</b>. You can get answers to your questions, get upfront quotes for the&nbsp;<b>7 States Pest Control</b>&nbsp;issues, and receive high-quality tailored services."
+    }
+  ]
+}

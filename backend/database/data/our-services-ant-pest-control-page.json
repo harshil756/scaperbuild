@@ -1,0 +1,737 @@
+{
+  "slug": "our-services-ant-pest-control",
+  "title": "Ant Pest Control",
+  "seo_title": "Ant Pest Control Treatment in Melbourne - 7 States Pest Control",
+  "seo_description": "Searching for Ant Pest Control Treatment in Melbourne? At 7 States Pest Control, we can control ants and eliminate them from your property. With advanced pest control techniques, our services start at $170 Only.",
+  "body_class": "wp-singular page-template page-template-elementor_header_footer page wp-custom-logo wp-embed-responsive wp-theme-hello-elementor elementor-default elementor-template-full-width elementor-kit-9 elementor-page elementor-page-766",
+  "elementor_id": 766,
+  "is_published": true,
+  "blocks": [
+    {
+      "sort_order": 0,
+      "block_key": "background.hero",
+      "section": "hero",
+      "label": "Hero background",
+      "type": "background",
+      "background_image_path": "cms/our-services-ant-pest-control/Ant-Control-Phoenix45_2118c5a6.webp",
+      "metadata": {
+        "elementor_id": "a342089",
+        "filename": "Ant-Control-Phoenix45_2118c5a6.webp"
+      }
+    },
+    {
+      "sort_order": 1,
+      "block_key": "background.why_inside",
+      "section": "why_inside",
+      "label": "Why inside section background",
+      "type": "background",
+      "background_image_path": "cms/our-services-ant-pest-control/BG3_a19772e2.png",
+      "metadata": {
+        "elementor_id": "f5e4d41",
+        "filename": "BG3_a19772e2.png"
+      }
+    },
+    {
+      "sort_order": 2,
+      "block_key": "background.cta",
+      "section": "cta",
+      "label": "CTA section background",
+      "type": "background",
+      "background_image_path": "cms/our-services-ant-pest-control/URUU-01-2048x1365-2_7c216e6d.jpg",
+      "metadata": {
+        "elementor_id": "f732271",
+        "filename": "URUU-01-2048x1365-2_7c216e6d.jpg"
+      }
+    },
+    {
+      "sort_order": 3,
+      "block_key": "hero.breadcrumb_parent",
+      "section": "hero",
+      "label": "Breadcrumb parent",
+      "type": "text",
+      "value": "Services"
+    },
+    {
+      "sort_order": 4,
+      "block_key": "hero.breadcrumb_current",
+      "section": "hero",
+      "label": "Breadcrumb current",
+      "type": "text",
+      "value": "ant pest contral"
+    },
+    {
+      "sort_order": 5,
+      "block_key": "hero.title",
+      "section": "hero",
+      "label": "Section title",
+      "type": "text",
+      "value": "ant Control"
+    },
+    {
+      "sort_order": 6,
+      "block_key": "hero.heading",
+      "section": "hero",
+      "label": "Main heading",
+      "type": "text",
+      "value": "Get Professional Ant Control from us"
+    },
+    {
+      "sort_order": 7,
+      "block_key": "hero.intro",
+      "section": "hero",
+      "label": "Intro paragraph",
+      "type": "html",
+      "value": "<p>Ants may be tiny, but they can cause bigger problems. They are incredibly capable and smart creatures. Though harmless, they can be a nuisance when they get into your home or commercial premises. The complex and cooperative societies of ants allow them to survive in conditions that are challenging. If your installation has severe ant infestation and you want professional and expert</p><p>At <a href=\"/\"><strong>7 States Pest Control</strong>,</a> we can control ants and eliminate them from your property. With advanced pest control techniques, we have carved a niche for our company. Through our dedicated, customer-centric and customized services, we have assisted an array of homeowners and business owners in safeguarding their health and wellbeing.</p>"
+    },
+    {
+      "sort_order": 8,
+      "block_key": "quote_form.title",
+      "section": "quote_form",
+      "label": "Form heading",
+      "type": "text",
+      "value": "Get A Free Quote Now!"
+    },
+    {
+      "sort_order": 9,
+      "block_key": "quote_form.subtitle",
+      "section": "quote_form",
+      "label": "Form subtitle",
+      "type": "text",
+      "value": "Have an enquiry? Leave us your details and we’ll call you back during business hours."
+    },
+    {
+      "sort_order": 10,
+      "block_key": "quote_form.submit_text",
+      "section": "quote_form",
+      "label": "Submit button text",
+      "type": "text",
+      "value": "Submit Quote"
+    },
+    {
+      "sort_order": 11,
+      "block_key": "species.eyebrow",
+      "section": "species",
+      "label": "Eyebrow",
+      "type": "text",
+      "value": "ant special"
+    },
+    {
+      "sort_order": 12,
+      "block_key": "species.title",
+      "section": "species",
+      "label": "Section title",
+      "type": "text",
+      "value": "Types of Ant Species We Control"
+    },
+    {
+      "sort_order": 13,
+      "block_key": "species.intro",
+      "section": "species",
+      "label": "Intro HTML",
+      "type": "html",
+      "value": "<p>Ant infestations can be a serious nuisance, causing damage to property and contaminating food sources. Our professional ant control services effectively target various species, ensuring a pest-free environment. Here are the common types of ants we control:</p>"
+    },
+    {
+      "sort_order": 14,
+      "block_key": "species.argentine",
+      "section": "species",
+      "label": "Species: 1. Argentine Ants",
+      "type": "json",
+      "image_path": "cms/our-services-ant-pest-control/argentine-ant-identif-85_c58dbdc7.jpg",
+      "metadata": {
+        "slug": "argentine",
+        "image": "/assets/images/argentine-ant-identif-85_c58dbdc7.jpg",
+        "title": "1. Argentine Ants",
+        "description": "",
+        "image_src": "/assets/images/argentine-ant-identif-85_c58dbdc7.jpg"
+      }
+    },
+    {
+      "sort_order": 15,
+      "block_key": "species.carpenter",
+      "section": "species",
+      "label": "Species: 2. Carpenter Ants",
+      "type": "json",
+      "image_path": "cms/our-services-ant-pest-control/Carpenter-Ants_c953d8de.jpg",
+      "metadata": {
+        "slug": "carpenter",
+        "image": "/assets/images/Carpenter-Ants_c953d8de.jpg",
+        "title": "2. Carpenter Ants",
+        "description": "",
+        "image_src": "/assets/images/Carpenter-Ants_c953d8de.jpg"
+      }
+    },
+    {
+      "sort_order": 16,
+      "block_key": "species.white_footed",
+      "section": "species",
+      "label": "Species: 3. White-Footed House Ants",
+      "type": "json",
+      "image_path": "cms/our-services-ant-pest-control/white-footed-black-ant_207681cb.jpg",
+      "metadata": {
+        "slug": "white_footed",
+        "image": "/assets/images/white-footed-black-ant_207681cb.jpg",
+        "title": "3. White-Footed House Ants",
+        "description": "",
+        "image_src": "/assets/images/white-footed-black-ant_207681cb.jpg"
+      }
+    },
+    {
+      "sort_order": 17,
+      "block_key": "species.coastal_brown",
+      "section": "species",
+      "label": "Species: 4. Coastal Brown Ants",
+      "type": "json",
+      "image_path": "cms/our-services-ant-pest-control/Pharaohant_9502816f.jpeg",
+      "metadata": {
+        "slug": "coastal_brown",
+        "image": "/assets/images/Pharaohant_9502816f.jpeg",
+        "title": "4. Coastal Brown Ants",
+        "description": "",
+        "image_src": "/assets/images/Pharaohant_9502816f.jpeg"
+      }
+    },
+    {
+      "sort_order": 18,
+      "block_key": "why_inside.eyebrow",
+      "section": "why_inside",
+      "label": "Eyebrow",
+      "type": "text",
+      "value": "why ants coming"
+    },
+    {
+      "sort_order": 19,
+      "block_key": "why_inside.title",
+      "section": "why_inside",
+      "label": "Section title",
+      "type": "text",
+      "value": "Why Are Ants Coming Inside?"
+    },
+    {
+      "sort_order": 20,
+      "block_key": "why_inside.list_html",
+      "section": "why_inside",
+      "label": "List HTML",
+      "type": "html",
+      "value": "<ol><li aria-level={1}><b>Food Sources</b>&nbsp;– Crumbs, spills, and uncovered food attract ants. They are particularly drawn to sugary and greasy substances.</li><li aria-level={1}><b>Water Availability</b>&nbsp;– Leaky pipes, pet water bowls, and damp areas provide the moisture ants need to survive.</li><li aria-level={1}><b>Weather Changes</b>&nbsp;– Heavy rain, drought, or extreme temperatures can drive ants indoors for a more stable environment.</li><li aria-level={1}><b>Scent Trails</b>&nbsp;– Ants leave pheromone trails to guide others to food sources, leading to an increasing infestation.</li><li aria-level={1}><b>Cracks and Gaps</b>&nbsp;– Small openings in doors, windows, and walls allow ants easy access to your home.</li></ol>"
+    },
+    {
+      "sort_order": 21,
+      "block_key": "why_inside.footer",
+      "section": "why_inside",
+      "label": "Footer text",
+      "type": "html",
+      "value": "To prevent ants, keep your home clean, store food properly, fix leaks, and seal entry points. If the infestation persists, professional pest control services can help eliminate the problem effectively."
+    },
+    {
+      "sort_order": 22,
+      "block_key": "why_inside.image",
+      "section": "why_inside",
+      "label": "Section image",
+      "type": "image",
+      "image_path": "cms/our-services-ant-pest-control/Kiwicare_ProblemPageHero_DarwinAnts-1024x539_8cb1b8b5.jpg",
+      "metadata": {
+        "image_src": "/assets/images/Kiwicare_ProblemPageHero_DarwinAnts-1024x539_8cb1b8b5.jpg"
+      }
+    },
+    {
+      "sort_order": 23,
+      "block_key": "problems.eyebrow",
+      "section": "problems",
+      "label": "Eyebrow",
+      "type": "text",
+      "value": "problems"
+    },
+    {
+      "sort_order": 24,
+      "block_key": "problems.title",
+      "section": "problems",
+      "label": "Section title",
+      "type": "text",
+      "value": "What Problems Can Ants Cause?"
+    },
+    {
+      "sort_order": 25,
+      "block_key": "problems.intro",
+      "section": "problems",
+      "label": "Intro HTML",
+      "type": "html",
+      "value": "<p>Ants may seem harmless, but an infestation can lead to several problems in homes and businesses. Here are some common issues caused by ants:</p>"
+    },
+    {
+      "sort_order": 26,
+      "block_key": "problems.food_contamination",
+      "section": "problems",
+      "label": "Problem: Food Contamination",
+      "type": "json",
+      "image_path": "cms/our-services-ant-pest-control/pathogen-testing-1-r89w6c9nulmfifm63nxly395cvret1xe6eme_d6c72083.png",
+      "metadata": {
+        "slug": "food_contamination",
+        "image": "/assets/images/pathogen-testing-1-r89w6c9nulmfifm63nxly395cvret1xe6eme_d6c72083.png",
+        "title": "Food Contamination",
+        "description": "Ants invade kitchens and pantries, contaminating food by carrying bacteria from unsanitary places. This can pose health risks and lead to food wastage.",
+        "image_src": "/assets/images/pathogen-testing-1-r89w6c9nulmfifm63nxly395cvret1xe6eme_d6c72083.png"
+      }
+    },
+    {
+      "sort_order": 27,
+      "block_key": "problems.structural_damage",
+      "section": "problems",
+      "label": "Problem: Structural Damage",
+      "type": "json",
+      "image_path": "cms/our-services-ant-pest-control/failure-r89w6pfeia4g0z31ytmdwzxlo9yjstdmw7r6ye2tcw_36d6d55d.png",
+      "metadata": {
+        "slug": "structural_damage",
+        "image": "/assets/images/failure-r89w6pfeia4g0z31ytmdwzxlo9yjstdmw7r6ye2tcw_36d6d55d.png",
+        "title": "Structural Damage",
+        "description": "Certain ant species, like carpenter ants, burrow into wood to create nests, weakening furniture, wooden structures, and even building foundations over time.",
+        "image_src": "/assets/images/failure-r89w6pfeia4g0z31ytmdwzxlo9yjstdmw7r6ye2tcw_36d6d55d.png"
+      }
+    },
+    {
+      "sort_order": 28,
+      "block_key": "problems.bites_stings",
+      "section": "problems",
+      "label": "Problem: Painful Bites and Stings",
+      "type": "json",
+      "image_path": "cms/our-services-ant-pest-control/pain-1-r89wostk2gw5iqsvb56uexk1carwz27mdruoj58zkw_4a586854.png",
+      "metadata": {
+        "slug": "bites_stings",
+        "image": "/assets/images/pain-1-r89wostk2gw5iqsvb56uexk1carwz27mdruoj58zkw_4a586854.png",
+        "title": "Painful Bites and Stings",
+        "description": "Some ants, such as fire ants, deliver painful bites and stings that can cause allergic reactions, itching, and discomfort, especially for children and pets.",
+        "image_src": "/assets/images/pain-1-r89wostk2gw5iqsvb56uexk1carwz27mdruoj58zkw_4a586854.png"
+      }
+    },
+    {
+      "sort_order": 29,
+      "block_key": "problems.electrical_damage",
+      "section": "problems",
+      "label": "Problem: Electrical Damage",
+      "type": "json",
+      "image_path": "cms/our-services-ant-pest-control/electricity-r89wrvqigx3zkqbrbh4tl5kffrl87cfy50tz5soj6o_7ae18d76.png",
+      "metadata": {
+        "slug": "electrical_damage",
+        "image": "/assets/images/electricity-r89wrvqigx3zkqbrbh4tl5kffrl87cfy50tz5soj6o_7ae18d76.png",
+        "title": "Electrical Damage",
+        "description": "Ants are attracted to electrical wiring and appliances, leading to short circuits, equipment failure, and potential fire hazards when they chew on wires.",
+        "image_src": "/assets/images/electricity-r89wrvqigx3zkqbrbh4tl5kffrl87cfy50tz5soj6o_7ae18d76.png"
+      }
+    },
+    {
+      "sort_order": 30,
+      "block_key": "problems.infestation_growth",
+      "section": "problems",
+      "label": "Problem: Rapid Infestation Growth",
+      "type": "json",
+      "image_path": "cms/our-services-ant-pest-control/mouse-r89wvydc32opvwerj8ime4kc3vihk4m2p6lq0yn480_02e489b2.png",
+      "metadata": {
+        "slug": "infestation_growth",
+        "image": "/assets/images/mouse-r89wvydc32opvwerj8ime4kc3vihk4m2p6lq0yn480_02e489b2.png",
+        "title": "Rapid Infestation Growth",
+        "description": "Ant colonies grow quickly, and once they establish a nest, they can spread to different parts of your property, making eradication difficult without professional pest control.",
+        "image_src": "/assets/images/mouse-r89wvydc32opvwerj8ime4kc3vihk4m2p6lq0yn480_02e489b2.png"
+      }
+    },
+    {
+      "sort_order": 31,
+      "block_key": "problems.business_disruptions",
+      "section": "problems",
+      "label": "Problem: Business Disruptions",
+      "type": "json",
+      "image_path": "cms/our-services-ant-pest-control/disruption-r89wzvd4k81q9epynxgns4zh7o7jmq5t8kgk0gu2ao_726e996f.png",
+      "metadata": {
+        "slug": "business_disruptions",
+        "image": "/assets/images/disruption-r89wzvd4k81q9epynxgns4zh7o7jmq5t8kgk0gu2ao_726e996f.png",
+        "title": "Business Disruptions",
+        "description": "For businesses, especially in the food industry, an ant infestation can damage reputation, lead to health code violations, and even cause financial losses..",
+        "image_src": "/assets/images/disruption-r89wzvd4k81q9epynxgns4zh7o7jmq5t8kgk0gu2ao_726e996f.png"
+      }
+    },
+    {
+      "sort_order": 32,
+      "block_key": "prevention.eyebrow",
+      "section": "prevention",
+      "label": "Eyebrow",
+      "type": "text",
+      "value": "protects"
+    },
+    {
+      "sort_order": 33,
+      "block_key": "prevention.title",
+      "section": "prevention",
+      "label": "Section title",
+      "type": "text",
+      "value": "How to Prevent Ants?"
+    },
+    {
+      "sort_order": 34,
+      "block_key": "prevention.intro",
+      "section": "prevention",
+      "label": "Intro HTML",
+      "type": "html",
+      "value": "<p>Ants can be a persistent nuisance in homes and businesses, especially when they find food sources and establish trails. Preventing an ant infestation requires proactive measures. Here are some effective ways to keep ants away:</p>"
+    },
+    {
+      "sort_order": 35,
+      "block_key": "prevention.tips",
+      "section": "prevention",
+      "label": "Prevention tips",
+      "type": "json",
+      "metadata": {
+        "tips": [
+          {
+            "slug": "clean_home",
+            "title": "1. Keep Your Home Clean",
+            "intro": null,
+            "list": [
+              "Wipe down surfaces to remove food crumbs and spills.",
+              "Sweep and mop floors regularly.",
+              "Store food in airtight containers to avoid attracting ants."
+            ]
+          },
+          {
+            "slug": "seal_entries",
+            "title": "2. Seal Entry Points",
+            "intro": null,
+            "list": [
+              "Inspect doors, windows, and walls for cracks or gaps.",
+              "Use silicone caulk to seal any openings where ants may enter.",
+              "Install weather stripping on doors and windows."
+            ]
+          },
+          {
+            "slug": "eliminate_moisture",
+            "title": "3. Eliminate Moisture Sources",
+            "intro": null,
+            "list": [
+              "Fix leaking pipes and faucets, as ants are attracted to moisture.",
+              "Ensure proper drainage around your home.",
+              "Use a dehumidifier in damp areas like basements."
+            ]
+          },
+          {
+            "slug": "natural_deterrents",
+            "title": "4. Use Natural Ant Deterrents",
+            "intro": null,
+            "list": [
+              "Sprinkle cinnamon, vinegar, or coffee grounds near ant entry points.",
+              "Place lemon or orange peels around the kitchen and pantry.",
+              "Use essential oils like peppermint and tea tree oil to repel ants."
+            ]
+          },
+          {
+            "slug": "outdoor_clean",
+            "title": "5. Keep Your Outdoor Area Clean",
+            "intro": null,
+            "list": [
+              "Trim trees and bushes away from your home.",
+              "Remove standing water and debris from the yard.",
+              "Store firewood away from the house to prevent nesting areas."
+            ]
+          },
+          {
+            "slug": "baits_traps",
+            "title": "6. Set Up Ant Baits and Traps",
+            "intro": null,
+            "list": [
+              "Use bait stations to eliminate ant colonies at the source.",
+              "Place traps near entry points and food sources.",
+              "Replace baits regularly for effective results."
+            ]
+          },
+          {
+            "slug": "control_moisture",
+            "title": "7. Control Moisture and Leaks",
+            "intro": "Ants are attracted to water sources, so eliminating moisture can help deter them.",
+            "list": [
+              "Fix leaky faucets, pipes, and drains to prevent excess moisture.",
+              "Use a dehumidifier in damp areas like basements and bathrooms.",
+              "Ensure proper ventilation to reduce humidity levels."
+            ]
+          },
+          {
+            "slug": "professional",
+            "title": "8. Hire Professional Pest Control Services",
+            "intro": "If ant infestations persist despite your efforts, professional pest control can provide long-term solutions. Experts can identify the source of the problem and apply treatments that prevent future infestations.",
+            "list": []
+          }
+        ]
+      }
+    },
+    {
+      "sort_order": 36,
+      "block_key": "features.free_quotes",
+      "section": "features",
+      "label": "Feature: Free Quotes",
+      "type": "json",
+      "image_path": "cms/our-services-ant-pest-control/controll-5-150x150_2e53f6c6.png",
+      "metadata": {
+        "slug": "free_quotes",
+        "image": "/assets/images/controll-5-150x150_2e53f6c6.png",
+        "title": "Free Quotes",
+        "description": "",
+        "image_src": "/assets/images/controll-5-150x150_2e53f6c6.png"
+      }
+    },
+    {
+      "sort_order": 37,
+      "block_key": "features.five_star_reviews",
+      "section": "features",
+      "label": "Feature: 100+ Five Star Reviews",
+      "type": "json",
+      "image_path": "cms/our-services-ant-pest-control/controll-4_8dd6b2b1.png",
+      "metadata": {
+        "slug": "five_star_reviews",
+        "image": "/assets/images/controll-4_8dd6b2b1.png",
+        "title": "100+ Five Star Reviews",
+        "description": "",
+        "image_src": "/assets/images/controll-4_8dd6b2b1.png"
+      }
+    },
+    {
+      "sort_order": 38,
+      "block_key": "features.licensed",
+      "section": "features",
+      "label": "Feature: Licensed Professionals",
+      "type": "json",
+      "image_path": "cms/our-services-ant-pest-control/controll-1_431ab690.png",
+      "metadata": {
+        "slug": "licensed",
+        "image": "/assets/images/controll-1_431ab690.png",
+        "title": "Licensed Professionals",
+        "description": "",
+        "image_src": "/assets/images/controll-1_431ab690.png"
+      }
+    },
+    {
+      "sort_order": 39,
+      "block_key": "features.satisfaction",
+      "section": "features",
+      "label": "Feature: Satisfaction Guaranteed",
+      "type": "json",
+      "image_path": "cms/our-services-ant-pest-control/controll-2_9d975649.png",
+      "metadata": {
+        "slug": "satisfaction",
+        "image": "/assets/images/controll-2_9d975649.png",
+        "title": "Satisfaction Guaranteed",
+        "description": "",
+        "image_src": "/assets/images/controll-2_9d975649.png"
+      }
+    },
+    {
+      "sort_order": 40,
+      "block_key": "features.local_owned",
+      "section": "features",
+      "label": "Feature: Local Family Owned",
+      "type": "json",
+      "image_path": "cms/our-services-ant-pest-control/controll-3_80d72978.png",
+      "metadata": {
+        "slug": "local_owned",
+        "image": "/assets/images/controll-3_80d72978.png",
+        "title": "Local Family Owned",
+        "description": "",
+        "image_src": "/assets/images/controll-3_80d72978.png"
+      }
+    },
+    {
+      "sort_order": 41,
+      "block_key": "faq.title",
+      "section": "faq",
+      "label": "FAQ title",
+      "type": "text",
+      "value": "Frequently Asked Questions"
+    },
+    {
+      "sort_order": 42,
+      "block_key": "faq.sidebar_image",
+      "section": "faq",
+      "label": "FAQ sidebar image",
+      "type": "image",
+      "image_path": "cms/our-services-ant-pest-control/WhatsApp-Image-2024-08-28-at-15.35.06_bc7d2870-1_ecbbd918.jpg",
+      "metadata": {
+        "image_src": "/assets/images/WhatsApp-Image-2024-08-28-at-15.35.06_bc7d2870-1_ecbbd918.jpg"
+      }
+    },
+    {
+      "sort_order": 43,
+      "block_key": "faq.sidebar_cta_title",
+      "section": "faq",
+      "label": "Sidebar CTA title",
+      "type": "text",
+      "value": "Any questions you want to ask?"
+    },
+    {
+      "sort_order": 44,
+      "block_key": "faq.sidebar_cta_body",
+      "section": "faq",
+      "label": "Sidebar CTA body",
+      "type": "text",
+      "value": "Find answers to common questions about our pest control services, treatments, safety, and scheduling."
+    },
+    {
+      "sort_order": 45,
+      "block_key": "faq.sidebar_cta_button",
+      "section": "faq",
+      "label": "Sidebar CTA button",
+      "type": "link",
+      "value": "Contact Us",
+      "link_url": "/contact-us"
+    },
+    {
+      "sort_order": 46,
+      "block_key": "faq.items",
+      "section": "faq",
+      "label": "FAQ items",
+      "type": "json",
+      "metadata": {
+        "items": [
+          {
+            "question": "1. What makes 7 States Pest Control the best pest control service in Melbourne?",
+            "answer_html": "<p>&nbsp;<b>7 States Pest Control</b>&nbsp;provides top-rated&nbsp;<b>pest control service in Melbourne</b>, using advanced techniques and eco-friendly products to eliminate pests quickly and safely. Our experienced team handles all types of infestations, ensuring long-term protection.</p>"
+          },
+          {
+            "question": "2. Where can I find reliable pest control in Melbourne CBD?",
+            "answer_html": "<p>For fast and effective&nbsp;<b>pest control Melbourne CBD</b>, trust&nbsp;<b>7 States Pest Control</b>. We serve both residential and commercial properties in the central business district with tailored pest management solutions.</p>"
+          },
+          {
+            "question": "3. How do I choose a professional pest exterminator in Melbourne?",
+            "answer_html": "<p>Look for licensed, experienced providers like&nbsp;<b>7 States Pest Control</b>. As a leading&nbsp;<b>pest exterminator Melbourne</b>, we offer prompt inspections, thorough extermination, and guaranteed results at competitive rates.</p>"
+          },
+          {
+            "question": "4. Is there a trusted pest removal company in Melbourne?",
+            "answer_html": "<p>&nbsp;Yes,&nbsp;<b>7 States Pest Control</b>&nbsp;is your go-to expert for&nbsp;<b>pest removal Melbourne</b>. We identify the root cause of infestations and apply targeted treatments to remove pests from your home or business permanently.</p>"
+          },
+          {
+            "question": "5. Why should I invest in pest control in Melbourne for my home or office?",
+            "answer_html": "<p>Regular&nbsp;<b>pest control in Melbourne</b>&nbsp;helps protect your property from damage and health risks.&nbsp;<b>7 States Pest Control</b>&nbsp;offers comprehensive services that keep your environment pest-free and comfortable year-round.</p>"
+          }
+        ]
+      }
+    },
+    {
+      "sort_order": 47,
+      "block_key": "reviews.eyebrow",
+      "section": "reviews",
+      "label": "Reviews eyebrow",
+      "type": "text",
+      "value": "Clients Reviews"
+    },
+    {
+      "sort_order": 48,
+      "block_key": "reviews.title",
+      "section": "reviews",
+      "label": "Reviews title",
+      "type": "text",
+      "value": "7 States Pest Control for Reliable Pest Management Solutions"
+    },
+    {
+      "sort_order": 49,
+      "block_key": "reviews.subtitle",
+      "section": "reviews",
+      "label": "Reviews subtitle",
+      "type": "text",
+      "value": "Reviews of Our Pest Control Services"
+    },
+    {
+      "sort_order": 50,
+      "block_key": "reviews.rating_label",
+      "section": "reviews",
+      "label": "Rating label",
+      "type": "text",
+      "value": "EXCELLENT"
+    },
+    {
+      "sort_order": 51,
+      "block_key": "reviews.count_text",
+      "section": "reviews",
+      "label": "Review count text",
+      "type": "html",
+      "value": "<p class=\"elementor-heading-title elementor-size-default\">Based on&nbsp;<strong>45 reviews</strong></p>"
+    },
+    {
+      "sort_order": 52,
+      "block_key": "blog.eyebrow",
+      "section": "blog",
+      "label": "Section eyebrow",
+      "type": "text",
+      "value": "Our Latest Article"
+    },
+    {
+      "sort_order": 53,
+      "block_key": "blog.title",
+      "section": "blog",
+      "label": "Section title",
+      "type": "text",
+      "value": "Pest Problems? Here's Why Read Might Be Your Secret Weapon."
+    },
+    {
+      "sort_order": 54,
+      "block_key": "blog.posts",
+      "section": "blog",
+      "label": "Blog preview posts",
+      "type": "json",
+      "metadata": {
+        "posts": [
+          {
+            "title": "Why Melbourne Homes Need Professional Termite Pest Control",
+            "excerpt": "Termites are quiet workers. You will not hear them. You will not see them moving around your home in broad daylight. Yet they can quietly chew…",
+            "link": "/why-melbourne-homes-need-professional-termite-pest-control/",
+            "alt": "Why Melbourne Homes Need Professional Termite Pest Control",
+            "image_src": "/assets/images/WhatsApp-Image-2026-05-25-at-11.50.58-AM_83fa8176.jpeg",
+            "image_path": "cms/our-services-ant-pest-control/WhatsApp-Image-2026-05-25-at-11.50.58-AM_83fa8176.jpeg"
+          },
+          {
+            "title": "5 Myths About Wasp Removal Melbourne You Should Stop Believing",
+            "excerpt": "There is a lot of bad advice out there when it comes to dealing with wasps. People share tips at backyard barbecues, on Facebook groups, and…",
+            "link": "/5-myths-about-wasp-removal-melbourne-you-should-stop-believing/",
+            "alt": "5 Myths About Wasp Removal Melbourne You Should Stop Believing",
+            "image_src": "/assets/images/WhatsApp-Image-2026-05-25-at-11.52.11-AM_ddd44793.jpeg",
+            "image_path": "cms/our-services-ant-pest-control/WhatsApp-Image-2026-05-25-at-11.52.11-AM_ddd44793.jpeg"
+          },
+          {
+            "title": "The Smart Homeowner’s Guide to Termite Barrier Protection in Melbourne",
+            "excerpt": "If you own a home in Melbourne, you have probably heard about termite damage at least once. Maybe a neighbour found a hollow door frame. Maybe…",
+            "link": "/the-smart-homeowners-guide-to-termite-barrier-protection-in-melbourne/",
+            "alt": "The Smart Homeowner’s Guide to Termite Barrier Protection in Melbourne",
+            "image_src": "/assets/images/WhatsApp-Image-2026-05-25-at-11.53.29-AM_6379c2f3.jpeg",
+            "image_path": "cms/our-services-ant-pest-control/WhatsApp-Image-2026-05-25-at-11.53.29-AM_6379c2f3.jpeg"
+          }
+        ]
+      }
+    },
+    {
+      "sort_order": 55,
+      "block_key": "cta.eyebrow",
+      "section": "cta",
+      "label": "Eyebrow",
+      "type": "text",
+      "value": "Ideas to reality"
+    },
+    {
+      "sort_order": 56,
+      "block_key": "cta.title",
+      "section": "cta",
+      "label": "Section title",
+      "type": "text",
+      "value": "Talk to Us Today to Learn More"
+    },
+    {
+      "sort_order": 57,
+      "block_key": "cta.body",
+      "section": "cta",
+      "label": "Body HTML",
+      "type": "html",
+      "value": "<p>Do you have any specific questions about us, our services, or anything related to pest infestation issues? Call us today on&nbsp;<a href=\"tel:+61434660060\">( +61 434 660 060 )</a>&nbsp;or use our contact form to connect with our&nbsp;<b>7 States Pest Control</b>. You can get answers to your questions, get upfront quotes for the&nbsp;<b>7 States Pest Control</b>&nbsp;issues, and receive high-quality tailored services.</p>"
+    },
+    {
+      "sort_order": 58,
+      "block_key": "cta.button",
+      "section": "cta",
+      "label": "CTA button",
+      "type": "link",
+      "value": "Contact Us",
+      "link_url": "/contact-us"
+    }
+  ]
+}

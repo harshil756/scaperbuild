@@ -2,6 +2,7 @@ venv/
 .venv/
 output/
 export/
+scraped/
 __pycache__/
 *.pyc
 .pytest_cache/

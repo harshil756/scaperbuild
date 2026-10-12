@@ -1,0 +1,555 @@
+{
+  "slug": "our-services",
+  "title": "Pest Control Services",
+  "seo_title": "",
+  "seo_description": "",
+  "body_class": "wp-singular page-template page-template-elementor_header_footer page wp-custom-logo wp-embed-responsive wp-theme-hello-elementor elementor-default elementor-template-full-width elementor-kit-9 elementor-page elementor-page-7780",
+  "elementor_id": 7780,
+  "is_published": true,
+  "blocks": [
+    {
+      "sort_order": 0,
+      "block_key": "background.hero",
+      "section": "hero",
+      "label": "Hero background",
+      "type": "background",
+      "background_image_path": "cms/our-services/Pest-Control-Professionals.jpg-2_fb3c30ca.webp",
+      "metadata": {
+        "elementor_id": "d60c811",
+        "filename": "Pest-Control-Professionals.jpg-2_fb3c30ca.webp"
+      }
+    },
+    {
+      "sort_order": 1,
+      "block_key": "background.cta",
+      "section": "cta",
+      "label": "CTA background",
+      "type": "background",
+      "background_image_path": "cms/our-services/BG3_a19772e2.png",
+      "metadata": {
+        "elementor_id": "f8f859d",
+        "filename": "BG3_a19772e2.png"
+      }
+    },
+    {
+      "sort_order": 2,
+      "block_key": "hero.breadcrumb_parent",
+      "section": "hero",
+      "label": "Breadcrumb parent",
+      "type": "text",
+      "value": "Services"
+    },
+    {
+      "sort_order": 3,
+      "block_key": "hero.breadcrumb_current",
+      "section": "hero",
+      "label": "Breadcrumb current",
+      "type": "text",
+      "value": "pest control services"
+    },
+    {
+      "sort_order": 4,
+      "block_key": "hero.title",
+      "section": "hero",
+      "label": "Section title",
+      "type": "text",
+      "value": "why hire us"
+    },
+    {
+      "sort_order": 5,
+      "block_key": "hero.heading",
+      "section": "hero",
+      "label": "Main heading",
+      "type": "text",
+      "value": "Why Hire Us for Pest Control and Extermination Services?"
+    },
+    {
+      "sort_order": 6,
+      "block_key": "hero.intro",
+      "section": "hero",
+      "label": "Intro paragraph",
+      "type": "html",
+      "value": "<div class=\"elementor-element elementor-element-de434cf elementor-widget elementor-widget-text-editor\" data-element_type=\"widget\" data-id=\"de434cf\" data-settings=\"{&quot;ekit_we_effect_on&quot;:&quot;none&quot;}\" data-widget_type=\"text-editor.default\"><div class=\"elementor-widget-container\"><div class=\"elementor-element elementor-element-0e20da6 elementor-widget elementor-widget-text-editor\" data-element_type=\"widget\" data-id=\"0e20da6\" data-settings=\"{&quot;ekit_we_effect_on&quot;:&quot;none&quot;}\" data-widget_type=\"text-editor.default\"><div class=\"elementor-widget-container\"><p>We believe in the effectiveness and quality of our pest control services. Our professionals are astute at backing them up with 100% satisfaction guaranteed. Our pest controllers work their level best to exterminate ants, rats, wasps, cockroaches, and more. Need bed bug elimination services? Or are you suspecting possums in your space? Allow us to take the lead with our pest control and elimination solutions crafted individually for our unique clients.</p></div></div><div class=\"elementor-element elementor-element-f5ce1ac elementor-widget elementor-widget-text-editor\" data-element_type=\"widget\" data-id=\"f5ce1ac\" data-settings=\"{&quot;ekit_we_effect_on&quot;:&quot;none&quot;}\" data-widget_type=\"text-editor.default\"><div class=\"elementor-widget-container\">We understand that not all customers require the kind of services from us. Thus, we design customized solutions for one and all. We send our professionals to your space so that they can inspect, control, and eliminate pests and insects that bother you. Bid farewell to these pesky insects and pests from your residential or commercial spaces by calling us today.</div></div></div></div>"
+    },
+    {
+      "sort_order": 7,
+      "block_key": "quote_form.title",
+      "section": "quote_form",
+      "label": "Form heading",
+      "type": "text",
+      "value": "Why Hire Us for Pest Control and Extermination Services?"
+    },
+    {
+      "sort_order": 8,
+      "block_key": "quote_form.subtitle",
+      "section": "quote_form",
+      "label": "Form subtitle",
+      "type": "text",
+      "value": "Have an enquiry? Leave us your details and we’ll call you back during business hours."
+    },
+    {
+      "sort_order": 9,
+      "block_key": "quote_form.submit_text",
+      "section": "quote_form",
+      "label": "Submit button text",
+      "type": "text",
+      "value": "Submit Quote"
+    },
+    {
+      "sort_order": 10,
+      "block_key": "cta.eyebrow",
+      "section": "cta",
+      "label": "Eyebrow",
+      "type": "text",
+      "value": "why hire us"
+    },
+    {
+      "sort_order": 11,
+      "block_key": "cta.title",
+      "section": "cta",
+      "label": "Section title",
+      "type": "text",
+      "value": "Why Hire Us for Pest Control and Extermination Services?"
+    },
+    {
+      "sort_order": 12,
+      "block_key": "cta.body",
+      "section": "cta",
+      "label": "Body HTML",
+      "type": "html",
+      "value": "<div class=\"elementor-element elementor-element-de434cf elementor-widget elementor-widget-text-editor\" data-element_type=\"widget\" data-id=\"de434cf\" data-settings=\"{&quot;ekit_we_effect_on&quot;:&quot;none&quot;}\" data-widget_type=\"text-editor.default\"><div class=\"elementor-widget-container\"><div class=\"elementor-element elementor-element-0e20da6 elementor-widget elementor-widget-text-editor\" data-element_type=\"widget\" data-id=\"0e20da6\" data-settings=\"{&quot;ekit_we_effect_on&quot;:&quot;none&quot;}\" data-widget_type=\"text-editor.default\"><div class=\"elementor-widget-container\"><p>We believe in the effectiveness and quality of our pest control services. Our professionals are astute at backing them up with 100% satisfaction guaranteed. Our pest controllers work their level best to exterminate ants, rats, wasps, cockroaches, and more. Need bed bug elimination services? Or are you suspecting possums in your space? Allow us to take the lead with our pest control and elimination solutions crafted individually for our unique clients.</p>"
+    },
+    {
+      "sort_order": 13,
+      "block_key": "content.text_de434cf",
+      "section": "content",
+      "label": "Content block 1",
+      "type": "html",
+      "value": "<div class=\"elementor-element elementor-element-0e20da6 elementor-widget elementor-widget-text-editor\" data-element_type=\"widget\" data-id=\"0e20da6\" data-settings=\"{&quot;ekit_we_effect_on&quot;:&quot;none&quot;}\" data-widget_type=\"text-editor.default\"><div class=\"elementor-widget-container\"><p>We believe in the effectiveness and quality of our pest control services. Our professionals are astute at backing them up with 100% satisfaction guaranteed. Our pest controllers work their level best to exterminate ants, rats, wasps, cockroaches, and more. Need bed bug elimination services? Or are you suspecting possums in your space? Allow us to take the lead with our pest control and elimination solutions crafted individually for our unique clients.</p></div></div><div class=\"elementor-element elementor-element-f5ce1ac elementor-widget elementor-widget-text-editor\" data-element_type=\"widget\" data-id=\"f5ce1ac\" data-settings=\"{&quot;ekit_we_effect_on&quot;:&quot;none&quot;}\" data-widget_type=\"text-editor.default\"><div class=\"elementor-widget-container\">We understand that not all customers require the kind of services from us. Thus, we design customized solutions for one and all. We send our professionals to your space so that they can inspect, control, and eliminate pests and insects that bother you. Bid farewell to these pesky insects and pests from your residential or commercial spaces by calling us today.</div></div>"
+    },
+    {
+      "sort_order": 14,
+      "block_key": "content.text_0e20da6",
+      "section": "content",
+      "label": "Content block 2",
+      "type": "html",
+      "value": "<p>We believe in the effectiveness and quality of our pest control services. Our professionals are astute at backing them up with 100% satisfaction guaranteed. Our pest controllers work their level best to exterminate ants, rats, wasps, cockroaches, and more. Need bed bug elimination services? Or are you suspecting possums in your space? Allow us to take the lead with our pest control and elimination solutions crafted individually for our unique clients.</p>"
+    },
+    {
+      "sort_order": 15,
+      "block_key": "content.text_f5ce1ac",
+      "section": "content",
+      "label": "Content block 3",
+      "type": "html",
+      "value": "We understand that not all customers require the kind of services from us. Thus, we design customized solutions for one and all. We send our professionals to your space so that they can inspect, control, and eliminate pests and insects that bother you. Bid farewell to these pesky insects and pests from your residential or commercial spaces by calling us today."
+    },
+    {
+      "sort_order": 16,
+      "block_key": "content.heading_470a6fb",
+      "section": "content",
+      "label": "Heading: Get A Free Quote Now!",
+      "type": "text",
+      "value": "Get A Free Quote Now!"
+    },
+    {
+      "sort_order": 17,
+      "block_key": "content.heading_601e49b",
+      "section": "content",
+      "label": "Heading: Have an enquiry? Leave us your details and we’ll call you ba",
+      "type": "text",
+      "value": "Have an enquiry? Leave us your details and we’ll call you back during business hours."
+    },
+    {
+      "sort_order": 18,
+      "block_key": "content.heading_8916f32",
+      "section": "content",
+      "label": "Heading: why hire us",
+      "type": "text",
+      "value": "why hire us"
+    },
+    {
+      "sort_order": 19,
+      "block_key": "content.heading_dd5b3de",
+      "section": "content",
+      "label": "Heading: Why Hire Us for Pest Control and Extermination Services?",
+      "type": "text",
+      "value": "Why Hire Us for Pest Control and Extermination Services?"
+    },
+    {
+      "sort_order": 20,
+      "block_key": "content.text_76690a4",
+      "section": "content",
+      "label": "Content block 4",
+      "type": "html",
+      "value": "<div class=\"elementor-element elementor-element-de434cf elementor-widget elementor-widget-text-editor\" data-element_type=\"widget\" data-id=\"de434cf\" data-settings=\"{&quot;ekit_we_effect_on&quot;:&quot;none&quot;}\" data-widget_type=\"text-editor.default\"><div class=\"elementor-widget-container\"><div class=\"elementor-element elementor-element-0e20da6 elementor-widget elementor-widget-text-editor\" data-element_type=\"widget\" data-id=\"0e20da6\" data-settings=\"{&quot;ekit_we_effect_on&quot;:&quot;none&quot;}\" data-widget_type=\"text-editor.default\"><div class=\"elementor-widget-container\"><p>We believe in the effectiveness and quality of our pest control services. Our professionals are astute at backing them up with 100% satisfaction guaranteed. Our pest controllers work their level best to exterminate ants, rats, wasps, cockroaches, and more. Need bed bug elimination services? Or are you suspecting possums in your space? Allow us to take the lead with our pest control and elimination solutions crafted individually for our unique clients.</p></div></div><div class=\"elementor-element elementor-element-f5ce1ac elementor-widget elementor-widget-text-editor\" data-element_type=\"widget\" data-id=\"f5ce1ac\" data-settings=\"{&quot;ekit_we_effect_on&quot;:&quot;none&quot;}\" data-widget_type=\"text-editor.default\"><div class=\"elementor-widget-container\">We understand that not all customers require the kind of services from us. Thus, we design customized solutions for one and all. We send our professionals to your space so that they can inspect, control, and eliminate pests and insects that bother you. Bid farewell to these pesky insects and pests from your residential or commercial spaces by calling us today.</div></div></div></div>"
+    },
+    {
+      "sort_order": 21,
+      "block_key": "content.text_de434cf_2",
+      "section": "content",
+      "label": "Content block 5",
+      "type": "html",
+      "value": "<div class=\"elementor-element elementor-element-0e20da6 elementor-widget elementor-widget-text-editor\" data-element_type=\"widget\" data-id=\"0e20da6\" data-settings=\"{&quot;ekit_we_effect_on&quot;:&quot;none&quot;}\" data-widget_type=\"text-editor.default\"><div class=\"elementor-widget-container\"><p>We believe in the effectiveness and quality of our pest control services. Our professionals are astute at backing them up with 100% satisfaction guaranteed. Our pest controllers work their level best to exterminate ants, rats, wasps, cockroaches, and more. Need bed bug elimination services? Or are you suspecting possums in your space? Allow us to take the lead with our pest control and elimination solutions crafted individually for our unique clients.</p></div></div><div class=\"elementor-element elementor-element-f5ce1ac elementor-widget elementor-widget-text-editor\" data-element_type=\"widget\" data-id=\"f5ce1ac\" data-settings=\"{&quot;ekit_we_effect_on&quot;:&quot;none&quot;}\" data-widget_type=\"text-editor.default\"><div class=\"elementor-widget-container\">We understand that not all customers require the kind of services from us. Thus, we design customized solutions for one and all. We send our professionals to your space so that they can inspect, control, and eliminate pests and insects that bother you. Bid farewell to these pesky insects and pests from your residential or commercial spaces by calling us today.</div></div>"
+    },
+    {
+      "sort_order": 22,
+      "block_key": "content.text_0e20da6_2",
+      "section": "content",
+      "label": "Content block 6",
+      "type": "html",
+      "value": "<p>We believe in the effectiveness and quality of our pest control services. Our professionals are astute at backing them up with 100% satisfaction guaranteed. Our pest controllers work their level best to exterminate ants, rats, wasps, cockroaches, and more. Need bed bug elimination services? Or are you suspecting possums in your space? Allow us to take the lead with our pest control and elimination solutions crafted individually for our unique clients.</p>"
+    },
+    {
+      "sort_order": 23,
+      "block_key": "content.text_f5ce1ac_2",
+      "section": "content",
+      "label": "Content block 7",
+      "type": "html",
+      "value": "We understand that not all customers require the kind of services from us. Thus, we design customized solutions for one and all. We send our professionals to your space so that they can inspect, control, and eliminate pests and insects that bother you. Bid farewell to these pesky insects and pests from your residential or commercial spaces by calling us today."
+    },
+    {
+      "sort_order": 24,
+      "block_key": "content.heading_3c55949",
+      "section": "content",
+      "label": "Heading: our customers",
+      "type": "text",
+      "value": "our customers"
+    },
+    {
+      "sort_order": 25,
+      "block_key": "content.heading_4ebd325",
+      "section": "content",
+      "label": "Heading: Our customers call us the best because we consider offering ",
+      "type": "text",
+      "value": "Our customers call us the best because we consider offering services that are:"
+    },
+    {
+      "sort_order": 26,
+      "block_key": "content.text_24a7d2a",
+      "section": "content",
+      "label": "Content block 8",
+      "type": "html",
+      "value": "<p>We believe in offering the best solutions to our valued customers. Allow us to attend to your pest control requirements &amp; keep your family and little ones safe.</p>"
+    },
+    {
+      "sort_order": 27,
+      "block_key": "content.list_c10a8b4",
+      "section": "content",
+      "label": "Icon list (c10a8b4)",
+      "type": "json",
+      "metadata": {
+        "items": [
+          "Environment friendly",
+          "Safe and natural – without any harsh pesticides or poisons"
+        ]
+      }
+    },
+    {
+      "sort_order": 28,
+      "block_key": "content.list_1a4cb09",
+      "section": "content",
+      "label": "Icon list (1a4cb09)",
+      "type": "json",
+      "metadata": {
+        "items": [
+          "Child and pest reliable"
+        ]
+      }
+    },
+    {
+      "sort_order": 29,
+      "block_key": "content.heading_ef9055f",
+      "section": "content",
+      "label": "Heading: symptoms",
+      "type": "text",
+      "value": "symptoms"
+    },
+    {
+      "sort_order": 30,
+      "block_key": "content.heading_fb916a7",
+      "section": "content",
+      "label": "Heading: Choose Our Reliable Pest Control Services & Eliminate These ",
+      "type": "text",
+      "value": "Choose Our Reliable Pest Control Services & Eliminate These Pesky Creatures from Your Space"
+    },
+    {
+      "sort_order": 31,
+      "block_key": "content.text_adcf837",
+      "section": "content",
+      "label": "Content block 9",
+      "type": "html",
+      "value": "<div class=\"elementor-element elementor-element-de434cf elementor-widget elementor-widget-text-editor\" data-element_type=\"widget\" data-id=\"de434cf\" data-settings=\"{&quot;ekit_we_effect_on&quot;:&quot;none&quot;}\" data-widget_type=\"text-editor.default\"><div class=\"elementor-widget-container\"><div class=\"elementor-element elementor-element-de434cf elementor-widget elementor-widget-text-editor\" data-element_type=\"widget\" data-id=\"de434cf\" data-settings=\"{&quot;ekit_we_effect_on&quot;:&quot;none&quot;}\" data-widget_type=\"text-editor.default\"><div class=\"elementor-widget-container\"><p>Whether deciding on the success of a commercial property or demonstrating a residential space’s hygiene, a clean and healthy environment is a significant element. That’s where our pest control services at 7 States Pest Control come into being.</p><p>Our professionals offer speedy and prompt pest inspection, control, and elimination solutions at our company. Our pest controllers ensure state-of-the-art equipment for exterminating pests from your residential or commercial space. Book an appointment with us today and learn more about our services.</p></div></div></div></div>"
+    },
+    {
+      "sort_order": 32,
+      "block_key": "content.text_de434cf_3",
+      "section": "content",
+      "label": "Content block 10",
+      "type": "html",
+      "value": "<div class=\"elementor-element elementor-element-0e20da6 elementor-widget elementor-widget-text-editor\" data-element_type=\"widget\" data-id=\"0e20da6\" data-settings=\"{&quot;ekit_we_effect_on&quot;:&quot;none&quot;}\" data-widget_type=\"text-editor.default\"><div class=\"elementor-widget-container\"><p>We believe in the effectiveness and quality of our pest control services. Our professionals are astute at backing them up with 100% satisfaction guaranteed. Our pest controllers work their level best to exterminate ants, rats, wasps, cockroaches, and more. Need bed bug elimination services? Or are you suspecting possums in your space? Allow us to take the lead with our pest control and elimination solutions crafted individually for our unique clients.</p></div></div><div class=\"elementor-element elementor-element-f5ce1ac elementor-widget elementor-widget-text-editor\" data-element_type=\"widget\" data-id=\"f5ce1ac\" data-settings=\"{&quot;ekit_we_effect_on&quot;:&quot;none&quot;}\" data-widget_type=\"text-editor.default\"><div class=\"elementor-widget-container\">We understand that not all customers require the kind of services from us. Thus, we design customized solutions for one and all. We send our professionals to your space so that they can inspect, control, and eliminate pests and insects that bother you. Bid farewell to these pesky insects and pests from your residential or commercial spaces by calling us today.</div></div>"
+    },
+    {
+      "sort_order": 33,
+      "block_key": "content.text_de434cf_4",
+      "section": "content",
+      "label": "Content block 11",
+      "type": "html",
+      "value": "<div class=\"elementor-element elementor-element-0e20da6 elementor-widget elementor-widget-text-editor\" data-element_type=\"widget\" data-id=\"0e20da6\" data-settings=\"{&quot;ekit_we_effect_on&quot;:&quot;none&quot;}\" data-widget_type=\"text-editor.default\"><div class=\"elementor-widget-container\"><p>We believe in the effectiveness and quality of our pest control services. Our professionals are astute at backing them up with 100% satisfaction guaranteed. Our pest controllers work their level best to exterminate ants, rats, wasps, cockroaches, and more. Need bed bug elimination services? Or are you suspecting possums in your space? Allow us to take the lead with our pest control and elimination solutions crafted individually for our unique clients.</p></div></div><div class=\"elementor-element elementor-element-f5ce1ac elementor-widget elementor-widget-text-editor\" data-element_type=\"widget\" data-id=\"f5ce1ac\" data-settings=\"{&quot;ekit_we_effect_on&quot;:&quot;none&quot;}\" data-widget_type=\"text-editor.default\"><div class=\"elementor-widget-container\">We understand that not all customers require the kind of services from us. Thus, we design customized solutions for one and all. We send our professionals to your space so that they can inspect, control, and eliminate pests and insects that bother you. Bid farewell to these pesky insects and pests from your residential or commercial spaces by calling us today.</div></div>"
+    },
+    {
+      "sort_order": 34,
+      "block_key": "content.heading_046d1b9",
+      "section": "content",
+      "label": "Heading: Our Services",
+      "type": "text",
+      "value": "Our Services"
+    },
+    {
+      "sort_order": 35,
+      "block_key": "content.heading_8a481d0",
+      "section": "content",
+      "label": "Heading: Explore Our Diverse Pest Control Services at 7 States Pest C",
+      "type": "text",
+      "value": "Explore Our Diverse Pest Control Services at 7 States Pest Control"
+    },
+    {
+      "sort_order": 36,
+      "block_key": "content.text_b15abe0",
+      "section": "content",
+      "label": "Content block 12",
+      "type": "html",
+      "value": "<p>7 States Pest Control is your one-stop destination<br />to avail of pest control services, including:</p>"
+    },
+    {
+      "sort_order": 37,
+      "block_key": "content.heading_113a5e2",
+      "section": "content",
+      "label": "Heading: Our Commercial & Residential Pest Control Solutions",
+      "type": "text",
+      "value": "Our Commercial & Residential Pest Control Solutions"
+    },
+    {
+      "sort_order": 38,
+      "block_key": "content.text_a2624c7",
+      "section": "content",
+      "label": "Content block 13",
+      "type": "html",
+      "value": "<div class=\"elementor-element elementor-element-57329fa elementor-widget elementor-widget-text-editor\" data-element_type=\"widget\" data-id=\"57329fa\" data-settings=\"{&quot;ekit_we_effect_on&quot;:&quot;none&quot;}\" data-widget_type=\"text-editor.default\"><div class=\"elementor-widget-container\"><div class=\"elementor-element elementor-element-9407d80 elementor-widget elementor-widget-text-editor\" data-element_type=\"widget\" data-id=\"9407d80\" data-settings=\"{&quot;ekit_we_effect_on&quot;:&quot;none&quot;}\" data-widget_type=\"text-editor.default\"><div class=\"elementor-widget-container\"><p>Our pest control and elimination solutions are tailored on the basis of the level of infestation, damage, and pest species within the property, irrespective of business size.</p><p>So, besides providing you with pest solutions, we are here to offer general pest treatments for both residential and commercial spaces. Our mission is to serve our customers with high-quality pest control solutions. And our vision is to earn a recognizable name in the pest control industry and gain a competitive edge.</p></div></div></div></div>"
+    },
+    {
+      "sort_order": 39,
+      "block_key": "content.text_57329fa",
+      "section": "content",
+      "label": "Content block 14",
+      "type": "html",
+      "value": "<div class=\"elementor-element elementor-element-9407d80 elementor-widget elementor-widget-text-editor\" data-element_type=\"widget\" data-id=\"9407d80\" data-settings=\"{&quot;ekit_we_effect_on&quot;:&quot;none&quot;}\" data-widget_type=\"text-editor.default\"><div class=\"elementor-widget-container\"><p>Our pest control and elimination solutions are tailored on the basis of the level of infestation, damage, and pest species within the property, irrespective of business size.</p><p>So, besides providing you with pest solutions, we are here to offer general pest treatments for both residential and commercial spaces. Our mission is to serve our customers with high-quality pest control solutions. And our vision is to earn a recognizable name in the pest control industry and gain a competitive edge.</p></div></div>"
+    },
+    {
+      "sort_order": 40,
+      "block_key": "content.text_9407d80",
+      "section": "content",
+      "label": "Content block 15",
+      "type": "html",
+      "value": "<p>Our pest control and elimination solutions are tailored on the basis of the level of infestation, damage, and pest species within the property, irrespective of business size.</p><p>So, besides providing you with pest solutions, we are here to offer general pest treatments for both residential and commercial spaces. Our mission is to serve our customers with high-quality pest control solutions. And our vision is to earn a recognizable name in the pest control industry and gain a competitive edge.</p>"
+    },
+    {
+      "sort_order": 41,
+      "block_key": "content.heading_73358e8",
+      "section": "content",
+      "label": "Heading: Our USPs",
+      "type": "text",
+      "value": "Our USPs"
+    },
+    {
+      "sort_order": 42,
+      "block_key": "content.heading_bd8e94d",
+      "section": "content",
+      "label": "Heading: Why Hire 7 States Pest Control for Different Pest Solutions?",
+      "type": "text",
+      "value": "Why Hire 7 States Pest Control for Different Pest Solutions?"
+    },
+    {
+      "sort_order": 43,
+      "block_key": "content.text_4a957b0",
+      "section": "content",
+      "label": "Content block 16",
+      "type": "html",
+      "value": "<p>With our innovations and technologically driven tools and approaches, we aim to stay ahead of the curve. We are your trusted partner to offer best-in-class pest control solutions. We promise to make a difference with our control and elimination services for these reasons:</p>"
+    },
+    {
+      "sort_order": 44,
+      "block_key": "content.list_ea18cb7",
+      "section": "content",
+      "label": "Icon list (ea18cb7)",
+      "type": "json",
+      "metadata": {
+        "items": [
+          "Absolute satisfaction guaranteed",
+          "Best for residential and commercial spaces like hospitals, airports, and warehouses",
+          "Comprehensive inspection &amp; upfront quotations offered",
+          "Prompt pest control and elimination services",
+          "Modern tools &amp; techniques",
+          "We provide insured services",
+          "Family-friendly solutions",
+          "Seamless experience with our cordial associates"
+        ]
+      }
+    },
+    {
+      "sort_order": 45,
+      "block_key": "content.image_0bb7e99",
+      "section": "content",
+      "label": "Image (0bb7e99)",
+      "type": "image",
+      "image_path": "cms/our-services/Why-Pest-Control.jpg_ef5bccf6.webp",
+      "metadata": {
+        "elementor_id": "0bb7e99",
+        "image_src": "/assets/images/Why-Pest-Control.jpg_ef5bccf6.webp"
+      }
+    },
+    {
+      "sort_order": 46,
+      "block_key": "content.image_cockroaches_png_1_56844a04",
+      "section": "content",
+      "label": "Image: Cockroaches.png-1_56844a04.webp",
+      "type": "image",
+      "image_path": "cms/our-services/Cockroaches.png-1_56844a04.webp",
+      "metadata": {
+        "image_src": "/assets/images/Cockroaches.png-1_56844a04.webp",
+        "filename": "Cockroaches.png-1_56844a04.webp"
+      }
+    },
+    {
+      "sort_order": 47,
+      "block_key": "content.image_bed_bug_png_1da7e9d8",
+      "section": "content",
+      "label": "Image: Bed-Bug.png_1da7e9d8.webp",
+      "type": "image",
+      "image_path": "cms/our-services/Bed-Bug.png_1da7e9d8.webp",
+      "metadata": {
+        "image_src": "/assets/images/Bed-Bug.png_1da7e9d8.webp",
+        "filename": "Bed-Bug.png_1da7e9d8.webp"
+      }
+    },
+    {
+      "sort_order": 48,
+      "block_key": "content.image_ant_colony_insect_animals_pest_png_73d1a8ca",
+      "section": "content",
+      "label": "Image: ant-colony-insect-animals-pest-png_73d1a8ca.png",
+      "type": "image",
+      "image_path": "cms/our-services/ant-colony-insect-animals-pest-png_73d1a8ca.png",
+      "metadata": {
+        "image_src": "/assets/images/ant-colony-insect-animals-pest-png_73d1a8ca.png",
+        "filename": "ant-colony-insect-animals-pest-png_73d1a8ca.png"
+      }
+    },
+    {
+      "sort_order": 49,
+      "block_key": "content.image_mite_control_png_4c3b4b78",
+      "section": "content",
+      "label": "Image: Mite-Control.png_4c3b4b78.webp",
+      "type": "image",
+      "image_path": "cms/our-services/Mite-Control.png_4c3b4b78.webp",
+      "metadata": {
+        "image_src": "/assets/images/Mite-Control.png_4c3b4b78.webp",
+        "filename": "Mite-Control.png_4c3b4b78.webp"
+      }
+    },
+    {
+      "sort_order": 50,
+      "block_key": "content.image_fly_control_png_4cfa4c12",
+      "section": "content",
+      "label": "Image: Fly-Control.png_4cfa4c12.webp",
+      "type": "image",
+      "image_path": "cms/our-services/Fly-Control.png_4cfa4c12.webp",
+      "metadata": {
+        "image_src": "/assets/images/Fly-Control.png_4cfa4c12.webp",
+        "filename": "Fly-Control.png_4cfa4c12.webp"
+      }
+    },
+    {
+      "sort_order": 51,
+      "block_key": "content.image_flea_control_png_a5558f62",
+      "section": "content",
+      "label": "Image: Flea-Control.png_a5558f62.webp",
+      "type": "image",
+      "image_path": "cms/our-services/Flea-Control.png_a5558f62.webp",
+      "metadata": {
+        "image_src": "/assets/images/Flea-Control.png_a5558f62.webp",
+        "filename": "Flea-Control.png_a5558f62.webp"
+      }
+    },
+    {
+      "sort_order": 52,
+      "block_key": "content.image_mosquito_control_png_90777f1c",
+      "section": "content",
+      "label": "Image: Mosquito-Control.png_90777f1c.webp",
+      "type": "image",
+      "image_path": "cms/our-services/Mosquito-Control.png_90777f1c.webp",
+      "metadata": {
+        "image_src": "/assets/images/Mosquito-Control.png_90777f1c.webp",
+        "filename": "Mosquito-Control.png_90777f1c.webp"
+      }
+    },
+    {
+      "sort_order": 53,
+      "block_key": "content.image_rodent_control_png_1_0842a15c",
+      "section": "content",
+      "label": "Image: Rodent-Control.png-1_0842a15c.webp",
+      "type": "image",
+      "image_path": "cms/our-services/Rodent-Control.png-1_0842a15c.webp",
+      "metadata": {
+        "image_src": "/assets/images/Rodent-Control.png-1_0842a15c.webp",
+        "filename": "Rodent-Control.png-1_0842a15c.webp"
+      }
+    },
+    {
+      "sort_order": 54,
+      "block_key": "content.image_moth_control_png_1_737c5080",
+      "section": "content",
+      "label": "Image: Moth-Control.png-1_737c5080.webp",
+      "type": "image",
+      "image_path": "cms/our-services/Moth-Control.png-1_737c5080.webp",
+      "metadata": {
+        "image_src": "/assets/images/Moth-Control.png-1_737c5080.webp",
+        "filename": "Moth-Control.png-1_737c5080.webp"
+      }
+    },
+    {
+      "sort_order": 55,
+      "block_key": "content.image_wasp_removal_png_1_2802cb47",
+      "section": "content",
+      "label": "Image: Wasp-Removal.png-1_2802cb47.webp",
+      "type": "image",
+      "image_path": "cms/our-services/Wasp-Removal.png-1_2802cb47.webp",
+      "metadata": {
+        "image_src": "/assets/images/Wasp-Removal.png-1_2802cb47.webp",
+        "filename": "Wasp-Removal.png-1_2802cb47.webp"
+      }
+    },
+    {
+      "sort_order": 56,
+      "block_key": "content.image_spider_control_png_2_18a07ad3",
+      "section": "content",
+      "label": "Image: Spider-Control.png-2_18a07ad3.webp",
+      "type": "image",
+      "image_path": "cms/our-services/Spider-Control.png-2_18a07ad3.webp",
+      "metadata": {
+        "image_src": "/assets/images/Spider-Control.png-2_18a07ad3.webp",
+        "filename": "Spider-Control.png-2_18a07ad3.webp"
+      }
+    },
+    {
+      "sort_order": 57,
+      "block_key": "content.image_silver_fish_png_cbd8da70",
+      "section": "content",
+      "label": "Image: Silver-Fish.png_cbd8da70.webp",
+      "type": "image",
+      "image_path": "cms/our-services/Silver-Fish.png_cbd8da70.webp",
+      "metadata": {
+        "image_src": "/assets/images/Silver-Fish.png_cbd8da70.webp",
+        "filename": "Silver-Fish.png_cbd8da70.webp"
+      }
+    }
+  ]
+}

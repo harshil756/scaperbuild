@@ -1,0 +1,789 @@
+{
+  "slug": "our-services-bed-bug-treatment",
+  "title": "Bed Bug Treatment",
+  "seo_title": "Bed Bug Exterminator in Melbourne | Bed Bugs Control & Extermination Services",
+  "seo_description": "We offers professional bed bug treatment in Melbourne starting at just $299. We treat bed frames, mattresses, couches, & carpets for complete eradication.",
+  "body_class": "wp-singular page-template page-template-elementor_header_footer page wp-custom-logo wp-embed-responsive wp-theme-hello-elementor elementor-default elementor-template-full-width elementor-kit-9 elementor-page elementor-page-714",
+  "elementor_id": 714,
+  "is_published": true,
+  "blocks": [
+    {
+      "sort_order": 0,
+      "block_key": "background.hero",
+      "section": "hero",
+      "label": "Hero background",
+      "type": "background",
+      "background_image_path": "cms/our-services-bed-bug-treatment/bed-bug-min_140deac9.webp",
+      "metadata": {
+        "elementor_id": "11c1f5d",
+        "filename": "bed-bug-min_140deac9.webp"
+      }
+    },
+    {
+      "sort_order": 1,
+      "block_key": "background.cta",
+      "section": "cta",
+      "label": "CTA background",
+      "type": "background",
+      "background_image_path": "cms/our-services-bed-bug-treatment/URUU-01-2048x1365-2_7c216e6d.jpg",
+      "metadata": {
+        "elementor_id": "924603c",
+        "filename": "URUU-01-2048x1365-2_7c216e6d.jpg"
+      }
+    },
+    {
+      "sort_order": 2,
+      "block_key": "hero.breadcrumb_parent",
+      "section": "hero",
+      "label": "Breadcrumb parent",
+      "type": "text",
+      "value": "Services"
+    },
+    {
+      "sort_order": 3,
+      "block_key": "hero.breadcrumb_current",
+      "section": "hero",
+      "label": "Breadcrumb current",
+      "type": "text",
+      "value": "bed bug treatment"
+    },
+    {
+      "sort_order": 4,
+      "block_key": "hero.title",
+      "section": "hero",
+      "label": "Section title",
+      "type": "text",
+      "value": "Bed Bug Pest Control"
+    },
+    {
+      "sort_order": 5,
+      "block_key": "hero.heading",
+      "section": "hero",
+      "label": "Main heading",
+      "type": "text",
+      "value": "Bed Bug Melbourne | Expert Bed Bug Extermination Services in Melbourne"
+    },
+    {
+      "sort_order": 6,
+      "block_key": "hero.intro",
+      "section": "hero",
+      "label": "Intro paragraph",
+      "type": "html",
+      "value": "<p><span >Are you struggling with sleepless nights due to </span><b>bed bugs in Melbourne</b><span >? Searching for a trusted </span><b>bed bug exterminator Melbourne</b><span > who delivers guaranteed results? Look no further. At </span><a href=\"/\"><b>7 States Pest Control</b></a><span >, we specialize in </span><b>bed bug extermination Melbourne</b><span >, offering safe, eco-friendly, and effective solutions.</span></p><p><span >Our services are trusted across Melbourne for both residential and commercial properties. Whether you’re worried about rising </span><b>bed bug pest control prices</b><span > or want reliable </span><b>bed bug removal Melbourne</b><span >, we provide affordable and long-lasting treatments. With our expertise in </span><b>bed bug treatment Melbourne</b><span >, we ensure complete eradication of infestations, keeping your property safe.</span></p><p><span >Choose us for professional </span><b>bed bugs Melbourne</b><span > services that are safe for your family and pets.</span></p>"
+    },
+    {
+      "sort_order": 7,
+      "block_key": "quote_form.title",
+      "section": "quote_form",
+      "label": "Form heading",
+      "type": "text",
+      "value": "Bed Bug Melbourne | Expert Bed Bug Extermination Services in Melbourne"
+    },
+    {
+      "sort_order": 8,
+      "block_key": "quote_form.subtitle",
+      "section": "quote_form",
+      "label": "Form subtitle",
+      "type": "text",
+      "value": "Have an enquiry? Leave us your details and we’ll call you back during business hours."
+    },
+    {
+      "sort_order": 9,
+      "block_key": "quote_form.submit_text",
+      "section": "quote_form",
+      "label": "Submit button text",
+      "type": "text",
+      "value": "Submit Quote"
+    },
+    {
+      "sort_order": 10,
+      "block_key": "faq.items",
+      "section": "faq",
+      "label": "FAQ items",
+      "type": "json",
+      "metadata": {
+        "items": [
+          {
+            "question": "1. What is the cost of bed bug extermination in Melbourne?",
+            "answer_html": "<p><span >Bed bug extermination in Melbourne usually costs between $200 to $500 depending on infestation level and treatment method. </span><b>7 States Pest Control</b><span > offers effective and affordable solutions.</span></p>"
+          },
+          {
+            "question": "2. How do I choose the best bed bug exterminator in Melbourne?",
+            "answer_html": "<p><span >Choose a licensed and experienced company with strong customer reviews and proven results. </span><b>7 States Pest Control</b><span > is a trusted choice for reliable bed bug removal.</span></p>"
+          },
+          {
+            "question": "3. How long does it take to get rid of bed bugs completely?",
+            "answer_html": "<p><span >Bed bug treatment may take a few hours, but complete removal can take multiple visits depending on the severity of the infestation.</span></p>"
+          },
+          {
+            "question": "4. Do you offer bed bug treatment in Melbourne CBD?",
+            "answer_html": "<p><span >Yes, </span><b>7 States Pest Control</b><span > provides bed bug extermination services across Melbourne, including CBD and surrounding areas.</span></p>"
+          },
+          {
+            "question": "5. What is the most effective treatment for bed bugs?",
+            "answer_html": "<p><span >Professional treatments like heat treatment and chemical solutions are highly effective. </span><b>7 States Pest Control</b><span > uses advanced methods to ensure complete bed bug removal.</span></p>"
+          }
+        ]
+      }
+    },
+    {
+      "sort_order": 11,
+      "block_key": "faq.title",
+      "section": "faq",
+      "label": "FAQ title",
+      "type": "text",
+      "value": "Frequently Asked Questions"
+    },
+    {
+      "sort_order": 12,
+      "block_key": "faq.sidebar_image",
+      "section": "faq",
+      "label": "FAQ sidebar image",
+      "type": "image",
+      "image_path": "cms/our-services-bed-bug-treatment/WhatsApp-Image-2024-08-28-at-15.35.06_bc7d2870-1_ecbbd918.jpg",
+      "metadata": {
+        "elementor_id": "6867be7",
+        "image_src": "/assets/images/WhatsApp-Image-2024-08-28-at-15.35.06_bc7d2870-1_ecbbd918.jpg"
+      }
+    },
+    {
+      "sort_order": 13,
+      "block_key": "faq.sidebar_cta_title",
+      "section": "faq",
+      "label": "Sidebar CTA title",
+      "type": "text",
+      "value": "Any questions you want to ask?"
+    },
+    {
+      "sort_order": 14,
+      "block_key": "faq.sidebar_cta_body",
+      "section": "faq",
+      "label": "Sidebar CTA body",
+      "type": "text",
+      "value": "Find answers to common questions about our pest control services, treatments, safety, and scheduling."
+    },
+    {
+      "sort_order": 15,
+      "block_key": "faq.sidebar_cta_button",
+      "section": "faq",
+      "label": "Sidebar CTA button",
+      "type": "link",
+      "value": "Contact Us",
+      "link_url": "/contact-us"
+    },
+    {
+      "sort_order": 16,
+      "block_key": "reviews.eyebrow",
+      "section": "reviews",
+      "label": "Reviews eyebrow",
+      "type": "text",
+      "value": "7 States Pest Control for Reliable Pest Management Solutions"
+    },
+    {
+      "sort_order": 17,
+      "block_key": "reviews.title",
+      "section": "reviews",
+      "label": "Reviews title",
+      "type": "text",
+      "value": "EXCELLENT"
+    },
+    {
+      "sort_order": 18,
+      "block_key": "cta.eyebrow",
+      "section": "cta",
+      "label": "Eyebrow",
+      "type": "text",
+      "value": "Ideas to reality"
+    },
+    {
+      "sort_order": 19,
+      "block_key": "cta.title",
+      "section": "cta",
+      "label": "Section title",
+      "type": "text",
+      "value": "Talk to Us Today to Learn More"
+    },
+    {
+      "sort_order": 20,
+      "block_key": "cta.body",
+      "section": "cta",
+      "label": "Body HTML",
+      "type": "html",
+      "value": "<p>Do you have any specific questions about us, our services, or anything related to pest infestation issues? Call us today on&nbsp;<a href=\"tel:+61434660060\">( +61 434 660 060 )</a>&nbsp;or use our contact form to connect with our&nbsp;<b>7 States Pest Control</b>. You can get answers to your questions, get upfront quotes for the&nbsp;<b>7 States Pest Control</b>&nbsp;issues, and receive high-quality tailored services.</p>"
+    },
+    {
+      "sort_order": 21,
+      "block_key": "cta.button",
+      "section": "cta",
+      "label": "CTA button",
+      "type": "link",
+      "value": "Contact Us",
+      "link_url": "/contact-us"
+    },
+    {
+      "sort_order": 22,
+      "block_key": "content.heading_871f754",
+      "section": "content",
+      "label": "Heading: Get A Free Quote Now!",
+      "type": "text",
+      "value": "Get A Free Quote Now!"
+    },
+    {
+      "sort_order": 23,
+      "block_key": "content.heading_dd945c9",
+      "section": "content",
+      "label": "Heading: Have an enquiry? Leave us your details and we’ll call you ba",
+      "type": "text",
+      "value": "Have an enquiry? Leave us your details and we’ll call you back during business hours."
+    },
+    {
+      "sort_order": 24,
+      "block_key": "content.heading_efaeb1f",
+      "section": "content",
+      "label": "Heading: Bed Bug Pest Control",
+      "type": "text",
+      "value": "Bed Bug Pest Control"
+    },
+    {
+      "sort_order": 25,
+      "block_key": "content.heading_a598d4d",
+      "section": "content",
+      "label": "Heading: Bed Bug Control Melbourne – Safe, Fast & Reliable",
+      "type": "text",
+      "value": "Bed Bug Control Melbourne – Safe, Fast & Reliable"
+    },
+    {
+      "sort_order": 26,
+      "block_key": "content.text_a7f5869",
+      "section": "content",
+      "label": "Content block 1",
+      "type": "html",
+      "value": "<p><span >Bed bugs can turn your life upside down if not handled quickly. At </span><b>7 States Pest Control</b><span >, we provide complete solutions for </span><b>bed bug Melbourne infestations</b><span >, including </span><b>bed bug removal Melbourne</b><span >, </span><b>bed bugs treatment Melbourne</b><span >, and </span><b>bed bug extermination Melbourne</b><span >.</span></p><p><span >As a trusted </span><b>bed bug exterminator Melbourne</b><span >, we use modern methods such as heat treatments, chemical control, and eco-friendly sprays. Our team is trained to deliver premium services at affordable </span><b>bed bug control prices</b><span >, making us the top choice for homeowners and businesses across the city.</span></p>"
+    },
+    {
+      "sort_order": 27,
+      "block_key": "content.heading_b46e53d",
+      "section": "content",
+      "label": "Heading: Signs And Symptoms",
+      "type": "text",
+      "value": "Signs And Symptoms"
+    },
+    {
+      "sort_order": 28,
+      "block_key": "content.heading_ee1cc4d",
+      "section": "content",
+      "label": "Heading: Signs and Symptoms of Bed Bug Infestation in Melbourne",
+      "type": "text",
+      "value": "Signs and Symptoms of Bed Bug Infestation in Melbourne"
+    },
+    {
+      "sort_order": 29,
+      "block_key": "content.text_a2ce4bf",
+      "section": "content",
+      "label": "Content block 2",
+      "type": "html",
+      "value": "<p>Bed bug bites may not always wake you up, and spotting bed bugs on your mattress or clothes isn’t guaranteed. However, if bed bugs infest your property, you may notice certain signs and symptoms.</p>"
+    },
+    {
+      "sort_order": 30,
+      "block_key": "content.list_868017d",
+      "section": "content",
+      "label": "Icon list (868017d)",
+      "type": "json",
+      "metadata": {
+        "items": [
+          "Musty, unpleasant bug smell in large infestations",
+          "Brown spotting (faeces) on mattresses, furniture, and clothing",
+          "Tiny bed bug eggs in seams, floors, and crevices"
+        ]
+      }
+    },
+    {
+      "sort_order": 31,
+      "block_key": "content.list_53139db",
+      "section": "content",
+      "label": "Icon list (53139db)",
+      "type": "json",
+      "metadata": {
+        "items": [
+          "Restless Sleep or Intermittent Waking Up",
+          "Blood spots on sheets and mattresses",
+          "Red, itchy bite marks on shoulders, arms, or back",
+          "Restless nights due to irritation"
+        ]
+      }
+    },
+    {
+      "sort_order": 32,
+      "block_key": "content.text_78083e9",
+      "section": "content",
+      "label": "Content block 3",
+      "type": "html",
+      "value": "<p><span >If you observe these symptoms, contact our expert team for </span><b>bed bug treatment Melbourne</b><span >. Our proven </span><b>bed bug removal Melbourne</b><span > services ensure complete elimination with affordable </span><b>bed bug control prices</b><span >.</span></p>"
+    },
+    {
+      "sort_order": 33,
+      "block_key": "content.heading_892f8a4",
+      "section": "content",
+      "label": "Heading: heat treatment",
+      "type": "text",
+      "value": "heat treatment"
+    },
+    {
+      "sort_order": 34,
+      "block_key": "content.heading_7ffe153",
+      "section": "content",
+      "label": "Heading: Why You Need Immediate Bed Bug Extermination Melbourne ?",
+      "type": "text",
+      "value": "Why You Need Immediate Bed Bug Extermination Melbourne ?"
+    },
+    {
+      "sort_order": 35,
+      "block_key": "content.text_d7811e4",
+      "section": "content",
+      "label": "Content block 4",
+      "type": "html",
+      "value": "<p><span >Bed bugs multiply fast and cause severe issues. Here’s why you should act quickly with our professional </span><b>bed bug extermination Melbourne</b><span > services:</span></p>"
+    },
+    {
+      "sort_order": 36,
+      "block_key": "content.list_1120a11",
+      "section": "content",
+      "label": "Icon list (1120a11)",
+      "type": "json",
+      "metadata": {
+        "items": [
+          "Bed Bug Bites Can Cause Allergic Reactions – Some individuals may experience severe reactions, including anaphylaxis, from bed bug bites.",
+          "Risk of Secondary Infections – Infected bites can lead to secondary infections like Ecthyma, Impetigo, and Lymphangitis.",
+          "Disrupted Sleep – Bed bugs can cause sleepless nights for the residents of the infested home, affecting overall well-being.",
+          "Mental Health Effects – Prolonged bed bug infestations can lead to mental health issues, including anxiety and systemic reactions.",
+          "Rapid Multiplication Without Control – Without proper bed bugs treatment in Melbourne, bed bugs can multiply quickly, worsening physical and mental health and leading to financial burdens.",
+          "Spread to Other Properties – Bed bugs can spread to neighboring properties, turning the infestation into a broader public health concern.",
+          "Consult Your Doctor – While bed bug bites are not typically severe, it's advisable to seek medical advice if you experience an infection or complications."
+        ]
+      }
+    },
+    {
+      "sort_order": 37,
+      "block_key": "content.text_1162f5c",
+      "section": "content",
+      "label": "Content block 5",
+      "type": "html",
+      "value": "<p>Taking prompt action with bed bugs treatment in Melbourne can prevent these issues and restore peace of mind.</p>"
+    },
+    {
+      "sort_order": 38,
+      "block_key": "content.heading_6dff570",
+      "section": "content",
+      "label": "Heading: where to found bed bug",
+      "type": "text",
+      "value": "where to found bed bug"
+    },
+    {
+      "sort_order": 39,
+      "block_key": "content.heading_71f0490",
+      "section": "content",
+      "label": "Heading: Common Hiding Places of Bed Bugs in Melbourne Residences",
+      "type": "text",
+      "value": "Common Hiding Places of Bed Bugs in Melbourne Residences"
+    },
+    {
+      "sort_order": 40,
+      "block_key": "content.text_0aa90e2",
+      "section": "content",
+      "label": "Content block 6",
+      "type": "html",
+      "value": "<p>If you experience signs such as bite marks or swelling, it’s crucial to inspect your property for bed bugs. You may find them in the following areas:</p>"
+    },
+    {
+      "sort_order": 41,
+      "block_key": "content.list_11f3d9a",
+      "section": "content",
+      "label": "Icon list (11f3d9a)",
+      "type": "json",
+      "metadata": {
+        "items": [
+          "Between Timber Floorboards",
+          "Inside Electrical Fittings and Sockets",
+          "Wardrobes",
+          "Drawers and Cupboards"
+        ]
+      }
+    },
+    {
+      "sort_order": 42,
+      "block_key": "content.list_6ff8f2e",
+      "section": "content",
+      "label": "Icon list (6ff8f2e)",
+      "type": "json",
+      "metadata": {
+        "items": [
+          "Mattress Seams",
+          "Bed Frames, Headboard Crevices",
+          "Skirting Boards",
+          "Carpets and Underlays",
+          "Bedside Cabinets"
+        ]
+      }
+    },
+    {
+      "sort_order": 43,
+      "block_key": "content.text_93ae01e",
+      "section": "content",
+      "label": "Content block 7",
+      "type": "html",
+      "value": "<p>Bed bug bites can often resemble those caused by fleas, flies, or mosquitoes, so a thorough inspection is essential. If you confirm the presence of bed bugs, contact us for immediate bed bug treatment Melbourne, bed bug removal Melbourne, and&nbsp;<a href=\"/\">affordable pest control Melbourne</a>&nbsp;&amp; bed bug pest control prices. Trust our bedbugs control Melbourne experts for a pest-free home.</p>"
+    },
+    {
+      "sort_order": 44,
+      "block_key": "content.heading_bcf729f",
+      "section": "content",
+      "label": "Heading: How to Tell If You Have a Bed Bug Infestation​?",
+      "type": "text",
+      "value": "How to Tell If You Have a Bed Bug Infestation​?"
+    },
+    {
+      "sort_order": 45,
+      "block_key": "content.list_c2592dd",
+      "section": "content",
+      "label": "Icon list (c2592dd)",
+      "type": "json",
+      "metadata": {
+        "items": [
+          "Alive or dead bed bugs, and cast skins. Alive bed bugs will confirm that the infestation is currently active.",
+          "Faecal spotting: This is digested blood by the bed bugs. It may be initially observed on the sheets, but will be commonly noticed along the mattress seams and beading of mattresses.",
+          "Eggs: cream in colour, approx. 1mm, which tend to be laid in crevices in dark areas.",
+          "Bed bugs can create a smell described as ‘sickly sweet’. This is usually noticed in areas of a heavy infestations or if close to the bed bug.",
+          "Bites: If you are being bitten in bed it is an indication of an infestation, however not all bites will be from bed bugs.",
+          "Blood stains on sheets or mattress."
+        ]
+      }
+    },
+    {
+      "sort_order": 46,
+      "block_key": "content.heading_f278feb",
+      "section": "content",
+      "label": "Heading: Key Facts",
+      "type": "text",
+      "value": "Key Facts"
+    },
+    {
+      "sort_order": 47,
+      "block_key": "content.heading_de80c72",
+      "section": "content",
+      "label": "Heading: Key Facts About Bed Bug in Melbourne Infestations and Expert",
+      "type": "text",
+      "value": "Key Facts About Bed Bug in Melbourne Infestations and Expert Extermination"
+    },
+    {
+      "sort_order": 48,
+      "block_key": "content.text_dfb611e",
+      "section": "content",
+      "label": "Content block 8",
+      "type": "html",
+      "value": "<p><b>Bed bugs Melbourne</b><span > are small, oval-shaped insects measuring 4–5 mm when fully grown. Even though they are wingless, they move fast and can easily infest homes, hotels, and offices.</span></p>"
+    },
+    {
+      "sort_order": 49,
+      "block_key": "content.text_61ad738",
+      "section": "content",
+      "label": "Content block 9",
+      "type": "html",
+      "value": "<p><span >Typically reddish-brown in colour, </span><b>bed bugs</b><span > become darker after feeding on human blood. Their flat bodies help them hide in cracks, crevices, mattresses, clothes, and luggage, making </span><b>bed bug removal Melbourne</b><span > challenging without professional help.</span></p>"
+    },
+    {
+      "sort_order": 50,
+      "block_key": "content.text_6eca234",
+      "section": "content",
+      "label": "Content block 10",
+      "type": "html",
+      "value": "<p><span >A </span><b>bed bug Melbourne</b><span > life cycle includes five nymph stages before adulthood. Each stage requires a blood meal every 7–10 days, and adults may live 6–12 months. With each female laying 2–3 eggs daily, infestations spread quickly.</span></p>"
+    },
+    {
+      "sort_order": 51,
+      "block_key": "content.text_d3948ef",
+      "section": "content",
+      "label": "Content block 11",
+      "type": "html",
+      "value": "<p><span >For effective </span><b>bed bug pest control Melbourne</b><span >, trust a certified </span><b>bed bug exterminator Melbourne</b><span > who can provide reliable </span><b>bed bug extermination Melbourne</b><span > services and safeguard your property.</span></p>"
+    },
+    {
+      "sort_order": 52,
+      "block_key": "content.image_999f533",
+      "section": "content",
+      "label": "Image (999f533)",
+      "type": "image",
+      "image_path": "cms/our-services-bed-bug-treatment/End-of-Lease-1.jpg_b2612738.webp",
+      "metadata": {
+        "elementor_id": "999f533",
+        "image_src": "/assets/images/End-of-Lease-1.jpg_b2612738.webp"
+      }
+    },
+    {
+      "sort_order": 53,
+      "block_key": "content.heading_e64c170",
+      "section": "content",
+      "label": "Heading: How to Spot a Bed Bug Infestation in Melbourne?",
+      "type": "text",
+      "value": "How to Spot a Bed Bug Infestation in Melbourne?"
+    },
+    {
+      "sort_order": 54,
+      "block_key": "content.text_e613a82",
+      "section": "content",
+      "label": "Content block 12",
+      "type": "html",
+      "value": "<p><span >You’re likely dealing with a </span><b>bed bug infestation Melbourne</b><span > if you notice:</span></p>"
+    },
+    {
+      "sort_order": 55,
+      "block_key": "content.list_87f97f0",
+      "section": "content",
+      "label": "Icon list (87f97f0)",
+      "type": "json",
+      "metadata": {
+        "items": [
+          "Blood spots on the sheets or mattresses",
+          "An unpleasant and sweet yet sickly odour",
+          "Faecal pellets (small dark spots) on your linen.",
+          "A live bed bug crawling in bedding or crevices",
+          "Dark black stains on your mattress or surrounding area due to excreta.",
+          "Skin welts and irritation due to bites.",
+          "Tiny eggs or eggshells."
+        ]
+      }
+    },
+    {
+      "sort_order": 56,
+      "block_key": "content.heading_2fb32e0",
+      "section": "content",
+      "label": "Heading: Bed Bug Pest Control",
+      "type": "text",
+      "value": "Bed Bug Pest Control"
+    },
+    {
+      "sort_order": 57,
+      "block_key": "content.heading_fcfa44e",
+      "section": "content",
+      "label": "Heading: How to Identify a Bed Bug Bite in Melbourne?",
+      "type": "text",
+      "value": "How to Identify a Bed Bug Bite in Melbourne?"
+    },
+    {
+      "sort_order": 58,
+      "block_key": "content.text_6ce7597",
+      "section": "content",
+      "label": "Content block 13",
+      "type": "html",
+      "value": "<p>It is possible to get bitten by a bed bug anywhere on your body. The most common areas are areas most exposed when asleep – arms, face, legs, back, or neck.</p><p>Their bite marks look similar to a&nbsp;mosquito bite&nbsp;or flea bite. The pattern of the bite is often in a straight line or can appear in a small cluster.</p><p>The reaction to a bed bug bite varies, some people’s body might not react. Some might react badly, leading to a serious allergic reaction and cause an anaphylactic response. It is easy to identify a bed bug bite if you notice any of the following:</p>"
+    },
+    {
+      "sort_order": 59,
+      "block_key": "content.list_5ca2a1d",
+      "section": "content",
+      "label": "Icon list (5ca2a1d)",
+      "type": "json",
+      "metadata": {
+        "items": [
+          "A bite with a red swollen area having a tiny dark red spot.",
+          "Hives or blisters near the bite site.",
+          "An itchy and burning sensation at the location of the bite."
+        ]
+      }
+    },
+    {
+      "sort_order": 60,
+      "block_key": "content.text_b3232a0",
+      "section": "content",
+      "label": "Content block 14",
+      "type": "html",
+      "value": "<p>Some people have a reaction to the bite, several days after being bitten. It is impossible to feel the bite as they excrete a small amount of anaesthesia prior to the bite. Itching or scratching the bitten area might cause it to swell or bleed which is why it is important not to scratch it.</p>"
+    },
+    {
+      "sort_order": 61,
+      "block_key": "content.heading_fc55654",
+      "section": "content",
+      "label": "Heading: More about bed Bugs",
+      "type": "text",
+      "value": "More about bed Bugs"
+    },
+    {
+      "sort_order": 62,
+      "block_key": "content.text_0048b6b",
+      "section": "content",
+      "label": "Content block 15",
+      "type": "html",
+      "value": "<p><b>Bed bugs Melbourne</b><span > are nocturnal pests, feeding at night while you sleep. Their bites cause red, swollen welts that itch severely. Adults grow up to 6 mm in size, reddish-brown in colour, while nymphs are lighter and smaller. Eggs are 1 mm, white to cream coloured, and hidden in hard-to-detect places.</span></p><p><span >With rapid reproduction and hidden breeding spots, only expert </span><b>bedbug control Melbourne</b><span > can ensure complete eradication. At 7 States Pest Control, we specialise in </span><b>bed bug extermination Melbourne</b><span >, safe </span><b>bed bug removal Melbourne</b><span >, and transparent </span><b>bed bug pest control price</b><span > packages.</span></p>"
+    },
+    {
+      "sort_order": 63,
+      "block_key": "content.image_6a5c911",
+      "section": "content",
+      "label": "Image (6a5c911)",
+      "type": "image",
+      "image_path": "cms/our-services-bed-bug-treatment/bed-bug-282-x-210-px1-600x447-1-300x224_28c23b95.png",
+      "metadata": {
+        "elementor_id": "6a5c911",
+        "image_src": "/assets/images/bed-bug-282-x-210-px1-600x447-1-300x224_28c23b95.png"
+      }
+    },
+    {
+      "sort_order": 64,
+      "block_key": "content.image_c4441e0",
+      "section": "content",
+      "label": "Image (c4441e0)",
+      "type": "image",
+      "image_path": "cms/our-services-bed-bug-treatment/bed-details-176-x-211-px1-376x450-1-251x300_b6ecbdb9.png",
+      "metadata": {
+        "elementor_id": "c4441e0",
+        "image_src": "/assets/images/bed-details-176-x-211-px1-376x450-1-251x300_b6ecbdb9.png"
+      }
+    },
+    {
+      "sort_order": 65,
+      "block_key": "content.image_154942f",
+      "section": "content",
+      "label": "Image (154942f)",
+      "type": "image",
+      "image_path": "cms/our-services-bed-bug-treatment/back131-x-211-px1-279x450-1-186x300_da743c36.png",
+      "metadata": {
+        "elementor_id": "154942f",
+        "image_src": "/assets/images/back131-x-211-px1-279x450-1-186x300_da743c36.png"
+      }
+    },
+    {
+      "sort_order": 66,
+      "block_key": "content.heading_1614cbe",
+      "section": "content",
+      "label": "Heading: why pest control",
+      "type": "text",
+      "value": "why pest control"
+    },
+    {
+      "sort_order": 67,
+      "block_key": "content.heading_da6c6ca",
+      "section": "content",
+      "label": "Heading: Why 7 States Pest Control?",
+      "type": "text",
+      "value": "Why 7 States Pest Control?"
+    },
+    {
+      "sort_order": 68,
+      "block_key": "content.text_f33ed27",
+      "section": "content",
+      "label": "Content block 16",
+      "type": "html",
+      "value": "<p>Everyone at 7 States Pest Control is deeply committed to making a healthy, clean environment around our customers with our services. The main highlights of our services are the following:</p>"
+    },
+    {
+      "sort_order": 69,
+      "block_key": "content.list_fc8bab3",
+      "section": "content",
+      "label": "Icon list (fc8bab3)",
+      "type": "json",
+      "metadata": {
+        "items": [
+          "Trained, Certified, and Highly Experienced Pest Control Technicians",
+          "State-of-the-art Procedures and Tools",
+          "Safe and Family-friendly Pest Control Services",
+          "Quick Same/Next Day Services",
+          "All-inclusive Prices, Upfront Quotes for Services",
+          "Friendly, Transparent Service Experience",
+          "100% Satisfaction Guarantee"
+        ]
+      }
+    },
+    {
+      "sort_order": 70,
+      "block_key": "content.text_52c4670",
+      "section": "content",
+      "label": "Content block 17",
+      "type": "html",
+      "value": "<p>We are committed to creating a long-term relationship with each of our customers and providing a completely transparent, seamless service experience. You can also get an obligation-free quote from us for your <a href=\"/our-services-ant-pest-control\"><strong>ant control</strong></a> requirements.</p>"
+    },
+    {
+      "sort_order": 71,
+      "block_key": "content.image_7b4567b",
+      "section": "content",
+      "label": "Image (7b4567b)",
+      "type": "image",
+      "image_path": "cms/our-services-bed-bug-treatment/Why-Pest-Control.jpg_ef5bccf6.webp",
+      "metadata": {
+        "elementor_id": "7b4567b",
+        "image_src": "/assets/images/Why-Pest-Control.jpg_ef5bccf6.webp"
+      }
+    },
+    {
+      "sort_order": 72,
+      "block_key": "content.heading_6d731f3",
+      "section": "content",
+      "label": "Heading: Clients Reviews",
+      "type": "text",
+      "value": "Clients Reviews"
+    },
+    {
+      "sort_order": 73,
+      "block_key": "content.heading_8ce9d44",
+      "section": "content",
+      "label": "Heading: 7 States Pest Control for Reliable Pest Management Solutions",
+      "type": "text",
+      "value": "7 States Pest Control for Reliable Pest Management Solutions"
+    },
+    {
+      "sort_order": 74,
+      "block_key": "content.heading_c954089",
+      "section": "content",
+      "label": "Heading: Reviews of Our Pest Control Services",
+      "type": "text",
+      "value": "Reviews of Our Pest Control Services"
+    },
+    {
+      "sort_order": 75,
+      "block_key": "content.heading_e0d26a4",
+      "section": "content",
+      "label": "Heading: EXCELLENT",
+      "type": "text",
+      "value": "EXCELLENT"
+    },
+    {
+      "sort_order": 76,
+      "block_key": "content.text_2295328",
+      "section": "content",
+      "label": "Content block 18",
+      "type": "html",
+      "value": "<p>Based on&nbsp;45 reviews</p>"
+    },
+    {
+      "sort_order": 77,
+      "block_key": "content.heading_251b4bd",
+      "section": "content",
+      "label": "Heading: Frequently Asked Questions",
+      "type": "text",
+      "value": "Frequently Asked Questions"
+    },
+    {
+      "sort_order": 78,
+      "block_key": "content.heading_63b670c",
+      "section": "content",
+      "label": "Heading: Ideas to reality",
+      "type": "text",
+      "value": "Ideas to reality"
+    },
+    {
+      "sort_order": 79,
+      "block_key": "content.heading_ea27628",
+      "section": "content",
+      "label": "Heading: Talk to Us Today to Learn More",
+      "type": "text",
+      "value": "Talk to Us Today to Learn More"
+    },
+    {
+      "sort_order": 80,
+      "block_key": "content.text_e97e10c",
+      "section": "content",
+      "label": "Content block 19",
+      "type": "html",
+      "value": "<p>Do you have any specific questions about us, our services, or anything related to pest infestation issues? Call us today on&nbsp;<a href=\"tel:+61434660060\">( +61 434 660 060 )</a>&nbsp;or use our contact form to connect with our&nbsp;<b>7 States Pest Control</b>. You can get answers to your questions, get upfront quotes for the&nbsp;<b>7 States Pest Control</b>&nbsp;issues, and receive high-quality tailored services.</p>"
+    }
+  ]
+}

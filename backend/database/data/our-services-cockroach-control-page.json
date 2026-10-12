@@ -1,0 +1,527 @@
+{
+  "slug": "our-services-cockroach-control",
+  "title": "Cockroach Control",
+  "seo_title": "Pest Control for German Cockroaches in Melbourne - Starting Price $170.",
+  "seo_description": "Finding Pest control for German cockroaches in Melbourne? 7 States Pest Control offers you with effective cockroach control and elimination services.",
+  "body_class": "wp-singular page-template page-template-elementor_header_footer page wp-custom-logo wp-embed-responsive wp-theme-hello-elementor elementor-default elementor-template-full-width elementor-kit-9 elementor-page elementor-page-716",
+  "elementor_id": 716,
+  "is_published": true,
+  "blocks": [
+    {
+      "sort_order": 0,
+      "block_key": "background.hero",
+      "section": "hero",
+      "label": "Hero background",
+      "type": "background",
+      "background_image_path": "cms/our-services-cockroach-control/Cockroaches-1.jpg_3fb156a6.webp",
+      "metadata": {
+        "elementor_id": "13ca266",
+        "filename": "Cockroaches-1.jpg_3fb156a6.webp"
+      }
+    },
+    {
+      "sort_order": 1,
+      "block_key": "background.cta",
+      "section": "cta",
+      "label": "CTA background",
+      "type": "background",
+      "background_image_path": "cms/our-services-cockroach-control/URUU-01-2048x1365-2_7c216e6d.jpg",
+      "metadata": {
+        "elementor_id": "057b4d3",
+        "filename": "URUU-01-2048x1365-2_7c216e6d.jpg"
+      }
+    },
+    {
+      "sort_order": 2,
+      "block_key": "hero.breadcrumb_parent",
+      "section": "hero",
+      "label": "Breadcrumb parent",
+      "type": "text",
+      "value": "Services"
+    },
+    {
+      "sort_order": 3,
+      "block_key": "hero.breadcrumb_current",
+      "section": "hero",
+      "label": "Breadcrumb current",
+      "type": "text",
+      "value": "cockroach control"
+    },
+    {
+      "sort_order": 4,
+      "block_key": "hero.title",
+      "section": "hero",
+      "label": "Section title",
+      "type": "text",
+      "value": "Cockroaches Pest Control"
+    },
+    {
+      "sort_order": 5,
+      "block_key": "hero.heading",
+      "section": "hero",
+      "label": "Main heading",
+      "type": "text",
+      "value": "Say Goodbye to Pesky Cockroaches with Effective Pest Control"
+    },
+    {
+      "sort_order": 6,
+      "block_key": "hero.intro",
+      "section": "hero",
+      "label": "Intro paragraph",
+      "type": "html",
+      "value": "<div class=\"elementor-element elementor-element-de434cf elementor-widget elementor-widget-text-editor\" data-element_type=\"widget\" data-id=\"de434cf\" data-settings=\"{&quot;ekit_we_effect_on&quot;:&quot;none&quot;}\" data-widget_type=\"text-editor.default\"><div class=\"elementor-widget-container\"><p>We don’t usually attribute much importance to cockroaches in our property. But cockroaches are a high-risk pest to have at your home or office. They carry a wide range of serious illnesses, including dysentery, food poisoning, typhoid, etc. Moreover, cockroaches are the carriers of some major allergens.</p></div></div><div class=\"elementor-element elementor-element-08bd23f elementor-widget elementor-widget-text-editor\" data-element_type=\"widget\" data-id=\"08bd23f\" data-settings=\"{&quot;ekit_we_effect_on&quot;:&quot;none&quot;}\" data-widget_type=\"text-editor.default\"><div class=\"elementor-widget-container\"><p>They are often the cause of asthma, eczema and other serious forms of skin allergies. The health risk associated with cockroaches is particularly high in homes with children, the elderly or those recuperating from illnesses.&nbsp;<a href=\"/\"><strong>7 States Pest Control</strong></a>&nbsp;offers you with effective&nbsp;<strong>cockroach control</strong>&nbsp;and elimination services. Contact us to know more about our cockroach pest control services.&nbsp;&nbsp;</p></div></div>"
+    },
+    {
+      "sort_order": 7,
+      "block_key": "quote_form.title",
+      "section": "quote_form",
+      "label": "Form heading",
+      "type": "text",
+      "value": "Say Goodbye to Pesky Cockroaches with Effective Pest Control"
+    },
+    {
+      "sort_order": 8,
+      "block_key": "quote_form.subtitle",
+      "section": "quote_form",
+      "label": "Form subtitle",
+      "type": "text",
+      "value": "Have an enquiry? Leave us your details and we’ll call you back during business hours."
+    },
+    {
+      "sort_order": 9,
+      "block_key": "quote_form.submit_text",
+      "section": "quote_form",
+      "label": "Submit button text",
+      "type": "text",
+      "value": "Submit Quote"
+    },
+    {
+      "sort_order": 10,
+      "block_key": "reviews.eyebrow",
+      "section": "reviews",
+      "label": "Reviews eyebrow",
+      "type": "text",
+      "value": "7 States Pest Control for Reliable Pest Management Solutions"
+    },
+    {
+      "sort_order": 11,
+      "block_key": "reviews.title",
+      "section": "reviews",
+      "label": "Reviews title",
+      "type": "text",
+      "value": "EXCELLENT"
+    },
+    {
+      "sort_order": 12,
+      "block_key": "cta.eyebrow",
+      "section": "cta",
+      "label": "Eyebrow",
+      "type": "text",
+      "value": "Ideas to reality"
+    },
+    {
+      "sort_order": 13,
+      "block_key": "cta.title",
+      "section": "cta",
+      "label": "Section title",
+      "type": "text",
+      "value": "Talk to Us Today to Learn More"
+    },
+    {
+      "sort_order": 14,
+      "block_key": "cta.body",
+      "section": "cta",
+      "label": "Body HTML",
+      "type": "html",
+      "value": "<p>Based on&nbsp;45 reviews</p>"
+    },
+    {
+      "sort_order": 15,
+      "block_key": "cta.button",
+      "section": "cta",
+      "label": "CTA button",
+      "type": "link",
+      "value": "Contact Us",
+      "link_url": "/contact-us"
+    },
+    {
+      "sort_order": 16,
+      "block_key": "content.text_de434cf",
+      "section": "content",
+      "label": "Content block 1",
+      "type": "html",
+      "value": "<p>We don’t usually attribute much importance to cockroaches in our property. But cockroaches are a high-risk pest to have at your home or office. They carry a wide range of serious illnesses, including dysentery, food poisoning, typhoid, etc. Moreover, cockroaches are the carriers of some major allergens.</p>"
+    },
+    {
+      "sort_order": 17,
+      "block_key": "content.text_08bd23f",
+      "section": "content",
+      "label": "Content block 2",
+      "type": "html",
+      "value": "<p>They are often the cause of asthma, eczema and other serious forms of skin allergies. The health risk associated with cockroaches is particularly high in homes with children, the elderly or those recuperating from illnesses.&nbsp;<a href=\"/\"><strong>7 States Pest Control</strong></a>&nbsp;offers you with effective&nbsp;<strong>cockroach control</strong>&nbsp;and elimination services. Contact us to know more about our cockroach pest control services.&nbsp;&nbsp;</p>"
+    },
+    {
+      "sort_order": 18,
+      "block_key": "content.heading_2824f6c",
+      "section": "content",
+      "label": "Heading: Get A Free Quote Now!",
+      "type": "text",
+      "value": "Get A Free Quote Now!"
+    },
+    {
+      "sort_order": 19,
+      "block_key": "content.heading_a82f254",
+      "section": "content",
+      "label": "Heading: Have an enquiry? Leave us your details and we’ll call you ba",
+      "type": "text",
+      "value": "Have an enquiry? Leave us your details and we’ll call you back during business hours."
+    },
+    {
+      "sort_order": 20,
+      "block_key": "content.heading_8916f32",
+      "section": "content",
+      "label": "Heading: Cockroaches Pest Control",
+      "type": "text",
+      "value": "Cockroaches Pest Control"
+    },
+    {
+      "sort_order": 21,
+      "block_key": "content.heading_dd5b3de",
+      "section": "content",
+      "label": "Heading: Say Goodbye to Pesky Cockroaches with Effective Pest Control",
+      "type": "text",
+      "value": "Say Goodbye to Pesky Cockroaches with Effective Pest Control"
+    },
+    {
+      "sort_order": 22,
+      "block_key": "content.text_76690a4",
+      "section": "content",
+      "label": "Content block 3",
+      "type": "html",
+      "value": "<div class=\"elementor-element elementor-element-de434cf elementor-widget elementor-widget-text-editor\" data-element_type=\"widget\" data-id=\"de434cf\" data-settings=\"{&quot;ekit_we_effect_on&quot;:&quot;none&quot;}\" data-widget_type=\"text-editor.default\"><div class=\"elementor-widget-container\"><p>We don’t usually attribute much importance to cockroaches in our property. But cockroaches are a high-risk pest to have at your home or office. They carry a wide range of serious illnesses, including dysentery, food poisoning, typhoid, etc. Moreover, cockroaches are the carriers of some major allergens.</p></div></div><div class=\"elementor-element elementor-element-08bd23f elementor-widget elementor-widget-text-editor\" data-element_type=\"widget\" data-id=\"08bd23f\" data-settings=\"{&quot;ekit_we_effect_on&quot;:&quot;none&quot;}\" data-widget_type=\"text-editor.default\"><div class=\"elementor-widget-container\"><p>They are often the cause of asthma, eczema and other serious forms of skin allergies. The health risk associated with cockroaches is particularly high in homes with children, the elderly or those recuperating from illnesses.&nbsp;<a href=\"/\"><strong>7 States Pest Control</strong></a>&nbsp;offers you with effective&nbsp;<strong>cockroach control</strong>&nbsp;and elimination services. Contact us to know more about our cockroach pest control services.&nbsp;&nbsp;</p></div></div>"
+    },
+    {
+      "sort_order": 23,
+      "block_key": "content.text_de434cf_2",
+      "section": "content",
+      "label": "Content block 4",
+      "type": "html",
+      "value": "<p>We don’t usually attribute much importance to cockroaches in our property. But cockroaches are a high-risk pest to have at your home or office. They carry a wide range of serious illnesses, including dysentery, food poisoning, typhoid, etc. Moreover, cockroaches are the carriers of some major allergens.</p>"
+    },
+    {
+      "sort_order": 24,
+      "block_key": "content.text_08bd23f_2",
+      "section": "content",
+      "label": "Content block 5",
+      "type": "html",
+      "value": "<p>They are often the cause of asthma, eczema and other serious forms of skin allergies. The health risk associated with cockroaches is particularly high in homes with children, the elderly or those recuperating from illnesses.&nbsp;<a href=\"/\"><strong>7 States Pest Control</strong></a>&nbsp;offers you with effective&nbsp;<strong>cockroach control</strong>&nbsp;and elimination services. Contact us to know more about our cockroach pest control services.&nbsp;&nbsp;</p>"
+    },
+    {
+      "sort_order": 25,
+      "block_key": "content.heading_3c55949",
+      "section": "content",
+      "label": "Heading: Cockroach Control Treatment",
+      "type": "text",
+      "value": "Cockroach Control Treatment"
+    },
+    {
+      "sort_order": 26,
+      "block_key": "content.heading_4ebd325",
+      "section": "content",
+      "label": "Heading: Cockroach Control Treatment from 7 States Pest Control",
+      "type": "text",
+      "value": "Cockroach Control Treatment from 7 States Pest Control"
+    },
+    {
+      "sort_order": 27,
+      "block_key": "content.text_24a7d2a",
+      "section": "content",
+      "label": "Content block 6",
+      "type": "html",
+      "value": "<p>We use an appropriate cockroach control treatment method based on the infestation’s inspection and severity. Our experienced professionals will conduct a detailed inspection of your premises to determine the best course of action.</p><p>our pest control for cockroach treatment includes:</p>"
+    },
+    {
+      "sort_order": 28,
+      "block_key": "content.list_b484fe7",
+      "section": "content",
+      "label": "Icon list (b484fe7)",
+      "type": "json",
+      "metadata": {
+        "items": [
+          "Spraying",
+          "Baiting",
+          "Insect growth regulators",
+          "Making clients educated"
+        ]
+      }
+    },
+    {
+      "sort_order": 29,
+      "block_key": "content.list_c10a8b4",
+      "section": "content",
+      "label": "Icon list (c10a8b4)",
+      "type": "json",
+      "metadata": {
+        "items": [
+          "Thorough inspection",
+          "Monitoring",
+          "Vacuuming",
+          "Sanitization",
+          "Trapping"
+        ]
+      }
+    },
+    {
+      "sort_order": 30,
+      "block_key": "content.text_ca8f85b",
+      "section": "content",
+      "label": "Content block 7",
+      "type": "html",
+      "value": "<p>More aggressive treatment methods may be needed if the problem is serious. These methods could include baits, traps, or insecticidal sprays. However, if the cockroach problem is not as severe, less aggressive methods such as sealing cracks and crevices or removing food sources may be enough to control the cockroaches. We may use a combination of methods to achieve the best result for cockroach pest control.</p>"
+    },
+    {
+      "sort_order": 31,
+      "block_key": "content.heading_3b861a5",
+      "section": "content",
+      "label": "Heading: Cockroach Elimination",
+      "type": "text",
+      "value": "Cockroach Elimination"
+    },
+    {
+      "sort_order": 32,
+      "block_key": "content.heading_1b1d385",
+      "section": "content",
+      "label": "Heading: Reasons why Cockroach Elimination is Vital",
+      "type": "text",
+      "value": "Reasons why Cockroach Elimination is Vital"
+    },
+    {
+      "sort_order": 33,
+      "block_key": "content.text_9c7ed97",
+      "section": "content",
+      "label": "Content block 8",
+      "type": "html",
+      "value": "<div class=\"elementor-element elementor-element-de434cf elementor-widget elementor-widget-text-editor\" data-element_type=\"widget\" data-id=\"de434cf\" data-settings=\"{&quot;ekit_we_effect_on&quot;:&quot;none&quot;}\" data-widget_type=\"text-editor.default\"><div class=\"elementor-widget-container\"><p>Apart from the risks of contamination, cockroaches carry various types of pathogens. They are the carriers of different types of microbes that can wreak havoc in your family. Even the droppings of cockroaches carry microbes that can severely impact the health of your family. Here is the list of illnesses transmitted by cockroaches you should know.</p></div></div>"
+    },
+    {
+      "sort_order": 34,
+      "block_key": "content.text_de434cf_3",
+      "section": "content",
+      "label": "Content block 9",
+      "type": "html",
+      "value": "<p>We don’t usually attribute much importance to cockroaches in our property. But cockroaches are a high-risk pest to have at your home or office. They carry a wide range of serious illnesses, including dysentery, food poisoning, typhoid, etc. Moreover, cockroaches are the carriers of some major allergens.</p>"
+    },
+    {
+      "sort_order": 35,
+      "block_key": "content.list_789d477",
+      "section": "content",
+      "label": "Icon list (789d477)",
+      "type": "json",
+      "metadata": {
+        "items": [
+          "Plague",
+          "Leprosy",
+          "Typhoid",
+          "Asthma",
+          "Dysentery",
+          "Cholera"
+        ]
+      }
+    },
+    {
+      "sort_order": 36,
+      "block_key": "content.text_f6e98d0",
+      "section": "content",
+      "label": "Content block 10",
+      "type": "html",
+      "value": "<div class=\"elementor-element elementor-element-de434cf elementor-widget elementor-widget-text-editor\" data-element_type=\"widget\" data-id=\"de434cf\" data-settings=\"{&quot;ekit_we_effect_on&quot;:&quot;none&quot;}\" data-widget_type=\"text-editor.default\"><div class=\"elementor-widget-container\"><p>At 7 States Pest Control, we have effective skills and knowledge to exterminate pesky cockroaches from your property.</p></div></div>"
+    },
+    {
+      "sort_order": 37,
+      "block_key": "content.text_de434cf_4",
+      "section": "content",
+      "label": "Content block 11",
+      "type": "html",
+      "value": "<p>We don’t usually attribute much importance to cockroaches in our property. But cockroaches are a high-risk pest to have at your home or office. They carry a wide range of serious illnesses, including dysentery, food poisoning, typhoid, etc. Moreover, cockroaches are the carriers of some major allergens.</p>"
+    },
+    {
+      "sort_order": 38,
+      "block_key": "content.heading_7b40cf9",
+      "section": "content",
+      "label": "Heading: Thorough Inspections",
+      "type": "text",
+      "value": "Thorough Inspections"
+    },
+    {
+      "sort_order": 39,
+      "block_key": "content.text_dcc9e04",
+      "section": "content",
+      "label": "Content block 12",
+      "type": "html",
+      "value": "<p>We typically carry out a thorough inspection of their client’s properties to find the location of cockroaches. This inspection includes looking for cracks and crevices in walls and floors where cockroaches can hide. Once the inspection is complete, the professionals will use various methods to eliminate the cockroaches from the property.&nbsp;</p>"
+    },
+    {
+      "sort_order": 40,
+      "block_key": "content.image_fa72616",
+      "section": "content",
+      "label": "Image (fa72616)",
+      "type": "image",
+      "image_path": "cms/our-services-cockroach-control/Cockroach-Control2.png_80b6cad5.webp",
+      "metadata": {
+        "elementor_id": "fa72616",
+        "image_src": "/assets/images/Cockroach-Control2.png_80b6cad5.webp"
+      }
+    },
+    {
+      "sort_order": 41,
+      "block_key": "content.heading_9984806",
+      "section": "content",
+      "label": "Heading: Follow-up after Treatment",
+      "type": "text",
+      "value": "Follow-up after Treatment"
+    },
+    {
+      "sort_order": 42,
+      "block_key": "content.text_5cbad47",
+      "section": "content",
+      "label": "Content block 13",
+      "type": "html",
+      "value": "<p>Our follow-up while providing commercial or residential&nbsp;<a href=\"/\">affordable pest control Melbourne</a>&nbsp;for cockroach control involves inspecting the premises for any signs of cockroach activity and treating any areas where we find evidence of infestation. This helps to ensure that the cockroach problem doesn’t come back and that your home or business stays cockroach-free.</p>"
+    },
+    {
+      "sort_order": 43,
+      "block_key": "content.image_88d7d34",
+      "section": "content",
+      "label": "Image (88d7d34)",
+      "type": "image",
+      "image_path": "cms/our-services-cockroach-control/Cockroach-Control1.jpg_90b22569.webp",
+      "metadata": {
+        "elementor_id": "88d7d34",
+        "image_src": "/assets/images/Cockroach-Control1.jpg_90b22569.webp"
+      }
+    },
+    {
+      "sort_order": 44,
+      "block_key": "content.heading_73358e8",
+      "section": "content",
+      "label": "Heading: How to recognize",
+      "type": "text",
+      "value": "How to recognize"
+    },
+    {
+      "sort_order": 45,
+      "block_key": "content.heading_bd8e94d",
+      "section": "content",
+      "label": "Heading: How to recognize that you have Cockroaches in your Property?",
+      "type": "text",
+      "value": "How to recognize that you have Cockroaches in your Property?"
+    },
+    {
+      "sort_order": 46,
+      "block_key": "content.text_4a957b0",
+      "section": "content",
+      "label": "Content block 14",
+      "type": "html",
+      "value": "<p>Here are the signs that tell you about cockroach infestation in your property.</p>"
+    },
+    {
+      "sort_order": 47,
+      "block_key": "content.list_1d7381d",
+      "section": "content",
+      "label": "Icon list (1d7381d)",
+      "type": "json",
+      "metadata": {
+        "items": [
+          "Cockroach droppings",
+          "Skin sheds",
+          "Typical odor",
+          "Cockroach egg capsules"
+        ]
+      }
+    },
+    {
+      "sort_order": 48,
+      "block_key": "content.text_15a5388",
+      "section": "content",
+      "label": "Content block 15",
+      "type": "html",
+      "value": "<p>As soon as you observe these signs, you should contact 7 States Pest Control.</p>"
+    },
+    {
+      "sort_order": 49,
+      "block_key": "content.image_0bb7e99",
+      "section": "content",
+      "label": "Image (0bb7e99)",
+      "type": "image",
+      "image_path": "cms/our-services-cockroach-control/Why-Pest-Control.jpg_ef5bccf6.webp",
+      "metadata": {
+        "elementor_id": "0bb7e99",
+        "image_src": "/assets/images/Why-Pest-Control.jpg_ef5bccf6.webp"
+      }
+    },
+    {
+      "sort_order": 50,
+      "block_key": "content.heading_5c5dcd4",
+      "section": "content",
+      "label": "Heading: Clients Reviews",
+      "type": "text",
+      "value": "Clients Reviews"
+    },
+    {
+      "sort_order": 51,
+      "block_key": "content.heading_0030c40",
+      "section": "content",
+      "label": "Heading: 7 States Pest Control for Reliable Pest Management Solutions",
+      "type": "text",
+      "value": "7 States Pest Control for Reliable Pest Management Solutions"
+    },
+    {
+      "sort_order": 52,
+      "block_key": "content.heading_ca1057a",
+      "section": "content",
+      "label": "Heading: Reviews of Our Pest Control Services",
+      "type": "text",
+      "value": "Reviews of Our Pest Control Services"
+    },
+    {
+      "sort_order": 53,
+      "block_key": "content.heading_256329e",
+      "section": "content",
+      "label": "Heading: EXCELLENT",
+      "type": "text",
+      "value": "EXCELLENT"
+    },
+    {
+      "sort_order": 54,
+      "block_key": "content.text_a1d13c8",
+      "section": "content",
+      "label": "Content block 16",
+      "type": "html",
+      "value": "<p>Based on&nbsp;45 reviews</p>"
+    },
+    {
+      "sort_order": 55,
+      "block_key": "content.heading_4c825b4",
+      "section": "content",
+      "label": "Heading: Ideas to reality",
+      "type": "text",
+      "value": "Ideas to reality"
+    },
+    {
+      "sort_order": 56,
+      "block_key": "content.heading_7c67181",
+      "section": "content",
+      "label": "Heading: Talk to Us Today to Learn More",
+      "type": "text",
+      "value": "Talk to Us Today to Learn More"
+    },
+    {
+      "sort_order": 57,
+      "block_key": "content.text_dbd1d11",
+      "section": "content",
+      "label": "Content block 17",
+      "type": "html",
+      "value": "<p>Do you have any specific questions about us, our services, or anything related to pest infestation issues? Call us today on&nbsp;<a href=\"tel:+61434660060\"> +61 434 660 060</a>&nbsp;or use our contact form to connect with our&nbsp;<b>7 States Pest Control</b>. You can get answers to your questions, get upfront quotes for the&nbsp;<b>7 States Pest Control</b>&nbsp;issues, and receive high-quality tailored services.</p>"
+    }
+  ]
+}

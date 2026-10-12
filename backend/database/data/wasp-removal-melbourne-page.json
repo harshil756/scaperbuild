@@ -1,0 +1,837 @@
+{
+  "slug": "wasp-removal-melbourne",
+  "title": "Wasp Removal Melbourne",
+  "seo_title": "Wasp Removal Melbourne | Wasp Nest Control & Exterminator",
+  "seo_description": "Affordable wasp removal Melbourne cost-friendly service. Expert wasp control, wasp nest removal & wasp exterminator in Melbourne. Get rid of wasps fast!",
+  "body_class": "wp-singular page-template page-template-elementor_header_footer page wp-custom-logo wp-embed-responsive wp-theme-hello-elementor elementor-default elementor-template-full-width elementor-kit-9 elementor-page elementor-page-1638",
+  "elementor_id": 1638,
+  "is_published": true,
+  "blocks": [
+    {
+      "sort_order": 0,
+      "block_key": "background.hero",
+      "section": "hero",
+      "label": "Hero background",
+      "type": "background",
+      "background_image_path": "cms/wasp-removal-melbourne/wasp-inspection-in-melbourne_36c9200d.jpeg",
+      "metadata": {
+        "elementor_id": "4ac47ae",
+        "filename": "wasp-inspection-in-melbourne_36c9200d.jpeg"
+      }
+    },
+    {
+      "sort_order": 1,
+      "block_key": "background.cta",
+      "section": "cta",
+      "label": "CTA background",
+      "type": "background",
+      "background_image_path": "cms/wasp-removal-melbourne/URUU-01-2048x1365-2_7c216e6d.jpg",
+      "metadata": {
+        "elementor_id": "057b4d3",
+        "filename": "URUU-01-2048x1365-2_7c216e6d.jpg"
+      }
+    },
+    {
+      "sort_order": 2,
+      "block_key": "hero.breadcrumb_parent",
+      "section": "hero",
+      "label": "Breadcrumb parent",
+      "type": "text",
+      "value": "Services"
+    },
+    {
+      "sort_order": 3,
+      "block_key": "hero.breadcrumb_current",
+      "section": "hero",
+      "label": "Breadcrumb current",
+      "type": "text",
+      "value": "Wasp Nest Removal Melbourne"
+    },
+    {
+      "sort_order": 4,
+      "block_key": "hero.title",
+      "section": "hero",
+      "label": "Section title",
+      "type": "text",
+      "value": "Wasp removal"
+    },
+    {
+      "sort_order": 5,
+      "block_key": "hero.heading",
+      "section": "hero",
+      "label": "Main heading",
+      "type": "text",
+      "value": "Melbourne Wasp Removal & Wasp Nest Removal Services"
+    },
+    {
+      "sort_order": 6,
+      "block_key": "hero.intro",
+      "section": "hero",
+      "label": "Intro paragraph",
+      "type": "html",
+      "value": "<div class=\"elementor-element elementor-element-de434cf elementor-widget elementor-widget-text-editor\" data-element_type=\"widget\" data-id=\"de434cf\" data-settings=\"{&quot;ekit_we_effect_on&quot;:&quot;none&quot;}\" data-widget_type=\"text-editor.default\"><div class=\"elementor-widget-container\"><div class=\"elementor-element elementor-element-de434cf elementor-widget elementor-widget-text-editor\" data-element_type=\"widget\" data-id=\"de434cf\" data-settings=\"{&quot;ekit_we_effect_on&quot;:&quot;none&quot;}\" data-widget_type=\"text-editor.default\"><div class=\"elementor-widget-container\"><div class=\"elementor-element elementor-element-a1039c3 elementor-widget elementor-widget-text-editor\" data-element_type=\"widget\" data-id=\"a1039c3\" data-settings=\"{&quot;ekit_we_effect_on&quot;:&quot;none&quot;}\" data-widget_type=\"text-editor.default\"><div class=\"elementor-widget-container\"><p><span >Living in Melbourne has its perks—until wasp season takes over. From September to April, the rise in temperatures brings aggressive </span><b>wasps in Melbourne</b><span > right into our backyards. If you’ve noticed nests or increased wasp activity, it’s time to call the </span><b>Melbourne wasp removal </b><span >specialists at</span><a href=\"/\"> <span >7 States Pest Control</span></a><span >.</span></p></div></div></div></div></div></div>"
+    },
+    {
+      "sort_order": 7,
+      "block_key": "quote_form.title",
+      "section": "quote_form",
+      "label": "Form heading",
+      "type": "text",
+      "value": "Melbourne Wasp Removal &amp; Wasp Nest Removal Services"
+    },
+    {
+      "sort_order": 8,
+      "block_key": "quote_form.subtitle",
+      "section": "quote_form",
+      "label": "Form subtitle",
+      "type": "text",
+      "value": "Have an enquiry? Leave us your details and we’ll call you back during business hours."
+    },
+    {
+      "sort_order": 9,
+      "block_key": "quote_form.submit_text",
+      "section": "quote_form",
+      "label": "Submit button text",
+      "type": "text",
+      "value": "Submit Quote"
+    },
+    {
+      "sort_order": 10,
+      "block_key": "faq.items",
+      "section": "faq",
+      "label": "FAQ items",
+      "type": "json",
+      "metadata": {
+        "items": [
+          {
+            "question": "1. What is the average cost of wasp removal in Melbourne?",
+            "answer_html": "<p><span >The cost of wasp removal in Melbourne usually ranges between $150 to $350 depending on nest size, location, and severity.</span></p>"
+          },
+          {
+            "question": "2. Can I remove a wasp nest myself or should I hire professionals?",
+            "answer_html": "<p><span >It is not recommended to remove a wasp nest yourself as it can be dangerous. Professional pest control ensures safe and effective removal.</span></p>"
+          },
+          {
+            "question": "3. How quickly can wasp removal services be done in Melbourne?",
+            "answer_html": "<p><span >Most professional pest control services offer same-day or next-day wasp removal depending on availability and urgency.</span></p>"
+          },
+          {
+            "question": "4. What attracts wasps to homes in Melbourne?",
+            "answer_html": "<p><span >Wasps are attracted to food sources, sugary items, garbage areas, and sheltered spaces like roofs and walls.</span></p>"
+          },
+          {
+            "question": "5. How do I prevent wasps from returning after removal?",
+            "answer_html": "<p><span >To prevent wasps, keep outdoor areas clean, seal entry points, and avoid leaving food or waste exposed.</span></p>"
+          }
+        ]
+      }
+    },
+    {
+      "sort_order": 11,
+      "block_key": "faq.title",
+      "section": "faq",
+      "label": "FAQ title",
+      "type": "text",
+      "value": "Frequently Asked Questions"
+    },
+    {
+      "sort_order": 12,
+      "block_key": "faq.sidebar_image",
+      "section": "faq",
+      "label": "FAQ sidebar image",
+      "type": "image",
+      "image_path": "cms/wasp-removal-melbourne/WhatsApp-Image-2024-08-28-at-15.35.06_bc7d2870-1_ecbbd918.jpg",
+      "metadata": {
+        "elementor_id": "d26b015",
+        "image_src": "/assets/images/WhatsApp-Image-2024-08-28-at-15.35.06_bc7d2870-1_ecbbd918.jpg"
+      }
+    },
+    {
+      "sort_order": 13,
+      "block_key": "faq.sidebar_cta_title",
+      "section": "faq",
+      "label": "Sidebar CTA title",
+      "type": "text",
+      "value": "Any questions you want to ask?"
+    },
+    {
+      "sort_order": 14,
+      "block_key": "faq.sidebar_cta_body",
+      "section": "faq",
+      "label": "Sidebar CTA body",
+      "type": "text",
+      "value": "Find answers to common questions about our pest control services, treatments, safety, and scheduling."
+    },
+    {
+      "sort_order": 15,
+      "block_key": "faq.sidebar_cta_button",
+      "section": "faq",
+      "label": "Sidebar CTA button",
+      "type": "link",
+      "value": "Contact Us",
+      "link_url": "/contact-us"
+    },
+    {
+      "sort_order": 16,
+      "block_key": "reviews.eyebrow",
+      "section": "reviews",
+      "label": "Reviews eyebrow",
+      "type": "text",
+      "value": "7 States Pest Control for Reliable Pest Management Solutions"
+    },
+    {
+      "sort_order": 17,
+      "block_key": "reviews.title",
+      "section": "reviews",
+      "label": "Reviews title",
+      "type": "text",
+      "value": "EXCELLENT"
+    },
+    {
+      "sort_order": 18,
+      "block_key": "cta.eyebrow",
+      "section": "cta",
+      "label": "Eyebrow",
+      "type": "text",
+      "value": "Ideas to reality"
+    },
+    {
+      "sort_order": 19,
+      "block_key": "cta.title",
+      "section": "cta",
+      "label": "Section title",
+      "type": "text",
+      "value": "Talk to Us Today to Learn More"
+    },
+    {
+      "sort_order": 20,
+      "block_key": "cta.body",
+      "section": "cta",
+      "label": "Body HTML",
+      "type": "html",
+      "value": "Do you have any specific questions about us, our services, or anything related to pest infestation issues? Call us today on&nbsp;<a href=\"tel:+61434660060\"> +61 434 660 060</a>&nbsp;or use our contact form to connect with our&nbsp;<b>7 States Pest Control</b>. You can get answers to your questions, get upfront quotes for the&nbsp;<b>7 States Pest Control</b>&nbsp;issues, and receive high-quality tailored services."
+    },
+    {
+      "sort_order": 21,
+      "block_key": "cta.button",
+      "section": "cta",
+      "label": "CTA button",
+      "type": "link",
+      "value": "Contact Us",
+      "link_url": "/contact-us"
+    },
+    {
+      "sort_order": 22,
+      "block_key": "content.text_de434cf",
+      "section": "content",
+      "label": "Content block 1",
+      "type": "html",
+      "value": "<div class=\"elementor-element elementor-element-de434cf elementor-widget elementor-widget-text-editor\" data-element_type=\"widget\" data-id=\"de434cf\" data-settings=\"{&quot;ekit_we_effect_on&quot;:&quot;none&quot;}\" data-widget_type=\"text-editor.default\"><div class=\"elementor-widget-container\"><div class=\"elementor-element elementor-element-a1039c3 elementor-widget elementor-widget-text-editor\" data-element_type=\"widget\" data-id=\"a1039c3\" data-settings=\"{&quot;ekit_we_effect_on&quot;:&quot;none&quot;}\" data-widget_type=\"text-editor.default\"><div class=\"elementor-widget-container\"><p><span >Living in Melbourne has its perks—until wasp season takes over. From September to April, the rise in temperatures brings aggressive </span><b>wasps in Melbourne</b><span > right into our backyards. If you’ve noticed nests or increased wasp activity, it’s time to call the </span><b>Melbourne wasp removal </b><span >specialists at</span><a href=\"/\"> <span >7 States Pest Control</span></a><span >.</span></p></div></div></div></div>"
+    },
+    {
+      "sort_order": 23,
+      "block_key": "content.text_de434cf_2",
+      "section": "content",
+      "label": "Content block 2",
+      "type": "html",
+      "value": "<div class=\"elementor-element elementor-element-de434cf elementor-widget elementor-widget-text-editor\" data-element_type=\"widget\" data-id=\"de434cf\" data-settings=\"{&quot;ekit_we_effect_on&quot;:&quot;none&quot;}\" data-widget_type=\"text-editor.default\"><div class=\"elementor-widget-container\"><div class=\"elementor-element elementor-element-a1039c3 elementor-widget elementor-widget-text-editor\" data-element_type=\"widget\" data-id=\"a1039c3\" data-settings=\"{&quot;ekit_we_effect_on&quot;:&quot;none&quot;}\" data-widget_type=\"text-editor.default\"><div class=\"elementor-widget-container\"><p><span >Living in Melbourne has its perks—until wasp season takes over. From September to April, the rise in temperatures brings aggressive </span><b>wasps in Melbourne</b><span > right into our backyards. If you’ve noticed nests or increased wasp activity, it’s time to call the </span><b>Melbourne wasp removal </b><span >specialists at</span><a href=\"/\"> <span >7 States Pest Control</span></a><span >.</span></p></div></div></div></div>"
+    },
+    {
+      "sort_order": 24,
+      "block_key": "content.text_a1039c3",
+      "section": "content",
+      "label": "Content block 3",
+      "type": "html",
+      "value": "<p><span >Living in Melbourne has its perks—until wasp season takes over. From September to April, the rise in temperatures brings aggressive </span><b>wasps in Melbourne</b><span > right into our backyards. If you’ve noticed nests or increased wasp activity, it’s time to call the </span><b>Melbourne wasp removal </b><span >specialists at</span><a href=\"/\"> <span >7 States Pest Control</span></a><span >.</span></p>"
+    },
+    {
+      "sort_order": 25,
+      "block_key": "content.heading_409d206",
+      "section": "content",
+      "label": "Heading: Get A Free Quote Now!",
+      "type": "text",
+      "value": "Get A Free Quote Now!"
+    },
+    {
+      "sort_order": 26,
+      "block_key": "content.heading_183bf08",
+      "section": "content",
+      "label": "Heading: Have an enquiry? Leave us your details and we’ll call you ba",
+      "type": "text",
+      "value": "Have an enquiry? Leave us your details and we’ll call you back during business hours."
+    },
+    {
+      "sort_order": 27,
+      "block_key": "content.heading_8916f32",
+      "section": "content",
+      "label": "Heading: Safe Wasp Removal Solutions",
+      "type": "text",
+      "value": "Safe Wasp Removal Solutions"
+    },
+    {
+      "sort_order": 28,
+      "block_key": "content.heading_dd5b3de",
+      "section": "content",
+      "label": "Heading: Wasp Nest Removal Melbourne – Safe & Efficient Solutions",
+      "type": "text",
+      "value": "Wasp Nest Removal Melbourne – Safe & Efficient Solutions"
+    },
+    {
+      "sort_order": 29,
+      "block_key": "content.text_76690a4",
+      "section": "content",
+      "label": "Content block 4",
+      "type": "html",
+      "value": "<div class=\"elementor-element elementor-element-de434cf elementor-widget elementor-widget-text-editor\" data-element_type=\"widget\" data-id=\"de434cf\" data-settings=\"{&quot;ekit_we_effect_on&quot;:&quot;none&quot;}\" data-widget_type=\"text-editor.default\"><div class=\"elementor-widget-container\"><div class=\"elementor-element elementor-element-a1039c3 elementor-widget elementor-widget-text-editor\" data-element_type=\"widget\" data-id=\"a1039c3\" data-settings=\"{&quot;ekit_we_effect_on&quot;:&quot;none&quot;}\" data-widget_type=\"text-editor.default\"><div class=\"elementor-widget-container\"><p class=\"font-claude-response-body break-words whitespace-normal leading-[1.7]\">Spotted wasps near your windows, eaves, or garden? You likely have a hidden <strong>wasp nest Melbourne</strong> homes often miss. Skip the risky DIY sprays—our team delivers fast, affordable <strong>wasp nest removal Melbourne</strong> residents trust for complete colony elimination.</p><p class=\"font-claude-response-body break-words whitespace-normal leading-[1.7]\">Every <strong>wasp exterminator Melbourne</strong> technician on our team uses proven <strong>wasp nest control Melbourne</strong> methods—tough on pests, safe for your kids, pets, and garden.</p></div></div></div></div>"
+    },
+    {
+      "sort_order": 30,
+      "block_key": "content.text_de434cf_3",
+      "section": "content",
+      "label": "Content block 5",
+      "type": "html",
+      "value": "<div class=\"elementor-element elementor-element-de434cf elementor-widget elementor-widget-text-editor\" data-element_type=\"widget\" data-id=\"de434cf\" data-settings=\"{&quot;ekit_we_effect_on&quot;:&quot;none&quot;}\" data-widget_type=\"text-editor.default\"><div class=\"elementor-widget-container\"><div class=\"elementor-element elementor-element-a1039c3 elementor-widget elementor-widget-text-editor\" data-element_type=\"widget\" data-id=\"a1039c3\" data-settings=\"{&quot;ekit_we_effect_on&quot;:&quot;none&quot;}\" data-widget_type=\"text-editor.default\"><div class=\"elementor-widget-container\"><p><span >Living in Melbourne has its perks—until wasp season takes over. From September to April, the rise in temperatures brings aggressive </span><b>wasps in Melbourne</b><span > right into our backyards. If you’ve noticed nests or increased wasp activity, it’s time to call the </span><b>Melbourne wasp removal </b><span >specialists at</span><a href=\"/\"> <span >7 States Pest Control</span></a><span >.</span></p></div></div></div></div>"
+    },
+    {
+      "sort_order": 31,
+      "block_key": "content.text_a1039c3_2",
+      "section": "content",
+      "label": "Content block 6",
+      "type": "html",
+      "value": "<p><span >Living in Melbourne has its perks—until wasp season takes over. From September to April, the rise in temperatures brings aggressive </span><b>wasps in Melbourne</b><span > right into our backyards. If you’ve noticed nests or increased wasp activity, it’s time to call the </span><b>Melbourne wasp removal </b><span >specialists at</span><a href=\"/\"> <span >7 States Pest Control</span></a><span >.</span></p>"
+    },
+    {
+      "sort_order": 32,
+      "block_key": "content.heading_3c55949",
+      "section": "content",
+      "label": "Heading: sign indication",
+      "type": "text",
+      "value": "sign indication"
+    },
+    {
+      "sort_order": 33,
+      "block_key": "content.text_24a7d2a",
+      "section": "content",
+      "label": "Content block 7",
+      "type": "html",
+      "value": "<p><span >Dealing with different wasp species requires different strategies. Here are the most common ones found around homes and businesses:</span></p>"
+    },
+    {
+      "sort_order": 34,
+      "block_key": "content.heading_4ebd325",
+      "section": "content",
+      "label": "Heading: Types of Wasps Commonly Found in Melbourne",
+      "type": "text",
+      "value": "Types of Wasps Commonly Found in Melbourne"
+    },
+    {
+      "sort_order": 35,
+      "block_key": "content.list_c10a8b4",
+      "section": "content",
+      "label": "Icon list (c10a8b4)",
+      "type": "json",
+      "metadata": {
+        "items": [
+          "European Wasps: These notorious fellas are the most common invaders. The European wasp Melbourne colonies are aggressive when threatened and build nests inside walls, roof voids, and tree hollows",
+          "Paper Wasps: With long legs dangling mid-flight, the paper wasp Melbourne is less aggressive but still packs a painful sting. They usually build umbrella-shaped nests under eaves or branches.",
+          "Yellow Jackets: The bullies of the wasp world. They're aggressive, territorial, and love to set up nests underground or in hidden cavities. Beware—they don't just sting once!",
+          "Mud Daubers: Less aggressive and more artsy, this native wasp Australia species builds nests out of mud. They're usually not a threat but can still cause a ruckus around the home."
+        ]
+      }
+    },
+    {
+      "sort_order": 36,
+      "block_key": "content.text_8134f3a",
+      "section": "content",
+      "label": "Content block 8",
+      "type": "html",
+      "value": "<p><span >Each of these species requires tailored </span><b>wasp control services Melbourne</b><span > homeowners and businesses trust—something we specialise in at 7 States Pest Control.</span></p>"
+    },
+    {
+      "sort_order": 37,
+      "block_key": "content.heading_83fc421",
+      "section": "content",
+      "label": "Heading: Why Choose Our Wasp Control in Melbourne ?",
+      "type": "text",
+      "value": "Why Choose Our Wasp Control in Melbourne ?"
+    },
+    {
+      "sort_order": 38,
+      "block_key": "content.heading_a8fd6f7",
+      "section": "content",
+      "label": "Heading: Safe and Targeted Wasp Nest Control Melbourne",
+      "type": "text",
+      "value": "Safe and Targeted Wasp Nest Control Melbourne"
+    },
+    {
+      "sort_order": 39,
+      "block_key": "content.text_d42d05c",
+      "section": "content",
+      "label": "Content block 9",
+      "type": "html",
+      "value": "<p class=\"font-claude-response-body break-words whitespace-normal leading-[1.7]\">We prioritise your family’s safety, using advanced equipment and proven <strong>wasp removal Melbourne</strong> techniques to control and remove wasps without putting anyone at risk.</p>"
+    },
+    {
+      "sort_order": 40,
+      "block_key": "content.heading_1597f50",
+      "section": "content",
+      "label": "Heading: Same-Day Wasp Removal in Melbourne",
+      "type": "text",
+      "value": "Same-Day Wasp Removal in Melbourne"
+    },
+    {
+      "sort_order": 41,
+      "block_key": "content.text_4897726",
+      "section": "content",
+      "label": "Content block 10",
+      "type": "html",
+      "value": "<p><span >Wasp problems can’t wait. That’s why our </span><b>Melbourne wasp removal</b><span > team offers fast response with effective solutions for any </span><b>wasp infestation Melbourne</b><span > homes face—done quickly and cleanly.</span></p>"
+    },
+    {
+      "sort_order": 42,
+      "block_key": "content.heading_5d4f684",
+      "section": "content",
+      "label": "Heading: Environmentally Friendly Approach",
+      "type": "text",
+      "value": "Environmentally Friendly Approach"
+    },
+    {
+      "sort_order": 43,
+      "block_key": "content.text_77d524c",
+      "section": "content",
+      "label": "Content block 11",
+      "type": "html",
+      "value": "<p data-pm-slice=\"1 1 []\">Our treatments are safe for pets, children, and the environment—making our <strong>wasp removal residential Melbourne</strong> service both effective and responsible for every home</p>"
+    },
+    {
+      "sort_order": 44,
+      "block_key": "content.heading_bfc1b9f",
+      "section": "content",
+      "label": "Heading: Key Facts",
+      "type": "text",
+      "value": "Key Facts"
+    },
+    {
+      "sort_order": 45,
+      "block_key": "content.heading_4209442",
+      "section": "content",
+      "label": "Heading: Key Facts About Wasps in Melbourne",
+      "type": "text",
+      "value": "Key Facts About Wasps in Melbourne"
+    },
+    {
+      "sort_order": 46,
+      "block_key": "content.text_3e01318",
+      "section": "content",
+      "label": "Content block 12",
+      "type": "html",
+      "value": "<p><span >Wasps are fascinating yet often misunderstood insects. While they play an essential role in the ecosystem, their presence near homes and businesses can pose serious risks. Here are some important facts about </span><b>wasps in Melbourne</b><span >:</span></p>"
+    },
+    {
+      "sort_order": 47,
+      "block_key": "content.text_d5dddec",
+      "section": "content",
+      "label": "Content block 13",
+      "type": "html",
+      "value": "<ul><li aria-level={1} ><b>Wasps Are Excellent Pollinators:</b><span > Like bees, wasps contribute to pollination by transferring pollen between flowers. However, their aggressive behaviour and ability to sting repeatedly make them less welcome in residential areas. That’s why professional </span><b>wasp control Melbourne</b><span > services are crucial.</span></li><li aria-level={1} ><b>Different Types of Wasps in Melbourne:</b><span > Common species found locally include:</span><ul><li aria-level={2} ><b>European Wasp Melbourne:</b><span > Known for their yellow and black stripes, they are highly aggressive and the most common invader.</span></li><li aria-level={2} ><b>Paper Wasp Melbourne:</b><span > These wasps build nests resembling paper and are less aggressive but still capable of stinging.</span></li></ul></li><li aria-level={1} ><b>Wasp Nests Can Grow Rapidly:</b><span > A single queen can lay hundreds of eggs, leading to rapid nest expansion. If left unchecked, a </span><b>wasp nest Melbourne</b><span > homeowners discover can grow huge and pose serious threats. For safety, call professional </span><b>wasp nest control Melbourne</b><span > experts at the first sign of activity.</span></li><li aria-level={1} ><b>Wasps Can Sting Multiple Times:</b><span > Unlike bees, wasps can sting repeatedly without losing their stinger. This makes them particularly dangerous, especially for individuals allergic to wasp venom. In areas with frequent sightings of </span><b>wasps in Melbourne</b><span >, timely </span><b>wasp nest removal Melbourne</b><span > treatment is essential.</span></li><li aria-level={1} ><b>Why You Should Avoid DIY Nest Removal:</b><span > Attempting to remove a wasp nest without professional help can be dangerous. Wasps perceive sudden movements as threats, leading to aggressive behaviour. Many homeowners also ask “</span><b>why do wasps keep coming back</b><span >?” after DIY attempts—usually because the colony wasn’t fully eliminated. Hiring experts in </span><b>Melbourne wasp removal</b><span > ensures safe and effective treatment.</span></li><li aria-level={1} ><b>Wasp Removal Melbourne Cost:</b><span > While many property owners worry about </span><b>wasp removal Melbourne cost</b><span >, delaying action only leads to bigger infestations and more damage. Reliable pest control companies provide transparent pricing based on nest size and accessibility—whether you need service in the CBD, eastern suburbs, or </span><b>wasp removal Frankston</b><span > residents trust.</span></li><li aria-level={1}><p><span >Termite infestations can spread quickly if ignored, which is why timely</span> <a href=\"/our-services-termite-pest-control\"><b>termite control Melbourne</b></a><span > services are essential for protecting your property from costly damage.&nbsp;</span></p></li></ul>"
+    },
+    {
+      "sort_order": 48,
+      "block_key": "content.heading_2772224",
+      "section": "content",
+      "label": "Heading: Safely remove and control",
+      "type": "text",
+      "value": "Safely remove and control"
+    },
+    {
+      "sort_order": 49,
+      "block_key": "content.heading_4a41640",
+      "section": "content",
+      "label": "Heading: Wasp Removal Melbourne – Step-by-Step Process",
+      "type": "text",
+      "value": "Wasp Removal Melbourne – Step-by-Step Process"
+    },
+    {
+      "sort_order": 50,
+      "block_key": "content.text_d7374af",
+      "section": "content",
+      "label": "Content block 14",
+      "type": "html",
+      "value": "<p><span >At 7 States Pest Control, we have gained immense momentum by offering affordable </span><b>wasp removal Melbourne</b><span > residents trust. Our four-stage </span><b>wasp control services Melbourne</b><span > approach ensures quality living.</span></p>"
+    },
+    {
+      "sort_order": 51,
+      "block_key": "content.heading_113a5e2",
+      "section": "content",
+      "label": "Heading: 1. Inspection:",
+      "type": "text",
+      "value": "1. Inspection:"
+    },
+    {
+      "sort_order": 52,
+      "block_key": "content.text_a2624c7",
+      "section": "content",
+      "label": "Content block 15",
+      "type": "html",
+      "value": "<div class=\"elementor-element elementor-element-57329fa elementor-widget elementor-widget-text-editor\" data-element_type=\"widget\" data-id=\"57329fa\" data-settings=\"{&quot;ekit_we_effect_on&quot;:&quot;none&quot;}\" data-widget_type=\"text-editor.default\"><div class=\"elementor-widget-container\"><div class=\"elementor-element elementor-element-9407d80 elementor-widget elementor-widget-text-editor\" data-element_type=\"widget\" data-id=\"9407d80\" data-settings=\"{&quot;ekit_we_effect_on&quot;:&quot;none&quot;}\" data-widget_type=\"text-editor.default\"><div class=\"elementor-widget-container\"><p><b>Identify the nest:</b><span > The </span><b>wasp exterminator Melbourne</b><span > team will carefully locate the wasp nest, often hidden in hard-to-reach areas like roof eaves, attics, wall voids, or ground holes.</span></p><p><b>Assess the severity:</b><span > During a </span><b>wasp control Melbourne</b><span > inspection, we’ll evaluate the nest’s size and identify the species—such as European or paper wasps—to decide the right </span><b>wasp removal Melbourne</b><span > approach.</span></p></div></div></div></div>"
+    },
+    {
+      "sort_order": 53,
+      "block_key": "content.text_57329fa",
+      "section": "content",
+      "label": "Content block 16",
+      "type": "html",
+      "value": "<div class=\"elementor-element elementor-element-9407d80 elementor-widget elementor-widget-text-editor\" data-element_type=\"widget\" data-id=\"9407d80\" data-settings=\"{&quot;ekit_we_effect_on&quot;:&quot;none&quot;}\" data-widget_type=\"text-editor.default\"><div class=\"elementor-widget-container\"><p><b>Identify the nest:</b><span > The </span><b>wasp exterminator Melbourne</b><span > team will carefully locate the wasp nest, often hidden in hard-to-reach areas like roof eaves, attics, wall voids, or ground holes.</span></p><p><b>Assess the severity:</b><span > During a </span><b>wasp control Melbourne</b><span > inspection, we’ll evaluate the nest’s size and identify the species—such as European or paper wasps—to decide the right </span><b>wasp removal Melbourne</b><span > approach.</span></p></div></div>"
+    },
+    {
+      "sort_order": 54,
+      "block_key": "content.text_9407d80",
+      "section": "content",
+      "label": "Content block 17",
+      "type": "html",
+      "value": "<p><b>Identify the nest:</b><span > The </span><b>wasp exterminator Melbourne</b><span > team will carefully locate the wasp nest, often hidden in hard-to-reach areas like roof eaves, attics, wall voids, or ground holes.</span></p><p><b>Assess the severity:</b><span > During a </span><b>wasp control Melbourne</b><span > inspection, we’ll evaluate the nest’s size and identify the species—such as European or paper wasps—to decide the right </span><b>wasp removal Melbourne</b><span > approach.</span></p>"
+    },
+    {
+      "sort_order": 55,
+      "block_key": "content.heading_ce41091",
+      "section": "content",
+      "label": "Heading: 2. Treatment Planning:",
+      "type": "text",
+      "value": "2. Treatment Planning:"
+    },
+    {
+      "sort_order": 56,
+      "block_key": "content.text_bc8e2a4",
+      "section": "content",
+      "label": "Content block 18",
+      "type": "html",
+      "value": "<div class=\"elementor-element elementor-element-57329fa elementor-widget elementor-widget-text-editor\" data-element_type=\"widget\" data-id=\"57329fa\" data-settings=\"{&quot;ekit_we_effect_on&quot;:&quot;none&quot;}\" data-widget_type=\"text-editor.default\"><div class=\"elementor-widget-container\"><p><b>Choose the right method:</b><span > Based on the inspection, our wasp control expert will develop a customised plan for </span><b>wasp nest removal Melbourne</b><span > properties need. This plan may include:</span></p></div></div>"
+    },
+    {
+      "sort_order": 57,
+      "block_key": "content.text_57329fa_2",
+      "section": "content",
+      "label": "Content block 19",
+      "type": "html",
+      "value": "<div class=\"elementor-element elementor-element-9407d80 elementor-widget elementor-widget-text-editor\" data-element_type=\"widget\" data-id=\"9407d80\" data-settings=\"{&quot;ekit_we_effect_on&quot;:&quot;none&quot;}\" data-widget_type=\"text-editor.default\"><div class=\"elementor-widget-container\"><p><b>Identify the nest:</b><span > The </span><b>wasp exterminator Melbourne</b><span > team will carefully locate the wasp nest, often hidden in hard-to-reach areas like roof eaves, attics, wall voids, or ground holes.</span></p><p><b>Assess the severity:</b><span > During a </span><b>wasp control Melbourne</b><span > inspection, we’ll evaluate the nest’s size and identify the species—such as European or paper wasps—to decide the right </span><b>wasp removal Melbourne</b><span > approach.</span></p></div></div>"
+    },
+    {
+      "sort_order": 58,
+      "block_key": "content.list_315a0ed",
+      "section": "content",
+      "label": "Icon list (315a0ed)",
+      "type": "json",
+      "metadata": {
+        "items": [
+          "Chemical treatments: Effective insecticides are used for immediate results by our wasp exterminator Melbourne team.",
+          "Physical removal: In some cases, nests are manually removed at night, which is widely considered the best time to remove wasp nest safely.",
+          "Natural repellents: Eco-friendly methods, like peppermint oil or dust-based repellents, may deter wasps without harsh chemicals."
+        ]
+      }
+    },
+    {
+      "sort_order": 59,
+      "block_key": "content.heading_35840e7",
+      "section": "content",
+      "label": "Heading: 3. Safety Precautions:",
+      "type": "text",
+      "value": "3. Safety Precautions:"
+    },
+    {
+      "sort_order": 60,
+      "block_key": "content.text_138f9ac",
+      "section": "content",
+      "label": "Content block 20",
+      "type": "html",
+      "value": "<div class=\"elementor-element elementor-element-57329fa elementor-widget elementor-widget-text-editor\" data-element_type=\"widget\" data-id=\"57329fa\" data-settings=\"{&quot;ekit_we_effect_on&quot;:&quot;none&quot;}\" data-widget_type=\"text-editor.default\"><div class=\"elementor-widget-container\"><div class=\"elementor-element elementor-element-9407d80 elementor-widget elementor-widget-text-editor\" data-element_type=\"widget\" data-id=\"9407d80\" data-settings=\"{&quot;ekit_we_effect_on&quot;:&quot;none&quot;}\" data-widget_type=\"text-editor.default\"><div class=\"elementor-widget-container\"><div class=\"elementor-element elementor-element-9407d80 elementor-widget elementor-widget-text-editor\" data-element_type=\"widget\" data-id=\"9407d80\" data-settings=\"{&quot;ekit_we_effect_on&quot;:&quot;none&quot;}\" data-widget_type=\"text-editor.default\"><div class=\"elementor-widget-container\"><p><b>Protective gear:</b><span > For professional </span><b>wasp removal Melbourne</b><span > services, safety is crucial. Our experts wear protective suits, gloves, and face shields to avoid being stung.</span></p><p><b>Timing:</b><span > The extermination is typically carried out during cooler hours (early morning or evening) when </span><b>wasps in Melbourne</b><span > are less active, ensuring effective and safe </span><b>wasp control services Melbourne</b><span >-wide.</span></p></div></div></div></div></div></div>"
+    },
+    {
+      "sort_order": 61,
+      "block_key": "content.text_57329fa_3",
+      "section": "content",
+      "label": "Content block 21",
+      "type": "html",
+      "value": "<div class=\"elementor-element elementor-element-9407d80 elementor-widget elementor-widget-text-editor\" data-element_type=\"widget\" data-id=\"9407d80\" data-settings=\"{&quot;ekit_we_effect_on&quot;:&quot;none&quot;}\" data-widget_type=\"text-editor.default\"><div class=\"elementor-widget-container\"><p><b>Identify the nest:</b><span > The </span><b>wasp exterminator Melbourne</b><span > team will carefully locate the wasp nest, often hidden in hard-to-reach areas like roof eaves, attics, wall voids, or ground holes.</span></p><p><b>Assess the severity:</b><span > During a </span><b>wasp control Melbourne</b><span > inspection, we’ll evaluate the nest’s size and identify the species—such as European or paper wasps—to decide the right </span><b>wasp removal Melbourne</b><span > approach.</span></p></div></div>"
+    },
+    {
+      "sort_order": 62,
+      "block_key": "content.text_9407d80_2",
+      "section": "content",
+      "label": "Content block 22",
+      "type": "html",
+      "value": "<p><b>Identify the nest:</b><span > The </span><b>wasp exterminator Melbourne</b><span > team will carefully locate the wasp nest, often hidden in hard-to-reach areas like roof eaves, attics, wall voids, or ground holes.</span></p><p><b>Assess the severity:</b><span > During a </span><b>wasp control Melbourne</b><span > inspection, we’ll evaluate the nest’s size and identify the species—such as European or paper wasps—to decide the right </span><b>wasp removal Melbourne</b><span > approach.</span></p>"
+    },
+    {
+      "sort_order": 63,
+      "block_key": "content.text_9407d80_3",
+      "section": "content",
+      "label": "Content block 23",
+      "type": "html",
+      "value": "<p><b>Identify the nest:</b><span > The </span><b>wasp exterminator Melbourne</b><span > team will carefully locate the wasp nest, often hidden in hard-to-reach areas like roof eaves, attics, wall voids, or ground holes.</span></p><p><b>Assess the severity:</b><span > During a </span><b>wasp control Melbourne</b><span > inspection, we’ll evaluate the nest’s size and identify the species—such as European or paper wasps—to decide the right </span><b>wasp removal Melbourne</b><span > approach.</span></p>"
+    },
+    {
+      "sort_order": 64,
+      "block_key": "content.heading_fe2bf3a",
+      "section": "content",
+      "label": "Heading: 4. Wasp Nest Removal:",
+      "type": "text",
+      "value": "4. Wasp Nest Removal:"
+    },
+    {
+      "sort_order": 65,
+      "block_key": "content.text_1b7d436",
+      "section": "content",
+      "label": "Content block 24",
+      "type": "html",
+      "value": "<div class=\"elementor-element elementor-element-57329fa elementor-widget elementor-widget-text-editor\" data-element_type=\"widget\" data-id=\"57329fa\" data-settings=\"{&quot;ekit_we_effect_on&quot;:&quot;none&quot;}\" data-widget_type=\"text-editor.default\"><div class=\"elementor-widget-container\"><p><b>Application of treatment:</b><span > Our exterminator will apply the selected </span><b>wasp nest removal Melbourne</b><span > method directly to the nest—via spraying, dusting, or injecting professional-grade insecticides.</span></p><p><b>Nest removal:</b><span > Once inactive, the nest is fully removed and disposed of by our trusted </span><b>Melbourne wasp removal</b><span > team, ensuring complete elimination and lasting safety.</span></p></div></div>"
+    },
+    {
+      "sort_order": 66,
+      "block_key": "content.text_57329fa_4",
+      "section": "content",
+      "label": "Content block 25",
+      "type": "html",
+      "value": "<div class=\"elementor-element elementor-element-9407d80 elementor-widget elementor-widget-text-editor\" data-element_type=\"widget\" data-id=\"9407d80\" data-settings=\"{&quot;ekit_we_effect_on&quot;:&quot;none&quot;}\" data-widget_type=\"text-editor.default\"><div class=\"elementor-widget-container\"><p><b>Identify the nest:</b><span > The </span><b>wasp exterminator Melbourne</b><span > team will carefully locate the wasp nest, often hidden in hard-to-reach areas like roof eaves, attics, wall voids, or ground holes.</span></p><p><b>Assess the severity:</b><span > During a </span><b>wasp control Melbourne</b><span > inspection, we’ll evaluate the nest’s size and identify the species—such as European or paper wasps—to decide the right </span><b>wasp removal Melbourne</b><span > approach.</span></p></div></div>"
+    },
+    {
+      "sort_order": 67,
+      "block_key": "content.heading_4d43594",
+      "section": "content",
+      "label": "Heading: 5. Preventive Measures:",
+      "type": "text",
+      "value": "5. Preventive Measures:"
+    },
+    {
+      "sort_order": 68,
+      "block_key": "content.text_6be3fb3",
+      "section": "content",
+      "label": "Content block 26",
+      "type": "html",
+      "value": "<div class=\"elementor-element elementor-element-57329fa elementor-widget elementor-widget-text-editor\" data-element_type=\"widget\" data-id=\"57329fa\" data-settings=\"{&quot;ekit_we_effect_on&quot;:&quot;none&quot;}\" data-widget_type=\"text-editor.default\"><div class=\"elementor-widget-container\"><div class=\"elementor-element elementor-element-9407d80 elementor-widget elementor-widget-text-editor\" data-element_type=\"widget\" data-id=\"9407d80\" data-settings=\"{&quot;ekit_we_effect_on&quot;:&quot;none&quot;}\" data-widget_type=\"text-editor.default\"><div class=\"elementor-widget-container\"><div class=\"elementor-element elementor-element-9407d80 elementor-widget elementor-widget-text-editor\" data-element_type=\"widget\" data-id=\"9407d80\" data-settings=\"{&quot;ekit_we_effect_on&quot;:&quot;none&quot;}\" data-widget_type=\"text-editor.default\"><div class=\"elementor-widget-container\"><p><b>Sealing entry points:</b><span > As part of ongoing </span><b>wasp control Melbourne</b><span > strategies, our pest controller may seal any potential entry points in roofs, vents, or walls.</span></p><p><b>Recommendations:</b><span > To avoid future </span><b>wasps in Melbourne</b><span > properties and prevent any </span><b>wasp problem in backyard</b><span > spaces, you’ll receive guidance on reducing attractants—sealing garbage bins, covering sugary drinks, and keeping outdoor food areas clean.</span></p></div></div></div></div></div></div>"
+    },
+    {
+      "sort_order": 69,
+      "block_key": "content.text_57329fa_5",
+      "section": "content",
+      "label": "Content block 27",
+      "type": "html",
+      "value": "<div class=\"elementor-element elementor-element-9407d80 elementor-widget elementor-widget-text-editor\" data-element_type=\"widget\" data-id=\"9407d80\" data-settings=\"{&quot;ekit_we_effect_on&quot;:&quot;none&quot;}\" data-widget_type=\"text-editor.default\"><div class=\"elementor-widget-container\"><p><b>Identify the nest:</b><span > The </span><b>wasp exterminator Melbourne</b><span > team will carefully locate the wasp nest, often hidden in hard-to-reach areas like roof eaves, attics, wall voids, or ground holes.</span></p><p><b>Assess the severity:</b><span > During a </span><b>wasp control Melbourne</b><span > inspection, we’ll evaluate the nest’s size and identify the species—such as European or paper wasps—to decide the right </span><b>wasp removal Melbourne</b><span > approach.</span></p></div></div>"
+    },
+    {
+      "sort_order": 70,
+      "block_key": "content.text_9407d80_4",
+      "section": "content",
+      "label": "Content block 28",
+      "type": "html",
+      "value": "<p><b>Identify the nest:</b><span > The </span><b>wasp exterminator Melbourne</b><span > team will carefully locate the wasp nest, often hidden in hard-to-reach areas like roof eaves, attics, wall voids, or ground holes.</span></p><p><b>Assess the severity:</b><span > During a </span><b>wasp control Melbourne</b><span > inspection, we’ll evaluate the nest’s size and identify the species—such as European or paper wasps—to decide the right </span><b>wasp removal Melbourne</b><span > approach.</span></p>"
+    },
+    {
+      "sort_order": 71,
+      "block_key": "content.text_9407d80_5",
+      "section": "content",
+      "label": "Content block 29",
+      "type": "html",
+      "value": "<p><b>Identify the nest:</b><span > The </span><b>wasp exterminator Melbourne</b><span > team will carefully locate the wasp nest, often hidden in hard-to-reach areas like roof eaves, attics, wall voids, or ground holes.</span></p><p><b>Assess the severity:</b><span > During a </span><b>wasp control Melbourne</b><span > inspection, we’ll evaluate the nest’s size and identify the species—such as European or paper wasps—to decide the right </span><b>wasp removal Melbourne</b><span > approach.</span></p>"
+    },
+    {
+      "sort_order": 72,
+      "block_key": "content.heading_c874736",
+      "section": "content",
+      "label": "Heading: Bees vs. Wasps: Who's In Your Backyard?",
+      "type": "text",
+      "value": "Bees vs. Wasps: Who's In Your Backyard?"
+    },
+    {
+      "sort_order": 73,
+      "block_key": "content.heading_220fe4d",
+      "section": "content",
+      "label": "Heading: You’ve probably asked yourself, “Is it a bee or a wasp buzzi",
+      "type": "text",
+      "value": "You’ve probably asked yourself, “Is it a bee or a wasp buzzing around me?” While they both fly and sting, there are some crucial differences:"
+    },
+    {
+      "sort_order": 74,
+      "block_key": "content.text_3569d34",
+      "section": "content",
+      "label": "Content block 30",
+      "type": "html",
+      "value": "<table>\n                    <tbody>\n                      <tr>\n                        <td><b>Feature</b></td>\n                      </tr>\n                      <tr>\n                        <td><span >Body Shape</span></td>\n                      </tr>\n                      <tr>\n                        <td><span >Nesting Habits</span></td>\n                      </tr>\n                      <tr>\n                        <td><span >Behaviour</span></td>\n                      </tr>\n                      <tr>\n                        <td><span >Purpose&nbsp;</span></td>\n                      </tr>\n                    </tbody>\n                  </table>"
+    },
+    {
+      "sort_order": 75,
+      "block_key": "content.text_f70ac18",
+      "section": "content",
+      "label": "Content block 31",
+      "type": "html",
+      "value": "<table>\n                    <tbody>\n                      <tr>\n                        <td><b>Bees</b></td>\n                      </tr>\n                      <tr>\n                        <td><span >Round and fuzzy</span></td>\n                      </tr>\n                      <tr>\n                        <td><span >Prefer hollow trees and man-made hives</span></td>\n                      </tr>\n                      <tr>\n                        <td><span >Generally docile</span></td>\n                      </tr>\n                      <tr>\n                        <td><span >Pollinators, essential for the ecosystem</span></td>\n                      </tr>\n                    </tbody>\n                  </table>"
+    },
+    {
+      "sort_order": 76,
+      "block_key": "content.text_c2e6056",
+      "section": "content",
+      "label": "Content block 32",
+      "type": "html",
+      "value": "<table>\n                    <tbody>\n                      <tr>\n                        <td><b>Wasps</b></td>\n                      </tr>\n                      <tr>\n                        <td><span >Sleek and smooth</span></td>\n                      </tr>\n                      <tr>\n                        <td><span >Love eaves, roofs, and even underground</span></td>\n                      </tr>\n                      <tr>\n                        <td><span >Can be aggressive, especially if provoked</span></td>\n                      </tr>\n                      <tr>\n                        <td><span >Predators; they help control other insect populations</span></td>\n                      </tr>\n                    </tbody>\n                  </table>"
+    },
+    {
+      "sort_order": 77,
+      "block_key": "content.heading_6bfc109",
+      "section": "content",
+      "label": "Heading: Where To Look",
+      "type": "text",
+      "value": "Where To Look"
+    },
+    {
+      "sort_order": 78,
+      "block_key": "content.heading_6028ef3",
+      "section": "content",
+      "label": "Heading: Where to Look for Wasp Nests in Melbourne ?",
+      "type": "text",
+      "value": "Where to Look for Wasp Nests in Melbourne ?"
+    },
+    {
+      "sort_order": 79,
+      "block_key": "content.text_12f6a63",
+      "section": "content",
+      "label": "Content block 33",
+      "type": "html",
+      "value": "<div class=\"elementor-element elementor-element-de434cf elementor-widget elementor-widget-text-editor\" data-element_type=\"widget\" data-id=\"de434cf\" data-settings=\"{&quot;ekit_we_effect_on&quot;:&quot;none&quot;}\" data-widget_type=\"text-editor.default\"><div class=\"elementor-widget-container\"><p><span >If you suspect you have a wasp nest on your property, it’s essential to locate it as soon as possible to avoid potential stings and damage. A </span><b>wasp nest Melbourne</b><span > homes often hide can be built in various places, both inside and outside your home. Here’s where you should look:</span></p></div></div>"
+    },
+    {
+      "sort_order": 80,
+      "block_key": "content.text_de434cf_4",
+      "section": "content",
+      "label": "Content block 34",
+      "type": "html",
+      "value": "<div class=\"elementor-element elementor-element-de434cf elementor-widget elementor-widget-text-editor\" data-element_type=\"widget\" data-id=\"de434cf\" data-settings=\"{&quot;ekit_we_effect_on&quot;:&quot;none&quot;}\" data-widget_type=\"text-editor.default\"><div class=\"elementor-widget-container\"><div class=\"elementor-element elementor-element-a1039c3 elementor-widget elementor-widget-text-editor\" data-element_type=\"widget\" data-id=\"a1039c3\" data-settings=\"{&quot;ekit_we_effect_on&quot;:&quot;none&quot;}\" data-widget_type=\"text-editor.default\"><div class=\"elementor-widget-container\"><p><span >Living in Melbourne has its perks—until wasp season takes over. From September to April, the rise in temperatures brings aggressive </span><b>wasps in Melbourne</b><span > right into our backyards. If you’ve noticed nests or increased wasp activity, it’s time to call the </span><b>Melbourne wasp removal </b><span >specialists at</span><a href=\"/\"> <span >7 States Pest Control</span></a><span >.</span></p></div></div></div></div>"
+    },
+    {
+      "sort_order": 81,
+      "block_key": "content.list_3bf95a1",
+      "section": "content",
+      "label": "Icon list (3bf95a1)",
+      "type": "json",
+      "metadata": {
+        "items": [
+          "Around the Eaves and Roofline: Wasps often build nests in sheltered areas like eaves or along the roofline. Look for wasps flying in and out of small openings.",
+          "Under Decks, Sheds, and Outdoor Structures: Check dark, hidden corners beneath decks, sheds, or other structures where wasps may nest undisturbed.",
+          "In Hollow Trees or Bushes: Inspect hollow trees or dense bushes around your property, as these natural cavities are common nesting sites.",
+          "In Walls or Attics: Wasps may enter through gaps or vents and build nests inside walls or attics. Listen for buzzing sounds from these areas.",
+          "Underground or in Yard Debris: Some wasps nest in the ground or in piles of leaves, mulch, or yard debris. Watch for wasp activity near these spots."
+        ]
+      }
+    },
+    {
+      "sort_order": 82,
+      "block_key": "content.list_f1fe9c6",
+      "section": "content",
+      "label": "Icon list (f1fe9c6)",
+      "type": "json",
+      "metadata": {
+        "items": [
+          "Tailored Excellence: We don't do cookie-cutter solutions. Each nest is unique, and so is our approach to wasp nest removal Melbourne properties need.",
+          "Keep It Green: We care about the environment as much as you do. Our methods are effective yet eco-friendly.",
+          "Quick Service: We know how stressful a wasp invasion can be. That's why we offer same-day or next-day Melbourne wasp removal services.",
+          "Quality You Can Afford: Wasp removal Melbourne cost can sting, but our transparent wasp nest removal Melbourne cost estimates keep things budget-friendly without compromising on quality.",
+          "Experts At Your Service: Our team is made up of seasoned pros who know the ins and outs of professional wasp nest control and removal across Melbourne."
+        ]
+      }
+    },
+    {
+      "sort_order": 83,
+      "block_key": "content.heading_8d95ebe",
+      "section": "content",
+      "label": "Heading: Clients Reviews",
+      "type": "text",
+      "value": "Clients Reviews"
+    },
+    {
+      "sort_order": 84,
+      "block_key": "content.heading_441e36f",
+      "section": "content",
+      "label": "Heading: 7 States Pest Control for Reliable Pest Management Solutions",
+      "type": "text",
+      "value": "7 States Pest Control for Reliable Pest Management Solutions"
+    },
+    {
+      "sort_order": 85,
+      "block_key": "content.heading_3cd8ad3",
+      "section": "content",
+      "label": "Heading: Reviews of Our Pest Control Services",
+      "type": "text",
+      "value": "Reviews of Our Pest Control Services"
+    },
+    {
+      "sort_order": 86,
+      "block_key": "content.heading_c042cb5",
+      "section": "content",
+      "label": "Heading: EXCELLENT",
+      "type": "text",
+      "value": "EXCELLENT"
+    },
+    {
+      "sort_order": 87,
+      "block_key": "content.text_0e79f69",
+      "section": "content",
+      "label": "Content block 35",
+      "type": "html",
+      "value": "<p>Based on&nbsp;45 reviews</p>"
+    },
+    {
+      "sort_order": 88,
+      "block_key": "content.heading_58c7d50",
+      "section": "content",
+      "label": "Heading: Why 7 States Pest Control is Melbourne’s Go-To Wasp Removal ",
+      "type": "text",
+      "value": "Why 7 States Pest Control is Melbourne’s Go-To Wasp Removal Specialist ?"
+    },
+    {
+      "sort_order": 89,
+      "block_key": "content.heading_8d08d05",
+      "section": "content",
+      "label": "Heading: Stop Wasps from Taking Over – Call the Best Melbourne Wasp R",
+      "type": "text",
+      "value": "Stop Wasps from Taking Over – Call the Best Melbourne Wasp Removal Team"
+    },
+    {
+      "sort_order": 90,
+      "block_key": "content.text_d6bea4c",
+      "section": "content",
+      "label": "Content block 36",
+      "type": "html",
+      "value": "<p><span >At 7 States Pest Control, we don’t just remove wasps — we help prevent future infestations too. We also provide trusted </span><a href=\"/rodent-control-in-melbourne\"><b>rodent control in Melbourne</b></a><span > for homes and businesses.&nbsp;</span></p>"
+    },
+    {
+      "sort_order": 91,
+      "block_key": "content.heading_32945a7",
+      "section": "content",
+      "label": "Heading: Frequently Asked Questions",
+      "type": "text",
+      "value": "Frequently Asked Questions"
+    },
+    {
+      "sort_order": 92,
+      "block_key": "content.heading_4c825b4",
+      "section": "content",
+      "label": "Heading: Ideas to reality",
+      "type": "text",
+      "value": "Ideas to reality"
+    },
+    {
+      "sort_order": 93,
+      "block_key": "content.heading_7c67181",
+      "section": "content",
+      "label": "Heading: Talk to Us Today to Learn More",
+      "type": "text",
+      "value": "Talk to Us Today to Learn More"
+    },
+    {
+      "sort_order": 94,
+      "block_key": "content.text_dbd1d11",
+      "section": "content",
+      "label": "Content block 37",
+      "type": "html",
+      "value": "Do you have any specific questions about us, our services, or anything related to pest infestation issues? Call us today on&nbsp;<a href=\"tel:+61434660060\"> +61 434 660 060</a>&nbsp;or use our contact form to connect with our&nbsp;<b>7 States Pest Control</b>. You can get answers to your questions, get upfront quotes for the&nbsp;<b>7 States Pest Control</b>&nbsp;issues, and receive high-quality tailored services."
+    }
+  ]
+}
