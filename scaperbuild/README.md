@@ -34,3 +34,33 @@ npm run cms:sync
 ```
 
 Runs backend CMS extract/copy/seed scripts (see root `package.json`).
+
+---
+
+## Homepage Scraper (Python)
+
+Monorepo with three separate folders:
+
+### Output layout
+
+## Quick start
+
+### Frontend
+```bash
+cd frontend && npm install && npm run dev
+```
+
+### Scrape
+
+```bash
+npm run cms:sync
+```
+
+### View
+
+```bash
+python serve.py export/7statespestcontrol.com.au
+```
+
+- Home: `http://127.0.0.1:8765/home/home.html`
+- About: `http://127.0.0.1:8765/about-us/about-us.html`

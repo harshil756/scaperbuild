@@ -59,6 +59,16 @@ function collectPrerenderEntries() {
     entries.set(routePath, pageKey)
   }
 
+  // Location archive and suburb pages
+  for (const pageKey of Object.keys(PAGE_META)) {
+    if (!pageKey.startsWith('location_')) continue
+    const routePath =
+      pageKey === 'location_archive'
+        ? '/location'
+        : `/location/${pageKey.slice(9).replace(/_/g, '-')}`
+    entries.set(routePath, pageKey)
+  }
+
   return entries
 }
 
@@ -121,6 +131,13 @@ function writeRouteHtml(routePath, pageKey, templateHtml) {
   if (!seo?.title) {
     console.warn(`[prerender-seo] No SEO for pageKey=${pageKey} path=${routePath}`)
     return false
+  }
+
+  if (!seo.canonical) {
+    seo.canonical = `https://${SITE_HOST}${routePath}`
+  }
+  if (!seo.og?.['og:title']) {
+    seo.og = { ...seo.og, 'og:title': seo.title, 'og:description': seo.description, 'og:url': seo.canonical }
   }
 
   const html = injectSeoIntoHtml(templateHtml, seo)

@@ -27,6 +27,7 @@ const LocationFitzroyPageLazy = lazy(() => import('./pages/location/LocationFitz
 const LocationFlemingtonPageLazy = lazy(() => import('./pages/location/LocationFlemingtonPage.jsx'))
 const LocationFootscrayPageLazy = lazy(() => import('./pages/location/LocationFootscrayPage.jsx'))
 const LocationFrankstonPageLazy = lazy(() => import('./pages/location/LocationFrankstonPage.jsx'))
+const LocationGeelongPageLazy = lazy(() => import('./pages/location/LocationGeelongPage.jsx'))
 const LocationGlenroyPageLazy = lazy(() => import('./pages/location/LocationGlenroyPage.jsx'))
 const LocationHamptonPageLazy = lazy(() => import('./pages/location/LocationHamptonPage.jsx'))
 const LocationHighettPageLazy = lazy(() => import('./pages/location/LocationHighettPage.jsx'))
@@ -84,6 +85,7 @@ export const locationRoutes = [
   { path: 'location/flemington', element: withSuspense(<LocationFlemingtonPageLazy />) },
   { path: 'location/footscray', element: withSuspense(<LocationFootscrayPageLazy />) },
   { path: 'location/frankston', element: withSuspense(<LocationFrankstonPageLazy />) },
+  { path: 'location/geelong', element: withSuspense(<LocationGeelongPageLazy />) },
   { path: 'location/glenroy', element: withSuspense(<LocationGlenroyPageLazy />) },
   { path: 'location/hampton', element: withSuspense(<LocationHamptonPageLazy />) },
   { path: 'location/highett', element: withSuspense(<LocationHighettPageLazy />) },

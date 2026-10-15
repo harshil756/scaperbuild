@@ -790,6 +790,40 @@ export default function LocationArchivePage() {
                       </div>
                     </section>
                   </div>
+                  <div data-elementor-type="loop-item" data-elementor-id={9399} className="elementor elementor-9399 e-loop-item e-loop-item-geelong post-geelong location type-location status-publish hentry" data-elementor-post-type="elementor_library" data-custom-edit-handle={1}>
+                    <section className="elementor-section elementor-top-section elementor-element elementor-element-c661d7 elementor-section-full_width elementor-section-height-default elementor-section-height-default" data-id="c661d7" data-element_type="section" data-settings="{&quot;animation&quot;:&quot;none&quot;}">
+                      <div className="elementor-container elementor-column-gap-no">
+                        <div className="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-26503070" data-id={26503070} data-element_type="column">
+                          <div className="elementor-widget-wrap elementor-element-populated">
+                            <section className="elementor-section elementor-inner-section elementor-element elementor-element-145e6800 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="145e6800" data-element_type="section">
+                              <div className="elementor-container elementor-column-gap-default">
+                                <div className="elementor-column elementor-col-100 elementor-inner-column elementor-element elementor-element-4c6ff37d" data-id="4c6ff37d" data-element_type="column" data-settings="{&quot;animation&quot;:&quot;none&quot;}">
+                                  <div className="elementor-widget-wrap elementor-element-populated">
+                                    <div className="elementor-element elementor-element-fcb3335 elementor-position-left elementor-vertical-align-middle elementor-view-default elementor-mobile-position-top elementor-widget elementor-widget-icon-box" data-id="fcb3335" data-element_type="widget" data-widget_type="icon-box.default">
+                                      <div className="elementor-widget-container">
+                                        <div className="elementor-icon-box-wrapper">
+                                          <div className="elementor-icon-box-icon">
+                                            <Link to="/location/geelong" className="elementor-icon" tabIndex={-1} aria-label="Geelong">
+                                              <i aria-hidden="true" className="icon icon-map-marker1" />				</Link>
+                                          </div>
+                                          <div className="elementor-icon-box-content">
+                                            <h6 className="elementor-icon-box-title">
+                                              <Link to="/location/geelong">
+                                                Geelong						</Link>
+                                            </h6>
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </section>
+                          </div>
+                        </div>
+                      </div>
+                    </section>
+                  </div>
                   <div data-elementor-type="loop-item" data-elementor-id={9399} className="elementor elementor-9399 e-loop-item e-loop-item-9978 post-9978 location type-location status-publish hentry" data-elementor-post-type="elementor_library" data-custom-edit-handle={1}>
                     <section className="elementor-section elementor-top-section elementor-element elementor-element-c661d7 elementor-section-full_width elementor-section-height-default elementor-section-height-default" data-id="c661d7" data-element_type="section" data-settings="{&quot;animation&quot;:&quot;none&quot;}">
                       <div className="elementor-container elementor-column-gap-no">

@@ -1,41 +1,77 @@
 import { Link } from 'react-router-dom'
 import SitePhoneLink from '../../components/SitePhoneLink.jsx'
-import usePageMeta from '../../hooks/usePageMeta.js'
+import LocationPageLayout from '../../components/location/LocationPageLayout.jsx'
 
 export default function LocationCraigieburnPage() {
-  usePageMeta('location_craigieburn')
-
-  return (
-    <>
-      <div data-elementor-type="wp-post" data-elementor-id={9847} className="elementor elementor-9847" data-elementor-post-type="location">
-        <div className="elementor-element elementor-element-222427ed e-flex e-con-boxed e-con e-parent" data-id="222427ed" data-element_type="container">
-          <div className="e-con-inner">
-            <div className="elementor-element elementor-element-757fb984 elementor-widget elementor-widget-text-editor" data-id="757fb984" data-element_type="widget" data-widget_type="text-editor.default">
-              <div className="elementor-widget-container">
-                <h1><b>Pest Control Services in Craigieburn</b></h1>
-                <p><span style={{fontWeight: 400}}>Are you looking for reliable and affordable pest control services in Craigieburn? At </span><Link to="/"><b>7 States Pest Control</b></Link><span style={{fontWeight: 400}}>, we know how stressful it can be to deal with unwanted pests in your home or business. If left untreated, pests can quickly multiply, cause damage, and create serious health risks.</span></p>
-                <p><span style={{fontWeight: 400}}>From ants and cockroaches to termites, rodents, spiders, wasps, and bed bugs, pests can disrupt your comfort and peace of mind. Our mission is simple — to provide a </span><b>safe, clean, and pest-free environment</b><span style={{fontWeight: 400}}> for Craigieburn residents and businesses.</span></p>
-                <p><span style={{fontWeight: 400}}>With years of industry experience, our skilled pest control professionals deliver </span><b>customised solutions</b><span style={{fontWeight: 400}}> designed to eliminate pests and prevent future infestations. Whether it’s an urgent pest problem or a preventive treatment plan, we are here to help.</span></p>
-                <h2>&nbsp;</h2>
-                <h2><b>Why Choose 7 States Pest Control in Craigieburn?</b></h2>
-                <p><span style={{fontWeight: 400}}>Every property and every infestation is different. That’s why generic pest treatments often fail. At </span><b>7 States Pest Control</b><span style={{fontWeight: 400}}>, we carefully inspect your property, identify the pest issue, and create a </span><b>tailored treatment plan</b><span style={{fontWeight: 400}}> for long-lasting results.</span></p>
-                <p><span style={{fontWeight: 400}}>Here’s why Craigieburn customers trust us:</span></p>
-                <ul>
-                  <li style={{fontWeight: 400}} aria-level={1}><span style={{fontWeight: 400}}>Licensed and experienced pest control technicians</span><span style={{fontWeight: 400}}><br /><br /></span></li>
-                  <li style={{fontWeight: 400}} aria-level={1}><span style={{fontWeight: 400}}>Eco-friendly and family-safe pest treatments</span><span style={{fontWeight: 400}}><br /><br /></span></li>
-                  <li style={{fontWeight: 400}} aria-level={1}><span style={{fontWeight: 400}}>Custom pest control plans for homes and businesses</span><span style={{fontWeight: 400}}><br /><br /></span></li>
-                  <li style={{fontWeight: 400}} aria-level={1}><span style={{fontWeight: 400}}>Affordable pricing with no compromise on quality</span><span style={{fontWeight: 400}}><br /><br /></span></li>
-                  <li style={{fontWeight: 400}} aria-level={1}><span style={{fontWeight: 400}}>Quick response and professional customer support</span><span style={{fontWeight: 400}}><br /><br /></span></li>
-                </ul>
-                <p><span style={{fontWeight: 400}}>Our approach focuses not only on eliminating pests but also on </span><b>preventing them from returning</b><span style={{fontWeight: 400}}>.</span></p>
-              </div>
-            </div>
-            <div className="elementor-element elementor-element-2532ec1 elementor-widget elementor-widget-html" data-id="2532ec1" data-element_type="widget" data-widget_type="html.default">
-              <div className="elementor-widget-container">
-                <style dangerouslySetInnerHTML={{__html: "\n.readmore-content {\n    display: none;\n    margin-top: 10px;\n}\n.readmore-btn {\n    background:#7424f8;\n    color:#fff;\n    padding:10px 20px;\n    border:none;\n    cursor:pointer;\n    border-radius:5px;\n    font-size:15px;\n}\n" }} />
-                <div>
-                  <div id="moreContent" className="readmore-content">
-                    <h3><b>Our Comprehensive Pest Control Services in Craigieburn</b></h3>
+  const data = {
+    metaKey: 'location_craigieburn',
+    locationName: 'Craigieburn',
+    heroHeadline: 'Pest control in Craigieburn, done right the first time.',
+    heroSubhead:
+      'Cockroaches, termites, rodents, spiders and bed bugs — gone, with an eco-friendly treatment plan built around your property, not a one-size-fits-all spray.',
+    localHeading: 'Local pest control for Craigieburn homes and businesses.',
+    localLeadParagraphs: [
+      'Are you searching for reliable and affordable pest control services in Craigieburn? At 7 States Pest Control, we understand how frustrating and stressful it can be to deal with unwanted pests in your home or business.',
+      'From tiny ants and cockroaches to destructive termites, rodents, and bed bugs, pests can quickly disrupt your peace of mind and cause serious property damage if not addressed on time. We create a safe, clean, and pest-free environment backed by proven results.',
+    ],
+    signsTitle: 'Small Signs That Something Has Already Moved In',
+    signsSubtitle: 'Pests rarely announce themselves. The clues are usually small:',
+    signsList: [
+      "Tiny dark droppings in drawers, pantries or along skirting boards",
+      "Thin mud lines running up a wall or under the house",
+      "Timber that sounds hollow when you tap it",
+      "A stale, oily smell in a cupboard that never goes away",
+      "Chewed packaging, gnawed wiring or shredded paper",
+      "A pet scratching far more than usual"
+],
+    whyHeading: 'Why Choose 7 States Pest Control in Craigieburn?',
+    whyParagraphs: [
+      'When it comes to pest management, one-size-fits-all solutions simply do not work. Every property and every infestation is unique. At 7 States Pest Control, we take the time to carefully assess your pest issues and develop a customized treatment plan that delivers long-term results.',
+      'Our approach focuses not just on eliminating existing pests but also on preventing them from returning.',
+    ],
+    whyTrustSubtext: "Here's why Craigieburn residents and businesses trust us:",
+    whyBenefits: [
+      {
+            "num": "01",
+            "text": "Experienced and certified technicians"
+      },
+      {
+            "num": "02",
+            "text": "Eco-friendly and safe pest control treatments"
+      },
+      {
+            "num": "03",
+            "text": "Custom pest management plans tailored to your property"
+      },
+      {
+            "num": "04",
+            "text": "Affordable pricing without compromising on quality"
+      },
+      {
+            "num": "05",
+            "text": "Fast, responsive, and friendly customer service"
+      }
+],
+    servicesTitle: 'Pest treatments we offer in Craigieburn',
+    servicesSubtitle: 'Every plan starts with an inspection, so the treatment matches what is actually on your property.',
+    detailedTitle: 'Pest Control Services in Craigieburn for Homes and Businesses',
+    previewContent: (
+      <>
+        <p>
+        Are you searching for reliable and affordable pest control services in Craigieburn? At{' '}
+        <Link to="/"><b>7 States Pest Control</b></Link>, we understand how frustrating and stressful it can be to deal with unwanted pests in your home or business.
+      </p>
+      <p>
+        From tiny ants and cockroaches to destructive termites, rodents, and bed bugs, pests can quickly disrupt your peace of mind and cause serious property damage if not addressed on time. That’s why our mission is simple — to create a safe, clean, and pest-free environment for you, your family, and your customers.
+      </p>
+      <p>
+        With years of experience in the industry, our professional pest control team offers tailor-made solutions for every situation. Whether you are facing a sudden infestation or want to safeguard your property with preventative measures, we’ve got you covered.
+      </p>
+      </>
+    ),
+    expandedContent: (
+      <>
+        <h3><b>Our Comprehensive Pest Control Services in Craigieburn</b></h3>
                     <p>We offer complete pest management solutions for residential, commercial, and industrial properties across Craigieburn. No matter the pest or severity, our specialised treatments are designed for effective and long-term results.</p>
                     <h4><b>Ant Control &amp; Termite Treatment in Craigieburn</b></h4>
                     <p>Ant infestations may start small but can quickly spread throughout kitchens, pantries, and workplaces. Our ant control services target colonies at the source and stop reinfestation.</p>
@@ -61,183 +97,31 @@ export default function LocationCraigieburnPage() {
                     <h4><b>Protect Your Property with 7 States Pest Control</b></h4>
                     <p>At 7 States Pest Control, we are committed to keeping Craigieburn homes and businesses pest-free. From ants and cockroaches to termites, rodents, spiders, bed bugs, and wasps, we offer effective and reliable pest control solutions across Craigieburn and surrounding Melbourne suburbs.</p>
                     <p>📞 Call us at <SitePhoneLink bold /> today to book an inspection and take the first step toward a clean, safe, and pest-free property.</p>
-                  </div>
-                  <button className="readmore-btn" type="button">Read More</button>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div className="elementor-element elementor-element-1e8db78 e-flex e-con-boxed e-con e-parent" data-id="1e8db78" data-element_type="container">
-          <div className="e-con-inner">
-            <div className="elementor-element elementor-element-f769e22 elementor-widget elementor-widget-heading" data-id="f769e22" data-element_type="widget" data-widget_type="heading.default">
-              <div className="elementor-widget-container">
-                <h3 className="elementor-heading-title elementor-size-default">Reviews of Our Pest Control Services</h3>				</div>
-            </div>
-            <div className="elementor-element elementor-element-d3d4656 elementor-widget elementor-widget-heading" data-id="d3d4656" data-element_type="widget" data-widget_type="heading.default">
-              <div className="elementor-widget-container">
-                <h6 className="elementor-heading-title elementor-size-default">EXCELLENT</h6>				</div>
-            </div>
-            <div className="elementor-element elementor-element-d8387b5 elementor-widget elementor-widget-rating" data-id="d8387b5" data-element_type="widget" data-widget_type="rating.default">
-              <div className="elementor-widget-container">
-                <div className="e-rating" itemType="https://schema.org/Rating" itemScope itemProp="reviewRating">
-                  <meta itemProp="worstRating" content={0} />
-                  <meta itemProp="bestRating" content={5} />
-                  <div className="e-rating-wrapper" itemProp="ratingValue" content={5} role="img" aria-label="Rated 5 out of 5">
-                    <div className="e-icon">
-                      <div className="e-icon-wrapper e-icon-marked">
-                        <i aria-hidden="true" className="icon icon-star-1" />				</div>
-                      <div className="e-icon-wrapper e-icon-unmarked">
-                        <i aria-hidden="true" className="icon icon-star-1" />				</div>
-                    </div>
-                    <div className="e-icon">
-                      <div className="e-icon-wrapper e-icon-marked">
-                        <i aria-hidden="true" className="icon icon-star-1" />				</div>
-                      <div className="e-icon-wrapper e-icon-unmarked">
-                        <i aria-hidden="true" className="icon icon-star-1" />				</div>
-                    </div>
-                    <div className="e-icon">
-                      <div className="e-icon-wrapper e-icon-marked">
-                        <i aria-hidden="true" className="icon icon-star-1" />				</div>
-                      <div className="e-icon-wrapper e-icon-unmarked">
-                        <i aria-hidden="true" className="icon icon-star-1" />				</div>
-                    </div>
-                    <div className="e-icon">
-                      <div className="e-icon-wrapper e-icon-marked">
-                        <i aria-hidden="true" className="icon icon-star-1" />				</div>
-                      <div className="e-icon-wrapper e-icon-unmarked">
-                        <i aria-hidden="true" className="icon icon-star-1" />				</div>
-                    </div>
-                    <div className="e-icon">
-                      <div className="e-icon-wrapper e-icon-marked">
-                        <i aria-hidden="true" className="icon icon-star-1" />				</div>
-                      <div className="e-icon-wrapper e-icon-unmarked">
-                        <i aria-hidden="true" className="icon icon-star-1" />				</div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div className="elementor-element elementor-element-849dd87 elementor-widget elementor-widget-text-editor" data-id="849dd87" data-element_type="widget" data-widget_type="text-editor.default">
-              <div className="elementor-widget-container">
-                <p>Based on&nbsp;45 reviews</p>								</div>
-            </div>
-            <div className="elementor-element elementor-element-291826e elementor-widget-divider--view-line elementor-widget elementor-widget-divider" data-id="291826e" data-element_type="widget" data-widget_type="divider.default">
-              <div className="elementor-widget-container">
-                <div className="elementor-divider">
-                  <span className="elementor-divider-separator">
-                  </span>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div className="elementor-element elementor-element-a3378b4 e-flex e-con-boxed e-con e-parent" data-id="a3378b4" data-element_type="container">
-          <div className="e-con-inner">
-            <div className="elementor-element elementor-element-817c414 elementor-widget elementor-widget-heading" data-id="817c414" data-element_type="widget" data-settings="{&quot;_animation&quot;:&quot;none&quot;}" data-widget_type="heading.default">
-              <div className="elementor-widget-container">
-                <h2 className="elementor-heading-title elementor-size-default">Frequently Asked Questions</h2>				</div>
-            </div>
-            <div className="elementor-element elementor-element-4b93f8f elementor-widget elementor-widget-elementskit-accordion" data-id="4b93f8f" data-element_type="widget" data-widget_type="elementskit-accordion.default">
-              <div className="elementor-widget-container">
-                <div className="ekit-wid-con">
-                  <div className="elementskit-accordion accoedion-primary" id="accordion-6a4f56c8826b9">
-                    <div className="elementskit-card active">
-                      <div className="elementskit-card-header" id="primaryHeading-0-4b93f8f">
-                        <a href="#collapse-6f491396a4f56c8826b9" className="ekit-accordion--toggler elementskit-btn-link collapsed" data-ekit-toggle="collapse" data-target="#Collapse-6f491396a4f56c8826b9" aria-expanded="true" aria-controls="Collapse-6f491396a4f56c8826b9">
-                          <span className="ekit-accordion-title">1. What pests do you treat in Craigieburn?</span>
-                          <div className="ekit_accordion_icon_group">
-                            <div className="ekit_accordion_normal_icon">
-                              <i className="icon icon-down-arrow1" />                                  </div>
-                            <div className="ekit_accordion_active_icon">
-                              <i className="icon icon-up-arrow1" />                                  </div>
-                          </div>
-                        </a>
-                      </div>
-                      <div id="Collapse-6f491396a4f56c8826b9" className=" show collapse" aria-labelledby="primaryHeading-0-4b93f8f" data-parent="#accordion-6a4f56c8826b9">
-                        <div className="elementskit-card-body ekit-accordion--content">
-                          <p><span style={{fontWeight: 400}}>We treat ants, cockroaches, spiders, rodents, termites, bed bugs, wasps, and more. Our technicians handle both minor and severe infestations across Craigieburn.</span></p>                      </div>
-                      </div>
-                    </div>
-                    <div className="elementskit-card ">
-                      <div className="elementskit-card-header" id="primaryHeading-1-4b93f8f">
-                        <a href="#collapse-042b3786a4f56c8826b9" className="ekit-accordion--toggler elementskit-btn-link collapsed" data-ekit-toggle="collapse" data-target="#Collapse-042b3786a4f56c8826b9" aria-expanded="false" aria-controls="Collapse-042b3786a4f56c8826b9">
-                          <span className="ekit-accordion-title">2. How fast can you attend a pest issue?</span>
-                          <div className="ekit_accordion_icon_group">
-                            <div className="ekit_accordion_normal_icon">
-                              <i className="icon icon-down-arrow1" />                                  </div>
-                            <div className="ekit_accordion_active_icon">
-                              <i className="icon icon-up-arrow1" />                                  </div>
-                          </div>
-                        </a>
-                      </div>
-                      <div id="Collapse-042b3786a4f56c8826b9" className=" collapse" aria-labelledby="primaryHeading-1-4b93f8f" data-parent="#accordion-6a4f56c8826b9">
-                        <div className="elementskit-card-body ekit-accordion--content">
-                          <p><span style={{fontWeight: 400}}>We offer </span><b>same-day or next-day pest control services in Craigieburn</b><span style={{fontWeight: 400}}>, depending on availability. Urgent infestations are prioritised.</span></p>                      </div>
-                      </div>
-                    </div>
-                    <div className="elementskit-card ">
-                      <div className="elementskit-card-header" id="primaryHeading-2-4b93f8f">
-                        <a href="#collapse-fcc8da46a4f56c8826b9" className="ekit-accordion--toggler elementskit-btn-link collapsed" data-ekit-toggle="collapse" data-target="#Collapse-fcc8da46a4f56c8826b9" aria-expanded="false" aria-controls="Collapse-fcc8da46a4f56c8826b9">
-                          <span className="ekit-accordion-title">3. Are your pest treatments safe for families and pets?</span>
-                          <div className="ekit_accordion_icon_group">
-                            <div className="ekit_accordion_normal_icon">
-                              <i className="icon icon-down-arrow1" />                                  </div>
-                            <div className="ekit_accordion_active_icon">
-                              <i className="icon icon-up-arrow1" />                                  </div>
-                          </div>
-                        </a>
-                      </div>
-                      <div id="Collapse-fcc8da46a4f56c8826b9" className=" collapse" aria-labelledby="primaryHeading-2-4b93f8f" data-parent="#accordion-6a4f56c8826b9">
-                        <div className="elementskit-card-body ekit-accordion--content">
-                          <p><span style={{fontWeight: 400}}>Yes. Our treatments are </span><b>eco-friendly, approved, and safe</b><span style={{fontWeight: 400}}> when applied correctly. We strictly follow all safety guidelines.</span></p>                      </div>
-                      </div>
-                    </div>
-                    <div className="elementskit-card ">
-                      <div className="elementskit-card-header" id="primaryHeading-3-4b93f8f">
-                        <a href="#collapse-247bb1b6a4f56c8826b9" className="ekit-accordion--toggler elementskit-btn-link collapsed" data-ekit-toggle="collapse" data-target="#Collapse-247bb1b6a4f56c8826b9" aria-expanded="false" aria-controls="Collapse-247bb1b6a4f56c8826b9">
-                          <span className="ekit-accordion-title">4. How can I book pest control services in Craigieburn?</span>
-                          <div className="ekit_accordion_icon_group">
-                            <div className="ekit_accordion_normal_icon">
-                              <i className="icon icon-down-arrow1" />                                  </div>
-                            <div className="ekit_accordion_active_icon">
-                              <i className="icon icon-up-arrow1" />                                  </div>
-                          </div>
-                        </a>
-                      </div>
-                      <div id="Collapse-247bb1b6a4f56c8826b9" className=" collapse" aria-labelledby="primaryHeading-3-4b93f8f" data-parent="#accordion-6a4f56c8826b9">
-                        <div className="elementskit-card-body ekit-accordion--content">
-                          <p><span style={{fontWeight: 400}}>You can call us at </span><b>+61 434 660 060</b><span style={{fontWeight: 400}}>, submit an online enquiry, or message us to schedule an inspection.</span></p>                      </div>
-                      </div>
-                    </div>
-                    <div className="elementskit-card ">
-                      <div className="elementskit-card-header" id="primaryHeading-4-4b93f8f">
-                        <a href="#collapse-43386d36a4f56c8826b9" className="ekit-accordion--toggler elementskit-btn-link collapsed" data-ekit-toggle="collapse" data-target="#Collapse-43386d36a4f56c8826b9" aria-expanded="false" aria-controls="Collapse-43386d36a4f56c8826b9">
-                          <span className="ekit-accordion-title">5. Can pest infestations be prevented?</span>
-                          <div className="ekit_accordion_icon_group">
-                            <div className="ekit_accordion_normal_icon">
-                              <i className="icon icon-down-arrow1" />                                  </div>
-                            <div className="ekit_accordion_active_icon">
-                              <i className="icon icon-up-arrow1" />                                  </div>
-                          </div>
-                        </a>
-                      </div>
-                      <div id="Collapse-43386d36a4f56c8826b9" className=" collapse" aria-labelledby="primaryHeading-4-4b93f8f" data-parent="#accordion-6a4f56c8826b9">
-                        <div className="elementskit-card-body ekit-accordion--content">
-                          <p><span style={{fontWeight: 400}}>Yes. Regular inspections, sealing entry points, proper hygiene, waste management, and routine professional pest control greatly reduce pest risks. We also offer </span><b>custom prevention plans</b><span style={{fontWeight: 400}}> for Craigieburn properties.</span></p>                      </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>				</div>
-            </div>
-          </div>
-        </div>
-        <div className="elementor-element elementor-element-558f937 e-flex e-con-boxed e-con e-parent" data-id="558f937" data-element_type="container">
-          <div className="e-con-inner">
-          </div>
-        </div>
-      </div>
-      
-    </>
-  )
+      </>
+    ),
+    faqs: [
+      {
+            "question": "1. What pests do you treat in Craigieburn?",
+            "answer": "We treat ants, cockroaches, spiders, rodents, termites, bed bugs, wasps, and more. Our technicians handle both minor and severe infestations across Craigieburn."
+      },
+      {
+            "question": "2. How fast can you attend a pest issue?",
+            "answer": "We offer same-day or next-day pest control services in Craigieburn, depending on availability. Urgent infestations are prioritised."
+      },
+      {
+            "question": "3. Are your pest treatments safe for families and pets?",
+            "answer": "Yes. Our treatments are eco-friendly, approved, and safe when applied correctly. We strictly follow all safety guidelines."
+      },
+      {
+            "question": "4. How can I book pest control services in Craigieburn?",
+            "answer": "You can call us at +61 434 660 060, submit an online enquiry, or message us to schedule an inspection."
+      },
+      {
+            "question": "5. Can pest infestations be prevented?",
+            "answer": "Yes. Regular inspections, sealing entry points, proper hygiene, waste management, and routine professional pest control greatly reduce pest risks. We also offer custom prevention plans for Craigieburn properties."
+      }
+],
+  }
+
+  return <LocationPageLayout {...data} />
 }

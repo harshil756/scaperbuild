@@ -115,6 +115,11 @@ export const LOCATION_PAGE_META = {
     "description": "Looking for reliable pest control in Frankston ? Our expert team provides safe and effective pest removal services to protect your home or business.",
     "bodyClass": "wp-singular location-template-default single single-location postid-9971 wp-custom-logo wp-embed-responsive wp-theme-hello-elementor elementor-default elementor-kit-9 elementor-page elementor-page-9971 elementor-page-9421"
   },
+  "location_geelong": {
+    "title": "Pest Control Geelong: Rats, Termites, Cockroaches",
+    "description": "Rats in the roof or cockroaches in the kitchen? 7 States offers pest control Geelong locals rely on, with clear quotes and friendly technicians. Call us.",
+    "bodyClass": "wp-singular location-template-default single single-location postid-geelong wp-custom-logo wp-embed-responsive wp-theme-hello-elementor elementor-default elementor-kit-9 elementor-page"
+  },
   "location_glenroy": {
     "title": "Pest Control Glenroy- Expert Pest Removal Services.",
     "description": "Looking for reliable pest control in Glenroy ? Our expert team provides safe and effective pest removal services to protect your home or business.",
