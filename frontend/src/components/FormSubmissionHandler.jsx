@@ -46,6 +46,10 @@ export default function FormSubmissionHandler() {
       if (!(form instanceof HTMLFormElement) || !form.classList.contains('elementor-form')) {
         return
       }
+      // React-managed forms (e.g. LocationHero) submit and show errors themselves.
+      if (form.hasAttribute('data-react-submit')) {
+        return
+      }
 
       event.preventDefault()
       event.stopPropagation()

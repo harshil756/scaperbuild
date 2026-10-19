@@ -228,6 +228,24 @@ h1.loc-hero-title {
   box-shadow: 0 0 0 3px rgba(255, 90, 0, 0.15);
 }
 
+/* Scoped so it outranks the Elementor kit's `.elementor-kit-9 input:not(...)` border rule. */
+.loc-hero-card .loc-form-group .loc-form-input[aria-invalid='true'],
+.loc-hero-card .loc-form-group .loc-form-select[aria-invalid='true'] {
+  border-color: #dc2626;
+}
+
+.loc-hero-card .loc-form-group .loc-form-input[aria-invalid='true']:focus,
+.loc-hero-card .loc-form-group .loc-form-select[aria-invalid='true']:focus {
+  border-color: #dc2626;
+  box-shadow: 0 0 0 3px rgba(220, 38, 38, 0.15);
+}
+
+.loc-form-field-error {
+  color: #dc2626;
+  font-size: 12px;
+  margin: 5px 0 0;
+}
+
 .loc-form-btn {
   width: 100%;
   padding: 13px;

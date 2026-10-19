@@ -2,6 +2,67 @@ import { useState } from 'react'
 import { useNavigate } from 'react-router-dom'
 import PhoneNumberInput from '../PhoneNumberInput.jsx'
 import { submitLead } from '../../utils/submitLead.js'
+import {
+  PHONE_DIGITS_LENGTH,
+  isValidPhoneNumber,
+  normalizePhoneDigits,
+} from '../../utils/phoneNumber.js'
+
+// Form field key -> element id, in on-screen order (used to focus the first invalid field).
+const FIELD_IDS = {
+  name: 'hero-name',
+  email: 'hero-email',
+  phone: 'hero-phone',
+  issue: 'hero-issue',
+}
+
+const INPUT_NAME_TO_FIELD = {
+  'form_fields[name]': 'name',
+  'form_fields[email]': 'email',
+  'form_fields[mobile_number]': 'phone',
+  'form_fields[message]': 'issue',
+}
+
+// /api/leads payload key -> form field key.
+const API_FIELD_TO_FIELD = {
+  name: 'name',
+  email: 'email',
+  phone: 'phone',
+  message: 'issue',
+}
+
+function validateHeroForm(form) {
+  const errors = {}
+  const name = form.elements.namedItem('form_fields[name]')
+  const email = form.elements.namedItem('form_fields[email]')
+  const phone = form.elements.namedItem('form_fields[mobile_number]')
+
+  if (!name.value.trim()) {
+    errors.name = 'Please enter your name.'
+  }
+
+  if (!email.value.trim()) {
+    errors.email = 'Please enter your email address.'
+  } else if (email.validity.typeMismatch) {
+    errors.email = 'Please enter a valid email address.'
+  }
+
+  const phoneDigits = normalizePhoneDigits(phone.value)
+  if (!phoneDigits) {
+    errors.phone = 'Please enter your mobile number.'
+  } else if (!isValidPhoneNumber(phoneDigits)) {
+    errors.phone = `Please enter a valid ${PHONE_DIGITS_LENGTH}-digit mobile number.`
+  }
+
+  return errors
+}
+
+function focusFirstInvalid(errors) {
+  const first = Object.keys(FIELD_IDS).find((field) => errors[field])
+  if (first) {
+    document.getElementById(FIELD_IDS[first])?.focus()
+  }
+}
 
 export default function LocationHero({
   locationName = 'Melbourne',
@@ -18,6 +79,7 @@ export default function LocationHero({
   const navigate = useNavigate()
   const [submitting, setSubmitting] = useState(false)
   const [error, setError] = useState('')
+  const [fieldErrors, setFieldErrors] = useState({})
 
   const titleText = headline || `Pest control in ${locationName}, done right the first time.`
   const descText =
@@ -26,19 +88,71 @@ export default function LocationHero({
 
   async function handleFormSubmit(e) {
     e.preventDefault()
+    const form = e.currentTarget
     setError('')
+
+    const clientErrors = validateHeroForm(form)
+    setFieldErrors(clientErrors)
+    if (Object.keys(clientErrors).length > 0) {
+      focusFirstInvalid(clientErrors)
+      return
+    }
+
     setSubmitting(true)
 
     try {
-      const result = await submitLead(e.target)
-      e.target.reset()
+      const result = await submitLead(form)
+      form.reset()
       const redirect = result?.data?.redirect_url || '/thank-you'
       navigate(redirect)
     } catch (err) {
-      setError(err?.message || 'Something went wrong. Please check your details and try again.')
+      const serverFieldErrors = {}
+      const otherMessages = []
+      Object.entries(err?.fieldErrors || {}).forEach(([key, messages]) => {
+        const message = [].concat(messages).join(' ')
+        const field = API_FIELD_TO_FIELD[key]
+        if (field) {
+          serverFieldErrors[field] = message
+        } else {
+          otherMessages.push(message)
+        }
+      })
+
+      if (Object.keys(serverFieldErrors).length > 0) {
+        setFieldErrors(serverFieldErrors)
+        setError(otherMessages.join(' '))
+        focusFirstInvalid(serverFieldErrors)
+      } else {
+        setError(err?.message || 'Something went wrong. Please check your details and try again.')
+      }
     } finally {
       setSubmitting(false)
     }
+  }
+
+  function handleFieldInput(e) {
+    const field = INPUT_NAME_TO_FIELD[e.target.name]
+    if (field && fieldErrors[field]) {
+      setFieldErrors((prev) => {
+        const next = { ...prev }
+        delete next[field]
+        return next
+      })
+    }
+  }
+
+  function fieldA11yProps(field) {
+    return fieldErrors[field]
+      ? { 'aria-invalid': 'true', 'aria-describedby': `${FIELD_IDS[field]}-error` }
+      : {}
+  }
+
+  function renderFieldError(field) {
+    return fieldErrors[field] ? (
+      <p id={`${FIELD_IDS[field]}-error`} className="loc-form-field-error">
+        {fieldErrors[field]}
+      </p>
+    ) : null
   }
 
   function scrollToForm() {
@@ -107,7 +221,9 @@ export default function LocationHero({
               className="elementor-form"
               method="post"
               onSubmit={handleFormSubmit}
+              onInput={handleFieldInput}
               noValidate
+              data-react-submit
             >
               <input type="hidden" name="form_fields[suburb]" value={locationName} />
               <input type="hidden" name="referer_title" value={`Pest Control ${locationName}`} />
@@ -122,8 +238,28 @@ export default function LocationHero({
                   type="text"
                   className="loc-form-input"
                   placeholder="Your name"
+                  autoComplete="name"
                   required
+                  {...fieldA11yProps('name')}
                 />
+                {renderFieldError('name')}
+              </div>
+
+              <div className="loc-form-group">
+                <label className="loc-form-label" htmlFor="hero-email">
+                  Email
+                </label>
+                <input
+                  id="hero-email"
+                  name="form_fields[email]"
+                  type="email"
+                  className="loc-form-input"
+                  placeholder="you@example.com"
+                  autoComplete="email"
+                  required
+                  {...fieldA11yProps('email')}
+                />
+                {renderFieldError('email')}
               </div>
 
               <div className="loc-form-group">
@@ -136,7 +272,9 @@ export default function LocationHero({
                   placeholder="04xx xxx xxx"
                   required
                   className="loc-form-input"
+                  {...fieldA11yProps('phone')}
                 />
+                {renderFieldError('phone')}
               </div>
 
               <div className="loc-form-group">
@@ -149,6 +287,7 @@ export default function LocationHero({
                   className="loc-form-select"
                   defaultValue="Cockroaches"
                   required
+                  {...fieldA11yProps('issue')}
                 >
                   <option value="Cockroaches">Cockroaches</option>
                   <option value="Termites">Termites</option>
@@ -160,6 +299,7 @@ export default function LocationHero({
                   <option value="Commercial pest control">Commercial pest control</option>
                   <option value="General pest control">General pest control</option>
                 </select>
+                {renderFieldError('issue')}
               </div>
 
               <button

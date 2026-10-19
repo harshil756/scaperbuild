@@ -33,6 +33,7 @@ export default function PhoneNumberInput({
   required = true,
   initialCountry = 'au',
   className,
+  ...inputProps
 }) {
   const inputRef = useRef(null)
   const itiRef = useRef(null)
@@ -100,6 +101,7 @@ export default function PhoneNumberInput({
       required={required}
       title={`Enter a ${PHONE_DIGITS_LENGTH}-digit mobile number (without the leading 0).`}
       type="tel"
+      {...inputProps}
     />
   )
 }

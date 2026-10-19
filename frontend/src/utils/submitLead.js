@@ -75,7 +75,10 @@ export async function submitLead(form) {
   if (!response.ok) {
     const message = data.message || 'Unable to submit the form. Please try again.'
     const errors = data.errors ? Object.values(data.errors).flat().join(' ') : ''
-    throw new Error(errors || message)
+    const error = new Error(errors || message)
+    // Per-field Laravel validation messages, keyed by payload field (name, email, phone, ...).
+    error.fieldErrors = data.errors || null
+    throw error
   }
 
   return data
