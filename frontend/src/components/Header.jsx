@@ -3,16 +3,22 @@ import { Link, useLocation } from 'react-router-dom'
 import { mainNav } from '../config/navigation.js'
 import useMenu from '../hooks/useMenu.js'
 import useSiteContact from '../hooks/useSiteContact.jsx'
+import useSiteSettings from '../hooks/useSiteSettings.js'
+import { cmsMediaUrl, cmsText } from '../utils/cmsMedia.js'
 import NavMenu from './NavMenu.jsx'
 import { QUOTE_POPUP_HREF } from './QuotePopupProvider.jsx'
 
-const LOGO = '/assets/images/7-states-logo-1.png-1_b6fda841.webp'
-const LOGO_SRCSET = `${LOGO} 344w, /assets/images/7-states-logo-1.png-1-300x92_6c062508.webp 300w`
+const FALLBACK_LOGO = '/assets/images/7-states-logo-1.png-1_b6fda841.webp'
 const MOBILE_QUERY = '(max-width: 767px)'
 
 export default function Header() {
   const { phoneNumber, phoneUrl } = useSiteContact()
+  const { settings } = useSiteSettings()
   const navItems = useMenu('header', mainNav)
+  const logo = cmsMediaUrl(settings?.brand?.logo_url || settings?.brand?.logo, FALLBACK_LOGO)
+  const logoAlt = cmsText(settings?.brand?.logo_alt, '7 states Pest Control')
+  const stickyTitle = cmsText(settings?.header?.sticky_title, 'Same-Day Pest Control Available')
+  const quoteLabel = cmsText(settings?.header?.quote_button, 'Request A Quote')
   const [mobileOpen, setMobileOpen] = useState(false)
   const [sticky, setSticky] = useState(false)
   const [isMobile, setIsMobile] = useState(() => window.matchMedia(MOBILE_QUERY).matches)
@@ -80,7 +86,7 @@ export default function Header() {
         >
           <div className="header-sticky-bar">
             <a className="header-sticky-bar__call" href={phoneUrl}>
-              <span className="header-sticky-bar__call-title">Same-Day Pest Control Available</span>
+              <span className="header-sticky-bar__call-title">{stickyTitle}</span>
               <span className="header-sticky-bar__call-number">
                 <i aria-hidden="true" className="icon icon-phone1" />
                 Call {phoneNumber}
@@ -88,7 +94,7 @@ export default function Header() {
             </a>
             <a className="header-sticky-bar__quote" href={QUOTE_POPUP_HREF}>
               <i aria-hidden="true" className="icon icon-phone1" />
-              <span>Request A Quote</span>
+              <span>{quoteLabel}</span>
             </a>
           </div>
         </section>
@@ -110,12 +116,11 @@ export default function Header() {
                   <div className="elementor-widget-container">
                     <Link to="/">
                       <img
-                        alt="7 states Pest Control"
+                        alt={logoAlt}
                         className="attachment-full size-full wp-image-391"
                         height="105"
                         sizes="(max-width: 344px) 100vw, 344px"
-                        src={LOGO}
-                        srcSet={LOGO_SRCSET}
+                        src={logo}
                         width="344"
                       />
                     </Link>

@@ -16,7 +16,7 @@ export default function useBlogPostCms(slug) {
     setLoading(true)
     setError(null)
 
-    fetch(apiUrl(`/api/blog-posts/${slug}`))
+    fetch(apiUrl(`/api/blog-posts/${slug}`), { cache: 'no-store' })
       .then((res) => {
         if (!res.ok) throw new Error(`Blog post request failed (${res.status})`)
         return res.json()

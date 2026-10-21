@@ -1,7 +1,4 @@
-import { useState } from 'react'
-import { useNavigate } from 'react-router-dom'
 import PhoneNumberInput from '../PhoneNumberInput.jsx'
-import { submitLead } from '../../utils/submitLead.js'
 
 export default function LocationHero({
   locationName = 'Melbourne',
@@ -13,39 +10,22 @@ export default function LocationHero({
     { value: '24-48h', label: 'Response time' },
     { value: '45+', label: '5-star reviews' },
   ],
+  trustBadge,
+  ctaPrimary = 'Get a free quote',
+  ctaSecondary = 'Call now',
   phone = 'tel:+61434660060',
 }) {
-  const navigate = useNavigate()
-  const [submitting, setSubmitting] = useState(false)
-  const [error, setError] = useState('')
-
   const titleText = headline || `Pest control in ${locationName}, done right the first time.`
   const descText =
     subhead ||
     'Cockroaches, termites, rodents, spiders and bed bugs — gone, with an eco-friendly treatment plan built around your property, not a one-size-fits-all spray.'
-
-  async function handleFormSubmit(e) {
-    e.preventDefault()
-    setError('')
-    setSubmitting(true)
-
-    try {
-      const result = await submitLead(e.target)
-      e.target.reset()
-      const redirect = result?.data?.redirect_url || '/thank-you'
-      navigate(redirect)
-    } catch (err) {
-      setError(err?.message || 'Something went wrong. Please check your details and try again.')
-    } finally {
-      setSubmitting(false)
-    }
-  }
+  const badgeText = trustBadge || `4.9 rated 45+ ${locationName} reviews`
 
   function scrollToForm() {
     const el = document.getElementById('hero-quote-form')
     if (el) {
       el.scrollIntoView({ behavior: 'smooth' })
-      const firstInput = el.querySelector('input')
+      const firstInput = el.querySelector('input:not([type="hidden"])')
       firstInput?.focus()
     }
   }
@@ -57,16 +37,12 @@ export default function LocationHero({
           <div className="loc-hero-content">
             <div className="loc-trust-badge">
               <span className="loc-stars" aria-hidden="true">★★★★★</span>
-              <span>4.9 rated 45+ {locationName} reviews</span>
+              <span>{badgeText}</span>
             </div>
 
-            <h1 className="loc-hero-title">
-              {titleText}
-            </h1>
+            <h1 className="loc-hero-title">{titleText}</h1>
 
-            <p className="loc-hero-subhead">
-              {descText}
-            </p>
+            <p className="loc-hero-subhead">{descText}</p>
 
             <div className="loc-hero-actions">
               <button
@@ -75,14 +51,10 @@ export default function LocationHero({
                 onClick={scrollToForm}
                 id="hero-quote-cta"
               >
-                Get a free quote
+                {ctaPrimary}
               </button>
-              <a
-                href={phone}
-                className="loc-btn-secondary"
-                id="hero-call-cta"
-              >
-                Call now
+              <a href={phone} className="loc-btn-secondary" id="hero-call-cta">
+                {ctaSecondary}
               </a>
             </div>
 
@@ -96,81 +68,137 @@ export default function LocationHero({
             </div>
           </div>
 
-          <div className="loc-hero-card">
-            <h2 className="loc-card-title">Get your free quote</h2>
-            <p className="loc-card-subtitle">{locationName} technicians available this week.</p>
-
-            {error && <div className="loc-form-error" role="alert">{error}</div>}
-
-            <form
-              id="hero-quote-form"
-              className="elementor-form"
-              method="post"
-              onSubmit={handleFormSubmit}
-              noValidate
+          {/* Exact same hero quote form as school-and-hospitality (elementor-702) */}
+          <div className="loc-hero-quote elementor elementor-702">
+            <div
+              className="elementor-element elementor-element-2e06d80 e-con-full e-flex e-con e-child"
+              data-element_type="container"
+              data-id="2e06d80"
+              data-settings="{&quot;background_background&quot;:&quot;classic&quot;}"
             >
-              <input type="hidden" name="form_fields[suburb]" value={locationName} />
-              <input type="hidden" name="referer_title" value={`Pest Control ${locationName}`} />
-
-              <div className="loc-form-group">
-                <label className="loc-form-label" htmlFor="hero-name">
-                  Name
-                </label>
-                <input
-                  id="hero-name"
-                  name="form_fields[name]"
-                  type="text"
-                  className="loc-form-input"
-                  placeholder="Your name"
-                  required
-                />
-              </div>
-
-              <div className="loc-form-group">
-                <label className="loc-form-label" htmlFor="hero-phone">
-                  Phone
-                </label>
-                <PhoneNumberInput
-                  id="hero-phone"
-                  name="form_fields[mobile_number]"
-                  placeholder="04xx xxx xxx"
-                  required
-                  className="loc-form-input"
-                />
-              </div>
-
-              <div className="loc-form-group">
-                <label className="loc-form-label" htmlFor="hero-issue">
-                  What&apos;s the issue?
-                </label>
-                <select
-                  id="hero-issue"
-                  name="form_fields[message]"
-                  className="loc-form-select"
-                  defaultValue="Cockroaches"
-                  required
-                >
-                  <option value="Cockroaches">Cockroaches</option>
-                  <option value="Termites">Termites</option>
-                  <option value="Rodents">Rodents (Rats / Mice)</option>
-                  <option value="Spiders">Spiders</option>
-                  <option value="Bed bugs">Bed bugs</option>
-                  <option value="Ants">Ants</option>
-                  <option value="Wasps">Wasps</option>
-                  <option value="Commercial pest control">Commercial pest control</option>
-                  <option value="General pest control">General pest control</option>
-                </select>
-              </div>
-
-              <button
-                type="submit"
-                className="loc-form-btn"
-                id="hero-quote-submit"
-                disabled={submitting}
+              <div
+                className="elementor-element elementor-element-5a55322 elementor-widget elementor-widget-heading"
+                data-element_type="widget"
+                data-id="5a55322"
+                data-widget_type="heading.default"
               >
-                {submitting ? 'Submitting…' : 'Request free quote'}
-              </button>
-            </form>
+                <div className="elementor-widget-container">
+                  <h2 className="elementor-heading-title elementor-size-default">
+                    Pest Control {locationName}
+                  </h2>
+                </div>
+              </div>
+              <div
+                className="elementor-element elementor-element-25b984a elementor-widget elementor-widget-heading"
+                data-element_type="widget"
+                data-id="25b984a"
+                data-widget_type="heading.default"
+              >
+                <div className="elementor-widget-container">
+                  <h6 className="elementor-heading-title elementor-size-default">
+                    Have an enquiry? Leave us your details and we&apos;ll call you back during business hours.
+                  </h6>
+                </div>
+              </div>
+              <div
+                className="elementor-element elementor-element-a9f17ba elementor-button-align-center elementor-widget elementor-widget-form"
+                data-element_type="widget"
+                data-id="a9f17ba"
+                data-settings="{&quot;step_next_label&quot;:&quot;Next&quot;,&quot;step_previous_label&quot;:&quot;Previous&quot;,&quot;button_width&quot;:&quot;100&quot;,&quot;step_type&quot;:&quot;number_text&quot;,&quot;step_icon_shape&quot;:&quot;circle&quot;}"
+                data-widget_type="form.default"
+              >
+                <div className="elementor-widget-container">
+                  <form
+                    aria-label="New Form"
+                    className="elementor-form"
+                    id="hero-quote-form"
+                    method="post"
+                    name="New Form"
+                  >
+                    <input name="post_id" type="hidden" defaultValue={9421} />
+                    <input name="form_id" type="hidden" defaultValue="a9f17ba" />
+                    <input
+                      name="referer_title"
+                      type="hidden"
+                      defaultValue={`Pest Control ${locationName}`}
+                    />
+                    <input name="queried_id" type="hidden" defaultValue={9421} />
+                    <div className="elementor-form-fields-wrapper elementor-labels-">
+                      <div className="elementor-field-type-text elementor-field-group elementor-column elementor-field-group-first_name elementor-col-100 elementor-field-required">
+                        <label className="elementor-field-label elementor-screen-only" htmlFor="loc-form-field-first_name">
+                          Name
+                        </label>
+                        <input
+                          className="elementor-field elementor-size-md elementor-field-textual"
+                          id="loc-form-field-first_name"
+                          name="form_fields[first_name]"
+                          placeholder="Name"
+                          required
+                          type="text"
+                        />
+                      </div>
+                      <div className="elementor-field-type-email elementor-field-group elementor-column elementor-field-group-user_email elementor-col-100 elementor-field-required">
+                        <label className="elementor-field-label elementor-screen-only" htmlFor="loc-form-field-user_email">
+                          Email
+                        </label>
+                        <input
+                          className="elementor-field elementor-size-md elementor-field-textual"
+                          id="loc-form-field-user_email"
+                          name="form_fields[user_email]"
+                          placeholder="Email"
+                          required
+                          type="email"
+                        />
+                      </div>
+                      <div className="elementor-field-type-tel elementor-field-group elementor-column elementor-field-group-mobile_number elementor-col-100 elementor-field-required">
+                        <label className="elementor-field-label elementor-screen-only" htmlFor="loc-form-field-mobile_number">
+                          Mobile Number
+                        </label>
+                        <PhoneNumberInput
+                          id="loc-form-field-mobile_number"
+                          name="form_fields[mobile_number]"
+                          size="md"
+                        />
+                      </div>
+                      <div className="elementor-field-type-text elementor-field-group elementor-column elementor-field-group-suburb elementor-col-100">
+                        <label className="elementor-field-label elementor-screen-only" htmlFor="loc-form-field-suburb">
+                          Suburb
+                        </label>
+                        <input
+                          className="elementor-field elementor-size-md elementor-field-textual"
+                          id="loc-form-field-suburb"
+                          name="form_fields[suburb]"
+                          placeholder="Suburb"
+                          defaultValue={locationName}
+                          type="text"
+                        />
+                      </div>
+                      <div className="elementor-field-type-textarea elementor-field-group elementor-column elementor-field-group-message elementor-col-100 elementor-field-required">
+                        <label className="elementor-field-label elementor-screen-only" htmlFor="loc-form-field-message">
+                          Job description
+                        </label>
+                        <textarea
+                          className="elementor-field-textual elementor-field elementor-size-md"
+                          id="loc-form-field-message"
+                          name="form_fields[message]"
+                          placeholder="Job description"
+                          required
+                          rows={4}
+                          defaultValue=""
+                        />
+                      </div>
+                      <div className="elementor-field-group elementor-column elementor-field-type-submit elementor-col-100 e-form__buttons">
+                        <button className="elementor-button elementor-size-md" type="submit" id="hero-quote-submit">
+                          <span className="elementor-button-content-wrapper">
+                            <span className="elementor-button-text">Submit Quote</span>
+                          </span>
+                        </button>
+                      </div>
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>

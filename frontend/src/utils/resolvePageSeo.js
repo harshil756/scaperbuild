@@ -35,13 +35,14 @@ export function resolvePageSeo(pageKey, cmsPage = null) {
 
   if (!meta && !seoExtra.title && !seoExtra.canonical) return null
 
+  // Static Yoast export first, then CMS overrides so Filament edits win.
   const merged = {
-    title: meta?.title ?? seoExtra.title ?? '',
-    description: meta?.description ?? seoExtra.description ?? '',
+    title: meta?.title ?? '',
+    description: meta?.description ?? '',
     bodyClass: mergeBodyClass(meta?.bodyClass ?? '', cmsPage?.body_class),
+    ...seoExtra,
     ...(cmsPage?.seo_title ? { title: cmsPage.seo_title } : {}),
     ...(cmsPage?.seo_description ? { description: cmsPage.seo_description } : {}),
-    ...seoExtra,
   }
 
   const description =

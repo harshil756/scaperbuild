@@ -322,15 +322,16 @@ export default function HomePage() {
                 </div>
                 <div className="elementor-element elementor-element-56659ba elementor-widget elementor-widget-elementskit-heading" data-element_type="widget" data-id="56659ba" data-widget_type="elementskit-heading.default">
                   <div className="elementor-widget-container">
-                    <div className="ekit-wid-con"><div className="ekit-heading elementskit-section-title-wraper text_left ekit_heading_tablet- ekit_heading_mobile-"><h3 className="ekit-heading--title elementskit-section-title">Benefits of Same-Day Pest Control in Melbourne</h3></div></div> </div>
+                    <div className="ekit-wid-con"><div className="ekit-heading elementskit-section-title-wraper text_left ekit_heading_tablet- ekit_heading_mobile-"><h3 className="ekit-heading--title elementskit-section-title">{cmsText(c?.why_choose?.same_day_title, 'Benefits of Same-Day Pest Control in Melbourne')}</h3></div></div> </div>
                 </div>
                 <div className="elementor-element elementor-element-a1d5239 elementor-widget elementor-widget-text-editor" data-element_type="widget" data-id="a1d5239" data-widget_type="text-editor.default">
                   <div className="elementor-widget-container">
-                    <p><span style={{fontWeight: 400}}>When pests invade, quick action is crucial. Our </span><b>same day pest control Melbourne</b><span style={{fontWeight: 400}}> services ensure immediate response and resolution. Whether it’s ants, rodents, or termites, our prompt </span><b>emergency pest control Melbourne</b><span style={{fontWeight: 400}}> intervention prevents further damage and health risks, restoring comfort to your space swiftly.</span></p> </div>
+                    <CmsHtml html={c?.why_choose?.same_day_body ?? '<p><span style="font-weight:400">When pests invade, quick action is crucial. Our </span><b>same day pest control Melbourne</b><span style="font-weight:400"> services ensure immediate response and resolution. Whether it’s ants, rodents, or termites, our prompt </span><b>emergency pest control Melbourne</b><span style="font-weight:400"> intervention prevents further damage and health risks, restoring comfort to your space swiftly.</span></p>'} />
+                  </div>
                 </div>
                 <div className="elementor-element elementor-element-59f38b5 elementor-widget elementor-widget-elementskit-heading" data-element_type="widget" data-id="59f38b5" data-widget_type="elementskit-heading.default">
                   <div className="elementor-widget-container">
-                    <div className="ekit-wid-con"><div className="ekit-heading elementskit-section-title-wraper text_left ekit_heading_tablet- ekit_heading_mobile-"><h3 className="ekit-heading--title elementskit-section-title">Comprehensive Pest Control Services in Melbourne</h3></div></div> </div>
+                    <div className="ekit-wid-con"><div className="ekit-heading elementskit-section-title-wraper text_left ekit_heading_tablet- ekit_heading_mobile-"><h3 className="ekit-heading--title elementskit-section-title">{cmsText(c?.why_choose?.services_heading, 'Comprehensive Pest Control Services in Melbourne')}</h3></div></div> </div>
                 </div>
                 <section className="elementor-section elementor-inner-section elementor-element elementor-element-563b78d2 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-element_type="section" data-id="563b78d2">
                   <div className="elementor-container elementor-column-gap-no">
@@ -349,7 +350,8 @@ export default function HomePage() {
                         </div>
                         <div className="elementor-element elementor-element-5076de83 elementor-widget elementor-widget-text-editor" data-element_type="widget" data-id="5076de83" data-widget_type="text-editor.default">
                           <div className="elementor-widget-container">
-                            <ul><li aria-level={1} style={{fontWeight: 400}}><b>Residential Pest Control</b><span style={{fontWeight: 400}}> Protect your home with our </span><b>home pest control Melbourne</b><span style={{fontWeight: 400}}> services. We tailor our approach to address your specific pest issues, offering peace of mind knowing your home is safe and pest-free.</span></li></ul> </div>
+                            <CmsHtml html={c?.why_choose?.residential_html ?? '<ul><li aria-level="1" style="font-weight:400"><b>Residential Pest Control</b><span style="font-weight:400"> Protect your home with our </span><b>home pest control Melbourne</b><span style="font-weight:400"> services. We tailor our approach to address your specific pest issues, offering peace of mind knowing your home is safe and pest-free.</span></li></ul>'} />
+                          </div>
                         </div>
                       </div>
                     </div>
@@ -368,7 +370,8 @@ export default function HomePage() {
                         </div>
                         <div className="elementor-element elementor-element-2cd384c4 elementor-widget elementor-widget-text-editor" data-element_type="widget" data-id="2cd384c4" data-widget_type="text-editor.default">
                           <div className="elementor-widget-container">
-                            <ul><li aria-level={1} style={{fontWeight: 400}}><b>Commercial Pest Control</b><span style={{fontWeight: 400}}> Businesses in </span><b>Melbourne CBD</b><span style={{fontWeight: 400}}> rely on us for comprehensive commercial </span><b>pest control Melbourne</b><span style={{fontWeight: 400}}> solutions. From restaurants to office buildings, we customize plans to meet the unique needs of your business, ensuring a clean and hygienic environment for your staff and customers.</span></li></ul> </div>
+                            <CmsHtml html={c?.why_choose?.commercial_html ?? '<ul><li aria-level="1" style="font-weight:400"><b>Commercial Pest Control</b><span style="font-weight:400"> Businesses in </span><b>Melbourne CBD</b><span style="font-weight:400"> rely on us for comprehensive commercial </span><b>pest control Melbourne</b><span style="font-weight:400"> solutions. From restaurants to office buildings, we customize plans to meet the unique needs of your business, ensuring a clean and hygienic environment for your staff and customers.</span></li></ul>'} />
+                          </div>
                         </div>
                       </div>
                     </div>
@@ -391,7 +394,8 @@ export default function HomePage() {
                         </div>
                         <div className="elementor-element elementor-element-134d29e7 elementor-widget elementor-widget-text-editor" data-element_type="widget" data-id="134d29e7" data-widget_type="text-editor.default">
                           <div className="elementor-widget-container">
-                            <ul><li aria-level={1} style={{fontWeight: 400}}><b>Eco-Friendly Pest Control</b><span style={{fontWeight: 400}}> For environmentally conscious clients, we offer </span><b>affordable pest control Melbourne</b><span style={{fontWeight: 400}}> eco-friendly options. Our natural and non-toxic </span><b>pest removal Melbourne</b><span style={{fontWeight: 400}}> methods effectively manage pests while safeguarding the environment and minimizing impact on surrounding ecosystems.</span></li></ul> </div>
+                            <CmsHtml html={c?.why_choose?.eco_html ?? '<ul><li aria-level="1" style="font-weight:400"><b>Eco-Friendly Pest Control</b><span style="font-weight:400"> For environmentally conscious clients, we offer </span><b>affordable pest control Melbourne</b><span style="font-weight:400"> eco-friendly options. Our natural and non-toxic </span><b>pest removal Melbourne</b><span style="font-weight:400"> methods effectively manage pests while safeguarding the environment and minimizing impact on surrounding ecosystems.</span></li></ul>'} />
+                          </div>
                         </div>
                       </div>
                     </div>
@@ -407,7 +411,8 @@ export default function HomePage() {
                       <div className="elementor-widget-wrap elementor-element-populated">
                         <div className="elementor-element elementor-element-49af4f48 elementor-widget elementor-widget-text-editor" data-element_type="widget" data-id="49af4f48" data-widget_type="text-editor.default">
                           <div className="elementor-widget-container">
-                            <p><span style={{fontWeight: 400}}>At 7 States Pest Control, we are committed to delivering exceptional pest control service in Melbourne, including reliable </span><Link to="/wasp-removal-melbourne"><b>wasp control Melbourne</b></Link><span style={{fontWeight: 400}}> solutions. Trust 7 States Pest Control to keep your pest control Melbourne CBD property pest-free and comfortable year-round. </span></p> </div>
+                            <CmsHtml html={c?.why_choose?.closing_html ?? '<p><span style="font-weight:400">At 7 States Pest Control, we are committed to delivering exceptional pest control service in Melbourne, including reliable </span><a href="/wasp-removal-melbourne"><b>wasp control Melbourne</b></a><span style="font-weight:400"> solutions. Trust 7 States Pest Control to keep your pest control Melbourne CBD property pest-free and comfortable year-round. </span></p>'} />
+                          </div>
                         </div>
                       </div>
                     </div>
@@ -857,69 +862,65 @@ export default function HomePage() {
           <div className="e-con-inner">
             <div className="elementor-element elementor-element-e163878 elementor-widget elementor-widget-elementskit-blog-posts" data-element_type="widget" data-id="e163878" data-widget_type="elementskit-blog-posts.default">
               <div className="elementor-widget-container">
-                <div className="ekit-wid-con"> <div className="row post-items" id="post-items--e163878">
-                    <div className="col-lg-4 col-md-6">
-                      <div className="elementskit-post-image-card">
-                        <div className="elementskit-entry-header">
-                          <Link className="elementskit-entry-thumb" to="/why-melbourne-homes-need-professional-termite-pest-control/">
-                            <img alt="Why Melbourne Homes Need Professional Termite Pest Control" decoding="async" src="/assets/images/WhatsApp-Image-2026-05-25-at-11.50.58-AM_83fa8176.jpeg" />
-                          </Link>
-                        </div>
-                        <div className="elementskit-post-body">
-                          <h2 className="entry-title">
-                            <Link to="/why-melbourne-homes-need-professional-termite-pest-control/">
-                              Why Melbourne Homes Need Professional Termite Pest Control					</Link>
-                          </h2>
-                          <p>Termites are quiet workers. You will not hear them. You will not see them moving around your home in broad daylight. Yet they can quietly chew…</p>
-                          <div className="btn-wraper">
-                            <Link className="elementskit-btn whitespace--normal" to="/why-melbourne-homes-need-professional-termite-pest-control/" id>
-                              Learn more                                       </Link>
+                <div className="ekit-wid-con">
+                  <div className="row post-items" id="post-items--e163878">
+                    {(c?.blog?.posts?.length
+                      ? c.blog.posts
+                      : [
+                          {
+                            title: 'Why Melbourne Homes Need Professional Termite Pest Control',
+                            excerpt: 'Termites are quiet workers. You will not hear them. You will not see them moving around your home in broad daylight. Yet they can quietly chew…',
+                            link: '/why-melbourne-homes-need-professional-termite-pest-control/',
+                            image_path: '/assets/images/WhatsApp-Image-2026-05-25-at-11.50.58-AM_83fa8176.jpeg',
+                            alt: 'Why Melbourne Homes Need Professional Termite Pest Control',
+                          },
+                          {
+                            title: '5 Myths About Wasp Removal Melbourne You Should Stop Believing',
+                            excerpt: 'There is a lot of bad advice out there when it comes to dealing with wasps. People share tips at backyard barbecues, on Facebook groups, and…',
+                            link: '/5-myths-about-wasp-removal-melbourne-you-should-stop-believing/',
+                            image_path: '/assets/images/WhatsApp-Image-2026-05-25-at-11.52.11-AM_ddd44793.jpeg',
+                            alt: '5 Myths About Wasp Removal Melbourne You Should Stop Believing',
+                          },
+                          {
+                            title: 'The Smart Homeowner’s Guide to Termite Barrier Protection in Melbourne',
+                            excerpt: 'If you own a home in Melbourne, you have probably heard about termite damage at least once. Maybe a neighbour found a hollow door frame. Maybe…',
+                            link: '/the-smart-homeowners-guide-to-termite-barrier-protection-in-melbourne/',
+                            image_path: '/assets/images/WhatsApp-Image-2026-05-25-at-11.53.29-AM_6379c2f3.jpeg',
+                            alt: 'The Smart Homeowner’s Guide to Termite Barrier Protection in Melbourne',
+                          },
+                        ]
+                    ).map((post) => {
+                      const href = (post.link || '#').replace(/\/$/, '') || '/'
+                      const img = cmsMediaUrl(
+                        post.image_url || post.image_path || post.image_src,
+                        '/assets/images/WhatsApp-Image-2026-05-25-at-11.50.58-AM_83fa8176.jpeg',
+                      )
+                      return (
+                        <div className="col-lg-4 col-md-6" key={post.slug || post.title || href}>
+                          <div className="elementskit-post-image-card">
+                            <div className="elementskit-entry-header">
+                              <Link className="elementskit-entry-thumb" to={href}>
+                                <img alt={cmsText(post.alt, post.title || '')} decoding="async" src={img} />
+                              </Link>
+                            </div>
+                            <div className="elementskit-post-body">
+                              <h2 className="entry-title">
+                                <Link to={href}>{cmsText(post.title, '')}</Link>
+                              </h2>
+                              <p>{cmsText(post.excerpt, '')}</p>
+                              <div className="btn-wraper">
+                                <Link className="elementskit-btn whitespace--normal" to={href}>
+                                  Learn more
+                                </Link>
+                              </div>
+                            </div>
                           </div>
                         </div>
-                      </div>
-                    </div>
-                    <div className="col-lg-4 col-md-6">
-                      <div className="elementskit-post-image-card">
-                        <div className="elementskit-entry-header">
-                          <Link className="elementskit-entry-thumb" to="/5-myths-about-wasp-removal-melbourne-you-should-stop-believing/">
-                            <img alt="5 Myths About Wasp Removal Melbourne You Should Stop Believing" decoding="async" src="/assets/images/WhatsApp-Image-2026-05-25-at-11.52.11-AM_ddd44793.jpeg" />
-                          </Link>
-                        </div>
-                        <div className="elementskit-post-body">
-                          <h2 className="entry-title">
-                            <Link to="/5-myths-about-wasp-removal-melbourne-you-should-stop-believing/">
-                              5 Myths About Wasp Removal Melbourne You Should Stop Believing					</Link>
-                          </h2>
-                          <p>There is a lot of bad advice out there when it comes to dealing with wasps. People share tips at backyard barbecues, on Facebook groups, and…</p>
-                          <div className="btn-wraper">
-                            <Link className="elementskit-btn whitespace--normal" to="/5-myths-about-wasp-removal-melbourne-you-should-stop-believing/" id>
-                              Learn more                                       </Link>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <div className="col-lg-4 col-md-6">
-                      <div className="elementskit-post-image-card">
-                        <div className="elementskit-entry-header">
-                          <Link className="elementskit-entry-thumb" to="/the-smart-homeowners-guide-to-termite-barrier-protection-in-melbourne/">
-                            <img alt="The Smart Homeowner’s Guide to Termite Barrier Protection in Melbourne" decoding="async" src="/assets/images/WhatsApp-Image-2026-05-25-at-11.53.29-AM_6379c2f3.jpeg" />
-                          </Link>
-                        </div>
-                        <div className="elementskit-post-body">
-                          <h2 className="entry-title">
-                            <Link to="/the-smart-homeowners-guide-to-termite-barrier-protection-in-melbourne/">
-                              The Smart Homeowner’s Guide to Termite Barrier Protection in Melbourne					</Link>
-                          </h2>
-                          <p>If you own a home in Melbourne, you have probably heard about termite damage at least once. Maybe a neighbour found a hollow door frame. Maybe…</p>
-                          <div className="btn-wraper">
-                            <Link className="elementskit-btn whitespace--normal" to="/the-smart-homeowners-guide-to-termite-barrier-protection-in-melbourne/" id>
-                              Learn more                                       </Link>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
+                      )
+                    })}
                   </div>
-                </div> </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>

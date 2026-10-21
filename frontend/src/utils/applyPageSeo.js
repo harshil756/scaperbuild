@@ -106,10 +106,17 @@ export function applyPageSeo(meta, seoExtra) {
     }
   }
 
+  // Always replace head JSON-LD so location/other pages don't keep the homepage graph.
   if (merged.jsonLd) {
     const { el, previous, created } = upsertJsonLd(merged.jsonLd)
     state.jsonLd = { el, previous, created }
     if (created) state.created.push(el)
+  } else {
+    const existing = document.querySelector('script.yoast-schema-graph')
+    if (existing) {
+      state.jsonLd = { el: existing, previous: existing.textContent, created: false }
+      existing.textContent = ''
+    }
   }
 
   return state

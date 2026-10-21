@@ -9,8 +9,9 @@ function isCorruptCmsLiteral(value) {
 }
 
 /**
- * Render CMS HTML safely. Corrupt wire-script literals and empty values fall back
- * so service pages never blank out while the API loads or if a block is bad.
+ * Render CMS HTML safely.
+ * - null/undefined / corrupt literals → fallback (loading or missing field)
+ * - empty string → intentional CMS clear (render nothing)
  */
 export default function CmsHtml({
   html,
@@ -21,9 +22,14 @@ export default function CmsHtml({
 }) {
   const contact = useSiteContact()
 
-  const resolved = isCorruptCmsLiteral(html) || html == null || html === ''
-    ? fallback
-    : html
+  let resolved
+  if (isCorruptCmsLiteral(html) || html == null) {
+    resolved = fallback
+  } else if (html === '') {
+    resolved = ''
+  } else {
+    resolved = html
+  }
 
   if (!resolved) return null
 

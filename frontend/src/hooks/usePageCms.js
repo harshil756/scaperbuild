@@ -14,7 +14,7 @@ export default function usePageCms(slug) {
     setLoading(true)
     setError(null)
 
-    fetch(apiUrl(`/api/pages/${slug}`))
+    fetch(apiUrl(`/api/pages/${slug}`), { cache: 'no-store' })
       .then((res) => {
         if (!res.ok) throw new Error(`CMS request failed (${res.status})`)
         return res.json()

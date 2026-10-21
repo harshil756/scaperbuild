@@ -7,9 +7,10 @@ import {
 } from '../config/navigation.js'
 import useMenu from '../hooks/useMenu.js'
 import useSiteContact from '../hooks/useSiteContact.jsx'
+import useSiteSettings from '../hooks/useSiteSettings.js'
+import { cmsMediaUrl, cmsText } from '../utils/cmsMedia.js'
 
-const LOGO = '/assets/images/7-states-logo-1.png-1_b6fda841.webp'
-const LOGO_SRCSET = `${LOGO} 344w, /assets/images/7-states-logo-1.png-1-300x92_6c062508.webp 300w`
+const FALLBACK_LOGO = '/assets/images/7-states-logo-1.png-1_b6fda841.webp'
 
 function FooterLinkList({ items }) {
   return (
@@ -59,10 +60,22 @@ function SocialIcon({ link }) {
 
 export default function Footer() {
   const { phoneNumber, phoneUrl, emailAddress, emailUrl, address } = useSiteContact()
+  const { settings } = useSiteSettings()
   const col1 = useMenu('footer_col_1', footerServicesCol1)
   const col2 = useMenu('footer_col_2', footerServicesCol2)
   const col3 = useMenu('footer_col_3', footerServicesCol3)
   const social = useMenu('footer_social', socialLinks)
+  const logo = cmsMediaUrl(settings?.brand?.logo_url || settings?.brand?.logo, FALLBACK_LOGO)
+  const logoAlt = cmsText(settings?.brand?.logo_alt, '7 states Pest Control')
+  const newsletterTitle = cmsText(settings?.footer?.newsletter_title, 'Newsletter Subscribe')
+  const newsletterPlaceholder = cmsText(settings?.footer?.newsletter_placeholder, 'Your Email')
+  const newsletterButton = cmsText(settings?.footer?.newsletter_button, 'Sign Up')
+  const servicesHeading = cmsText(settings?.footer?.services_heading, 'Our Services')
+  const contactHeading = cmsText(settings?.footer?.contact_heading, 'Contact Us')
+  const copyright = cmsText(
+    settings?.footer?.copyright,
+    `© ${new Date().getFullYear()} 7 States Pest Control. All rights reserved.`,
+  )
 
   return (
     <div className="ekit-template-content-markup ekit-template-content-footer ekit-template-content-theme-support">
@@ -80,12 +93,11 @@ export default function Footer() {
                   <div className="elementor-widget-container">
                     <Link to="/">
                       <img
-                        alt="7 states Pest Control"
+                        alt={logoAlt}
                         className="attachment-full size-full wp-image-391"
                         height="105"
                         sizes="(max-width: 344px) 100vw, 344px"
-                        src={LOGO}
-                        srcSet={LOGO_SRCSET}
+                        src={logo}
                         width="344"
                       />
                     </Link>
@@ -114,13 +126,13 @@ export default function Footer() {
 
                 <div className="elementor-element elementor-element-1f53fc1 elementor-widget__width-inherit elementor-widget elementor-widget-heading">
                   <div className="elementor-widget-container">
-                    <h2 className="elementor-heading-title elementor-size-default">Newsletter Subscribe</h2>
+                    <h2 className="elementor-heading-title elementor-size-default">{newsletterTitle}</h2>
                   </div>
                 </div>
 
                 <div className="elementor-element elementor-element-442b390 elementor-widget elementor-widget-form">
                   <div className="elementor-widget-container">
-                    <form aria-label="Newsletter Subscribe" className="elementor-form" method="post" name="Newsletter Subscribe">
+                    <form aria-label={newsletterTitle} className="elementor-form" method="post" name="Newsletter Subscribe">
                       <div className="elementor-form-fields-wrapper elementor-labels-">
                         <div className="elementor-field-type-email elementor-field-group elementor-column elementor-field-group-email elementor-col-66 elementor-field-required">
                           <label className="elementor-field-label elementor-screen-only" htmlFor="footer-email">
@@ -130,7 +142,7 @@ export default function Footer() {
                             className="elementor-field elementor-size-sm elementor-field-textual"
                             id="footer-email"
                             name="form_fields[email]"
-                            placeholder="Your Email"
+                            placeholder={newsletterPlaceholder}
                             required
                             type="email"
                           />
@@ -138,7 +150,7 @@ export default function Footer() {
                         <div className="elementor-field-group elementor-column elementor-field-type-submit elementor-col-33 e-form__buttons">
                           <button className="elementor-button elementor-size-sm" type="submit">
                             <span className="elementor-button-content-wrapper">
-                              <span className="elementor-button-text">Sign Up</span>
+                              <span className="elementor-button-text">{newsletterButton}</span>
                             </span>
                           </button>
                         </div>
@@ -153,7 +165,7 @@ export default function Footer() {
               <div className="elementor-widget-wrap elementor-element-populated">
                 <div className="elementor-element elementor-element-58e173b elementor-widget elementor-widget-heading">
                   <div className="elementor-widget-container">
-                    <h2 className="elementor-heading-title elementor-size-default">Our Services</h2>
+                    <h2 className="elementor-heading-title elementor-size-default">{servicesHeading}</h2>
                   </div>
                 </div>
                 <div className="elementor-element elementor-element-dcef3e1 elementor-widget-divider--view-line elementor-widget elementor-widget-divider">
@@ -195,7 +207,7 @@ export default function Footer() {
               <div className="elementor-widget-wrap elementor-element-populated">
                 <div className="elementor-element elementor-element-345cbda elementor-widget elementor-widget-heading">
                   <div className="elementor-widget-container">
-                    <h2 className="elementor-heading-title elementor-size-default">Contact Us</h2>
+                    <h2 className="elementor-heading-title elementor-size-default">{contactHeading}</h2>
                   </div>
                 </div>
                 <div className="elementor-element elementor-element-3a3dabf elementor-widget-divider--view-line elementor-widget elementor-widget-divider">
@@ -248,9 +260,7 @@ export default function Footer() {
               <div className="elementor-widget-wrap elementor-element-populated">
                 <div className="elementor-element elementor-element-c27169b elementor-widget elementor-widget-heading">
                   <div className="elementor-widget-container">
-                    <h2 className="elementor-heading-title elementor-size-default">
-                      Copyright ©️ 2025 7 States Pest Control. All Rights Reserved.
-                    </h2>
+                    <h2 className="elementor-heading-title elementor-size-default">{copyright}</h2>
                   </div>
                 </div>
                 <div className="elementor-element elementor-element-terms-link elementor-widget elementor-widget-text-editor">

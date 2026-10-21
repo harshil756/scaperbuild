@@ -7,6 +7,7 @@ import QuotePopupProvider from './QuotePopupProvider.jsx'
 import AnalyticsScripts from './AnalyticsScripts.jsx'
 import FormSubmissionHandler from './FormSubmissionHandler.jsx'
 import SiteScripts from './SiteScripts.jsx'
+import SiteWideSchemas from './SiteWideSchemas.jsx'
 import { SiteContactProvider } from '../hooks/useSiteContact.jsx'
 
 export default function Layout() {
@@ -26,6 +27,7 @@ export default function Layout() {
         <FormSubmissionHandler />
         <AnalyticsScripts />
         <SiteScripts />
+        <SiteWideSchemas />
       </QuotePopupProvider>
     </SiteContactProvider>
   )

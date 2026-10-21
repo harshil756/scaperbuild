@@ -444,6 +444,62 @@
       "value": "<p><b>Pest control in Melbourne CBD</b><span style=\"font-weight:400\"> goes beyond mere convenience — it’s about ensuring the health and safety of your home or business. Our </span><b>professional pest control Melbourne</b><span style=\"font-weight:400\"> services are designed to eliminate pests efficiently and prevent their recurrence. By choosing 7 States Pest Control, you benefit from:</span></p><ul><li aria-level={1} style=\"font-weight:400\"><b>Expertise and Effectiveness:</b><span style=\"font-weight:400\"> Our experienced </span><b>pest exterminator Melbourne</b><span style=\"font-weight:400\"> team utilizes advanced techniques and treatments to tackle a wide range of pests effectively.</span></li><li aria-level={1} style=\"font-weight:400\"><b>Safety and Peace of Mind:</b><span style=\"font-weight:400\"> We prioritize safety, using methods that are safe for your family, pets, and the environment.</span></li><li aria-level={1} style=\"font-weight:400\"><b>Long-term Solutions:</b><span> We don’t just eliminate pests; we provide strategies to prevent future infestations, saving you time and money in the long run.</span></li></ul>"
     },
     {
+      "sort_order": 42.1,
+      "block_key": "why_choose.same_day_title",
+      "section": "why_choose",
+      "label": "Same-day heading",
+      "type": "text",
+      "value": "Benefits of Same-Day Pest Control in Melbourne"
+    },
+    {
+      "sort_order": 42.2,
+      "block_key": "why_choose.same_day_body",
+      "section": "why_choose",
+      "label": "Same-day body",
+      "type": "html",
+      "value": "<p><span style=\"font-weight:400\">When pests invade, quick action is crucial. Our </span><b>same day pest control Melbourne</b><span style=\"font-weight:400\"> services ensure immediate response and resolution. Whether it’s ants, rodents, or termites, our prompt </span><b>emergency pest control Melbourne</b><span style=\"font-weight:400\"> intervention prevents further damage and health risks, restoring comfort to your space swiftly.</span></p>"
+    },
+    {
+      "sort_order": 42.3,
+      "block_key": "why_choose.services_heading",
+      "section": "why_choose",
+      "label": "Services heading",
+      "type": "text",
+      "value": "Comprehensive Pest Control Services in Melbourne"
+    },
+    {
+      "sort_order": 42.4,
+      "block_key": "why_choose.residential_html",
+      "section": "why_choose",
+      "label": "Residential column",
+      "type": "html",
+      "value": "<ul><li aria-level=\"1\" style=\"font-weight:400\"><b>Residential Pest Control</b><span style=\"font-weight:400\"> Protect your home with our </span><b>home pest control Melbourne</b><span style=\"font-weight:400\"> services. We tailor our approach to address your specific pest issues, offering peace of mind knowing your home is safe and pest-free.</span></li></ul>"
+    },
+    {
+      "sort_order": 42.5,
+      "block_key": "why_choose.commercial_html",
+      "section": "why_choose",
+      "label": "Commercial column",
+      "type": "html",
+      "value": "<ul><li aria-level=\"1\" style=\"font-weight:400\"><b>Commercial Pest Control</b><span style=\"font-weight:400\"> Businesses in </span><b>Melbourne CBD</b><span style=\"font-weight:400\"> rely on us for comprehensive commercial </span><b>pest control Melbourne</b><span style=\"font-weight:400\"> solutions. From restaurants to office buildings, we customize plans to meet the unique needs of your business, ensuring a clean and hygienic environment for your staff and customers.</span></li></ul>"
+    },
+    {
+      "sort_order": 42.6,
+      "block_key": "why_choose.eco_html",
+      "section": "why_choose",
+      "label": "Eco-friendly column",
+      "type": "html",
+      "value": "<ul><li aria-level=\"1\" style=\"font-weight:400\"><b>Eco-Friendly Pest Control</b><span style=\"font-weight:400\"> For environmentally conscious clients, we offer </span><b>affordable pest control Melbourne</b><span style=\"font-weight:400\"> eco-friendly options. Our natural and non-toxic </span><b>pest removal Melbourne</b><span style=\"font-weight:400\"> methods effectively manage pests while safeguarding the environment and minimizing impact on surrounding ecosystems.</span></li></ul>"
+    },
+    {
+      "sort_order": 42.7,
+      "block_key": "why_choose.closing_html",
+      "section": "why_choose",
+      "label": "Closing paragraph",
+      "type": "html",
+      "value": "<p><span style=\"font-weight:400\">At 7 States Pest Control, we are committed to delivering exceptional pest control service in Melbourne, including reliable </span><a href=\"/wasp-removal-melbourne\"><b>wasp control Melbourne</b></a><span style=\"font-weight:400\"> solutions. Trust 7 States Pest Control to keep your pest control Melbourne CBD property pest-free and comfortable year-round. </span></p>"
+    },
+    {
       "sort_order": 43,
       "block_key": "cta.body",
       "section": "cta",

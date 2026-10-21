@@ -93,6 +93,13 @@ class HomePageBlockMapper
                 'title' => $blocks->get('why_choose.title')?->value,
                 'intro' => $blocks->get('why_choose.intro')?->value,
                 'benefits' => $blocks->get('why_choose.benefits')?->value,
+                'same_day_title' => $blocks->get('why_choose.same_day_title')?->value,
+                'same_day_body' => $blocks->get('why_choose.same_day_body')?->value,
+                'services_heading' => $blocks->get('why_choose.services_heading')?->value,
+                'residential_html' => $blocks->get('why_choose.residential_html')?->value,
+                'commercial_html' => $blocks->get('why_choose.commercial_html')?->value,
+                'eco_html' => $blocks->get('why_choose.eco_html')?->value,
+                'closing_html' => $blocks->get('why_choose.closing_html')?->value,
             ],
             'cta' => [
                 'background_image' => $blocks->get('background.cta')?->background_image_path,
@@ -187,6 +194,13 @@ class HomePageBlockMapper
         self::setText($blocks, 'why_choose.title', $why['title'] ?? null);
         self::setHtml($blocks, 'why_choose.intro', $why['intro'] ?? null);
         self::setHtml($blocks, 'why_choose.benefits', $why['benefits'] ?? null);
+        self::upsertText($page, $blocks, 'why_choose.same_day_title', 'why_choose', 'Same-day heading', $why['same_day_title'] ?? null);
+        self::upsertHtml($page, $blocks, 'why_choose.same_day_body', 'why_choose', 'Same-day body', $why['same_day_body'] ?? null);
+        self::upsertText($page, $blocks, 'why_choose.services_heading', 'why_choose', 'Services heading', $why['services_heading'] ?? null);
+        self::upsertHtml($page, $blocks, 'why_choose.residential_html', 'why_choose', 'Residential column', $why['residential_html'] ?? null);
+        self::upsertHtml($page, $blocks, 'why_choose.commercial_html', 'why_choose', 'Commercial column', $why['commercial_html'] ?? null);
+        self::upsertHtml($page, $blocks, 'why_choose.eco_html', 'why_choose', 'Eco-friendly column', $why['eco_html'] ?? null);
+        self::upsertHtml($page, $blocks, 'why_choose.closing_html', 'why_choose', 'Closing paragraph', $why['closing_html'] ?? null);
 
         $cta = $content['cta'] ?? [];
         self::setBackground($blocks, 'background.cta', $cta['background_image'] ?? null);
@@ -262,6 +276,36 @@ class HomePageBlockMapper
     private static function setHtml($blocks, string $key, ?string $value): void
     {
         $blocks->get($key)?->update(['value' => $value]);
+    }
+
+    private static function upsertText(Page $page, $blocks, string $key, string $section, string $label, ?string $value): void
+    {
+        self::upsertBlock($page, $blocks, $key, $section, $label, 'text', $value);
+    }
+
+    private static function upsertHtml(Page $page, $blocks, string $key, string $section, string $label, ?string $value): void
+    {
+        self::upsertBlock($page, $blocks, $key, $section, $label, 'html', $value);
+    }
+
+    private static function upsertBlock(Page $page, $blocks, string $key, string $section, string $label, string $type, ?string $value): void
+    {
+        $block = $blocks->get($key);
+        if ($block) {
+            $block->update(['value' => $value]);
+
+            return;
+        }
+
+        $created = $page->blocks()->create([
+            'block_key' => $key,
+            'section' => $section,
+            'label' => $label,
+            'type' => $type,
+            'value' => $value,
+            'sort_order' => ($page->blocks()->max('sort_order') ?? 0) + 1,
+        ]);
+        $blocks->put($key, $created);
     }
 
     private static function setLink($blocks, string $key, ?string $label, ?string $url): void

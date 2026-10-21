@@ -99,9 +99,13 @@ function isCorruptCmsLiteral(value) {
   return trimmed.startsWith('{cmsText(') || trimmed.startsWith('<CmsHtml')
 }
 
+/**
+ * Resolve CMS text. `null`/`undefined` → fallback (field missing / still loading).
+ * Empty string → intentional clear from CMS (do not restore hardcoded fallback).
+ */
 export function cmsText(value, fallback = '') {
   if (isCorruptCmsLiteral(value)) return fallback
   if (value == null) return fallback
-  if (typeof value === 'string' && value.trim() === '') return fallback
+  if (typeof value === 'string') return value
   return value
 }

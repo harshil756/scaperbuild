@@ -4,6 +4,7 @@ namespace App\Support;
 
 use App\Filament\Resources\Pages\PageResource;
 use App\Models\Page;
+use App\Services\LocationPageBlockMapper;
 use App\Services\ServicePageBlockMapper;
 use Filament\Navigation\NavigationItem;
 
@@ -17,6 +18,8 @@ class CmsPageNavigation
 
     public const GROUP_OFFICES = 'Offices';
 
+    public const GROUP_LOCATIONS = 'Locations';
+
     /** @return list<array{slug: string, title: string, path: string, sort: int}> */
     public static function corePages(): array
     {
@@ -24,6 +27,11 @@ class CmsPageNavigation
             ['slug' => 'home', 'title' => 'Home', 'path' => '/', 'sort' => 10],
             ['slug' => 'about-us', 'title' => 'About Us', 'path' => '/about-us', 'sort' => 20],
             ['slug' => 'contact-us', 'title' => 'Contact Us', 'path' => '/contact-us', 'sort' => 30],
+            ['slug' => 'blog', 'title' => 'Blog', 'path' => '/blog', 'sort' => 40],
+            ['slug' => 'terms-and-conditions', 'title' => 'Terms & Conditions', 'path' => '/terms-and-conditions', 'sort' => 50],
+            ['slug' => 'thank-you', 'title' => 'Thank You', 'path' => '/thank-you', 'sort' => 60],
+            ['slug' => 'location', 'title' => 'Locations archive', 'path' => '/location', 'sort' => 70],
+            ['slug' => 'site-settings', 'title' => 'Site settings', 'path' => '/', 'sort' => 80],
         ];
     }
 
@@ -71,6 +79,31 @@ class CmsPageNavigation
         ];
     }
 
+    /**
+     * All suburb location pages from the database (sidebar + filters).
+     *
+     * @return list<array{slug: string, title: string, path: string, sort: int}>
+     */
+    public static function locationPages(): array
+    {
+        return Page::query()
+            ->where('slug', 'like', 'location-%')
+            ->orderBy('title')
+            ->get(['slug', 'title'])
+            ->values()
+            ->map(function (Page $page, int $index): array {
+                $suburb = substr($page->slug, strlen('location-'));
+
+                return [
+                    'slug' => $page->slug,
+                    'title' => $page->title ?: ('Pest Control '.ucwords(str_replace('-', ' ', $suburb))),
+                    'path' => '/location/'.$suburb,
+                    'sort' => 10 + $index,
+                ];
+            })
+            ->all();
+    }
+
     public static function categoryForSlug(?string $slug): ?string
     {
         if (! $slug) {
@@ -85,12 +118,17 @@ class CmsPageNavigation
             return 'services';
         }
 
-        if (in_array($slug, ServicePageBlockMapper::COMMERCIAL_PAGE_SLUGS, true)) {
+        if (in_array($slug, ServicePageBlockMapper::COMMERCIAL_PAGE_SLUGS, true)
+            || collect(self::commercialPages())->contains(fn (array $page): bool => $page['slug'] === $slug)) {
             return 'commercial';
         }
 
         if (collect(self::officePages())->contains(fn (array $page): bool => $page['slug'] === $slug)) {
             return 'offices';
+        }
+
+        if (LocationPageBlockMapper::isLocationPage($slug)) {
+            return 'locations';
         }
 
         return 'other';
@@ -115,6 +153,10 @@ class CmsPageNavigation
 
         foreach (self::officePages() as $page) {
             $items[] = self::pageItem($page, self::GROUP_OFFICES);
+        }
+
+        foreach (self::locationPages() as $page) {
+            $items[] = self::pageItem($page, self::GROUP_LOCATIONS);
         }
 
         return $items;

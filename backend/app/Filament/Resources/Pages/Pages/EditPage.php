@@ -7,8 +7,11 @@ use App\Services\AboutPageBlockMapper;
 use App\Services\ContactPageBlockMapper;
 use App\Services\HomePageBlockMapper;
 use App\Services\AntPestControlPageBlockMapper;
+use App\Services\LocationPageBlockMapper;
 use App\Services\MelbournePageBlockMapper;
 use App\Services\ServicePageBlockMapper;
+use App\Services\SimplePageBlockMapper;
+use App\Services\SiteSettingsBlockMapper;
 use App\Services\SolarPanelBirdProofingPageBlockMapper;
 use Filament\Actions\DeleteAction;
 use Filament\Actions\ViewAction;
@@ -107,9 +110,14 @@ class EditPage extends EditRecord
             'solar-panel-bird-proofing' => SolarPanelBirdProofingPageBlockMapper::class,
             'our-services-ant-pest-control' => AntPestControlPageBlockMapper::class,
             'melbourne' => MelbournePageBlockMapper::class,
-            default => ServicePageBlockMapper::isServicePage($slug)
-                ? ServicePageBlockMapper::class
-                : null,
+            'site-settings' => SiteSettingsBlockMapper::class,
+            default => SimplePageBlockMapper::isSimplePage($slug)
+                ? SimplePageBlockMapper::class
+                : (LocationPageBlockMapper::isLocationPage($slug)
+                    ? LocationPageBlockMapper::class
+                    : (ServicePageBlockMapper::isServicePage($slug)
+                        ? ServicePageBlockMapper::class
+                        : null)),
         };
     }
 }

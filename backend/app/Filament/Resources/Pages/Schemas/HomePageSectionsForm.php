@@ -187,6 +187,13 @@ class HomePageSectionsForm
             TextInput::make('why_choose.title')->label('Title')->columnSpanFull(),
             Textarea::make('why_choose.intro')->label('Intro (HTML)')->rows(4)->columnSpanFull(),
             Textarea::make('why_choose.benefits')->label('Benefits list (HTML)')->rows(8)->columnSpanFull(),
+            TextInput::make('why_choose.same_day_title')->label('Same-day heading')->columnSpanFull(),
+            Textarea::make('why_choose.same_day_body')->label('Same-day body (HTML)')->rows(4)->columnSpanFull(),
+            TextInput::make('why_choose.services_heading')->label('Services section heading')->columnSpanFull(),
+            Textarea::make('why_choose.residential_html')->label('Residential column (HTML)')->rows(4)->columnSpanFull(),
+            Textarea::make('why_choose.commercial_html')->label('Commercial column (HTML)')->rows(4)->columnSpanFull(),
+            Textarea::make('why_choose.eco_html')->label('Eco-friendly column (HTML)')->rows(4)->columnSpanFull(),
+            Textarea::make('why_choose.closing_html')->label('Closing paragraph (HTML)')->rows(3)->columnSpanFull(),
         ];
     }
 

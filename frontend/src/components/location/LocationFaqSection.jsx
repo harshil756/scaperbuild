@@ -4,6 +4,8 @@ export default function LocationFaqSection({
   title = 'Frequently Asked Questions',
   subtitle,
   faqs = [],
+  /** When false, FAQ JSON-LD is expected from page head SEO instead. */
+  injectJsonLd = true,
 }) {
   const [openIndexes, setOpenIndexes] = useState([0]) // First FAQ open by default
 
@@ -64,23 +66,25 @@ export default function LocationFaqSection({
           })}
         </div>
       </div>
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{
-          __html: JSON.stringify({
-            '@context': 'https://schema.org',
-            '@type': 'FAQPage',
-            mainEntity: faqs.map((faq) => ({
-              '@type': 'Question',
-              name: faq.question,
-              acceptedAnswer: {
-                '@type': 'Answer',
-                text: typeof faq.answer === 'string' ? faq.answer : (faq.answerText || faq.question),
-              },
-            })),
-          }),
-        }}
-      />
+      {injectJsonLd && (
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              '@context': 'https://schema.org',
+              '@type': 'FAQPage',
+              mainEntity: faqs.map((faq) => ({
+                '@type': 'Question',
+                name: faq.question,
+                acceptedAnswer: {
+                  '@type': 'Answer',
+                  text: typeof faq.answer === 'string' ? faq.answer : (faq.answerText || faq.question),
+                },
+              })),
+            }),
+          }}
+        />
+      )}
     </section>
   )
 }

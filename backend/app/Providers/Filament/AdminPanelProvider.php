@@ -39,6 +39,7 @@ class AdminPanelProvider extends PanelProvider
                 NavigationGroup::make()->label(CmsPageNavigation::GROUP_SERVICES),
                 NavigationGroup::make()->label(CmsPageNavigation::GROUP_COMMERCIAL),
                 NavigationGroup::make()->label(CmsPageNavigation::GROUP_OFFICES),
+                NavigationGroup::make()->label(CmsPageNavigation::GROUP_LOCATIONS),
             ])
             ->navigationItems(CmsPageNavigation::items())
             ->discoverResources(in: app_path('Filament/Resources'), for: 'App\Filament\Resources')

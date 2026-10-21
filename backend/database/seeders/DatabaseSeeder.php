@@ -19,6 +19,8 @@ class DatabaseSeeder extends Seeder
             SolarPanelBirdProofingPageSeeder::class,
             AntPestControlPageSeeder::class,
             MelbournePageSeeder::class,
+            LocationPagesSeeder::class,
+            SiteAndSimplePagesSeeder::class,
             ServicePagesSeeder::class,
             MenuSeeder::class,
             BlogSeeder::class,

@@ -17,6 +17,9 @@ class PageController extends Controller
             ->with('blocks')
             ->firstOrFail();
 
-        return response()->json(PageApiPresenter::present($page));
+        return response()
+            ->json(PageApiPresenter::present($page))
+            ->header('Cache-Control', 'no-store, no-cache, must-revalidate, max-age=0')
+            ->header('Pragma', 'no-cache');
     }
 }

@@ -26,6 +26,7 @@
         "cms:seed:solar": "php artisan db:seed --class=SolarPanelBirdProofingPageSeeder",
         "cms:seed:ant": "php artisan db:seed --class=AntPestControlPageSeeder",
         "cms:seed:melbourne": "php artisan db:seed --class=MelbournePageSeeder",
+        "cms:seed:locations": "php artisan db:seed --class=LocationPagesSeeder",
         "cms:seed:services": "php artisan db:seed --class=ServicePagesSeeder",
         "cms:seed:blogs": "php artisan db:seed --class=BlogSeeder",
         "cms:sync": "npm run cms:extract && npm run cms:copy && npm run cms:seed",

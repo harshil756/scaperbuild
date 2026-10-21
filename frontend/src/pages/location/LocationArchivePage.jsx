@@ -1,20 +1,28 @@
 import { Link } from 'react-router-dom'
+import usePageCms from '../../hooks/usePageCms.js'
 import usePageMeta from '../../hooks/usePageMeta.js'
+import { cmsMediaUrl, cmsText } from '../../utils/cmsMedia.js'
+
+const FALLBACK_BG = '/assets/images/URUU-01-2048x1365-2_7c216e6d.jpg'
 
 export default function LocationArchivePage() {
-  usePageMeta('location_archive')
+  const { page, content: c } = usePageCms('location')
+  usePageMeta('location_archive', page)
+  const heroTitle = cmsText(c?.hero?.title, 'Locations')
+  const heroCrumb = cmsText(c?.hero?.breadcrumb, 'Locations')
+  const heroBg = cmsMediaUrl(c?.hero?.background_image_url || c?.hero?.background_image, FALLBACK_BG)
 
   return (
     <>
       <div data-elementor-type="archive" data-elementor-id={9386} className="elementor elementor-9386 elementor-location-archive" data-elementor-post-type="elementor_library">
-        <section className="elementor-section elementor-top-section elementor-element elementor-element-ee8e8c5 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="ee8e8c5" data-element_type="section" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}" style={{backgroundImage:'url("/assets/images/URUU-01-2048x1365-2_7c216e6d.jpg")',backgroundPosition:'top left',backgroundRepeat:'no-repeat',backgroundSize:'cover'}}>
+        <section className="elementor-section elementor-top-section elementor-element elementor-element-ee8e8c5 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="ee8e8c5" data-element_type="section" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}" style={{backgroundImage:`url("${heroBg}")`,backgroundPosition:'top left',backgroundRepeat:'no-repeat',backgroundSize:'cover'}}>
           <div className="elementor-background-overlay" />
           <div className="elementor-container elementor-column-gap-default">
             <div className="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-dfb1c37" data-id="dfb1c37" data-element_type="column">
               <div className="elementor-widget-wrap elementor-element-populated">
                 <div className="elementor-element elementor-element-5ddc84d elementor-widget elementor-widget-heading" data-id="5ddc84d" data-element_type="widget" data-widget_type="heading.default">
                   <div className="elementor-widget-container">
-                    <h1 className="elementor-heading-title elementor-size-default">Locations</h1>				</div>
+                    <h1 className="elementor-heading-title elementor-size-default">{heroTitle}</h1>				</div>
                 </div>
                 <div className="elementor-element elementor-element-d68400a elementor-icon-list--layout-inline elementor-align-center elementor-widget__width-auto elementor-list-item-link-full_width elementor-widget elementor-widget-icon-list" data-id="d68400a" data-element_type="widget" data-widget_type="icon-list.default">
                   <div className="elementor-widget-container">
@@ -27,7 +35,7 @@ export default function LocationArchivePage() {
                         <a href="#">
                           <span className="elementor-icon-list-icon">
                             <svg aria-hidden="true" className="e-font-icon-svg e-fas-angle-right" viewBox="0 0 256 512" xmlns="http://www.w3.org/2000/svg"><path d="M224.3 273l-136 136c-9.4 9.4-24.6 9.4-33.9 0l-22.6-22.6c-9.4-9.4-9.4-24.6 0-33.9l96.4-96.4-96.4-96.4c-9.4-9.4-9.4-24.6 0-33.9L54.3 103c9.4-9.4 24.6-9.4 33.9 0l136 136c9.5 9.4 9.5 24.6.1 34z" /></svg>						</span>
-                          <span className="elementor-icon-list-text">Locations</span>
+                          <span className="elementor-icon-list-text">{heroCrumb}</span>
                         </a>
                       </li>
                     </ul>

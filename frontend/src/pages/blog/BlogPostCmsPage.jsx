@@ -1,13 +1,35 @@
+import { useMemo } from 'react'
 import { Link, Navigate, useParams } from 'react-router-dom'
 import CmsHtml from '../../components/home/CmsHtml.jsx'
 import useBlogPostCms from '../../hooks/useBlogPostCms.js'
 import usePageMeta from '../../hooks/usePageMeta.js'
+import { buildBlogPostingSchema, SITE_ORIGIN } from '../../config/siteSchemas.js'
 import { cmsMediaUrl } from '../../utils/cmsMedia.js'
 
 export default function BlogPostCmsPage() {
   const { slug } = useParams()
   const { post, loading, error } = useBlogPostCms(slug)
-  usePageMeta('blog', post)
+
+  const seoOverride = useMemo(() => {
+    if (!post) return null
+    const url = `${SITE_ORIGIN}/${post.slug || slug}`
+    const schema = buildBlogPostingSchema({
+      headline: post.seo_title || post.title,
+      description: post.seo_description || post.excerpt || '',
+      url,
+      image: post.featured_image_url || undefined,
+      datePublished: post.published_at || post.created_at,
+      dateModified: post.updated_at || post.published_at || post.created_at,
+    })
+    return {
+      title: post.seo_title || post.title,
+      description: post.seo_description || post.excerpt || '',
+      canonical: url.endsWith('/') ? url : `${url}/`,
+      jsonLd: JSON.stringify(schema),
+    }
+  }, [post, slug])
+
+  usePageMeta('blog', post, seoOverride)
 
   if (loading) {
     return <div className="elementor elementor-87" />

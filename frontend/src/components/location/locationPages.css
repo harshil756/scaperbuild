@@ -174,86 +174,23 @@ h1.loc-hero-title {
   line-height: 1.3;
 }
 
-/* Quote Form Card */
-.loc-hero-card {
-  background: #ffffff;
-  border-radius: 12px;
-  padding: 32px 28px;
-  box-shadow: 0 20px 45px rgba(0, 0, 0, 0.35);
-  color: var(--loc-brand-text);
-}
-
-.loc-card-title {
-  font-size: 1.45rem;
-  font-weight: 800;
-  color: #0f172a;
-  margin: 0 0 4px;
-}
-
-.loc-card-subtitle {
-  font-size: 0.9rem;
-  color: #64748b;
-  margin: 0 0 20px;
-}
-
-.loc-form-group {
-  margin-bottom: 14px;
-}
-
-.loc-form-label {
-  display: block;
-  font-size: 13px;
-  font-weight: 600;
-  color: #334155;
-  margin-bottom: 5px;
-}
-
-.loc-form-input,
-.loc-form-select {
+/* Quote form reuses school/hospitality Elementor form (elementor-702 / 2e06d80).
+   Visual styling comes from post-702 CSS — only layout tweaks here. */
+.loc-hero-quote {
   width: 100%;
-  padding: 11px 14px;
-  border: 1px solid #cbd5e1;
-  border-radius: 6px;
-  font-size: 14px;
-  color: #1e293b;
-  background-color: #ffffff;
-  transition: border-color 0.15s ease, box-shadow 0.15s ease;
-  box-sizing: border-box;
+  max-width: 480px;
+  justify-self: end;
 }
 
-.loc-form-input:focus,
-.loc-form-select:focus {
-  outline: none;
-  border-color: var(--loc-brand-orange);
-  box-shadow: 0 0 0 3px rgba(255, 90, 0, 0.15);
+.loc-hero-quote .elementor-element-2e06d80 {
+  width: 100% !important;
+  max-width: 100%;
+  border-radius: 8px;
+  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.28);
 }
 
-.loc-form-btn {
-  width: 100%;
-  padding: 13px;
-  font-size: 15px;
-  font-weight: 700;
-  background-color: var(--loc-brand-orange);
-  color: #ffffff;
-  border: none;
-  border-radius: 6px;
-  cursor: pointer;
-  margin-top: 8px;
-  transition: background-color 0.2s ease, transform 0.15s ease;
-}
-
-.loc-form-btn:hover:not(:disabled) {
-  background-color: var(--loc-brand-orange-hover);
-  transform: translateY(-1px);
-}
-
-.loc-form-btn:disabled {
-  opacity: 0.7;
-  cursor: not-allowed;
-}
-
-.loc-form-error {
-  color: #dc2626;
+.loc-hero-quote .react-form-error {
+  color: #b91c1c;
   font-size: 13px;
   margin-bottom: 12px;
   padding: 8px 12px;
@@ -890,8 +827,9 @@ h1.loc-hero-title {
     grid-template-columns: 1fr;
   }
 
-  .loc-hero-card {
-    padding: 24px 18px;
+  .loc-hero-quote {
+    max-width: 100%;
+    justify-self: stretch;
   }
 
   .loc-benefit-card {

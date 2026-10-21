@@ -3,7 +3,10 @@
 namespace App\Filament\Resources\Pages\Schemas;
 
 use App\Models\Page;
+use App\Services\LocationPageBlockMapper;
 use App\Services\ServicePageBlockMapper;
+use App\Services\SimplePageBlockMapper;
+use App\Services\SiteSettingsBlockMapper;
 use Filament\Forms\Components\Textarea;
 use Filament\Forms\Components\TextInput;
 use Filament\Forms\Components\Toggle;
@@ -64,6 +67,9 @@ class PageForm
             $slug === 'solar-panel-bird-proofing' => SolarPanelBirdProofingPageSectionsForm::sections(),
             $slug === 'our-services-ant-pest-control' => AntPestControlPageSectionsForm::sections(),
             $slug === 'melbourne' => MelbournePageSectionsForm::sections(),
+            SiteSettingsBlockMapper::isSiteSettings($slug) => SiteSettingsSectionsForm::sections(),
+            SimplePageBlockMapper::isSimplePage($slug) => SimplePageSectionsForm::sections(),
+            LocationPageBlockMapper::isLocationPage($slug) => LocationPageSectionsForm::sections(),
             ServicePageBlockMapper::isServicePage($slug) => ServicePageSectionsForm::sections(),
             default => [],
         };

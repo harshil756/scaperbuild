@@ -32,6 +32,7 @@ class PagesTable
                         'services' => 'Services',
                         'commercial' => 'Commercial',
                         'offices' => 'Offices',
+                        'locations' => 'Locations',
                         'core' => 'Core',
                         default => 'Other',
                     })
@@ -39,6 +40,7 @@ class PagesTable
                         'services' => 'info',
                         'commercial' => 'warning',
                         'offices' => 'success',
+                        'locations' => 'danger',
                         'core' => 'primary',
                         default => 'gray',
                     }),
@@ -61,6 +63,7 @@ class PagesTable
                         'services' => 'Services',
                         'commercial' => 'Commercial',
                         'offices' => 'Offices',
+                        'locations' => 'Locations',
                         'core' => 'Core pages',
                         'other' => 'Other',
                     ])
@@ -68,6 +71,10 @@ class PagesTable
                         $value = $data['value'] ?? null;
                         if (! $value) {
                             return $query;
+                        }
+
+                        if ($value === 'locations') {
+                            return $query->where('slug', 'like', 'location-%');
                         }
 
                         $slugs = match ($value) {
@@ -84,6 +91,7 @@ class PagesTable
                                 ->merge(collect(CmsPageNavigation::commercialPages())->pluck('slug'))
                                 ->merge(collect(CmsPageNavigation::officePages())->pluck('slug'))
                                 ->merge(collect(CmsPageNavigation::corePages())->pluck('slug'))
+                                ->merge(collect(CmsPageNavigation::locationPages())->pluck('slug'))
                                 ->all();
 
                             return $query->whereNotIn('slug', $known);

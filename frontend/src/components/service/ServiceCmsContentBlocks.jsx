@@ -1,8 +1,13 @@
 import { useLayoutEffect } from 'react'
 import { cmsMediaUrl, cmsText } from '../../utils/cmsMedia.js'
 
-function patchHeading(widgetId, text) {
-  if (!text) return
+function setWidgetHidden(widget, hidden) {
+  if (!widget) return
+  widget.style.display = hidden ? 'none' : ''
+}
+
+function patchHeading(widgetId, text, hasCmsValue) {
+  if (!hasCmsValue) return
   const widget = document.querySelector(`.elementor-element-${widgetId}`)
   if (!widget) return
 
@@ -11,15 +16,26 @@ function patchHeading(widgetId, text) {
     ?? widget.querySelector('.ekit-heading--title')
     ?? widget.querySelector('.elementskit-section-title')
 
-  if (el) el.textContent = text
+  if (!el) return
+
+  const next = text ?? ''
+  el.textContent = next
+  setWidgetHidden(widget, next.trim() === '')
 }
 
-function patchList(widgetId, items) {
-  if (!items?.length) return
+function patchList(widgetId, items, hasCmsValue) {
+  if (!hasCmsValue) return
   const widget = document.querySelector(`.elementor-element-${widgetId}`)
   const listEl = widget?.querySelector('.elementor-icon-list-items')
   if (!listEl) return
 
+  if (!items?.length) {
+    listEl.innerHTML = ''
+    setWidgetHidden(widget, true)
+    return
+  }
+
+  setWidgetHidden(widget, false)
   const existingItems = listEl.querySelectorAll('.elementor-icon-list-item')
   if (existingItems.length === items.length) {
     items.forEach((text, index) => {
@@ -43,18 +59,30 @@ function simplifyHtml(html) {
   return (inner?.innerHTML ?? tmp.innerHTML).trim()
 }
 
-function patchHtml(widgetId, html) {
-  if (!html) return
+function patchHtml(widgetId, html, hasCmsValue) {
+  if (!hasCmsValue) return
   const widget = document.querySelector(`.elementor-element-${widgetId}`)
   const el = widget?.querySelector('.elementor-widget-container')
-  if (el) el.innerHTML = simplifyHtml(html)
+  if (!el) return
+
+  const next = html ?? ''
+  el.innerHTML = next ? simplifyHtml(next) : ''
+  setWidgetHidden(widget, next.trim() === '')
 }
 
-function patchImage(widgetId, src, alt) {
-  if (!src) return
+function patchImage(widgetId, src, alt, hasCmsValue) {
+  if (!hasCmsValue) return
   const widget = document.querySelector(`.elementor-element-${widgetId}`)
-  const img = widget?.querySelector('img')
+  if (!widget) return
+
+  if (!src) {
+    setWidgetHidden(widget, true)
+    return
+  }
+
+  const img = widget.querySelector('img')
   if (!img) return
+  setWidgetHidden(widget, false)
   img.src = cmsMediaUrl(src)
   img.removeAttribute('srcset')
   img.removeAttribute('srcSet')
@@ -71,10 +99,23 @@ function applyContentBlocks(blocks) {
     // Skip duplicate extract blocks and parent wrappers that embed child widgets.
     if (/^content\.(heading|text|image|list)_[a-f0-9]+_\d+$/.test(key)) continue
 
-    if (type === 'heading') patchHeading(widgetId, cmsText(block.value, ''))
-    else if (type === 'text') patchHtml(widgetId, cmsText(block.value, ''))
-    else if (type === 'image') patchImage(widgetId, block.image ?? block.image_url, block.metadata?.alt)
-    else if (type === 'list') patchList(widgetId, block.metadata?.items)
+    if (type === 'heading') {
+      const hasCmsValue = block.value != null
+      patchHeading(widgetId, cmsText(block.value, ''), hasCmsValue)
+    } else if (type === 'text') {
+      const hasCmsValue = block.value != null
+      patchHtml(widgetId, cmsText(block.value, ''), hasCmsValue)
+    } else if (type === 'image') {
+      const src = block.image ?? block.image_url ?? block.image_path
+      const hasCmsValue = Object.prototype.hasOwnProperty.call(block, 'image')
+        || Object.prototype.hasOwnProperty.call(block, 'image_url')
+        || Object.prototype.hasOwnProperty.call(block, 'image_path')
+        || block.value != null
+      patchImage(widgetId, src, block.metadata?.alt, hasCmsValue)
+    } else if (type === 'list') {
+      const hasCmsValue = block.metadata != null && Object.prototype.hasOwnProperty.call(block.metadata, 'items')
+      patchList(widgetId, block.metadata?.items, hasCmsValue)
+    }
   }
 }
 

@@ -7,8 +7,11 @@ use App\Services\AboutPageBlockMapper;
 use App\Services\ContactPageBlockMapper;
 use App\Services\HomePageBlockMapper;
 use App\Services\AntPestControlPageBlockMapper;
+use App\Services\LocationPageBlockMapper;
 use App\Services\MelbournePageBlockMapper;
 use App\Services\ServicePageBlockMapper;
+use App\Services\SimplePageBlockMapper;
+use App\Services\SiteSettingsBlockMapper;
 use App\Services\SolarPanelBirdProofingPageBlockMapper;
 
 class PageApiPresenter
@@ -22,9 +25,14 @@ class PageApiPresenter
             'solar-panel-bird-proofing' => SolarPanelBirdProofingPageBlockMapper::toForm($page),
             'our-services-ant-pest-control' => AntPestControlPageBlockMapper::toForm($page),
             'melbourne' => MelbournePageBlockMapper::toForm($page),
-            default => ServicePageBlockMapper::isServicePage($page->slug)
-                ? ServicePageBlockMapper::toForm($page)
-                : self::blocksToGenericContent($page),
+            'site-settings' => SiteSettingsBlockMapper::toForm($page),
+            default => SimplePageBlockMapper::isSimplePage($page->slug)
+                ? SimplePageBlockMapper::toForm($page)
+                : (LocationPageBlockMapper::isLocationPage($page->slug)
+                    ? LocationPageBlockMapper::toForm($page)
+                    : (ServicePageBlockMapper::isServicePage($page->slug)
+                        ? ServicePageBlockMapper::toForm($page)
+                        : self::blocksToGenericContent($page))),
         };
 
         return [

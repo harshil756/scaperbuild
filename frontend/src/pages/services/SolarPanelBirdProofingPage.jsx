@@ -63,11 +63,11 @@ export default function SolarPanelBirdProofingPage() {
             <div className="elementor-element elementor-element-6269433 e-con-full e-flex e-con e-child" data-element_type="container" data-id="6269433" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
               <div className="elementor-element elementor-element-a1efe77 elementor-widget elementor-widget-heading" data-element_type="widget" data-id="a1efe77" data-widget_type="heading.default">
                 <div className="elementor-widget-container">
-                  <h2 className="elementor-heading-title elementor-size-default">Get A Free Quote Now!</h2> </div>
+                  <h2 className="elementor-heading-title elementor-size-default">{cmsText(c?.quote_form?.title, 'Get A Free Quote Now!')}</h2> </div>
               </div>
               <div className="elementor-element elementor-element-b5f062e elementor-widget elementor-widget-heading" data-element_type="widget" data-id="b5f062e" data-widget_type="heading.default">
                 <div className="elementor-widget-container">
-                  <h6 className="elementor-heading-title elementor-size-default">Have an enquiry? Leave us your details and we’ll call you back during business hours.</h6> </div>
+                  <h6 className="elementor-heading-title elementor-size-default">{cmsText(c?.quote_form?.subtitle, 'Have an enquiry? Leave us your details and we’ll call you back during business hours.')}</h6> </div>
               </div>
               <div className="elementor-element elementor-element-f8f3bfd elementor-button-align-center elementor-widget elementor-widget-form" data-element_type="widget" data-id="f8f3bfd" data-settings="{&quot;step_next_label&quot;:&quot;Next&quot;,&quot;step_previous_label&quot;:&quot;Previous&quot;,&quot;button_width&quot;:&quot;100&quot;,&quot;step_type&quot;:&quot;number_text&quot;,&quot;step_icon_shape&quot;:&quot;circle&quot;}" data-widget_type="form.default">
                 <div className="elementor-widget-container">
