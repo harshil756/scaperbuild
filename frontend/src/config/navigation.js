@@ -42,7 +42,10 @@ export const mainNav = [
   {
     label: 'Our Offices',
     path: '#',
-    children: [{ label: 'Melbourne', path: '/melbourne' }],
+    children: [
+      { label: 'Melbourne', path: '/melbourne' },
+      { label: 'Geelong', path: '/location/geelong' },
+    ],
   },
   {
     label: 'Commercial Pest Control',

@@ -183,101 +183,13 @@ h1.loc-hero-title {
   color: var(--loc-brand-text);
 }
 
-.loc-card-title {
-  font-size: 1.45rem;
-  font-weight: 800;
-  color: #0f172a;
-  margin: 0 0 4px;
+/* Shared Elementor quote form (LocationQuoteForm) inside the hero card */
+.loc-hero-card .elementor-16 .elementor-element.elementor-element-03c7402 > .elementor-widget-container {
+  margin: 0;
 }
 
-.loc-card-subtitle {
-  font-size: 0.9rem;
-  color: #64748b;
-  margin: 0 0 20px;
-}
-
-.loc-form-group {
-  margin-bottom: 14px;
-}
-
-.loc-form-label {
-  display: block;
-  font-size: 13px;
-  font-weight: 600;
-  color: #334155;
-  margin-bottom: 5px;
-}
-
-.loc-form-input,
-.loc-form-select {
-  width: 100%;
-  padding: 11px 14px;
-  border: 1px solid #cbd5e1;
-  border-radius: 6px;
-  font-size: 14px;
-  color: #1e293b;
-  background-color: #ffffff;
-  transition: border-color 0.15s ease, box-shadow 0.15s ease;
-  box-sizing: border-box;
-}
-
-.loc-form-input:focus,
-.loc-form-select:focus {
-  outline: none;
-  border-color: var(--loc-brand-orange);
-  box-shadow: 0 0 0 3px rgba(255, 90, 0, 0.15);
-}
-
-/* Scoped so it outranks the Elementor kit's `.elementor-kit-9 input:not(...)` border rule. */
-.loc-hero-card .loc-form-group .loc-form-input[aria-invalid='true'],
-.loc-hero-card .loc-form-group .loc-form-select[aria-invalid='true'] {
-  border-color: #dc2626;
-}
-
-.loc-hero-card .loc-form-group .loc-form-input[aria-invalid='true']:focus,
-.loc-hero-card .loc-form-group .loc-form-select[aria-invalid='true']:focus {
-  border-color: #dc2626;
-  box-shadow: 0 0 0 3px rgba(220, 38, 38, 0.15);
-}
-
-.loc-form-field-error {
-  color: #dc2626;
-  font-size: 12px;
-  margin: 5px 0 0;
-}
-
-.loc-form-btn {
-  width: 100%;
-  padding: 13px;
-  font-size: 15px;
-  font-weight: 700;
-  background-color: var(--loc-brand-orange);
-  color: #ffffff;
-  border: none;
-  border-radius: 6px;
-  cursor: pointer;
-  margin-top: 8px;
-  transition: background-color 0.2s ease, transform 0.15s ease;
-}
-
-.loc-form-btn:hover:not(:disabled) {
-  background-color: var(--loc-brand-orange-hover);
-  transform: translateY(-1px);
-}
-
-.loc-form-btn:disabled {
-  opacity: 0.7;
-  cursor: not-allowed;
-}
-
-.loc-form-error {
-  color: #dc2626;
-  font-size: 13px;
-  margin-bottom: 12px;
-  padding: 8px 12px;
-  background-color: #fef2f2;
-  border-radius: 6px;
-  border: 1px solid #fee2e2;
+.loc-hero-card .loc-quote-form .elementor-widget-heading {
+  margin-bottom: 16px;
 }
 
 /* =========================================================
