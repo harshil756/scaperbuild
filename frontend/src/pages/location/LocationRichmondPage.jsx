@@ -1,130 +1,144 @@
 import { Link } from 'react-router-dom'
-import SitePhoneLink from '../../components/SitePhoneLink.jsx'
 import LocationPageLayout from '../../components/location/LocationPageLayout.jsx'
 
 export default function LocationRichmondPage() {
   const data = {
     metaKey: 'location_richmond',
     locationName: 'Richmond',
-    heroHeadline: 'Pest control in Richmond, done right the first time.',
+    heroHeadline: 'Need Pest Control in Richmond? We’re Here Fast',
     heroSubhead:
-      'Cockroaches, termites, rodents, spiders and bed bugs — gone, with an eco-friendly treatment plan built around your property, not a one-size-fits-all spray.',
-    localHeading: 'Local pest control for Richmond homes and businesses.',
+      'Quick response, honest quotes and treatments that actually work. Call 7 States Pest Control for a free quote.',
+    localHeading: 'Pest Control Richmond: Because Your Home Shouldn’t Be Their Home',
     localLeadParagraphs: [
-      'Are you searching for reliable and affordable pest control services in Richmond? At 7 States Pest Control, we understand how frustrating and stressful it can be to deal with unwanted pests in your home or business.',
-      'From tiny ants and cockroaches to destructive termites, rodents, and bed bugs, pests can quickly disrupt your peace of mind and cause serious property damage if not addressed on time. We create a safe, clean, and pest-free environment backed by proven results.',
+      'From Victorian terraces off Swan Street to apartments near Bridge Road, Richmond properties face pest problems year-round. 7 States Pest Control sends licensed local technicians who find where the pests are coming from, not just where you spotted them. Book a free quote and get your space back.',
     ],
-    signsTitle: 'Small Signs That Something Has Already Moved In',
-    signsSubtitle: 'Pests rarely announce themselves. The clues are usually small:',
     signsList: [
-      "Tiny dark droppings in drawers, pantries or along skirting boards",
-      "Thin mud lines running up a wall or under the house",
-      "Timber that sounds hollow when you tap it",
-      "A stale, oily smell in a cupboard that never goes away",
-      "Chewed packaging, gnawed wiring or shredded paper",
-      "A pet scratching far more than usual"
-],
-    whyHeading: 'Why Choose 7 States Pest Control in Richmond?',
-    whyParagraphs: [
-      'When it comes to pest management, one-size-fits-all solutions simply do not work. Every property and every infestation is unique. At 7 States Pest Control, we take the time to carefully assess your pest issues and develop a customized treatment plan that delivers long-term results.',
-      'Our approach focuses not just on eliminating existing pests but also on preventing them from returning.',
+      <><b>Pests we deal with:</b> Cockroaches, rodents, ants, spiders, bed bugs, and termites are common in Richmond’s older brick homes, shared-wall apartments, and busy café and bar areas.</>,
+      <><b>Smart inspection first:</b> Every visit starts with a check of the roof void, subfloor, kitchen, and entry points to find the real source of the problem.</>,
+      <><b>Custom treatment plan:</b> No one-size-fits-all spraying. We build a plan around your property type and the specific pest.</>,
+      <><b>Safe for family and pets:</b> Low-odour products chosen with kids, pets, and food areas in mind.</>,
+      <><b>For homes and businesses:</b> Houses, apartments, rentals, cafés, restaurants, and commercial kitchens, with flexible booking for landlords, tenants, and owners.</>,
+      <><b>Fast and reliable:</b> Same-day pest control in Richmond, clear pricing, and follow-up support if pests return.</>,
     ],
-    whyTrustSubtext: "Here's why Richmond residents and businesses trust us:",
+    whyHeading: 'Why Richmond Locals Trust 7 States Pest Control',
+    whyParagraphs: ['Pests don’t wait for a convenient time, so neither should your pest controller.'],
+    whyTrustSubtext: 'Here’s what you get when you book with us.',
     whyBenefits: [
-      {
-            "num": "01",
-            "text": "Experienced and certified technicians"
-      },
-      {
-            "num": "02",
-            "text": "Eco-friendly and safe pest control treatments"
-      },
-      {
-            "num": "03",
-            "text": "Custom pest management plans tailored to your property"
-      },
-      {
-            "num": "04",
-            "text": "Affordable pricing without compromising on quality"
-      },
-      {
-            "num": "05",
-            "text": "Fast, responsive, and friendly customer service"
-      }
-],
+      { num: '01', text: <><strong>Root-Cause Treatments:</strong> We find where pests are getting in, so the problem is fixed, not just hidden for a few weeks.</> },
+      { num: '02', text: <><strong>Built for Richmond Properties:</strong> We know how to treat older brick homes, tight terraces and busy commercial kitchens.</> },
+      { num: '03', text: <><strong>Safe Around Kids and Pets:</strong> Low-odour products, applied carefully and explained clearly.</> },
+      { num: '04', text: <><strong>Fast Response:</strong> Same-day and emergency appointments, subject to availability.</> },
+      { num: '05', text: <><strong>Upfront Quotes:</strong> You’ll know the cost before we start.</> },
+      { num: '06', text: <><strong>We Come Back if They Do:</strong> Follow-up visits if pests return after treatment.</> },
+    ],
     servicesTitle: 'Pest treatments we offer in Richmond',
     servicesSubtitle: 'Every plan starts with an inspection, so the treatment matches what is actually on your property.',
-    detailedTitle: 'Pest Control Services in Richmond for Homes and Businesses',
+    detailedTitle: 'Trusted Local Pest Control Richmond Residents Can Rely On',
     previewContent: (
       <>
         <p>
-        Are you searching for reliable and affordable pest control services in Richmond? At{' '}
-        <Link to="/"><b>7 States Pest Control</b></Link>, we understand how frustrating and stressful it can be to deal with unwanted pests in your home or business.
-      </p>
-      <p>
-        From tiny ants and cockroaches to destructive termites, rodents, and bed bugs, pests can quickly disrupt your peace of mind and cause serious property damage if not addressed on time. That’s why our mission is simple — to create a safe, clean, and pest-free environment for you, your family, and your customers.
-      </p>
-      <p>
-        With years of experience in the industry, our professional pest control team offers tailor-made solutions for every situation. Whether you are facing a sudden infestation or want to safeguard your property with preventative measures, we’ve got you covered.
-      </p>
+          Most people don’t call a pest controller the first time they see something. They waited, hoping it was a one-off. Then comes the second sighting, and the third, and by then the problem has usually been building for weeks.
+        </p>
+        <p>
+          If you’re looking for <b>pest control Richmond</b> property owners, tenants and café operators can lean on, this page covers what’s actually going on in the suburb, what to look for, and when it’s time to call someone. 7 States Pest Control services homes and businesses across the area.
+        </p>
       </>
     ),
     expandedContent: (
       <>
-        <h3><b>Our Comprehensive Pest Control Services in Richmond</b></h3>
-                    <p>We provide complete pest management solutions for homes, offices, restaurants, warehouses, and commercial properties across Richmond. From common pests to severe infestations, we have specialised treatments for all.</p>
-                    <h4><b>Ant Control &amp; Termite Treatment in Richmond</b></h4>
-                    <p>Ants may look harmless, but once they invade kitchens, pantries, or workplaces, they become a nuisance. We target ant colonies at the source and ensure they don’t return.</p>
-                    <p>Termites, on the other hand, are far more dangerous. They cause structural damage quietly and quickly. Our termite inspection and treatment services in Richmond offer strong protection to keep your property safe from hidden termite activity.</p>
-                    <h4><b>Rodent Control in Richmond</b></h4>
-                    <p>Rats and mice are destructive and unhygienic. They chew wires, damage insulation, contaminate food, and spread harmful diseases. Our 
-                      <Link to="/rodent-control-in-melbourne"><b>rodent pest control in Richmond</b></Link> service removes rodent problems fast and safely while putting prevention strategies in place so they stay away.</p>
-                    <h4><b>Bed Bug Control in Richmond</b></h4>
-                    <p>Bed bugs hide in mattresses, furniture, and even clothing, making them difficult to remove without professional help. Our 
-                      <Link to="/our-services-bed-bug-treatment"><b>bed bug removal in Richmond</b></Link> targets every stage of the infestation, ensuring complete elimination so you can enjoy a healthy and comfortable living environment again.</p>
-                    <h4><b>Spider Removal Services in Richmond</b></h4>
-                    <p>Richmond homes often deal with both harmless and venomous spider species. Whether indoors or around your property, our 
-                      <Link to="/our-services-spider-control-treatment"><b>spider pest control in Richmond</b></Link> provides safe and effective solutions, eliminating spiders and preventing their return.</p>
-                    <h4><b>Cockroach Removal in Richmond</b></h4>
-                    <p>Cockroaches are one of the most stubborn pests in Richmond. They multiply fast, contaminate food, and carry germs harmful to health. Our cockroach control services attack infestations at the source and help prevent future outbreaks.</p>
-                    <h4><b>Wasp Removal in Richmond</b></h4>
-                    <p>Wasps can be aggressive, especially when they feel threatened. Their stings are painful and can pose serious risks. Our 
-                      <Link to="/wasp-removal-melbourne"><b>wasp exterminator in Richmond</b></Link> safely removes nests and applies preventative treatments so your property stays safe.</p>
-                    <h4><b>Long-Term Benefits of Professional Pest Control</b></h4>
-                    <ul>
-                      <li>Protection from costly property damage</li>
-                      <li>Reduced risk of diseases carried by pests</li>
-                      <li>Compliance with safety and environmental requirements</li>
-                      <li>Tailored pest strategies based on your property</li>
-                      <li>Long-term prevention for a pest-free environment</li>
-                    </ul>
-                    <h4><b>Protect Your Property with 7 States Pest Control in Richmond</b></h4>
-                    <p>At 7 States Pest Control, our mission is to keep your home and business pest-free. From ants and cockroaches to termites, rodents, spiders, and wasps, we offer effective pest solutions across Richmond and surrounding Melbourne suburbs.</p>
-                    <p>📞 Call us at <SitePhoneLink bold /> today to book an inspection and take the first step toward a clean, safe, and pest-free property.</p>
+        <h3><b>Why Richmond Has Its Own Pest Patterns</b></h3>
+        <p>Richmond has a mix you don’t find everywhere. There are Victorian-era terraces with timber floors and ventilated subfloors, converted warehouses, and newer apartment blocks, all within a few streets of each other. Pests treat each building type differently.</p>
+        <p>Old terraces give rodents and spiders plenty of dark, undisturbed space under the floor. Warehouse conversions often have gaps where old and new construction meet. Apartment blocks share service ducts, so a problem on one floor can travel up or down without anyone noticing.</p>
+        <p>Laneways and the steady stream of food outlets along Swan Street, Bridge Road and Victoria Street add to it. Bins, grease and spilled food are a permanent buffet.</p>
+
+        <h3><b>A Season by Season Guide</b></h3>
+        <p>Pests follow the weather, so knowing what’s likely helps you act early.</p>
+        <ul>
+          <li><b>Spring:</b> Ant colonies wake up and expand. Check around window sills, pet bowls and anywhere sweet food sits.</li>
+          <li><b>Summer:</b> Heat speeds up breeding. Cockroaches, spiders, wasps and fleas all peak, and flies gather around bins.</li>
+          <li><b>Autumn:</b> Mice start scouting for warm places before winter. This is a good time to seal gaps in the roofline and around pipes.</li>
+          <li><b>Winter:</b> Rats and mice move indoors in earnest. Scratching in the ceiling at night is the classic sign. Silverfish also like damp, cool bathrooms and cupboards.</li>
+        </ul>
+
+        <h3><b>Small Signs Most People Miss</b></h3>
+        <p>You don’t always need to see the pest itself. These clues are easy to overlook:</p>
+        <ul>
+          <li>Tiny dark specks like pepper in kitchen drawers, which are often cockroach droppings.</li>
+          <li>A musty, oily smell behind appliances.</li>
+          <li>Paint that bubbles or ripples on a wall or ceiling with no visible leak.</li>
+          <li>Doors and windows that suddenly stick in the frame.</li>
+          <li>Small, itchy red bites in a line or cluster, especially after waking up.</li>
+          <li>Shredded paper, insulation or fabric tucked in a corner.</li>
+        </ul>
+        <p>If two or more of these sound familiar, it’s worth getting someone to take a look.</p>
+
+        <h3><b>Renting in Richmond? Here’s Who Usually Handles It</b></h3>
+        <p>Richmond has a large rental population, and pest problems are a common source of arguments. As a general rule in Victoria, if pests were already in the property when you moved in, that’s typically the landlord’s responsibility. If the problem was caused by the tenant, such as food left out or rubbish piling up, the tenant may need to cover it.</p>
+        <p>Rules and circumstances vary, so check with Consumer Affairs Victoria if you’re unsure. Whichever side you’re on, take photos and report the issue in writing early. A short delay can turn a cheap fix into a dispute, and it helps to get a written record of what the technician found.</p>
+
+        <h3><b>Cafés and Commercial Kitchens</b></h3>
+        <p>Food businesses carry legal obligations under the Food Act and the Food Standards Code, which require premises to be kept free of pests. Local council environmental health officers can inspect, and visible pest activity can lead to fines or closure orders.</p>
+        <p>The risks are bigger than the penalty. A single bad review mentioning a cockroach can undo years of reputation. Businesses that need <b>pest control in Richmond</b> often benefit from scheduled treatments outside trading hours, plus a log of what was done and when. That paperwork also comes in handy during audits.</p>
+        <p>Common weak points in commercial kitchens include floor drains, gaps behind cooking lines, cardboard storage, and the back door that gets propped open during deliveries.</p>
+        <p>
+          Homeowners in the south-east often ask us about{' '}
+          <Link to="/location/cheltenham"><b>pest control Cheltenham</b></Link>, where mice, ants and cockroaches are frequent call-outs in family homes and shopping strips. In the west, new housing estates and open land mean different challenges, and our{' '}
+          <Link to="/location/melton"><b>pest control Melton</b></Link> service deals with rodents, spiders and ants that move in as the ground around new buildings gets disturbed.
+        </p>
+
+        <h3><b>Termites: The Pest You Can’t Hear Coming</b></h3>
+        <p>Termites deserve their own section because they work so differently. Subterranean termites live in the soil and build hidden mud tunnels to reach timber. A colony can feed around the clock, and the damage often sits behind plasterboard or under flooring.</p>
+        <p>
+          Australian guidelines recommend a professional termite inspection at least once a year, and older Richmond homes with timber frames and subfloors are good candidates. Inspectors use moisture meters, thermal tools and tapping to find activity you can’t see. Bayside homes face the same risk, which is why our team also carries out termite checks as part of{' '}
+          <Link to="/location/hampton"><b>pest control Hampton</b></Link> services, where leafy gardens and older timber homes are common.
+        </p>
+
+        <h3><b>Why Store-Bought Sprays Let You Down</b></h3>
+        <p>A can of spray takes care of the insect in front of you. It doesn’t reach the nest, and some products simply push insects deeper into the wall. A professional pest controller uses baits, gels and residual treatments that insects carry back with them, which is how a whole colony gets affected rather than a handful.</p>
+        <p>There’s also the safety side. Mixing products or overusing them in a kitchen or kids’ bedroom isn’t a great idea, and the labels aren’t always easy to follow.</p>
+
+        <h3><b>What Affects the Price</b></h3>
+        <p>Rather than a vague “it depends”, here’s what actually moves the number:</p>
+        <ul>
+          <li><b>Type of pest.</b> Ants and spiders are usually the simplest. Termites, bed bugs and rodents take more time.</li>
+          <li><b>Property size and layout.</b> A studio apartment and a three-storey terrace are very different jobs.</li>
+          <li><b>How established the problem is.</b> A fresh issue is quicker to clear than one that’s been growing for months.</li>
+          <li><b>Access.</b> Roof voids, subfloors and locked rooms all affect time on site.</li>
+          <li><b>Number of visits.</b> Some pests need a follow-up to break the breeding cycle.</li>
+        </ul>
+        <p>You’ll get a clear quote before any work starts.</p>
+
+        <h4><b>Why Richmond Locals Pick 7 States Pest Control</b></h4>
+        <p>We work across Richmond regularly, so we’re familiar with the building styles and the trouble spots described above. You can ask us a straight question and expect a straight answer, including “you don’t need a full treatment for this.”</p>
+        <p>We also offer flexible appointment times for tenants, shift workers and hospitality owners who can’t wait around between nine and five.</p>
+
+        <h5><b>Get It Sorted Before It Spreads</b></h5>
+        <p>Pests don’t leave on their own, and the repair bill or the bad review only gets bigger with time.</p>
+        <p>If any of the signs above sound familiar, give 7 States Pest Control a call or send an enquiry. Tell us what you’ve noticed and we’ll recommend the next step. Reach out today for dependable <b>pest control Richmond</b> residents and businesses can trust.</p>
       </>
     ),
     faqs: [
       {
-            "question": "1. What pests do you treat in Richmond?",
-            "answer": "We treat ants, cockroaches, spiders, rodents, termites, bed bugs, wasps, and more. Our experts handle both minor and severe infestations found in Richmond properties."
+        question: '1. How long does a typical treatment take?',
+        answer: 'A standard general pest treatment often takes 30 to 90 minutes. Larger homes, termite work and rodent jobs can take longer.',
       },
       {
-            "question": "2. How quickly can you respond to a pest issue?",
-            "answer": "We offer same-day or next-day service for most Richmond bookings. Severe infestations are prioritised for urgent treatment."
+        question: '2. Will the pests disappear straight away?',
+        answer: 'Not always. Baits and residual treatments work over days, so you may still see a few insects at first. Activity should drop noticeably within one to two weeks.',
       },
       {
-            "question": "3. Are your treatments safe for kids and pets?",
-            "answer": "Yes. All our pest control treatments are eco-friendly, approved, and safe when applied correctly. We follow strict safety standards."
+        question: '3. Do you offer termite inspections in Richmond?',
+        answer: 'Yes. We check for activity using visual inspection, moisture readings and tapping, and we’ll recommend treatment if we find anything.',
       },
       {
-            "question": "4. How can I book a pest control service in Richmond?",
-            "answer": "You can call us at +61 434 660 060 submit an online enquiry, or message us directly to schedule an inspection."
+        question: '4. Who pays for pest control in a rental property?',
+        answer: 'Generally, if pests were there when the tenant moved in, the landlord is responsible. Tenant-caused problems may be the tenant’s cost. Check with Consumer Affairs Victoria for your specific case.',
       },
       {
-            "question": "5. Can pests be prevented?",
-            "answer": "Absolutely. Regular inspections, sealing entry points, good hygiene, waste management, and routine professional treatments help prevent pests. We offer customized prevention plans for long-term protection in Richmond."
-      }
-],
+        question: '5. Do you provide pest control for cafés and restaurants?',
+        answer: 'Yes. We offer scheduled treatments outside trading hours and can supply records of each visit for inspections and audits.',
+      },
+    ],
   }
 
   return <LocationPageLayout {...data} />

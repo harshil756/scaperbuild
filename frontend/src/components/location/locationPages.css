@@ -600,14 +600,17 @@ h1.loc-hero-title {
   margin: 32px 0 14px;
 }
 
-.loc-detail-body h4 {
+.loc-detail-body h4,
+.loc-detail-body h5,
+.loc-detail-body h6 {
   font-size: 1.25rem;
   font-weight: 700;
   color: #1e293b;
   margin: 26px 0 12px;
 }
 
-.loc-detail-body ul {
+.loc-detail-body ul,
+.loc-detail-body ol {
   padding-left: 20px;
   margin: 0 0 20px;
 }

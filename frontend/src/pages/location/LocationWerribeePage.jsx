@@ -6,125 +6,138 @@ export default function LocationWerribeePage() {
   const data = {
     metaKey: 'location_werribee',
     locationName: 'Werribee',
-    heroHeadline: 'Pest control in Werribee, done right the first time.',
+    heroHeadline: 'Pest Control Werribee Residents Call When Nothing Else Works',
     heroSubhead:
-      'Cockroaches, termites, rodents, spiders and bed bugs — gone, with an eco-friendly treatment plan built around your property, not a one-size-fits-all spray.',
-    localHeading: 'Local pest control for Werribee homes and businesses.',
+      'Stubborn infestations need real experts. 7 States Pest Control delivers targeted treatments that remove pests at the source, not just the surface.',
+    localHeading: 'Pest Control Werribee Homes and Businesses Can Rely On',
     localLeadParagraphs: [
-      'Are you searching for reliable and affordable pest control services in Werribee? At 7 States Pest Control, we understand how frustrating and stressful it can be to deal with unwanted pests in your home or business.',
-      'From tiny ants and cockroaches to destructive termites, rodents, and bed bugs, pests can quickly disrupt your peace of mind and cause serious property damage if not addressed on time. We create a safe, clean, and pest-free environment backed by proven results.',
+      'Pests don’t wait for a good time to show up. Whether it’s ants in the kitchen, cockroaches behind the fridge, or rodents on the roof, you need pest control in Werribee that works the first time. At 7 States Pest Control, our licensed local technicians inspect, treat and prevent, so your property stays pest-free long after we leave.',
     ],
-    signsTitle: 'Small Signs That Something Has Already Moved In',
-    signsSubtitle: 'Pests rarely announce themselves. The clues are usually small:',
+    signsTitle: 'Why Choose Our Pest Control in Werribee:',
     signsList: [
-      "Tiny dark droppings in drawers, pantries or along skirting boards",
-      "Thin mud lines running up a wall or under the house",
-      "Timber that sounds hollow when you tap it",
-      "A stale, oily smell in a cupboard that never goes away",
-      "Chewed packaging, gnawed wiring or shredded paper",
-      "A pet scratching far more than usual"
-],
-    whyHeading: 'Why Choose 7 States Pest Control in Werribee?',
-    whyParagraphs: [
-      'When it comes to pest management, one-size-fits-all solutions simply do not work. Every property and every infestation is unique. At 7 States Pest Control, we take the time to carefully assess your pest issues and develop a customized treatment plan that delivers long-term results.',
-      'Our approach focuses not just on eliminating existing pests but also on preventing them from returning.',
+      <><b>Licensed and local technicians:</b> Fully trained professionals who know Werribee’s common pest problems</>,
+      <><b>Family and pet-safe treatments:</b> Effective products applied with care around kids, pets and gardens</>,
+      <><b>Fast response times:</b> Quick booking and prompt service when pests can’t wait</>,
+      <><b>Targeted treatments:</b> We remove pests at the source, not just the surface</>,
+      <><b>Honest, upfront pricing:</b> Clear quotes with no hidden costs</>,
+      <><b>Residential and commercial service:</b> Homes, rental properties, restaurants, offices and more</>,
+      <><b>Long-lasting protection:</b> Follow-up and prevention advice to stop pests coming back</>,
     ],
-    whyTrustSubtext: "Here's why Werribee residents and businesses trust us:",
+    whyHeading: 'Why Werribee Locals Choose 7 States for Pest Control',
+    whyParagraphs: ['Anyone can spray and leave. We stay until the problem is solved.'],
+    whyTrustSubtext: 'Here’s what makes our pest control in Werribee different.',
     whyBenefits: [
-      {
-            "num": "01",
-            "text": "Experienced and certified technicians"
-      },
-      {
-            "num": "02",
-            "text": "Eco-friendly and safe pest control treatments"
-      },
-      {
-            "num": "03",
-            "text": "Custom pest management plans tailored to your property"
-      },
-      {
-            "num": "04",
-            "text": "Affordable pricing without compromising on quality"
-      },
-      {
-            "num": "05",
-            "text": "Fast, responsive, and friendly customer service"
-      }
-],
+      { num: '01', text: <><strong>We find the source, not just the symptoms:</strong> Every job starts with a proper inspection, so we treat where pests actually come from.</> },
+      { num: '02', text: <><strong>Werribee-smart treatments:</strong> From river-area moisture to new-estate gaps, we know what pests Werribee properties attract.</> },
+      { num: '03', text: <><strong>Safe for your whole crew:</strong> Kids, pets and the backyard veggie patch are all considered before we treat them.</> },
+      { num: '04', text: <><strong>Technicians who explain, not just spray:</strong> You’ll know what we found, what we did and how to keep pests away.</> },
+      { num: '05', text: <><strong>Quotes that don’t surprise you:</strong> Clear pricing upfront, so no hidden extras later.</> },
+    ],
     servicesTitle: 'Pest treatments we offer in Werribee',
     servicesSubtitle: 'Every plan starts with an inspection, so the treatment matches what is actually on your property.',
-    detailedTitle: 'Pest Control Services in Werribee for Homes and Businesses',
+    detailedTitle: 'Pest Control Werribee: Because Pests Don’t Respect Your Home',
     previewContent: (
       <>
         <p>
-        Are you searching for reliable and affordable pest control services in Werribee? At{' '}
-        <Link to="/"><b>7 States Pest Control</b></Link>, we understand how frustrating and stressful it can be to deal with unwanted pests in your home or business.
-      </p>
-      <p>
-        From tiny ants and cockroaches to destructive termites, rodents, and bed bugs, pests can quickly disrupt your peace of mind and cause serious property damage if not addressed on time. That’s why our mission is simple — to create a safe, clean, and pest-free environment for you, your family, and your customers.
-      </p>
-      <p>
-        With years of experience in the industry, our professional pest control team offers tailor-made solutions for every situation. Whether you are facing a sudden infestation or want to safeguard your property with preventative measures, we’ve got you covered.
-      </p>
+          You wiped the benches, took the bins out and still found ants marching across the kitchen. It happens in even the cleanest homes. Werribee’s warm weather, nearby river areas and fast-growing estates give pests plenty of reasons to move in. Good <b>pest control Werribee</b> residents can rely on starting with finding where the problem begins and fixing it properly. At 7 States Pest Control, our local technicians treat the source, so you’re not spraying the same corner every week.
+        </p>
       </>
     ),
     expandedContent: (
       <>
-        <h3><b>Our Comprehensive Pest Control Services in Werribee</b></h3>
-                    <p>We provide complete pest management solutions for homes, offices, restaurants, warehouses, and commercial properties across Werribee. From common pests to severe infestations, we have specialised treatments for all.</p>
-                    <h4><b>Ant Control &amp; Termite Treatment in Werribee</b></h4>
-                    <p>Ants may look harmless, but once they invade kitchens, pantries, or workplaces, they become a nuisance. We target ant colonies at the source and ensure they don’t return.</p>
-                    <p>Termites, on the other hand, are far more dangerous. They cause structural damage quietly and quickly. Our termite inspection and treatment services in Werribee offer strong protection to keep your property safe from hidden termite activity.</p>
-                    <h4><b>Rodent Control in Werribee</b></h4>
-                    <p>Rats and mice are not just unhygienic — they are destructive. They chew wires, damage insulation, contaminate food, and spread harmful diseases. Our 
-                      <Link to="/rodent-control-in-melbourne"><b>rodent pest control in Werribee</b></Link> removes rodent problems fast and safely while putting prevention strategies in place so they stay away.</p>
-                    <h4><b>Bed Bug Control in Werribee</b></h4>
-                    <p>Bed bugs hide in mattresses, furniture, and even clothing, making them difficult to remove without professional help. Our 
-                      <Link to="/our-services-bed-bug-treatment"><b>bed bug removal in Werribee</b></Link> targets every stage of the infestation, ensuring complete elimination so you can enjoy a healthy and comfortable living environment again.</p>
-                    <h4><b>Spider Removal Services in Werribee</b></h4>
-                    <p>Werribee homes often deal with both harmless and venomous spider species. Whether they are indoors or around the exterior of your property, our 
-                      <Link to="/our-services-spider-control-treatment"><b>spider pest control in Werribee</b></Link> provides safe and effective solutions. We eliminate current spiders and apply preventative measures to keep them from returning.</p>
-                    <h4><b>Cockroach Removal in Werribee</b></h4>
-                    <p>Cockroaches are one of the most stubborn pests in Werribee. They multiply fast, contaminate food, and carry germs that are harmful to health. Our cockroach control services attack the infestation at its source and help prevent future outbreaks.</p>
-                    <h4><b>Wasp Removal in Werribee</b></h4>
-                    <p>Wasps can be aggressive, especially when they feel threatened. Their stings are painful and can pose serious risks to those with allergies. Our 
-                      <Link to="/wasp-removal-melbourne"><b>wasp exterminator in Werribee</b></Link> safely removes wasp nests and applies preventative treatments so your property stays safe for family, staff, and visitors.</p>
-                    <h4><b>Long-Term Benefits of Professional Pest Control</b></h4>
-                    <ul>
-                      <li>Protection from costly property damage</li>
-                      <li>Reduced risk of diseases carried by pests</li>
-                      <li>Compliance with safety and environmental requirements</li>
-                      <li>Tailored pest strategies based on your property</li>
-                      <li>Long-term prevention for a pest-free environment</li>
-                    </ul>
-                    <h4><b>Protect Your Property with 7 States Pest Control in Werribee</b></h4>
-                    <p>At 7 States Pest Control, our mission is to keep your home and business pest-free. From ants and cockroaches to termites, rodents, spiders, and wasps, we offer effective pest solutions across Werribee and surrounding Melbourne suburbs.</p>
-                    <p>📞 Call us at <SitePhoneLink bold /> today to book an inspection and take the first step toward a clean, safe, and pest-free property.</p>
+        <h3><b>Werribee Pest Calendar: What Turns Up and When</b></h3>
+        <p>Pests follow the seasons. Once you know the pattern, you can act before a small problem grows.</p>
+        <p><b>Summer</b></p>
+        <p>Heat brings out ants, spiders, wasps and fleas. Redback spiders settle into sheds, letterboxes and outdoor furniture, while ant colonies swarm around pet bowls and crumbs.</p>
+        <p><b>Autumn</b></p>
+        <p>As nights cool down, rodents start looking for warm shelter. A tiny gap near a pipe or garage door is all a mouse needs.</p>
+        <p><b>Winter</b></p>
+        <p>Cockroaches and mice move indoors. You might hear scratching in the roof or find droppings in the pantry.</p>
+        <p><b>Spring</b></p>
+        <p>Termites get active when the soil warms up and moisture lingers. Ants and bees also return to the garden.</p>
+        <p>Booking <b>pest control Werribee</b> before your season’s peak is usually cheaper and far less stressful than waiting for a full infestation.</p>
+
+        <h3><b>Warning Signs You Need Pest Control Now</b></h3>
+        <p>Some pest problems are loud and obvious. Others stay hidden for months. It’s time to call a professional if you notice:</p>
+        <ul>
+          <li>Droppings in cupboards, drawers or the roof void</li>
+          <li>Scratching or scurrying sounds at night</li>
+          <li>Mud tubes on walls or timber that sounds hollow when tapped</li>
+          <li>Chewed packaging, cables or skirting boards</li>
+          <li>A musty smell behind the fridge or under the sink</li>
+          <li>Ant trails that keep coming back after cleaning</li>
+        </ul>
+        <p>Picture a family who keeps finding small cockroaches in the kitchen. They clean harder, buy more spray and still see them every night. The real nest is inside a wall cavity, and no amount of scrubbing will reach it. That’s the point where an inspection saves weeks of frustration.</p>
+
+        <h3><b>DIY vs Professional: What Actually Works</b></h3>
+        <p>Supermarket sprays are fine for a single spider on the porch. They kill what they touch, but they rarely reach the nest. Ant colonies can split and spread, cockroaches hide deep in walls and rodents come back through the same gap they used before.</p>
+        <p>Professional <b>pest control Werribee</b> treatment works differently. A trained technician identifies the pest, finds the entry points and chooses a treatment that suits your property. You also get advice on what to change around the house, which is something a can of spray will never give you.</p>
+        <p>DIY costs add up, too. Buying product after product, repeating treatments and still having pests is expensive and tiring. A proper treatment done once is usually the cheaper option.</p>
+
+        <h3><b>What Happens on the Day of Your Visit</b></h3>
+        <p>Many people aren’t sure what to expect, so here’s how a typical visit runs.</p>
+        <ol>
+          <li><b>Inspection.</b> Our technician checks inside and outside, including the roof void, garage, garden and sub-floor where needed.</li>
+          <li><b>Explanation.</b> We show you what we found and talk you through the plan in plain English.</li>
+          <li><b>Quote approval.</b> You know the price before any work begins.</li>
+          <li><b>Treatment.</b> We target nests, entry points and problem zones, rather than spraying everywhere.</li>
+          <li><b>Aftercare.</b> We share simple prevention tips and let you know if a follow-up is needed.</li>
+        </ol>
+        <p>Most general treatments are done in a single visit, and we’ll tell you how long to keep kids and pets away from treated areas.</p>
+
+        <h3><b>Pest Control for Every Type of Property</b></h3>
+        <p>Different buildings attract different pests, so one approach doesn’t suit everyone.</p>
+        <p><b>New Estates</b></p>
+        <p>Freshly disturbed soil and small building gaps invite ants and spiders. An early treatment helps stop colonies from settling in.</p>
+        <p><b>Older Homes</b></p>
+        <p>Timber, roof voids and sub-floors are perfect for termites and rodents. Regular inspections catch damage before it becomes costly.</p>
+        <p><b>Rental Properties</b></p>
+        <p>Landlords and property managers need quick, reliable service. Tenants want problems solved without drama. We work with both sides to get it done.</p>
+        <p><b>Shops, Cafes and Offices</b></p>
+        <p>A single cockroach sighting can damage your reputation. We offer discreet commercial pest control services that fit around your trading hours and help you keep hygiene standards in check.</p>
+
+        <h3><b>Pest Control Cost in Werribee: What Affects the Price</b></h3>
+        <p>No two jobs are the same, so there’s no single price. The main factors are the type of pest, the size of the property, how bad the infestation is and the treatment needed. Termite work and rodent proofing usually cost more than a standard general treatment for ants or spiders.</p>
+        <p>
+          The best way to avoid surprises is to ask for a written quote before work starts. At 7 States, you’ll get a clear price upfront, and we’ll explain what is included. If you’re comparing options for <b>pest control Werribee</b>,{' '}
+          <Link to="/location/richmond"><b>pest control Richmond</b></Link>,{' '}
+          <Link to="/location/st-albans"><b>pest control St Albans</b></Link> or{' '}
+          <Link to="/location/tarneit"><b>pest control Tarneit</b></Link>, check that each quote covers the same pests and the same areas. Otherwise, you’re not comparing like with like.
+        </p>
+
+        <h4><b>Common Pest Control Myths</b></h4>
+        <p><b>“Clean homes don’t get pests.”</b> Pests come for food, water and shelter, not dirt. Even spotless houses get visitors.</p>
+        <p><b>“One spray fixes everything.”</b> Lasting results need the right product, the right placement and some prevention work afterwards.</p>
+        <p><b>“If I can’t see them, they’re not there.”</b> Termites and rodents can stay hidden for months while the damage builds up.</p>
+
+        <h5><b>Book Pest Control Werribee Today</b></h5>
+        <p>
+          Pests don’t go away on their own, and they usually get worse the longer you wait. Call 7 States Pest Control on <SitePhoneLink bold /> today or send an online enquiry for a free, no-obligation quote. We’ll sort the problem properly, so you can get back to enjoying your home or running your business.
+        </p>
       </>
     ),
     faqs: [
       {
-            "question": "1. What pests do you treat in Werribee?",
-            "answer": "We treat ants, cockroaches, spiders, rodents, termites, bed bugs, wasps, and more. Our experts handle both minor and severe infestations found in Werribee properties."
+        question: '1. How much does pest control cost in Werribee?',
+        answer: 'It depends on the pest, the size of your property and how bad the problem is. A general treatment for ants or spiders usually costs less than termite work or rodent proofing. We give you a clear written quote before any work starts, so there are no surprises.',
       },
       {
-            "question": "2. How quickly can you respond to a pest issue?",
-            "answer": "We offer same-day or next-day service for most Werribee bookings. Severe infestations are prioritised for urgent treatment."
+        question: '2. How quickly can you come out for pest control in Werribee?',
+        answer: 'We aim to book you in as soon as possible. Urgent problems like rodents, wasp nests and heavy cockroach activity are prioritised.',
       },
       {
-            "question": "3. Are your treatments safe for kids and pets?",
-            "answer": "Yes. All our pest control treatments are eco-friendly, approved, and safe when applied correctly. We follow strict safety standards."
+        question: '3. Is the treatment safe for my kids and pets?',
+        answer: 'Yes. We apply products carefully and only where needed. Before we leave, we tell you how long kids and pets should stay away from treated areas.',
       },
       {
-            "question": "4. How can I book a pest control service in Werribee?",
-            "answer": "You can call us at +61 434 660 060, submit an online enquiry, or message us directly to schedule an inspection."
+        question: '4. How often should I book pest control?',
+        answer: 'Most homes do well with a service once a year. Rental properties, cafes and older homes may need more regular visits. Termite inspections are best done every 12 months.',
       },
       {
-            "question": "5. Can pests be prevented?",
-            "answer": "Absolutely. Regular inspections, sealing entry points, good hygiene, waste management, and routine professional treatments help prevent pests. We offer customised prevention plans for long-term protection in Werribee."
-      }
-],
+        question: '5. How can I tell if my pest problem is serious?',
+        answer: 'If you’re seeing pests daily, finding droppings, hearing noises in walls or spotting signs of termites, it’s time for an inspection. Early action costs less than a late one.',
+      },
+    ],
   }
 
   return <LocationPageLayout {...data} />

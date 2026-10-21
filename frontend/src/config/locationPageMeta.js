@@ -126,8 +126,8 @@ export const LOCATION_PAGE_META = {
     "bodyClass": "wp-singular location-template-default single single-location postid-9978 wp-custom-logo wp-embed-responsive wp-theme-hello-elementor elementor-default elementor-kit-9 elementor-page elementor-page-9978 elementor-page-9421"
   },
   "location_hampton": {
-    "title": "Pest Control Hampton- Expert Pest Removal Services.",
-    "description": "Looking for reliable pest control in Hampton? Our expert team provides safe and effective pest removal services to protect your home or business.",
+    "title": "Pest Control Hampton | Local Experts | 7 States Pest Control",
+    "description": "Need pest control in Hampton? 7 States Pest Control removes cockroaches, rodents, ants, spiders and termites from homes and businesses. Call for a quote today.",
     "bodyClass": "wp-singular location-template-default single single-location postid-9689 wp-custom-logo wp-embed-responsive wp-theme-hello-elementor elementor-default elementor-kit-9 elementor-page elementor-page-9689 elementor-page-9421"
   },
   "location_highett": {
@@ -146,8 +146,8 @@ export const LOCATION_PAGE_META = {
     "bodyClass": "wp-singular location-template-default single single-location postid-10009 wp-custom-logo wp-embed-responsive wp-theme-hello-elementor elementor-default elementor-kit-9 elementor-page elementor-page-10009 elementor-page-9421"
   },
   "location_melton": {
-    "title": "Pest Control Melton- Expert Pest Removal Services.",
-    "description": "Looking for reliable pest control in Melton? Our expert team provides safe and effective pest removal services to protect your home or business.",
+    "title": "Pest Control Melton | Fast Local Service | 7 States",
+    "description": "Need pest control in Melton? 7 States treat cockroaches, rodents, ants, termites and more. Safe, licensed and upfront pricing. Get a free quote.",
     "bodyClass": "wp-singular location-template-default single single-location postid-10016 wp-custom-logo wp-embed-responsive wp-theme-hello-elementor elementor-default elementor-kit-9 elementor-page elementor-page-10016 elementor-page-9421"
   },
   "location_mernda": {
